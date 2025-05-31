@@ -1,0 +1,252 @@
+doctype html
+html(lang="zh-CN")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=2,viewport-fit=cover")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    meta(name="renderer", content="webkit")
+    title SimonAKing/Blog
+    //- Less 文件将在这里引入，例如：
+    //- link(rel="stylesheet", href="styles.less")
+    //- 或者编译后的 CSS 文件：
+    link(rel="stylesheet", href="/css/blog.css")
+  body
+    //- 动态背景
+    .dynamic-bg
+    .grid-bg
+
+    //- 鼠标跟随光效
+    #cursorGlow.cursor-glow
+
+    //- 加载动画
+    #loader.loader
+      .loader-ring
+      .loader-ring
+      .loader-ring
+
+    //- 侧边栏
+    aside#sidebar.sidebar
+      .profile-section
+        .avatar-container
+          .avatar-ring
+          .avatar
+            img(src="https://cdn.jsdelivr.net/gh/SimonAKing/images/blog/avatar.jpg", alt="avatar")
+        h2.nickname SimonAKing
+        .social-links
+          a.social-link(href="#", title="微信")
+            span(style="position: relative; z-index: 1;") 💬
+          a.social-link(href="mailto:hi@simonaking.com", title="邮箱")
+            span(style="position: relative; z-index: 1;") 📧
+          a.social-link(href="https://x.com/simon_aking", title="X")
+            span(style="position: relative; z-index: 1;") 🐦
+          a.social-link(href="https://github.com/SimonAKing", title="GitHub")
+            span(style="position: relative; z-index: 1;") 💻
+        
+        .stats
+          .stat-card
+            .stat-value ∞
+            .stat-label 微博
+          .stat-card
+            .stat-value 32
+            .stat-label 文章
+          .stat-card
+            .stat-value ∞
+            .stat-label 相册
+      
+      nav.nav-menu
+        ul
+          li.nav-item.active
+            a.nav-link(href="#")
+              span.nav-icon 🏠
+              span 主页
+          li.nav-item
+            a.nav-link(href="#")
+              span.nav-icon 📷
+              span 相册
+          //- 添加了你在评论中提供的额外导航项
+          li.nav-item
+            a.nav-link(href="#")
+              span.nav-icon 📁
+              span 归档
+          li.nav-item
+            a.nav-link(href="#")
+              span.nav-icon 🏷️
+              span 标签
+          li.nav-item
+            a.nav-link(href="#")
+              span.nav-icon 😊
+              span 微博
+          li.nav-item
+            a.nav-link(href="#")
+              span.nav-icon 💭
+              span 思考
+          li.nav-item
+            a.nav-link(href="#")
+              span.nav-icon ✈️
+              span 关于
+          li.nav-item
+            a.nav-link(href="#")
+              span.nav-icon 🧭
+              span 导航
+
+    //- 主内容区
+    main.main-content
+      //- Hero 区域
+      section.hero
+        .hero-bg
+          #stars.stars
+        .hero-content
+          h1.hero-title SimonAKing
+          p.hero-subtitle STDIN | Think >> /dev/Mind✨
+
+      //- 文章内容
+      .content-wrapper
+        .posts-grid
+          //- 文章卡片 1
+          article.post-card
+            h3.post-title
+              a(href="#") LLM Inference Optimization Overview - From Data to System Architecture
+            .post-meta
+              span.meta-item
+                span.meta-icon 📅
+                | 2025-05-05
+              span.meta-item
+                span.meta-icon ⏱️
+                | 18 min read
+              span.meta-item
+                span.meta-icon 📝
+                | 2.9k words
+            p.post-excerpt
+              | With the widespread application of LLMs across various industries, achieving efficient inference while maintaining model performance has become a key challenge.
+            a.read-more(href="#") 阅读全文
+            .post-tags
+              a.tag(href="#")
+                span Inference Optimization
+              a.tag(href="#")
+                span LLM
+          
+          //- 文章卡片 2
+          article.post-card
+            h3.post-title
+              a(href="#") 聊聊大模型推理加速：从数据到系统的技术概要
+            .post-meta
+              span.meta-item
+                span.meta-icon 📅
+                | 2025-03-27
+              span.meta-item
+                span.meta-icon ⏱️
+                | 16 min read
+              span.meta-item
+                span.meta-icon 📝
+                | 4.5k words
+            p.post-excerpt
+              | 随着 LLMs 在各行各业的应用，如何在保证模型性能的前提下实现高效推理已成为重点挑战之一。
+            a.read-more(href="#") 阅读全文
+            .post-tags
+              a.tag(href="#")
+                span LLM
+              a.tag(href="#")
+                span 推理加速
+
+          //- 文章卡片 3
+          article.post-card
+            h3.post-title
+              a(href="#") 聊聊 Rerank：从 BERT 到大模型的技术旅程
+            .post-meta
+              span.meta-item
+                span.meta-icon 📅
+                | 2024-12-09
+              span.meta-item
+                span.meta-icon ⏱️
+                | 10 min read
+              span.meta-item
+                span.meta-icon 📝
+                | 2.6k words
+            p.post-excerpt
+              | 从搜索引擎到大语言模型，Rerank 技术一直在默默发挥着"最后一公里"的关键作用。
+            a.read-more(href="#") 阅读全文
+            .post-tags
+              a.tag(href="#")
+                span LLM
+              a.tag(href="#")
+                span Rerank
+          
+          //- 文章卡片 4
+          article.post-card
+            h3.post-title
+              a(href="#") Mac Mini 换机指南
+            .post-meta
+              span.meta-item
+                span.meta-icon 📅
+                | 2023-05-22
+              span.meta-item
+                span.meta-icon ⏱️
+                | 19 min read
+              span.meta-item
+                span.meta-icon 📝
+                | 4.2k words
+            p.post-excerpt
+              | 记录我的 Mac Mini 开发环境配置过程，分享一些实用的工具和经验。
+            a.read-more(href="#") 阅读全文
+            .post-tags
+              a.tag(href="#")
+                span MacOS
+              a.tag(href="#")
+                span 设备
+
+          //- 文章卡片 5
+          article.post-card
+            h3.post-title
+              a(href="#") 我的 Newsletter 精选清单
+            .post-meta
+              span.meta-item
+                span.meta-icon 📅
+                | 2022-12-03
+              span.meta-item
+                span.meta-icon ⏱️
+                | 4 min read
+              span.meta-item
+                span.meta-icon 📝
+                | 1.1k words
+            p.post-excerpt
+              | Newsletter 是一类去平台化的信息源，能让自己重新掌握信息消费的主动权。
+            a.read-more(href="#") 阅读全文
+            .post-tags
+              a.tag(href="#")
+                span Newsletter
+              a.tag(href="#")
+                span 知识管理
+          
+          //- 文章卡片 6
+          article.post-card
+            h3.post-title
+              a(href="#") 浅谈搭建平台-画布篇
+            .post-meta
+              span.meta-item
+                span.meta-icon 📅
+                | 2022-11-11
+              span.meta-item
+                span.meta-icon ⏱️
+                | 36 min read
+              span.meta-item
+                span.meta-icon 📝
+                | 9.7k words
+            p.post-excerpt
+              | 搭建平台本身也是一款软件，它更注重于"复用与组合"，而非实际的业务逻辑。
+            a.read-more(href="#") 阅读全文
+            .post-tags
+              a.tag(href="#")
+                span NCLC
+              a.tag(href="#")
+                span 前端
+
+      //- 页脚
+      footer.footer
+        p © 2025 SimonAKing ❤️ 
+          a(href="#") RSS Feed
+
+    //- 遮罩层
+    #overlay.overlay(onclick="toggleSidebar()")
+
+    //- JavaScript 文件将在这里引入，例如：
+    script(src="/js/blog.js")
