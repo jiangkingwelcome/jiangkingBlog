@@ -10,8 +10,17 @@ const autoprefixer = require('gulp-autoprefixer')
 const connect = require('gulp-connect')
 const pug = require('gulp-pug')
 const less = require('gulp-less')
+const rename = require('gulp-rename')
+const fs = require('fs')
+const path = require('path')
 
 const config = require('./config.json')
+let blogData = []
+try {
+	blogData = require('./src/blog/data/list.json')
+} catch (e) {
+	console.warn('警告：未找到 src/blog/data/list.json，请先运行 npm run fetch:notion')
+}
 
 gulp.task('clean', function () {
 	return del(['./dist/css/', './dist/js/'])
@@ -19,14 +28,14 @@ gulp.task('clean', function () {
 
 gulp.task('css', function () {
 	return gulp
-	.src('./src/css/*.less')
-	.pipe(less().on('error', function(err) {
-		console.log(err);
-		this.emit('end');
-	}))
-	.pipe(minifycss({ compatibility: 'ie8' }))
-	.pipe(autoprefixer({ overrideBrowserslist: ['last 2 version'] }))
-	.pipe(cssnano({ reduceIdents: false }))
+		.src('./src/css/*.less')
+		.pipe(less().on('error', function(err) {
+			console.log(err);
+			this.emit('end');
+		}))
+		.pipe(minifycss({ compatibility: 'ie8' }))
+		.pipe(autoprefixer({ overrideBrowserslist: ['last 2 version'] }))
+		.pipe(cssnano({ reduceIdents: false }))
 		.pipe(gulp.dest('./dist/css'))
 })
 
@@ -55,8 +64,8 @@ gulp.task('pug', function () {
 
 gulp.task('blog-pug', function () {
 	return gulp
-		.src('./src/blog/*.pug')
-		.pipe(pug({ data: config }))
+		.src('./src/blog/index.pug')
+		.pipe(pug({ data: { config, articles: blogData } }))
 		.pipe(gulp.dest('./dist/blog'))
 })
 
@@ -73,13 +82,33 @@ gulp.task('blog-css', function () {
 		.pipe(gulp.dest('./dist/css'))
 })
 
+gulp.task('blog-detail', function (done) {
+	if (!blogData || blogData.length === 0) return done();
+	const detailPug = './src/blog/detail.pug';
+	if (!fs.existsSync(detailPug)) return done();
+	blogData.forEach(article => {
+		if (article.status === 'Published') {
+			const detailJson = `./src/blog/data/${article.id}.json`;
+			let detail = {};
+			if (fs.existsSync(detailJson)) {
+				detail = require(detailJson);
+			}
+			gulp.src(detailPug)
+				.pipe(pug({ data: { config, article, detail } }))
+				.pipe(rename(`${article.id}.html`))
+				.pipe(gulp.dest('./dist/blog'));
+		}
+	});
+	done();
+});
+
 gulp.task('assets', function () {
 	return gulp
 		.src(['./src/assets/**/*'])
 		.pipe(gulp.dest('./dist/assets'));
 })
 
-gulp.task('build', gulp.series('clean', 'assets', 'pug', 'blog-pug', 'css', 'blog-css', 'js', 'html'))
+gulp.task('build', gulp.series('clean', 'assets', 'pug', 'blog-pug', 'css', 'blog-css', 'js', 'html', 'blog-detail'))
 gulp.task('default', gulp.series('build'))
 
 gulp.task('watch', function () {

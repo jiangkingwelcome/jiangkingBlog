@@ -1,0 +1,1271 @@
+{
+  "id": "0872b2f7-af7d-4f24-adf7-86f5d34dbc7b",
+  "date": "2022-05-18",
+  "type": "Page",
+  "slug": "about",
+  "summary": "可用链接/about访问，不会在菜单栏显示",
+  "title": "关于",
+  "status": "Invisible",
+  "detail": {
+    "0872b2f7-af7d-4f24-adf7-86f5d34dbc7b": {
+      "value": {
+        "id": "0872b2f7-af7d-4f24-adf7-86f5d34dbc7b",
+        "version": 227,
+        "type": "page",
+        "properties": {
+          "NX\\Q": [
+            [
+              "‣",
+              [
+                [
+                  "d",
+                  {
+                    "type": "date",
+                    "start_date": "2022-05-18"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "`gQ~": [
+            [
+              "Page"
+            ]
+          ],
+          "d]hq": [
+            [
+              "about"
+            ]
+          ],
+          "wz|S": [
+            [
+              "可用链接"
+            ],
+            [
+              "/about",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "访问，不会在菜单栏显示"
+            ]
+          ],
+          "title": [
+            [
+              "关于"
+            ]
+          ],
+          "f211bdc0-ee00-4186-9a7d-f68c055ec2ee": [
+            [
+              "Invisible"
+            ]
+          ]
+        },
+        "content": [
+          "205bdc50-cd06-409a-a81e-d9954183ba56",
+          "f47a6b00-408c-47cd-b091-b2c277ff73cd"
+        ],
+        "created_time": 1652853120000,
+        "last_edited_time": 1715865198092,
+        "parent_id": "4379bc14-5d22-453b-a153-12639616fc01",
+        "parent_table": "collection",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "02ab3b86-7800-4aa6-9e9e-415905ef32a5": {
+      "value": {
+        "id": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
+        "version": 687,
+        "type": "collection_view_page",
+        "content": [
+          "254eced8-9cba-4f90-9990-a885bd567dd0"
+        ],
+        "view_ids": [
+          "b7eb2157-2022-4ca5-827b-faa5ef82cf2d",
+          "e17348d8-5a80-4f02-813c-025b790d16c8",
+          "5010afdb-92b5-4f49-958b-0b8c900d6190",
+          "a80c22ef-8b56-410d-af06-07615c5f2654"
+        ],
+        "collection_id": "4379bc14-5d22-453b-a153-12639616fc01",
+        "format": {
+          "site_id": "1b596b44-beb9-8187-9ad5-00790706705c",
+          "block_locked": false,
+          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
+          "collection_pointer": {
+            "id": "4379bc14-5d22-453b-a153-12639616fc01",
+            "table": "collection",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "copied_from_pointer": {
+            "id": "bee1fccf-a3bd-47a1-a7be-83cc71372d83",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "page_cover_position": 0.6
+        },
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "27074aef-7216-41ed-baef-d9b53addd870"
+          },
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "is_site": true,
+            "added_timestamp": 1681797627522
+          }
+        ],
+        "created_time": 1636081968996,
+        "last_edited_time": 1737345255598,
+        "parent_id": "8991aef4-e3d8-4f18-9a70-d447fe4d47c7",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "bee1fccf-a3bd-47a1-a7be-83cc71372d83",
+        "file_ids": [
+          "abe3a0aa-2aff-4274-81bb-c2443d4ef9e2",
+          "a2a32795-101d-46aa-a7f6-eb35b8750166",
+          "29db38d2-d5fa-4fa6-8a92-3b527cfe80d1"
+        ],
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "8991aef4-e3d8-4f18-9a70-d447fe4d47c7": {
+      "role": "none"
+    },
+    "6b25c0c0-5330-4883-8835-eeb44bacfb48": {
+      "role": "none"
+    },
+    "205bdc50-cd06-409a-a81e-d9954183ba56": {
+      "value": {
+        "id": "205bdc50-cd06-409a-a81e-d9954183ba56",
+        "version": 40,
+        "type": "transclusion_container",
+        "content": [
+          "222a3cd3-8ee5-4005-801b-6e2594b2eeaf",
+          "08570aea-c7ce-4b2e-a635-5fdfde3e2b52",
+          "d857b934-04b2-43ab-898d-94b2a07d7903",
+          "439cd5ca-5803-47a6-92de-e3e3c539e145",
+          "3807f3fd-034a-45af-b8f6-93c7003d5075",
+          "d3c799fb-ece5-4696-ae01-d60f05a8ce6f",
+          "28bf69cf-12d3-4e08-b6e0-a8f4010b4d27",
+          "142390de-e09a-4eb1-bf0b-f157a5c1b991",
+          "44adb6fc-80bc-41d8-b473-3b21b60e6789",
+          "0c51e073-1c26-494b-bff7-0ba18de007d1",
+          "512057d7-3cbd-41a9-a0aa-ee83a88976ff",
+          "976e4bc3-9e5e-41be-82b6-54c65e3a93c1",
+          "7094b2e1-afdd-491b-9b73-6bbe867784fe",
+          "2eb53543-bb25-4d18-8b4e-b839e6d1be3e"
+        ],
+        "created_time": 1655442420000,
+        "last_edited_time": 1714459219345,
+        "parent_id": "0872b2f7-af7d-4f24-adf7-86f5d34dbc7b",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "f47a6b00-408c-47cd-b091-b2c277ff73cd": {
+      "value": {
+        "id": "f47a6b00-408c-47cd-b091-b2c277ff73cd",
+        "version": 3,
+        "type": "text",
+        "created_time": 1715865198092,
+        "last_edited_time": 1715865198092,
+        "parent_id": "0872b2f7-af7d-4f24-adf7-86f5d34dbc7b",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "222a3cd3-8ee5-4005-801b-6e2594b2eeaf": {
+      "value": {
+        "id": "222a3cd3-8ee5-4005-801b-6e2594b2eeaf",
+        "version": 12,
+        "type": "header",
+        "properties": {
+          "title": [
+            [
+              "说明"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "9beb0a39-2e07-41cf-a3b9-4276cd6be848",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1652853148487,
+        "last_edited_time": 1714459219345,
+        "parent_id": "205bdc50-cd06-409a-a81e-d9954183ba56",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "9beb0a39-2e07-41cf-a3b9-4276cd6be848",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "08570aea-c7ce-4b2e-a635-5fdfde3e2b52": {
+      "value": {
+        "id": "08570aea-c7ce-4b2e-a635-5fdfde3e2b52",
+        "version": 736,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "NotionNext支持自定义单页，在新版本中新增了隐藏单页的特性，隐藏单页不会出现在站点的导航菜单栏或博文列表中，只能通过完整url直接访问。"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "5e1d2727-09f4-478f-8471-b662ef2bfd9c",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1652853148488,
+        "last_edited_time": 1655477760000,
+        "parent_id": "205bdc50-cd06-409a-a81e-d9954183ba56",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "5e1d2727-09f4-478f-8471-b662ef2bfd9c",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "d857b934-04b2-43ab-898d-94b2a07d7903": {
+      "value": {
+        "id": "d857b934-04b2-43ab-898d-94b2a07d7903",
+        "version": 166,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "创建隐藏单页的方式： 将页面type设为"
+            ],
+            [
+              "Page",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "、status设为"
+            ],
+            [
+              "Invisible",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "、 并指定"
+            ],
+            [
+              "slug",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              " 值作为访问地址，详见以下属性表："
+            ]
+          ]
+        },
+        "created_time": 1655477760000,
+        "last_edited_time": 1655477820000,
+        "parent_id": "205bdc50-cd06-409a-a81e-d9954183ba56",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "439cd5ca-5803-47a6-92de-e3e3c539e145": {
+      "value": {
+        "id": "439cd5ca-5803-47a6-92de-e3e3c539e145",
+        "version": 12,
+        "type": "table",
+        "content": [
+          "bd7df7ed-828e-47c5-a304-afbdfa95e27f",
+          "4af2dc5f-8256-44b9-8a1e-4c77d8133ea3",
+          "81d151d1-c470-4482-b574-f59d93f2a47b",
+          "0dfa96e6-7b09-47f4-a264-1fddc9a5591d",
+          "b11afeae-2623-4f87-ab9c-ffef340d3db6",
+          "553cb012-828e-4db4-96d7-e82f60aaf4a2",
+          "929d4691-e3e2-457a-a7e5-9ba71c7acb70",
+          "89fc6042-24f9-4c4e-a573-dcb3bd8423b6",
+          "8caa3d9a-dd2e-4ad5-9f91-99f7995cfe93",
+          "fb080d01-377a-4f3a-8d3f-107f5bc61647",
+          "253e6e6b-3115-4e08-827f-5012c360564a"
+        ],
+        "format": {
+          "copied_from_pointer": {
+            "id": "605a007d-fc0f-4aba-9d83-d6646f75e29c",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "table_block_row_header": true,
+          "table_block_column_order": [
+            "BYf{",
+            "GENW",
+            "Js[p",
+            "`VuO"
+          ],
+          "table_block_column_format": {
+            "BYf{": {
+              "width": 126
+            },
+            "GENW": {
+              "width": 77.00000762939453
+            },
+            "Js[p": {
+              "width": 187
+            },
+            "`VuO": {
+              "width": 315.66668701171875
+            }
+          },
+          "table_block_column_header": true
+        },
+        "created_time": 1655441436331,
+        "last_edited_time": 1655453160000,
+        "parent_id": "205bdc50-cd06-409a-a81e-d9954183ba56",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "605a007d-fc0f-4aba-9d83-d6646f75e29c",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "3807f3fd-034a-45af-b8f6-93c7003d5075": {
+      "value": {
+        "id": "3807f3fd-034a-45af-b8f6-93c7003d5075",
+        "version": 15,
+        "type": "header",
+        "properties": {
+          "title": [
+            [
+              "示例"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "d9ce301d-5db9-483d-a469-60f849c66668",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1652853148489,
+        "last_edited_time": 1655453220000,
+        "parent_id": "205bdc50-cd06-409a-a81e-d9954183ba56",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "d9ce301d-5db9-483d-a469-60f849c66668",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "d3c799fb-ece5-4696-ae01-d60f05a8ce6f": {
+      "value": {
+        "id": "d3c799fb-ece5-4696-ae01-d60f05a8ce6f",
+        "version": 388,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "下图中的隐藏单页"
+            ],
+            [
+              "slug",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              " 值为"
+            ],
+            [
+              "example-3",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "，因此在浏览器中访问链接："
+            ],
+            [
+              "https://xxx.com/example-3",
+              [
+                [
+                  "a",
+                  "https://preview.tangly1024.com/example-3"
+                ]
+              ]
+            ],
+            [
+              " ， 即可展示此页面内容。"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "f71e4eac-a93c-43ff-906d-f7c8cac453d1",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1652853148491,
+        "last_edited_time": 1715865176630,
+        "parent_id": "205bdc50-cd06-409a-a81e-d9954183ba56",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "f71e4eac-a93c-43ff-906d-f7c8cac453d1",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "28bf69cf-12d3-4e08-b6e0-a8f4010b4d27": {
+      "value": {
+        "id": "28bf69cf-12d3-4e08-b6e0-a8f4010b4d27",
+        "version": 10,
+        "type": "text",
+        "created_time": 1655441280000,
+        "last_edited_time": 1655442420000,
+        "parent_id": "205bdc50-cd06-409a-a81e-d9954183ba56",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "142390de-e09a-4eb1-bf0b-f157a5c1b991": {
+      "value": {
+        "id": "142390de-e09a-4eb1-bf0b-f157a5c1b991",
+        "version": 16,
+        "type": "image",
+        "properties": {
+          "size": [
+            [
+              "272.1KB"
+            ]
+          ],
+          "title": [
+            [
+              "Untitled"
+            ]
+          ],
+          "source": [
+            [
+              "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ae393bd7-e32f-4cf9-ac1a-075f37910d4a/Untitled.png"
+            ]
+          ]
+        },
+        "format": {
+          "block_width": 768,
+          "display_source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ae393bd7-e32f-4cf9-ac1a-075f37910d4a/Untitled.png",
+          "block_full_width": false,
+          "block_page_width": true,
+          "block_aspect_ratio": 0.28852201257861637,
+          "block_preserve_scale": true
+        },
+        "created_time": 1652853240000,
+        "last_edited_time": 1655442420000,
+        "parent_id": "205bdc50-cd06-409a-a81e-d9954183ba56",
+        "parent_table": "block",
+        "alive": true,
+        "file_ids": [
+          "ae393bd7-e32f-4cf9-ac1a-075f37910d4a"
+        ],
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "44adb6fc-80bc-41d8-b473-3b21b60e6789": {
+      "value": {
+        "id": "44adb6fc-80bc-41d8-b473-3b21b60e6789",
+        "version": 28,
+        "type": "text",
+        "created_time": 1655442000000,
+        "last_edited_time": 1655442420000,
+        "parent_id": "205bdc50-cd06-409a-a81e-d9954183ba56",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "0c51e073-1c26-494b-bff7-0ba18de007d1": {
+      "value": {
+        "id": "0c51e073-1c26-494b-bff7-0ba18de007d1",
+        "version": 66,
+        "type": "header",
+        "properties": {
+          "title": [
+            [
+              "隐藏单页的使用场景"
+            ]
+          ]
+        },
+        "created_time": 1655441280000,
+        "last_edited_time": 1655477880000,
+        "parent_id": "205bdc50-cd06-409a-a81e-d9954183ba56",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "512057d7-3cbd-41a9-a0aa-ee83a88976ff": {
+      "value": {
+        "id": "512057d7-3cbd-41a9-a0aa-ee83a88976ff",
+        "version": 99,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "目前已知有两种使用场景："
+            ]
+          ]
+        },
+        "created_time": 1655442180000,
+        "last_edited_time": 1655477940000,
+        "parent_id": "205bdc50-cd06-409a-a81e-d9954183ba56",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "976e4bc3-9e5e-41be-82b6-54c65e3a93c1": {
+      "value": {
+        "id": "976e4bc3-9e5e-41be-82b6-54c65e3a93c1",
+        "version": 215,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "特许用户访问：某些页面不希望在博客列表或导航菜单中展示入口，只有知道完整地址的用户才能直接访问。"
+            ]
+          ]
+        },
+        "created_time": 1655442180000,
+        "last_edited_time": 1655478000000,
+        "parent_id": "205bdc50-cd06-409a-a81e-d9954183ba56",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "7094b2e1-afdd-491b-9b73-6bbe867784fe": {
+      "value": {
+        "id": "7094b2e1-afdd-491b-9b73-6bbe867784fe",
+        "version": 149,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "内嵌页面：博文中点击文字链接，需要跳到另一篇文章，且这些文章时不需在博客列表或者导航菜单中 展示，而仅仅作为某篇博文的附属文章。"
+            ]
+          ]
+        },
+        "created_time": 1655477940000,
+        "last_edited_time": 1655478060000,
+        "parent_id": "205bdc50-cd06-409a-a81e-d9954183ba56",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "2eb53543-bb25-4d18-8b4e-b839e6d1be3e": {
+      "value": {
+        "id": "2eb53543-bb25-4d18-8b4e-b839e6d1be3e",
+        "version": 6,
+        "type": "text",
+        "created_time": 1655442300000,
+        "last_edited_time": 1655451840000,
+        "parent_id": "205bdc50-cd06-409a-a81e-d9954183ba56",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "bd7df7ed-828e-47c5-a304-afbdfa95e27f": {
+      "value": {
+        "id": "bd7df7ed-828e-47c5-a304-afbdfa95e27f",
+        "version": 2,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "属性"
+            ]
+          ],
+          "GENW": [
+            [
+              "必填"
+            ]
+          ],
+          "Js[p": [
+            [
+              "说明"
+            ]
+          ],
+          "`VuO": [
+            [
+              "备注"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "a3ba15e7-f1f0-45a0-b2e2-65afa2383a4c",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1655441436332,
+        "last_edited_time": 1655441400000,
+        "parent_id": "439cd5ca-5803-47a6-92de-e3e3c539e145",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "a3ba15e7-f1f0-45a0-b2e2-65afa2383a4c",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "4af2dc5f-8256-44b9-8a1e-4c77d8133ea3": {
+      "value": {
+        "id": "4af2dc5f-8256-44b9-8a1e-4c77d8133ea3",
+        "version": 165,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "status",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "是",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ],
+          "Js[p": [
+            [
+              "发布状态"
+            ]
+          ],
+          "`VuO": [
+            [
+              "状态为"
+            ],
+            [
+              "Invisible",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              " 表示发布并隐藏页面入口"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "20cd43c7-7dbe-4684-8fd6-7c5d3cccb867",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1655441436333,
+        "last_edited_time": 1655441880000,
+        "parent_id": "439cd5ca-5803-47a6-92de-e3e3c539e145",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "20cd43c7-7dbe-4684-8fd6-7c5d3cccb867",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "81d151d1-c470-4482-b574-f59d93f2a47b": {
+      "value": {
+        "id": "81d151d1-c470-4482-b574-f59d93f2a47b",
+        "version": 109,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "slug",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "是 ",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ],
+          "Js[p": [
+            [
+              "文章路径，必填且唯一"
+            ]
+          ],
+          "`VuO": [
+            [
+              "用"
+            ],
+            [
+              "网站域名",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "+"
+            ],
+            [
+              "/",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "+"
+            ],
+            [
+              "slug",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "访问此页"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "66668f66-e0a7-49d4-af0e-2e1277dff157",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1655441436334,
+        "last_edited_time": 1655453220000,
+        "parent_id": "439cd5ca-5803-47a6-92de-e3e3c539e145",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "66668f66-e0a7-49d4-af0e-2e1277dff157",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "0dfa96e6-7b09-47f4-a264-1fddc9a5591d": {
+      "value": {
+        "id": "0dfa96e6-7b09-47f4-a264-1fddc9a5591d",
+        "version": 58,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "type",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "是",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ],
+          "Js[p": [
+            [
+              "Page",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "`VuO": [
+            [
+              "单页固定填写"
+            ],
+            [
+              "Page",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "4a616b4b-9351-4c57-9f18-7236093fef68",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1655441436333,
+        "last_edited_time": 1655441880000,
+        "parent_id": "439cd5ca-5803-47a6-92de-e3e3c539e145",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "4a616b4b-9351-4c57-9f18-7236093fef68",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "b11afeae-2623-4f87-ab9c-ffef340d3db6": {
+      "value": {
+        "id": "b11afeae-2623-4f87-ab9c-ffef340d3db6",
+        "version": 34,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "title",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "是",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ],
+          "Js[p": [
+            [
+              " 文章标题"
+            ]
+          ],
+          "`VuO": [
+            [
+              "不能为空"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "b6161c75-f30b-4f12-9184-2facf8050e3f",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1655441436333,
+        "last_edited_time": 1655453100000,
+        "parent_id": "439cd5ca-5803-47a6-92de-e3e3c539e145",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "b6161c75-f30b-4f12-9184-2facf8050e3f",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "553cb012-828e-4db4-96d7-e82f60aaf4a2": {
+      "value": {
+        "id": "553cb012-828e-4db4-96d7-e82f60aaf4a2",
+        "version": 2,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "summary",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "否"
+            ]
+          ],
+          "Js[p": [
+            [
+              "内容摘要"
+            ]
+          ],
+          "`VuO": [
+            [
+              "搜索和简略显示会用到"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "b7eed8de-c073-4960-81ef-b75b014ab5bd",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1655441436333,
+        "last_edited_time": 1655441400000,
+        "parent_id": "439cd5ca-5803-47a6-92de-e3e3c539e145",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "b7eed8de-c073-4960-81ef-b75b014ab5bd",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "929d4691-e3e2-457a-a7e5-9ba71c7acb70": {
+      "value": {
+        "id": "929d4691-e3e2-457a-a7e5-9ba71c7acb70",
+        "version": 2,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "date",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "否"
+            ]
+          ],
+          "Js[p": [
+            [
+              "发布日期"
+            ]
+          ],
+          "`VuO": [
+            [
+              "在V3.3.9之前的版本此项为必填。"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "20ae1a6e-7d0c-456b-a510-c03cb00454dc",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1655441436333,
+        "last_edited_time": 1655441400000,
+        "parent_id": "439cd5ca-5803-47a6-92de-e3e3c539e145",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "20ae1a6e-7d0c-456b-a510-c03cb00454dc",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "89fc6042-24f9-4c4e-a573-dcb3bd8423b6": {
+      "value": {
+        "id": "89fc6042-24f9-4c4e-a573-dcb3bd8423b6",
+        "version": 2,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "category",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "否"
+            ]
+          ],
+          "Js[p": [
+            [
+              "文章分类"
+            ]
+          ],
+          "`VuO": [
+            [
+              "可以自定义"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "44854eb0-485e-48cc-81b6-5b80488d3b7d",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1655441436333,
+        "last_edited_time": 1655441400000,
+        "parent_id": "439cd5ca-5803-47a6-92de-e3e3c539e145",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "44854eb0-485e-48cc-81b6-5b80488d3b7d",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "8caa3d9a-dd2e-4ad5-9f91-99f7995cfe93": {
+      "value": {
+        "id": "8caa3d9a-dd2e-4ad5-9f91-99f7995cfe93",
+        "version": 2,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "tags",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "否"
+            ]
+          ],
+          "Js[p": [
+            [
+              "文章标签"
+            ]
+          ],
+          "`VuO": [
+            [
+              "可多个，建议不要太多"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "c7ca1f34-ec0f-4c56-84c8-cab6ff13ca7f",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1655441436334,
+        "last_edited_time": 1655441400000,
+        "parent_id": "439cd5ca-5803-47a6-92de-e3e3c539e145",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "c7ca1f34-ec0f-4c56-84c8-cab6ff13ca7f",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "fb080d01-377a-4f3a-8d3f-107f5bc61647": {
+      "value": {
+        "id": "fb080d01-377a-4f3a-8d3f-107f5bc61647",
+        "version": 2,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "icon",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "否"
+            ]
+          ],
+          "Js[p": [
+            [
+              "菜单栏图标(仅当"
+            ],
+            [
+              "Page",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "类型有效)"
+            ]
+          ],
+          "`VuO": [
+            [
+              "可以参考："
+            ],
+            [
+              "图标库地址",
+              [
+                [
+                  "a",
+                  "https://fontawesome.com/v5/search"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "3f432717-e38f-4cf2-b648-8a82826e6d46",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1655441436334,
+        "last_edited_time": 1655441400000,
+        "parent_id": "439cd5ca-5803-47a6-92de-e3e3c539e145",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "3f432717-e38f-4cf2-b648-8a82826e6d46",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "253e6e6b-3115-4e08-827f-5012c360564a": {
+      "value": {
+        "id": "253e6e6b-3115-4e08-827f-5012c360564a",
+        "version": 4,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "password",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              " 否"
+            ]
+          ],
+          "Js[p": [
+            [
+              " 文章加锁"
+            ]
+          ],
+          "`VuO": [
+            [
+              " 需要输入密码才允许访问"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "224b5680-aeff-427d-af00-27a29a0684f6",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1655441436334,
+        "last_edited_time": 1655442000000,
+        "parent_id": "439cd5ca-5803-47a6-92de-e3e3c539e145",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "224b5680-aeff-427d-af00-27a29a0684f6",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "254eced8-9cba-4f90-9990-a885bd567dd0": {
+      "value": {
+        "id": "254eced8-9cba-4f90-9990-a885bd567dd0",
+        "version": 2,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "😅"
+            ]
+          ]
+        },
+        "created_time": 1652491338163,
+        "last_edited_time": 1652491320000,
+        "parent_id": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    }
+  }
+}

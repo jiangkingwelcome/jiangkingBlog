@@ -1,0 +1,80 @@
+doctype html
+html(lang="zh-CN")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=2,viewport-fit=cover")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+    meta(name="renderer" content="webkit")
+    title #{title} - SimonAKing/Blog
+    style.
+      //- 这里插入用户 HTML 中的 style 内容（省略，实际请粘贴完整 CSS）
+      // ... existing code ...
+  body
+    .dynamic-bg
+    .grid-bg
+    .cursor-glow#cursorGlow
+    .progress-bar#progressBar
+    header.top-nav
+      .nav-left
+        a.back-btn(href="/blog/" title="返回首页") ←
+        h3.site-title SimonAKing
+      .nav-right
+        button.nav-btn(title="目录") 📑
+        button.nav-btn(title="暗色模式") 🌙
+        button.nav-btn(title="分享") 🔗
+    .article-header
+      .header-bg
+        canvas#headerCanvas
+      .header-content
+        h1.article-title #{title}
+        .article-meta
+          span.meta-item
+            span.meta-icon 👤
+            | #{author}
+          span.meta-item
+            span.meta-icon 📅
+            | #{date}
+          span.meta-item
+            span.meta-icon ⏱️
+            | #{readingTime}
+          span.meta-item
+            span.meta-icon 👁️
+            | #{views}
+    article.article-container
+      .article-content !{content}
+      .article-tags
+        - var safeTags = (typeof tags !== 'undefined' && Array.isArray(tags)) ? tags : [];
+        each tag in safeTags
+          a.tag(href=`/blog/tags/${tag}/`)
+            span= tag
+      .author-info
+        .author-avatar
+          img(src=authorAvatar alt=author)
+        .author-details
+          h4= author
+          p.author-bio= authorBio
+      .related-posts
+        h3.section-title 相关文章
+        .related-grid
+          - var safeRelated = (typeof related !== 'undefined' && Array.isArray(related)) ? related : [];
+          each post in safeRelated
+            a.related-card(href=post.url)
+              h4.related-title= post.title
+              p.related-meta= post.meta
+    .article-actions
+      button.action-btn(title="点赞") 👍
+      button.action-btn(title="收藏") ⭐
+      button.action-btn(title="评论") 💬
+      .action-divider
+      button.action-btn(title="分享") 📤
+      button.action-btn(title="回到顶部" onclick="scrollToTop()") ⬆️
+    nav.toc#toc
+      h4.toc-title 目录
+      ul.toc-list
+        - var safeToc = (typeof toc !== 'undefined' && Array.isArray(toc)) ? toc : [];
+        each item in safeToc
+          li.toc-item
+            a.toc-link(href=item.href class=item.active ? 'active' : '')= item.text
+    script.
+      //- 这里插入用户 HTML 中的 script 内容（省略，实际请粘贴完整 JS）
+      // ... existing code ... 

@@ -1,0 +1,1656 @@
+{
+  "id": "8f4fe6b1-7a9e-43e0-bcfb-6edb50f10a62",
+  "date": "2021-07-02",
+  "type": "Config",
+  "summary": "在此文档直接添加配置文件，它的优先级最高，将覆盖环境变量和blog.config.js配置",
+  "title": "配置中心",
+  "status": "Published",
+  "detail": {
+    "8f4fe6b1-7a9e-43e0-bcfb-6edb50f10a62": {
+      "value": {
+        "id": "8f4fe6b1-7a9e-43e0-bcfb-6edb50f10a62",
+        "version": 82,
+        "type": "page",
+        "properties": {
+          "NX\\Q": [
+            [
+              "‣",
+              [
+                [
+                  "d",
+                  {
+                    "type": "date",
+                    "start_date": "2021-07-02"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "`gQ~": [
+            [
+              "Config"
+            ]
+          ],
+          "wz|S": [
+            [
+              "在此文档直接添加配置文件，它的优先级最高，将覆盖环境变量和blog.config.js配置"
+            ]
+          ],
+          "title": [
+            [
+              "配置中心"
+            ]
+          ],
+          "f211bdc0-ee00-4186-9a7d-f68c055ec2ee": [
+            [
+              "Published"
+            ]
+          ]
+        },
+        "content": [
+          "44007aa1-ef85-44bd-a39b-309cd6a474e6",
+          "6432910c-af7a-41e3-a593-0bc019f54eb0",
+          "2925a54f-3149-49fc-bf4e-c340d8ebd8ef",
+          "7ba6010d-6fb9-4854-89b2-25bbee086b42",
+          "0f38cd8d-1bd0-48c7-a775-50fb4d091772",
+          "48a7744b-da5c-4601-b31c-139675d28128",
+          "ac46d5ad-dd4a-4697-8b9f-4b7fa3ef0a99"
+        ],
+        "format": {
+          "page_font": "mono",
+          "page_icon": "🔧",
+          "block_locked": false,
+          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
+          "page_full_width": true,
+          "copied_from_pointer": {
+            "id": "66140f77-df62-4792-9c80-0ac750302ebc",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1699436775921,
+        "last_edited_time": 1731557740856,
+        "parent_id": "4379bc14-5d22-453b-a153-12639616fc01",
+        "parent_table": "collection",
+        "alive": true,
+        "copied_from": "66140f77-df62-4792-9c80-0ac750302ebc",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "02ab3b86-7800-4aa6-9e9e-415905ef32a5": {
+      "value": {
+        "id": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
+        "version": 687,
+        "type": "collection_view_page",
+        "content": [
+          "254eced8-9cba-4f90-9990-a885bd567dd0"
+        ],
+        "view_ids": [
+          "b7eb2157-2022-4ca5-827b-faa5ef82cf2d",
+          "e17348d8-5a80-4f02-813c-025b790d16c8",
+          "5010afdb-92b5-4f49-958b-0b8c900d6190",
+          "a80c22ef-8b56-410d-af06-07615c5f2654"
+        ],
+        "collection_id": "4379bc14-5d22-453b-a153-12639616fc01",
+        "format": {
+          "site_id": "1b596b44-beb9-8187-9ad5-00790706705c",
+          "block_locked": false,
+          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
+          "collection_pointer": {
+            "id": "4379bc14-5d22-453b-a153-12639616fc01",
+            "table": "collection",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "copied_from_pointer": {
+            "id": "bee1fccf-a3bd-47a1-a7be-83cc71372d83",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "page_cover_position": 0.6
+        },
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "27074aef-7216-41ed-baef-d9b53addd870"
+          },
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "is_site": true,
+            "added_timestamp": 1681797627522
+          }
+        ],
+        "created_time": 1636081968996,
+        "last_edited_time": 1737345255598,
+        "parent_id": "8991aef4-e3d8-4f18-9a70-d447fe4d47c7",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "bee1fccf-a3bd-47a1-a7be-83cc71372d83",
+        "file_ids": [
+          "abe3a0aa-2aff-4274-81bb-c2443d4ef9e2",
+          "a2a32795-101d-46aa-a7f6-eb35b8750166",
+          "29db38d2-d5fa-4fa6-8a92-3b527cfe80d1"
+        ],
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "8991aef4-e3d8-4f18-9a70-d447fe4d47c7": {
+      "role": "none"
+    },
+    "6b25c0c0-5330-4883-8835-eeb44bacfb48": {
+      "role": "none"
+    },
+    "44007aa1-ef85-44bd-a39b-309cd6a474e6": {
+      "value": {
+        "id": "44007aa1-ef85-44bd-a39b-309cd6a474e6",
+        "version": 25,
+        "type": "collection_view",
+        "view_ids": [
+          "f9efd7ed-6ece-4e09-a8af-4f5619cc860a"
+        ],
+        "collection_id": "570e05fa-86f1-4fec-9caf-da9628c2e539",
+        "format": {
+          "collection_pointer": {
+            "id": "570e05fa-86f1-4fec-9caf-da9628c2e539",
+            "table": "collection",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "copied_from_pointer": {
+            "id": "f5779756-c35f-4bf6-85ef-fefe6db9ab7a",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1699436775908,
+        "last_edited_time": 1717466297801,
+        "parent_id": "8f4fe6b1-7a9e-43e0-bcfb-6edb50f10a62",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "f5779756-c35f-4bf6-85ef-fefe6db9ab7a",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader",
+      "collection": {
+        "title": [
+          [
+            "CONFIG-TABLE"
+          ]
+        ],
+        "schema": {
+          "M;Tm": {
+            "name": "创建日期",
+            "type": "created_time",
+            "date_format": "YYYY/MM/DD",
+            "time_format": "H:mm"
+          },
+          "YymA": {
+            "name": "备注",
+            "type": "text"
+          },
+          "h\\ny": {
+            "name": "启用",
+            "type": "checkbox"
+          },
+          "{PsR": {
+            "name": "配置值",
+            "type": "text"
+          },
+          "title": {
+            "name": "配置名",
+            "type": "title"
+          }
+        },
+        "types": [
+          {
+            "id": "f9efd7ed-6ece-4e09-a8af-4f5619cc860a",
+            "version": 57,
+            "type": "table",
+            "name": "表格视图",
+            "format": {
+              "table_wrap": true,
+              "table_properties": [
+                {
+                  "wrap": true,
+                  "width": 71,
+                  "visible": true,
+                  "property": "h\\ny"
+                },
+                {
+                  "wrap": true,
+                  "width": 267,
+                  "visible": true,
+                  "property": "title"
+                },
+                {
+                  "wrap": true,
+                  "width": 403,
+                  "visible": true,
+                  "property": "{PsR"
+                },
+                {
+                  "wrap": true,
+                  "width": 440,
+                  "visible": true,
+                  "property": "YymA"
+                },
+                {
+                  "wrap": true,
+                  "width": 200,
+                  "visible": true,
+                  "property": "M;Tm"
+                }
+              ],
+              "collection_pointer": {
+                "id": "570e05fa-86f1-4fec-9caf-da9628c2e539",
+                "table": "collection",
+                "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+              },
+              "table_frozen_column_index": -1,
+              "hide_linked_collection_name": true
+            },
+            "parent_id": "44007aa1-ef85-44bd-a39b-309cd6a474e6",
+            "parent_table": "block",
+            "alive": true,
+            "page_sort": [
+              "41b8211c-2143-455b-a256-f95d78e12ac5",
+              "2ca6c078-1bc6-4b52-b97b-83ccca627520",
+              "7e9cb1c1-f57f-4423-bf2f-7be1ef74f0d9",
+              "5d40e954-16eb-41cc-ae90-882b10c055db",
+              "6a95d275-3e04-4646-9d08-982cb031e285",
+              "cc4e6750-7d62-4cd9-b116-b01b070c9f27",
+              "5d7870e3-115b-4da5-abc5-25006405bdc9",
+              "330d8121-2a3a-4c9b-a638-a1d46673630e",
+              "3cbb5b3d-102a-4db0-8942-7a4d2bcb5ac2",
+              "326e6f8d-4299-44a7-93f4-0c7a9a3e027c",
+              "b9719d9c-3fb7-4cc7-95fd-12e87b94d180",
+              "e968ca98-e574-4f50-9361-087728ae3960",
+              "1c3b819a-b594-48f1-b957-9fb4c7fe11e2",
+              "b1a3c67d-4730-4b5f-831e-62adb769b02e",
+              "0e540521-6460-4b6e-9209-db8316944265",
+              "6e27fd9e-5e41-4844-a400-d13be48770bd",
+              "cc5c4e79-e203-4a4a-9fa6-bf53100f5756",
+              "dab67b5a-f721-42e7-9522-463056bbc94f",
+              "19d5be88-5044-4c2a-bf37-9a183ad9741c",
+              "eb5d3cbe-3edd-4ff1-a1c8-899e27078c40",
+              "8dd45a1a-cd15-4415-9787-ac05a7eb3939",
+              "0fb4b42f-db91-4f13-ada5-c944549d1110",
+              "3d2baac6-328e-434d-bc25-f15da27a80ea",
+              "ecddccb7-bc54-43d8-90b5-f5463d434c6f",
+              "0c0134ed-554f-4c60-8d58-8ddb387ab690",
+              "c5b95ee6-78ea-4fa9-b24a-b3c42c208084",
+              "3779ab8a-3e5a-49b2-a855-e45d30898ad8",
+              "e5b45083-fa80-4a6b-a1ab-86eee1350454",
+              "8a52a21e-2107-4c79-abab-49d86306c3fa",
+              "1cf4d073-7082-4ab4-bef4-fa0fafd255d4",
+              "fefd09d5-9a8e-4b3f-aa52-f94b53b999ac",
+              "97b73e34-9939-4b8e-8ce9-bbce2526fb04",
+              "e7b52d11-6450-43d7-82ad-031134b7bb9d",
+              "d5f3cbb5-761c-484b-b4f9-439c75b0c228",
+              "d87a9806-cb32-44ec-adde-3e3655646710",
+              "572066e7-cde6-4a75-8988-f147c6e46587",
+              "9450a06b-321a-4f74-b815-17eb21d895dd",
+              "8e5d1841-91af-40a5-a543-b729e82eb9b0",
+              "d958da5e-6eae-4966-9f5d-4169458ee270",
+              "d7ba9f80-3984-443e-8fa6-62d759bce9d3",
+              "cc53cda8-55c2-4e2b-b6a4-1a1829fc9ec1",
+              "12f40ec8-a3aa-4874-a2af-69ee5238779d",
+              "8c551036-2a59-41af-943e-ce853a28b2e7",
+              "b79edc8d-02ae-4f09-be02-51e241c5af96",
+              "3522acfc-7351-41f3-a0d2-dd90710d7305",
+              "04814a39-c9a8-4751-8d09-f99026da9869",
+              "41441fd2-3749-4230-a981-11eafa534379",
+              "27177ff4-4a56-48fc-9d29-85df923c4c86",
+              "8e088899-1dc0-48a2-b172-23bb7211d2ec",
+              "79e0ed34-3cfe-4d48-8e10-b0fc5417b11b"
+            ],
+            "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        ],
+        "data": [
+          {
+            "id": "2ca6c078-1bc6-4b52-b97b-83ccca627520",
+            "备注": [
+              [
+                "JSON格式注意要用英文半角双引号 "
+              ],
+              [
+                "\"\"",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                "。\n若无双引号或用中文双引号 "
+              ],
+              [
+                "“” ",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                "会错误"
+              ],
+              [
+                " ",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                "\n多行配置，用于批量导入json格式的配置。V4.4.3 后支持"
+              ]
+            ],
+            "配置值": [
+              [
+                "{ \"TEST\""
+              ],
+              [
+                " ",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                ": \"测试值\""
+              ],
+              [
+                " ",
+                [
+                  [
+                    "b"
+                  ]
+                ]
+              ],
+              [
+                "}"
+              ]
+            ],
+            "配置名": [
+              [
+                "INLINE_CONFIG"
+              ]
+            ]
+          },
+          {
+            "id": "7e9cb1c1-f57f-4423-bf2f-7be1ef74f0d9",
+            "备注": [
+              [
+                "上线后的站点网址，必填！\n请务必在"
+              ],
+              [
+                "blog.config.js",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ],
+              [
+                "中或者环境变量中配置，以确保配置在项目编译时生效。\n"
+              ]
+            ],
+            "启用": [
+              [
+                "Yes"
+              ]
+            ],
+            "配置值": [
+              [
+                "http://preview.tangly1024.com"
+              ]
+            ],
+            "配置名": [
+              [
+                "LINK"
+              ]
+            ]
+          },
+          {
+            "id": "5d40e954-16eb-41cc-ae90-882b10c055db",
+            "备注": [
+              [
+                "网站主题,建议在blog.config.js 和环境变量中配置此项，从而让站点有更好的性能"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "simple"
+              ]
+            ],
+            "配置名": [
+              [
+                "THEME"
+              ]
+            ]
+          },
+          {
+            "id": "6a95d275-3e04-4646-9d08-982cb031e285",
+            "备注": [
+              [
+                "关键词SEO，用英文逗号隔开"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "notion,blog,博客,tangly1024"
+              ]
+            ],
+            "配置名": [
+              [
+                "KEYWORDS"
+              ]
+            ]
+          },
+          {
+            "id": "cc4e6750-7d62-4cd9-b116-b01b070c9f27",
+            "备注": [
+              [
+                "网站管理者 姓名"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "tangly1024"
+              ]
+            ],
+            "配置名": [
+              [
+                "AUTHOR",
+                [
+                  [
+                    "c"
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "id": "5d7870e3-115b-4da5-abc5-25006405bdc9",
+            "备注": [
+              [
+                "副标题放在标题栏"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "tangly1024"
+              ]
+            ],
+            "配置名": [
+              [
+                "BIO"
+              ]
+            ]
+          },
+          {
+            "id": "330d8121-2a3a-4c9b-a638-a1d46673630e",
+            "备注": [
+              [
+                "WEB_FONT 字体，在4.4.4版本中支持在NOTION_CONFIG设置。"
+              ]
+            ],
+            "配置值": [
+              [
+                " [\n\"https:"
+              ],
+              [
+                "//npm.elemecdn.com/lxgw-wenkai-webfont@1.6.0/style.css",
+                [
+                  [
+                    "a",
+                    "notion://npm.elemecdn.com/lxgw-wenkai-webfont@1.6.0/style.css"
+                  ]
+                ]
+              ],
+              [
+                "\",\n\"https:"
+              ],
+              [
+                "//fonts.googleapis.com/css?family=Bitter&display=swap",
+                [
+                  [
+                    "a",
+                    "notion://fonts.googleapis.com/css?family=Bitter&display=swap"
+                  ]
+                ]
+              ],
+              [
+                "\",\n\"https:"
+              ],
+              [
+                "//fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap",
+                [
+                  [
+                    "a",
+                    "notion://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap"
+                  ]
+                ]
+              ],
+              [
+                "\",\n\"https:"
+              ],
+              [
+                "//fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300&display=swap",
+                [
+                  [
+                    "a",
+                    "notion://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300&display=swap"
+                  ]
+                ]
+              ],
+              [
+                "\"\n]"
+              ]
+            ],
+            "配置名": [
+              [
+                "FONT_URL"
+              ]
+            ]
+          },
+          {
+            "id": "3cbb5b3d-102a-4db0-8942-7a4d2bcb5ac2",
+            "备注": [
+              [
+                "4.2.0版本开始支持：在代码里写CSS很麻烦，干脆在Notion里写；\n\n这里的css将背景换成了一张图片。\n编写CSS时请注意使用英文半角空格，而非中文全角空格.\n\n底部表示将所有主题的字体更改为落霞文楷，自定义字体旧版本需要改动blog.config.js ，之后的新版本中，建议直接在这里编辑font-family的css样式。"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "#wrapper {\nbackground-image: url("
+              ],
+              [
+                "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fdccb8a16-2b2a-464d-94c4-2bc12e5e0701%2F9c498771-1b07-4524-beeb-8dc0d75e56b8%2FUntitled.png?table=block&id=0e5cfcc3-5d8f-4413-9121-2216851a7078&t=0e5cfcc3-5d8f-4413-9121-2216851a7078",
+                [
+                  [
+                    "a",
+                    "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fdccb8a16-2b2a-464d-94c4-2bc12e5e0701%2F9c498771-1b07-4524-beeb-8dc0d75e56b8%2FUntitled.png?table=block&id=0e5cfcc3-5d8f-4413-9121-2216851a7078&t=0e5cfcc3-5d8f-4413-9121-2216851a7078"
+                  ]
+                ]
+              ],
+              [
+                ");\nbackground-position: center;\nbackground-repeat: no-repeat;\nbackground-size: 100% 100%;\n}\n\n\n[id^=\"theme-\"] {\n  font-family: LXGW WenKai;\n}"
+              ]
+            ],
+            "配置名": [
+              [
+                "GLOBAL_CSS"
+              ]
+            ]
+          },
+          {
+            "id": "326e6f8d-4299-44a7-93f4-0c7a9a3e027c",
+            "备注": [
+              [
+                "关闭宠物挂件"
+              ]
+            ],
+            "配置值": [
+              [
+                "false"
+              ]
+            ],
+            "配置名": [
+              [
+                "WIDGET_PET"
+              ]
+            ]
+          },
+          {
+            "id": "b9719d9c-3fb7-4cc7-95fd-12e87b94d180",
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "%category%"
+              ]
+            ],
+            "配置名": [
+              [
+                "POST_URL_PREFIX"
+              ]
+            ]
+          },
+          {
+            "id": "e968ca98-e574-4f50-9361-087728ae3960",
+            "备注": [
+              [
+                "在使用%category% 路径前缀时: 将url中的分类名映射成英文，效果如下：\n【使用前】\nxx.com/知行合一/slug\n【使用后】\nxx.com/learning/slug"
+              ]
+            ],
+            "启用": [
+              [
+                "Yes"
+              ]
+            ],
+            "配置值": [
+              [
+                "{\n\"知行合一\":\"learning\",\n\"技术分享\":\"technology\",\n\"心情随笔\":\"essay\"\n}"
+              ]
+            ],
+            "配置名": [
+              [
+                "POST_URL_PREFIX_MAPPING_CATEGORY"
+              ]
+            ]
+          },
+          {
+            "id": "1c3b819a-b594-48f1-b957-9fb4c7fe11e2",
+            "备注": [
+              [
+                "字体前者控制非衬线，后者控制粗细，留空是默认粗细\n[font-sans,font-serif] , [font-light,font-bold]"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "font-serif font-light"
+              ]
+            ],
+            "配置名": [
+              [
+                "FONT_STYLE"
+              ]
+            ]
+          },
+          {
+            "id": "b1a3c67d-4730-4b5f-831e-62adb769b02e",
+            "备注": [
+              [
+                "hexo，matery主题欢迎语在此配置，英文逗号隔开 ,  即可支持多个欢迎语打字效果。"
+              ]
+            ],
+            "配置值": [
+              [
+                "Hi，我是一个程序员, Hi，我是一个打工人,Hi，我是一个干饭人,欢迎来到我的博客🎉"
+              ]
+            ],
+            "配置名": [
+              [
+                "GREETING_WORDS"
+              ]
+            ]
+          },
+          {
+            "id": "0e540521-6460-4b6e-9209-db8316944265",
+            "备注": [
+              [
+                "4.2.0版本开始支持：在代码里写JS很麻烦，干脆在Notion里写；这里的JS将直接在网站中运行注入。"
+              ]
+            ],
+            "启用": [
+              [
+                "Yes"
+              ]
+            ],
+            "配置值": [
+              [
+                "console.log('test');"
+              ]
+            ],
+            "配置名": [
+              [
+                "GLOBAL_JS"
+              ]
+            ]
+          },
+          {
+            "id": "6e27fd9e-5e41-4844-a400-d13be48770bd",
+            "备注": [
+              [
+                "二级菜单 ，在4.0的版本后默认开启"
+              ]
+            ],
+            "启用": [
+              [
+                "Yes"
+              ]
+            ],
+            "配置值": [
+              [
+                "true"
+              ]
+            ],
+            "配置名": [
+              [
+                "CUSTOM_MENU"
+              ]
+            ]
+          },
+          {
+            "id": "cc5c4e79-e203-4a4a-9fa6-bf53100f5756",
+            "备注": [
+              [
+                "是否用自定义菜单覆盖浏览器右键菜单"
+              ]
+            ],
+            "启用": [
+              [
+                "Yes"
+              ]
+            ],
+            "配置值": [
+              [
+                "false"
+              ]
+            ],
+            "配置名": [
+              [
+                "CUSTOM_RIGHT_CLICK_CONTEXT_MENU"
+              ]
+            ]
+          },
+          {
+            "id": "dab67b5a-f721-42e7-9522-463056bbc94f",
+            "备注": [
+              [
+                "网站默认语言 zh-CN,en-US 等"
+              ]
+            ],
+            "启用": [
+              [
+                "Yes"
+              ]
+            ],
+            "配置值": [
+              [
+                "en-US"
+              ]
+            ],
+            "配置名": [
+              [
+                "LANG"
+              ]
+            ]
+          },
+          {
+            "id": "19d5be88-5044-4c2a-bf37-9a183ad9741c",
+            "备注": [
+              [
+                "是否允许用户复制网页文字 true 是 , false 否"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "true"
+              ]
+            ],
+            "配置名": [
+              [
+                "CAN_COPY"
+              ]
+            ]
+          },
+          {
+            "id": "eb5d3cbe-3edd-4ff1-a1c8-899e27078c40",
+            "备注": [
+              [
+                "网站发布年份"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "2023"
+              ]
+            ],
+            "配置名": [
+              [
+                "SINCE"
+              ]
+            ]
+          },
+          {
+            "id": "8dd45a1a-cd15-4415-9787-ac05a7eb3939",
+            "备注": [
+              [
+                "whatsapp联系方式"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "https://www.whatsapp.com/",
+                [
+                  [
+                    "a",
+                    "https://www.whatsapp.com/"
+                  ]
+                ]
+              ]
+            ],
+            "配置名": [
+              [
+                "CONTACT_WHATSAPP"
+              ]
+            ]
+          },
+          {
+            "id": "0fb4b42f-db91-4f13-ada5-c944549d1110",
+            "备注": [
+              [
+                "联系邮箱"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "1111@222.com"
+              ]
+            ],
+            "配置名": [
+              [
+                "CONTACT_EMAIL"
+              ]
+            ]
+          },
+          {
+            "id": "3d2baac6-328e-434d-bc25-f15da27a80ea",
+            "备注": [
+              [
+                "跳转telegram"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "https://telegram.org"
+              ]
+            ],
+            "配置名": [
+              [
+                "CONTACT_TELEGRAM"
+              ]
+            ]
+          },
+          {
+            "id": "d87a9806-cb32-44ec-adde-3e3655646710",
+            "备注": [
+              [
+                "是否显示切换主题按钮"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "true"
+              ]
+            ],
+            "配置名": [
+              [
+                "THEME_SWITCH"
+              ]
+            ]
+          },
+          {
+            "id": "572066e7-cde6-4a75-8988-f147c6e46587",
+            "备注": [
+              [
+                "是否文章分享功能"
+              ]
+            ],
+            "配置值": [
+              [
+                "true"
+              ]
+            ],
+            "配置名": [
+              [
+                "POST_SHARE_BAR_ENABLE"
+              ]
+            ]
+          },
+          {
+            "id": "8e5d1841-91af-40a5-a543-b729e82eb9b0",
+            "备注": [
+              [
+                "首页预览的分类数量"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "2"
+              ]
+            ],
+            "配置名": [
+              [
+                "PREVIEW_CATEGORY_COUNT"
+              ]
+            ]
+          },
+          {
+            "id": "d958da5e-6eae-4966-9f5d-4169458ee270",
+            "备注": [
+              [
+                "首页预览的标签数量"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "5"
+              ]
+            ],
+            "配置名": [
+              [
+                "PREVIEW_TAG_COUNT"
+              ]
+            ]
+          },
+          {
+            "id": "cc53cda8-55c2-4e2b-b6a4-1a1829fc9ec1",
+            "备注": [
+              [
+                "站点在浏览器的小图标 favicon"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "https://cos.onewk.cn/img/202405011830005.ico",
+                [
+                  [
+                    "a",
+                    "https://cos.onewk.cn/img/202405011830005.ico"
+                  ]
+                ]
+              ]
+            ],
+            "配置名": [
+              [
+                "BLOG_FAVICON"
+              ]
+            ]
+          },
+          {
+            "id": "12f40ec8-a3aa-4874-a2af-69ee5238779d",
+            "备注": [
+              [
+                "站点标题直接读取数据库的标题，无需在此配置"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "tangly1024"
+              ]
+            ],
+            "配置名": [
+              [
+                "TITLE"
+              ]
+            ]
+          },
+          {
+            "id": "8c551036-2a59-41af-943e-ce853a28b2e7",
+            "备注": [
+              [
+                "站点描述直接读取数据库的描述题，无需在此配置"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "tangly1024"
+              ]
+            ],
+            "配置名": [
+              [
+                "DESCRIPTION"
+              ]
+            ]
+          },
+          {
+            "id": "b79edc8d-02ae-4f09-be02-51e241c5af96",
+            "备注": [
+              [
+                "封面大图URL"
+              ]
+            ],
+            "启用": [
+              [
+                "No"
+              ]
+            ],
+            "配置值": [
+              [
+                "https://source.unsplash.com/random"
+              ]
+            ],
+            "配置名": [
+              [
+                "HOME_BANNER_IMAGE"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "6432910c-af7a-41e3-a593-0bc019f54eb0": {
+      "value": {
+        "id": "6432910c-af7a-41e3-a593-0bc019f54eb0",
+        "version": 9,
+        "type": "header",
+        "properties": {
+          "title": [
+            [
+              "配置中心使用说明"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "66bb8d17-82f5-4b48-ba6d-5b45e3b41c06",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1699436775906,
+        "last_edited_time": 1699436928633,
+        "parent_id": "8f4fe6b1-7a9e-43e0-bcfb-6edb50f10a62",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "66bb8d17-82f5-4b48-ba6d-5b45e3b41c06",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "2925a54f-3149-49fc-bf4e-c340d8ebd8ef": {
+      "value": {
+        "id": "2925a54f-3149-49fc-bf4e-c340d8ebd8ef",
+        "version": 399,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "1.仅 "
+            ],
+            [
+              "V4.1.0",
+              [
+                [
+                  "_"
+                ],
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " 之后的版本中支持该配置页面\n2.此处配置的优先级最高，它将"
+            ],
+            [
+              "覆盖",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              "Vercel环境变量",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "、覆盖"
+            ],
+            [
+              "blog.config.js",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "。\n3.您可以在"
+            ],
+            [
+              "blog.config.js",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "以及各个主题的"
+            ],
+            [
+              "config.js",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "中找到所有支持配置的"
+            ],
+            [
+              "配置名",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "与"
+            ],
+            [
+              "配置值",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "\n4.并非所有配置都支持，例如"
+            ],
+            [
+              "NOTION_PAGE_ID",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "就不支持在这里配置等"
+            ]
+          ]
+        },
+        "format": {
+          "page_icon": "💡",
+          "copied_from_pointer": {
+            "id": "a55b4da6-09d6-475e-aae0-30f35ff89804",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1699436775907,
+        "last_edited_time": 1731557740856,
+        "parent_id": "8f4fe6b1-7a9e-43e0-bcfb-6edb50f10a62",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "a55b4da6-09d6-475e-aae0-30f35ff89804",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "7ba6010d-6fb9-4854-89b2-25bbee086b42": {
+      "value": {
+        "id": "7ba6010d-6fb9-4854-89b2-25bbee086b42",
+        "version": 18,
+        "type": "sub_header",
+        "properties": {
+          "title": [
+            [
+              "表格字段说明"
+            ]
+          ]
+        },
+        "created_time": 1699436972606,
+        "last_edited_time": 1699436976450,
+        "parent_id": "8f4fe6b1-7a9e-43e0-bcfb-6edb50f10a62",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "0f38cd8d-1bd0-48c7-a775-50fb4d091772": {
+      "value": {
+        "id": "0f38cd8d-1bd0-48c7-a775-50fb4d091772",
+        "version": 5,
+        "type": "table",
+        "content": [
+          "a83c5896-5a29-4ff9-8a5d-694224321a6e",
+          "96272790-1866-407f-aa62-91dd737644b3",
+          "d92642a5-a2e6-4ede-81d4-161c6902e6cb",
+          "48f4437e-63ae-4259-9b48-46164ca15494",
+          "e13fdf55-616a-4a0c-9610-386507a29557",
+          "22e618df-4e98-4d1a-88a9-24d086a882ff"
+        ],
+        "format": {
+          "copied_from_pointer": {
+            "id": "788a5764-e88c-4ac5-af4f-dca841b776a7",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "table_block_column_order": [
+            "lYDG",
+            "=YWb"
+          ],
+          "table_block_column_format": {
+            "=YWb": {
+              "width": 488
+            }
+          },
+          "table_block_column_header": true
+        },
+        "created_time": 1699436775906,
+        "last_edited_time": 1699437209793,
+        "parent_id": "8f4fe6b1-7a9e-43e0-bcfb-6edb50f10a62",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "788a5764-e88c-4ac5-af4f-dca841b776a7",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "48a7744b-da5c-4601-b31c-139675d28128": {
+      "value": {
+        "id": "48a7744b-da5c-4601-b31c-139675d28128",
+        "version": 39,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "请不要修改这里的表头，除非你知道在哪里修改对应的代码。"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "df3770d6-087e-4bc9-9a1d-5e9a93f90400",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1699436775907,
+        "last_edited_time": 1699521893519,
+        "parent_id": "8f4fe6b1-7a9e-43e0-bcfb-6edb50f10a62",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "df3770d6-087e-4bc9-9a1d-5e9a93f90400",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "ac46d5ad-dd4a-4697-8b9f-4b7fa3ef0a99": {
+      "value": {
+        "id": "ac46d5ad-dd4a-4697-8b9f-4b7fa3ef0a99",
+        "version": 10,
+        "type": "text",
+        "format": {
+          "copied_from_pointer": {
+            "id": "8fd554c8-8667-49e5-b103-04bfeb31a8d5",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1699436775907,
+        "last_edited_time": 1715574632000,
+        "parent_id": "8f4fe6b1-7a9e-43e0-bcfb-6edb50f10a62",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "8fd554c8-8667-49e5-b103-04bfeb31a8d5",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "a83c5896-5a29-4ff9-8a5d-694224321a6e": {
+      "value": {
+        "id": "a83c5896-5a29-4ff9-8a5d-694224321a6e",
+        "version": 5,
+        "type": "table_row",
+        "properties": {
+          "=YWb": [
+            [
+              "说明"
+            ]
+          ],
+          "lYDG": [
+            [
+              "表头字段"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "3ba01eb9-83bd-4f4c-9ca4-849a8a8e3015",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1699436775908,
+        "last_edited_time": 1699437208187,
+        "parent_id": "0f38cd8d-1bd0-48c7-a775-50fb4d091772",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "3ba01eb9-83bd-4f4c-9ca4-849a8a8e3015",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "96272790-1866-407f-aa62-91dd737644b3": {
+      "value": {
+        "id": "96272790-1866-407f-aa62-91dd737644b3",
+        "version": 30,
+        "type": "table_row",
+        "properties": {
+          "=YWb": [
+            [
+              "想要生效的配置，请将其勾选"
+            ]
+          ],
+          "lYDG": [
+            [
+              "启用"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "b79c79d5-eebc-4c84-a112-f6eedaaf5037",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1699436775909,
+        "last_edited_time": 1699437156152,
+        "parent_id": "0f38cd8d-1bd0-48c7-a775-50fb4d091772",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "b79c79d5-eebc-4c84-a112-f6eedaaf5037",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "d92642a5-a2e6-4ede-81d4-161c6902e6cb": {
+      "value": {
+        "id": "d92642a5-a2e6-4ede-81d4-161c6902e6cb",
+        "version": 12,
+        "type": "table_row",
+        "properties": {
+          "=YWb": [
+            [
+              "参阅配置文件变量名，例如 "
+            ],
+            [
+              "AUTHOR",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "lYDG": [
+            [
+              "配置名"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "881c88ea-1152-4e7a-bde1-dac1a75ff9bf",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1699436775909,
+        "last_edited_time": 1702462257335,
+        "parent_id": "0f38cd8d-1bd0-48c7-a775-50fb4d091772",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "881c88ea-1152-4e7a-bde1-dac1a75ff9bf",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "48f4437e-63ae-4259-9b48-46164ca15494": {
+      "value": {
+        "id": "48f4437e-63ae-4259-9b48-46164ca15494",
+        "version": 1,
+        "type": "table_row",
+        "properties": {
+          "=YWb": [
+            [
+              "输入您的值 例如作者名 "
+            ],
+            [
+              "tangly1024",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              " ， 或者 "
+            ],
+            [
+              "true",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              " / "
+            ],
+            [
+              "false",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              " "
+            ]
+          ],
+          "lYDG": [
+            [
+              "配置值"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "3d2ccbf5-b59f-4ff9-8271-81c1b818abbf",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1699436775908,
+        "last_edited_time": 1699436775908,
+        "parent_id": "0f38cd8d-1bd0-48c7-a775-50fb4d091772",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "3d2ccbf5-b59f-4ff9-8271-81c1b818abbf",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "e13fdf55-616a-4a0c-9610-386507a29557": {
+      "value": {
+        "id": "e13fdf55-616a-4a0c-9610-386507a29557",
+        "version": 1,
+        "type": "table_row",
+        "properties": {
+          "=YWb": [
+            [
+              "仅作为备忘说明使用"
+            ]
+          ],
+          "lYDG": [
+            [
+              "配置备注"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "63729f3c-de27-4e14-bc55-786435d5c19e",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1699436775909,
+        "last_edited_time": 1699436775909,
+        "parent_id": "0f38cd8d-1bd0-48c7-a775-50fb4d091772",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "63729f3c-de27-4e14-bc55-786435d5c19e",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "22e618df-4e98-4d1a-88a9-24d086a882ff": {
+      "value": {
+        "id": "22e618df-4e98-4d1a-88a9-24d086a882ff",
+        "version": 1,
+        "type": "table_row",
+        "properties": {
+          "=YWb": [
+            [
+              "如果配置的值是一张图片，可以在这里上传"
+            ]
+          ],
+          "lYDG": [
+            [
+              "配置附件"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "e5814eaa-b5e1-452d-bbc5-60e970a479e6",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1699436775910,
+        "last_edited_time": 1699436775910,
+        "parent_id": "0f38cd8d-1bd0-48c7-a775-50fb4d091772",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "e5814eaa-b5e1-452d-bbc5-60e970a479e6",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "254eced8-9cba-4f90-9990-a885bd567dd0": {
+      "value": {
+        "id": "254eced8-9cba-4f90-9990-a885bd567dd0",
+        "version": 2,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "😅"
+            ]
+          ]
+        },
+        "created_time": 1652491338163,
+        "last_edited_time": 1652491320000,
+        "parent_id": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    }
+  }
+}

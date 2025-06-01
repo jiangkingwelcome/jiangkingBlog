@@ -1,0 +1,293 @@
+{
+  "id": "1e08ee78-d240-47cb-9d52-6a484b248543",
+  "icon": "fab fa-github",
+  "date": "2021-03-13",
+  "type": "Page",
+  "slug": "https://github.com/tangly1024/NotionNext",
+  "summary": "这是一个指向外部地址的单页",
+  "title": "Github",
+  "status": "Published",
+  "detail": {
+    "1e08ee78-d240-47cb-9d52-6a484b248543": {
+      "value": {
+        "id": "1e08ee78-d240-47cb-9d52-6a484b248543",
+        "version": 339,
+        "type": "page",
+        "properties": {
+          "Dj]h": [
+            [
+              "fab fa-github"
+            ]
+          ],
+          "NX\\Q": [
+            [
+              "‣",
+              [
+                [
+                  "d",
+                  {
+                    "type": "date",
+                    "start_date": "2021-03-13"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "`gQ~": [
+            [
+              "Page"
+            ]
+          ],
+          "d]hq": [
+            [
+              "https://github.com/tangly1024/NotionNext",
+              [
+                [
+                  "a",
+                  "https://github.com/tangly1024/NotionNext"
+                ]
+              ]
+            ]
+          ],
+          "wz|S": [
+            [
+              "这是一个指向"
+            ],
+            [
+              "外部地址",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "的单页"
+            ]
+          ],
+          "title": [
+            [
+              "Github"
+            ]
+          ],
+          "f211bdc0-ee00-4186-9a7d-f68c055ec2ee": [
+            [
+              "Published"
+            ]
+          ]
+        },
+        "content": [
+          "53a3190f-1b53-4402-a7c3-d32e1ccb2150",
+          "63ccf65a-68d9-4473-b827-739977ac5d33",
+          "c7cb7c4e-2d36-4871-877f-1da65b41d8bd",
+          "a6e80ef1-746f-4b64-9255-9858df23b9a7"
+        ],
+        "format": {
+          "copied_from_pointer": {
+            "id": "a4feb373-8a89-4954-aff3-cc9c39831ffb",
+            "table": "block",
+            "spaceId": "ac4cb96d-c8f8-4040-9bb2-868d9fc7f526"
+          }
+        },
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "27074aef-7216-41ed-baef-d9b53addd870"
+          }
+        ],
+        "created_time": 1645665084880,
+        "last_edited_time": 1678504802016,
+        "parent_id": "4379bc14-5d22-453b-a153-12639616fc01",
+        "parent_table": "collection",
+        "alive": true,
+        "copied_from": "a4feb373-8a89-4954-aff3-cc9c39831ffb",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "02ab3b86-7800-4aa6-9e9e-415905ef32a5": {
+      "value": {
+        "id": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
+        "version": 687,
+        "type": "collection_view_page",
+        "content": [
+          "254eced8-9cba-4f90-9990-a885bd567dd0"
+        ],
+        "view_ids": [
+          "b7eb2157-2022-4ca5-827b-faa5ef82cf2d",
+          "e17348d8-5a80-4f02-813c-025b790d16c8",
+          "5010afdb-92b5-4f49-958b-0b8c900d6190",
+          "a80c22ef-8b56-410d-af06-07615c5f2654"
+        ],
+        "collection_id": "4379bc14-5d22-453b-a153-12639616fc01",
+        "format": {
+          "site_id": "1b596b44-beb9-8187-9ad5-00790706705c",
+          "block_locked": false,
+          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
+          "collection_pointer": {
+            "id": "4379bc14-5d22-453b-a153-12639616fc01",
+            "table": "collection",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "copied_from_pointer": {
+            "id": "bee1fccf-a3bd-47a1-a7be-83cc71372d83",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "page_cover_position": 0.6
+        },
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "27074aef-7216-41ed-baef-d9b53addd870"
+          },
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "is_site": true,
+            "added_timestamp": 1681797627522
+          }
+        ],
+        "created_time": 1636081968996,
+        "last_edited_time": 1737345255598,
+        "parent_id": "8991aef4-e3d8-4f18-9a70-d447fe4d47c7",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "bee1fccf-a3bd-47a1-a7be-83cc71372d83",
+        "file_ids": [
+          "abe3a0aa-2aff-4274-81bb-c2443d4ef9e2",
+          "a2a32795-101d-46aa-a7f6-eb35b8750166",
+          "29db38d2-d5fa-4fa6-8a92-3b527cfe80d1"
+        ],
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "8991aef4-e3d8-4f18-9a70-d447fe4d47c7": {
+      "role": "none"
+    },
+    "6b25c0c0-5330-4883-8835-eeb44bacfb48": {
+      "role": "none"
+    },
+    "53a3190f-1b53-4402-a7c3-d32e1ccb2150": {
+      "value": {
+        "id": "53a3190f-1b53-4402-a7c3-d32e1ccb2150",
+        "version": 1,
+        "type": "column_list",
+        "format": {
+          "copied_from_pointer": {
+            "id": "01e60449-f923-44b7-88ab-ef18eaf26872",
+            "table": "block",
+            "spaceId": "ac4cb96d-c8f8-4040-9bb2-868d9fc7f526"
+          }
+        },
+        "created_time": 1645665084871,
+        "last_edited_time": 1645665084871,
+        "parent_id": "1e08ee78-d240-47cb-9d52-6a484b248543",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "01e60449-f923-44b7-88ab-ef18eaf26872",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "63ccf65a-68d9-4473-b827-739977ac5d33": {
+      "value": {
+        "id": "63ccf65a-68d9-4473-b827-739977ac5d33",
+        "version": 68,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "这只是一个测试的 单页～ "
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "dd2f1d9b-b72b-421b-bb2f-10b82c85d695",
+            "table": "block",
+            "spaceId": "ac4cb96d-c8f8-4040-9bb2-868d9fc7f526"
+          }
+        },
+        "created_time": 1645665084875,
+        "last_edited_time": 1645967520000,
+        "parent_id": "1e08ee78-d240-47cb-9d52-6a484b248543",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "dd2f1d9b-b72b-421b-bb2f-10b82c85d695",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "c7cb7c4e-2d36-4871-877f-1da65b41d8bd": {
+      "value": {
+        "id": "c7cb7c4e-2d36-4871-877f-1da65b41d8bd",
+        "version": 147,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "由于"
+            ],
+            [
+              "slug",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "地址这一栏填写的是外链，从而这个页面会跳转到外部网站"
+            ]
+          ]
+        },
+        "created_time": 1646724060000,
+        "last_edited_time": 1646724120000,
+        "parent_id": "1e08ee78-d240-47cb-9d52-6a484b248543",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "a6e80ef1-746f-4b64-9255-9858df23b9a7": {
+      "value": {
+        "id": "a6e80ef1-746f-4b64-9255-9858df23b9a7",
+        "version": 3,
+        "type": "text",
+        "created_time": 1652490120000,
+        "last_edited_time": 1652490120000,
+        "parent_id": "1e08ee78-d240-47cb-9d52-6a484b248543",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "254eced8-9cba-4f90-9990-a885bd567dd0": {
+      "value": {
+        "id": "254eced8-9cba-4f90-9990-a885bd567dd0",
+        "version": 2,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "😅"
+            ]
+          ]
+        },
+        "created_time": 1652491338163,
+        "last_edited_time": 1652491320000,
+        "parent_id": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    }
+  }
+}

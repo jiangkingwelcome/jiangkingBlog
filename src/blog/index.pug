@@ -102,143 +102,26 @@ html(lang="zh-CN")
       //- 文章内容
       .content-wrapper
         .posts-grid
-          //- 文章卡片 1
-          article.post-card
-            h3.post-title
-              a(href="#") LLM Inference Optimization Overview - From Data to System Architecture
-            .post-meta
-              span.meta-item
-                span.meta-icon 📅
-                | 2025-05-05
-              span.meta-item
-                span.meta-icon ⏱️
-                | 18 min read
-              span.meta-item
-                span.meta-icon 📝
-                | 2.9k words
-            p.post-excerpt
-              | With the widespread application of LLMs across various industries, achieving efficient inference while maintaining model performance has become a key challenge.
-            a.read-more(href="#") 阅读全文
-            .post-tags
-              a.tag(href="#")
-                span Inference Optimization
-              a.tag(href="#")
-                span LLM
-          
-          //- 文章卡片 2
-          article.post-card
-            h3.post-title
-              a(href="#") 聊聊大模型推理加速：从数据到系统的技术概要
-            .post-meta
-              span.meta-item
-                span.meta-icon 📅
-                | 2025-03-27
-              span.meta-item
-                span.meta-icon ⏱️
-                | 16 min read
-              span.meta-item
-                span.meta-icon 📝
-                | 4.5k words
-            p.post-excerpt
-              | 随着 LLMs 在各行各业的应用，如何在保证模型性能的前提下实现高效推理已成为重点挑战之一。
-            a.read-more(href="#") 阅读全文
-            .post-tags
-              a.tag(href="#")
-                span LLM
-              a.tag(href="#")
-                span 推理加速
-
-          //- 文章卡片 3
-          article.post-card
-            h3.post-title
-              a(href="#") 聊聊 Rerank：从 BERT 到大模型的技术旅程
-            .post-meta
-              span.meta-item
-                span.meta-icon 📅
-                | 2024-12-09
-              span.meta-item
-                span.meta-icon ⏱️
-                | 10 min read
-              span.meta-item
-                span.meta-icon 📝
-                | 2.6k words
-            p.post-excerpt
-              | 从搜索引擎到大语言模型，Rerank 技术一直在默默发挥着"最后一公里"的关键作用。
-            a.read-more(href="#") 阅读全文
-            .post-tags
-              a.tag(href="#")
-                span LLM
-              a.tag(href="#")
-                span Rerank
-          
-          //- 文章卡片 4
-          article.post-card
-            h3.post-title
-              a(href="#") Mac Mini 换机指南
-            .post-meta
-              span.meta-item
-                span.meta-icon 📅
-                | 2023-05-22
-              span.meta-item
-                span.meta-icon ⏱️
-                | 19 min read
-              span.meta-item
-                span.meta-icon 📝
-                | 4.2k words
-            p.post-excerpt
-              | 记录我的 Mac Mini 开发环境配置过程，分享一些实用的工具和经验。
-            a.read-more(href="#") 阅读全文
-            .post-tags
-              a.tag(href="#")
-                span MacOS
-              a.tag(href="#")
-                span 设备
-
-          //- 文章卡片 5
-          article.post-card
-            h3.post-title
-              a(href="#") 我的 Newsletter 精选清单
-            .post-meta
-              span.meta-item
-                span.meta-icon 📅
-                | 2022-12-03
-              span.meta-item
-                span.meta-icon ⏱️
-                | 4 min read
-              span.meta-item
-                span.meta-icon 📝
-                | 1.1k words
-            p.post-excerpt
-              | Newsletter 是一类去平台化的信息源，能让自己重新掌握信息消费的主动权。
-            a.read-more(href="#") 阅读全文
-            .post-tags
-              a.tag(href="#")
-                span Newsletter
-              a.tag(href="#")
-                span 知识管理
-          
-          //- 文章卡片 6
-          article.post-card
-            h3.post-title
-              a(href="#") 浅谈搭建平台-画布篇
-            .post-meta
-              span.meta-item
-                span.meta-icon 📅
-                | 2022-11-11
-              span.meta-item
-                span.meta-icon ⏱️
-                | 36 min read
-              span.meta-item
-                span.meta-icon 📝
-                | 9.7k words
-            p.post-excerpt
-              | 搭建平台本身也是一款软件，它更注重于"复用与组合"，而非实际的业务逻辑。
-            a.read-more(href="#") 阅读全文
-            .post-tags
-              a.tag(href="#")
-                span NCLC
-              a.tag(href="#")
-                span 前端
+          if !articles || articles.length === 0
+            p.no-article 暂无文章，请先同步 Notion 数据。
+          else
+            each article in articles
+              if article.status === 'Published'
+                article.post-card
+                  h3.post-title
+                    a(href=`/blog/${article.id}.html`) #{article.title}
+                  .post-meta
+                    span.meta-item
+                      span.meta-icon 📅
+                      | #{article.date}
+                    //- 可扩展更多元数据
+                  p.post-excerpt #{article.summary}
+                  a.read-more(href=`/blog/${article.id}.html`) 阅读全文
+                  if article.tags && article.tags.length
+                    .post-tags
+                      each tag in article.tags
+                        a.tag(href=`/blog/tag/${tag}`)
+                          span #{tag}
 
       //- 页脚
       footer.footer
