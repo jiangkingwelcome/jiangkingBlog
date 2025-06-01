@@ -106,7 +106,7 @@ html(lang="zh-CN")
             p.no-article 暂无文章，请先同步 Notion 数据。
           else
             each article in articles
-              if article.status === 'Published'
+              if article.status === 'Published' && article.type === 'Post'
                 article.post-card
                   h3.post-title
                     a(href=`/blog/${article.id}.html`) #{article.title}
@@ -117,11 +117,10 @@ html(lang="zh-CN")
                     //- 可扩展更多元数据
                   p.post-excerpt #{article.summary}
                   a.read-more(href=`/blog/${article.id}.html`) 阅读全文
-                  if article.tags && article.tags.length
+                  if article.tags && Array.isArray(article.tags) && article.tags.length
                     .post-tags
                       each tag in article.tags
-                        a.tag(href=`/blog/tag/${tag}`)
-                          span #{tag}
+                        span.tag= tag
 
       //- 页脚
       footer.footer
