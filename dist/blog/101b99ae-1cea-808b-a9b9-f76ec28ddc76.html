@@ -1,3 +1,74 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=2,viewport-fit=cover"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><title> - SimonAKing/Blog</title><link rel="stylesheet" href="/css/blog.css"><style>//- 这里插入用户 HTML 中的 style 内容（省略，实际请粘贴完整 CSS）
-// ... existing code ...</style></head><body><div class="dynamic-bg"></div><div class="grid-bg"></div><div class="cursor-glow" id="cursorGlow"></div><div class="progress-bar" id="progressBar"></div><header class="top-nav"><div class="nav-left"><a class="back-btn" href="/blog/" title="返回首页">←</a><h3 class="site-title">SimonAKing</h3></div><div class="nav-right"><button class="nav-btn" title="目录">📑</button><button class="nav-btn" title="暗色模式">🌙</button><button class="nav-btn" title="分享">🔗</button></div></header><div class="article-header"><div class="header-bg"><canvas id="headerCanvas"></canvas></div><div class="header-content"><h1 class="article-title"></h1><div class="article-meta"><span class="meta-item"><span class="meta-icon">👤</span></span><span class="meta-item"><span class="meta-icon">📅</span></span><span class="meta-item"><span class="meta-icon">⏱️</span></span><span class="meta-item"><span class="meta-icon">👁️</span></span></div></div></div><article class="article-container"><div class="article-content"></div><div class="article-tags"></div><div class="author-info"><div class="author-avatar"><img></div><div class="author-details"><h4></h4><p class="author-bio"></p></div></div><div class="related-posts"><h3 class="section-title">相关文章</h3><div class="related-grid"></div></div></article><div class="article-actions"><button class="action-btn" title="点赞">👍</button><button class="action-btn" title="收藏">⭐</button><button class="action-btn" title="评论">💬</button><div class="action-divider"></div><button class="action-btn" title="分享">📤</button><button class="action-btn" title="回到顶部" onclick="scrollToTop()">⬆️</button></div><nav class="toc" id="toc"><h4 class="toc-title">目录</h4><ul class="toc-list"></ul></nav><script>//- 这里插入用户 HTML 中的 script 内容（省略，实际请粘贴完整 JS）
-// ... existing code ... </script></body></html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=2,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>Win11的文件夹卡顿以及加速 - JiangKing/Blog</title>
+    <link rel="stylesheet" href="/css/blog.css">
+    <style>// ... existing code ...</style>
+  </head>
+  <body>
+    <div class="dynamic-bg"></div>
+    <div class="grid-bg"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="progress-bar" id="progressBar"></div>
+    <header class="top-nav">
+      <div class="nav-left"><a class="back-btn" href="/blog/" title="返回首页">←</a>
+        <h3 class="site-title">JiangKing</h3>
+      </div>
+      <div class="nav-right">
+        <button class="nav-btn" title="目录">📑</button>
+        <button class="nav-btn" title="暗色模式">🌙</button>
+        <button class="nav-btn" title="分享">🔗</button>
+      </div>
+    </header>
+    <div class="article-header">
+      <div class="header-bg">
+        <canvas id="headerCanvas"></canvas>
+      </div>
+      <div class="header-content">
+        <h1 class="article-title">Win11的文件夹卡顿以及加速</h1>
+        <div class="article-meta"><span class="meta-item"><span class="meta-icon">👤</span>JiangKing</span><span class="meta-item"><span class="meta-icon">📅</span>2021-11-05</span><span class="meta-item"><span class="meta-icon">⏱️</span>1 min read</span><span class="meta-item"><span class="meta-icon">👁️</span>1.2k</span></div>
+      </div>
+    </div>
+    <article class="article-container">
+      <div class="article-content"><p>1.关闭不必要的视觉效果：Windows 11默认开启的视觉效果可能会占用额外的系统资源，导致文件夹打开缓慢，通过调整系统的性能设置，选择“调整为最佳性能”选项，可以关闭不必要的动画和特效，从而提高文件夹的打开速度，这一步大多数都可以改善，只是确实难看，如果不想关闭下面还有办法。</p><p>2.调整索引选项：Windows的索引功能可以帮助快速搜索文件中的内容，但同时也可能影响到文件夹的加载速度，用户可以调整索引设置，限制索引服务的范围，或者对经常访问的文件夹进行索引，以改善文件夹打开速度。
+
+3.打开文件夹选项，点击查看，高级设置里面有很多选项
+
+</p><div>image.png</div><p>勾选在单独的进程中打开文件夹窗口，性能直接提高起飞</p><div>image.png</div><p>4.减少缩略图缓存：Windows 11默认会为图片和视频文件生成缩略图，这可能会消耗大量资源，在文件夹选项中，可以设置为不生成缩略图，或者限制缩略图的大小，以减少加载时间
+</p><p>5.把文件夹设置为常规项目，当然也可以设置一块盘</p><p>
+</p><div>image.png</div><p></p></div>
+      <div class="article-tags">
+      </div>
+      <div class="author-info">
+        <div class="author-avatar"><img src="https://cdn.jsdelivr.net/gh/JiangKing/images/blog/avatar.jpg" alt="JiangKing"></div>
+        <div class="author-details">
+          <h4>JiangKing</h4>
+          <p class="author-bio">STDIN | Think &gt;&gt; /dev/Mind✨ - 专注于技术分享与思考</p>
+        </div>
+      </div>
+      <div class="related-posts">
+        <h3 class="section-title">相关文章</h3>
+        <div class="related-grid">
+        </div>
+      </div>
+    </article>
+    <div class="article-actions">
+      <button class="action-btn" title="点赞">👍</button>
+      <button class="action-btn" title="收藏">⭐</button>
+      <button class="action-btn" title="评论">💬</button>
+      <div class="action-divider"></div>
+      <button class="action-btn" title="分享">📤</button>
+      <button class="action-btn" title="回到顶部" onclick="scrollToTop()">⬆️</button>
+    </div>
+    <nav class="toc" id="toc">
+      <h4 class="toc-title">目录</h4>
+      <ul class="toc-list">
+      </ul>
+    </nav>
+    <script>// ... existing code ... </script>
+  </body>
+</html>

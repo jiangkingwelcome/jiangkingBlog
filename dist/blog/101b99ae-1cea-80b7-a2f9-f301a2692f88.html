@@ -1,3 +1,92 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=2,viewport-fit=cover"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><title> - SimonAKing/Blog</title><link rel="stylesheet" href="/css/blog.css"><style>//- 这里插入用户 HTML 中的 style 内容（省略，实际请粘贴完整 CSS）
-// ... existing code ...</style></head><body><div class="dynamic-bg"></div><div class="grid-bg"></div><div class="cursor-glow" id="cursorGlow"></div><div class="progress-bar" id="progressBar"></div><header class="top-nav"><div class="nav-left"><a class="back-btn" href="/blog/" title="返回首页">←</a><h3 class="site-title">SimonAKing</h3></div><div class="nav-right"><button class="nav-btn" title="目录">📑</button><button class="nav-btn" title="暗色模式">🌙</button><button class="nav-btn" title="分享">🔗</button></div></header><div class="article-header"><div class="header-bg"><canvas id="headerCanvas"></canvas></div><div class="header-content"><h1 class="article-title"></h1><div class="article-meta"><span class="meta-item"><span class="meta-icon">👤</span></span><span class="meta-item"><span class="meta-icon">📅</span></span><span class="meta-item"><span class="meta-icon">⏱️</span></span><span class="meta-item"><span class="meta-icon">👁️</span></span></div></div></div><article class="article-container"><div class="article-content"></div><div class="article-tags"></div><div class="author-info"><div class="author-avatar"><img></div><div class="author-details"><h4></h4><p class="author-bio"></p></div></div><div class="related-posts"><h3 class="section-title">相关文章</h3><div class="related-grid"></div></div></article><div class="article-actions"><button class="action-btn" title="点赞">👍</button><button class="action-btn" title="收藏">⭐</button><button class="action-btn" title="评论">💬</button><div class="action-divider"></div><button class="action-btn" title="分享">📤</button><button class="action-btn" title="回到顶部" onclick="scrollToTop()">⬆️</button></div><nav class="toc" id="toc"><h4 class="toc-title">目录</h4><ul class="toc-list"></ul></nav><script>//- 这里插入用户 HTML 中的 script 内容（省略，实际请粘贴完整 JS）
-// ... existing code ... </script></body></html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=2,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>Nginx 部署与参数调优 - JiangKing/Blog</title>
+    <link rel="stylesheet" href="/css/blog.css">
+    <style>// ... existing code ...</style>
+  </head>
+  <body>
+    <div class="dynamic-bg"></div>
+    <div class="grid-bg"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="progress-bar" id="progressBar"></div>
+    <header class="top-nav">
+      <div class="nav-left"><a class="back-btn" href="/blog/" title="返回首页">←</a>
+        <h3 class="site-title">JiangKing</h3>
+      </div>
+      <div class="nav-right">
+        <button class="nav-btn" title="目录">📑</button>
+        <button class="nav-btn" title="暗色模式">🌙</button>
+        <button class="nav-btn" title="分享">🔗</button>
+      </div>
+    </header>
+    <div class="article-header">
+      <div class="header-bg">
+        <canvas id="headerCanvas"></canvas>
+      </div>
+      <div class="header-content">
+        <h1 class="article-title">Nginx 部署与参数调优</h1>
+        <div class="article-meta"><span class="meta-item"><span class="meta-icon">👤</span>JiangKing</span><span class="meta-item"><span class="meta-icon">📅</span>2021-11-05</span><span class="meta-item"><span class="meta-icon">⏱️</span>1 min read</span><span class="meta-item"><span class="meta-icon">👁️</span>1.2k</span></div>
+      </div>
+    </div>
+    <article class="article-container">
+      <div class="article-content"><p>​</p><p>Nginx 是一款高性能的 Web 服务器和反向代理服务器，在各大平台上都有广泛应用。本文将介绍在不同平台上部署 Nginx 的步骤，以及如何对 Nginx 进行参数调优，以提升其性能和稳定性。</p><h2>在 Ubuntu/Debian 上部署 Nginx</h2><li>更新软件包列表：sudo apt update</li><li>安装 Nginx：sudo apt install nginx</li><li>启动 Nginx 服务：sudo systemctl start nginx</li><li>设置开机自启动：sudo systemctl enable nginx</li><h2>在 CentOS/RHEL 上部署 Nginx</h2><ol><li>添加 Nginx 官方仓库：</li><div>sudo vi /etc/yum.repos.d/nginx.repo
+[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=0
+enabled=1
+
+</div></ol><li>安装 Nginx：sudo yum install nginx</li><li>启动 Nginx 服务：sudo systemctl start nginx</li><li>设置开机自启动：sudo systemctl enable nginx</li><h2>在 Windows 上部署 Nginx</h2><li>下载 Nginx Windows 版本：nginx: download</li><li>解压下载的压缩包到任意目录，如 C:\\\\nginx</li><li>打开命令提示符（CMD），切换到 Nginx 目录：cd C:\\\\nginx</li><li>启动 Nginx：start nginx</li><h2>Nginx 参数调优</h2><div>worker_processes</div><p>调整 worker 进程数，一般设置为 CPU 核心数。</p><div>worker_processes auto;
+
+</div><div>worker_connections</div><p>设置每个 worker 进程的最大连接数。</p><div>events {
+    worker_connections 10240;
+}
+
+</div><div>keepalive_timeout</div><p>设置长连接的超时时间，减少频繁建立连接的开销。</p><div>keepalive_timeout 65;
+
+</div><div>gzip 压缩</div><p>启用 gzip 压缩，减小传输数据量。</p><div>gzip on;
+gzip_min_length 1k;
+gzip_comp_level 2;
+gzip_types text/plain text/css application/json application/javascript application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+
+</div><div>启用缓存</div><p>设置静态资源缓存，提高访问速度。</p><div>location ~* \\\\.(jpg|jpeg|png|gif|ico|css|js)$ {
+    expires 7d;
+}
+
+</div><p>windows初学者可以下载phpstudy，好用不难；linux可以使用宝塔，就是有些高版本不支持。</p><p>​</p><p>附带一个同事得经典conf：</p><div>xxx.com.conf</div></div>
+      <div class="article-tags">
+      </div>
+      <div class="author-info">
+        <div class="author-avatar"><img src="https://cdn.jsdelivr.net/gh/JiangKing/images/blog/avatar.jpg" alt="JiangKing"></div>
+        <div class="author-details">
+          <h4>JiangKing</h4>
+          <p class="author-bio">STDIN | Think &gt;&gt; /dev/Mind✨ - 专注于技术分享与思考</p>
+        </div>
+      </div>
+      <div class="related-posts">
+        <h3 class="section-title">相关文章</h3>
+        <div class="related-grid">
+        </div>
+      </div>
+    </article>
+    <div class="article-actions">
+      <button class="action-btn" title="点赞">👍</button>
+      <button class="action-btn" title="收藏">⭐</button>
+      <button class="action-btn" title="评论">💬</button>
+      <div class="action-divider"></div>
+      <button class="action-btn" title="分享">📤</button>
+      <button class="action-btn" title="回到顶部" onclick="scrollToTop()">⬆️</button>
+    </div>
+    <nav class="toc" id="toc">
+      <h4 class="toc-title">目录</h4>
+      <ul class="toc-list">
+      </ul>
+    </nav>
+    <script>// ... existing code ... </script>
+  </body>
+</html>

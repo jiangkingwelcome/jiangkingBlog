@@ -5,10 +5,9 @@ html(lang="zh-CN")
     meta(name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=2,viewport-fit=cover")
     meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
     meta(name="renderer" content="webkit")
-    title #{title} - SimonAKing/Blog
+    title #{title} - JiangKing/Blog
     link(rel="stylesheet" href="/css/blog.css")
     style.
-      //- 这里插入用户 HTML 中的 style 内容（省略，实际请粘贴完整 CSS）
       // ... existing code ...
   body
     .dynamic-bg
@@ -18,7 +17,7 @@ html(lang="zh-CN")
     header.top-nav
       .nav-left
         a.back-btn(href="/blog/" title="返回首页") ←
-        h3.site-title SimonAKing
+        h3.site-title JiangKing
       .nav-right
         button.nav-btn(title="目录") 📑
         button.nav-btn(title="暗色模式") 🌙
@@ -77,5 +76,4 @@ html(lang="zh-CN")
           li.toc-item
             a.toc-link(href=item.href class=item.active ? 'active' : '')= item.text
     script.
-      //- 这里插入用户 HTML 中的 script 内容（省略，实际请粘贴完整 JS）
       // ... existing code ... 

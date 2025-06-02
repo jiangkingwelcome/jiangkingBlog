@@ -65,7 +65,14 @@ gulp.task('pug', function () {
 gulp.task('blog-pug', function () {
 	return gulp
 		.src('./src/blog/index.pug')
-		.pipe(pug({ data: { config, articles: blogData } }))
+		.pipe(
+			pug({
+				data: {
+					config,
+					articles: blogData.filter(article => article.status === 'Published' && (article.type === 'Post' || article.type === 'post'))
+				}
+			})
+		)
 		.pipe(gulp.dest('./dist/blog'))
 })
 
@@ -86,6 +93,7 @@ gulp.task('blog-detail', function (done) {
 	if (!blogData || blogData.length === 0) return done();
 	const detailPug = './src/blog/detail.pug';
 	if (!fs.existsSync(detailPug)) return done();
+	
 	blogData.forEach(article => {
 		if (article.status === 'Published') {
 			const detailJson = `./src/blog/data/${article.id}.json`;
@@ -93,8 +101,31 @@ gulp.task('blog-detail', function (done) {
 			if (fs.existsSync(detailJson)) {
 				detail = require(detailJson);
 			}
+			
+			// 解析详情数据
+			const articleData = {
+				config,
+				id: article.id,
+				title: article.title || detail.title || '',
+				author: 'JiangKing', // 或从配置中获取
+				date: article.date || detail.date || '',
+				summary: article.summary || detail.summary || '',
+				tags: article.tags || (detail.tags ? detail.tags.split(',') : []),
+				category: article.category || detail.category || '',
+				content: detail.contentHtml || '',
+				readingTime: calculateReadingTime(detail.contentHtml || ''),
+				views: '1.2k', // 可以从其他地方获取
+				authorAvatar: 'https://cdn.jsdelivr.net/gh/JiangKing/images/blog/avatar.jpg',
+				authorBio: 'STDIN | Think >> /dev/Mind✨ - 专注于技术分享与思考',
+				related: [], // 相关文章
+				toc: [] // 目录
+			};
+			
 			gulp.src(detailPug)
-				.pipe(pug({ data: { config, article, detail } }))
+				.pipe(pug({ 
+					data: articleData,
+					pretty: true // 开发时方便查看
+				}))
 				.pipe(rename(`${article.id}.html`))
 				.pipe(gulp.dest('./dist/blog'));
 		}
@@ -102,11 +133,24 @@ gulp.task('blog-detail', function (done) {
 	done();
 });
 
+// 辅助函数：计算阅读时间
+function calculateReadingTime(html) {
+	const text = html.replace(/<[^>]*>/g, '');
+	const wordCount = text.trim().split(/\s+/).length;
+	const readingTime = Math.ceil(wordCount / 200);
+	return `${readingTime} min read`;
+}
+
 gulp.task('assets', function () {
 	return gulp
 		.src(['./src/assets/**/*'])
 		.pipe(gulp.dest('./dist/assets'));
 })
+
+gulp.task('copy-css', function () {
+	return gulp.src('src/css/blog/blog.css')
+		.pipe(gulp.dest('dist/css'));
+});
 
 gulp.task('build', gulp.series('clean', 'assets', 'pug', 'blog-pug', 'css', 'blog-css', 'js', 'html', 'blog-detail'))
 gulp.task('default', gulp.series('build'))
