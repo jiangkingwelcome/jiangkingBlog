@@ -60,7 +60,7 @@
       </div>
     </div>
     <article class="article-container">
-      <div class="article-content"><p>【sync-block】这是一段来自示例文章-3的段落 ，通过 SyncBlock同步。</p><p>这个文章将不会显示</p></div>
+      <div class="article-content"><div class="unsupported-block">[synced_block]</div><p>【sync-block】这是一段来自示例文章-3的段落 ，通过 SyncBlock同步。</p><p>这个文章将不会显示</p></div>
       <div class="article-tags">
       </div>
       <div class="author-info">
@@ -134,8 +134,8 @@
               const articleId = window.location.pathname.split('/').pop().replace('.html', '');
               img.src = `/blog/images/${articleId}/${content}`;
             } else {
-              // 默认使用占位图
-              img.src = '/assets/placeholder-image.svg';
+              // 无效图片路径，跳过
+              return;
             }
             
             // 添加错误处理
@@ -143,7 +143,7 @@
             img.setAttribute('data-original-text', content);
             img.onerror = function() {
               this.onerror = null;
-              this.src = '/assets/placeholder-image.svg';
+              this.style.display = 'none';
               this.classList.add('error');
             };
             
@@ -176,8 +176,8 @@
               const articleId = window.location.pathname.split('/').pop().replace('.html', '');
               img.src = `/blog/images/${articleId}/${content}`;
             } else {
-              // 使用占位图
-              img.src = '/assets/placeholder-image.svg';
+              // 无效图片路径，跳过
+              return;
             }
             
             // 添加错误处理
@@ -185,7 +185,7 @@
             img.setAttribute('data-text-content', content);
             img.onerror = function() {
               this.onerror = null;
-              this.src = '/assets/placeholder-image.svg';
+              this.style.display = 'none';
               this.classList.add('error');
             };
             
@@ -212,24 +212,18 @@
             console.log('图片已加载失败:', img.src);
             img.classList.add('error');
             
-            // 如果不是占位图，则替换为占位图
-            if (!img.src.includes('placeholder-image')) {
-              img.setAttribute('data-failed-src', img.src);
-              img.src = '/assets/placeholder-image.svg';
-              img.classList.add('svg-image'); // 添加SVG类
-            }
+            // 隐藏加载失败的图片
+            img.setAttribute('data-failed-src', img.src);
+            img.style.display = 'none';
           } else {
             // 添加加载错误处理
             img.addEventListener('error', function() {
               console.log('图片加载失败:', this.src);
               this.classList.add('error');
               
-              // 如果不是占位图，则替换为占位图
-              if (!this.src.includes('placeholder-image')) {
-                this.setAttribute('data-failed-src', this.src);
-                this.src = '/assets/placeholder-image.svg';
-                this.classList.add('svg-image'); // 添加SVG类
-              }
+              // 隐藏加载失败的图片
+              this.setAttribute('data-failed-src', this.src);
+              this.style.display = 'none';
             });
           }
         });

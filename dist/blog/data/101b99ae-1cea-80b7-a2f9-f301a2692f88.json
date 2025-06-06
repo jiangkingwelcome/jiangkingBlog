@@ -1,1397 +1,2088 @@
 {
   "id": "101b99ae-1cea-80b7-a2f9-f301a2692f88",
+  "title": "Nginx 部署与参数调优",
   "date": "2021-11-05",
+  "tags": [],
+  "status": "Published",
   "type": "Post",
   "category": "技术分享",
   "slug": "invisible",
-  "tags": [
-    ""
-  ],
   "summary": "Nginx 部署与参数调优",
-  "title": "Nginx 部署与参数调优",
-  "status": "Published",
-  "detail": {
-    "101b99ae-1cea-80b7-a2f9-f301a2692f88": {
-      "value": {
-        "id": "101b99ae-1cea-80b7-a2f9-f301a2692f88",
-        "version": 30,
-        "type": "page",
-        "properties": {
-          "NX\\Q": [
-            [
-              "‣",
-              [
-                [
-                  "d",
+  "created_time": "2024-09-14T07:12:00.000Z",
+  "last_edited_time": "2024-09-14T07:56:00.000Z",
+  "blocks": [
+    {
+      "object": "block",
+      "id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-80b7-a2f9-f301a2692f88"
+      },
+      "created_time": "2024-09-14T07:12:00.000Z",
+      "last_edited_time": "2024-09-14T07:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": true,
+      "archived": false,
+      "in_trash": false,
+      "type": "synced_block",
+      "synced_block": {
+        "synced_from": null
+      },
+      "children": [
+        {
+          "object": "block",
+          "id": "440958ce-43ce-4df3-a93c-23abdef5da8b",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "​",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "​",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "f5acd8fa-286c-4755-b074-0e86da1fb282",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Nginx 是一款高性能的 Web 服务器和反向代理服务器，在各大平台上都有广泛应用。本文将介绍在不同平台上部署 Nginx 的步骤，以及如何对 Nginx 进行参数调优，以提升其性能和稳定性。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Nginx 是一款高性能的 Web 服务器和反向代理服务器，在各大平台上都有广泛应用。本文将介绍在不同平台上部署 Nginx 的步骤，以及如何对 Nginx 进行参数调优，以提升其性能和稳定性。",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "ef09601e-69b8-4999-941d-20a1526dee62",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "在 Ubuntu/Debian 上部署 Nginx",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "在 Ubuntu/Debian 上部署 Nginx",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "2b9a90fb-76e3-4cac-b627-258f1ef3ee9f",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "更新软件包列表：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "更新软件包列表：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "sudo apt update",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": true,
+                  "color": "default"
+                },
+                "plain_text": "sudo apt update",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "c6e8508e-2248-458c-9959-fe534b4e5c3f",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "安装 Nginx：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "安装 Nginx：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "sudo apt install nginx",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": true,
+                  "color": "default"
+                },
+                "plain_text": "sudo apt install nginx",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "1f3d2e2f-9bda-4a69-b7d4-5eb2d6f955bb",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "启动 Nginx 服务：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "启动 Nginx 服务：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "sudo systemctl start nginx",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": true,
+                  "color": "default"
+                },
+                "plain_text": "sudo systemctl start nginx",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "d52639d0-7ba5-4079-a4ba-f5a302e4908c",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "设置开机自启动：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "设置开机自启动：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "sudo systemctl enable nginx",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": true,
+                  "color": "default"
+                },
+                "plain_text": "sudo systemctl enable nginx",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "540681eb-2c13-4ef5-bd7f-7007befdc3e8",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "在 CentOS/RHEL 上部署 Nginx",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "在 CentOS/RHEL 上部署 Nginx",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "903a5c12-954c-46bb-8b8c-70ce538039f2",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": true,
+          "archived": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "添加 Nginx 官方仓库：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "添加 Nginx 官方仓库：",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "children": [
+            {
+              "object": "block",
+              "id": "7178ef12-b87d-430b-86d0-65680d50ebb1",
+              "parent": {
+                "type": "block_id",
+                "block_id": "903a5c12-954c-46bb-8b8c-70ce538039f2"
+              },
+              "created_time": "2024-09-14T07:37:00.000Z",
+              "last_edited_time": "2024-09-14T07:37:00.000Z",
+              "created_by": {
+                "object": "user",
+                "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+              },
+              "last_edited_by": {
+                "object": "user",
+                "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+              },
+              "has_children": false,
+              "archived": false,
+              "in_trash": false,
+              "type": "code",
+              "code": {
+                "caption": [],
+                "rich_text": [
                   {
-                    "type": "date",
-                    "start_date": "2021-11-05"
+                    "type": "text",
+                    "text": {
+                      "content": "sudo vi /etc/yum.repos.d/nginx.repo\n[nginx]\nname=nginx repo\nbaseurl=http://nginx.org/packages/centos/$releasever/$basearch/\ngpgcheck=0\nenabled=1\n\n",
+                      "link": null
+                    },
+                    "annotations": {
+                      "bold": false,
+                      "italic": false,
+                      "strikethrough": false,
+                      "underline": false,
+                      "code": false,
+                      "color": "default"
+                    },
+                    "plain_text": "sudo vi /etc/yum.repos.d/nginx.repo\n[nginx]\nname=nginx repo\nbaseurl=http://nginx.org/packages/centos/$releasever/$basearch/\ngpgcheck=0\nenabled=1\n\n",
+                    "href": null
                   }
-                ]
-              ]
-            ]
-          ],
-          "`gQ~": [
-            [
-              "Post"
-            ]
-          ],
-          "bB{M": [
-            [
-              "技术分享"
-            ]
-          ],
-          "d]hq": [
-            [
-              "invisible"
-            ]
-          ],
-          "sD^m": [
-            [
-              ""
-            ]
-          ],
-          "wz|S": [
-            [
-              "Nginx 部署与参数调优"
-            ]
-          ],
-          "title": [
-            [
-              "Nginx 部署与参数调优"
-            ]
-          ],
-          "f211bdc0-ee00-4186-9a7d-f68c055ec2ee": [
-            [
-              "Published"
-            ]
+                ],
+                "language": "plain text"
+              }
+            },
+            {
+              "object": "block",
+              "id": "69c09c44-386b-4fda-bff3-62232a22ad7d",
+              "parent": {
+                "type": "block_id",
+                "block_id": "903a5c12-954c-46bb-8b8c-70ce538039f2"
+              },
+              "created_time": "2024-09-14T07:37:00.000Z",
+              "last_edited_time": "2024-09-14T07:37:00.000Z",
+              "created_by": {
+                "object": "user",
+                "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+              },
+              "last_edited_by": {
+                "object": "user",
+                "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+              },
+              "has_children": false,
+              "archived": false,
+              "in_trash": false,
+              "type": "image",
+              "image": {
+                "caption": [],
+                "type": "external",
+                "external": {
+                  "url": "data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="
+                }
+              },
+              "imageFilename": "base64_4765334125b448ec4c4bdf8285a1da72.gif"
+            }
           ]
         },
-        "content": [
-          "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-          "101b99ae-1cea-8077-b39d-e37f97f63418",
-          "101b99ae-1cea-8071-959f-d3f2f20a00ef"
-        ],
-        "format": {
-          "page_font": "serif",
-          "page_cover": "/images/page-cover/met_william_morris_1875.jpg",
-          "block_locked": false,
-          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
-          "copied_from_pointer": {
-            "id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-            "table": "block",
-            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+        {
+          "object": "block",
+          "id": "68a07350-f173-425e-ad81-97d95a09c230",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
           },
-          "page_cover_position": 1,
-          "social_media_image_preview_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/03c61fc7-8ae2-451d-80f2-118e6ce2d9cd/75091b2e-9e99-47e5-8275-7d4b6c3dc0d5/SocialMediaPreviewImage.png"
-        },
-        "created_time": 1726297928824,
-        "last_edited_time": 1726300600152,
-        "parent_id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
-        "parent_table": "collection",
-        "alive": true,
-        "copied_from": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "file_ids": [
-          "804ed1c1-2335-4f92-821e-c4e76894ac8b",
-          "75091b2e-9e99-47e5-8275-7d4b6c3dc0d5"
-        ],
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "54a47a0d-391d-412f-912f-907d897e52bd": {
-      "value": {
-        "id": "54a47a0d-391d-412f-912f-907d897e52bd",
-        "version": 119,
-        "type": "collection_view_page",
-        "content": [
-          "9849a0d1-82a7-46f8-85d4-68b9db92a92b"
-        ],
-        "view_ids": [
-          "a0152dc5-e7e8-4f29-9c37-b1fb486040e5",
-          "af27229a-9c1c-4379-b779-20cb62c86bc4",
-          "a33ce80a-303e-4722-9b6f-639f3c32f10d",
-          "7fe61317-1745-4dec-9d31-f01020c4155e"
-        ],
-        "collection_id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
-        "format": {
-          "site_id": "51847d78-4b83-4b0c-93df-c5907104c1cd",
-          "block_locked": false,
-          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
-          "collection_pointer": {
-            "id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
-            "table": "collection",
-            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
           },
-          "copied_from_pointer": {
-            "id": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
-            "table": "block",
-            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
           },
-          "page_cover_position": 0.5
-        },
-        "permissions": [
-          {
-            "role": "reader",
-            "type": "public_permission",
-            "is_site": true,
-            "added_timestamp": 1725446328326
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "1f5b99ae-1cea-8101-adeb-00279282a15f",
-            "parent_id": "80a8a328-0748-4dd6-925e-6865939d4ae0",
-            "parent_table": "notion_user"
-          },
-          {
-            "role": {
-              "read_comment": true,
-              "read_content": true,
-              "insert_comment": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "1f6b99ae-1cea-8187-bd91-0027b7252bca",
-            "parent_id": "80a8a328-0748-4dd6-925e-6865939d4ae0",
-            "parent_table": "notion_user"
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "66be2e14-23ce-4798-9d2e-b1104a06653a",
-            "parent_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
-            "parent_table": "space"
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "90053442-be1a-4630-99f4-2c04f2706259",
-            "parent_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
-            "parent_table": "space"
-          }
-        ],
-        "created_time": 1725446287995,
-        "last_edited_time": 1748700122053,
-        "parent_id": "078a9301-9747-4213-900b-e1a2eda4f4dd",
-        "parent_table": "team",
-        "alive": true,
-        "copied_from": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
-        "file_ids": [
-          "1e87c98f-7b57-4634-9f9e-8eedc62ace2e"
-        ],
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "aab28629-d24f-44b3-80e3-48b60bfe9cc6": {
-      "value": {
-        "id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "version": 43,
-        "type": "transclusion_container",
-        "content": [
-          "440958ce-43ce-4df3-a93c-23abdef5da8b",
-          "f5acd8fa-286c-4755-b074-0e86da1fb282",
-          "ef09601e-69b8-4999-941d-20a1526dee62",
-          "2b9a90fb-76e3-4cac-b627-258f1ef3ee9f",
-          "c6e8508e-2248-458c-9959-fe534b4e5c3f",
-          "1f3d2e2f-9bda-4a69-b7d4-5eb2d6f955bb",
-          "d52639d0-7ba5-4079-a4ba-f5a302e4908c",
-          "540681eb-2c13-4ef5-bd7f-7007befdc3e8",
-          "903a5c12-954c-46bb-8b8c-70ce538039f2",
-          "68a07350-f173-425e-ad81-97d95a09c230",
-          "9e201dbd-e897-406f-8f39-f0b281b1069b",
-          "5231949c-1020-455a-9667-beba5e9478af",
-          "a0bea276-41f1-42b1-bfa5-897fa8542bc6",
-          "b48c84f2-0be8-45ee-8a71-dde3bc0b0291",
-          "3c5e14f2-eeaf-4623-936a-47671353977b",
-          "09af75a9-099b-47a0-9ec1-adc6bc575280",
-          "95360987-205b-473a-8a41-2541ffd53ada",
-          "76a2ba09-6d0c-4097-8314-9c7661d58328",
-          "2ead128d-a35f-4976-a3c5-5d17d3579903",
-          "d295127d-a14c-4dfc-bcc5-3ff634798de0",
-          "51f0cd38-73f8-4c12-a100-c384a5ebb767",
-          "c6f125aa-7eb1-4c60-91ed-c891df9993e4",
-          "1b9e6499-61ae-4e0b-8d01-cdf59809d53e",
-          "93d1aa09-3f00-4684-91e4-4df17622d831",
-          "6858d809-0479-4bef-bb06-d7279dbec839",
-          "5e19bb46-69f2-49b0-a822-b51e756a3c2b",
-          "58553498-a1bf-4c99-a3be-0137bf8244da",
-          "aec4ddc8-33fe-43c3-99e4-befff21a05f9",
-          "69db9bd3-675c-4fd0-9377-82ffa654da2a",
-          "e7e9d49c-469a-4597-871a-068a98b410f5",
-          "0d3ff973-4a92-4721-a703-a3bfcef1efda",
-          "6215b10d-0beb-4da0-8a45-9bebd5ececa0",
-          "da7d9fd3-4219-41c2-8594-515e9e4d58b9",
-          "cf68156e-29ba-46f8-9810-5804c317287f",
-          "c1ed4230-a3fb-4b0a-8392-c55a95abfe63",
-          "d7d20a9e-7fcd-4a7d-8bca-3993baa593e4",
-          "b7415c74-f81a-4c9d-94ad-c0818351ad1f",
-          "23dba5aa-bc57-4668-806b-724f3363fed0",
-          "0b1d02f4-cb91-4b7a-986b-c0274ac6173a",
-          "6b298479-1fd6-4d0e-ae2e-00df19b20ab6"
-        ],
-        "format": {
-          "copied_from_pointer": {
-            "id": "f9c9ebd3-f9b8-47e4-a307-405251ad49b4",
-            "table": "block",
-            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "安装 Nginx：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "安装 Nginx：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "sudo yum install nginx",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": true,
+                  "color": "default"
+                },
+                "plain_text": "sudo yum install nginx",
+                "href": null
+              }
+            ],
+            "color": "default"
           }
         },
-        "created_time": 1726297928823,
-        "last_edited_time": 1726299474328,
-        "parent_id": "101b99ae-1cea-80b7-a2f9-f301a2692f88",
-        "parent_table": "block",
-        "alive": true,
-        "copied_from": "f9c9ebd3-f9b8-47e4-a307-405251ad49b4",
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8077-b39d-e37f97f63418": {
-      "value": {
-        "id": "101b99ae-1cea-8077-b39d-e37f97f63418",
-        "version": 98,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "附带一个同事得经典conf："
-            ]
-          ]
+        {
+          "object": "block",
+          "id": "9e201dbd-e897-406f-8f39-f0b281b1069b",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "启动 Nginx 服务：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "启动 Nginx 服务：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "sudo systemctl start nginx",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": true,
+                  "color": "default"
+                },
+                "plain_text": "sudo systemctl start nginx",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
         },
-        "created_time": 1726299478191,
-        "last_edited_time": 1726299737038,
-        "parent_id": "101b99ae-1cea-80b7-a2f9-f301a2692f88",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
+        {
+          "object": "block",
+          "id": "5231949c-1020-455a-9667-beba5e9478af",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "设置开机自启动：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "设置开机自启动：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "sudo systemctl enable nginx",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": true,
+                  "color": "default"
+                },
+                "plain_text": "sudo systemctl enable nginx",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "a0bea276-41f1-42b1-bfa5-897fa8542bc6",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "在 Windows 上部署 Nginx",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "在 Windows 上部署 Nginx",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "b48c84f2-0be8-45ee-8a71-dde3bc0b0291",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "下载 Nginx Windows 版本：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "下载 Nginx Windows 版本：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "nginx: download",
+                  "link": {
+                    "url": "http://nginx.org/en/download.html"
+                  }
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "nginx: download",
+                "href": "http://nginx.org/en/download.html"
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "3c5e14f2-eeaf-4623-936a-47671353977b",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "解压下载的压缩包到任意目录，如 ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "解压下载的压缩包到任意目录，如 ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "C:\\\\\\\\nginx",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": true,
+                  "color": "default"
+                },
+                "plain_text": "C:\\\\\\\\nginx",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "09af75a9-099b-47a0-9ec1-adc6bc575280",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "打开命令提示符（CMD），切换到 Nginx 目录：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "打开命令提示符（CMD），切换到 Nginx 目录：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "cd C:\\\\\\\\nginx",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": true,
+                  "color": "default"
+                },
+                "plain_text": "cd C:\\\\\\\\nginx",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "95360987-205b-473a-8a41-2541ffd53ada",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "启动 Nginx：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "启动 Nginx：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "start nginx",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": true,
+                  "color": "default"
+                },
+                "plain_text": "start nginx",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "76a2ba09-6d0c-4097-8314-9c7661d58328",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Nginx 参数调优",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Nginx 参数调优",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "2ead128d-a35f-4976-a3c5-5d17d3579903",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "worker_processes",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "worker_processes",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "d295127d-a14c-4dfc-bcc5-3ff634798de0",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "调整 worker 进程数，一般设置为 CPU 核心数。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "调整 worker 进程数，一般设置为 CPU 核心数。",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "51f0cd38-73f8-4c12-a100-c384a5ebb767",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "code",
+          "code": {
+            "caption": [],
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "worker_processes auto;\n\n",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "worker_processes auto;\n\n",
+                "href": null
+              }
+            ],
+            "language": "plain text"
+          }
+        },
+        {
+          "object": "block",
+          "id": "c6f125aa-7eb1-4c60-91ed-c891df9993e4",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "image",
+          "image": {
+            "caption": [],
+            "type": "external",
+            "external": {
+              "url": "data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="
+            }
+          },
+          "imageFilename": "base64_4765334125b448ec4c4bdf8285a1da72.gif"
+        },
+        {
+          "object": "block",
+          "id": "1b9e6499-61ae-4e0b-8d01-cdf59809d53e",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "worker_connections",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "worker_connections",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "93d1aa09-3f00-4684-91e4-4df17622d831",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "设置每个 worker 进程的最大连接数。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "设置每个 worker 进程的最大连接数。",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "6858d809-0479-4bef-bb06-d7279dbec839",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "code",
+          "code": {
+            "caption": [],
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "events {\n    worker_connections 10240;\n}\n\n",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "events {\n    worker_connections 10240;\n}\n\n",
+                "href": null
+              }
+            ],
+            "language": "plain text"
+          }
+        },
+        {
+          "object": "block",
+          "id": "5e19bb46-69f2-49b0-a822-b51e756a3c2b",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "image",
+          "image": {
+            "caption": [],
+            "type": "external",
+            "external": {
+              "url": "data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="
+            }
+          },
+          "imageFilename": "base64_4765334125b448ec4c4bdf8285a1da72.gif"
+        },
+        {
+          "object": "block",
+          "id": "58553498-a1bf-4c99-a3be-0137bf8244da",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "keepalive_timeout",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "keepalive_timeout",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "aec4ddc8-33fe-43c3-99e4-befff21a05f9",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "设置长连接的超时时间，减少频繁建立连接的开销。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "设置长连接的超时时间，减少频繁建立连接的开销。",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "69db9bd3-675c-4fd0-9377-82ffa654da2a",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "code",
+          "code": {
+            "caption": [],
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "keepalive_timeout 65;\n\n",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "keepalive_timeout 65;\n\n",
+                "href": null
+              }
+            ],
+            "language": "plain text"
+          }
+        },
+        {
+          "object": "block",
+          "id": "e7e9d49c-469a-4597-871a-068a98b410f5",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "image",
+          "image": {
+            "caption": [],
+            "type": "external",
+            "external": {
+              "url": "data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="
+            }
+          },
+          "imageFilename": "base64_4765334125b448ec4c4bdf8285a1da72.gif"
+        },
+        {
+          "object": "block",
+          "id": "0d3ff973-4a92-4721-a703-a3bfcef1efda",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "gzip 压缩",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "gzip 压缩",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "6215b10d-0beb-4da0-8a45-9bebd5ececa0",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "启用 gzip 压缩，减小传输数据量。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "启用 gzip 压缩，减小传输数据量。",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "da7d9fd3-4219-41c2-8594-515e9e4d58b9",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "code",
+          "code": {
+            "caption": [],
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "gzip on;\ngzip_min_length 1k;\ngzip_comp_level 2;\ngzip_types text/plain text/css application/json application/javascript application/x-javascript text/xml application/xml application/xml+rss text/javascript;\n\n",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "gzip on;\ngzip_min_length 1k;\ngzip_comp_level 2;\ngzip_types text/plain text/css application/json application/javascript application/x-javascript text/xml application/xml application/xml+rss text/javascript;\n\n",
+                "href": null
+              }
+            ],
+            "language": "plain text"
+          }
+        },
+        {
+          "object": "block",
+          "id": "cf68156e-29ba-46f8-9810-5804c317287f",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "image",
+          "image": {
+            "caption": [],
+            "type": "external",
+            "external": {
+              "url": "data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="
+            }
+          },
+          "imageFilename": "base64_4765334125b448ec4c4bdf8285a1da72.gif"
+        },
+        {
+          "object": "block",
+          "id": "c1ed4230-a3fb-4b0a-8392-c55a95abfe63",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "启用缓存",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "启用缓存",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "d7d20a9e-7fcd-4a7d-8bca-3993baa593e4",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "设置静态资源缓存，提高访问速度。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "设置静态资源缓存，提高访问速度。",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "b7415c74-f81a-4c9d-94ad-c0818351ad1f",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "code",
+          "code": {
+            "caption": [],
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "location ~* \\\\\\\\.(jpg|jpeg|png|gif|ico|css|js)$ {\n    expires 7d;\n}\n\n",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "location ~* \\\\\\\\.(jpg|jpeg|png|gif|ico|css|js)$ {\n    expires 7d;\n}\n\n",
+                "href": null
+              }
+            ],
+            "language": "plain text"
+          }
+        },
+        {
+          "object": "block",
+          "id": "23dba5aa-bc57-4668-806b-724f3363fed0",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "image",
+          "image": {
+            "caption": [],
+            "type": "external",
+            "external": {
+              "url": "data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="
+            }
+          },
+          "imageFilename": "base64_4765334125b448ec4c4bdf8285a1da72.gif"
+        },
+        {
+          "object": "block",
+          "id": "0b1d02f4-cb91-4b7a-986b-c0274ac6173a",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "windows初学者可以下载phpstudy，好用不难；linux可以使用宝塔，就是有些高版本不支持。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "windows初学者可以下载phpstudy，好用不难；linux可以使用宝塔，就是有些高版本不支持。",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "6b298479-1fd6-4d0e-ae2e-00df19b20ab6",
+          "parent": {
+            "type": "block_id",
+            "block_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6"
+          },
+          "created_time": "2024-09-14T07:37:00.000Z",
+          "last_edited_time": "2024-09-14T07:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "​",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "​",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        }
+      ]
     },
-    "101b99ae-1cea-8071-959f-d3f2f20a00ef": {
-      "value": {
-        "id": "101b99ae-1cea-8071-959f-d3f2f20a00ef",
-        "version": 7,
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8077-b39d-e37f97f63418",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-80b7-a2f9-f301a2692f88"
+      },
+      "created_time": "2024-09-14T07:37:00.000Z",
+      "last_edited_time": "2024-09-14T07:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "附带一个同事得经典conf：",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "附带一个同事得经典conf：",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8071-959f-d3f2f20a00ef",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-80b7-a2f9-f301a2692f88"
+      },
+      "created_time": "2024-09-14T07:42:00.000Z",
+      "last_edited_time": "2024-09-14T07:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "file",
+      "file": {
+        "caption": [],
         "type": "file",
-        "properties": {
-          "size": [
-            [
-              "2.6KB"
-            ]
-          ],
-          "title": [
-            [
-              "xxx.com.conf"
-            ]
-          ],
-          "source": [
-            [
-              "https://prod-files-secure.s3.us-west-2.amazonaws.com/03c61fc7-8ae2-451d-80f2-118e6ce2d9cd/96850b39-bf23-4d70-858c-f7cebfe9a997/xxx.com.conf"
-            ]
-          ]
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/03c61fc7-8ae2-451d-80f2-118e6ce2d9cd/96850b39-bf23-4d70-858c-f7cebfe9a997/xxx.com.conf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466RX4QJPYM%2F20250606%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250606T144254Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCxXiJpeg5egcoAbylnlpML9nosLfL1vvS5tVwymNX4JAIgQTXYD5sXmUEY%2BMV2nwh%2Fn2nft1UZ1ft5eX8VvHiKQD0q%2FwMIXxAAGgw2Mzc0MjMxODM4MDUiDJS4xtsGCJYUMyCw3SrcA%2FYFJtco8mwMPo8SdfqEZWW65Y%2BJsJU0YN0moWlFuVbkwh%2FKEUvHBsezbOhM1QslQlpKSRqRK%2BpTJOI3E%2B5XlHt2mnAy%2BIKlpZ5%2FhFF%2BZQNAL40sh4Q%2FyAhKFJZU3T%2B0UpisgKbfVJ%2F6s5rh0Z5fum8zOyCGWK9fJ8ajXMF%2BlhDipjOomwwFicDP1dYqdojiXVo2vkuHxbQldR5II%2Boayb0raaMUUCyKL6hCjgwILHR56vG49EDgaaW8OCbqu3ptGdiH5wSH9I39ZJe9M3ibigaXSvAfytY9p0QL43VcJlImymddt0t%2BlZ4raEILNji6m%2F9JSasm4sXJ4w2aNqM2gkXoSN57iYNsHYKvvSym2D58wu7TcpSVyaeLroxh23%2BvD05ulp6xPutF8GBuOXlQTVwp3lO1UFmNBq0aRpPlrZSRjtyiUOPQdTqrwyZpoO8njVBI%2Fsqvcyt3jfVeBm4NQj3%2FwYCmAZVOCQ5G%2BsIVflyFWJgK2f1RQykMvj9nrMfSc5kjIWRdfCfLbvzjfl654%2FgTizkqQSwwReKMfdrf96xz2d9IbkkJCeIvKa5ZerGLDHEYNMhA%2ByijeylRWqsloIE41yaEuJb2vP0cBh3uaFxPKzE9Dq%2FnD4ZhZGAiMIvii8IGOqUBAVzGvSlzKh8Yy4RZhIkWfKOb1Q59X%2FzJnCF%2Bp9IIz9gH6BYs8CV%2BoEtgRQQ5LG0eq49gFAhAkTl6d0BzRMQ9UyQkPR5Wvw9SIizy2SG2IC4Q2CoKyLNuCwTlQWdOw4ulTM7B69LxzeZK3ImBGJNjdBYjvguR4wOSfZa%2BHzMO0g%2FoD6wtDm4Tiv%2BX0KmeSYN1YStz2FcJOlB702YsHIXzPGaHc5Zn&X-Amz-Signature=5cfca6e1870a5981b6339fc7e8e7b7a0706eb5f2b96b36c75219622b81889fdc&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2025-06-06T15:42:54.250Z"
         },
-        "created_time": 1726299720348,
-        "last_edited_time": 1726299722217,
-        "parent_id": "101b99ae-1cea-80b7-a2f9-f301a2692f88",
-        "parent_table": "block",
-        "alive": true,
-        "file_ids": [
-          "96850b39-bf23-4d70-858c-f7cebfe9a997"
-        ],
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "440958ce-43ce-4df3-a93c-23abdef5da8b": {
-      "value": {
-        "id": "440958ce-43ce-4df3-a93c-23abdef5da8b",
-        "version": 3,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "​"
-            ]
-          ]
-        },
-        "created_time": 1726299474306,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "f5acd8fa-286c-4755-b074-0e86da1fb282": {
-      "value": {
-        "id": "f5acd8fa-286c-4755-b074-0e86da1fb282",
-        "version": 3,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "Nginx 是一款高性能的 Web 服务器和反向代理服务器，在各大平台上都有广泛应用。本文将介绍在不同平台上部署 Nginx 的步骤，以及如何对 Nginx 进行参数调优，以提升其性能和稳定性。"
-            ]
-          ]
-        },
-        "created_time": 1726299474307,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "ef09601e-69b8-4999-941d-20a1526dee62": {
-      "value": {
-        "id": "ef09601e-69b8-4999-941d-20a1526dee62",
-        "version": 3,
-        "type": "sub_header",
-        "properties": {
-          "title": [
-            [
-              "在 Ubuntu/Debian 上部署 Nginx"
-            ]
-          ]
-        },
-        "created_time": 1726299474307,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "2b9a90fb-76e3-4cac-b627-258f1ef3ee9f": {
-      "value": {
-        "id": "2b9a90fb-76e3-4cac-b627-258f1ef3ee9f",
-        "version": 3,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "更新软件包列表："
-            ],
-            [
-              "sudo apt update",
-              [
-                [
-                  "c"
-                ]
-              ]
-            ]
-          ]
-        },
-        "created_time": 1726299474307,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "c6e8508e-2248-458c-9959-fe534b4e5c3f": {
-      "value": {
-        "id": "c6e8508e-2248-458c-9959-fe534b4e5c3f",
-        "version": 3,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "安装 Nginx："
-            ],
-            [
-              "sudo apt install nginx",
-              [
-                [
-                  "c"
-                ]
-              ]
-            ]
-          ]
-        },
-        "created_time": 1726299474308,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "1f3d2e2f-9bda-4a69-b7d4-5eb2d6f955bb": {
-      "value": {
-        "id": "1f3d2e2f-9bda-4a69-b7d4-5eb2d6f955bb",
-        "version": 3,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "启动 Nginx 服务："
-            ],
-            [
-              "sudo systemctl start nginx",
-              [
-                [
-                  "c"
-                ]
-              ]
-            ]
-          ]
-        },
-        "created_time": 1726299474308,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "d52639d0-7ba5-4079-a4ba-f5a302e4908c": {
-      "value": {
-        "id": "d52639d0-7ba5-4079-a4ba-f5a302e4908c",
-        "version": 3,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "设置开机自启动："
-            ],
-            [
-              "sudo systemctl enable nginx",
-              [
-                [
-                  "c"
-                ]
-              ]
-            ]
-          ]
-        },
-        "created_time": 1726299474308,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "540681eb-2c13-4ef5-bd7f-7007befdc3e8": {
-      "value": {
-        "id": "540681eb-2c13-4ef5-bd7f-7007befdc3e8",
-        "version": 3,
-        "type": "sub_header",
-        "properties": {
-          "title": [
-            [
-              "在 CentOS/RHEL 上部署 Nginx"
-            ]
-          ]
-        },
-        "created_time": 1726299474308,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "903a5c12-954c-46bb-8b8c-70ce538039f2": {
-      "value": {
-        "id": "903a5c12-954c-46bb-8b8c-70ce538039f2",
-        "version": 3,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "添加 Nginx 官方仓库："
-            ]
-          ]
-        },
-        "content": [
-          "7178ef12-b87d-430b-86d0-65680d50ebb1",
-          "69c09c44-386b-4fda-bff3-62232a22ad7d"
-        ],
-        "created_time": 1726299474309,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "68a07350-f173-425e-ad81-97d95a09c230": {
-      "value": {
-        "id": "68a07350-f173-425e-ad81-97d95a09c230",
-        "version": 3,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "安装 Nginx："
-            ],
-            [
-              "sudo yum install nginx",
-              [
-                [
-                  "c"
-                ]
-              ]
-            ]
-          ]
-        },
-        "created_time": 1726299474309,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "9e201dbd-e897-406f-8f39-f0b281b1069b": {
-      "value": {
-        "id": "9e201dbd-e897-406f-8f39-f0b281b1069b",
-        "version": 3,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "启动 Nginx 服务："
-            ],
-            [
-              "sudo systemctl start nginx",
-              [
-                [
-                  "c"
-                ]
-              ]
-            ]
-          ]
-        },
-        "created_time": 1726299474309,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "5231949c-1020-455a-9667-beba5e9478af": {
-      "value": {
-        "id": "5231949c-1020-455a-9667-beba5e9478af",
-        "version": 3,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "设置开机自启动："
-            ],
-            [
-              "sudo systemctl enable nginx",
-              [
-                [
-                  "c"
-                ]
-              ]
-            ]
-          ]
-        },
-        "created_time": 1726299474310,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "a0bea276-41f1-42b1-bfa5-897fa8542bc6": {
-      "value": {
-        "id": "a0bea276-41f1-42b1-bfa5-897fa8542bc6",
-        "version": 3,
-        "type": "sub_header",
-        "properties": {
-          "title": [
-            [
-              "在 Windows 上部署 Nginx"
-            ]
-          ]
-        },
-        "created_time": 1726299474310,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "b48c84f2-0be8-45ee-8a71-dde3bc0b0291": {
-      "value": {
-        "id": "b48c84f2-0be8-45ee-8a71-dde3bc0b0291",
-        "version": 3,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "下载 Nginx Windows 版本："
-            ],
-            [
-              "nginx: download",
-              [
-                [
-                  "a",
-                  "http://nginx.org/en/download.html"
-                ]
-              ]
-            ]
-          ]
-        },
-        "created_time": 1726299474310,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "3c5e14f2-eeaf-4623-936a-47671353977b": {
-      "value": {
-        "id": "3c5e14f2-eeaf-4623-936a-47671353977b",
-        "version": 3,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "解压下载的压缩包到任意目录，如 "
-            ],
-            [
-              "C:\\\\\\\\nginx",
-              [
-                [
-                  "c"
-                ]
-              ]
-            ]
-          ]
-        },
-        "created_time": 1726299474310,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "09af75a9-099b-47a0-9ec1-adc6bc575280": {
-      "value": {
-        "id": "09af75a9-099b-47a0-9ec1-adc6bc575280",
-        "version": 3,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "打开命令提示符（CMD），切换到 Nginx 目录："
-            ],
-            [
-              "cd C:\\\\\\\\nginx",
-              [
-                [
-                  "c"
-                ]
-              ]
-            ]
-          ]
-        },
-        "created_time": 1726299474310,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "95360987-205b-473a-8a41-2541ffd53ada": {
-      "value": {
-        "id": "95360987-205b-473a-8a41-2541ffd53ada",
-        "version": 3,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "启动 Nginx："
-            ],
-            [
-              "start nginx",
-              [
-                [
-                  "c"
-                ]
-              ]
-            ]
-          ]
-        },
-        "created_time": 1726299474311,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "76a2ba09-6d0c-4097-8314-9c7661d58328": {
-      "value": {
-        "id": "76a2ba09-6d0c-4097-8314-9c7661d58328",
-        "version": 3,
-        "type": "sub_header",
-        "properties": {
-          "title": [
-            [
-              "Nginx 参数调优"
-            ]
-          ]
-        },
-        "created_time": 1726299474311,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "2ead128d-a35f-4976-a3c5-5d17d3579903": {
-      "value": {
-        "id": "2ead128d-a35f-4976-a3c5-5d17d3579903",
-        "version": 3,
-        "type": "sub_sub_header",
-        "properties": {
-          "title": [
-            [
-              "worker_processes"
-            ]
-          ]
-        },
-        "created_time": 1726299474311,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "d295127d-a14c-4dfc-bcc5-3ff634798de0": {
-      "value": {
-        "id": "d295127d-a14c-4dfc-bcc5-3ff634798de0",
-        "version": 3,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "调整 worker 进程数，一般设置为 CPU 核心数。"
-            ]
-          ]
-        },
-        "created_time": 1726299474311,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "51f0cd38-73f8-4c12-a100-c384a5ebb767": {
-      "value": {
-        "id": "51f0cd38-73f8-4c12-a100-c384a5ebb767",
-        "version": 3,
-        "type": "code",
-        "properties": {
-          "title": [
-            [
-              "worker_processes auto;\n\n"
-            ]
-          ],
-          "language": [
-            [
-              "Plain Text"
-            ]
-          ]
-        },
-        "format": {
-          "code_wrap": true
-        },
-        "created_time": 1726299474311,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "c6f125aa-7eb1-4c60-91ed-c891df9993e4": {
-      "value": {
-        "id": "c6f125aa-7eb1-4c60-91ed-c891df9993e4",
-        "version": 4,
-        "type": "image",
-        "properties": {
-          "source": [
-            [
-              "data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="
-            ]
-          ]
-        },
-        "format": {
-          "block_width": 15
-        },
-        "created_time": 1726299474311,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
-        "imageFilename": "ZGF0YTppbWFn.png"
-      },
-      "role": "reader"
-    },
-    "1b9e6499-61ae-4e0b-8d01-cdf59809d53e": {
-      "value": {
-        "id": "1b9e6499-61ae-4e0b-8d01-cdf59809d53e",
-        "version": 3,
-        "type": "sub_sub_header",
-        "properties": {
-          "title": [
-            [
-              "worker_connections"
-            ]
-          ]
-        },
-        "created_time": 1726299474311,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "93d1aa09-3f00-4684-91e4-4df17622d831": {
-      "value": {
-        "id": "93d1aa09-3f00-4684-91e4-4df17622d831",
-        "version": 3,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "设置每个 worker 进程的最大连接数。"
-            ]
-          ]
-        },
-        "created_time": 1726299474311,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "6858d809-0479-4bef-bb06-d7279dbec839": {
-      "value": {
-        "id": "6858d809-0479-4bef-bb06-d7279dbec839",
-        "version": 3,
-        "type": "code",
-        "properties": {
-          "title": [
-            [
-              "events {\n    worker_connections 10240;\n}\n\n"
-            ]
-          ],
-          "language": [
-            [
-              "Plain Text"
-            ]
-          ]
-        },
-        "format": {
-          "code_wrap": true
-        },
-        "created_time": 1726299474311,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "7178ef12-b87d-430b-86d0-65680d50ebb1": {
-      "value": {
-        "id": "7178ef12-b87d-430b-86d0-65680d50ebb1",
-        "version": 2,
-        "type": "code",
-        "properties": {
-          "title": [
-            [
-              "sudo vi /etc/yum.repos.d/nginx.repo\n[nginx]\nname=nginx repo\nbaseurl=http://nginx.org/packages/centos/$releasever/$basearch/\ngpgcheck=0\nenabled=1\n\n"
-            ]
-          ],
-          "language": [
-            [
-              "Plain Text"
-            ]
-          ]
-        },
-        "format": {
-          "code_wrap": true
-        },
-        "created_time": 1726299474309,
-        "last_edited_time": 1726299474328,
-        "parent_id": "903a5c12-954c-46bb-8b8c-70ce538039f2",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "69c09c44-386b-4fda-bff3-62232a22ad7d": {
-      "value": {
-        "id": "69c09c44-386b-4fda-bff3-62232a22ad7d",
-        "version": 3,
-        "type": "image",
-        "properties": {
-          "source": [
-            [
-              "data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="
-            ]
-          ]
-        },
-        "format": {
-          "block_width": 15
-        },
-        "created_time": 1726299474309,
-        "last_edited_time": 1726299474328,
-        "parent_id": "903a5c12-954c-46bb-8b8c-70ce538039f2",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
-        "imageFilename": "ZGF0YTppbWFn.png"
-      },
-      "role": "reader"
-    },
-    "5e19bb46-69f2-49b0-a822-b51e756a3c2b": {
-      "value": {
-        "id": "5e19bb46-69f2-49b0-a822-b51e756a3c2b",
-        "version": 4,
-        "type": "image",
-        "properties": {
-          "source": [
-            [
-              "data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="
-            ]
-          ]
-        },
-        "format": {
-          "block_width": 15
-        },
-        "created_time": 1726299474312,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
-        "imageFilename": "ZGF0YTppbWFn.png"
-      },
-      "role": "reader"
-    },
-    "58553498-a1bf-4c99-a3be-0137bf8244da": {
-      "value": {
-        "id": "58553498-a1bf-4c99-a3be-0137bf8244da",
-        "version": 3,
-        "type": "sub_sub_header",
-        "properties": {
-          "title": [
-            [
-              "keepalive_timeout"
-            ]
-          ]
-        },
-        "created_time": 1726299474312,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "aec4ddc8-33fe-43c3-99e4-befff21a05f9": {
-      "value": {
-        "id": "aec4ddc8-33fe-43c3-99e4-befff21a05f9",
-        "version": 3,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "设置长连接的超时时间，减少频繁建立连接的开销。"
-            ]
-          ]
-        },
-        "created_time": 1726299474312,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "69db9bd3-675c-4fd0-9377-82ffa654da2a": {
-      "value": {
-        "id": "69db9bd3-675c-4fd0-9377-82ffa654da2a",
-        "version": 3,
-        "type": "code",
-        "properties": {
-          "title": [
-            [
-              "keepalive_timeout 65;\n\n"
-            ]
-          ],
-          "language": [
-            [
-              "Plain Text"
-            ]
-          ]
-        },
-        "format": {
-          "code_wrap": true
-        },
-        "created_time": 1726299474312,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "e7e9d49c-469a-4597-871a-068a98b410f5": {
-      "value": {
-        "id": "e7e9d49c-469a-4597-871a-068a98b410f5",
-        "version": 4,
-        "type": "image",
-        "properties": {
-          "source": [
-            [
-              "data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="
-            ]
-          ]
-        },
-        "format": {
-          "block_width": 15
-        },
-        "created_time": 1726299474312,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
-        "imageFilename": "ZGF0YTppbWFn.png"
-      },
-      "role": "reader"
-    },
-    "0d3ff973-4a92-4721-a703-a3bfcef1efda": {
-      "value": {
-        "id": "0d3ff973-4a92-4721-a703-a3bfcef1efda",
-        "version": 3,
-        "type": "sub_sub_header",
-        "properties": {
-          "title": [
-            [
-              "gzip 压缩"
-            ]
-          ]
-        },
-        "created_time": 1726299474312,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "6215b10d-0beb-4da0-8a45-9bebd5ececa0": {
-      "value": {
-        "id": "6215b10d-0beb-4da0-8a45-9bebd5ececa0",
-        "version": 3,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "启用 gzip 压缩，减小传输数据量。"
-            ]
-          ]
-        },
-        "created_time": 1726299474312,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "da7d9fd3-4219-41c2-8594-515e9e4d58b9": {
-      "value": {
-        "id": "da7d9fd3-4219-41c2-8594-515e9e4d58b9",
-        "version": 3,
-        "type": "code",
-        "properties": {
-          "title": [
-            [
-              "gzip on;\ngzip_min_length 1k;\ngzip_comp_level 2;\ngzip_types text/plain text/css application/json application/javascript application/x-javascript text/xml application/xml application/xml+rss text/javascript;\n\n"
-            ]
-          ],
-          "language": [
-            [
-              "Plain Text"
-            ]
-          ]
-        },
-        "format": {
-          "code_wrap": true
-        },
-        "created_time": 1726299474312,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "cf68156e-29ba-46f8-9810-5804c317287f": {
-      "value": {
-        "id": "cf68156e-29ba-46f8-9810-5804c317287f",
-        "version": 4,
-        "type": "image",
-        "properties": {
-          "source": [
-            [
-              "data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="
-            ]
-          ]
-        },
-        "format": {
-          "block_width": 15
-        },
-        "created_time": 1726299474312,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
-        "imageFilename": "ZGF0YTppbWFn.png"
-      },
-      "role": "reader"
-    },
-    "c1ed4230-a3fb-4b0a-8392-c55a95abfe63": {
-      "value": {
-        "id": "c1ed4230-a3fb-4b0a-8392-c55a95abfe63",
-        "version": 3,
-        "type": "sub_sub_header",
-        "properties": {
-          "title": [
-            [
-              "启用缓存"
-            ]
-          ]
-        },
-        "created_time": 1726299474313,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "d7d20a9e-7fcd-4a7d-8bca-3993baa593e4": {
-      "value": {
-        "id": "d7d20a9e-7fcd-4a7d-8bca-3993baa593e4",
-        "version": 3,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "设置静态资源缓存，提高访问速度。"
-            ]
-          ]
-        },
-        "created_time": 1726299474313,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "b7415c74-f81a-4c9d-94ad-c0818351ad1f": {
-      "value": {
-        "id": "b7415c74-f81a-4c9d-94ad-c0818351ad1f",
-        "version": 3,
-        "type": "code",
-        "properties": {
-          "title": [
-            [
-              "location ~* \\\\\\\\.(jpg|jpeg|png|gif|ico|css|js)$ {\n    expires 7d;\n}\n\n"
-            ]
-          ],
-          "language": [
-            [
-              "Plain Text"
-            ]
-          ]
-        },
-        "format": {
-          "code_wrap": true
-        },
-        "created_time": 1726299474313,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "23dba5aa-bc57-4668-806b-724f3363fed0": {
-      "value": {
-        "id": "23dba5aa-bc57-4668-806b-724f3363fed0",
-        "version": 4,
-        "type": "image",
-        "properties": {
-          "source": [
-            [
-              "data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw=="
-            ]
-          ]
-        },
-        "format": {
-          "block_width": 15
-        },
-        "created_time": 1726299474313,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
-        "imageFilename": "ZGF0YTppbWFn.png"
-      },
-      "role": "reader"
-    },
-    "0b1d02f4-cb91-4b7a-986b-c0274ac6173a": {
-      "value": {
-        "id": "0b1d02f4-cb91-4b7a-986b-c0274ac6173a",
-        "version": 3,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "windows初学者可以下载phpstudy，好用不难；linux可以使用宝塔，就是有些高版本不支持。"
-            ]
-          ]
-        },
-        "created_time": 1726299474313,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "6b298479-1fd6-4d0e-ae2e-00df19b20ab6": {
-      "value": {
-        "id": "6b298479-1fd6-4d0e-ae2e-00df19b20ab6",
-        "version": 3,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "​"
-            ]
-          ]
-        },
-        "created_time": 1726299474313,
-        "last_edited_time": 1726299474328,
-        "parent_id": "aab28629-d24f-44b3-80e3-48b60bfe9cc6",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "9849a0d1-82a7-46f8-85d4-68b9db92a92b": {
-      "value": {
-        "id": "9849a0d1-82a7-46f8-85d4-68b9db92a92b",
-        "version": 1,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "😅"
-            ]
-          ]
-        },
-        "format": {
-          "copied_from_pointer": {
-            "id": "254eced8-9cba-4f90-9990-a885bd567dd0",
-            "table": "block",
-            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
-          }
-        },
-        "created_time": 1725446270807,
-        "last_edited_time": 1725446270807,
-        "parent_id": "54a47a0d-391d-412f-912f-907d897e52bd",
-        "parent_table": "block",
-        "alive": true,
-        "copied_from": "254eced8-9cba-4f90-9990-a885bd567dd0",
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
+        "name": "xxx.com.conf"
+      }
     }
-  },
-  "contentHtml": "<p>​</p><p>Nginx 是一款高性能的 Web 服务器和反向代理服务器，在各大平台上都有广泛应用。本文将介绍在不同平台上部署 Nginx 的步骤，以及如何对 Nginx 进行参数调优，以提升其性能和稳定性。</p><h2>在 Ubuntu/Debian 上部署 Nginx</h2><li>更新软件包列表：sudo apt update</li><li>安装 Nginx：sudo apt install nginx</li><li>启动 Nginx 服务：sudo systemctl start nginx</li><li>设置开机自启动：sudo systemctl enable nginx</li><h2>在 CentOS/RHEL 上部署 Nginx</h2><ul><li>添加 Nginx 官方仓库：</li><pre><code>sudo vi /etc/yum.repos.d/nginx.repo\n[nginx]\nname=nginx repo\nbaseurl=http://nginx.org/packages/centos/$releasever/$basearch/\ngpgcheck=0\nenabled=1\n\n</code></pre><div class=\"image-container\"><img src=\"/blog/images/101b99ae-1cea-80b7-a2f9-f301a2692f88/ZGF0YTppbWFn.png\" alt=\"文章图片\" \n                         onerror=\"this.onerror=null; this.src='/assets/placeholder-image.svg'; this.classList.add('error');\" /></div></ul><li>安装 Nginx：sudo yum install nginx</li><li>启动 Nginx 服务：sudo systemctl start nginx</li><li>设置开机自启动：sudo systemctl enable nginx</li><h2>在 Windows 上部署 Nginx</h2><li>下载 Nginx Windows 版本：nginx: download</li><li>解压下载的压缩包到任意目录，如 C:\\\\\\\\nginx</li><li>打开命令提示符（CMD），切换到 Nginx 目录：cd C:\\\\\\\\nginx</li><li>启动 Nginx：start nginx</li><h2>Nginx 参数调优</h2><div class=\"unsupported-block\">worker_processes</div><p>调整 worker 进程数，一般设置为 CPU 核心数。</p><pre><code>worker_processes auto;\n\n</code></pre><div class=\"image-container\"><img src=\"/blog/images/101b99ae-1cea-80b7-a2f9-f301a2692f88/ZGF0YTppbWFn.png\" alt=\"文章图片\" \n                         onerror=\"this.onerror=null; this.src='/assets/placeholder-image.svg'; this.classList.add('error');\" /></div><div class=\"unsupported-block\">worker_connections</div><p>设置每个 worker 进程的最大连接数。</p><pre><code>events {\n    worker_connections 10240;\n}\n\n</code></pre><div class=\"image-container\"><img src=\"/blog/images/101b99ae-1cea-80b7-a2f9-f301a2692f88/ZGF0YTppbWFn.png\" alt=\"文章图片\" \n                         onerror=\"this.onerror=null; this.src='/assets/placeholder-image.svg'; this.classList.add('error');\" /></div><div class=\"unsupported-block\">keepalive_timeout</div><p>设置长连接的超时时间，减少频繁建立连接的开销。</p><pre><code>keepalive_timeout 65;\n\n</code></pre><div class=\"image-container\"><img src=\"/blog/images/101b99ae-1cea-80b7-a2f9-f301a2692f88/ZGF0YTppbWFn.png\" alt=\"文章图片\" \n                         onerror=\"this.onerror=null; this.src='/assets/placeholder-image.svg'; this.classList.add('error');\" /></div><div class=\"unsupported-block\">gzip 压缩</div><p>启用 gzip 压缩，减小传输数据量。</p><pre><code>gzip on;\ngzip_min_length 1k;\ngzip_comp_level 2;\ngzip_types text/plain text/css application/json application/javascript application/x-javascript text/xml application/xml application/xml+rss text/javascript;\n\n</code></pre><div class=\"image-container\"><img src=\"/blog/images/101b99ae-1cea-80b7-a2f9-f301a2692f88/ZGF0YTppbWFn.png\" alt=\"文章图片\" \n                         onerror=\"this.onerror=null; this.src='/assets/placeholder-image.svg'; this.classList.add('error');\" /></div><div class=\"unsupported-block\">启用缓存</div><p>设置静态资源缓存，提高访问速度。</p><pre><code>location ~* \\\\\\\\.(jpg|jpeg|png|gif|ico|css|js)$ {\n    expires 7d;\n}\n\n</code></pre><div class=\"image-container\"><img src=\"/blog/images/101b99ae-1cea-80b7-a2f9-f301a2692f88/ZGF0YTppbWFn.png\" alt=\"文章图片\" \n                         onerror=\"this.onerror=null; this.src='/assets/placeholder-image.svg'; this.classList.add('error');\" /></div><p>windows初学者可以下载phpstudy，好用不难；linux可以使用宝塔，就是有些高版本不支持。</p><p>​</p><p>附带一个同事得经典conf：</p><div class=\"unsupported-block\">xxx.com.conf</div>"
+  ],
+  "contentHtml": "<div class=\"unsupported-block\">[synced_block]</div><p>​</p><p>Nginx 是一款高性能的 Web 服务器和反向代理服务器，在各大平台上都有广泛应用。本文将介绍在不同平台上部署 Nginx 的步骤，以及如何对 Nginx 进行参数调优，以提升其性能和稳定性。</p><h2>在 Ubuntu/Debian 上部署 Nginx</h2><li>更新软件包列表：<code>sudo apt update</code></li><li>安装 Nginx：<code>sudo apt install nginx</code></li><li>启动 Nginx 服务：<code>sudo systemctl start nginx</code></li><li>设置开机自启动：<code>sudo systemctl enable nginx</code></li><h2>在 CentOS/RHEL 上部署 Nginx</h2><ol><li>添加 Nginx 官方仓库：</li><pre><code class=\"language-plain text\">sudo vi /etc/yum.repos.d/nginx.repo\n[nginx]\nname=nginx repo\nbaseurl=http://nginx.org/packages/centos/$releasever/$basearch/\ngpgcheck=0\nenabled=1\n\n</code></pre><div class=\"image-container\">\n                  <img src=\"/blog/images/101b99ae-1cea-80b7-a2f9-f301a2692f88/base64_4765334125b448ec4c4bdf8285a1da72.gif\" alt=\"文章图片\" />\n                </div></ol><li>安装 Nginx：<code>sudo yum install nginx</code></li><li>启动 Nginx 服务：<code>sudo systemctl start nginx</code></li><li>设置开机自启动：<code>sudo systemctl enable nginx</code></li><h2>在 Windows 上部署 Nginx</h2><li>下载 Nginx Windows 版本：<a href=\"http://nginx.org/en/download.html\">nginx: download</a></li><li>解压下载的压缩包到任意目录，如 <code>C:\\\\\\\\nginx</code></li><li>打开命令提示符（CMD），切换到 Nginx 目录：<code>cd C:\\\\\\\\nginx</code></li><li>启动 Nginx：<code>start nginx</code></li><h2>Nginx 参数调优</h2><h3>worker_processes</h3><p>调整 worker 进程数，一般设置为 CPU 核心数。</p><pre><code class=\"language-plain text\">worker_processes auto;\n\n</code></pre><div class=\"image-container\">\n                  <img src=\"/blog/images/101b99ae-1cea-80b7-a2f9-f301a2692f88/base64_4765334125b448ec4c4bdf8285a1da72.gif\" alt=\"文章图片\" />\n                </div><h3>worker_connections</h3><p>设置每个 worker 进程的最大连接数。</p><pre><code class=\"language-plain text\">events {\n    worker_connections 10240;\n}\n\n</code></pre><div class=\"image-container\">\n                  <img src=\"/blog/images/101b99ae-1cea-80b7-a2f9-f301a2692f88/base64_4765334125b448ec4c4bdf8285a1da72.gif\" alt=\"文章图片\" />\n                </div><h3>keepalive_timeout</h3><p>设置长连接的超时时间，减少频繁建立连接的开销。</p><pre><code class=\"language-plain text\">keepalive_timeout 65;\n\n</code></pre><div class=\"image-container\">\n                  <img src=\"/blog/images/101b99ae-1cea-80b7-a2f9-f301a2692f88/base64_4765334125b448ec4c4bdf8285a1da72.gif\" alt=\"文章图片\" />\n                </div><h3>gzip 压缩</h3><p>启用 gzip 压缩，减小传输数据量。</p><pre><code class=\"language-plain text\">gzip on;\ngzip_min_length 1k;\ngzip_comp_level 2;\ngzip_types text/plain text/css application/json application/javascript application/x-javascript text/xml application/xml application/xml+rss text/javascript;\n\n</code></pre><div class=\"image-container\">\n                  <img src=\"/blog/images/101b99ae-1cea-80b7-a2f9-f301a2692f88/base64_4765334125b448ec4c4bdf8285a1da72.gif\" alt=\"文章图片\" />\n                </div><h3>启用缓存</h3><p>设置静态资源缓存，提高访问速度。</p><pre><code class=\"language-plain text\">location ~* \\\\\\\\.(jpg|jpeg|png|gif|ico|css|js)$ {\n    expires 7d;\n}\n\n</code></pre><div class=\"image-container\">\n                  <img src=\"/blog/images/101b99ae-1cea-80b7-a2f9-f301a2692f88/base64_4765334125b448ec4c4bdf8285a1da72.gif\" alt=\"文章图片\" />\n                </div><p>windows初学者可以下载phpstudy，好用不难；linux可以使用宝塔，就是有些高版本不支持。</p><p>​</p><p>附带一个同事得经典conf：</p><div class=\"unsupported-block\">[file]</div>"
 }

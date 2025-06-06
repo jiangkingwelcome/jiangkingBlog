@@ -60,7 +60,17 @@
       </div>
     </div>
     <article class="article-container">
-      <div class="article-content"><h1>示例友链</h1><p>请在你的Notion模板中修改此页面内容。</p><p></p><h1>Gallery排版</h1><div class="unsupported-block"></div><p></p><h1>分栏排版</h1><div class="unsupported-block"></div><div class="nested-content"><div class="unsupported-block"></div><div class="nested-content"><div class="image-container"><img src="/blog/images/801ee0f9-18bb-49fa-8529-074d46ab5181/aHR0cHM6Ly9w.svg" alt="文章图片" class="svg-image" /></div><p>             我的博客</p><p></p></div><div class="unsupported-block"></div><div class="nested-content"><div class="image-container"><img src="/blog/images/801ee0f9-18bb-49fa-8529-074d46ab5181/aHR0cHM6Ly9w.svg" alt="文章图片" class="svg-image" /></div><p>              友情链接</p></div><div class="unsupported-block"></div><div class="nested-content"><div class="image-container"><img src="/blog/images/801ee0f9-18bb-49fa-8529-074d46ab5181/aHR0cHM6Ly9w.svg" alt="文章图片" class="svg-image" /></div><p>             文字链接</p></div></div><h1>书签</h1><div class="unsupported-block">TANGLY's BLOG | 记录思考、分享我的学习笔记</div><div class="unsupported-block">TANGLY's BLOG | 记录思考、分享我的学习笔记</div></div>
+      <div class="article-content"><h1>示例友链</h1><p>请在你的Notion模板中修改此页面内容。</p><p></p><h1>Gallery排版</h1><div class="unsupported-block">[child_database]</div><p></p><h1>分栏排版</h1><div class="unsupported-block">[column_list]</div><div class="unsupported-block">[column]</div><div class="image-container">
+                  <img src="/blog/images/801ee0f9-18bb-49fa-8529-074d46ab5181/aHR0cHM6_Untitled.png" alt="文章图片" />
+                </div><p>             我的博客</p><p></p><div class="unsupported-block">[column]</div><div class="image-container">
+                  <img src="/blog/images/801ee0f9-18bb-49fa-8529-074d46ab5181/aHR0cHM6_Untitled.png" alt="文章图片" />
+                </div><p>              友情链接</p><div class="unsupported-block">[column]</div><div class="image-container">
+                  <img src="/blog/images/801ee0f9-18bb-49fa-8529-074d46ab5181/aHR0cHM6_Untitled.png" alt="文章图片" />
+                </div><p>             <a href="https://tangly1024.com/">文字链接</a></p><h1>书签</h1><div class="bookmark">
+                <a href="https://tangly1024.com/" target="_blank">https://tangly1024.com/</a>
+              </div><div class="bookmark">
+                <a href="https://tangly1024.com/" target="_blank">https://tangly1024.com/</a>
+              </div></div>
       <div class="article-tags">
       </div>
       <div class="author-info">
@@ -134,8 +144,8 @@
               const articleId = window.location.pathname.split('/').pop().replace('.html', '');
               img.src = `/blog/images/${articleId}/${content}`;
             } else {
-              // 默认使用占位图
-              img.src = '/assets/placeholder-image.svg';
+              // 无效图片路径，跳过
+              return;
             }
             
             // 添加错误处理
@@ -143,7 +153,7 @@
             img.setAttribute('data-original-text', content);
             img.onerror = function() {
               this.onerror = null;
-              this.src = '/assets/placeholder-image.svg';
+              this.style.display = 'none';
               this.classList.add('error');
             };
             
@@ -176,8 +186,8 @@
               const articleId = window.location.pathname.split('/').pop().replace('.html', '');
               img.src = `/blog/images/${articleId}/${content}`;
             } else {
-              // 使用占位图
-              img.src = '/assets/placeholder-image.svg';
+              // 无效图片路径，跳过
+              return;
             }
             
             // 添加错误处理
@@ -185,7 +195,7 @@
             img.setAttribute('data-text-content', content);
             img.onerror = function() {
               this.onerror = null;
-              this.src = '/assets/placeholder-image.svg';
+              this.style.display = 'none';
               this.classList.add('error');
             };
             
@@ -212,24 +222,18 @@
             console.log('图片已加载失败:', img.src);
             img.classList.add('error');
             
-            // 如果不是占位图，则替换为占位图
-            if (!img.src.includes('placeholder-image')) {
-              img.setAttribute('data-failed-src', img.src);
-              img.src = '/assets/placeholder-image.svg';
-              img.classList.add('svg-image'); // 添加SVG类
-            }
+            // 隐藏加载失败的图片
+            img.setAttribute('data-failed-src', img.src);
+            img.style.display = 'none';
           } else {
             // 添加加载错误处理
             img.addEventListener('error', function() {
               console.log('图片加载失败:', this.src);
               this.classList.add('error');
               
-              // 如果不是占位图，则替换为占位图
-              if (!this.src.includes('placeholder-image')) {
-                this.setAttribute('data-failed-src', this.src);
-                this.src = '/assets/placeholder-image.svg';
-                this.classList.add('svg-image'); // 添加SVG类
-              }
+              // 隐藏加载失败的图片
+              this.setAttribute('data-failed-src', this.src);
+              this.style.display = 'none';
             });
           }
         });

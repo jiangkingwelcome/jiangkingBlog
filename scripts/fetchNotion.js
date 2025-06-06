@@ -6,6 +6,7 @@ const http = require('http');
 const { URL } = require('url');
 const crypto = require('crypto');
 const axios = require('axios');
+require('dotenv').config();
 
 // 创建忽略SSL证书错误的HTTPS代理
 const httpsAgent = new https.Agent({
@@ -69,29 +70,105 @@ function escapeXml(unsafe) {
 function mapImageUrl(url, block = null, recordMap = null) {
   if (!url) return null;
   
+  console.log(`🔍 映射图片URL: ${url.substring(0, 80)}...`);
+  
   // 处理相对路径
   if (url.startsWith('/')) {
-    return `https://www.notion.so${url}`;
+    const fullUrl = `https://www.notion.so${url}`;
+    console.log(`📍 相对路径转换: ${fullUrl}`);
+    return fullUrl;
   }
   
   // 处理data URI
   if (url.startsWith('data:')) {
+    console.log(`📊 Data URI图片`);
     return url;
   }
   
-  // 检查是否有signed URLs（类似NotionNext的逻辑）
-  if (recordMap && recordMap.signed_urls && block && recordMap.signed_urls[block.id]) {
-    console.log(`使用signed URL: ${block.id}`);
-    return recordMap.signed_urls[block.id];
+  // 优先检查是否有signed URLs
+  if (recordMap && recordMap.signed_urls) {
+    console.log(`🔑 检查signed URLs (共${Object.keys(recordMap.signed_urls).length}个)`);
+    
+    // 方法1: 尝试直接匹配URL
+    let signedUrl = recordMap.signed_urls[url];
+    if (signedUrl) {
+      console.log(`✅ 找到signed URL (直接匹配): ${url.substring(0, 50)}...`);
+      return signedUrl;
+    }
+    
+    // 方法2: 尝试通过block ID匹配
+    if (block && block.id && recordMap.signed_urls[block.id]) {
+      console.log(`✅ 找到signed URL (block ID匹配): ${block.id}`);
+      return recordMap.signed_urls[block.id];
+    }
+    
+    // 方法3: 尝试解码URL后匹配
+    try {
+      const decodedUrl = decodeURIComponent(url);
+      if (recordMap.signed_urls[decodedUrl]) {
+        console.log(`✅ 找到signed URL (解码匹配): ${decodedUrl.substring(0, 50)}...`);
+        return recordMap.signed_urls[decodedUrl];
+      }
+    } catch (e) {
+      // 解码失败，继续其他匹配方式
+    }
+    
+    // 方法4: 尝试提取S3 URL的关键部分进行匹配
+    if (url.includes('amazonaws.com') || url.includes('s3.') || url.includes('secure.notion-static.com')) {
+      console.log(`🔍 S3 URL检测，尝试智能匹配...`);
+      
+      for (const [originalUrl, signed] of Object.entries(recordMap.signed_urls)) {
+        // 提取文件名进行匹配
+        const urlParts = url.split('/');
+        const originalParts = originalUrl.split('/');
+        const fileName = urlParts[urlParts.length - 1];
+        const originalFileName = originalParts[originalParts.length - 1];
+        
+        if (fileName && originalFileName && fileName === originalFileName) {
+          console.log(`✅ 找到signed URL (文件名匹配): ${fileName}`);
+          return signed;
+        }
+        
+        // UUID匹配
+        const uuidRegex = /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/gi;
+        const urlUuids = url.match(uuidRegex);
+        const originalUuids = originalUrl.match(uuidRegex);
+        
+        if (urlUuids && originalUuids && urlUuids.some(uuid => originalUuids.includes(uuid))) {
+          console.log(`✅ 找到signed URL (UUID匹配): ${urlUuids[0]}`);
+          return signed;
+        }
+      }
+    }
+    
+    // 方法5: 模糊匹配（最后尝试）
+    for (const [originalUrl, signed] of Object.entries(recordMap.signed_urls)) {
+      if (originalUrl.includes(url) || url.includes(originalUrl)) {
+        console.log(`✅ 找到signed URL (模糊匹配): ${url.substring(0, 50)}... -> ${signed.substring(0, 50)}...`);
+        return signed;
+      }
+    }
+    
+    console.log(`❌ 未找到对应的signed URL`);
+  } else {
+    console.log(`⚠️ 没有signed URLs可用`);
   }
   
-  // 关键修复：对于所有外部图片URL，直接返回原始URL
-  // 根据搜索结果，Notion的图片代理格式可能不正确，先尝试直接下载
+  // 对于S3 URL，尝试转换为Notion代理格式
+  if (url.includes('amazonaws.com') || url.includes('s3.') || url.includes('secure.notion-static.com')) {
+    const notionProxyUrl = `https://www.notion.so/image/${encodeURIComponent(url)}?table=block&id=${Date.now()}&cache=v2`;
+    console.log(`🔄 转换为Notion代理URL: ${notionProxyUrl.substring(0, 80)}...`);
+    return notionProxyUrl;
+  }
+  
+  // 对于所有外部图片URL，直接返回原始URL
   if (url.startsWith('http')) {
+    console.log(`🌐 使用原始URL: ${url.substring(0, 80)}...`);
     return url;
   }
   
   // 兜底处理
+  console.log(`🔄 兜底返回原始URL: ${url}`);
   return url;
 }
 
@@ -406,8 +483,8 @@ async function downloadImage(url, localPath, retryCount = 0, block = null, recor
         }
       }
       
-      // 方法6: 尝试使用Notion专用代理
-      if (!downloadSuccess && mappedUrl.includes('notion')) {
+      // 方法6: 尝试使用Notion专用代理（参考NotionNext实现）
+      if (!downloadSuccess && (mappedUrl.includes('notion') || mappedUrl.includes('amazonaws.com'))) {
         try {
           // 构建Notion专用代理URL
           const notionProxyUrl = `https://www.notion.so/image/${encodeURIComponent(mappedUrl)}`;
@@ -415,8 +492,16 @@ async function downloadImage(url, localPath, retryCount = 0, block = null, recor
           
           const notionResponse = await fetch(notionProxyUrl, { 
             headers: {
-              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
-              'Referer': 'https://www.notion.so/'
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+              'Referer': 'https://www.notion.so/',
+              'Accept': 'image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+              'Accept-Language': 'en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7',
+              'Accept-Encoding': 'gzip, deflate, br',
+              'Cache-Control': 'no-cache',
+              'Pragma': 'no-cache',
+              'Sec-Fetch-Dest': 'image',
+              'Sec-Fetch-Mode': 'no-cors',
+              'Sec-Fetch-Site': 'same-origin'
             },
             timeout: 30000
           });
@@ -443,6 +528,33 @@ async function downloadImage(url, localPath, retryCount = 0, block = null, recor
           }
         } catch (notionProxyErr) {
           console.error(`Notion官方代理下载图片失败: ${notionProxyErr.message}`);
+        }
+      }
+      
+      // 方法7: 对于无法下载的图片，创建一个更好的占位符
+      if (!downloadSuccess) {
+        try {
+          // 创建一个包含原始URL信息的占位符SVG
+          const urlHash = require('crypto').createHash('md5').update(mappedUrl).digest('hex').substring(0, 8);
+          const placeholderSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#f0f0f0" stroke="#ddd" stroke-width="2"/>
+  <text x="200" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">
+    图片暂时无法加载
+  </text>
+  <text x="200" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#999">
+    ID: ${urlHash}
+  </text>
+  <text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ccc">
+    ${mappedUrl.includes('amazonaws.com') ? 'AWS S3 图片' : 'Notion 图片'}
+  </text>
+</svg>`;
+          
+          fs.writeFileSync(targetPath, placeholderSvg);
+          console.log(`创建了信息占位图: ${targetPath}`);
+          downloadSuccess = true;
+          return resolve(targetPath);
+        } catch (placeholderErr) {
+          console.error(`创建占位图失败: ${placeholderErr.message}`);
         }
       }
       
@@ -724,17 +836,72 @@ async function fetchAll() {
           fs.mkdirSync(articleImageDir, { recursive: true });
         }
 
-        const pageUrl = `https://notion-api.splitbee.io/v1/page/${article.id}`;
-        const detail = await fetch(pageUrl).then(res => res.json());
+        // 使用官方Notion API获取页面数据，包含signed_urls
+        const pageUrl = `https://www.notion.so/api/v3/loadPageChunk`;
+        const requestBody = {
+          pageId: article.id,
+          limit: 100,
+          cursor: { stack: [] },
+          chunkNumber: 0,
+          verticalColumns: false
+        };
+        
+        const headers = {
+          'Content-Type': 'application/json',
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        };
+        
+        // 如果有Notion令牌，添加Authorization头
+        if (process.env.NOTION_TOKEN) {
+          headers['Authorization'] = `Bearer ${process.env.NOTION_TOKEN}`;
+          console.log('✅ 使用Notion API令牌进行认证');
+        } else {
+          console.log('⚠️ 未找到Notion API令牌，可能无法获取signed URLs');
+        }
+        
+        let detail = await fetch(pageUrl, {
+          method: 'POST',
+          headers: headers,
+          body: JSON.stringify(requestBody)
+        }).then(res => res.json());
+        
+        // 提取recordMap数据
+        const recordMap = detail.recordMap || {};
+        const blocks = recordMap.block || {};
+        
+        // 将blocks格式转换为原来的格式
+        const formattedDetail = {};
+        Object.keys(blocks).forEach(blockId => {
+          formattedDetail[blockId] = blocks[blockId];
+        });
+        
+        // 保存signed_urls信息到formattedDetail的根级别，便于访问
+        if (recordMap.signed_urls) {
+          formattedDetail.signed_urls = recordMap.signed_urls;
+          console.log(`✅ 获取到 ${Object.keys(recordMap.signed_urls).length} 个signed URLs`);
+          
+          // 调试：打印前几个signed URLs
+          const signedUrlKeys = Object.keys(recordMap.signed_urls).slice(0, 3);
+          signedUrlKeys.forEach(key => {
+            console.log(`  Signed URL: ${key.substring(0, 50)}... -> ${recordMap.signed_urls[key].substring(0, 50)}...`);
+          });
+        } else {
+          console.log('⚠️ 未获取到signed URLs');
+        }
+        
+        console.log(`📄 获取到 ${Object.keys(blocks).length} 个块，signed_urls: ${recordMap.signed_urls ? Object.keys(recordMap.signed_urls).length : 0} 个`);
 
         // 处理文章中的所有图片
         console.log(`开始处理文章 ${article.id} 的图片...`);
         
-        // 正确调用processBlockImages，传递整个detail对象
-        const updatedBlocks = await processBlockImages(detail, article.id, detail);
+        // 正确调用processBlockImages，传递整个formattedDetail对象
+        const updatedBlocks = await processBlockImages(formattedDetail, article.id, formattedDetail);
         
-        // 将更新后的blocks合并回detail对象
-        Object.assign(detail, updatedBlocks);
+        // 将更新后的blocks合并回formattedDetail对象
+          Object.assign(formattedDetail, updatedBlocks);
+          
+          // 使用formattedDetail作为最终的detail对象
+          detail = formattedDetail;
         
         console.log(`文章 ${article.id} 的图片处理完成`);
 

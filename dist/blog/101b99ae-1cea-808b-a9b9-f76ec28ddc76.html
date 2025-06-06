@@ -60,16 +60,19 @@
       </div>
     </div>
     <article class="article-container">
-      <div class="article-content"><p>1.关闭不必要的视觉效果：Windows 11默认开启的视觉效果可能会占用额外的系统资源，导致文件夹打开缓慢，通过调整系统的性能设置，选择“调整为最佳性能”选项，可以关闭不必要的动画和特效，从而提高文件夹的打开速度，这一步大多数都可以改善，只是确实难看，如果不想关闭下面还有办法。</p><p>2.调整索引选项：Windows的索引功能可以帮助快速搜索文件中的内容，但同时也可能影响到文件夹的加载速度，用户可以调整索引设置，限制索引服务的范围，或者对经常访问的文件夹进行索引，以改善文件夹打开速度。
+      <div class="article-content"><div class="unsupported-block">[synced_block]</div><p><strong>1.关闭不必要的视觉效果</strong>：Windows 11默认开启的视觉效果可能会占用额外的系统资源，导致文件夹打开缓慢，通过调整系统的性能设置，选择“调整为最佳性能”选项，可以关闭不必要的动画和特效，从而提高文件夹的打开速度，这一步大多数都可以改善，只是确实难看，如果不想关闭下面还有办法。</p><p>2.<strong>调整索引选项</strong>：Windows的索引功能可以帮助快速搜索文件中的内容，但同时也可能影响到文件夹的加载速度，用户可以调整索引设置，限制索引服务的范围，或者对经常访问的文件夹进行索引，以改善文件夹打开速度。
 
 3.打开文件夹选项，点击查看，高级设置里面有很多选项
 
-</p><div class="image-container"><img src="/blog/images/101b99ae-1cea-808b-a9b9-f76ec28ddc76/aHR0cHM6Ly9w.png" alt="文章图片" 
-                         onerror="this.onerror=null; this.src='/assets/placeholder-image.svg'; this.classList.add('error');" /></div><p>勾选在单独的进程中打开文件夹窗口，性能直接提高起飞</p><div class="image-container"><img src="/blog/images/101b99ae-1cea-808b-a9b9-f76ec28ddc76/aHR0cHM6Ly9w.png" alt="文章图片" 
-                         onerror="this.onerror=null; this.src='/assets/placeholder-image.svg'; this.classList.add('error');" /></div><p>4.减少缩略图缓存：Windows 11默认会为图片和视频文件生成缩略图，这可能会消耗大量资源，在文件夹选项中，可以设置为不生成缩略图，或者限制缩略图的大小，以减少加载时间
+</p><div class="image-container">
+                  <img src="/blog/images/101b99ae-1cea-808b-a9b9-f76ec28ddc76/aHR0cHM6_image.png" alt="文章图片" />
+                </div><p>勾选在单独的进程中打开文件夹窗口，性能直接提高起飞</p><div class="image-container">
+                  <img src="/blog/images/101b99ae-1cea-808b-a9b9-f76ec28ddc76/aHR0cHM6_image.png" alt="文章图片" />
+                </div><p>4.<strong>减少缩略图缓存</strong>：Windows 11默认会为图片和视频文件生成缩略图，这可能会消耗大量资源，在文件夹选项中，可以设置为不生成缩略图，或者限制缩略图的大小，以减少加载时间
 </p><p>5.把文件夹设置为常规项目，当然也可以设置一块盘</p><p>
-</p><div class="image-container"><img src="/blog/images/101b99ae-1cea-808b-a9b9-f76ec28ddc76/aHR0cHM6Ly9w.png" alt="文章图片" 
-                         onerror="this.onerror=null; this.src='/assets/placeholder-image.svg'; this.classList.add('error');" /></div><p></p></div>
+</p><div class="image-container">
+                  <img src="/blog/images/101b99ae-1cea-808b-a9b9-f76ec28ddc76/aHR0cHM6_image.png" alt="文章图片" />
+                </div><p></p></div>
       <div class="article-tags">
       </div>
       <div class="author-info">
@@ -143,8 +146,8 @@
               const articleId = window.location.pathname.split('/').pop().replace('.html', '');
               img.src = `/blog/images/${articleId}/${content}`;
             } else {
-              // 默认使用占位图
-              img.src = '/assets/placeholder-image.svg';
+              // 无效图片路径，跳过
+              return;
             }
             
             // 添加错误处理
@@ -152,7 +155,7 @@
             img.setAttribute('data-original-text', content);
             img.onerror = function() {
               this.onerror = null;
-              this.src = '/assets/placeholder-image.svg';
+              this.style.display = 'none';
               this.classList.add('error');
             };
             
@@ -185,8 +188,8 @@
               const articleId = window.location.pathname.split('/').pop().replace('.html', '');
               img.src = `/blog/images/${articleId}/${content}`;
             } else {
-              // 使用占位图
-              img.src = '/assets/placeholder-image.svg';
+              // 无效图片路径，跳过
+              return;
             }
             
             // 添加错误处理
@@ -194,7 +197,7 @@
             img.setAttribute('data-text-content', content);
             img.onerror = function() {
               this.onerror = null;
-              this.src = '/assets/placeholder-image.svg';
+              this.style.display = 'none';
               this.classList.add('error');
             };
             
@@ -221,24 +224,18 @@
             console.log('图片已加载失败:', img.src);
             img.classList.add('error');
             
-            // 如果不是占位图，则替换为占位图
-            if (!img.src.includes('placeholder-image')) {
-              img.setAttribute('data-failed-src', img.src);
-              img.src = '/assets/placeholder-image.svg';
-              img.classList.add('svg-image'); // 添加SVG类
-            }
+            // 隐藏加载失败的图片
+            img.setAttribute('data-failed-src', img.src);
+            img.style.display = 'none';
           } else {
             // 添加加载错误处理
             img.addEventListener('error', function() {
               console.log('图片加载失败:', this.src);
               this.classList.add('error');
               
-              // 如果不是占位图，则替换为占位图
-              if (!this.src.includes('placeholder-image')) {
-                this.setAttribute('data-failed-src', this.src);
-                this.src = '/assets/placeholder-image.svg';
-                this.classList.add('svg-image'); // 添加SVG类
-              }
+              // 隐藏加载失败的图片
+              this.setAttribute('data-failed-src', this.src);
+              this.style.display = 'none';
             });
           }
         });

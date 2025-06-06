@@ -1,623 +1,747 @@
 {
   "id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
+  "title": "中国互联网就业现状分析",
   "date": "2021-11-05",
+  "tags": [],
+  "status": "Published",
   "type": "Post",
   "category": "心情随笔",
   "slug": "public",
-  "tags": [
-    ""
-  ],
   "summary": "中国互联网就业现状分析",
-  "title": "中国互联网就业现状分析",
-  "status": "Published",
-  "detail": {
-    "101b99ae-1cea-8047-a65e-eb321c7f831e": {
-      "value": {
-        "id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "version": 158,
-        "type": "page",
-        "properties": {
-          "NX\\Q": [
-            [
-              "‣",
-              [
-                [
-                  "d",
-                  {
-                    "type": "date",
-                    "start_date": "2021-11-05"
-                  }
-                ]
-              ]
-            ]
-          ],
-          "`gQ~": [
-            [
-              "Post"
-            ]
-          ],
-          "bB{M": [
-            [
-              "心情随笔"
-            ]
-          ],
-          "d]hq": [
-            [
-              "public"
-            ]
-          ],
-          "sD^m": [
-            [
-              ""
-            ]
-          ],
-          "wz|S": [
-            [
-              "中国互联网就业现状分析",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ]
-          ],
-          "title": [
-            [
-              "中国互联网就业现状分析",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ]
-          ],
-          "f211bdc0-ee00-4186-9a7d-f68c055ec2ee": [
-            [
-              "Published"
-            ]
-          ]
-        },
-        "content": [
-          "f9c9ebd3-f9b8-47e4-a307-405251ad49b4",
-          "101b99ae-1cea-80ce-98bc-c1fd37d1f2a1",
-          "101b99ae-1cea-8007-824a-cc138630f879",
-          "101b99ae-1cea-8031-9d67-dfa82ea44add",
-          "101b99ae-1cea-8098-887f-eeb8ec09332f",
-          "101b99ae-1cea-80f4-af8d-facf24acdf8f",
-          "101b99ae-1cea-805f-9543-d3f2bf18567f",
-          "30c25764-9d67-437f-8401-85b20cb8208c",
-          "101b99ae-1cea-80d1-9a82-c91357515613",
-          "10dba2f1-e63f-49db-9587-a02402e82e51",
-          "101b99ae-1cea-80ae-8f96-cfe5b9aacda7",
-          "67ce00b5-9e1f-4e47-93bd-854bc8a095eb",
-          "b3cf8edd-3788-44b0-a8f0-41a3f55129f8",
-          "101b99ae-1cea-8095-be5c-c2a0c34249c0",
-          "7b0a09be-846a-4307-afba-b0c231adeb3a",
-          "101b99ae-1cea-8058-bd24-e8ea9ec531b7"
-        ],
-        "format": {
-          "page_font": "serif",
-          "page_cover": "/images/page-cover/met_vincent_van_gogh_cradle.jpg",
-          "block_locked": false,
-          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
-          "copied_from_pointer": {
-            "id": "101b99ae-1cea-8096-99a5-ece7d791d65e",
-            "table": "block",
-            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-          },
-          "page_cover_position": 0.2,
-          "social_media_image_preview_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/03c61fc7-8ae2-451d-80f2-118e6ce2d9cd/fef27a70-f20c-4256-a37d-613746459016/SocialMediaPreviewImage.png"
-        },
-        "created_time": 1726297924153,
-        "last_edited_time": 1726300591996,
-        "parent_id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
-        "parent_table": "collection",
-        "alive": true,
-        "copied_from": "101b99ae-1cea-8096-99a5-ece7d791d65e",
-        "file_ids": [
-          "61e374b7-1b37-4968-9ffa-88ac2074d5c1",
-          "fef27a70-f20c-4256-a37d-613746459016"
-        ],
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+  "created_time": "2024-09-14T07:12:00.000Z",
+  "last_edited_time": "2024-09-14T07:56:00.000Z",
+  "blocks": [
+    {
+      "object": "block",
+      "id": "f9c9ebd3-f9b8-47e4-a307-405251ad49b4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-8047-a65e-eb321c7f831e"
       },
-      "role": "reader"
+      "created_time": "2024-09-14T07:12:00.000Z",
+      "last_edited_time": "2024-09-14T07:12:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": true,
+      "archived": false,
+      "in_trash": false,
+      "type": "synced_block",
+      "synced_block": {
+        "synced_from": null
+      },
+      "children": [
+        {
+          "object": "block",
+          "id": "22d408ff-67c8-4eb5-a045-5217bd8084c2",
+          "parent": {
+            "type": "block_id",
+            "block_id": "f9c9ebd3-f9b8-47e4-a307-405251ad49b4"
+          },
+          "created_time": "2024-09-14T07:12:00.000Z",
+          "last_edited_time": "2024-09-14T07:36:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "2024年的中国互联网就业形势严峻，行业面临宏观经济下行、流量红利消退、监管政策收紧等挑战，导致裁员、降薪和岗位减少。从业者面临中年危机和职业生涯不确定性，薪酬泡沫显现。然而，随着5G、人工智能等新技术发展，以及互联网下沉市场的潜力，未来仍存在新的就业机会和行业发展空间",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "2024年的中国互联网就业形势严峻，行业面临宏观经济下行、流量红利消退、监管政策收紧等挑战，导致裁员、降薪和岗位减少。从业者面临中年危机和职业生涯不确定性，薪酬泡沫显现。然而，随着5G、人工智能等新技术发展，以及互联网下沉市场的潜力，未来仍存在新的就业机会和行业发展空间",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        }
+      ]
     },
-    "54a47a0d-391d-412f-912f-907d897e52bd": {
-      "value": {
-        "id": "54a47a0d-391d-412f-912f-907d897e52bd",
-        "version": 119,
-        "type": "collection_view_page",
-        "content": [
-          "9849a0d1-82a7-46f8-85d4-68b9db92a92b"
-        ],
-        "view_ids": [
-          "a0152dc5-e7e8-4f29-9c37-b1fb486040e5",
-          "af27229a-9c1c-4379-b779-20cb62c86bc4",
-          "a33ce80a-303e-4722-9b6f-639f3c32f10d",
-          "7fe61317-1745-4dec-9d31-f01020c4155e"
-        ],
-        "collection_id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
-        "format": {
-          "site_id": "51847d78-4b83-4b0c-93df-c5907104c1cd",
-          "block_locked": false,
-          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
-          "collection_pointer": {
-            "id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
-            "table": "collection",
-            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-          },
-          "copied_from_pointer": {
-            "id": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
-            "table": "block",
-            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
-          },
-          "page_cover_position": 0.5
-        },
-        "permissions": [
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-80ce-98bc-c1fd37d1f2a1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-8047-a65e-eb321c7f831e"
+      },
+      "created_time": "2024-09-14T07:36:00.000Z",
+      "last_edited_time": "2024-09-14T07:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
           {
-            "role": "reader",
-            "type": "public_permission",
-            "is_site": true,
-            "added_timestamp": 1725446328326
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
+            "type": "text",
+            "text": {
+              "content": "总体而言,2024年中国互联网就业形势较为严峻。行业正处于深度调整期,面临诸多新挑战:",
+              "link": null
             },
-            "type": "bot_permission",
-            "bot_id": "1f5b99ae-1cea-8101-adeb-00279282a15f",
-            "parent_id": "80a8a328-0748-4dd6-925e-6865939d4ae0",
-            "parent_table": "notion_user"
-          },
-          {
-            "role": {
-              "read_comment": true,
-              "read_content": true,
-              "insert_comment": true,
-              "insert_content": true,
-              "update_content": true
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
             },
-            "type": "bot_permission",
-            "bot_id": "1f6b99ae-1cea-8187-bd91-0027b7252bca",
-            "parent_id": "80a8a328-0748-4dd6-925e-6865939d4ae0",
-            "parent_table": "notion_user"
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "66be2e14-23ce-4798-9d2e-b1104a06653a",
-            "parent_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
-            "parent_table": "space"
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "90053442-be1a-4630-99f4-2c04f2706259",
-            "parent_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
-            "parent_table": "space"
+            "plain_text": "总体而言,2024年中国互联网就业形势较为严峻。行业正处于深度调整期,面临诸多新挑战:",
+            "href": null
           }
         ],
-        "created_time": 1725446287995,
-        "last_edited_time": 1748700122053,
-        "parent_id": "078a9301-9747-4213-900b-e1a2eda4f4dd",
-        "parent_table": "team",
-        "alive": true,
-        "copied_from": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
-        "file_ids": [
-          "1e87c98f-7b57-4634-9f9e-8eedc62ace2e"
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8007-824a-cc138630f879",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-8047-a65e-eb321c7f831e"
+      },
+      "created_time": "2024-09-14T07:36:00.000Z",
+      "last_edited_time": "2024-09-14T07:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "宏观经济下行压力加大,疫情反复、地缘冲突等不确定性因素增多,消费需求萎缩,互联网企业营收增长乏力。裁员、降薪、缩减校招规模现象较为普遍。\n互联网流量红利殆尽,获客成本居高不下。部分互联网企业过度依赖补贴与营销,企业的可持续发展能力堪忧。\n互联网监管政策趋严,反垄断、数据安全、个人隐私保护等新规密集出台,合规经营压力骤增,进一步挤压了中小企业生存空间。\n互联网行业洗牌加剧,强者愈强,马太效应凸显。中小企业被迫转型或退出市场,新增就业岗位减少。\n互联网人才供给严重过剩。高校大量开设人工智能、大数据等专业,但企业岗位需求减少,供需错配矛盾凸显。职场新人面临\"毕业即失业\"窘境。\n互联网从业者普遍感到中年危机。35岁以上员工被视为\"高龄\"（很是真实，不知道本来就很拥挤的行业，变的及其拥挤，甚至夸张，都是资本造的孽，当然其他的行业说是没什么高龄，但赚钱也不多，总体看哪个合适不合适不好说）,跳槽难度加大。职业倦怠、身心健康等问题日益突出。\n行业薪酬体系亟待调整。前几年,互联网企业凭借高薪快速扩张,但随着业绩承压,薪资虚高问题凸显。薪酬回归理性后,行业对人才吸引力有所下降。\n大厂高管出走、创业公司倒闭等负面消息频发,行业信心备受打击。资本寒冬下创业融资困难,企业发展前景不明朗,人才流失风险加大。\n当前互联网就业的确存在一些值得关注的问题和挑战:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "宏观经济下行压力加大,疫情反复、地缘冲突等不确定性因素增多,消费需求萎缩,互联网企业营收增长乏力。裁员、降薪、缩减校招规模现象较为普遍。\n互联网流量红利殆尽,获客成本居高不下。部分互联网企业过度依赖补贴与营销,企业的可持续发展能力堪忧。\n互联网监管政策趋严,反垄断、数据安全、个人隐私保护等新规密集出台,合规经营压力骤增,进一步挤压了中小企业生存空间。\n互联网行业洗牌加剧,强者愈强,马太效应凸显。中小企业被迫转型或退出市场,新增就业岗位减少。\n互联网人才供给严重过剩。高校大量开设人工智能、大数据等专业,但企业岗位需求减少,供需错配矛盾凸显。职场新人面临\"毕业即失业\"窘境。\n互联网从业者普遍感到中年危机。35岁以上员工被视为\"高龄\"（很是真实，不知道本来就很拥挤的行业，变的及其拥挤，甚至夸张，都是资本造的孽，当然其他的行业说是没什么高龄，但赚钱也不多，总体看哪个合适不合适不好说）,跳槽难度加大。职业倦怠、身心健康等问题日益突出。\n行业薪酬体系亟待调整。前几年,互联网企业凭借高薪快速扩张,但随着业绩承压,薪资虚高问题凸显。薪酬回归理性后,行业对人才吸引力有所下降。\n大厂高管出走、创业公司倒闭等负面消息频发,行业信心备受打击。资本寒冬下创业融资困难,企业发展前景不明朗,人才流失风险加大。\n当前互联网就业的确存在一些值得关注的问题和挑战:",
+            "href": null
+          }
         ],
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
+        "color": "default"
+      }
     },
-    "f9c9ebd3-f9b8-47e4-a307-405251ad49b4": {
-      "value": {
-        "id": "f9c9ebd3-f9b8-47e4-a307-405251ad49b4",
-        "version": 1,
-        "type": "transclusion_container",
-        "content": [
-          "22d408ff-67c8-4eb5-a045-5217bd8084c2"
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8031-9d67-dfa82ea44add",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-8047-a65e-eb321c7f831e"
+      },
+      "created_time": "2024-09-14T07:36:00.000Z",
+      "last_edited_time": "2024-09-14T07:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "行业竞争加剧,部分企业生存压力加大,裁员风波时有发生。互联网红利渐退,流量获取成本上升,一些中小企业面临较大经营困难。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "行业竞争加剧,部分企业生存压力加大,裁员风波时有发生。互联网红利渐退,流量获取成本上升,一些中小企业面临较大经营困难。",
+            "href": null
+          }
         ],
-        "format": {
-          "copied_from_pointer": {
-            "id": "89ebb096-fd8c-4a84-af51-02885b60479e",
-            "table": "block",
-            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8098-887f-eeb8ec09332f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-8047-a65e-eb321c7f831e"
+      },
+      "created_time": "2024-09-14T07:36:00.000Z",
+      "last_edited_time": "2024-09-14T07:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "从业者职业生涯不确定性增加。互联网行业瞬息万变,技术迭代速度快,从业者担心自己的知识和技能随时可能过时。部分企业重视短期绩效,忽视人才长期培养,加剧了职业焦虑。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "从业者职业生涯不确定性增加。互联网行业瞬息万变,技术迭代速度快,从业者担心自己的知识和技能随时可能过时。部分企业重视短期绩效,忽视人才长期培养,加剧了职业焦虑。",
+            "href": null
           }
-        },
-        "created_time": 1726297924153,
-        "last_edited_time": 1726297924153,
-        "parent_id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "parent_table": "block",
-        "alive": true,
-        "copied_from": "89ebb096-fd8c-4a84-af51-02885b60479e",
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
+        ],
+        "color": "default"
+      }
     },
-    "101b99ae-1cea-80ce-98bc-c1fd37d1f2a1": {
-      "value": {
-        "id": "101b99ae-1cea-80ce-98bc-c1fd37d1f2a1",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "总体而言,2024年中国互联网就业形势较为严峻。行业正处于深度调整期,面临诸多新挑战:"
-            ]
-          ]
-        },
-        "created_time": 1726299394439,
-        "last_edited_time": 1726299394448,
-        "parent_id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-80f4-af8d-facf24acdf8f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-8047-a65e-eb321c7f831e"
       },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8007-824a-cc138630f879": {
-      "value": {
-        "id": "101b99ae-1cea-8007-824a-cc138630f879",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "宏观经济下行压力加大,疫情反复、地缘冲突等不确定性因素增多,消费需求萎缩,互联网企业营收增长乏力。裁员、降薪、缩减校招规模现象较为普遍。\n互联网流量红利殆尽,获客成本居高不下。部分互联网企业过度依赖补贴与营销,企业的可持续发展能力堪忧。\n互联网监管政策趋严,反垄断、数据安全、个人隐私保护等新规密集出台,合规经营压力骤增,进一步挤压了中小企业生存空间。\n互联网行业洗牌加剧,强者愈强,马太效应凸显。中小企业被迫转型或退出市场,新增就业岗位减少。\n互联网人才供给严重过剩。高校大量开设人工智能、大数据等专业,但企业岗位需求减少,供需错配矛盾凸显。职场新人面临\"毕业即失业\"窘境。\n互联网从业者普遍感到中年危机。35岁以上员工被视为\"高龄\"（很是真实，不知道本来就很拥挤的行业，变的及其拥挤，甚至夸张，都是资本造的孽，当然其他的行业说是没什么高龄，但赚钱也不多，总体看哪个合适不合适不好说）,跳槽难度加大。职业倦怠、身心健康等问题日益突出。\n行业薪酬体系亟待调整。前几年,互联网企业凭借高薪快速扩张,但随着业绩承压,薪资虚高问题凸显。薪酬回归理性后,行业对人才吸引力有所下降。\n大厂高管出走、创业公司倒闭等负面消息频发,行业信心备受打击。资本寒冬下创业融资困难,企业发展前景不明朗,人才流失风险加大。\n当前互联网就业的确存在一些值得关注的问题和挑战:"
-            ]
-          ]
-        },
-        "created_time": 1726299394440,
-        "last_edited_time": 1726299394448,
-        "parent_id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      "created_time": "2024-09-14T07:36:00.000Z",
+      "last_edited_time": "2024-09-14T07:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
       },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8031-9d67-dfa82ea44add": {
-      "value": {
-        "id": "101b99ae-1cea-8031-9d67-dfa82ea44add",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "行业竞争加剧,部分企业生存压力加大,裁员风波时有发生。互联网红利渐退,流量获取成本上升,一些中小企业面临较大经营困难。"
-            ]
-          ]
-        },
-        "created_time": 1726299394440,
-        "last_edited_time": 1726299394448,
-        "parent_id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
       },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8098-887f-eeb8ec09332f": {
-      "value": {
-        "id": "101b99ae-1cea-8098-887f-eeb8ec09332f",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "从业者职业生涯不确定性增加。互联网行业瞬息万变,技术迭代速度快,从业者担心自己的知识和技能随时可能过时。部分企业重视短期绩效,忽视人才长期培养,加剧了职业焦虑。"
-            ]
-          ]
-        },
-        "created_time": 1726299394440,
-        "last_edited_time": 1726299394448,
-        "parent_id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-80f4-af8d-facf24acdf8f": {
-      "value": {
-        "id": "101b99ae-1cea-80f4-af8d-facf24acdf8f",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "薪酬泡沫渐显。前些年互联网行业薪资水平虚高,但随着行业进入调整期,收入增长乏力,甚至出现下降趋势,与生活成本上涨形成反差。"
-            ]
-          ]
-        },
-        "created_time": 1726299394441,
-        "last_edited_time": 1726299394448,
-        "parent_id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-805f-9543-d3f2bf18567f": {
-      "value": {
-        "id": "101b99ae-1cea-805f-9543-d3f2bf18567f",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "\"996\"加班文化引发质疑。过度加班导致身心健康问题,工作生活失衡,可持续性受到挑战。"
-            ]
-          ]
-        },
-        "created_time": 1726299394441,
-        "last_edited_time": 1726299394448,
-        "parent_id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "30c25764-9d67-437f-8401-85b20cb8208c": {
-      "value": {
-        "id": "30c25764-9d67-437f-8401-85b20cb8208c",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "灵活就业群体权益保障有待加强。平台与灵活就业者之间存在事实劳动关系认定、社保缴纳等争议,相关法律制度还不够明确。"
-            ]
-          ]
-        },
-        "created_time": 1726299394441,
-        "last_edited_time": 1726299394448,
-        "parent_id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-80d1-9a82-c91357515613": {
-      "value": {
-        "id": "101b99ae-1cea-80d1-9a82-c91357515613",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "行业发展不平衡。头部企业强者恒强,中小企业生存空间受限。不同细分领域机会差异较大,vertical领域增长乏力。"
-            ]
-          ]
-        },
-        "created_time": 1726299394441,
-        "last_edited_time": 1726299394448,
-        "parent_id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "10dba2f1-e63f-49db-9587-a02402e82e51": {
-      "value": {
-        "id": "10dba2f1-e63f-49db-9587-a02402e82e51",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "展望未来,互联网行业短期内仍将经历结构性调整,但从长远看前景依然广阔:"
-            ]
-          ]
-        },
-        "created_time": 1726299394441,
-        "last_edited_time": 1726299394448,
-        "parent_id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-80ae-8f96-cfe5b9aacda7": {
-      "value": {
-        "id": "101b99ae-1cea-80ae-8f96-cfe5b9aacda7",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "国家政策支持力度加大,互联网产业作为数字经济重要组成,仍是国家鼓励和扶持的战略性新兴产业。"
-            ]
-          ]
-        },
-        "created_time": 1726299394441,
-        "last_edited_time": 1726299394448,
-        "parent_id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "67ce00b5-9e1f-4e47-93bd-854bc8a095eb": {
-      "value": {
-        "id": "67ce00b5-9e1f-4e47-93bd-854bc8a095eb",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "5G、人工智能、元宇宙等新技术方兴未艾,有望催生出更多创新应用场景和商业模式,为互联网就业注入新动力。"
-            ]
-          ]
-        },
-        "created_time": 1726299394441,
-        "last_edited_time": 1726299394448,
-        "parent_id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "b3cf8edd-3788-44b0-a8f0-41a3f55129f8": {
-      "value": {
-        "id": "b3cf8edd-3788-44b0-a8f0-41a3f55129f8",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "互联网下沉市场仍有巨大潜力。农村电商、社区团购等新业态有望为三四线及以下城市创造更多就业。"
-            ]
-          ]
-        },
-        "created_time": 1726299394442,
-        "last_edited_time": 1726299394448,
-        "parent_id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8095-be5c-c2a0c34249c0": {
-      "value": {
-        "id": "101b99ae-1cea-8095-be5c-c2a0c34249c0",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "随着互联网创业教育的普及,越来越多年轻人投身互联网创业大军,为就业增长提供新动能。"
-            ]
-          ]
-        },
-        "created_time": 1726299394442,
-        "last_edited_time": 1726299394448,
-        "parent_id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "7b0a09be-846a-4307-afba-b0c231adeb3a": {
-      "value": {
-        "id": "7b0a09be-846a-4307-afba-b0c231adeb3a",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "在社会各界共同努力下,互联网行业有望加快构建符合自身特点的用工保障机制,实现更加包容、可持续的发展。"
-            ]
-          ]
-        },
-        "created_time": 1726299394442,
-        "last_edited_time": 1726299394448,
-        "parent_id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8058-bd24-e8ea9ec531b7": {
-      "value": {
-        "id": "101b99ae-1cea-8058-bd24-e8ea9ec531b7",
-        "version": 4,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "总的来说,互联网就业正处在转型升级的关键期,既面临诸多挑战,但也孕育着新的机遇。把握产业发展规律,顺应时代变革潮流,互联网有望成为继续引领中国就业增长的中坚力量。我们对互联网就业的未来依然充满希望。\n"
-            ]
-          ]
-        },
-        "created_time": 1726299394442,
-        "last_edited_time": 1726299424352,
-        "parent_id": "101b99ae-1cea-8047-a65e-eb321c7f831e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "22d408ff-67c8-4eb5-a045-5217bd8084c2": {
-      "value": {
-        "id": "22d408ff-67c8-4eb5-a045-5217bd8084c2",
-        "version": 5,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "2024年的中国互联网就业形势严峻，行业面临宏观经济下行、流量红利消退、监管政策收紧等挑战，导致裁员、降薪和岗位减少。从业者面临中年危机和职业生涯不确定性，薪酬泡沫显现。然而，随着5G、人工智能等新技术发展，以及互联网下沉市场的潜力，未来仍存在新的就业机会和行业发展空间"
-            ]
-          ]
-        },
-        "format": {
-          "copied_from_pointer": {
-            "id": "356d08c4-dcbb-4ac4-be65-741759441df8",
-            "table": "block",
-            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "薪酬泡沫渐显。前些年互联网行业薪资水平虚高,但随着行业进入调整期,收入增长乏力,甚至出现下降趋势,与生活成本上涨形成反差。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "薪酬泡沫渐显。前些年互联网行业薪资水平虚高,但随着行业进入调整期,收入增长乏力,甚至出现下降趋势,与生活成本上涨形成反差。",
+            "href": null
           }
-        },
-        "created_time": 1726297924153,
-        "last_edited_time": 1726299409782,
-        "parent_id": "f9c9ebd3-f9b8-47e4-a307-405251ad49b4",
-        "parent_table": "block",
-        "alive": true,
-        "copied_from": "356d08c4-dcbb-4ac4-be65-741759441df8",
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
+        ],
+        "color": "default"
+      }
     },
-    "9849a0d1-82a7-46f8-85d4-68b9db92a92b": {
-      "value": {
-        "id": "9849a0d1-82a7-46f8-85d4-68b9db92a92b",
-        "version": 1,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "😅"
-            ]
-          ]
-        },
-        "format": {
-          "copied_from_pointer": {
-            "id": "254eced8-9cba-4f90-9990-a885bd567dd0",
-            "table": "block",
-            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
-          }
-        },
-        "created_time": 1725446270807,
-        "last_edited_time": 1725446270807,
-        "parent_id": "54a47a0d-391d-412f-912f-907d897e52bd",
-        "parent_table": "block",
-        "alive": true,
-        "copied_from": "254eced8-9cba-4f90-9990-a885bd567dd0",
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-805f-9543-d3f2bf18567f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-8047-a65e-eb321c7f831e"
       },
-      "role": "reader"
+      "created_time": "2024-09-14T07:36:00.000Z",
+      "last_edited_time": "2024-09-14T07:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\"996\"加班文化引发质疑。过度加班导致身心健康问题,工作生活失衡,可持续性受到挑战。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\"996\"加班文化引发质疑。过度加班导致身心健康问题,工作生活失衡,可持续性受到挑战。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "30c25764-9d67-437f-8401-85b20cb8208c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-8047-a65e-eb321c7f831e"
+      },
+      "created_time": "2024-09-14T07:36:00.000Z",
+      "last_edited_time": "2024-09-14T07:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "灵活就业群体权益保障有待加强。平台与灵活就业者之间存在事实劳动关系认定、社保缴纳等争议,相关法律制度还不够明确。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "灵活就业群体权益保障有待加强。平台与灵活就业者之间存在事实劳动关系认定、社保缴纳等争议,相关法律制度还不够明确。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-80d1-9a82-c91357515613",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-8047-a65e-eb321c7f831e"
+      },
+      "created_time": "2024-09-14T07:36:00.000Z",
+      "last_edited_time": "2024-09-14T07:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "行业发展不平衡。头部企业强者恒强,中小企业生存空间受限。不同细分领域机会差异较大,vertical领域增长乏力。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "行业发展不平衡。头部企业强者恒强,中小企业生存空间受限。不同细分领域机会差异较大,vertical领域增长乏力。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "10dba2f1-e63f-49db-9587-a02402e82e51",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-8047-a65e-eb321c7f831e"
+      },
+      "created_time": "2024-09-14T07:36:00.000Z",
+      "last_edited_time": "2024-09-14T07:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "展望未来,互联网行业短期内仍将经历结构性调整,但从长远看前景依然广阔:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "展望未来,互联网行业短期内仍将经历结构性调整,但从长远看前景依然广阔:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-80ae-8f96-cfe5b9aacda7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-8047-a65e-eb321c7f831e"
+      },
+      "created_time": "2024-09-14T07:36:00.000Z",
+      "last_edited_time": "2024-09-14T07:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "国家政策支持力度加大,互联网产业作为数字经济重要组成,仍是国家鼓励和扶持的战略性新兴产业。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "国家政策支持力度加大,互联网产业作为数字经济重要组成,仍是国家鼓励和扶持的战略性新兴产业。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "67ce00b5-9e1f-4e47-93bd-854bc8a095eb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-8047-a65e-eb321c7f831e"
+      },
+      "created_time": "2024-09-14T07:36:00.000Z",
+      "last_edited_time": "2024-09-14T07:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "5G、人工智能、元宇宙等新技术方兴未艾,有望催生出更多创新应用场景和商业模式,为互联网就业注入新动力。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "5G、人工智能、元宇宙等新技术方兴未艾,有望催生出更多创新应用场景和商业模式,为互联网就业注入新动力。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "b3cf8edd-3788-44b0-a8f0-41a3f55129f8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-8047-a65e-eb321c7f831e"
+      },
+      "created_time": "2024-09-14T07:36:00.000Z",
+      "last_edited_time": "2024-09-14T07:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "互联网下沉市场仍有巨大潜力。农村电商、社区团购等新业态有望为三四线及以下城市创造更多就业。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "互联网下沉市场仍有巨大潜力。农村电商、社区团购等新业态有望为三四线及以下城市创造更多就业。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8095-be5c-c2a0c34249c0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-8047-a65e-eb321c7f831e"
+      },
+      "created_time": "2024-09-14T07:36:00.000Z",
+      "last_edited_time": "2024-09-14T07:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "随着互联网创业教育的普及,越来越多年轻人投身互联网创业大军,为就业增长提供新动能。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "随着互联网创业教育的普及,越来越多年轻人投身互联网创业大军,为就业增长提供新动能。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "7b0a09be-846a-4307-afba-b0c231adeb3a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-8047-a65e-eb321c7f831e"
+      },
+      "created_time": "2024-09-14T07:36:00.000Z",
+      "last_edited_time": "2024-09-14T07:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "在社会各界共同努力下,互联网行业有望加快构建符合自身特点的用工保障机制,实现更加包容、可持续的发展。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "在社会各界共同努力下,互联网行业有望加快构建符合自身特点的用工保障机制,实现更加包容、可持续的发展。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8058-bd24-e8ea9ec531b7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "101b99ae-1cea-8047-a65e-eb321c7f831e"
+      },
+      "created_time": "2024-09-14T07:36:00.000Z",
+      "last_edited_time": "2024-09-14T07:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "总的来说,互联网就业正处在转型升级的关键期,既面临诸多挑战,但也孕育着新的机遇。把握产业发展规律,顺应时代变革潮流,互联网有望成为继续引领中国就业增长的中坚力量。我们对互联网就业的未来依然充满希望。\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "总的来说,互联网就业正处在转型升级的关键期,既面临诸多挑战,但也孕育着新的机遇。把握产业发展规律,顺应时代变革潮流,互联网有望成为继续引领中国就业增长的中坚力量。我们对互联网就业的未来依然充满希望。\n",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
     }
-  },
-  "contentHtml": "<p>2024年的中国互联网就业形势严峻，行业面临宏观经济下行、流量红利消退、监管政策收紧等挑战，导致裁员、降薪和岗位减少。从业者面临中年危机和职业生涯不确定性，薪酬泡沫显现。然而，随着5G、人工智能等新技术发展，以及互联网下沉市场的潜力，未来仍存在新的就业机会和行业发展空间</p><p>总体而言,2024年中国互联网就业形势较为严峻。行业正处于深度调整期,面临诸多新挑战:</p><p>宏观经济下行压力加大,疫情反复、地缘冲突等不确定性因素增多,消费需求萎缩,互联网企业营收增长乏力。裁员、降薪、缩减校招规模现象较为普遍。\n互联网流量红利殆尽,获客成本居高不下。部分互联网企业过度依赖补贴与营销,企业的可持续发展能力堪忧。\n互联网监管政策趋严,反垄断、数据安全、个人隐私保护等新规密集出台,合规经营压力骤增,进一步挤压了中小企业生存空间。\n互联网行业洗牌加剧,强者愈强,马太效应凸显。中小企业被迫转型或退出市场,新增就业岗位减少。\n互联网人才供给严重过剩。高校大量开设人工智能、大数据等专业,但企业岗位需求减少,供需错配矛盾凸显。职场新人面临\"毕业即失业\"窘境。\n互联网从业者普遍感到中年危机。35岁以上员工被视为\"高龄\"（很是真实，不知道本来就很拥挤的行业，变的及其拥挤，甚至夸张，都是资本造的孽，当然其他的行业说是没什么高龄，但赚钱也不多，总体看哪个合适不合适不好说）,跳槽难度加大。职业倦怠、身心健康等问题日益突出。\n行业薪酬体系亟待调整。前几年,互联网企业凭借高薪快速扩张,但随着业绩承压,薪资虚高问题凸显。薪酬回归理性后,行业对人才吸引力有所下降。\n大厂高管出走、创业公司倒闭等负面消息频发,行业信心备受打击。资本寒冬下创业融资困难,企业发展前景不明朗,人才流失风险加大。\n当前互联网就业的确存在一些值得关注的问题和挑战:</p><li>行业竞争加剧,部分企业生存压力加大,裁员风波时有发生。互联网红利渐退,流量获取成本上升,一些中小企业面临较大经营困难。</li><li>从业者职业生涯不确定性增加。互联网行业瞬息万变,技术迭代速度快,从业者担心自己的知识和技能随时可能过时。部分企业重视短期绩效,忽视人才长期培养,加剧了职业焦虑。</li><li>薪酬泡沫渐显。前些年互联网行业薪资水平虚高,但随着行业进入调整期,收入增长乏力,甚至出现下降趋势,与生活成本上涨形成反差。</li><li>\"996\"加班文化引发质疑。过度加班导致身心健康问题,工作生活失衡,可持续性受到挑战。</li><li>灵活就业群体权益保障有待加强。平台与灵活就业者之间存在事实劳动关系认定、社保缴纳等争议,相关法律制度还不够明确。</li><li>行业发展不平衡。头部企业强者恒强,中小企业生存空间受限。不同细分领域机会差异较大,vertical领域增长乏力。</li><p>展望未来,互联网行业短期内仍将经历结构性调整,但从长远看前景依然广阔:</p><li>国家政策支持力度加大,互联网产业作为数字经济重要组成,仍是国家鼓励和扶持的战略性新兴产业。</li><li>5G、人工智能、元宇宙等新技术方兴未艾,有望催生出更多创新应用场景和商业模式,为互联网就业注入新动力。</li><li>互联网下沉市场仍有巨大潜力。农村电商、社区团购等新业态有望为三四线及以下城市创造更多就业。</li><li>随着互联网创业教育的普及,越来越多年轻人投身互联网创业大军,为就业增长提供新动能。</li><li>在社会各界共同努力下,互联网行业有望加快构建符合自身特点的用工保障机制,实现更加包容、可持续的发展。</li><p>总的来说,互联网就业正处在转型升级的关键期,既面临诸多挑战,但也孕育着新的机遇。把握产业发展规律,顺应时代变革潮流,互联网有望成为继续引领中国就业增长的中坚力量。我们对互联网就业的未来依然充满希望。\n</p>"
+  ],
+  "contentHtml": "<div class=\"unsupported-block\">[synced_block]</div><p>2024年的中国互联网就业形势严峻，行业面临宏观经济下行、流量红利消退、监管政策收紧等挑战，导致裁员、降薪和岗位减少。从业者面临中年危机和职业生涯不确定性，薪酬泡沫显现。然而，随着5G、人工智能等新技术发展，以及互联网下沉市场的潜力，未来仍存在新的就业机会和行业发展空间</p><p>总体而言,2024年中国互联网就业形势较为严峻。行业正处于深度调整期,面临诸多新挑战:</p><p>宏观经济下行压力加大,疫情反复、地缘冲突等不确定性因素增多,消费需求萎缩,互联网企业营收增长乏力。裁员、降薪、缩减校招规模现象较为普遍。\n互联网流量红利殆尽,获客成本居高不下。部分互联网企业过度依赖补贴与营销,企业的可持续发展能力堪忧。\n互联网监管政策趋严,反垄断、数据安全、个人隐私保护等新规密集出台,合规经营压力骤增,进一步挤压了中小企业生存空间。\n互联网行业洗牌加剧,强者愈强,马太效应凸显。中小企业被迫转型或退出市场,新增就业岗位减少。\n互联网人才供给严重过剩。高校大量开设人工智能、大数据等专业,但企业岗位需求减少,供需错配矛盾凸显。职场新人面临\"毕业即失业\"窘境。\n互联网从业者普遍感到中年危机。35岁以上员工被视为\"高龄\"（很是真实，不知道本来就很拥挤的行业，变的及其拥挤，甚至夸张，都是资本造的孽，当然其他的行业说是没什么高龄，但赚钱也不多，总体看哪个合适不合适不好说）,跳槽难度加大。职业倦怠、身心健康等问题日益突出。\n行业薪酬体系亟待调整。前几年,互联网企业凭借高薪快速扩张,但随着业绩承压,薪资虚高问题凸显。薪酬回归理性后,行业对人才吸引力有所下降。\n大厂高管出走、创业公司倒闭等负面消息频发,行业信心备受打击。资本寒冬下创业融资困难,企业发展前景不明朗,人才流失风险加大。\n当前互联网就业的确存在一些值得关注的问题和挑战:</p><li>行业竞争加剧,部分企业生存压力加大,裁员风波时有发生。互联网红利渐退,流量获取成本上升,一些中小企业面临较大经营困难。</li><li>从业者职业生涯不确定性增加。互联网行业瞬息万变,技术迭代速度快,从业者担心自己的知识和技能随时可能过时。部分企业重视短期绩效,忽视人才长期培养,加剧了职业焦虑。</li><li>薪酬泡沫渐显。前些年互联网行业薪资水平虚高,但随着行业进入调整期,收入增长乏力,甚至出现下降趋势,与生活成本上涨形成反差。</li><li>\"996\"加班文化引发质疑。过度加班导致身心健康问题,工作生活失衡,可持续性受到挑战。</li><li>灵活就业群体权益保障有待加强。平台与灵活就业者之间存在事实劳动关系认定、社保缴纳等争议,相关法律制度还不够明确。</li><li>行业发展不平衡。头部企业强者恒强,中小企业生存空间受限。不同细分领域机会差异较大,vertical领域增长乏力。</li><p>展望未来,互联网行业短期内仍将经历结构性调整,但从长远看前景依然广阔:</p><li>国家政策支持力度加大,互联网产业作为数字经济重要组成,仍是国家鼓励和扶持的战略性新兴产业。</li><li>5G、人工智能、元宇宙等新技术方兴未艾,有望催生出更多创新应用场景和商业模式,为互联网就业注入新动力。</li><li>互联网下沉市场仍有巨大潜力。农村电商、社区团购等新业态有望为三四线及以下城市创造更多就业。</li><li>随着互联网创业教育的普及,越来越多年轻人投身互联网创业大军,为就业增长提供新动能。</li><li>在社会各界共同努力下,互联网行业有望加快构建符合自身特点的用工保障机制,实现更加包容、可持续的发展。</li><p>总的来说,互联网就业正处在转型升级的关键期,既面临诸多挑战,但也孕育着新的机遇。把握产业发展规律,顺应时代变革潮流,互联网有望成为继续引领中国就业增长的中坚力量。我们对互联网就业的未来依然充满希望。\n</p>"
 }

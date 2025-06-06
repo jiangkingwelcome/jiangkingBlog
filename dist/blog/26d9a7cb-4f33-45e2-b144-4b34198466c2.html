@@ -60,7 +60,10 @@
       </div>
     </div>
     <article class="article-container">
-      <div class="article-content"><blockquote>文章来源说明</blockquote><h1>🤔 一个简单的开头</h1><ul><li>问题、目标、人物、背景是什么？</li><p>为什么读者会对其有兴趣？</p></ul><ul><li>阻碍、努力、结果</li><p>展示你的主要成果</p></ul><ul><li>意外、转弯</li><p>说说你的故事</p></ul><h1>📝主旨内容</h1><h2>观点1</h2><h2>观点2</h2><h1>🤗总结归纳</h1><p></p><h1>参考文章</h1><p></p><p></p><p>致谢：</p><div class="unsupported-block">有关Notion安装或者使用上的问题，欢迎您在底部评论区留言，一起交流~</div><p></p><p></p></div>
+      <div class="article-content"><blockquote>文章来源说明</blockquote><h1>🤔 一个简单的开头</h1><ol><li>问题、目标、人物、背景是什么？</li><p>为什么读者会对其有兴趣？</p></ol><ol><li>阻碍、努力、结果</li><p>展示你的主要成果</p></ol><ol><li>意外、转弯</li><p>说说你的故事</p></ol><h1>📝主旨内容</h1><h2>观点1</h2><h2>观点2</h2><h1>🤗总结归纳</h1><p></p><h1>参考文章</h1><p></p><p></p><p>致谢：</p><div class="callout">
+                <span class="callout-icon">💡</span>
+                <div class="callout-content">有关Notion安装或者使用上的问题，欢迎您在底部评论区留言，一起交流~</div>
+              </div><p></p><p></p></div>
       <div class="article-tags">
       </div>
       <div class="author-info">
@@ -134,8 +137,8 @@
               const articleId = window.location.pathname.split('/').pop().replace('.html', '');
               img.src = `/blog/images/${articleId}/${content}`;
             } else {
-              // 默认使用占位图
-              img.src = '/assets/placeholder-image.svg';
+              // 无效图片路径，跳过
+              return;
             }
             
             // 添加错误处理
@@ -143,7 +146,7 @@
             img.setAttribute('data-original-text', content);
             img.onerror = function() {
               this.onerror = null;
-              this.src = '/assets/placeholder-image.svg';
+              this.style.display = 'none';
               this.classList.add('error');
             };
             
@@ -176,8 +179,8 @@
               const articleId = window.location.pathname.split('/').pop().replace('.html', '');
               img.src = `/blog/images/${articleId}/${content}`;
             } else {
-              // 使用占位图
-              img.src = '/assets/placeholder-image.svg';
+              // 无效图片路径，跳过
+              return;
             }
             
             // 添加错误处理
@@ -185,7 +188,7 @@
             img.setAttribute('data-text-content', content);
             img.onerror = function() {
               this.onerror = null;
-              this.src = '/assets/placeholder-image.svg';
+              this.style.display = 'none';
               this.classList.add('error');
             };
             
@@ -212,24 +215,18 @@
             console.log('图片已加载失败:', img.src);
             img.classList.add('error');
             
-            // 如果不是占位图，则替换为占位图
-            if (!img.src.includes('placeholder-image')) {
-              img.setAttribute('data-failed-src', img.src);
-              img.src = '/assets/placeholder-image.svg';
-              img.classList.add('svg-image'); // 添加SVG类
-            }
+            // 隐藏加载失败的图片
+            img.setAttribute('data-failed-src', img.src);
+            img.style.display = 'none';
           } else {
             // 添加加载错误处理
             img.addEventListener('error', function() {
               console.log('图片加载失败:', this.src);
               this.classList.add('error');
               
-              // 如果不是占位图，则替换为占位图
-              if (!this.src.includes('placeholder-image')) {
-                this.setAttribute('data-failed-src', this.src);
-                this.src = '/assets/placeholder-image.svg';
-                this.classList.add('svg-image'); // 添加SVG类
-              }
+              // 隐藏加载失败的图片
+              this.setAttribute('data-failed-src', this.src);
+              this.style.display = 'none';
             });
           }
         });

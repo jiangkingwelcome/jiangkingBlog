@@ -1,1950 +1,3474 @@
 {
   "id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
+  "title": "从键盘到拐杖：一个游戏开发者眼中的中国延迟退休",
   "date": "2021-07-02",
-  "type": "Post",
-  "category": "心情随笔",
-  "slug": "example-5",
   "tags": [
     "推荐",
     "思考"
   ],
-  "summary": "中国延迟退休",
-  "title": "从键盘到拐杖：一个游戏开发者眼中的中国延迟退休",
   "status": "Published",
-  "detail": {
-    "06cebc4e-a050-4b48-b186-aa95bb30f320": {
-      "value": {
-        "id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "version": 134,
-        "type": "page",
-        "properties": {
-          "NX\\Q": [
-            [
-              "‣",
-              [
-                [
-                  "d",
-                  {
-                    "type": "date",
-                    "start_date": "2021-07-02"
-                  }
-                ]
-              ]
-            ]
-          ],
-          "`gQ~": [
-            [
-              "Post"
-            ]
-          ],
-          "bB{M": [
-            [
-              "心情随笔"
-            ]
-          ],
-          "d]hq": [
-            [
-              "example-5"
-            ]
-          ],
-          "sD^m": [
-            [
-              "推荐,思考"
-            ]
-          ],
-          "wz|S": [
-            [
-              "中国延迟退休"
-            ]
-          ],
-          "title": [
-            [
-              "从键盘到拐杖：一个游戏开发者眼中的中国延迟退休"
-            ]
-          ],
-          "f211bdc0-ee00-4186-9a7d-f68c055ec2ee": [
-            [
-              "Published"
-            ]
-          ]
-        },
-        "content": [
-          "101b99ae-1cea-80c3-82d1-f1c99bf635b4",
-          "101b99ae-1cea-8007-b9f8-d7630ba154d1",
-          "b0b559ff-38ba-475b-a5fd-503d938c344d",
-          "101b99ae-1cea-80a8-951e-d3856a4d8463",
-          "101b99ae-1cea-804c-873b-f26d1da150dc",
-          "101b99ae-1cea-806f-8010-ced024cd8185",
-          "101b99ae-1cea-8007-b3f0-caeb6827b59b",
-          "101b99ae-1cea-8008-8620-d576c6d6d0ce",
-          "101b99ae-1cea-8031-af6c-d48931386cfc",
-          "101b99ae-1cea-80db-92c9-d785516425b0",
-          "7f090a94-0d0f-4728-ad09-b028a5c8f546",
-          "6f8f5f3e-27d8-451a-9c0b-d5f8bae9f996",
-          "d1df0fb9-34bd-40c1-9f88-6b2ef1d73322",
-          "101b99ae-1cea-8031-919a-c0c845f9bbcb",
-          "101b99ae-1cea-803d-b04a-c6919efa8e8c",
-          "fa286a4e-f3a6-4ab6-b23f-3f03a29961c3",
-          "101b99ae-1cea-80ed-aeed-f6e99e4f887c",
-          "101b99ae-1cea-807d-b3e0-f2b2cdce2d18",
-          "101b99ae-1cea-8061-b58d-f0d14813ca8f",
-          "101b99ae-1cea-8021-9af3-f0c801aaf301",
-          "df2233a2-4d0d-4274-bb3b-d348f2b08a1d",
-          "797e682d-7303-4872-951a-b59196ef039c",
-          "101b99ae-1cea-802c-a360-d1b20fe83030",
-          "101b99ae-1cea-806d-9b9d-db1aebeb482d",
-          "101b99ae-1cea-805f-9f25-c8efba38df0d",
-          "101b99ae-1cea-8041-9865-c9e28ccf7739",
-          "101b99ae-1cea-805f-807e-d03c7dfdfcf5",
-          "89b36cb1-40d6-4b1f-a9e6-8ee933db1311",
-          "101b99ae-1cea-809f-9bd9-fec2d04648df",
-          "101b99ae-1cea-8072-95aa-dde1636eae0f",
-          "d6af4782-8518-4b1c-9b94-99e90bb3326b",
-          "101b99ae-1cea-8044-ba1a-e4befbed0000",
-          "101b99ae-1cea-8028-9fec-eaf4359cf127",
-          "101b99ae-1cea-8086-9d6f-ebe9c0f1b0f2",
-          "101b99ae-1cea-8038-aecb-ce1de20e3113",
-          "101b99ae-1cea-8049-b6c7-f0b900c15390",
-          "cd505c9f-5980-46f0-a639-76952e51483e",
-          "101b99ae-1cea-8041-a99e-e6f09ae4f872",
-          "101b99ae-1cea-8046-9211-c589d8d92c0a",
-          "101b99ae-1cea-806a-bb3e-cebd8ce49045",
-          "101b99ae-1cea-8054-b192-ff59125c2483",
-          "101b99ae-1cea-80e6-8fb7-e85e090bbe2e",
-          "101b99ae-1cea-80a5-b98d-e7c5b6a05ec8",
-          "101b99ae-1cea-80ca-bc56-eb991af41e34",
-          "101b99ae-1cea-809c-b009-e3a15a65bac5",
-          "101b99ae-1cea-80e6-8c6d-fddbf8d215bc",
-          "225bd4dc-1c90-4543-8ef8-b349210907c7",
-          "1f72d188-1eec-4224-81c0-c23981edd85b",
-          "10e3cb04-a5eb-4ee1-805c-098cf93ddb4d",
-          "17873a98-34e4-46ac-b4e6-5a3020960d14",
-          "40c24a2e-84e2-4831-875c-aa070e33a308",
-          "fa7ba997-530b-4579-8e5d-0bbb0e32f15d",
-          "3a6bedf1-aec7-4c86-8f1b-07c15be9ae0a",
-          "d88c1ab9-d2fb-4383-adf3-99ccf0a04bbd",
-          "236a56fb-6b05-4a20-9530-258e1a45bf81",
-          "e4070138-4eb0-4ebe-91d2-ca1f70192d18",
-          "e1a4d694-b7e2-4ad3-a4be-983d4601436c",
-          "5372b74a-e814-438c-a081-a4c6ec720a40"
-        ],
-        "format": {
-          "page_font": "mono",
-          "page_cover": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb",
-          "block_locked": false,
-          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
-          "copied_from_pointer": {
-            "id": "4e12cb2c-d3f9-46aa-8e7e-c13084f7c79c",
-            "table": "block",
-            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
-          },
-          "page_cover_position": 0.5,
-          "social_media_image_preview_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/03c61fc7-8ae2-451d-80f2-118e6ce2d9cd/5776c5b2-becb-45c7-b28d-a90ce00d9e57/SocialMediaPreviewImage.png"
-        },
-        "created_time": 1725446270812,
-        "last_edited_time": 1726300502803,
-        "parent_id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
-        "parent_table": "collection",
-        "alive": true,
-        "copied_from": "4e12cb2c-d3f9-46aa-8e7e-c13084f7c79c",
-        "file_ids": [
-          "5776c5b2-becb-45c7-b28d-a90ce00d9e57"
-        ],
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+  "type": "Post",
+  "category": "心情随笔",
+  "slug": "example-5",
+  "summary": "中国延迟退休",
+  "created_time": "2024-09-04T10:37:00.000Z",
+  "last_edited_time": "2024-09-14T07:55:00.000Z",
+  "blocks": [
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-80c3-82d1-f1c99bf635b4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
       },
-      "role": "reader"
-    },
-    "54a47a0d-391d-412f-912f-907d897e52bd": {
-      "value": {
-        "id": "54a47a0d-391d-412f-912f-907d897e52bd",
-        "version": 119,
-        "type": "collection_view_page",
-        "content": [
-          "9849a0d1-82a7-46f8-85d4-68b9db92a92b"
-        ],
-        "view_ids": [
-          "a0152dc5-e7e8-4f29-9c37-b1fb486040e5",
-          "af27229a-9c1c-4379-b779-20cb62c86bc4",
-          "a33ce80a-303e-4722-9b6f-639f3c32f10d",
-          "7fe61317-1745-4dec-9d31-f01020c4155e"
-        ],
-        "collection_id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
-        "format": {
-          "site_id": "51847d78-4b83-4b0c-93df-c5907104c1cd",
-          "block_locked": false,
-          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
-          "collection_pointer": {
-            "id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
-            "table": "collection",
-            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-          },
-          "copied_from_pointer": {
-            "id": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
-            "table": "block",
-            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
-          },
-          "page_cover_position": 0.5
-        },
-        "permissions": [
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
           {
-            "role": "reader",
-            "type": "public_permission",
-            "is_site": true,
-            "added_timestamp": 1725446328326
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
+            "type": "text",
+            "text": {
+              "content": "从键盘到拐杖：一个游戏开发者眼中的中国延迟退休",
+              "link": null
             },
-            "type": "bot_permission",
-            "bot_id": "1f5b99ae-1cea-8101-adeb-00279282a15f",
-            "parent_id": "80a8a328-0748-4dd6-925e-6865939d4ae0",
-            "parent_table": "notion_user"
-          },
-          {
-            "role": {
-              "read_comment": true,
-              "read_content": true,
-              "insert_comment": true,
-              "insert_content": true,
-              "update_content": true
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
             },
-            "type": "bot_permission",
-            "bot_id": "1f6b99ae-1cea-8187-bd91-0027b7252bca",
-            "parent_id": "80a8a328-0748-4dd6-925e-6865939d4ae0",
-            "parent_table": "notion_user"
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "66be2e14-23ce-4798-9d2e-b1104a06653a",
-            "parent_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
-            "parent_table": "space"
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "90053442-be1a-4630-99f4-2c04f2706259",
-            "parent_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
-            "parent_table": "space"
+            "plain_text": "从键盘到拐杖：一个游戏开发者眼中的中国延迟退休",
+            "href": null
           }
         ],
-        "created_time": 1725446287995,
-        "last_edited_time": 1748700122053,
-        "parent_id": "078a9301-9747-4213-900b-e1a2eda4f4dd",
-        "parent_table": "team",
-        "alive": true,
-        "copied_from": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
-        "file_ids": [
-          "1e87c98f-7b57-4634-9f9e-8eedc62ace2e"
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8007-b9f8-d7630ba154d1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "嘿，各位玩家们（哦，不好意思，我是说各位读者们），欢迎来到JiangKing的杂谈时间。今天我们要聊的不是新出的3A大作，也不是哪个游戏公司又爆出了加班黑幕。我们要聊的是一个可能会影响到我们每个人的话题 —— 中国的延迟退休政策。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "嘿，各位玩家们（哦，不好意思，我是说各位读者们），欢迎来到JiangKing的杂谈时间。今天我们要聊的不是新出的3A大作，也不是哪个游戏公司又爆出了加班黑幕。我们要聊的是一个可能会影响到我们每个人的话题 —— 中国的延迟退休政策。",
+            "href": null
+          }
         ],
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
+        "color": "default"
+      }
     },
-    "101b99ae-1cea-80c3-82d1-f1c99bf635b4": {
-      "value": {
-        "id": "101b99ae-1cea-80c3-82d1-f1c99bf635b4",
-        "version": 2,
-        "type": "header",
-        "properties": {
-          "title": [
-            [
-              "从键盘到拐杖：一个游戏开发者眼中的中国延迟退休"
-            ]
-          ]
-        },
-        "created_time": 1726282982437,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+    {
+      "object": "block",
+      "id": "b0b559ff-38ba-475b-a5fd-503d938c344d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
       },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8007-b9f8-d7630ba154d1": {
-      "value": {
-        "id": "101b99ae-1cea-8007-b9f8-d7630ba154d1",
-        "version": 17,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "嘿，各位玩家们（哦，不好意思，我是说各位读者们），欢迎来到JiangKing的杂谈时间。今天我们要聊的不是新出的3A大作，也不是哪个游戏公司又爆出了加班黑幕。我们要聊的是一个可能会影响到我们每个人的话题 —— 中国的延迟退休政策。"
-            ]
-          ]
-        },
-        "created_time": 1726282982437,
-        "last_edited_time": 1726282992384,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
       },
-      "role": "reader"
-    },
-    "b0b559ff-38ba-475b-a5fd-503d938c344d": {
-      "value": {
-        "id": "b0b559ff-38ba-475b-a5fd-503d938c344d",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "没错，就是那个可能会让我们从\"35岁就被游戏公司嫌弃\"变成\"65岁还在写bug\"的政策。作为一个已经在游戏行业摸爬滚打多年的老油条，我觉得有必要从我这个独特的视角来聊聊这个话题。毕竟，咱们游戏开发可是经常被戏称为\"超前体验\"退休的行业呢。"
-            ]
-          ]
-        },
-        "created_time": 1726282982437,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
       },
-      "role": "reader"
-    },
-    "101b99ae-1cea-80a8-951e-d3856a4d8463": {
-      "value": {
-        "id": "101b99ae-1cea-80a8-951e-d3856a4d8463",
-        "version": 2,
-        "type": "sub_header",
-        "properties": {
-          "title": [
-            [
-              "第一关：什么是延迟退休？"
-            ]
-          ]
-        },
-        "created_time": 1726282982438,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-804c-873b-f26d1da150dc": {
-      "value": {
-        "id": "101b99ae-1cea-804c-873b-f26d1da150dc",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "首先，让我们来了解一下这个\"延迟退休\"到底是个什么玩意儿。简单来说，就是把现行的退休年龄往后推几年。目前，我们国家的法定退休年龄是：男性60岁，女干部55岁，女工人50岁。而延迟退休政策，可能会把这个年龄普遍往后推迟。"
-            ]
-          ]
-        },
-        "created_time": 1726282982438,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-806f-8010-ced024cd8185": {
-      "value": {
-        "id": "101b99ae-1cea-806f-8010-ced024cd8185",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "这就好比我们在做游戏时，原本计划角色60级就满级了，结果策划突然说：\"不行啊，得加点内容，咱们把满级提到65级吧！\""
-            ]
-          ]
-        },
-        "created_time": 1726282982438,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8007-b3f0-caeb6827b59b": {
-      "value": {
-        "id": "101b99ae-1cea-8007-b3f0-caeb6827b59b",
-        "version": 2,
-        "type": "sub_header",
-        "properties": {
-          "title": [
-            [
-              "第二关：为什么要延迟退休？"
-            ]
-          ]
-        },
-        "created_time": 1726282982438,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8008-8620-d576c6d6d0ce": {
-      "value": {
-        "id": "101b99ae-1cea-8008-8620-d576c6d6d0ce",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "你可能会问，为什么要这么做呢？难道是因为国家觉得我们还不够累吗？其实不是的，这背后有几个重要原因："
-            ]
-          ]
-        },
-        "created_time": 1726282982438,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8031-af6c-d48931386cfc": {
-      "value": {
-        "id": "101b99ae-1cea-8031-af6c-d48931386cfc",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "人口老龄化",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：这个问题比游戏里的\"过度氪金导致游戏失衡\"还要严重。我国正面临着严重的人口老龄化问题，越来越多的老年人，越来越少的年轻人，这就导致了养老金的压力越来越大。"
-            ]
-          ]
-        },
-        "created_time": 1726282982438,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-80db-92c9-d785516425b0": {
-      "value": {
-        "id": "101b99ae-1cea-80db-92c9-d785516425b0",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "人均寿命延长",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：现在的医疗条件比以前好多了，就像游戏里的buff越来越多，我们的寿命也越来越长。按照现在的退休年龄，我们可能要在退休状态下生活20-30年，这对养老金系统是个不小的挑战。"
-            ]
-          ]
-        },
-        "created_time": 1726282982438,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "7f090a94-0d0f-4728-ad09-b028a5c8f546": {
-      "value": {
-        "id": "7f090a94-0d0f-4728-ad09-b028a5c8f546",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "专业人才的需求",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：有些行业的专业人才，到了退休年龄还正是经验最丰富的时候。就像游戏公司里的元老级程序员，虽然可能已经记不住最新的编程语言了，但解决问题的能力却是无人能及。"
-            ]
-          ]
-        },
-        "created_time": 1726282982439,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "6f8f5f3e-27d8-451a-9c0b-d5f8bae9f996": {
-      "value": {
-        "id": "6f8f5f3e-27d8-451a-9c0b-d5f8bae9f996",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "缓解养老金压力",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：延迟退休可以增加养老保险的缴费时间，减少领取时间，有助于缓解养老金支付的压力。这就像游戏里延长了氪金的时间，但缩短了返利的周期。"
-            ]
-          ]
-        },
-        "created_time": 1726282982439,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "d1df0fb9-34bd-40c1-9f88-6b2ef1d73322": {
-      "value": {
-        "id": "d1df0fb9-34bd-40c1-9f88-6b2ef1d73322",
-        "version": 2,
-        "type": "sub_header",
-        "properties": {
-          "title": [
-            [
-              "第三关：延迟退休的可能方案"
-            ]
-          ]
-        },
-        "created_time": 1726282982439,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8031-919a-c0c845f9bbcb": {
-      "value": {
-        "id": "101b99ae-1cea-8031-919a-c0c845f9bbcb",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "据说，目前讨论的延迟退休方案主要有以下几种："
-            ]
-          ]
-        },
-        "created_time": 1726282982439,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-803d-b04a-c6919efa8e8c": {
-      "value": {
-        "id": "101b99ae-1cea-803d-b04a-c6919efa8e8c",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "渐进式延迟",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：每年延迟几个月，慢慢过渡到新的退休年龄。这就像游戏里的等级调整，不会一下子提高20级，而是慢慢来，让玩家有适应的时间。"
-            ]
-          ]
-        },
-        "created_time": 1726282982439,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "fa286a4e-f3a6-4ab6-b23f-3f03a29961c3": {
-      "value": {
-        "id": "fa286a4e-f3a6-4ab6-b23f-3f03a29961c3",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "弹性退休",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：允许在一定年龄段内自主选择退休时间。这有点像游戏里的自由模式，你可以选择何时开始新的冒险。"
-            ]
-          ]
-        },
-        "created_time": 1726282982439,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-80ed-aeed-f6e99e4f887c": {
-      "value": {
-        "id": "101b99ae-1cea-80ed-aeed-f6e99e4f887c",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "差异化退休",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：根据行业、工种的不同，制定不同的退休年龄。这就像游戏里的职业平衡，战士可能需要更多的休息时间，而法师可能还能再战几年。"
-            ]
-          ]
-        },
-        "created_time": 1726282982440,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-807d-b3e0-f2b2cdce2d18": {
-      "value": {
-        "id": "101b99ae-1cea-807d-b3e0-f2b2cdce2d18",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "无论哪种方案，对我们来说都是一个不小的挑战。就像游戏里突然改了平衡性，我们得重新学习如何在新的规则下生存。"
-            ]
-          ]
-        },
-        "created_time": 1726282982440,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8061-b58d-f0d14813ca8f": {
-      "value": {
-        "id": "101b99ae-1cea-8061-b58d-f0d14813ca8f",
-        "version": 2,
-        "type": "sub_header",
-        "properties": {
-          "title": [
-            [
-              "第四关：延迟退休的影响"
-            ]
-          ]
-        },
-        "created_time": 1726282982440,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8021-9af3-f0c801aaf301": {
-      "value": {
-        "id": "101b99ae-1cea-8021-9af3-f0c801aaf301",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "那么，这个政策会给我们带来什么影响呢？让我们来分析一下："
-            ]
-          ]
-        },
-        "created_time": 1726282982440,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "df2233a2-4d0d-4274-bb3b-d348f2b08a1d": {
-      "value": {
-        "id": "df2233a2-4d0d-4274-bb3b-d348f2b08a1d",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "对个人的影响",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "："
-            ]
-          ]
-        },
-        "content": [
-          "101b99ae-1cea-8034-b11a-d0962d04ccf5",
-          "101b99ae-1cea-800a-a12c-de7e396186a2",
-          "101b99ae-1cea-80d3-bb45-fccf6d5697a1",
-          "101b99ae-1cea-80e5-8ac9-fdd5d12223ac"
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "没错，就是那个可能会让我们从\"35岁就被游戏公司嫌弃\"变成\"65岁还在写bug\"的政策。作为一个已经在游戏行业摸爬滚打多年的老油条，我觉得有必要从我这个独特的视角来聊聊这个话题。毕竟，咱们游戏开发可是经常被戏称为\"超前体验\"退休的行业呢。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "没错，就是那个可能会让我们从\"35岁就被游戏公司嫌弃\"变成\"65岁还在写bug\"的政策。作为一个已经在游戏行业摸爬滚打多年的老油条，我觉得有必要从我这个独特的视角来聊聊这个话题。毕竟，咱们游戏开发可是经常被戏称为\"超前体验\"退休的行业呢。",
+            "href": null
+          }
         ],
-        "created_time": 1726282982441,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
+        "color": "default"
+      }
     },
-    "797e682d-7303-4872-951a-b59196ef039c": {
-      "value": {
-        "id": "797e682d-7303-4872-951a-b59196ef039c",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "对社会的影响",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "："
-            ]
-          ]
-        },
-        "content": [
-          "95c374e2-b11e-4c4b-a6c4-0ba011511808",
-          "101b99ae-1cea-804c-8654-c820aced6ba6",
-          "101b99ae-1cea-80a5-a932-c8f3069656c9"
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-80a8-951e-d3856a4d8463",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "第一关：什么是延迟退休？",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "第一关：什么是延迟退休？",
+            "href": null
+          }
         ],
-        "created_time": 1726282982442,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
+        "is_toggleable": false,
+        "color": "default"
+      }
     },
-    "101b99ae-1cea-802c-a360-d1b20fe83030": {
-      "value": {
-        "id": "101b99ae-1cea-802c-a360-d1b20fe83030",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "对企业的影响",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "："
-            ]
-          ]
-        },
-        "content": [
-          "101b99ae-1cea-8083-8c67-dab64ae9021e",
-          "101b99ae-1cea-8019-bbef-e52794df3fe0",
-          "8ad44daa-21a9-4c94-8c2f-4b8a85d51772"
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-804c-873b-f26d1da150dc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "首先，让我们来了解一下这个\"延迟退休\"到底是个什么玩意儿。简单来说，就是把现行的退休年龄往后推几年。目前，我们国家的法定退休年龄是：男性60岁，女干部55岁，女工人50岁。而延迟退休政策，可能会把这个年龄普遍往后推迟。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "首先，让我们来了解一下这个\"延迟退休\"到底是个什么玩意儿。简单来说，就是把现行的退休年龄往后推几年。目前，我们国家的法定退休年龄是：男性60岁，女干部55岁，女工人50岁。而延迟退休政策，可能会把这个年龄普遍往后推迟。",
+            "href": null
+          }
         ],
-        "created_time": 1726282982443,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
+        "color": "default"
+      }
     },
-    "101b99ae-1cea-806d-9b9d-db1aebeb482d": {
-      "value": {
-        "id": "101b99ae-1cea-806d-9b9d-db1aebeb482d",
-        "version": 2,
-        "type": "sub_header",
-        "properties": {
-          "title": [
-            [
-              "第五关：游戏开发者的独特视角"
-            ]
-          ]
-        },
-        "created_time": 1726282982443,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-806f-8010-ced024cd8185",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
       },
-      "role": "reader"
-    },
-    "101b99ae-1cea-805f-9f25-c8efba38df0d": {
-      "value": {
-        "id": "101b99ae-1cea-805f-9f25-c8efba38df0d",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "作为一个游戏开发者，我对这个政策有一些独特的看法："
-            ]
-          ]
-        },
-        "created_time": 1726282982443,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
       },
-      "role": "reader"
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "这就好比我们在做游戏时，原本计划角色60级就满级了，结果策划突然说：\"不行啊，得加点内容，咱们把满级提到65级吧！\"",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "这就好比我们在做游戏时，原本计划角色60级就满级了，结果策划突然说：\"不行啊，得加点内容，咱们把满级提到65级吧！\"",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
     },
-    "101b99ae-1cea-8034-b11a-d0962d04ccf5": {
-      "value": {
-        "id": "101b99ae-1cea-8034-b11a-d0962d04ccf5",
-        "version": 2,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "工作时间变长",
-              [
-                [
-                  "b"
-                ]
-              ]
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8007-b3f0-caeb6827b59b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "第二关：为什么要延迟退休？",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "第二关：为什么要延迟退休？",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8008-8620-d576c6d6d0ce",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "你可能会问，为什么要这么做呢？难道是因为国家觉得我们还不够累吗？其实不是的，这背后有几个重要原因：",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "你可能会问，为什么要这么做呢？难道是因为国家觉得我们还不够累吗？其实不是的，这背后有几个重要原因：",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8031-af6c-d48931386cfc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "人口老龄化",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "人口老龄化",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：这个问题比游戏里的\"过度氪金导致游戏失衡\"还要严重。我国正面临着严重的人口老龄化问题，越来越多的老年人，越来越少的年轻人，这就导致了养老金的压力越来越大。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：这个问题比游戏里的\"过度氪金导致游戏失衡\"还要严重。我国正面临着严重的人口老龄化问题，越来越多的老年人，越来越少的年轻人，这就导致了养老金的压力越来越大。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-80db-92c9-d785516425b0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "人均寿命延长",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "人均寿命延长",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：现在的医疗条件比以前好多了，就像游戏里的buff越来越多，我们的寿命也越来越长。按照现在的退休年龄，我们可能要在退休状态下生活20-30年，这对养老金系统是个不小的挑战。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：现在的医疗条件比以前好多了，就像游戏里的buff越来越多，我们的寿命也越来越长。按照现在的退休年龄，我们可能要在退休状态下生活20-30年，这对养老金系统是个不小的挑战。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "7f090a94-0d0f-4728-ad09-b028a5c8f546",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "专业人才的需求",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "专业人才的需求",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：有些行业的专业人才，到了退休年龄还正是经验最丰富的时候。就像游戏公司里的元老级程序员，虽然可能已经记不住最新的编程语言了，但解决问题的能力却是无人能及。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：有些行业的专业人才，到了退休年龄还正是经验最丰富的时候。就像游戏公司里的元老级程序员，虽然可能已经记不住最新的编程语言了，但解决问题的能力却是无人能及。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "6f8f5f3e-27d8-451a-9c0b-d5f8bae9f996",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "缓解养老金压力",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "缓解养老金压力",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：延迟退休可以增加养老保险的缴费时间，减少领取时间，有助于缓解养老金支付的压力。这就像游戏里延长了氪金的时间，但缩短了返利的周期。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：延迟退休可以增加养老保险的缴费时间，减少领取时间，有助于缓解养老金支付的压力。这就像游戏里延长了氪金的时间，但缩短了返利的周期。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "d1df0fb9-34bd-40c1-9f88-6b2ef1d73322",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "第三关：延迟退休的可能方案",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "第三关：延迟退休的可能方案",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8031-919a-c0c845f9bbcb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "据说，目前讨论的延迟退休方案主要有以下几种：",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "据说，目前讨论的延迟退休方案主要有以下几种：",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-803d-b04a-c6919efa8e8c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "渐进式延迟",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "渐进式延迟",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：每年延迟几个月，慢慢过渡到新的退休年龄。这就像游戏里的等级调整，不会一下子提高20级，而是慢慢来，让玩家有适应的时间。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：每年延迟几个月，慢慢过渡到新的退休年龄。这就像游戏里的等级调整，不会一下子提高20级，而是慢慢来，让玩家有适应的时间。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "fa286a4e-f3a6-4ab6-b23f-3f03a29961c3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "弹性退休",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "弹性退休",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：允许在一定年龄段内自主选择退休时间。这有点像游戏里的自由模式，你可以选择何时开始新的冒险。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：允许在一定年龄段内自主选择退休时间。这有点像游戏里的自由模式，你可以选择何时开始新的冒险。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-80ed-aeed-f6e99e4f887c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "差异化退休",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "差异化退休",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：根据行业、工种的不同，制定不同的退休年龄。这就像游戏里的职业平衡，战士可能需要更多的休息时间，而法师可能还能再战几年。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：根据行业、工种的不同，制定不同的退休年龄。这就像游戏里的职业平衡，战士可能需要更多的休息时间，而法师可能还能再战几年。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-807d-b3e0-f2b2cdce2d18",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "无论哪种方案，对我们来说都是一个不小的挑战。就像游戏里突然改了平衡性，我们得重新学习如何在新的规则下生存。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "无论哪种方案，对我们来说都是一个不小的挑战。就像游戏里突然改了平衡性，我们得重新学习如何在新的规则下生存。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8061-b58d-f0d14813ca8f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "第四关：延迟退休的影响",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "第四关：延迟退休的影响",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8021-9af3-f0c801aaf301",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "那么，这个政策会给我们带来什么影响呢？让我们来分析一下：",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "那么，这个政策会给我们带来什么影响呢？让我们来分析一下：",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "df2233a2-4d0d-4274-bb3b-d348f2b08a1d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": true,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "对个人的影响",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "对个人的影响",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "children": [
+        {
+          "object": "block",
+          "id": "101b99ae-1cea-8034-b11a-d0962d04ccf5",
+          "parent": {
+            "type": "block_id",
+            "block_id": "df2233a2-4d0d-4274-bb3b-d348f2b08a1d"
+          },
+          "created_time": "2024-09-14T03:03:00.000Z",
+          "last_edited_time": "2024-09-14T03:03:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "工作时间变长",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "工作时间变长",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "：这个显而易见，我们要多奋斗几年。就像游戏里的升级之路突然被拉长了。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "：这个显而易见，我们要多奋斗几年。就像游戏里的升级之路突然被拉长了。",
+                "href": null
+              }
             ],
-            [
-              "：这个显而易见，我们要多奋斗几年。就像游戏里的升级之路突然被拉长了。"
-            ]
-          ]
-        },
-        "created_time": 1726282982440,
-        "last_edited_time": 1726282982465,
-        "parent_id": "df2233a2-4d0d-4274-bb3b-d348f2b08a1d",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-800a-a12c-de7e396186a2": {
-      "value": {
-        "id": "101b99ae-1cea-800a-a12c-de7e396186a2",
-        "version": 2,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "养老金可能增加",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：工作时间延长，意味着我们可能会多缴纳几年养老保险，退休后的养老金可能会增加。这就像游戏里多肝了几年，最后的装备会更好一些。"
-            ]
-          ]
-        },
-        "created_time": 1726282982440,
-        "last_edited_time": 1726282982465,
-        "parent_id": "df2233a2-4d0d-4274-bb3b-d348f2b08a1d",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-80d3-bb45-fccf6d5697a1": {
-      "value": {
-        "id": "101b99ae-1cea-80d3-bb45-fccf6d5697a1",
-        "version": 2,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "健康问题",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：对于一些体力劳动者来说，延迟退休可能带来更大的身体负担。就像游戏里的战士，可能需要更多的红药水才能坚持下去。"
-            ]
-          ]
-        },
-        "created_time": 1726282982440,
-        "last_edited_time": 1726282982465,
-        "parent_id": "df2233a2-4d0d-4274-bb3b-d348f2b08a1d",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-80e5-8ac9-fdd5d12223ac": {
-      "value": {
-        "id": "101b99ae-1cea-80e5-8ac9-fdd5d12223ac",
-        "version": 2,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "人生规划的改变",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：可能需要重新规划人生，比如推迟生育或者照顾孙辈的时间。这就像游戏里的主线任务突然被延长，支线任务的时间就得跟着调整。"
-            ]
-          ]
-        },
-        "created_time": 1726282982441,
-        "last_edited_time": 1726282982465,
-        "parent_id": "df2233a2-4d0d-4274-bb3b-d348f2b08a1d",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "95c374e2-b11e-4c4b-a6c4-0ba011511808": {
-      "value": {
-        "id": "95c374e2-b11e-4c4b-a6c4-0ba011511808",
-        "version": 2,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "就业压力",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：老年人退休推迟，可能会在一定程度上加剧年轻人的就业压力。这就像游戏里的高等级玩家占据了更多的资源，新手可能会觉得入门更难了。"
-            ]
-          ]
-        },
-        "created_time": 1726282982441,
-        "last_edited_time": 1726282982465,
-        "parent_id": "797e682d-7303-4872-951a-b59196ef039c",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-804c-8654-c820aced6ba6": {
-      "value": {
-        "id": "101b99ae-1cea-804c-8654-c820aced6ba6",
-        "version": 2,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "代际矛盾",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：可能会加剧代际之间的矛盾。年轻人可能会觉得老年人\"占着茅坑不拉屎\"。这就像游戏里的\"萌新\"和\"大佬\"之间的矛盾。"
-            ]
-          ]
-        },
-        "created_time": 1726282982442,
-        "last_edited_time": 1726282982465,
-        "parent_id": "797e682d-7303-4872-951a-b59196ef039c",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-80a5-a932-c8f3069656c9": {
-      "value": {
-        "id": "101b99ae-1cea-80a5-a932-c8f3069656c9",
-        "version": 2,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "社会保障体系的改变",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：整个社会保障体系可能需要重新调整。这就像游戏系统的一次大更新，所有的平衡性都需要重新考虑。"
-            ]
-          ]
-        },
-        "created_time": 1726282982442,
-        "last_edited_time": 1726282982465,
-        "parent_id": "797e682d-7303-4872-951a-b59196ef039c",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8083-8c67-dab64ae9021e": {
-      "value": {
-        "id": "101b99ae-1cea-8083-8c67-dab64ae9021e",
-        "version": 2,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "人力成本增加",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：老员工的工资一般比年轻员工高，企业的人力成本可能会增加。这就像游戏里的公会，可能需要付出更多的资源来留住高等级玩家。"
-            ]
-          ]
-        },
-        "created_time": 1726282982442,
-        "last_edited_time": 1726282982465,
-        "parent_id": "101b99ae-1cea-802c-a360-d1b20fe83030",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8019-bbef-e52794df3fe0": {
-      "value": {
-        "id": "101b99ae-1cea-8019-bbef-e52794df3fe0",
-        "version": 2,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "经验的传承",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：老员工工作时间延长，可能有利于经验的传承。这就像游戏里的老玩家可以带更多的新手。"
-            ]
-          ]
-        },
-        "created_time": 1726282982443,
-        "last_edited_time": 1726282982465,
-        "parent_id": "101b99ae-1cea-802c-a360-d1b20fe83030",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "8ad44daa-21a9-4c94-8c2f-4b8a85d51772": {
-      "value": {
-        "id": "8ad44daa-21a9-4c94-8c2f-4b8a85d51772",
-        "version": 2,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "创新压力",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：可能会在一定程度上影响企业的新陈代谢，增加创新的压力。这就像游戏里如果老玩家一直占据高位，可能会抑制新玩法的产生。"
-            ]
-          ]
-        },
-        "created_time": 1726282982443,
-        "last_edited_time": 1726282982465,
-        "parent_id": "101b99ae-1cea-802c-a360-d1b20fe83030",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8041-9865-c9e28ccf7739": {
-      "value": {
-        "id": "101b99ae-1cea-8041-9865-c9e28ccf7739",
-        "version": 4,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "技术更新的挑战",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：在我们这个行业，技术更新实在是太快了。前几年还在用的引擎，现在可能已经被淘汰了。延迟退休意味着我们要不断学习新技术，否则就可能被淘汰。"
-            ]
-          ]
-        },
-        "created_time": 1726282982443,
-        "last_edited_time": 1726283182865,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-805f-807e-d03c7dfdfcf5": {
-      "value": {
-        "id": "101b99ae-1cea-805f-807e-d03c7dfdfcf5",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "创意与年龄的关系",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：有人说，创意是年轻人的专利。但我不这么认为。经验丰富的开发者往往能够提供更加成熟和可行的创意。延迟退休可能会给游戏行业带来更多有价值的想法。这就像游戏里的老玩家，虽然反应速度可能不如年轻人，但是对游戏机制的理解往往更深。"
-            ]
-          ]
-        },
-        "created_time": 1726282982444,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "89b36cb1-40d6-4b1f-a9e6-8ee933db1311": {
-      "value": {
-        "id": "89b36cb1-40d6-4b1f-a9e6-8ee933db1311",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "工作强度的问题",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：游戏开发是个高压力、高强度的工作。很多人在35岁左右就开始考虑转行了。延迟退休对我们来说，可能意味着需要重新思考职业规划，可能需要寻找一些压力小一点的岗位。这就像游戏里的战士，到了后期可能会考虑转职成为辅助。"
-            ]
-          ]
-        },
-        "created_time": 1726282982444,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-809f-9bd9-fec2d04648df": {
-      "value": {
-        "id": "101b99ae-1cea-809f-9bd9-fec2d04648df",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "经验的价值",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：在游戏开发中，经验是非常宝贵的。很多问题，可能年轻人需要踩很多坑才能解决，而有经验的开发者一眼就能看出问题所在。延迟退休可能会让这些宝贵的经验得到更好的传承。这就像游戏里的攻略，往往是由经验丰富的玩家总结出来的。"
-            ]
-          ]
-        },
-        "created_time": 1726282982444,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8072-95aa-dde1636eae0f": {
-      "value": {
-        "id": "101b99ae-1cea-8072-95aa-dde1636eae0f",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "跨界的机会",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：随着年龄的增长，我们可能会将游戏开发的经验应用到其他领域。比如，游戏化教育、严肃游戏等。延迟退休可能会给我们更多时间去探索这些新的领域。这就像游戏里的副职业，可能会带来意想不到的收益。"
-            ]
-          ]
-        },
-        "created_time": 1726282982444,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "d6af4782-8518-4b1c-9b94-99e90bb3326b": {
-      "value": {
-        "id": "d6af4782-8518-4b1c-9b94-99e90bb3326b",
-        "version": 2,
-        "type": "sub_header",
-        "properties": {
-          "title": [
-            [
-              "第六关：如何应对延迟退休？"
-            ]
-          ]
-        },
-        "created_time": 1726282982444,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8044-ba1a-e4befbed0000": {
-      "value": {
-        "id": "101b99ae-1cea-8044-ba1a-e4befbed0000",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "面对延迟退休这个\"新版本\"，我们该如何应对呢？这里有几个小建议："
-            ]
-          ]
-        },
-        "created_time": 1726282982444,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8028-9fec-eaf4359cf127": {
-      "value": {
-        "id": "101b99ae-1cea-8028-9fec-eaf4359cf127",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "持续学习",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：就像游戏里要不断升级装备一样，我们也要不断学习新知识、新技能。无论是编程语言、游戏引擎，还是其他领域的知识，都要保持学习的热情。"
-            ]
-          ]
-        },
-        "created_time": 1726282982444,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8086-9d6f-ebe9c0f1b0f2": {
-      "value": {
-        "id": "101b99ae-1cea-8086-9d6f-ebe9c0f1b0f2",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "注意身体",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：加班熬夜、久坐不动，这些在年轻时可以承受的习惯，到了一定年纪就吃不消了。要学会劳逸结合，保持运动习惯。就像游戏里要合理分配精力值一样。"
-            ]
-          ]
-        },
-        "created_time": 1726282982445,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8038-aecb-ce1de20e3113": {
-      "value": {
-        "id": "101b99ae-1cea-8038-aecb-ce1de20e3113",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "职业规划",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：可能需要重新考虑自己的职业规划。比如，是继续做技术？还是转向管理？或者尝试一些新的领域？这就像游戏里的转职，要根据自己的特点和环境来选择。"
-            ]
-          ]
-        },
-        "created_time": 1726282982445,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8049-b6c7-f0b900c15390": {
-      "value": {
-        "id": "101b99ae-1cea-8049-b6c7-f0b900c15390",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "理财规划",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：延迟退休意味着工作时间变长，但也意味着养老准备的时间变长了。可以考虑一些长期的理财计划。这就像游戏里的经济系统，要学会合理分配和投资资源。"
-            ]
-          ]
-        },
-        "created_time": 1726282982445,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "cd505c9f-5980-46f0-a639-76952e51483e": {
-      "value": {
-        "id": "cd505c9f-5980-46f0-a639-76952e51483e",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "保持好奇心",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：无论年龄多大，都要保持对新事物的好奇心。这在游戏开发行业尤其重要。新的游戏类型、新的交互方式、新的技术，都可能带来机遇。这就像游戏里要保持探索的精神，才能发现隐藏的宝藏。"
-            ]
-          ]
-        },
-        "created_time": 1726282982445,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8041-a99e-e6f09ae4f872": {
-      "value": {
-        "id": "101b99ae-1cea-8041-a99e-e6f09ae4f872",
-        "version": 2,
-        "type": "numbered_list",
-        "properties": {
-          "title": [
-            [
-              "培养兴趣爱好",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ],
-            [
-              "：工作之外，培养一些兴趣爱好也很重要。这些爱好不仅能让生活更加丰富，说不定还能成为退休后的新事业。就像游戏里的副职业，可能会成为后期的主要收入来源。"
-            ]
-          ]
-        },
-        "created_time": 1726282982445,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8046-9211-c589d8d92c0a": {
-      "value": {
-        "id": "101b99ae-1cea-8046-9211-c589d8d92c0a",
-        "version": 2,
-        "type": "sub_header",
-        "properties": {
-          "title": [
-            [
-              "最终关：结语"
-            ]
-          ]
-        },
-        "created_time": 1726282982445,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-806a-bb3e-cebd8ce49045": {
-      "value": {
-        "id": "101b99ae-1cea-806a-bb3e-cebd8ce49045",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "延迟退休这个话题，说实话，确实让人有点忧心忡忡。就像游戏里突然出了个超难的新副本，让人有点不知所措。但是，作为一个游戏开发者，我们应该比其他人更擅长应对这种变化。"
-            ]
-          ]
-        },
-        "created_time": 1726282982446,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-8054-b192-ff59125c2483": {
-      "value": {
-        "id": "101b99ae-1cea-8054-b192-ff59125c2483",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "记得我们在做游戏时经常说的一句话吗？\"游戏人生\"。现在，我们更要用游戏的思维来看待这个变化。把它当作一个新的挑战，一个需要我们重新思考策略的新版本。"
-            ]
-          ]
-        },
-        "created_time": 1726282982446,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-80e6-8fb7-e85e090bbe2e": {
-      "value": {
-        "id": "101b99ae-1cea-80e6-8fb7-e85e090bbe2e",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "我们可能需要重新分配属性点，可能需要学习新的技能，可能需要寻找新的队友。但是，只要我们保持学习的热情，保持对生活的热爱，我相信我们一定能在这个\"新版本\"中找到属于自己的位置。"
-            ]
-          ]
-        },
-        "created_time": 1726282982446,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-80a5-b98d-e7c5b6a05ec8": {
-      "value": {
-        "id": "101b99ae-1cea-80a5-b98d-e7c5b6a05ec8",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "最后，我想说的是，无论政策如何变化，我们每个人都是自己人生的主角。就像在游戏中一样，我们要学会在各种变化中找到平衡，创造属于自己的精彩人生。"
-            ]
-          ]
-        },
-        "created_time": 1726282982446,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-80ca-bc56-eb991af41e34": {
-      "value": {
-        "id": "101b99ae-1cea-80ca-bc56-eb991af41e34",
-        "version": 4,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "好了，今天的\"杂谈\"就到这里。如果你对这个话题有什么想法，欢迎在评论区留言。记住，人生就像游戏，重要的不是何时结束，而是过程中我们创造了多少快乐和价值。"
-            ]
-          ]
-        },
-        "created_time": 1726282982446,
-        "last_edited_time": 1726283337009,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-809c-b009-e3a15a65bac5": {
-      "value": {
-        "id": "101b99ae-1cea-809c-b009-e3a15a65bac5",
-        "version": 2,
-        "type": "divider",
-        "created_time": 1726282982446,
-        "last_edited_time": 1726282982465,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "101b99ae-1cea-80e6-8c6d-fddbf8d215bc": {
-      "value": {
-        "id": "101b99ae-1cea-80e6-8c6d-fddbf8d215bc",
-        "version": 1312,
-        "type": "text",
-        "created_time": 1726282982446,
-        "last_edited_time": 1726295368837,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "225bd4dc-1c90-4543-8ef8-b349210907c7": {
-      "value": {
-        "id": "225bd4dc-1c90-4543-8ef8-b349210907c7",
-        "version": 2,
-        "type": "divider",
-        "created_time": 1726295363419,
-        "last_edited_time": 1726295363425,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "1f72d188-1eec-4224-81c0-c23981edd85b": {
-      "value": {
-        "id": "1f72d188-1eec-4224-81c0-c23981edd85b",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "好了，写到这里，我觉得是时候卸下那些冠冕堂皇的外衣，说点真心话了。如果你能看到这里，说明你可能真的在乎这个话题，或者只是单纯地好奇一个游戏开发者的内心世界。不管是哪种情况，我都感谢你的耐心。"
-            ]
-          ]
-        },
-        "created_time": 1726295363420,
-        "last_edited_time": 1726295363425,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "10e3cb04-a5eb-4ee1-805c-098cf93ddb4d": {
-      "value": {
-        "id": "10e3cb04-a5eb-4ee1-805c-098cf93ddb4d",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "说实话，每次谈到延迟退休，我的心里都会涌起一种复杂的情绪。我们这些天天和代码打交道的人，最懂得\"精确\"这两个字。可是人生呢？哪有那么精确。我们无法像调试程序那样，精确地计算出自己还能工作多少年，还能保持多久的创造力。"
-            ]
-          ]
-        },
-        "created_time": 1726295363420,
-        "last_edited_time": 1726295363425,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "17873a98-34e4-46ac-b4e6-5a3020960d14": {
-      "value": {
-        "id": "17873a98-34e4-46ac-b4e6-5a3020960d14",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "年轻的时候，我们总觉得时间用不完。熬夜加班？没问题！通宵改bug？来就来！可是随着年纪增长，我们慢慢意识到，时间这东西，真的是越来越少了。"
-            ]
-          ]
-        },
-        "created_time": 1726295363420,
-        "last_edited_time": 1726295363425,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "40c24a2e-84e2-4831-875c-aa070e33a308": {
-      "value": {
-        "id": "40c24a2e-84e2-4831-875c-aa070e33a308",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "延迟退休政策，说白了，就是要我们多工作几年。表面上看，这似乎没什么大不了的。但是，想想看，当我们的身体开始背叛我们，当我们的反应速度开始变慢，当我们需要更多时间来学习新技术的时候，我们还能在这个快速变化的行业里立足吗？"
-            ]
-          ]
-        },
-        "created_time": 1726295363420,
-        "last_edited_time": 1726295363425,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "fa7ba997-530b-4579-8e5d-0bbb0e32f15d": {
-      "value": {
-        "id": "fa7ba997-530b-4579-8e5d-0bbb0e32f15d",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "我有时会想象这样一个场景：我60多岁了，拄着拐杖，戴着老花镜，还在努力地盯着电脑屏幕，试图解决一个年轻人眨眼间就能搞定的问题。这画面，说实话，有点滑稽，又有点心酸。"
-            ]
-          ]
-        },
-        "created_time": 1726295363420,
-        "last_edited_time": 1726295363425,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "3a6bedf1-aec7-4c86-8f1b-07c15be9ae0a": {
-      "value": {
-        "id": "3a6bedf1-aec7-4c86-8f1b-07c15be9ae0a",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "更让人担心的是，这可能不仅仅是\"要不要我\"的问题，而是\"我还行不行\"的问题。游戏行业发展太快了，今天火爆的技术，明天可能就过时了。我们这些老家伙，能跟得上这个节奏吗？"
-            ]
-          ]
-        },
-        "created_time": 1726295363420,
-        "last_edited_time": 1726295363425,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "d88c1ab9-d2fb-4383-adf3-99ccf0a04bbd": {
-      "value": {
-        "id": "d88c1ab9-d2fb-4383-adf3-99ccf0a04bbd",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "还有一个现实问题：我们的身体能不能撑得住？别忘了，我们可是在一个经常需要加班、熬夜的行业。年轻时能挺过去的，到了那个年纪还顶得住吗？"
-            ]
-          ]
-        },
-        "created_time": 1726295363420,
-        "last_edited_time": 1726295363425,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "236a56fb-6b05-4a20-9530-258e1a45bf81": {
-      "value": {
-        "id": "236a56fb-6b05-4a20-9530-258e1a45bf81",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "说实话，我们很多人可能早就在心里盘算着：等到某个年纪，就转行做点轻松的工作，或者干脆提前退休。可是现在呢？这个\"退路\"可能也要被堵上了。"
-            ]
-          ]
-        },
-        "created_time": 1726295363421,
-        "last_edited_time": 1726295363425,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "e4070138-4eb0-4ebe-91d2-ca1f70192d18": {
-      "value": {
-        "id": "e4070138-4eb0-4ebe-91d2-ca1f70192d18",
-        "version": 2,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "当然，我知道这个政策背后有它的必要性。人口老龄化、养老金压力，这些都是真实存在的问题。但是，作为将要直面这个政策的人，我们心里的忐忑和不安，又有谁能真正理解呢？"
-            ]
-          ]
-        },
-        "created_time": 1726295363421,
-        "last_edited_time": 1726295363425,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "e1a4d694-b7e2-4ad3-a4be-983d4601436c": {
-      "value": {
-        "id": "e1a4d694-b7e2-4ad3-a4be-983d4601436c",
-        "version": 1106,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "就跟我们谈起家庭生活来说，每个人都在过，又有几个人能过好得呢，试问如同婚姻一样，都有结婚，离婚得权利，然后呢，每个人都能过好吗，工作更是比婚姻复杂得多得团队合作行为，只能用艰难来形容了！任重而道远，前路茫茫，待远行"
-            ]
-          ]
-        },
-        "created_time": 1726295363421,
-        "last_edited_time": 1726295774374,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "5372b74a-e814-438c-a081-a4c6ec720a40": {
-      "value": {
-        "id": "5372b74a-e814-438c-a081-a4c6ec720a40",
-        "version": 3,
-        "type": "text",
-        "created_time": 1726283410424,
-        "last_edited_time": 1726283410426,
-        "parent_id": "06cebc4e-a050-4b48-b186-aa95bb30f320",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
-      },
-      "role": "reader"
-    },
-    "9849a0d1-82a7-46f8-85d4-68b9db92a92b": {
-      "value": {
-        "id": "9849a0d1-82a7-46f8-85d4-68b9db92a92b",
-        "version": 1,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "😅"
-            ]
-          ]
-        },
-        "format": {
-          "copied_from_pointer": {
-            "id": "254eced8-9cba-4f90-9990-a885bd567dd0",
-            "table": "block",
-            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+            "color": "default"
           }
         },
-        "created_time": 1725446270807,
-        "last_edited_time": 1725446270807,
-        "parent_id": "54a47a0d-391d-412f-912f-907d897e52bd",
-        "parent_table": "block",
-        "alive": true,
-        "copied_from": "254eced8-9cba-4f90-9990-a885bd567dd0",
-        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+        {
+          "object": "block",
+          "id": "101b99ae-1cea-800a-a12c-de7e396186a2",
+          "parent": {
+            "type": "block_id",
+            "block_id": "df2233a2-4d0d-4274-bb3b-d348f2b08a1d"
+          },
+          "created_time": "2024-09-14T03:03:00.000Z",
+          "last_edited_time": "2024-09-14T03:03:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "养老金可能增加",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "养老金可能增加",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "：工作时间延长，意味着我们可能会多缴纳几年养老保险，退休后的养老金可能会增加。这就像游戏里多肝了几年，最后的装备会更好一些。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "：工作时间延长，意味着我们可能会多缴纳几年养老保险，退休后的养老金可能会增加。这就像游戏里多肝了几年，最后的装备会更好一些。",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "101b99ae-1cea-80d3-bb45-fccf6d5697a1",
+          "parent": {
+            "type": "block_id",
+            "block_id": "df2233a2-4d0d-4274-bb3b-d348f2b08a1d"
+          },
+          "created_time": "2024-09-14T03:03:00.000Z",
+          "last_edited_time": "2024-09-14T03:03:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "健康问题",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "健康问题",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "：对于一些体力劳动者来说，延迟退休可能带来更大的身体负担。就像游戏里的战士，可能需要更多的红药水才能坚持下去。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "：对于一些体力劳动者来说，延迟退休可能带来更大的身体负担。就像游戏里的战士，可能需要更多的红药水才能坚持下去。",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "101b99ae-1cea-80e5-8ac9-fdd5d12223ac",
+          "parent": {
+            "type": "block_id",
+            "block_id": "df2233a2-4d0d-4274-bb3b-d348f2b08a1d"
+          },
+          "created_time": "2024-09-14T03:03:00.000Z",
+          "last_edited_time": "2024-09-14T03:03:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "人生规划的改变",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "人生规划的改变",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "：可能需要重新规划人生，比如推迟生育或者照顾孙辈的时间。这就像游戏里的主线任务突然被延长，支线任务的时间就得跟着调整。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "：可能需要重新规划人生，比如推迟生育或者照顾孙辈的时间。这就像游戏里的主线任务突然被延长，支线任务的时间就得跟着调整。",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "797e682d-7303-4872-951a-b59196ef039c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
       },
-      "role": "reader"
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": true,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "对社会的影响",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "对社会的影响",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "children": [
+        {
+          "object": "block",
+          "id": "95c374e2-b11e-4c4b-a6c4-0ba011511808",
+          "parent": {
+            "type": "block_id",
+            "block_id": "797e682d-7303-4872-951a-b59196ef039c"
+          },
+          "created_time": "2024-09-14T03:03:00.000Z",
+          "last_edited_time": "2024-09-14T03:03:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "就业压力",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "就业压力",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "：老年人退休推迟，可能会在一定程度上加剧年轻人的就业压力。这就像游戏里的高等级玩家占据了更多的资源，新手可能会觉得入门更难了。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "：老年人退休推迟，可能会在一定程度上加剧年轻人的就业压力。这就像游戏里的高等级玩家占据了更多的资源，新手可能会觉得入门更难了。",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "101b99ae-1cea-804c-8654-c820aced6ba6",
+          "parent": {
+            "type": "block_id",
+            "block_id": "797e682d-7303-4872-951a-b59196ef039c"
+          },
+          "created_time": "2024-09-14T03:03:00.000Z",
+          "last_edited_time": "2024-09-14T03:03:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "代际矛盾",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "代际矛盾",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "：可能会加剧代际之间的矛盾。年轻人可能会觉得老年人\"占着茅坑不拉屎\"。这就像游戏里的\"萌新\"和\"大佬\"之间的矛盾。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "：可能会加剧代际之间的矛盾。年轻人可能会觉得老年人\"占着茅坑不拉屎\"。这就像游戏里的\"萌新\"和\"大佬\"之间的矛盾。",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "101b99ae-1cea-80a5-a932-c8f3069656c9",
+          "parent": {
+            "type": "block_id",
+            "block_id": "797e682d-7303-4872-951a-b59196ef039c"
+          },
+          "created_time": "2024-09-14T03:03:00.000Z",
+          "last_edited_time": "2024-09-14T03:03:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "社会保障体系的改变",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "社会保障体系的改变",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "：整个社会保障体系可能需要重新调整。这就像游戏系统的一次大更新，所有的平衡性都需要重新考虑。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "：整个社会保障体系可能需要重新调整。这就像游戏系统的一次大更新，所有的平衡性都需要重新考虑。",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-802c-a360-d1b20fe83030",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": true,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "对企业的影响",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "对企业的影响",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "children": [
+        {
+          "object": "block",
+          "id": "101b99ae-1cea-8083-8c67-dab64ae9021e",
+          "parent": {
+            "type": "block_id",
+            "block_id": "101b99ae-1cea-802c-a360-d1b20fe83030"
+          },
+          "created_time": "2024-09-14T03:03:00.000Z",
+          "last_edited_time": "2024-09-14T03:03:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "人力成本增加",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "人力成本增加",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "：老员工的工资一般比年轻员工高，企业的人力成本可能会增加。这就像游戏里的公会，可能需要付出更多的资源来留住高等级玩家。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "：老员工的工资一般比年轻员工高，企业的人力成本可能会增加。这就像游戏里的公会，可能需要付出更多的资源来留住高等级玩家。",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "101b99ae-1cea-8019-bbef-e52794df3fe0",
+          "parent": {
+            "type": "block_id",
+            "block_id": "101b99ae-1cea-802c-a360-d1b20fe83030"
+          },
+          "created_time": "2024-09-14T03:03:00.000Z",
+          "last_edited_time": "2024-09-14T03:03:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "经验的传承",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "经验的传承",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "：老员工工作时间延长，可能有利于经验的传承。这就像游戏里的老玩家可以带更多的新手。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "：老员工工作时间延长，可能有利于经验的传承。这就像游戏里的老玩家可以带更多的新手。",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "8ad44daa-21a9-4c94-8c2f-4b8a85d51772",
+          "parent": {
+            "type": "block_id",
+            "block_id": "101b99ae-1cea-802c-a360-d1b20fe83030"
+          },
+          "created_time": "2024-09-14T03:03:00.000Z",
+          "last_edited_time": "2024-09-14T03:03:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "创新压力",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "创新压力",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "：可能会在一定程度上影响企业的新陈代谢，增加创新的压力。这就像游戏里如果老玩家一直占据高位，可能会抑制新玩法的产生。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "：可能会在一定程度上影响企业的新陈代谢，增加创新的压力。这就像游戏里如果老玩家一直占据高位，可能会抑制新玩法的产生。",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-806d-9b9d-db1aebeb482d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "第五关：游戏开发者的独特视角",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "第五关：游戏开发者的独特视角",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-805f-9f25-c8efba38df0d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "作为一个游戏开发者，我对这个政策有一些独特的看法：",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "作为一个游戏开发者，我对这个政策有一些独特的看法：",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8041-9865-c9e28ccf7739",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:06:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "技术更新的挑战",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "技术更新的挑战",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：在我们这个行业，技术更新实在是太快了。前几年还在用的引擎，现在可能已经被淘汰了。延迟退休意味着我们要不断学习新技术，否则就可能被淘汰。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：在我们这个行业，技术更新实在是太快了。前几年还在用的引擎，现在可能已经被淘汰了。延迟退休意味着我们要不断学习新技术，否则就可能被淘汰。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-805f-807e-d03c7dfdfcf5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "创意与年龄的关系",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "创意与年龄的关系",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：有人说，创意是年轻人的专利。但我不这么认为。经验丰富的开发者往往能够提供更加成熟和可行的创意。延迟退休可能会给游戏行业带来更多有价值的想法。这就像游戏里的老玩家，虽然反应速度可能不如年轻人，但是对游戏机制的理解往往更深。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：有人说，创意是年轻人的专利。但我不这么认为。经验丰富的开发者往往能够提供更加成熟和可行的创意。延迟退休可能会给游戏行业带来更多有价值的想法。这就像游戏里的老玩家，虽然反应速度可能不如年轻人，但是对游戏机制的理解往往更深。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "89b36cb1-40d6-4b1f-a9e6-8ee933db1311",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "工作强度的问题",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "工作强度的问题",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：游戏开发是个高压力、高强度的工作。很多人在35岁左右就开始考虑转行了。延迟退休对我们来说，可能意味着需要重新思考职业规划，可能需要寻找一些压力小一点的岗位。这就像游戏里的战士，到了后期可能会考虑转职成为辅助。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：游戏开发是个高压力、高强度的工作。很多人在35岁左右就开始考虑转行了。延迟退休对我们来说，可能意味着需要重新思考职业规划，可能需要寻找一些压力小一点的岗位。这就像游戏里的战士，到了后期可能会考虑转职成为辅助。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-809f-9bd9-fec2d04648df",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "经验的价值",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "经验的价值",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：在游戏开发中，经验是非常宝贵的。很多问题，可能年轻人需要踩很多坑才能解决，而有经验的开发者一眼就能看出问题所在。延迟退休可能会让这些宝贵的经验得到更好的传承。这就像游戏里的攻略，往往是由经验丰富的玩家总结出来的。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：在游戏开发中，经验是非常宝贵的。很多问题，可能年轻人需要踩很多坑才能解决，而有经验的开发者一眼就能看出问题所在。延迟退休可能会让这些宝贵的经验得到更好的传承。这就像游戏里的攻略，往往是由经验丰富的玩家总结出来的。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8072-95aa-dde1636eae0f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "跨界的机会",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "跨界的机会",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：随着年龄的增长，我们可能会将游戏开发的经验应用到其他领域。比如，游戏化教育、严肃游戏等。延迟退休可能会给我们更多时间去探索这些新的领域。这就像游戏里的副职业，可能会带来意想不到的收益。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：随着年龄的增长，我们可能会将游戏开发的经验应用到其他领域。比如，游戏化教育、严肃游戏等。延迟退休可能会给我们更多时间去探索这些新的领域。这就像游戏里的副职业，可能会带来意想不到的收益。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "d6af4782-8518-4b1c-9b94-99e90bb3326b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "第六关：如何应对延迟退休？",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "第六关：如何应对延迟退休？",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8044-ba1a-e4befbed0000",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "面对延迟退休这个\"新版本\"，我们该如何应对呢？这里有几个小建议：",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "面对延迟退休这个\"新版本\"，我们该如何应对呢？这里有几个小建议：",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8028-9fec-eaf4359cf127",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "持续学习",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "持续学习",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：就像游戏里要不断升级装备一样，我们也要不断学习新知识、新技能。无论是编程语言、游戏引擎，还是其他领域的知识，都要保持学习的热情。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：就像游戏里要不断升级装备一样，我们也要不断学习新知识、新技能。无论是编程语言、游戏引擎，还是其他领域的知识，都要保持学习的热情。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8086-9d6f-ebe9c0f1b0f2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "注意身体",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "注意身体",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：加班熬夜、久坐不动，这些在年轻时可以承受的习惯，到了一定年纪就吃不消了。要学会劳逸结合，保持运动习惯。就像游戏里要合理分配精力值一样。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：加班熬夜、久坐不动，这些在年轻时可以承受的习惯，到了一定年纪就吃不消了。要学会劳逸结合，保持运动习惯。就像游戏里要合理分配精力值一样。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8038-aecb-ce1de20e3113",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "职业规划",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "职业规划",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：可能需要重新考虑自己的职业规划。比如，是继续做技术？还是转向管理？或者尝试一些新的领域？这就像游戏里的转职，要根据自己的特点和环境来选择。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：可能需要重新考虑自己的职业规划。比如，是继续做技术？还是转向管理？或者尝试一些新的领域？这就像游戏里的转职，要根据自己的特点和环境来选择。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8049-b6c7-f0b900c15390",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "理财规划",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "理财规划",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：延迟退休意味着工作时间变长，但也意味着养老准备的时间变长了。可以考虑一些长期的理财计划。这就像游戏里的经济系统，要学会合理分配和投资资源。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：延迟退休意味着工作时间变长，但也意味着养老准备的时间变长了。可以考虑一些长期的理财计划。这就像游戏里的经济系统，要学会合理分配和投资资源。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "cd505c9f-5980-46f0-a639-76952e51483e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "保持好奇心",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "保持好奇心",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：无论年龄多大，都要保持对新事物的好奇心。这在游戏开发行业尤其重要。新的游戏类型、新的交互方式、新的技术，都可能带来机遇。这就像游戏里要保持探索的精神，才能发现隐藏的宝藏。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：无论年龄多大，都要保持对新事物的好奇心。这在游戏开发行业尤其重要。新的游戏类型、新的交互方式、新的技术，都可能带来机遇。这就像游戏里要保持探索的精神，才能发现隐藏的宝藏。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8041-a99e-e6f09ae4f872",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "培养兴趣爱好",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "培养兴趣爱好",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：工作之外，培养一些兴趣爱好也很重要。这些爱好不仅能让生活更加丰富，说不定还能成为退休后的新事业。就像游戏里的副职业，可能会成为后期的主要收入来源。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：工作之外，培养一些兴趣爱好也很重要。这些爱好不仅能让生活更加丰富，说不定还能成为退休后的新事业。就像游戏里的副职业，可能会成为后期的主要收入来源。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8046-9211-c589d8d92c0a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "最终关：结语",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "最终关：结语",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-806a-bb3e-cebd8ce49045",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "延迟退休这个话题，说实话，确实让人有点忧心忡忡。就像游戏里突然出了个超难的新副本，让人有点不知所措。但是，作为一个游戏开发者，我们应该比其他人更擅长应对这种变化。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "延迟退休这个话题，说实话，确实让人有点忧心忡忡。就像游戏里突然出了个超难的新副本，让人有点不知所措。但是，作为一个游戏开发者，我们应该比其他人更擅长应对这种变化。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-8054-b192-ff59125c2483",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "记得我们在做游戏时经常说的一句话吗？\"游戏人生\"。现在，我们更要用游戏的思维来看待这个变化。把它当作一个新的挑战，一个需要我们重新思考策略的新版本。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "记得我们在做游戏时经常说的一句话吗？\"游戏人生\"。现在，我们更要用游戏的思维来看待这个变化。把它当作一个新的挑战，一个需要我们重新思考策略的新版本。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-80e6-8fb7-e85e090bbe2e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "我们可能需要重新分配属性点，可能需要学习新的技能，可能需要寻找新的队友。但是，只要我们保持学习的热情，保持对生活的热爱，我相信我们一定能在这个\"新版本\"中找到属于自己的位置。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "我们可能需要重新分配属性点，可能需要学习新的技能，可能需要寻找新的队友。但是，只要我们保持学习的热情，保持对生活的热爱，我相信我们一定能在这个\"新版本\"中找到属于自己的位置。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-80a5-b98d-e7c5b6a05ec8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "最后，我想说的是，无论政策如何变化，我们每个人都是自己人生的主角。就像在游戏中一样，我们要学会在各种变化中找到平衡，创造属于自己的精彩人生。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "最后，我想说的是，无论政策如何变化，我们每个人都是自己人生的主角。就像在游戏中一样，我们要学会在各种变化中找到平衡，创造属于自己的精彩人生。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-80ca-bc56-eb991af41e34",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:08:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "好了，今天的\"杂谈\"就到这里。如果你对这个话题有什么想法，欢迎在评论区留言。记住，人生就像游戏，重要的不是何时结束，而是过程中我们创造了多少快乐和价值。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "好了，今天的\"杂谈\"就到这里。如果你对这个话题有什么想法，欢迎在评论区留言。记住，人生就像游戏，重要的不是何时结束，而是过程中我们创造了多少快乐和价值。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-809c-b009-e3a15a65bac5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T03:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "object": "block",
+      "id": "101b99ae-1cea-80e6-8c6d-fddbf8d215bc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:03:00.000Z",
+      "last_edited_time": "2024-09-14T06:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "225bd4dc-1c90-4543-8ef8-b349210907c7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T06:29:00.000Z",
+      "last_edited_time": "2024-09-14T06:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "object": "block",
+      "id": "1f72d188-1eec-4224-81c0-c23981edd85b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T06:29:00.000Z",
+      "last_edited_time": "2024-09-14T06:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "好了，写到这里，我觉得是时候卸下那些冠冕堂皇的外衣，说点真心话了。如果你能看到这里，说明你可能真的在乎这个话题，或者只是单纯地好奇一个游戏开发者的内心世界。不管是哪种情况，我都感谢你的耐心。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "好了，写到这里，我觉得是时候卸下那些冠冕堂皇的外衣，说点真心话了。如果你能看到这里，说明你可能真的在乎这个话题，或者只是单纯地好奇一个游戏开发者的内心世界。不管是哪种情况，我都感谢你的耐心。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "10e3cb04-a5eb-4ee1-805c-098cf93ddb4d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T06:29:00.000Z",
+      "last_edited_time": "2024-09-14T06:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "说实话，每次谈到延迟退休，我的心里都会涌起一种复杂的情绪。我们这些天天和代码打交道的人，最懂得\"精确\"这两个字。可是人生呢？哪有那么精确。我们无法像调试程序那样，精确地计算出自己还能工作多少年，还能保持多久的创造力。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "说实话，每次谈到延迟退休，我的心里都会涌起一种复杂的情绪。我们这些天天和代码打交道的人，最懂得\"精确\"这两个字。可是人生呢？哪有那么精确。我们无法像调试程序那样，精确地计算出自己还能工作多少年，还能保持多久的创造力。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "17873a98-34e4-46ac-b4e6-5a3020960d14",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T06:29:00.000Z",
+      "last_edited_time": "2024-09-14T06:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "年轻的时候，我们总觉得时间用不完。熬夜加班？没问题！通宵改bug？来就来！可是随着年纪增长，我们慢慢意识到，时间这东西，真的是越来越少了。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "年轻的时候，我们总觉得时间用不完。熬夜加班？没问题！通宵改bug？来就来！可是随着年纪增长，我们慢慢意识到，时间这东西，真的是越来越少了。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "40c24a2e-84e2-4831-875c-aa070e33a308",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T06:29:00.000Z",
+      "last_edited_time": "2024-09-14T06:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "延迟退休政策，说白了，就是要我们多工作几年。表面上看，这似乎没什么大不了的。但是，想想看，当我们的身体开始背叛我们，当我们的反应速度开始变慢，当我们需要更多时间来学习新技术的时候，我们还能在这个快速变化的行业里立足吗？",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "延迟退休政策，说白了，就是要我们多工作几年。表面上看，这似乎没什么大不了的。但是，想想看，当我们的身体开始背叛我们，当我们的反应速度开始变慢，当我们需要更多时间来学习新技术的时候，我们还能在这个快速变化的行业里立足吗？",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "fa7ba997-530b-4579-8e5d-0bbb0e32f15d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T06:29:00.000Z",
+      "last_edited_time": "2024-09-14T06:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "我有时会想象这样一个场景：我60多岁了，拄着拐杖，戴着老花镜，还在努力地盯着电脑屏幕，试图解决一个年轻人眨眼间就能搞定的问题。这画面，说实话，有点滑稽，又有点心酸。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "我有时会想象这样一个场景：我60多岁了，拄着拐杖，戴着老花镜，还在努力地盯着电脑屏幕，试图解决一个年轻人眨眼间就能搞定的问题。这画面，说实话，有点滑稽，又有点心酸。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "3a6bedf1-aec7-4c86-8f1b-07c15be9ae0a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T06:29:00.000Z",
+      "last_edited_time": "2024-09-14T06:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "更让人担心的是，这可能不仅仅是\"要不要我\"的问题，而是\"我还行不行\"的问题。游戏行业发展太快了，今天火爆的技术，明天可能就过时了。我们这些老家伙，能跟得上这个节奏吗？",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "更让人担心的是，这可能不仅仅是\"要不要我\"的问题，而是\"我还行不行\"的问题。游戏行业发展太快了，今天火爆的技术，明天可能就过时了。我们这些老家伙，能跟得上这个节奏吗？",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "d88c1ab9-d2fb-4383-adf3-99ccf0a04bbd",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T06:29:00.000Z",
+      "last_edited_time": "2024-09-14T06:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "还有一个现实问题：我们的身体能不能撑得住？别忘了，我们可是在一个经常需要加班、熬夜的行业。年轻时能挺过去的，到了那个年纪还顶得住吗？",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "还有一个现实问题：我们的身体能不能撑得住？别忘了，我们可是在一个经常需要加班、熬夜的行业。年轻时能挺过去的，到了那个年纪还顶得住吗？",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "236a56fb-6b05-4a20-9530-258e1a45bf81",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T06:29:00.000Z",
+      "last_edited_time": "2024-09-14T06:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "说实话，我们很多人可能早就在心里盘算着：等到某个年纪，就转行做点轻松的工作，或者干脆提前退休。可是现在呢？这个\"退路\"可能也要被堵上了。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "说实话，我们很多人可能早就在心里盘算着：等到某个年纪，就转行做点轻松的工作，或者干脆提前退休。可是现在呢？这个\"退路\"可能也要被堵上了。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "e4070138-4eb0-4ebe-91d2-ca1f70192d18",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T06:29:00.000Z",
+      "last_edited_time": "2024-09-14T06:29:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "当然，我知道这个政策背后有它的必要性。人口老龄化、养老金压力，这些都是真实存在的问题。但是，作为将要直面这个政策的人，我们心里的忐忑和不安，又有谁能真正理解呢？",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "当然，我知道这个政策背后有它的必要性。人口老龄化、养老金压力，这些都是真实存在的问题。但是，作为将要直面这个政策的人，我们心里的忐忑和不安，又有谁能真正理解呢？",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "e1a4d694-b7e2-4ad3-a4be-983d4601436c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T06:29:00.000Z",
+      "last_edited_time": "2024-09-14T06:36:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "就跟我们谈起家庭生活来说，每个人都在过，又有几个人能过好得呢，试问如同婚姻一样，都有结婚，离婚得权利，然后呢，每个人都能过好吗，工作更是比婚姻复杂得多得团队合作行为，只能用艰难来形容了！任重而道远，前路茫茫，待远行",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "就跟我们谈起家庭生活来说，每个人都在过，又有几个人能过好得呢，试问如同婚姻一样，都有结婚，离婚得权利，然后呢，每个人都能过好吗，工作更是比婚姻复杂得多得团队合作行为，只能用艰难来形容了！任重而道远，前路茫茫，待远行",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "5372b74a-e814-438c-a081-a4c6ec720a40",
+      "parent": {
+        "type": "page_id",
+        "page_id": "06cebc4e-a050-4b48-b186-aa95bb30f320"
+      },
+      "created_time": "2024-09-14T03:10:00.000Z",
+      "last_edited_time": "2024-09-14T03:10:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "color": "default"
+      }
     }
-  },
-  "contentHtml": "<h1>从键盘到拐杖：一个游戏开发者眼中的中国延迟退休</h1><p>嘿，各位玩家们（哦，不好意思，我是说各位读者们），欢迎来到JiangKing的杂谈时间。今天我们要聊的不是新出的3A大作，也不是哪个游戏公司又爆出了加班黑幕。我们要聊的是一个可能会影响到我们每个人的话题 —— 中国的延迟退休政策。</p><p>没错，就是那个可能会让我们从\"35岁就被游戏公司嫌弃\"变成\"65岁还在写bug\"的政策。作为一个已经在游戏行业摸爬滚打多年的老油条，我觉得有必要从我这个独特的视角来聊聊这个话题。毕竟，咱们游戏开发可是经常被戏称为\"超前体验\"退休的行业呢。</p><h2>第一关：什么是延迟退休？</h2><p>首先，让我们来了解一下这个\"延迟退休\"到底是个什么玩意儿。简单来说，就是把现行的退休年龄往后推几年。目前，我们国家的法定退休年龄是：男性60岁，女干部55岁，女工人50岁。而延迟退休政策，可能会把这个年龄普遍往后推迟。</p><p>这就好比我们在做游戏时，原本计划角色60级就满级了，结果策划突然说：\"不行啊，得加点内容，咱们把满级提到65级吧！\"</p><h2>第二关：为什么要延迟退休？</h2><p>你可能会问，为什么要这么做呢？难道是因为国家觉得我们还不够累吗？其实不是的，这背后有几个重要原因：</p><li>人口老龄化：这个问题比游戏里的\"过度氪金导致游戏失衡\"还要严重。我国正面临着严重的人口老龄化问题，越来越多的老年人，越来越少的年轻人，这就导致了养老金的压力越来越大。</li><li>人均寿命延长：现在的医疗条件比以前好多了，就像游戏里的buff越来越多，我们的寿命也越来越长。按照现在的退休年龄，我们可能要在退休状态下生活20-30年，这对养老金系统是个不小的挑战。</li><li>专业人才的需求：有些行业的专业人才，到了退休年龄还正是经验最丰富的时候。就像游戏公司里的元老级程序员，虽然可能已经记不住最新的编程语言了，但解决问题的能力却是无人能及。</li><li>缓解养老金压力：延迟退休可以增加养老保险的缴费时间，减少领取时间，有助于缓解养老金支付的压力。这就像游戏里延长了氪金的时间，但缩短了返利的周期。</li><h2>第三关：延迟退休的可能方案</h2><p>据说，目前讨论的延迟退休方案主要有以下几种：</p><li>渐进式延迟：每年延迟几个月，慢慢过渡到新的退休年龄。这就像游戏里的等级调整，不会一下子提高20级，而是慢慢来，让玩家有适应的时间。</li><li>弹性退休：允许在一定年龄段内自主选择退休时间。这有点像游戏里的自由模式，你可以选择何时开始新的冒险。</li><li>差异化退休：根据行业、工种的不同，制定不同的退休年龄。这就像游戏里的职业平衡，战士可能需要更多的休息时间，而法师可能还能再战几年。</li><p>无论哪种方案，对我们来说都是一个不小的挑战。就像游戏里突然改了平衡性，我们得重新学习如何在新的规则下生存。</p><h2>第四关：延迟退休的影响</h2><p>那么，这个政策会给我们带来什么影响呢？让我们来分析一下：</p><ul><li>对个人的影响：</li><li>工作时间变长：这个显而易见，我们要多奋斗几年。就像游戏里的升级之路突然被拉长了。</li><li>养老金可能增加：工作时间延长，意味着我们可能会多缴纳几年养老保险，退休后的养老金可能会增加。这就像游戏里多肝了几年，最后的装备会更好一些。</li><li>健康问题：对于一些体力劳动者来说，延迟退休可能带来更大的身体负担。就像游戏里的战士，可能需要更多的红药水才能坚持下去。</li><li>人生规划的改变：可能需要重新规划人生，比如推迟生育或者照顾孙辈的时间。这就像游戏里的主线任务突然被延长，支线任务的时间就得跟着调整。</li></ul><ul><li>对社会的影响：</li><li>就业压力：老年人退休推迟，可能会在一定程度上加剧年轻人的就业压力。这就像游戏里的高等级玩家占据了更多的资源，新手可能会觉得入门更难了。</li><li>代际矛盾：可能会加剧代际之间的矛盾。年轻人可能会觉得老年人\"占着茅坑不拉屎\"。这就像游戏里的\"萌新\"和\"大佬\"之间的矛盾。</li><li>社会保障体系的改变：整个社会保障体系可能需要重新调整。这就像游戏系统的一次大更新，所有的平衡性都需要重新考虑。</li></ul><ul><li>对企业的影响：</li><li>人力成本增加：老员工的工资一般比年轻员工高，企业的人力成本可能会增加。这就像游戏里的公会，可能需要付出更多的资源来留住高等级玩家。</li><li>经验的传承：老员工工作时间延长，可能有利于经验的传承。这就像游戏里的老玩家可以带更多的新手。</li><li>创新压力：可能会在一定程度上影响企业的新陈代谢，增加创新的压力。这就像游戏里如果老玩家一直占据高位，可能会抑制新玩法的产生。</li></ul><h2>第五关：游戏开发者的独特视角</h2><p>作为一个游戏开发者，我对这个政策有一些独特的看法：</p><li>技术更新的挑战：在我们这个行业，技术更新实在是太快了。前几年还在用的引擎，现在可能已经被淘汰了。延迟退休意味着我们要不断学习新技术，否则就可能被淘汰。</li><li>创意与年龄的关系：有人说，创意是年轻人的专利。但我不这么认为。经验丰富的开发者往往能够提供更加成熟和可行的创意。延迟退休可能会给游戏行业带来更多有价值的想法。这就像游戏里的老玩家，虽然反应速度可能不如年轻人，但是对游戏机制的理解往往更深。</li><li>工作强度的问题：游戏开发是个高压力、高强度的工作。很多人在35岁左右就开始考虑转行了。延迟退休对我们来说，可能意味着需要重新思考职业规划，可能需要寻找一些压力小一点的岗位。这就像游戏里的战士，到了后期可能会考虑转职成为辅助。</li><li>经验的价值：在游戏开发中，经验是非常宝贵的。很多问题，可能年轻人需要踩很多坑才能解决，而有经验的开发者一眼就能看出问题所在。延迟退休可能会让这些宝贵的经验得到更好的传承。这就像游戏里的攻略，往往是由经验丰富的玩家总结出来的。</li><li>跨界的机会：随着年龄的增长，我们可能会将游戏开发的经验应用到其他领域。比如，游戏化教育、严肃游戏等。延迟退休可能会给我们更多时间去探索这些新的领域。这就像游戏里的副职业，可能会带来意想不到的收益。</li><h2>第六关：如何应对延迟退休？</h2><p>面对延迟退休这个\"新版本\"，我们该如何应对呢？这里有几个小建议：</p><li>持续学习：就像游戏里要不断升级装备一样，我们也要不断学习新知识、新技能。无论是编程语言、游戏引擎，还是其他领域的知识，都要保持学习的热情。</li><li>注意身体：加班熬夜、久坐不动，这些在年轻时可以承受的习惯，到了一定年纪就吃不消了。要学会劳逸结合，保持运动习惯。就像游戏里要合理分配精力值一样。</li><li>职业规划：可能需要重新考虑自己的职业规划。比如，是继续做技术？还是转向管理？或者尝试一些新的领域？这就像游戏里的转职，要根据自己的特点和环境来选择。</li><li>理财规划：延迟退休意味着工作时间变长，但也意味着养老准备的时间变长了。可以考虑一些长期的理财计划。这就像游戏里的经济系统，要学会合理分配和投资资源。</li><li>保持好奇心：无论年龄多大，都要保持对新事物的好奇心。这在游戏开发行业尤其重要。新的游戏类型、新的交互方式、新的技术，都可能带来机遇。这就像游戏里要保持探索的精神，才能发现隐藏的宝藏。</li><li>培养兴趣爱好：工作之外，培养一些兴趣爱好也很重要。这些爱好不仅能让生活更加丰富，说不定还能成为退休后的新事业。就像游戏里的副职业，可能会成为后期的主要收入来源。</li><h2>最终关：结语</h2><p>延迟退休这个话题，说实话，确实让人有点忧心忡忡。就像游戏里突然出了个超难的新副本，让人有点不知所措。但是，作为一个游戏开发者，我们应该比其他人更擅长应对这种变化。</p><p>记得我们在做游戏时经常说的一句话吗？\"游戏人生\"。现在，我们更要用游戏的思维来看待这个变化。把它当作一个新的挑战，一个需要我们重新思考策略的新版本。</p><p>我们可能需要重新分配属性点，可能需要学习新的技能，可能需要寻找新的队友。但是，只要我们保持学习的热情，保持对生活的热爱，我相信我们一定能在这个\"新版本\"中找到属于自己的位置。</p><p>最后，我想说的是，无论政策如何变化，我们每个人都是自己人生的主角。就像在游戏中一样，我们要学会在各种变化中找到平衡，创造属于自己的精彩人生。</p><p>好了，今天的\"杂谈\"就到这里。如果你对这个话题有什么想法，欢迎在评论区留言。记住，人生就像游戏，重要的不是何时结束，而是过程中我们创造了多少快乐和价值。</p><hr><p></p><hr><p>好了，写到这里，我觉得是时候卸下那些冠冕堂皇的外衣，说点真心话了。如果你能看到这里，说明你可能真的在乎这个话题，或者只是单纯地好奇一个游戏开发者的内心世界。不管是哪种情况，我都感谢你的耐心。</p><p>说实话，每次谈到延迟退休，我的心里都会涌起一种复杂的情绪。我们这些天天和代码打交道的人，最懂得\"精确\"这两个字。可是人生呢？哪有那么精确。我们无法像调试程序那样，精确地计算出自己还能工作多少年，还能保持多久的创造力。</p><p>年轻的时候，我们总觉得时间用不完。熬夜加班？没问题！通宵改bug？来就来！可是随着年纪增长，我们慢慢意识到，时间这东西，真的是越来越少了。</p><p>延迟退休政策，说白了，就是要我们多工作几年。表面上看，这似乎没什么大不了的。但是，想想看，当我们的身体开始背叛我们，当我们的反应速度开始变慢，当我们需要更多时间来学习新技术的时候，我们还能在这个快速变化的行业里立足吗？</p><p>我有时会想象这样一个场景：我60多岁了，拄着拐杖，戴着老花镜，还在努力地盯着电脑屏幕，试图解决一个年轻人眨眼间就能搞定的问题。这画面，说实话，有点滑稽，又有点心酸。</p><p>更让人担心的是，这可能不仅仅是\"要不要我\"的问题，而是\"我还行不行\"的问题。游戏行业发展太快了，今天火爆的技术，明天可能就过时了。我们这些老家伙，能跟得上这个节奏吗？</p><p>还有一个现实问题：我们的身体能不能撑得住？别忘了，我们可是在一个经常需要加班、熬夜的行业。年轻时能挺过去的，到了那个年纪还顶得住吗？</p><p>说实话，我们很多人可能早就在心里盘算着：等到某个年纪，就转行做点轻松的工作，或者干脆提前退休。可是现在呢？这个\"退路\"可能也要被堵上了。</p><p>当然，我知道这个政策背后有它的必要性。人口老龄化、养老金压力，这些都是真实存在的问题。但是，作为将要直面这个政策的人，我们心里的忐忑和不安，又有谁能真正理解呢？</p><p>就跟我们谈起家庭生活来说，每个人都在过，又有几个人能过好得呢，试问如同婚姻一样，都有结婚，离婚得权利，然后呢，每个人都能过好吗，工作更是比婚姻复杂得多得团队合作行为，只能用艰难来形容了！任重而道远，前路茫茫，待远行</p><p></p>"
+  ],
+  "contentHtml": "<h1>从键盘到拐杖：一个游戏开发者眼中的中国延迟退休</h1><p>嘿，各位玩家们（哦，不好意思，我是说各位读者们），欢迎来到JiangKing的杂谈时间。今天我们要聊的不是新出的3A大作，也不是哪个游戏公司又爆出了加班黑幕。我们要聊的是一个可能会影响到我们每个人的话题 —— 中国的延迟退休政策。</p><p>没错，就是那个可能会让我们从\"35岁就被游戏公司嫌弃\"变成\"65岁还在写bug\"的政策。作为一个已经在游戏行业摸爬滚打多年的老油条，我觉得有必要从我这个独特的视角来聊聊这个话题。毕竟，咱们游戏开发可是经常被戏称为\"超前体验\"退休的行业呢。</p><h2>第一关：什么是延迟退休？</h2><p>首先，让我们来了解一下这个\"延迟退休\"到底是个什么玩意儿。简单来说，就是把现行的退休年龄往后推几年。目前，我们国家的法定退休年龄是：男性60岁，女干部55岁，女工人50岁。而延迟退休政策，可能会把这个年龄普遍往后推迟。</p><p>这就好比我们在做游戏时，原本计划角色60级就满级了，结果策划突然说：\"不行啊，得加点内容，咱们把满级提到65级吧！\"</p><h2>第二关：为什么要延迟退休？</h2><p>你可能会问，为什么要这么做呢？难道是因为国家觉得我们还不够累吗？其实不是的，这背后有几个重要原因：</p><li><strong>人口老龄化</strong>：这个问题比游戏里的\"过度氪金导致游戏失衡\"还要严重。我国正面临着严重的人口老龄化问题，越来越多的老年人，越来越少的年轻人，这就导致了养老金的压力越来越大。</li><li><strong>人均寿命延长</strong>：现在的医疗条件比以前好多了，就像游戏里的buff越来越多，我们的寿命也越来越长。按照现在的退休年龄，我们可能要在退休状态下生活20-30年，这对养老金系统是个不小的挑战。</li><li><strong>专业人才的需求</strong>：有些行业的专业人才，到了退休年龄还正是经验最丰富的时候。就像游戏公司里的元老级程序员，虽然可能已经记不住最新的编程语言了，但解决问题的能力却是无人能及。</li><li><strong>缓解养老金压力</strong>：延迟退休可以增加养老保险的缴费时间，减少领取时间，有助于缓解养老金支付的压力。这就像游戏里延长了氪金的时间，但缩短了返利的周期。</li><h2>第三关：延迟退休的可能方案</h2><p>据说，目前讨论的延迟退休方案主要有以下几种：</p><li><strong>渐进式延迟</strong>：每年延迟几个月，慢慢过渡到新的退休年龄。这就像游戏里的等级调整，不会一下子提高20级，而是慢慢来，让玩家有适应的时间。</li><li><strong>弹性退休</strong>：允许在一定年龄段内自主选择退休时间。这有点像游戏里的自由模式，你可以选择何时开始新的冒险。</li><li><strong>差异化退休</strong>：根据行业、工种的不同，制定不同的退休年龄。这就像游戏里的职业平衡，战士可能需要更多的休息时间，而法师可能还能再战几年。</li><p>无论哪种方案，对我们来说都是一个不小的挑战。就像游戏里突然改了平衡性，我们得重新学习如何在新的规则下生存。</p><h2>第四关：延迟退休的影响</h2><p>那么，这个政策会给我们带来什么影响呢？让我们来分析一下：</p><ol><li><strong>对个人的影响</strong>：</li><li><strong>工作时间变长</strong>：这个显而易见，我们要多奋斗几年。就像游戏里的升级之路突然被拉长了。</li><li><strong>养老金可能增加</strong>：工作时间延长，意味着我们可能会多缴纳几年养老保险，退休后的养老金可能会增加。这就像游戏里多肝了几年，最后的装备会更好一些。</li><li><strong>健康问题</strong>：对于一些体力劳动者来说，延迟退休可能带来更大的身体负担。就像游戏里的战士，可能需要更多的红药水才能坚持下去。</li><li><strong>人生规划的改变</strong>：可能需要重新规划人生，比如推迟生育或者照顾孙辈的时间。这就像游戏里的主线任务突然被延长，支线任务的时间就得跟着调整。</li></ol><ol><li><strong>对社会的影响</strong>：</li><li><strong>就业压力</strong>：老年人退休推迟，可能会在一定程度上加剧年轻人的就业压力。这就像游戏里的高等级玩家占据了更多的资源，新手可能会觉得入门更难了。</li><li><strong>代际矛盾</strong>：可能会加剧代际之间的矛盾。年轻人可能会觉得老年人\"占着茅坑不拉屎\"。这就像游戏里的\"萌新\"和\"大佬\"之间的矛盾。</li><li><strong>社会保障体系的改变</strong>：整个社会保障体系可能需要重新调整。这就像游戏系统的一次大更新，所有的平衡性都需要重新考虑。</li></ol><ol><li><strong>对企业的影响</strong>：</li><li><strong>人力成本增加</strong>：老员工的工资一般比年轻员工高，企业的人力成本可能会增加。这就像游戏里的公会，可能需要付出更多的资源来留住高等级玩家。</li><li><strong>经验的传承</strong>：老员工工作时间延长，可能有利于经验的传承。这就像游戏里的老玩家可以带更多的新手。</li><li><strong>创新压力</strong>：可能会在一定程度上影响企业的新陈代谢，增加创新的压力。这就像游戏里如果老玩家一直占据高位，可能会抑制新玩法的产生。</li></ol><h2>第五关：游戏开发者的独特视角</h2><p>作为一个游戏开发者，我对这个政策有一些独特的看法：</p><li><strong>技术更新的挑战</strong>：在我们这个行业，技术更新实在是太快了。前几年还在用的引擎，现在可能已经被淘汰了。延迟退休意味着我们要不断学习新技术，否则就可能被淘汰。</li><li><strong>创意与年龄的关系</strong>：有人说，创意是年轻人的专利。但我不这么认为。经验丰富的开发者往往能够提供更加成熟和可行的创意。延迟退休可能会给游戏行业带来更多有价值的想法。这就像游戏里的老玩家，虽然反应速度可能不如年轻人，但是对游戏机制的理解往往更深。</li><li><strong>工作强度的问题</strong>：游戏开发是个高压力、高强度的工作。很多人在35岁左右就开始考虑转行了。延迟退休对我们来说，可能意味着需要重新思考职业规划，可能需要寻找一些压力小一点的岗位。这就像游戏里的战士，到了后期可能会考虑转职成为辅助。</li><li><strong>经验的价值</strong>：在游戏开发中，经验是非常宝贵的。很多问题，可能年轻人需要踩很多坑才能解决，而有经验的开发者一眼就能看出问题所在。延迟退休可能会让这些宝贵的经验得到更好的传承。这就像游戏里的攻略，往往是由经验丰富的玩家总结出来的。</li><li><strong>跨界的机会</strong>：随着年龄的增长，我们可能会将游戏开发的经验应用到其他领域。比如，游戏化教育、严肃游戏等。延迟退休可能会给我们更多时间去探索这些新的领域。这就像游戏里的副职业，可能会带来意想不到的收益。</li><h2>第六关：如何应对延迟退休？</h2><p>面对延迟退休这个\"新版本\"，我们该如何应对呢？这里有几个小建议：</p><li><strong>持续学习</strong>：就像游戏里要不断升级装备一样，我们也要不断学习新知识、新技能。无论是编程语言、游戏引擎，还是其他领域的知识，都要保持学习的热情。</li><li><strong>注意身体</strong>：加班熬夜、久坐不动，这些在年轻时可以承受的习惯，到了一定年纪就吃不消了。要学会劳逸结合，保持运动习惯。就像游戏里要合理分配精力值一样。</li><li><strong>职业规划</strong>：可能需要重新考虑自己的职业规划。比如，是继续做技术？还是转向管理？或者尝试一些新的领域？这就像游戏里的转职，要根据自己的特点和环境来选择。</li><li><strong>理财规划</strong>：延迟退休意味着工作时间变长，但也意味着养老准备的时间变长了。可以考虑一些长期的理财计划。这就像游戏里的经济系统，要学会合理分配和投资资源。</li><li><strong>保持好奇心</strong>：无论年龄多大，都要保持对新事物的好奇心。这在游戏开发行业尤其重要。新的游戏类型、新的交互方式、新的技术，都可能带来机遇。这就像游戏里要保持探索的精神，才能发现隐藏的宝藏。</li><li><strong>培养兴趣爱好</strong>：工作之外，培养一些兴趣爱好也很重要。这些爱好不仅能让生活更加丰富，说不定还能成为退休后的新事业。就像游戏里的副职业，可能会成为后期的主要收入来源。</li><h2>最终关：结语</h2><p>延迟退休这个话题，说实话，确实让人有点忧心忡忡。就像游戏里突然出了个超难的新副本，让人有点不知所措。但是，作为一个游戏开发者，我们应该比其他人更擅长应对这种变化。</p><p>记得我们在做游戏时经常说的一句话吗？\"游戏人生\"。现在，我们更要用游戏的思维来看待这个变化。把它当作一个新的挑战，一个需要我们重新思考策略的新版本。</p><p>我们可能需要重新分配属性点，可能需要学习新的技能，可能需要寻找新的队友。但是，只要我们保持学习的热情，保持对生活的热爱，我相信我们一定能在这个\"新版本\"中找到属于自己的位置。</p><p>最后，我想说的是，无论政策如何变化，我们每个人都是自己人生的主角。就像在游戏中一样，我们要学会在各种变化中找到平衡，创造属于自己的精彩人生。</p><p>好了，今天的\"杂谈\"就到这里。如果你对这个话题有什么想法，欢迎在评论区留言。记住，人生就像游戏，重要的不是何时结束，而是过程中我们创造了多少快乐和价值。</p><hr><p></p><hr><p>好了，写到这里，我觉得是时候卸下那些冠冕堂皇的外衣，说点真心话了。如果你能看到这里，说明你可能真的在乎这个话题，或者只是单纯地好奇一个游戏开发者的内心世界。不管是哪种情况，我都感谢你的耐心。</p><p>说实话，每次谈到延迟退休，我的心里都会涌起一种复杂的情绪。我们这些天天和代码打交道的人，最懂得\"精确\"这两个字。可是人生呢？哪有那么精确。我们无法像调试程序那样，精确地计算出自己还能工作多少年，还能保持多久的创造力。</p><p>年轻的时候，我们总觉得时间用不完。熬夜加班？没问题！通宵改bug？来就来！可是随着年纪增长，我们慢慢意识到，时间这东西，真的是越来越少了。</p><p>延迟退休政策，说白了，就是要我们多工作几年。表面上看，这似乎没什么大不了的。但是，想想看，当我们的身体开始背叛我们，当我们的反应速度开始变慢，当我们需要更多时间来学习新技术的时候，我们还能在这个快速变化的行业里立足吗？</p><p>我有时会想象这样一个场景：我60多岁了，拄着拐杖，戴着老花镜，还在努力地盯着电脑屏幕，试图解决一个年轻人眨眼间就能搞定的问题。这画面，说实话，有点滑稽，又有点心酸。</p><p>更让人担心的是，这可能不仅仅是\"要不要我\"的问题，而是\"我还行不行\"的问题。游戏行业发展太快了，今天火爆的技术，明天可能就过时了。我们这些老家伙，能跟得上这个节奏吗？</p><p>还有一个现实问题：我们的身体能不能撑得住？别忘了，我们可是在一个经常需要加班、熬夜的行业。年轻时能挺过去的，到了那个年纪还顶得住吗？</p><p>说实话，我们很多人可能早就在心里盘算着：等到某个年纪，就转行做点轻松的工作，或者干脆提前退休。可是现在呢？这个\"退路\"可能也要被堵上了。</p><p>当然，我知道这个政策背后有它的必要性。人口老龄化、养老金压力，这些都是真实存在的问题。但是，作为将要直面这个政策的人，我们心里的忐忑和不安，又有谁能真正理解呢？</p><p>就跟我们谈起家庭生活来说，每个人都在过，又有几个人能过好得呢，试问如同婚姻一样，都有结婚，离婚得权利，然后呢，每个人都能过好吗，工作更是比婚姻复杂得多得团队合作行为，只能用艰难来形容了！任重而道远，前路茫茫，待远行</p><p></p>"
 }

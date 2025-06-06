@@ -84,7 +84,7 @@ html(lang="zh-CN")
             p.no-article 暂无文章，请先同步 Notion 数据。
           else
             each article in articles
-              if article.status === 'Published' && article.type === 'Post'
+              if article.type === 'Post'
                 article.post-card(data-category=article.category)
                   h3.post-title
                     a(href=`/blog/${article.id}.html`) #{article.title}

@@ -60,12 +60,16 @@
       </div>
     </div>
     <article class="article-container">
-      <div class="article-content"><div class="image-container"><img src="/blog/images/101b99ae-1cea-800e-9c1a-db9f6fea801c/aHR0cHM6Ly9w.svg" alt="文章图片" class="svg-image" /></div><h2>影片信息</h2><p>标题：姥姥的外孙
+      <div class="article-content"><div class="unsupported-block">[synced_block]</div><div class="image-container">
+                  <img src="/blog/images/101b99ae-1cea-800e-9c1a-db9f6fea801c/aHR0cHM6_657bf33bfbf478066fd24f11b0eb95f7.webp" alt="文章图片" />
+                </div><h2>影片信息</h2><p>标题：姥姥的外孙
 导演：[帕特·波尼蒂帕特]
 主演：[普提蓬·阿萨拉塔纳功 / 乌萨·萨梅坎姆 / 莎琳拉·托马斯 / 三亚·库纳康 / 邦沙敦·宗威拉克 / 彤达婉·奔提维此弓 / 当蓬·欧阿披叻 / 西玛瓦理·塔利吉]
 上映日期：[2024-08-23(中国大陆) / 2024-04-04(泰国)]
 片长：[127]</p><p>语言: 泰语 / 潮州话
-</p><div class="unsupported-block">剧情简介</div><p>出身泰国华人家庭的无业年轻人阿安（马群耀 饰）看到堂妹因照顾病重的爷爷而继承房产后，也对身患绝症的姥姥（乌萨·萨梅坎姆 饰）动了心思，计划复刻堂妹的“致富之路”获取百万遗产。但面对同样“努力”的舅舅们和挑剔毒舌的姥姥，阿安这条争当全职孝孙的“啃姥致富”之路似乎没有他预想的那么顺利……</p><div class="unsupported-block">下载地址</div><div class="unsupported-block">夸克网盘分享</div></div>
+</p><h3>剧情简介</h3><p>出身泰国华人家庭的无业年轻人阿安（马群耀 饰）看到堂妹因照顾病重的爷爷而继承房产后，也对身患绝症的姥姥（乌萨·萨梅坎姆 饰）动了心思，计划复刻堂妹的“致富之路”获取百万遗产。但面对同样“努力”的舅舅们和挑剔毒舌的姥姥，阿安这条争当全职孝孙的“啃姥致富”之路似乎没有他预想的那么顺利……</p><h3><strong>下载地址</strong></h3><div class="bookmark">
+                <a href="https://pan.quark.cn/s/31cddc39b866#/list/share" target="_blank">https://pan.quark.cn/s/31cddc39b866#/list/share</a>
+              </div></div>
       <div class="article-tags">
       </div>
       <div class="author-info">
@@ -139,8 +143,8 @@
               const articleId = window.location.pathname.split('/').pop().replace('.html', '');
               img.src = `/blog/images/${articleId}/${content}`;
             } else {
-              // 默认使用占位图
-              img.src = '/assets/placeholder-image.svg';
+              // 无效图片路径，跳过
+              return;
             }
             
             // 添加错误处理
@@ -148,7 +152,7 @@
             img.setAttribute('data-original-text', content);
             img.onerror = function() {
               this.onerror = null;
-              this.src = '/assets/placeholder-image.svg';
+              this.style.display = 'none';
               this.classList.add('error');
             };
             
@@ -181,8 +185,8 @@
               const articleId = window.location.pathname.split('/').pop().replace('.html', '');
               img.src = `/blog/images/${articleId}/${content}`;
             } else {
-              // 使用占位图
-              img.src = '/assets/placeholder-image.svg';
+              // 无效图片路径，跳过
+              return;
             }
             
             // 添加错误处理
@@ -190,7 +194,7 @@
             img.setAttribute('data-text-content', content);
             img.onerror = function() {
               this.onerror = null;
-              this.src = '/assets/placeholder-image.svg';
+              this.style.display = 'none';
               this.classList.add('error');
             };
             
@@ -217,24 +221,18 @@
             console.log('图片已加载失败:', img.src);
             img.classList.add('error');
             
-            // 如果不是占位图，则替换为占位图
-            if (!img.src.includes('placeholder-image')) {
-              img.setAttribute('data-failed-src', img.src);
-              img.src = '/assets/placeholder-image.svg';
-              img.classList.add('svg-image'); // 添加SVG类
-            }
+            // 隐藏加载失败的图片
+            img.setAttribute('data-failed-src', img.src);
+            img.style.display = 'none';
           } else {
             // 添加加载错误处理
             img.addEventListener('error', function() {
               console.log('图片加载失败:', this.src);
               this.classList.add('error');
               
-              // 如果不是占位图，则替换为占位图
-              if (!this.src.includes('placeholder-image')) {
-                this.setAttribute('data-failed-src', this.src);
-                this.src = '/assets/placeholder-image.svg';
-                this.classList.add('svg-image'); // 添加SVG类
-              }
+              // 隐藏加载失败的图片
+              this.setAttribute('data-failed-src', this.src);
+              this.style.display = 'none';
             });
           }
         });
