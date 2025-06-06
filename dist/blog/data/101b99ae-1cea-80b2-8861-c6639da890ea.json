@@ -1,0 +1,1598 @@
+{
+  "id": "101b99ae-1cea-80b2-8861-c6639da890ea",
+  "date": "2021-11-05",
+  "type": "Post",
+  "category": "技术分享",
+  "slug": "invisible",
+  "tags": [
+    ""
+  ],
+  "summary": "游戏服务器性能优化之程序优化篇",
+  "title": "游戏服务器性能优化之程序优化篇",
+  "status": "Published",
+  "detail": {
+    "101b99ae-1cea-80b2-8861-c6639da890ea": {
+      "value": {
+        "id": "101b99ae-1cea-80b2-8861-c6639da890ea",
+        "version": 31,
+        "type": "page",
+        "properties": {
+          "NX\\Q": [
+            [
+              "‣",
+              [
+                [
+                  "d",
+                  {
+                    "type": "date",
+                    "start_date": "2021-11-05"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "`gQ~": [
+            [
+              "Post"
+            ]
+          ],
+          "bB{M": [
+            [
+              "技术分享"
+            ]
+          ],
+          "d]hq": [
+            [
+              "invisible"
+            ]
+          ],
+          "sD^m": [
+            [
+              ""
+            ]
+          ],
+          "wz|S": [
+            [
+              "游戏服务器性能优化之程序优化篇",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ],
+          "title": [
+            [
+              "游戏服务器性能优化之程序优化篇",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ],
+          "f211bdc0-ee00-4186-9a7d-f68c055ec2ee": [
+            [
+              "Published"
+            ]
+          ]
+        },
+        "content": [
+          "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+          "101b99ae-1cea-8070-86a0-ed808d447ed9"
+        ],
+        "format": {
+          "page_font": "serif",
+          "page_cover": "/images/page-cover/woodcuts_5.jpg",
+          "block_locked": false,
+          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
+          "copied_from_pointer": {
+            "id": "101b99ae-1cea-80e2-b146-c934917f74d3",
+            "table": "block",
+            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+          },
+          "page_cover_position": 0,
+          "social_media_image_preview_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/03c61fc7-8ae2-451d-80f2-118e6ce2d9cd/8271356f-e105-4bd9-baf1-4f5b96a1ae01/SocialMediaPreviewImage.png"
+        },
+        "created_time": 1726297939096,
+        "last_edited_time": 1726300610653,
+        "parent_id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
+        "parent_table": "collection",
+        "alive": true,
+        "copied_from": "101b99ae-1cea-80e2-b146-c934917f74d3",
+        "file_ids": [
+          "44515b6c-783e-4871-aca3-fb656106c7b7",
+          "8271356f-e105-4bd9-baf1-4f5b96a1ae01"
+        ],
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "54a47a0d-391d-412f-912f-907d897e52bd": {
+      "value": {
+        "id": "54a47a0d-391d-412f-912f-907d897e52bd",
+        "version": 119,
+        "type": "collection_view_page",
+        "content": [
+          "9849a0d1-82a7-46f8-85d4-68b9db92a92b"
+        ],
+        "view_ids": [
+          "a0152dc5-e7e8-4f29-9c37-b1fb486040e5",
+          "af27229a-9c1c-4379-b779-20cb62c86bc4",
+          "a33ce80a-303e-4722-9b6f-639f3c32f10d",
+          "7fe61317-1745-4dec-9d31-f01020c4155e"
+        ],
+        "collection_id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
+        "format": {
+          "site_id": "51847d78-4b83-4b0c-93df-c5907104c1cd",
+          "block_locked": false,
+          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
+          "collection_pointer": {
+            "id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
+            "table": "collection",
+            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+          },
+          "copied_from_pointer": {
+            "id": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "page_cover_position": 0.5
+        },
+        "permissions": [
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "is_site": true,
+            "added_timestamp": 1725446328326
+          },
+          {
+            "role": {
+              "read_content": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "1f5b99ae-1cea-8101-adeb-00279282a15f",
+            "parent_id": "80a8a328-0748-4dd6-925e-6865939d4ae0",
+            "parent_table": "notion_user"
+          },
+          {
+            "role": {
+              "read_comment": true,
+              "read_content": true,
+              "insert_comment": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "1f6b99ae-1cea-8187-bd91-0027b7252bca",
+            "parent_id": "80a8a328-0748-4dd6-925e-6865939d4ae0",
+            "parent_table": "notion_user"
+          },
+          {
+            "role": {
+              "read_content": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "66be2e14-23ce-4798-9d2e-b1104a06653a",
+            "parent_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
+            "parent_table": "space"
+          },
+          {
+            "role": {
+              "read_content": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "90053442-be1a-4630-99f4-2c04f2706259",
+            "parent_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
+            "parent_table": "space"
+          }
+        ],
+        "created_time": 1725446287995,
+        "last_edited_time": 1748700122053,
+        "parent_id": "078a9301-9747-4213-900b-e1a2eda4f4dd",
+        "parent_table": "team",
+        "alive": true,
+        "copied_from": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
+        "file_ids": [
+          "1e87c98f-7b57-4634-9f9e-8eedc62ace2e"
+        ],
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "ee816167-81bf-4fda-a1c7-5099daa68c0c": {
+      "value": {
+        "id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "version": 63,
+        "type": "transclusion_container",
+        "content": [
+          "101b99ae-1cea-8086-b46d-ffbdbfa60b1b",
+          "f5e06eb2-7acd-4dff-aa28-635639ca791b",
+          "101b99ae-1cea-80ee-929f-c85da8fbfbdc",
+          "101b99ae-1cea-80d1-b3e2-c124fc963566",
+          "101b99ae-1cea-80d9-866e-e3810791749d",
+          "101b99ae-1cea-80d3-be2e-cfdb53806e93",
+          "dac8bc63-155e-4e46-94ec-6f7979d39431",
+          "2d3afe71-d2cc-477a-9d7e-0a7d6f154ce8",
+          "101b99ae-1cea-8024-adc1-e422596f6f66",
+          "101b99ae-1cea-8050-b5ec-c376b568c659",
+          "101b99ae-1cea-80bd-8d46-f082f5b029c7",
+          "101b99ae-1cea-8029-8fce-df95670d71a6",
+          "101b99ae-1cea-80aa-a4b5-c98853d27e52",
+          "101b99ae-1cea-80cb-a529-c482683cf3e0",
+          "8ff00873-eff9-47d5-81e8-4d885ea09fdf",
+          "a4f701b9-1c3e-430b-92fb-7339c711b818",
+          "101b99ae-1cea-806d-bda0-d787f81962a6",
+          "456a27c2-a920-4a1b-8814-0dd477a70257",
+          "101b99ae-1cea-806a-bda1-cc3b8a25b67e",
+          "10d31e5b-0137-4aaf-83f0-bfe016d1571b",
+          "101b99ae-1cea-8005-9b1b-c26180651277",
+          "101b99ae-1cea-8091-882a-e6d61e8fb77d",
+          "101b99ae-1cea-8091-94cd-f6832a9c6086",
+          "84751665-c9bd-4086-a82a-afcc2cf94f82",
+          "101b99ae-1cea-8075-9e65-c83f5d4091d3",
+          "101b99ae-1cea-80b1-a97d-fe99b1cdc6f0",
+          "101b99ae-1cea-8046-a045-c406717e9a3b",
+          "101b99ae-1cea-80c1-9aba-e4de9cfa0582",
+          "101b99ae-1cea-804a-bd07-c3a8fa233c24",
+          "101b99ae-1cea-8024-b5df-fa4558809f0e",
+          "101b99ae-1cea-802c-862a-d8c606ffaff3",
+          "101b99ae-1cea-80c2-a130-d9e3be32f7f0",
+          "101b99ae-1cea-8013-84c7-e740b5928378",
+          "101b99ae-1cea-8072-838c-c12770133744",
+          "101b99ae-1cea-80f9-b59f-d42b2f24404a",
+          "4e39cadc-ab08-42ba-a12a-1af0064c9990",
+          "101b99ae-1cea-800c-ab4d-ea80ae0aa922",
+          "95467592-dd81-49a4-85f7-aeb721f0f4a4",
+          "22c737a9-a59f-4326-af3f-f9acdba019bf",
+          "3a92410f-a342-4eff-b985-c2a4e47db910",
+          "89aa624d-ed4a-4ab3-aa57-a6f66ec2eff2",
+          "13508618-d411-4714-93ef-654b33e9a337",
+          "101b99ae-1cea-80ac-a055-fe00b07d2a68",
+          "101b99ae-1cea-800e-841b-d26ab0e28973",
+          "101b99ae-1cea-80ec-aa8f-ec266cc0573e",
+          "d402647e-ab0b-4e9c-ae29-ba08aa85018d",
+          "101b99ae-1cea-804c-875a-f2dbfaa7378f",
+          "101b99ae-1cea-8043-8f57-e987e6199ed2",
+          "432b48cf-9ce4-4f99-8cfd-3527d562139c",
+          "101b99ae-1cea-805c-8933-d6e68dab86d5",
+          "101b99ae-1cea-80f2-a9ac-d9ba8ba9eabb",
+          "6b6bd4d6-1be2-48a5-a27b-1a29440d22b4",
+          "1efe9646-1a46-4140-80eb-8f551444ba6c",
+          "101b99ae-1cea-80c5-8b39-d42488c0ddd4",
+          "101b99ae-1cea-8085-a214-ef871ff58e75",
+          "37ca7866-3089-4161-b079-e1ebceab93da",
+          "101b99ae-1cea-8083-ac5b-f7ab52f2c09f",
+          "101b99ae-1cea-8058-a654-c4e075d9ae26",
+          "68c6b747-ea11-4c0a-895f-332fdebf89d1",
+          "101b99ae-1cea-8071-8024-c6cb154d2f6c"
+        ],
+        "format": {
+          "copied_from_pointer": {
+            "id": "0c35dd19-21e2-4ff7-8a08-583c4fa5080d",
+            "table": "block",
+            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+          }
+        },
+        "created_time": 1726297939096,
+        "last_edited_time": 1726300165891,
+        "parent_id": "101b99ae-1cea-80b2-8861-c6639da890ea",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "0c35dd19-21e2-4ff7-8a08-583c4fa5080d",
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8070-86a0-ed808d447ed9": {
+      "value": {
+        "id": "101b99ae-1cea-8070-86a0-ed808d447ed9",
+        "version": 3,
+        "type": "text",
+        "created_time": 1726300169047,
+        "last_edited_time": 1726300169047,
+        "parent_id": "101b99ae-1cea-80b2-8861-c6639da890ea",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8086-b46d-ffbdbfa60b1b": {
+      "value": {
+        "id": "101b99ae-1cea-8086-b46d-ffbdbfa60b1b",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "游戏服务器的性能除了依赖于良好的架构设计和高效的数据存取,还与具体的程序实现密切相关。本文将重点探讨游戏服务器程序优化的一些常见问题和优化技巧。"
+            ]
+          ]
+        },
+        "created_time": 1726300165859,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "f5e06eb2-7acd-4dff-aa28-635639ca791b": {
+      "value": {
+        "id": "f5e06eb2-7acd-4dff-aa28-635639ca791b",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "一、内存管理"
+            ]
+          ]
+        },
+        "created_time": 1726300165859,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80ee-929f-c85da8fbfbdc": {
+      "value": {
+        "id": "101b99ae-1cea-80ee-929f-c85da8fbfbdc",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "游戏服务器通常需要处理大量的并发请求和数据,内存很容易成为性能瓶颈。高效的内存管理可以减少内存泄漏和碎片化问题,降低GC压力,提高系统的吞吐量和响应速度。"
+            ]
+          ]
+        },
+        "created_time": 1726300165860,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80d1-b3e2-c124fc963566": {
+      "value": {
+        "id": "101b99ae-1cea-80d1-b3e2-c124fc963566",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "常见的内存管理问题有以下几种:"
+            ]
+          ]
+        },
+        "created_time": 1726300165860,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80d9-866e-e3810791749d": {
+      "value": {
+        "id": "101b99ae-1cea-80d9-866e-e3810791749d",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "内存泄漏:程序在运行过程中不断分配内存,却没有及时释放不再使用的内存,导致可用内存逐渐减少,最终引发OOM(Out of Memory)错误。"
+            ]
+          ]
+        },
+        "created_time": 1726300165860,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80d3-be2e-cfdb53806e93": {
+      "value": {
+        "id": "101b99ae-1cea-80d3-be2e-cfdb53806e93",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "内存碎片化:频繁地分配和释放不同大小的内存块,导致内存空间出现很多碎片,无法分配出连续的大块内存。"
+            ]
+          ]
+        },
+        "created_time": 1726300165860,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "dac8bc63-155e-4e46-94ec-6f7979d39431": {
+      "value": {
+        "id": "dac8bc63-155e-4e46-94ec-6f7979d39431",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "内存抖动:短时间内大量分配和释放内存,导致GC频繁触发,系统性能出现波动。"
+            ]
+          ]
+        },
+        "created_time": 1726300165860,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "2d3afe71-d2cc-477a-9d7e-0a7d6f154ce8": {
+      "value": {
+        "id": "2d3afe71-d2cc-477a-9d7e-0a7d6f154ce8",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "内存泄漏的定位可以使用一些专业的工具如Valgrind、MAT等。对于Java程序,常见的内存泄漏场景有:"
+            ]
+          ]
+        },
+        "created_time": 1726300165860,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8024-adc1-e422596f6f66": {
+      "value": {
+        "id": "101b99ae-1cea-8024-adc1-e422596f6f66",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "长生命周期的对象引用了短生命周期的对象,导致短生命周期对象无法被GC回收"
+            ]
+          ]
+        },
+        "created_time": 1726300165860,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8050-b5ec-c376b568c659": {
+      "value": {
+        "id": "101b99ae-1cea-8050-b5ec-c376b568c659",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "静态集合类引用了实例对象,实例对象无法被GC回收"
+            ]
+          ]
+        },
+        "created_time": 1726300165861,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80bd-8d46-f082f5b029c7": {
+      "value": {
+        "id": "101b99ae-1cea-80bd-8d46-f082f5b029c7",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "各种连接(如数据库连接、网络连接)没有显式关闭,连接对象无法被GC回收"
+            ]
+          ]
+        },
+        "created_time": 1726300165861,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8029-8fce-df95670d71a6": {
+      "value": {
+        "id": "101b99ae-1cea-8029-8fce-df95670d71a6",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "监听器注册后没有反注册,监听器对象无法被GC回收"
+            ]
+          ]
+        },
+        "created_time": 1726300165861,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80aa-a4b5-c98853d27e52": {
+      "value": {
+        "id": "101b99ae-1cea-80aa-a4b5-c98853d27e52",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "合理的内存管理实践包括:"
+            ]
+          ]
+        },
+        "created_time": 1726300165861,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80cb-a529-c482683cf3e0": {
+      "value": {
+        "id": "101b99ae-1cea-80cb-a529-c482683cf3e0",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "尽量复用对象,避免频繁创建和销毁"
+            ]
+          ]
+        },
+        "created_time": 1726300165861,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "8ff00873-eff9-47d5-81e8-4d885ea09fdf": {
+      "value": {
+        "id": "8ff00873-eff9-47d5-81e8-4d885ea09fdf",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "对象池化,将频繁使用的对象缓存起来重复利用"
+            ]
+          ]
+        },
+        "created_time": 1726300165861,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "a4f701b9-1c3e-430b-92fb-7339c711b818": {
+      "value": {
+        "id": "a4f701b9-1c3e-430b-92fb-7339c711b818",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "数据结构优化,选择合适的数据结构降低内存占用"
+            ]
+          ]
+        },
+        "created_time": 1726300165861,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-806d-bda0-d787f81962a6": {
+      "value": {
+        "id": "101b99ae-1cea-806d-bda0-d787f81962a6",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "字符串拼接优化,使用StringBuilder避免创建大量临时字符串对象"
+            ]
+          ]
+        },
+        "created_time": 1726300165861,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "456a27c2-a920-4a1b-8814-0dd477a70257": {
+      "value": {
+        "id": "456a27c2-a920-4a1b-8814-0dd477a70257",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "显式内存回收,对于一些占用内存比较大的临时对象,使用后立即释放其内存引用"
+            ]
+          ]
+        },
+        "created_time": 1726300165861,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-806a-bda1-cc3b8a25b67e": {
+      "value": {
+        "id": "101b99ae-1cea-806a-bda1-cc3b8a25b67e",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "二、并发优化"
+            ]
+          ]
+        },
+        "created_time": 1726300165862,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "10d31e5b-0137-4aaf-83f0-bfe016d1571b": {
+      "value": {
+        "id": "10d31e5b-0137-4aaf-83f0-bfe016d1571b",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "游戏服务器高并发的请求处理是提升系统吞吐量的关键。服务器程序应充分利用多核CPU,合理设置线程池参数,避免线程的上下文切换开销,减少锁竞争和阻塞等待时间。"
+            ]
+          ]
+        },
+        "created_time": 1726300165862,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8005-9b1b-c26180651277": {
+      "value": {
+        "id": "101b99ae-1cea-8005-9b1b-c26180651277",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "常用的并发编程模型有以下几种:"
+            ]
+          ]
+        },
+        "created_time": 1726300165862,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8091-882a-e6d61e8fb77d": {
+      "value": {
+        "id": "101b99ae-1cea-8091-882a-e6d61e8fb77d",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "多线程:为每个请求分配一个独立的处理线程,适合CPU密集型任务"
+            ]
+          ]
+        },
+        "created_time": 1726300165862,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8091-94cd-f6832a9c6086": {
+      "value": {
+        "id": "101b99ae-1cea-8091-94cd-f6832a9c6086",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "Reactor:单线程处理所有请求的多路复用,将I/O事件分发给对应的处理器,适合I/O密集型任务"
+            ]
+          ]
+        },
+        "created_time": 1726300165862,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "84751665-c9bd-4086-a82a-afcc2cf94f82": {
+      "value": {
+        "id": "84751665-c9bd-4086-a82a-afcc2cf94f82",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "Actor:将请求封装成消息,由独立的Actor顺序处理,适合有状态的任务"
+            ]
+          ]
+        },
+        "created_time": 1726300165862,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8075-9e65-c83f5d4091d3": {
+      "value": {
+        "id": "101b99ae-1cea-8075-9e65-c83f5d4091d3",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "Coroutine:在用户态实现的轻量级线程,可以在单线程内实现高并发,避免了线程切换开销"
+            ]
+          ]
+        },
+        "created_time": 1726300165863,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80b1-a97d-fe99b1cdc6f0": {
+      "value": {
+        "id": "101b99ae-1cea-80b1-a97d-fe99b1cdc6f0",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "除了选择合适的并发模型外,还需要注意以下几点:"
+            ]
+          ]
+        },
+        "created_time": 1726300165863,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8046-a045-c406717e9a3b": {
+      "value": {
+        "id": "101b99ae-1cea-8046-a045-c406717e9a3b",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "线程安全:对共享数据的并发访问要进行必要的同步,避免竞态条件"
+            ]
+          ]
+        },
+        "created_time": 1726300165863,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80c1-9aba-e4de9cfa0582": {
+      "value": {
+        "id": "101b99ae-1cea-80c1-9aba-e4de9cfa0582",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "避免阻塞:尽量使用非阻塞I/O,避免同步I/O的阻塞等待"
+            ]
+          ]
+        },
+        "created_time": 1726300165863,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-804a-bd07-c3a8fa233c24": {
+      "value": {
+        "id": "101b99ae-1cea-804a-bd07-c3a8fa233c24",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "减少锁竞争:使用细粒度的锁,避免不必要的锁竞争;使用无锁数据结构如ConcurrentHashMap"
+            ]
+          ]
+        },
+        "created_time": 1726300165863,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8024-b5df-fa4558809f0e": {
+      "value": {
+        "id": "101b99ae-1cea-8024-b5df-fa4558809f0e",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "提高并行度:将独立的任务拆分到不同的线程或进程,充分利用多核资源"
+            ]
+          ]
+        },
+        "created_time": 1726300165863,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-802c-862a-d8c606ffaff3": {
+      "value": {
+        "id": "101b99ae-1cea-802c-862a-d8c606ffaff3",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "三、性能分析与调优"
+            ]
+          ]
+        },
+        "created_time": 1726300165864,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80c2-a130-d9e3be32f7f0": {
+      "value": {
+        "id": "101b99ae-1cea-80c2-a130-d9e3be32f7f0",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "游戏服务器的性能问题通常表现为响应时间长、吞吐量低、资源占用高等。系统的性能调优需要经过性能测试、瓶颈定位、优化方案设计、效果评估等环节。"
+            ]
+          ]
+        },
+        "created_time": 1726300165864,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8013-84c7-e740b5928378": {
+      "value": {
+        "id": "101b99ae-1cea-8013-84c7-e740b5928378",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "对于C++开发的游戏服务器,常用的性能分析工具有:"
+            ]
+          ]
+        },
+        "created_time": 1726300165864,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8072-838c-c12770133744": {
+      "value": {
+        "id": "101b99ae-1cea-8072-838c-c12770133744",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "Valgrind:一款用于内存调试、内存泄漏检测以及性能分析的软件开发工具。它包含了多个子工具,如用于内存错误检测的Memcheck,性能分析的Callgrind等。"
+            ]
+          ]
+        },
+        "created_time": 1726300165864,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80f9-b59f-d42b2f24404a": {
+      "value": {
+        "id": "101b99ae-1cea-80f9-b59f-d42b2f24404a",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "Google Performance Tools:Google开发的一款工具软件,包含多个小工具如 TCMalloc(Thread-Caching Malloc) 用于内存分配及管理,CPU Profiler用于CPU性能分析,Heap Profiler用于堆内存分析等。"
+            ]
+          ]
+        },
+        "created_time": 1726300165865,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "4e39cadc-ab08-42ba-a12a-1af0064c9990": {
+      "value": {
+        "id": "4e39cadc-ab08-42ba-a12a-1af0064c9990",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "gperftools:是 Google Performance Tools 的开源实现,提供了一系列的性能分析工具,如性能统计、CPU剖析、内存剖析等功能。"
+            ]
+          ]
+        },
+        "created_time": 1726300165865,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-800c-ab4d-ea80ae0aa922": {
+      "value": {
+        "id": "101b99ae-1cea-800c-ab4d-ea80ae0aa922",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "Nginx-systemtap-toolkit:一个开源工具集,用于Nginx服务器的性能实时分析和监控,当然,它也适用于其他C/C++应用程序。"
+            ]
+          ]
+        },
+        "created_time": 1726300165865,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "95467592-dd81-49a4-85f7-aeb721f0f4a4": {
+      "value": {
+        "id": "95467592-dd81-49a4-85f7-aeb721f0f4a4",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "Flame Graph:由 Brendan Gregg 开发的一款可视化分析工具,非常适用于 C/C++ 程序的 CPU 性能分析,它可以生成直观的火焰图来展示函数的调用关系及CPU使用情况。"
+            ]
+          ]
+        },
+        "created_time": 1726300165865,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "22c737a9-a59f-4326-af3f-f9acdba019bf": {
+      "value": {
+        "id": "22c737a9-a59f-4326-af3f-f9acdba019bf",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "Perf:Linux内核自带的性能分析工具,它以性能事件采样为基础,不仅可以分析系统的各种事件和内核性能,还可以用来分析指定应用程序的性能问题。"
+            ]
+          ]
+        },
+        "created_time": 1726300165865,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "3a92410f-a342-4eff-b985-c2a4e47db910": {
+      "value": {
+        "id": "3a92410f-a342-4eff-b985-c2a4e47db910",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "Gprof:GNU binutils工具集中的性能分析工具,可以根据应用程序的特定事件来采样,并生成分析报告,报告内容包括每个函数的调用次数、函数执行时间等。"
+            ]
+          ]
+        },
+        "created_time": 1726300165866,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "89aa624d-ed4a-4ab3-aa57-a6f66ec2eff2": {
+      "value": {
+        "id": "89aa624d-ed4a-4ab3-aa57-a6f66ec2eff2",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "服务器性能问题通常可以从以下几个方面入手优化:"
+            ]
+          ]
+        },
+        "created_time": 1726300165866,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "13508618-d411-4714-93ef-654b33e9a337": {
+      "value": {
+        "id": "13508618-d411-4714-93ef-654b33e9a337",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "算法与数据结构:选择时间复杂度低的算法,使用合适的数据结构提高存取效率"
+            ]
+          ]
+        },
+        "created_time": 1726300165866,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80ac-a055-fe00b07d2a68": {
+      "value": {
+        "id": "101b99ae-1cea-80ac-a055-fe00b07d2a68",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "异步化:将串行的阻塞调用改为并行的异步调用,提高系统的并发度"
+            ]
+          ]
+        },
+        "created_time": 1726300165866,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-800e-841b-d26ab0e28973": {
+      "value": {
+        "id": "101b99ae-1cea-800e-841b-d26ab0e28973",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "缓存:将不易变的、访问频繁的数据缓存在内存中,减少磁盘和网络I/O"
+            ]
+          ]
+        },
+        "created_time": 1726300165866,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80ec-aa8f-ec266cc0573e": {
+      "value": {
+        "id": "101b99ae-1cea-80ec-aa8f-ec266cc0573e",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "数据压缩:对传输的数据进行压缩,减少网络带宽占用"
+            ]
+          ]
+        },
+        "created_time": 1726300165867,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "d402647e-ab0b-4e9c-ae29-ba08aa85018d": {
+      "value": {
+        "id": "d402647e-ab0b-4e9c-ae29-ba08aa85018d",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "消息中间件:使用消息队列异步解耦生产者和消费者,削峰填谷"
+            ]
+          ]
+        },
+        "created_time": 1726300165867,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-804c-875a-f2dbfaa7378f": {
+      "value": {
+        "id": "101b99ae-1cea-804c-875a-f2dbfaa7378f",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "垂直扩展:提高单机配置如CPU、内存等,充分发挥单机的性能"
+            ]
+          ]
+        },
+        "created_time": 1726300165867,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8043-8f57-e987e6199ed2": {
+      "value": {
+        "id": "101b99ae-1cea-8043-8f57-e987e6199ed2",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "水平扩展:增加服务器数量,使用负载均衡技术分摊请求压力"
+            ]
+          ]
+        },
+        "created_time": 1726300165867,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "432b48cf-9ce4-4f99-8cfd-3527d562139c": {
+      "value": {
+        "id": "432b48cf-9ce4-4f99-8cfd-3527d562139c",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "四、代码优化实践"
+            ]
+          ]
+        },
+        "created_time": 1726300165867,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-805c-8933-d6e68dab86d5": {
+      "value": {
+        "id": "101b99ae-1cea-805c-8933-d6e68dab86d5",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "除了架构层面的优化,游戏服务器的代码质量也直接影响着系统性能。需要开发者提高代码的质量意识,并掌握必要的代码优化技巧。一些好的实践包括:"
+            ]
+          ]
+        },
+        "created_time": 1726300165867,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80f2-a9ac-d9ba8ba9eabb": {
+      "value": {
+        "id": "101b99ae-1cea-80f2-a9ac-d9ba8ba9eabb",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "复杂度控制:控制函数的代码行数、分支数,降低圈复杂度,提高代码的可读性和可维护性"
+            ]
+          ]
+        },
+        "created_time": 1726300165867,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "6b6bd4d6-1be2-48a5-a27b-1a29440d22b4": {
+      "value": {
+        "id": "6b6bd4d6-1be2-48a5-a27b-1a29440d22b4",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "编码规范:统一的编码规范有助于避免潜在的性能问题,如尽量在循环体外进行内存分配,避免频繁申请和释放内存"
+            ]
+          ]
+        },
+        "created_time": 1726300165867,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "1efe9646-1a46-4140-80eb-8f551444ba6c": {
+      "value": {
+        "id": "1efe9646-1a46-4140-80eb-8f551444ba6c",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "内存管理:尽量避免内存泄漏,及时释放不再使用的内存;对于频繁使用的对象,考虑使用内存池避免频繁分配和释放"
+            ]
+          ]
+        },
+        "created_time": 1726300165868,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80c5-8b39-d42488c0ddd4": {
+      "value": {
+        "id": "101b99ae-1cea-80c5-8b39-d42488c0ddd4",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "局部变量:尽量使用局部变量,避免多次访问类的属性"
+            ]
+          ]
+        },
+        "created_time": 1726300165868,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8085-a214-ef871ff58e75": {
+      "value": {
+        "id": "101b99ae-1cea-8085-a214-ef871ff58e75",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "位运算:使用位运算代替乘除法,如用 x>>1 代替 x/2"
+            ]
+          ]
+        },
+        "created_time": 1726300165868,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "37ca7866-3089-4161-b079-e1ebceab93da": {
+      "value": {
+        "id": "37ca7866-3089-4161-b079-e1ebceab93da",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "inline内联函数:对于一些简短的、频繁调用的函数,考虑使用inline内联优化,减少函数调用开销"
+            ]
+          ]
+        },
+        "created_time": 1726300165868,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8083-ac5b-f7ab52f2c09f": {
+      "value": {
+        "id": "101b99ae-1cea-8083-ac5b-f7ab52f2c09f",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "基本类型传参:对于一些内置的基本类型如int、double等,尽量通过值传参,而不是const引用,避免引用解引用的开销"
+            ]
+          ]
+        },
+        "created_time": 1726300165868,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8058-a654-c4e075d9ae26": {
+      "value": {
+        "id": "101b99ae-1cea-8058-a654-c4e075d9ae26",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "IO优化:使用缓冲区读写数据,避免频繁的IO系统调用;考虑使用内存映射文件等技术,提高文件读写效率"
+            ]
+          ]
+        },
+        "created_time": 1726300165868,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "68c6b747-ea11-4c0a-895f-332fdebf89d1": {
+      "value": {
+        "id": "68c6b747-ea11-4c0a-895f-332fdebf89d1",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "STL容器:慎重选择STL容器,如 map 的查找效率高但插入删除效率低,vector 的随机存取效率高但插入删除效率低,根据实际需求选择"
+            ]
+          ]
+        },
+        "created_time": 1726300165868,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8071-8024-c6cb154d2f6c": {
+      "value": {
+        "id": "101b99ae-1cea-8071-8024-c6cb154d2f6c",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "总之,游戏服务器性能优化需要开发者、架构师、运维等各方通力合作,从代码、架构、系统、网络等各个层面入手,不断评估和改进。只有建立科学的性能优化流程,运用各种优化工具和经验,才能实现服务器的高性能和高可用。对于C++开发的服务器程序,还需要特别注意内存管理、异常处理等方面的问题,规范化的工程实践也是保证高性能的重要基础。"
+            ]
+          ]
+        },
+        "created_time": 1726300165868,
+        "last_edited_time": 1726300165891,
+        "parent_id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "9849a0d1-82a7-46f8-85d4-68b9db92a92b": {
+      "value": {
+        "id": "9849a0d1-82a7-46f8-85d4-68b9db92a92b",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "😅"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "254eced8-9cba-4f90-9990-a885bd567dd0",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1725446270807,
+        "last_edited_time": 1725446270807,
+        "parent_id": "54a47a0d-391d-412f-912f-907d897e52bd",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "254eced8-9cba-4f90-9990-a885bd567dd0",
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    }
+  },
+  "contentHtml": "<p>游戏服务器的性能除了依赖于良好的架构设计和高效的数据存取,还与具体的程序实现密切相关。本文将重点探讨游戏服务器程序优化的一些常见问题和优化技巧。</p><p>一、内存管理</p><p>游戏服务器通常需要处理大量的并发请求和数据,内存很容易成为性能瓶颈。高效的内存管理可以减少内存泄漏和碎片化问题,降低GC压力,提高系统的吞吐量和响应速度。</p><p>常见的内存管理问题有以下几种:</p><li>内存泄漏:程序在运行过程中不断分配内存,却没有及时释放不再使用的内存,导致可用内存逐渐减少,最终引发OOM(Out of Memory)错误。</li><li>内存碎片化:频繁地分配和释放不同大小的内存块,导致内存空间出现很多碎片,无法分配出连续的大块内存。</li><li>内存抖动:短时间内大量分配和释放内存,导致GC频繁触发,系统性能出现波动。</li><p>内存泄漏的定位可以使用一些专业的工具如Valgrind、MAT等。对于Java程序,常见的内存泄漏场景有:</p><li>长生命周期的对象引用了短生命周期的对象,导致短生命周期对象无法被GC回收</li><li>静态集合类引用了实例对象,实例对象无法被GC回收</li><li>各种连接(如数据库连接、网络连接)没有显式关闭,连接对象无法被GC回收</li><li>监听器注册后没有反注册,监听器对象无法被GC回收</li><p>合理的内存管理实践包括:</p><li>尽量复用对象,避免频繁创建和销毁</li><li>对象池化,将频繁使用的对象缓存起来重复利用</li><li>数据结构优化,选择合适的数据结构降低内存占用</li><li>字符串拼接优化,使用StringBuilder避免创建大量临时字符串对象</li><li>显式内存回收,对于一些占用内存比较大的临时对象,使用后立即释放其内存引用</li><p>二、并发优化</p><p>游戏服务器高并发的请求处理是提升系统吞吐量的关键。服务器程序应充分利用多核CPU,合理设置线程池参数,避免线程的上下文切换开销,减少锁竞争和阻塞等待时间。</p><p>常用的并发编程模型有以下几种:</p><li>多线程:为每个请求分配一个独立的处理线程,适合CPU密集型任务</li><li>Reactor:单线程处理所有请求的多路复用,将I/O事件分发给对应的处理器,适合I/O密集型任务</li><li>Actor:将请求封装成消息,由独立的Actor顺序处理,适合有状态的任务</li><li>Coroutine:在用户态实现的轻量级线程,可以在单线程内实现高并发,避免了线程切换开销</li><p>除了选择合适的并发模型外,还需要注意以下几点:</p><li>线程安全:对共享数据的并发访问要进行必要的同步,避免竞态条件</li><li>避免阻塞:尽量使用非阻塞I/O,避免同步I/O的阻塞等待</li><li>减少锁竞争:使用细粒度的锁,避免不必要的锁竞争;使用无锁数据结构如ConcurrentHashMap</li><li>提高并行度:将独立的任务拆分到不同的线程或进程,充分利用多核资源</li><p>三、性能分析与调优</p><p>游戏服务器的性能问题通常表现为响应时间长、吞吐量低、资源占用高等。系统的性能调优需要经过性能测试、瓶颈定位、优化方案设计、效果评估等环节。</p><p>对于C++开发的游戏服务器,常用的性能分析工具有:</p><li>Valgrind:一款用于内存调试、内存泄漏检测以及性能分析的软件开发工具。它包含了多个子工具,如用于内存错误检测的Memcheck,性能分析的Callgrind等。</li><li>Google Performance Tools:Google开发的一款工具软件,包含多个小工具如 TCMalloc(Thread-Caching Malloc) 用于内存分配及管理,CPU Profiler用于CPU性能分析,Heap Profiler用于堆内存分析等。</li><li>gperftools:是 Google Performance Tools 的开源实现,提供了一系列的性能分析工具,如性能统计、CPU剖析、内存剖析等功能。</li><li>Nginx-systemtap-toolkit:一个开源工具集,用于Nginx服务器的性能实时分析和监控,当然,它也适用于其他C/C++应用程序。</li><li>Flame Graph:由 Brendan Gregg 开发的一款可视化分析工具,非常适用于 C/C++ 程序的 CPU 性能分析,它可以生成直观的火焰图来展示函数的调用关系及CPU使用情况。</li><li>Perf:Linux内核自带的性能分析工具,它以性能事件采样为基础,不仅可以分析系统的各种事件和内核性能,还可以用来分析指定应用程序的性能问题。</li><li>Gprof:GNU binutils工具集中的性能分析工具,可以根据应用程序的特定事件来采样,并生成分析报告,报告内容包括每个函数的调用次数、函数执行时间等。</li><p>服务器性能问题通常可以从以下几个方面入手优化:</p><li>算法与数据结构:选择时间复杂度低的算法,使用合适的数据结构提高存取效率</li><li>异步化:将串行的阻塞调用改为并行的异步调用,提高系统的并发度</li><li>缓存:将不易变的、访问频繁的数据缓存在内存中,减少磁盘和网络I/O</li><li>数据压缩:对传输的数据进行压缩,减少网络带宽占用</li><li>消息中间件:使用消息队列异步解耦生产者和消费者,削峰填谷</li><li>垂直扩展:提高单机配置如CPU、内存等,充分发挥单机的性能</li><li>水平扩展:增加服务器数量,使用负载均衡技术分摊请求压力</li><p>四、代码优化实践</p><p>除了架构层面的优化,游戏服务器的代码质量也直接影响着系统性能。需要开发者提高代码的质量意识,并掌握必要的代码优化技巧。一些好的实践包括:</p><li>复杂度控制:控制函数的代码行数、分支数,降低圈复杂度,提高代码的可读性和可维护性</li><li>编码规范:统一的编码规范有助于避免潜在的性能问题,如尽量在循环体外进行内存分配,避免频繁申请和释放内存</li><li>内存管理:尽量避免内存泄漏,及时释放不再使用的内存;对于频繁使用的对象,考虑使用内存池避免频繁分配和释放</li><li>局部变量:尽量使用局部变量,避免多次访问类的属性</li><li>位运算:使用位运算代替乘除法,如用 x>>1 代替 x/2</li><li>inline内联函数:对于一些简短的、频繁调用的函数,考虑使用inline内联优化,减少函数调用开销</li><li>基本类型传参:对于一些内置的基本类型如int、double等,尽量通过值传参,而不是const引用,避免引用解引用的开销</li><li>IO优化:使用缓冲区读写数据,避免频繁的IO系统调用;考虑使用内存映射文件等技术,提高文件读写效率</li><li>STL容器:慎重选择STL容器,如 map 的查找效率高但插入删除效率低,vector 的随机存取效率高但插入删除效率低,根据实际需求选择</li><p>总之,游戏服务器性能优化需要开发者、架构师、运维等各方通力合作,从代码、架构、系统、网络等各个层面入手,不断评估和改进。只有建立科学的性能优化流程,运用各种优化工具和经验,才能实现服务器的高性能和高可用。对于C++开发的服务器程序,还需要特别注意内存管理、异常处理等方面的问题,规范化的工程实践也是保证高性能的重要基础。</p><p></p>"
+}

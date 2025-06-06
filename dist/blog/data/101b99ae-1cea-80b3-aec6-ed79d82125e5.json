@@ -1,0 +1,1003 @@
+{
+  "id": "101b99ae-1cea-80b3-aec6-ed79d82125e5",
+  "date": "2021-11-05",
+  "type": "Post",
+  "category": "技术分享",
+  "slug": "invisible",
+  "tags": [
+    ""
+  ],
+  "summary": "游戏服务器性能优化之数据库篇",
+  "title": "游戏服务器性能优化之数据库篇",
+  "status": "Published",
+  "detail": {
+    "101b99ae-1cea-80b3-aec6-ed79d82125e5": {
+      "value": {
+        "id": "101b99ae-1cea-80b3-aec6-ed79d82125e5",
+        "version": 25,
+        "type": "page",
+        "properties": {
+          "NX\\Q": [
+            [
+              "‣",
+              [
+                [
+                  "d",
+                  {
+                    "type": "date",
+                    "start_date": "2021-11-05"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "`gQ~": [
+            [
+              "Post"
+            ]
+          ],
+          "bB{M": [
+            [
+              "技术分享"
+            ]
+          ],
+          "d]hq": [
+            [
+              "invisible"
+            ]
+          ],
+          "sD^m": [
+            [
+              ""
+            ]
+          ],
+          "wz|S": [
+            [
+              "游戏服务器性能优化之数据库篇",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ],
+          "title": [
+            [
+              "游戏服务器性能优化之数据库篇",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ],
+          "f211bdc0-ee00-4186-9a7d-f68c055ec2ee": [
+            [
+              "Published"
+            ]
+          ]
+        },
+        "content": [
+          "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+          "101b99ae-1cea-8068-9ed1-e4cf3a9e27ba"
+        ],
+        "format": {
+          "page_font": "serif",
+          "page_cover": "/images/page-cover/rijksmuseum_jansz_1641.jpg",
+          "block_locked": false,
+          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
+          "copied_from_pointer": {
+            "id": "101b99ae-1cea-80b2-8861-c6639da890ea",
+            "table": "block",
+            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+          },
+          "page_cover_position": 0.2,
+          "social_media_image_preview_url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/03c61fc7-8ae2-451d-80f2-118e6ce2d9cd/95e8661d-fb73-4a31-8cd1-c7c1a5af3bd4/SocialMediaPreviewImage.png"
+        },
+        "created_time": 1726300187455,
+        "last_edited_time": 1726300616736,
+        "parent_id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
+        "parent_table": "collection",
+        "alive": true,
+        "copied_from": "101b99ae-1cea-80b2-8861-c6639da890ea",
+        "file_ids": [
+          "95e8661d-fb73-4a31-8cd1-c7c1a5af3bd4"
+        ],
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "54a47a0d-391d-412f-912f-907d897e52bd": {
+      "value": {
+        "id": "54a47a0d-391d-412f-912f-907d897e52bd",
+        "version": 119,
+        "type": "collection_view_page",
+        "content": [
+          "9849a0d1-82a7-46f8-85d4-68b9db92a92b"
+        ],
+        "view_ids": [
+          "a0152dc5-e7e8-4f29-9c37-b1fb486040e5",
+          "af27229a-9c1c-4379-b779-20cb62c86bc4",
+          "a33ce80a-303e-4722-9b6f-639f3c32f10d",
+          "7fe61317-1745-4dec-9d31-f01020c4155e"
+        ],
+        "collection_id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
+        "format": {
+          "site_id": "51847d78-4b83-4b0c-93df-c5907104c1cd",
+          "block_locked": false,
+          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
+          "collection_pointer": {
+            "id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
+            "table": "collection",
+            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+          },
+          "copied_from_pointer": {
+            "id": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "page_cover_position": 0.5
+        },
+        "permissions": [
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "is_site": true,
+            "added_timestamp": 1725446328326
+          },
+          {
+            "role": {
+              "read_content": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "1f5b99ae-1cea-8101-adeb-00279282a15f",
+            "parent_id": "80a8a328-0748-4dd6-925e-6865939d4ae0",
+            "parent_table": "notion_user"
+          },
+          {
+            "role": {
+              "read_comment": true,
+              "read_content": true,
+              "insert_comment": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "1f6b99ae-1cea-8187-bd91-0027b7252bca",
+            "parent_id": "80a8a328-0748-4dd6-925e-6865939d4ae0",
+            "parent_table": "notion_user"
+          },
+          {
+            "role": {
+              "read_content": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "66be2e14-23ce-4798-9d2e-b1104a06653a",
+            "parent_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
+            "parent_table": "space"
+          },
+          {
+            "role": {
+              "read_content": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "90053442-be1a-4630-99f4-2c04f2706259",
+            "parent_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
+            "parent_table": "space"
+          }
+        ],
+        "created_time": 1725446287995,
+        "last_edited_time": 1748700122053,
+        "parent_id": "078a9301-9747-4213-900b-e1a2eda4f4dd",
+        "parent_table": "team",
+        "alive": true,
+        "copied_from": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
+        "file_ids": [
+          "1e87c98f-7b57-4634-9f9e-8eedc62ace2e"
+        ],
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7": {
+      "value": {
+        "id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "version": 36,
+        "type": "transclusion_container",
+        "content": [
+          "101b99ae-1cea-809c-a0f0-fd4943c8022d",
+          "c95b3475-40cb-4555-abca-37dd8e967587",
+          "101b99ae-1cea-8059-82ee-e360eaf8c74a",
+          "3233940e-d35e-4203-b972-baefe09b5acf",
+          "101b99ae-1cea-804e-b69b-ef9bf00ed069",
+          "101b99ae-1cea-80c8-aa3f-e406f2bcef89",
+          "101b99ae-1cea-8085-98d1-e3f06ade4668",
+          "101b99ae-1cea-80f1-b9f0-d54681c2c370",
+          "101b99ae-1cea-8000-91d7-f6f5319f8fdd",
+          "101b99ae-1cea-8098-926d-d145b84bfc8f",
+          "5ae1c7f9-2539-4cf6-a8fe-52f794b7937c",
+          "101b99ae-1cea-8041-8c87-c9f61ef09ed2",
+          "101b99ae-1cea-80a9-9467-e3d6dea23344",
+          "101b99ae-1cea-8014-a102-c2042672ee52",
+          "3cd5f1ee-81b4-49bc-8a93-976a0be4fe9b",
+          "1b9992c9-e407-4e83-b390-302d0b060631",
+          "101b99ae-1cea-8019-8242-f3f532ae5c61",
+          "101b99ae-1cea-807b-b40d-e01145fe6ddb",
+          "101b99ae-1cea-8017-8a21-f9e286871a9e",
+          "101b99ae-1cea-805a-ac94-c70a55f4dedc",
+          "101b99ae-1cea-80d0-a330-e102eb4d3cc6",
+          "101b99ae-1cea-8045-a6a7-f84527b9d09f",
+          "101b99ae-1cea-8095-98ed-dfc46971f360",
+          "1765479a-fca5-4c56-ab98-f87053144d58",
+          "101b99ae-1cea-80b9-b7b9-ccb9aeecef7c",
+          "101b99ae-1cea-80d8-a609-d1bc540c4d15",
+          "101b99ae-1cea-801c-9596-eca3c9a43117",
+          "20923626-f828-4b7c-b204-e40463e159e4",
+          "7174ea93-9cd6-4094-9187-28f728a355bb",
+          "101b99ae-1cea-8070-8bbc-fb7358ce43cb",
+          "101b99ae-1cea-8041-adb1-f0f5fbc47b14",
+          "101b99ae-1cea-804e-bc89-f9e5ab6f5ff0",
+          "101b99ae-1cea-808a-8fd1-f3c6125d1c17"
+        ],
+        "format": {
+          "copied_from_pointer": {
+            "id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+            "table": "block",
+            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+          }
+        },
+        "created_time": 1726300187455,
+        "last_edited_time": 1726300204642,
+        "parent_id": "101b99ae-1cea-80b3-aec6-ed79d82125e5",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8068-9ed1-e4cf3a9e27ba": {
+      "value": {
+        "id": "101b99ae-1cea-8068-9ed1-e4cf3a9e27ba",
+        "version": 3,
+        "type": "text",
+        "created_time": 1726300193509,
+        "last_edited_time": 1726300193510,
+        "parent_id": "101b99ae-1cea-80b3-aec6-ed79d82125e5",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-809c-a0f0-fd4943c8022d": {
+      "value": {
+        "id": "101b99ae-1cea-809c-a0f0-fd4943c8022d",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "游戏服务器中的很多业务逻辑都需要数据持久化,如玩家信息、排行榜、邮件、商城等。高效的数据存取直接影响着整个系统的性能表现。本文将讨论几种游戏服务器常用的数据库类型,分析其适用的业务场景,总结一些数据库优化经验。"
+            ]
+          ]
+        },
+        "created_time": 1726300204619,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "c95b3475-40cb-4555-abca-37dd8e967587": {
+      "value": {
+        "id": "c95b3475-40cb-4555-abca-37dd8e967587",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "一、关系型数据库"
+            ]
+          ]
+        },
+        "created_time": 1726300204619,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8059-82ee-e360eaf8c74a": {
+      "value": {
+        "id": "101b99ae-1cea-8059-82ee-e360eaf8c74a",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "关系型数据库如MySQL、PostgreSQL等是游戏服务器最常用的数据持久化方案。它以二维表的形式存储结构化数据,支持灵活的增删改查操作,特别适合需要事务一致性、数据完整性的业务场景,如玩家账户、邮件、商城等。"
+            ]
+          ]
+        },
+        "created_time": 1726300204619,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "3233940e-d35e-4203-b972-baefe09b5acf": {
+      "value": {
+        "id": "3233940e-d35e-4203-b972-baefe09b5acf",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "关系型数据库的核心优化手段是索引,通过在关键字段上预先建立B+树等数据结构,大幅提升了数据检索效率。游戏服务器在设计数据库表结构时,需要合理地选择主键和索引,权衡数据冗余和查询效率。"
+            ]
+          ]
+        },
+        "created_time": 1726300204619,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-804e-b69b-ef9bf00ed069": {
+      "value": {
+        "id": "101b99ae-1cea-804e-b69b-ef9bf00ed069",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "在查询优化方面,游戏服务器要避免不必要的全表扫描,尽量通过索引过滤来缩小数据范围。可以使用EXPLAIN命令检查慢查询的执行计划,对性能瓶颈进行针对性优化。一些好的SQL实践如下:"
+            ]
+          ]
+        },
+        "created_time": 1726300204620,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80c8-aa3f-e406f2bcef89": {
+      "value": {
+        "id": "101b99ae-1cea-80c8-aa3f-e406f2bcef89",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "WHERE子句中使用索引字段进行等值或范围查询"
+            ]
+          ]
+        },
+        "created_time": 1726300204620,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8085-98d1-e3f06ade4668": {
+      "value": {
+        "id": "101b99ae-1cea-8085-98d1-e3f06ade4668",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "JOIN连接时使用内连接或等值连接,避免笛卡尔积"
+            ]
+          ]
+        },
+        "created_time": 1726300204620,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80f1-b9f0-d54681c2c370": {
+      "value": {
+        "id": "101b99ae-1cea-80f1-b9f0-d54681c2c370",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "OR条件中的字段都要建立索引,避免全表扫描"
+            ]
+          ]
+        },
+        "created_time": 1726300204620,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8000-91d7-f6f5319f8fdd": {
+      "value": {
+        "id": "101b99ae-1cea-8000-91d7-f6f5319f8fdd",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "使用LIMIT限制返回的数据量,避免大量无用数据传输"
+            ]
+          ]
+        },
+        "created_time": 1726300204620,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8098-926d-d145b84bfc8f": {
+      "value": {
+        "id": "101b99ae-1cea-8098-926d-d145b84bfc8f",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "避免在索引字段上使用函数或表达式,否则索引会失效"
+            ]
+          ]
+        },
+        "created_time": 1726300204620,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "5ae1c7f9-2539-4cf6-a8fe-52f794b7937c": {
+      "value": {
+        "id": "5ae1c7f9-2539-4cf6-a8fe-52f794b7937c",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "关系型数据库的另一个优化方向是读写分离。由于游戏业务通常读多写少,可以通过主从复制将读请求分流到多个只读从库,减轻主库的压力。常见的主从复制方案有异步复制和半同步复制,分别提供了不同的数据一致性保证。"
+            ]
+          ]
+        },
+        "created_time": 1726300204621,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8041-8c87-c9f61ef09ed2": {
+      "value": {
+        "id": "101b99ae-1cea-8041-8c87-c9f61ef09ed2",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "如果游戏业务的数据量超过了单台数据库的存储和处理能力,就需要考虑分库分表。垂直分库是指将不同业务的数据存储到不同的数据库,减少单库的数据量和访问压力。水平分表则是指将同一业务的数据按照某个维度(如用户ID)划分到多个表中,每个表只存储一部分数据。分库分表虽然提高了系统的可扩展性,但也引入了分布式事务、跨库JOIN等复杂问题,需要谨慎使用。"
+            ]
+          ]
+        },
+        "created_time": 1726300204621,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80a9-9467-e3d6dea23344": {
+      "value": {
+        "id": "101b99ae-1cea-80a9-9467-e3d6dea23344",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "二、NoSQL数据库"
+            ]
+          ]
+        },
+        "created_time": 1726300204621,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8014-a102-c2042672ee52": {
+      "value": {
+        "id": "101b99ae-1cea-8014-a102-c2042672ee52",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "虽然关系型数据库在很多场景下都能满足游戏业务的需求,但在某些特定领域,NoSQL数据库以其灵活的数据模型和超高的性能表现脱颖而出。常见的NoSQL数据库有以下几种:"
+            ]
+          ]
+        },
+        "created_time": 1726300204621,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "3cd5f1ee-81b4-49bc-8a93-976a0be4fe9b": {
+      "value": {
+        "id": "3cd5f1ee-81b4-49bc-8a93-976a0be4fe9b",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "键值数据库(如Redis):适合存储简单的Key-Value对,支持高并发的读写操作,常用于缓存、排行榜、计数器等场景。"
+            ]
+          ]
+        },
+        "created_time": 1726300204621,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "1b9992c9-e407-4e83-b390-302d0b060631": {
+      "value": {
+        "id": "1b9992c9-e407-4e83-b390-302d0b060631",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "文档数据库(如MongoDB):适合存储半结构化的JSON文档,支持嵌套对象和数组,数据模型灵活,常用于玩家背包、任务系统等场景。"
+            ]
+          ]
+        },
+        "created_time": 1726300204621,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8019-8242-f3f532ae5c61": {
+      "value": {
+        "id": "101b99ae-1cea-8019-8242-f3f532ae5c61",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "列族数据库(如Cassandra):适合存储宽表数据,支持高并发写入和批量读取,常用于日志、事件流等场景。"
+            ]
+          ]
+        },
+        "created_time": 1726300204621,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-807b-b40d-e01145fe6ddb": {
+      "value": {
+        "id": "101b99ae-1cea-807b-b40d-e01145fe6ddb",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "图数据库(如Neo4j):适合存储复杂的关联数据,支持图遍历和最短路径算法,常用于社交关系、推荐系统等场景。"
+            ]
+          ]
+        },
+        "created_time": 1726300204621,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8017-8a21-f9e286871a9e": {
+      "value": {
+        "id": "101b99ae-1cea-8017-8a21-f9e286871a9e",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "NoSQL数据库在设计时通常采用无模式(schema-less)的方式,避免了表结构变更的繁琐过程。但游戏服务器在使用NoSQL数据库时仍需注意以下几点:"
+            ]
+          ]
+        },
+        "created_time": 1726300204622,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-805a-ac94-c70a55f4dedc": {
+      "value": {
+        "id": "101b99ae-1cea-805a-ac94-c70a55f4dedc",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "根据业务场景选择合适的数据库类型,避免滥用"
+            ]
+          ]
+        },
+        "created_time": 1726300204622,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80d0-a330-e102eb4d3cc6": {
+      "value": {
+        "id": "101b99ae-1cea-80d0-a330-e102eb4d3cc6",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "合理设计数据的分区(sharding)策略,避免数据倾斜"
+            ]
+          ]
+        },
+        "created_time": 1726300204622,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8045-a6a7-f84527b9d09f": {
+      "value": {
+        "id": "101b99ae-1cea-8045-a6a7-f84527b9d09f",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "权衡数据的一致性和可用性,选择合适的复制(replication)策略"
+            ]
+          ]
+        },
+        "created_time": 1726300204622,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8095-98ed-dfc46971f360": {
+      "value": {
+        "id": "101b99ae-1cea-8095-98ed-dfc46971f360",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "监控数据库的性能指标,及时发现和解决性能瓶颈"
+            ]
+          ]
+        },
+        "created_time": 1726300204622,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "1765479a-fca5-4c56-ab98-f87053144d58": {
+      "value": {
+        "id": "1765479a-fca5-4c56-ab98-f87053144d58",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "三、缓存优化"
+            ]
+          ]
+        },
+        "created_time": 1726300204622,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80b9-b7b9-ccb9aeecef7c": {
+      "value": {
+        "id": "101b99ae-1cea-80b9-b7b9-ccb9aeecef7c",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "游戏服务器中有很多数据访问是重复的,如玩家信息、配置表等。将这些\"读多写少\"的数据缓存在内存中,可以大幅降低数据库的压力,提高系统的响应速度。常用的缓存方案有以下几种:"
+            ]
+          ]
+        },
+        "created_time": 1726300204622,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-80d8-a609-d1bc540c4d15": {
+      "value": {
+        "id": "101b99ae-1cea-80d8-a609-d1bc540c4d15",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "本地缓存:将数据缓存在服务器进程的内存中,读取速度快,但在进程重启时会丢失数据。适合缓存临时的、可重新计算的数据。"
+            ]
+          ]
+        },
+        "created_time": 1726300204622,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-801c-9596-eca3c9a43117": {
+      "value": {
+        "id": "101b99ae-1cea-801c-9596-eca3c9a43117",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "分布式缓存:将数据缓存在独立的缓存服务器(如Redis)中,可以在多个服务器之间共享缓存数据。适合缓存全局的、不易变的数据。"
+            ]
+          ]
+        },
+        "created_time": 1726300204622,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "20923626-f828-4b7c-b204-e40463e159e4": {
+      "value": {
+        "id": "20923626-f828-4b7c-b204-e40463e159e4",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "多级缓存:在本地缓存和分布式缓存之间再加一层缓存(如Memcached),组成多级缓存架构。本地缓存提供快速读取,分布式缓存提供高可用,多级缓存兼顾了性能和可靠性。"
+            ]
+          ]
+        },
+        "created_time": 1726300204623,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "7174ea93-9cd6-4094-9187-28f728a355bb": {
+      "value": {
+        "id": "7174ea93-9cd6-4094-9187-28f728a355bb",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "缓存虽好,但也要注意以下问题:"
+            ]
+          ]
+        },
+        "created_time": 1726300204623,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8070-8bbc-fb7358ce43cb": {
+      "value": {
+        "id": "101b99ae-1cea-8070-8bbc-fb7358ce43cb",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "缓存与数据库的一致性问题,需要合理设计缓存更新策略"
+            ]
+          ]
+        },
+        "created_time": 1726300204623,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-8041-adb1-f0f5fbc47b14": {
+      "value": {
+        "id": "101b99ae-1cea-8041-adb1-f0f5fbc47b14",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "缓存的过期失效问题,需要选择合适的过期时间和淘汰策略"
+            ]
+          ]
+        },
+        "created_time": 1726300204623,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-804e-bc89-f9e5ab6f5ff0": {
+      "value": {
+        "id": "101b99ae-1cea-804e-bc89-f9e5ab6f5ff0",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "缓存的并发问题,需要使用分布式锁等机制避免缓存脏数据"
+            ]
+          ]
+        },
+        "created_time": 1726300204623,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "101b99ae-1cea-808a-8fd1-f3c6125d1c17": {
+      "value": {
+        "id": "101b99ae-1cea-808a-8fd1-f3c6125d1c17",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "缓存雪崩问题,需要采用随机过期、二级缓存等方式避免缓存集中失效"
+            ]
+          ]
+        },
+        "created_time": 1726300204623,
+        "last_edited_time": 1726300204642,
+        "parent_id": "d70f647c-3bb2-4d1d-81d2-14c0dc4716b7",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "9849a0d1-82a7-46f8-85d4-68b9db92a92b": {
+      "value": {
+        "id": "9849a0d1-82a7-46f8-85d4-68b9db92a92b",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "😅"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "254eced8-9cba-4f90-9990-a885bd567dd0",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1725446270807,
+        "last_edited_time": 1725446270807,
+        "parent_id": "54a47a0d-391d-412f-912f-907d897e52bd",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "254eced8-9cba-4f90-9990-a885bd567dd0",
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    }
+  },
+  "contentHtml": "<p>游戏服务器中的很多业务逻辑都需要数据持久化,如玩家信息、排行榜、邮件、商城等。高效的数据存取直接影响着整个系统的性能表现。本文将讨论几种游戏服务器常用的数据库类型,分析其适用的业务场景,总结一些数据库优化经验。</p><p>一、关系型数据库</p><p>关系型数据库如MySQL、PostgreSQL等是游戏服务器最常用的数据持久化方案。它以二维表的形式存储结构化数据,支持灵活的增删改查操作,特别适合需要事务一致性、数据完整性的业务场景,如玩家账户、邮件、商城等。</p><p>关系型数据库的核心优化手段是索引,通过在关键字段上预先建立B+树等数据结构,大幅提升了数据检索效率。游戏服务器在设计数据库表结构时,需要合理地选择主键和索引,权衡数据冗余和查询效率。</p><p>在查询优化方面,游戏服务器要避免不必要的全表扫描,尽量通过索引过滤来缩小数据范围。可以使用EXPLAIN命令检查慢查询的执行计划,对性能瓶颈进行针对性优化。一些好的SQL实践如下:</p><li>WHERE子句中使用索引字段进行等值或范围查询</li><li>JOIN连接时使用内连接或等值连接,避免笛卡尔积</li><li>OR条件中的字段都要建立索引,避免全表扫描</li><li>使用LIMIT限制返回的数据量,避免大量无用数据传输</li><li>避免在索引字段上使用函数或表达式,否则索引会失效</li><p>关系型数据库的另一个优化方向是读写分离。由于游戏业务通常读多写少,可以通过主从复制将读请求分流到多个只读从库,减轻主库的压力。常见的主从复制方案有异步复制和半同步复制,分别提供了不同的数据一致性保证。</p><p>如果游戏业务的数据量超过了单台数据库的存储和处理能力,就需要考虑分库分表。垂直分库是指将不同业务的数据存储到不同的数据库,减少单库的数据量和访问压力。水平分表则是指将同一业务的数据按照某个维度(如用户ID)划分到多个表中,每个表只存储一部分数据。分库分表虽然提高了系统的可扩展性,但也引入了分布式事务、跨库JOIN等复杂问题,需要谨慎使用。</p><p>二、NoSQL数据库</p><p>虽然关系型数据库在很多场景下都能满足游戏业务的需求,但在某些特定领域,NoSQL数据库以其灵活的数据模型和超高的性能表现脱颖而出。常见的NoSQL数据库有以下几种:</p><li>键值数据库(如Redis):适合存储简单的Key-Value对,支持高并发的读写操作,常用于缓存、排行榜、计数器等场景。</li><li>文档数据库(如MongoDB):适合存储半结构化的JSON文档,支持嵌套对象和数组,数据模型灵活,常用于玩家背包、任务系统等场景。</li><li>列族数据库(如Cassandra):适合存储宽表数据,支持高并发写入和批量读取,常用于日志、事件流等场景。</li><li>图数据库(如Neo4j):适合存储复杂的关联数据,支持图遍历和最短路径算法,常用于社交关系、推荐系统等场景。</li><p>NoSQL数据库在设计时通常采用无模式(schema-less)的方式,避免了表结构变更的繁琐过程。但游戏服务器在使用NoSQL数据库时仍需注意以下几点:</p><li>根据业务场景选择合适的数据库类型,避免滥用</li><li>合理设计数据的分区(sharding)策略,避免数据倾斜</li><li>权衡数据的一致性和可用性,选择合适的复制(replication)策略</li><li>监控数据库的性能指标,及时发现和解决性能瓶颈</li><p>三、缓存优化</p><p>游戏服务器中有很多数据访问是重复的,如玩家信息、配置表等。将这些\"读多写少\"的数据缓存在内存中,可以大幅降低数据库的压力,提高系统的响应速度。常用的缓存方案有以下几种:</p><li>本地缓存:将数据缓存在服务器进程的内存中,读取速度快,但在进程重启时会丢失数据。适合缓存临时的、可重新计算的数据。</li><li>分布式缓存:将数据缓存在独立的缓存服务器(如Redis)中,可以在多个服务器之间共享缓存数据。适合缓存全局的、不易变的数据。</li><li>多级缓存:在本地缓存和分布式缓存之间再加一层缓存(如Memcached),组成多级缓存架构。本地缓存提供快速读取,分布式缓存提供高可用,多级缓存兼顾了性能和可靠性。</li><p>缓存虽好,但也要注意以下问题:</p><li>缓存与数据库的一致性问题,需要合理设计缓存更新策略</li><li>缓存的过期失效问题,需要选择合适的过期时间和淘汰策略</li><li>缓存的并发问题,需要使用分布式锁等机制避免缓存脏数据</li><li>缓存雪崩问题,需要采用随机过期、二级缓存等方式避免缓存集中失效</li><p></p>"
+}

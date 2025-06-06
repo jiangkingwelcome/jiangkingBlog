@@ -1,0 +1,8 @@
+<svg width="720" height="480" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="480" fill="#f0f0f0"/>
+  <rect x="20" y="20" width="680" height="440" rx="8" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="360" y="180" font-family="Arial" font-size="24" text-anchor="middle" fill="#64748b">图片暂不可用</text>
+  <text x="360" y="220" font-family="Arial" font-size="18" text-anchor="middle" fill="#94a3b8">请检查Notion权限或图片源</text>
+  <rect x="260" y="320" width="200" height="60" rx="8" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="360" y="355" font-family="Arial" font-size="18" text-anchor="middle" fill="#64748b">点击重试</text>
+</svg>

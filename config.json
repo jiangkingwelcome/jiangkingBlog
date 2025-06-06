@@ -1,19 +1,19 @@
 {
 	"head": {
-		"title": "SimonAKing",
+		"title": "jiangkingblog",
 		"description": "Author:SimonAKing,Category:Personal Blog",
 		"favicon": "favicon.ico"
 	},
 	"intro": {
 		"title": "SimonAKing",
-		"subtitle": "Front back left right end engineer",
+		"subtitle": "watch -n1 \"fortune | cowsay\"",
 		"enter": "enter",
 		"supportAuthor": true,
 		"background": true
 	},
 	"main": {
 		"name": "SimonAKing",
-		"signature": "Code & Input & Output",
+		"signature": "watch -n1 \"fortune | cowsay\"",
 		"avatar": {
 			"link": "assets/avatar.jpg",
 			"height": "100",
@@ -26,12 +26,12 @@
 				"text": "Blog"
 			},
 			"second": {
-				"href": "about/",
+				"href": "/about.html",
 				"icon": "xiaolian",
 				"text": "About"
 			},
 			"third": {
-				"href": "mailto:simon@tomotoes.com",
+				"href": "mailto:jiangkingwelcome@vip.qq.com",
 				"icon": "email",
 				"text": "Email"
 			},

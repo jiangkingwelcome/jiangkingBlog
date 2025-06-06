@@ -25,6 +25,9 @@ npm install
 npm run dev
 ```
 
+# 获取Notion数据
+npm run fetchnotion
+
 
 
 ## 功能特性

@@ -1,0 +1,1365 @@
+{
+  "id": "f5dd304c-8c81-40dc-ba37-9c1d7399e15e",
+  "date": "2021-07-02",
+  "type": "Post",
+  "category": "知行合一",
+  "slug": "guide",
+  "tags": [
+    "文字",
+    "推荐"
+  ],
+  "summary": "<- 点击标题OPEN按钮打开说明；请检查您的NOTION_PAGE_ID是否成功配置，否则会显示我的默认数据库内容。",
+  "title": "模板说明",
+  "status": "Published",
+  "detail": {
+    "f5dd304c-8c81-40dc-ba37-9c1d7399e15e": {
+      "value": {
+        "id": "f5dd304c-8c81-40dc-ba37-9c1d7399e15e",
+        "version": 584,
+        "type": "page",
+        "properties": {
+          "NX\\Q": [
+            [
+              "‣",
+              [
+                [
+                  "d",
+                  {
+                    "type": "date",
+                    "start_date": "2021-07-02"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "`gQ~": [
+            [
+              "Post"
+            ]
+          ],
+          "bB{M": [
+            [
+              "知行合一"
+            ]
+          ],
+          "d]hq": [
+            [
+              "guide"
+            ]
+          ],
+          "sD^m": [
+            [
+              "文字,推荐"
+            ]
+          ],
+          "wz|S": [
+            [
+              "<- 点击标题OPEN按钮打开说明；请检查您的NOTION_PAGE_ID是否成功配置，否则会显示我的默认数据库内容。"
+            ]
+          ],
+          "title": [
+            [
+              "模板说明"
+            ]
+          ],
+          "f211bdc0-ee00-4186-9a7d-f68c055ec2ee": [
+            [
+              "Published"
+            ]
+          ]
+        },
+        "content": [
+          "579acad5-88b1-48b4-9663-be0acfce1b82",
+          "43904423-54d5-4b7a-99e1-c42e625c1a43",
+          "22dda7cc-3244-4b8e-b207-c2e4d19b880f",
+          "87cd6da6-69f3-47d4-aa17-030c57592d46",
+          "5ab0b635-8005-4cc8-a169-6e26bc440b19",
+          "4c27b110-b8c1-462b-b17d-6b83a532a460",
+          "84e4d603-68c8-4e86-8a2a-89bade71caa6",
+          "c8471935-a70e-4cab-9f10-9e6528bc4f36"
+        ],
+        "format": {
+          "page_font": "mono",
+          "page_icon": "📖",
+          "page_cover": "/../src/blog/images/f5dd304c-8c81-40dc-ba37-9c1d7399e15e/cover_aHR0cHM6_photo-1494774157365-9e04c6720e47.png",
+          "block_locked": false,
+          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
+          "copied_from_pointer": {
+            "id": "06f53161-8c9a-4e9c-8109-a8bd142a7b06",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "page_cover_position": 0.5
+        },
+        "created_time": 1685088343887,
+        "last_edited_time": 1722399361494,
+        "parent_id": "4379bc14-5d22-453b-a153-12639616fc01",
+        "parent_table": "collection",
+        "alive": true,
+        "copied_from": "06f53161-8c9a-4e9c-8109-a8bd142a7b06",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "02ab3b86-7800-4aa6-9e9e-415905ef32a5": {
+      "value": {
+        "id": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
+        "version": 687,
+        "type": "collection_view_page",
+        "content": [
+          "254eced8-9cba-4f90-9990-a885bd567dd0"
+        ],
+        "view_ids": [
+          "b7eb2157-2022-4ca5-827b-faa5ef82cf2d",
+          "e17348d8-5a80-4f02-813c-025b790d16c8",
+          "5010afdb-92b5-4f49-958b-0b8c900d6190",
+          "a80c22ef-8b56-410d-af06-07615c5f2654"
+        ],
+        "collection_id": "4379bc14-5d22-453b-a153-12639616fc01",
+        "format": {
+          "site_id": "1b596b44-beb9-8187-9ad5-00790706705c",
+          "block_locked": false,
+          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
+          "collection_pointer": {
+            "id": "4379bc14-5d22-453b-a153-12639616fc01",
+            "table": "collection",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "copied_from_pointer": {
+            "id": "bee1fccf-a3bd-47a1-a7be-83cc71372d83",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "page_cover_position": 0.6
+        },
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "27074aef-7216-41ed-baef-d9b53addd870"
+          },
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "is_site": true,
+            "added_timestamp": 1681797627522
+          }
+        ],
+        "created_time": 1636081968996,
+        "last_edited_time": 1737345255598,
+        "parent_id": "8991aef4-e3d8-4f18-9a70-d447fe4d47c7",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "bee1fccf-a3bd-47a1-a7be-83cc71372d83",
+        "file_ids": [
+          "abe3a0aa-2aff-4274-81bb-c2443d4ef9e2",
+          "a2a32795-101d-46aa-a7f6-eb35b8750166",
+          "29db38d2-d5fa-4fa6-8a92-3b527cfe80d1"
+        ],
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "8991aef4-e3d8-4f18-9a70-d447fe4d47c7": {
+      "role": "none"
+    },
+    "6b25c0c0-5330-4883-8835-eeb44bacfb48": {
+      "role": "none"
+    },
+    "579acad5-88b1-48b4-9663-be0acfce1b82": {
+      "value": {
+        "id": "579acad5-88b1-48b4-9663-be0acfce1b82",
+        "version": 158,
+        "type": "header",
+        "properties": {
+          "title": [
+            [
+              "如何使用Notion编写文章"
+            ]
+          ]
+        },
+        "created_time": 1685088425944,
+        "last_edited_time": 1698586404688,
+        "parent_id": "f5dd304c-8c81-40dc-ba37-9c1d7399e15e",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "43904423-54d5-4b7a-99e1-c42e625c1a43": {
+      "value": {
+        "id": "43904423-54d5-4b7a-99e1-c42e625c1a43",
+        "version": 90,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "请访问教程获取帮助"
+            ]
+          ]
+        },
+        "created_time": 1685088431971,
+        "last_edited_time": 1698586466585,
+        "parent_id": "f5dd304c-8c81-40dc-ba37-9c1d7399e15e",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "22dda7cc-3244-4b8e-b207-c2e4d19b880f": {
+      "value": {
+        "id": "22dda7cc-3244-4b8e-b207-c2e4d19b880f",
+        "version": 15,
+        "type": "bookmark",
+        "properties": {
+          "link": [
+            [
+              "https://docs.tangly1024.com/article/start-to-write"
+            ]
+          ],
+          "title": [
+            [
+              "如何在Notion中开始写作 | NotionNext文档"
+            ]
+          ],
+          "description": [
+            [
+              "这是一个由NotionNext生成的站点"
+            ]
+          ]
+        },
+        "format": {
+          "bookmark_icon": "/../src/blog/images/22dda7cc-3244-4b8e-b207-c2e4d19b880f/icon_aHR0cHM6_favicon.ico"
+        },
+        "created_time": 1698586388388,
+        "last_edited_time": 1698586404688,
+        "parent_id": "f5dd304c-8c81-40dc-ba37-9c1d7399e15e",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "87cd6da6-69f3-47d4-aa17-030c57592d46": {
+      "value": {
+        "id": "87cd6da6-69f3-47d4-aa17-030c57592d46",
+        "version": 10,
+        "type": "bookmark",
+        "properties": {
+          "link": [
+            [
+              "https://docs.tangly1024.com/article/notion-short-key"
+            ]
+          ],
+          "title": [
+            [
+              "Notion快捷键 | NotionNext文档"
+            ]
+          ],
+          "description": [
+            [
+              "Notion有很多使用的快捷键，看完这篇文章，让你的效率加倍"
+            ]
+          ]
+        },
+        "format": {
+          "bookmark_icon": "/../src/blog/images/87cd6da6-69f3-47d4-aa17-030c57592d46/icon_aHR0cHM6_favicon.ico",
+          "bookmark_cover": "/../src/blog/images/87cd6da6-69f3-47d4-aa17-030c57592d46/bookmark_aHR0cHM6_https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd4851275-5ab5-4aaa-bc51-77c73ad658c4%2Fe8ed862f23227112ab999a90757a3bf8.jpg"
+        },
+        "created_time": 1698586477847,
+        "last_edited_time": 1698586477867,
+        "parent_id": "f5dd304c-8c81-40dc-ba37-9c1d7399e15e",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "5ab0b635-8005-4cc8-a169-6e26bc440b19": {
+      "value": {
+        "id": "5ab0b635-8005-4cc8-a169-6e26bc440b19",
+        "version": 4,
+        "type": "header",
+        "properties": {
+          "title": [
+            [
+              "模板使用说明"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "f39623e6-3751-4a0d-9ce9-f2eb40146491",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1685088392567,
+        "last_edited_time": 1687840148096,
+        "parent_id": "f5dd304c-8c81-40dc-ba37-9c1d7399e15e",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "f39623e6-3751-4a0d-9ce9-f2eb40146491",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "4c27b110-b8c1-462b-b17d-6b83a532a460": {
+      "value": {
+        "id": "4c27b110-b8c1-462b-b17d-6b83a532a460",
+        "version": 316,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "NotionNext项目必须绑定一个Notion数据库才能使用。请访问教程获取帮助"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "e9273669-ed36-451d-a3f9-787837fb8386",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1685088392568,
+        "last_edited_time": 1698586456494,
+        "parent_id": "f5dd304c-8c81-40dc-ba37-9c1d7399e15e",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "e9273669-ed36-451d-a3f9-787837fb8386",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "84e4d603-68c8-4e86-8a2a-89bade71caa6": {
+      "value": {
+        "id": "84e4d603-68c8-4e86-8a2a-89bade71caa6",
+        "version": 10,
+        "type": "bookmark",
+        "properties": {
+          "link": [
+            [
+              "https://docs.tangly1024.com/article/vercel-deploy-notion-next#3df829414795492bb41ec351eb6da84e"
+            ]
+          ],
+          "title": [
+            [
+              "Vercel云部署 | NotionNext文档"
+            ]
+          ],
+          "description": [
+            [
+              "Vercel是一款国外的Serverless托管平台，对个人用户使用几乎免费，而且方便快捷，用Vercel托管你的Notion站点，无需再操心服务器的维护与资费问题。"
+            ]
+          ]
+        },
+        "format": {
+          "bookmark_icon": "/../src/blog/images/84e4d603-68c8-4e86-8a2a-89bade71caa6/icon_aHR0cHM6_favicon.ico",
+          "bookmark_cover": "/../src/blog/images/84e4d603-68c8-4e86-8a2a-89bade71caa6/bookmark_aHR0cHM6_photo-1642083139428-9ee5fa423c46.png"
+        },
+        "created_time": 1698586458304,
+        "last_edited_time": 1698586458314,
+        "parent_id": "f5dd304c-8c81-40dc-ba37-9c1d7399e15e",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "c8471935-a70e-4cab-9f10-9e6528bc4f36": {
+      "value": {
+        "id": "c8471935-a70e-4cab-9f10-9e6528bc4f36",
+        "version": 30,
+        "type": "transclusion_container",
+        "content": [
+          "3d9e12d9-8c7e-4218-91fb-b1764456b0a2",
+          "eaa0cc6b-438d-40f6-9e22-705d11fd1ed7",
+          "57da1a4d-7e2c-4d67-902d-6d6fcea0866b",
+          "96f00b2d-c647-4513-8042-f13888e561dd",
+          "0d07bdf4-8751-4cf2-8b5c-ef62f095ddee",
+          "16e3bbfb-a2e2-4515-a33b-d34abacb742e",
+          "997a0248-02b1-40dc-a484-bbacedb10d7a"
+        ],
+        "created_time": 1685088847671,
+        "last_edited_time": 1722399358557,
+        "parent_id": "f5dd304c-8c81-40dc-ba37-9c1d7399e15e",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "3d9e12d9-8c7e-4218-91fb-b1764456b0a2": {
+      "value": {
+        "id": "3d9e12d9-8c7e-4218-91fb-b1764456b0a2",
+        "version": 114,
+        "type": "sub_header",
+        "properties": {
+          "title": [
+            [
+              "模板字段说"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "548780a2-7746-435c-8799-628311eb197b",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1685088392568,
+        "last_edited_time": 1722399338205,
+        "parent_id": "c8471935-a70e-4cab-9f10-9e6528bc4f36",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "548780a2-7746-435c-8799-628311eb197b",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "eaa0cc6b-438d-40f6-9e22-705d11fd1ed7": {
+      "value": {
+        "id": "eaa0cc6b-438d-40f6-9e22-705d11fd1ed7",
+        "version": 7,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Notion数据库中，每条数据都将有以下属性🤔："
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "548780a2-7746-435c-8799-628311eb197b",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1685088392568,
+        "last_edited_time": 1685088847680,
+        "parent_id": "c8471935-a70e-4cab-9f10-9e6528bc4f36",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "548780a2-7746-435c-8799-628311eb197b",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "57da1a4d-7e2c-4d67-902d-6d6fcea0866b": {
+      "value": {
+        "id": "57da1a4d-7e2c-4d67-902d-6d6fcea0866b",
+        "version": 21,
+        "type": "table",
+        "content": [
+          "1269ba5b-14e4-42f4-9586-37d81af33b30",
+          "01419723-2799-4094-ae6c-042272e2c12b",
+          "a1ce2a1e-b702-42b7-abc2-56263c65a322",
+          "9161089f-d366-47e9-9041-45832a8d9d61",
+          "af400216-3cbf-4f3e-abcc-790b56f10771",
+          "408190f6-e9a9-47bd-a891-fca93845e6be",
+          "515a438f-d6a9-44e3-a5ab-caa0ef26e29f",
+          "d1f967d6-8ac7-48a6-8f04-3060942b7b26",
+          "1e7e3573-010d-4874-91fc-9dd803eb2802",
+          "09f1fb3a-9e20-4de2-9dee-b11ea0e65d69",
+          "beb52cea-3fbf-4572-be06-645ffa5fa533"
+        ],
+        "format": {
+          "copied_from_pointer": {
+            "id": "605a007d-fc0f-4aba-9d83-d6646f75e29c",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "table_block_row_header": true,
+          "table_block_column_order": [
+            "BYf{",
+            "GENW",
+            "Js[p",
+            "`VuO"
+          ],
+          "table_block_column_format": {
+            "BYf{": {
+              "width": 116.99479675292969
+            },
+            "GENW": {
+              "width": 46.989585876464844
+            },
+            "Js[p": {
+              "width": 239.00001525878906
+            },
+            "`VuO": {
+              "width": 315.66668701171875
+            }
+          },
+          "table_block_column_header": true
+        },
+        "created_time": 1685088392569,
+        "last_edited_time": 1685088858733,
+        "parent_id": "c8471935-a70e-4cab-9f10-9e6528bc4f36",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "605a007d-fc0f-4aba-9d83-d6646f75e29c",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "96f00b2d-c647-4513-8042-f13888e561dd": {
+      "value": {
+        "id": "96f00b2d-c647-4513-8042-f13888e561dd",
+        "version": 1642,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "数据库的每一列有不同的功能；\n\n"
+            ],
+            [
+              "type",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "： 这条数据的类型 ，有 "
+            ],
+            [
+              "notice",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "(公告)、"
+            ],
+            [
+              "post",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "(文章)、"
+            ],
+            [
+              "page",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "(单页)、"
+            ],
+            [
+              "menu",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "(菜单)、"
+            ],
+            [
+              "submenu",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "(子菜单)这几种类型。\n\n"
+            ],
+            [
+              "slug ",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "，根据数据类型，有不同的作用："
+            ]
+          ]
+        },
+        "created_time": 1709354660420,
+        "last_edited_time": 1722399380684,
+        "parent_id": "c8471935-a70e-4cab-9f10-9e6528bc4f36",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "0d07bdf4-8751-4cf2-8b5c-ef62f095ddee": {
+      "value": {
+        "id": "0d07bdf4-8751-4cf2-8b5c-ef62f095ddee",
+        "version": 26,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "在菜单(Menu\\SubMenu)中表示跳转到哪个页面， 在文章中表示这篇文章在博客中的访问地址、也可以是外链。通常以左斜杆开头："
+            ],
+            [
+              " /test-menu",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "对应访问 → https://站点域名"
+            ],
+            [
+              "/testmenu",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "。也可以设置成完整的外链，例如"
+            ],
+            [
+              "https://tangly1024.com",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              " 。"
+            ]
+          ]
+        },
+        "created_time": 1722399350276,
+        "last_edited_time": 1722399356277,
+        "parent_id": "c8471935-a70e-4cab-9f10-9e6528bc4f36",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "16e3bbfb-a2e2-4515-a33b-d34abacb742e": {
+      "value": {
+        "id": "16e3bbfb-a2e2-4515-a33b-d34abacb742e",
+        "version": 16,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "在单页中（Page）, 表示这个页面在站点根目录的文件名。不要以左斜杆开头: 例如 "
+            ],
+            [
+              "test-page",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              " → 对应 https://站点域名/"
+            ],
+            [
+              "test-page",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "。"
+            ]
+          ]
+        },
+        "created_time": 1722399356274,
+        "last_edited_time": 1722399358557,
+        "parent_id": "c8471935-a70e-4cab-9f10-9e6528bc4f36",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "997a0248-02b1-40dc-a484-bbacedb10d7a": {
+      "value": {
+        "id": "997a0248-02b1-40dc-a484-bbacedb10d7a",
+        "version": 4,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "在博文中(Post)，也表示文件路径，但是博文会自动添加一个前缀。例如: "
+            ],
+            [
+              "test-post ",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "则可以通过 https://域名/article/"
+            ],
+            [
+              "test-post",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              " 访问到这个博客，这里的article是默认配置的前缀。"
+            ]
+          ]
+        },
+        "created_time": 1722399358555,
+        "last_edited_time": 1722399358557,
+        "parent_id": "c8471935-a70e-4cab-9f10-9e6528bc4f36",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "1269ba5b-14e4-42f4-9586-37d81af33b30": {
+      "value": {
+        "id": "1269ba5b-14e4-42f4-9586-37d81af33b30",
+        "version": 2,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "属性"
+            ]
+          ],
+          "GENW": [
+            [
+              "必填"
+            ]
+          ],
+          "Js[p": [
+            [
+              "说明"
+            ]
+          ],
+          "`VuO": [
+            [
+              "备注"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "a3ba15e7-f1f0-45a0-b2e2-65afa2383a4c",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1685088392569,
+        "last_edited_time": 1685088392576,
+        "parent_id": "57da1a4d-7e2c-4d67-902d-6d6fcea0866b",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "a3ba15e7-f1f0-45a0-b2e2-65afa2383a4c",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "01419723-2799-4094-ae6c-042272e2c12b": {
+      "value": {
+        "id": "01419723-2799-4094-ae6c-042272e2c12b",
+        "version": 2,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "title",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              " 是"
+            ]
+          ],
+          "Js[p": [
+            [
+              " 文章标题"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "b6161c75-f30b-4f12-9184-2facf8050e3f",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1685088392569,
+        "last_edited_time": 1685088392576,
+        "parent_id": "57da1a4d-7e2c-4d67-902d-6d6fcea0866b",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "b6161c75-f30b-4f12-9184-2facf8050e3f",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "a1ce2a1e-b702-42b7-abc2-56263c65a322": {
+      "value": {
+        "id": "a1ce2a1e-b702-42b7-abc2-56263c65a322",
+        "version": 2,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "status",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "是"
+            ]
+          ],
+          "Js[p": [
+            [
+              "发布状态"
+            ]
+          ],
+          "`VuO": [
+            [
+              "（仅当状态为"
+            ],
+            [
+              "Published",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              " 时会被 展示）"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "20cd43c7-7dbe-4684-8fd6-7c5d3cccb867",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1685088392570,
+        "last_edited_time": 1685088392576,
+        "parent_id": "57da1a4d-7e2c-4d67-902d-6d6fcea0866b",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "20cd43c7-7dbe-4684-8fd6-7c5d3cccb867",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "9161089f-d366-47e9-9041-45832a8d9d61": {
+      "value": {
+        "id": "9161089f-d366-47e9-9041-45832a8d9d61",
+        "version": 2,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "type",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "是"
+            ]
+          ],
+          "Js[p": [
+            [
+              "页面类型 (博文"
+            ],
+            [
+              "Post",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              " / 单页("
+            ],
+            [
+              "Page",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              ")"
+            ]
+          ],
+          "`VuO": [
+            [
+              "单页不会在博文列表显示 。"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "4a616b4b-9351-4c57-9f18-7236093fef68",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1685088392570,
+        "last_edited_time": 1685088392576,
+        "parent_id": "57da1a4d-7e2c-4d67-902d-6d6fcea0866b",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "4a616b4b-9351-4c57-9f18-7236093fef68",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "af400216-3cbf-4f3e-abcc-790b56f10771": {
+      "value": {
+        "id": "af400216-3cbf-4f3e-abcc-790b56f10771",
+        "version": 14,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "summary",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "否"
+            ]
+          ],
+          "Js[p": [
+            [
+              "内容摘要"
+            ]
+          ],
+          "`VuO": [
+            [
+              "搜索和简略显示会用到，在文章列表会显示出"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "b7eed8de-c073-4960-81ef-b75b014ab5bd",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1685088392570,
+        "last_edited_time": 1709536933257,
+        "parent_id": "57da1a4d-7e2c-4d67-902d-6d6fcea0866b",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "b7eed8de-c073-4960-81ef-b75b014ab5bd",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "408190f6-e9a9-47bd-a891-fca93845e6be": {
+      "value": {
+        "id": "408190f6-e9a9-47bd-a891-fca93845e6be",
+        "version": 2,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "date",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "否"
+            ]
+          ],
+          "Js[p": [
+            [
+              "发布日期"
+            ]
+          ],
+          "`VuO": [
+            [
+              "在V3.3.9之前的版本此项为必填。"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "20ae1a6e-7d0c-456b-a510-c03cb00454dc",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1685088392570,
+        "last_edited_time": 1685088392576,
+        "parent_id": "57da1a4d-7e2c-4d67-902d-6d6fcea0866b",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "20ae1a6e-7d0c-456b-a510-c03cb00454dc",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "515a438f-d6a9-44e3-a5ab-caa0ef26e29f": {
+      "value": {
+        "id": "515a438f-d6a9-44e3-a5ab-caa0ef26e29f",
+        "version": 2,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "category",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "否"
+            ]
+          ],
+          "Js[p": [
+            [
+              "文章分类"
+            ]
+          ],
+          "`VuO": [
+            [
+              "可以自定义"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "44854eb0-485e-48cc-81b6-5b80488d3b7d",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1685088392570,
+        "last_edited_time": 1685088392576,
+        "parent_id": "57da1a4d-7e2c-4d67-902d-6d6fcea0866b",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "44854eb0-485e-48cc-81b6-5b80488d3b7d",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "d1f967d6-8ac7-48a6-8f04-3060942b7b26": {
+      "value": {
+        "id": "d1f967d6-8ac7-48a6-8f04-3060942b7b26",
+        "version": 2,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "tags",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "否"
+            ]
+          ],
+          "Js[p": [
+            [
+              "文章标签"
+            ]
+          ],
+          "`VuO": [
+            [
+              "可多个，建议不要太多"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "c7ca1f34-ec0f-4c56-84c8-cab6ff13ca7f",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1685088392570,
+        "last_edited_time": 1685088392576,
+        "parent_id": "57da1a4d-7e2c-4d67-902d-6d6fcea0866b",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "c7ca1f34-ec0f-4c56-84c8-cab6ff13ca7f",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "1e7e3573-010d-4874-91fc-9dd803eb2802": {
+      "value": {
+        "id": "1e7e3573-010d-4874-91fc-9dd803eb2802",
+        "version": 2,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "slug",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "否"
+            ]
+          ],
+          "Js[p": [
+            [
+              "文章短路径"
+            ]
+          ],
+          "`VuO": [
+            [
+              " (每篇文章唯一，请勿 重复）"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "66668f66-e0a7-49d4-af0e-2e1277dff157",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1685088392571,
+        "last_edited_time": 1685088392576,
+        "parent_id": "57da1a4d-7e2c-4d67-902d-6d6fcea0866b",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "66668f66-e0a7-49d4-af0e-2e1277dff157",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "09f1fb3a-9e20-4de2-9dee-b11ea0e65d69": {
+      "value": {
+        "id": "09f1fb3a-9e20-4de2-9dee-b11ea0e65d69",
+        "version": 22,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "icon",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              "否"
+            ]
+          ],
+          "Js[p": [
+            [
+              "菜单栏图标(仅当"
+            ],
+            [
+              "Page",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "/"
+            ],
+            [
+              "Menu",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ],
+            [
+              "类型有效)"
+            ]
+          ],
+          "`VuO": [
+            [
+              "可以参考："
+            ],
+            [
+              "图标库地址",
+              [
+                [
+                  "a",
+                  "https://fontawesome.com/v6/search"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "3f432717-e38f-4cf2-b648-8a82826e6d46",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1685088392571,
+        "last_edited_time": 1687144265195,
+        "parent_id": "57da1a4d-7e2c-4d67-902d-6d6fcea0866b",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "3f432717-e38f-4cf2-b648-8a82826e6d46",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "beb52cea-3fbf-4572-be06-645ffa5fa533": {
+      "value": {
+        "id": "beb52cea-3fbf-4572-be06-645ffa5fa533",
+        "version": 2,
+        "type": "table_row",
+        "properties": {
+          "BYf{": [
+            [
+              "password",
+              [
+                [
+                  "c"
+                ]
+              ]
+            ]
+          ],
+          "GENW": [
+            [
+              " 否"
+            ]
+          ],
+          "Js[p": [
+            [
+              " 文章加锁"
+            ]
+          ],
+          "`VuO": [
+            [
+              " 需要输入密码才允许访问"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "224b5680-aeff-427d-af00-27a29a0684f6",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1685088392571,
+        "last_edited_time": 1685088392576,
+        "parent_id": "57da1a4d-7e2c-4d67-902d-6d6fcea0866b",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "224b5680-aeff-427d-af00-27a29a0684f6",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "254eced8-9cba-4f90-9990-a885bd567dd0": {
+      "value": {
+        "id": "254eced8-9cba-4f90-9990-a885bd567dd0",
+        "version": 2,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "😅"
+            ]
+          ]
+        },
+        "created_time": 1652491338163,
+        "last_edited_time": 1652491320000,
+        "parent_id": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    }
+  },
+  "contentHtml": "<h1>如何使用Notion编写文章</h1><p>请访问教程获取帮助</p><div>如何在Notion中开始写作 | NotionNext文档</div><div>Notion快捷键 | NotionNext文档</div><h1>模板使用说明</h1><p>NotionNext项目必须绑定一个Notion数据库才能使用。请访问教程获取帮助</p><div>Vercel云部署 | NotionNext文档</div><h2>模板字段说</h2><p>Notion数据库中，每条数据都将有以下属性🤔：</p><p>数据库的每一列有不同的功能；\n\ntype： 这条数据的类型 ，有 notice(公告)、post(文章)、page(单页)、menu(菜单)、submenu(子菜单)这几种类型。\n\nslug ，根据数据类型，有不同的作用：</p><li>在菜单(Menu\\SubMenu)中表示跳转到哪个页面， 在文章中表示这篇文章在博客中的访问地址、也可以是外链。通常以左斜杆开头： /test-menu对应访问 → https://站点域名/testmenu。也可以设置成完整的外链，例如https://tangly1024.com 。</li><li>在单页中（Page）, 表示这个页面在站点根目录的文件名。不要以左斜杆开头: 例如 test-page → 对应 https://站点域名/test-page。</li><li>在博文中(Post)，也表示文件路径，但是博文会自动添加一个前缀。例如: test-post 则可以通过 https://域名/article/test-post 访问到这个博客，这里的article是默认配置的前缀。</li>"
+}

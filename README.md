@@ -23,6 +23,9 @@ npm install
 npm run dev
 ```
 
+# 获取Notion数据
+npm run fetchnotion
+
 ## Features
 
 1. Highly encapsulates all the information in the page

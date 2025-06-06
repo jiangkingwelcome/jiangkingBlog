@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=2,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>示例文章 - JiangKing/Blog</title>
+    <link rel="stylesheet" href="/css/blog.css">
+    <style>// ... existing code ...</style>
+  </head>
+  <body>
+    <div class="dynamic-bg"></div>
+    <div class="grid-bg"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="progress-bar" id="progressBar"></div>
+    <header class="top-nav">
+      <div class="nav-left"><a class="back-btn" href="/blog/" title="返回首页">←</a>
+        <h3 class="site-title">JiangKing</h3>
+      </div>
+      <div class="nav-right">
+        <button class="nav-btn" title="目录">📑</button>
+        <button class="nav-btn" title="暗色模式">🌙</button>
+        <button class="nav-btn" title="分享">🔗</button>
+      </div>
+    </header>
+    <div class="article-header">
+      <div class="header-bg">
+        <canvas id="headerCanvas"></canvas>
+      </div>
+      <div class="header-content">
+        <h1 class="article-title">示例文章</h1>
+        <div class="article-meta"><span class="meta-item"><span class="meta-icon">👤</span>JiangKing</span><span class="meta-item"><span class="meta-icon">📅</span>2025-01-20</span><span class="meta-item"><span class="meta-icon">⏱️</span>3 min read</span><span class="meta-item"><span class="meta-icon">👁️</span>1.2k</span></div>
+      </div>
+    </div>
+    <article class="article-container">
+      <div class="article-content"><h1>基本段落</h1><div>书中自有黄金屋，书中自有颜如玉</div><div>生活的意义并不是与他人争高下，而在于享受努力实现目标的过程，结果只是对自己行动的嘉奖。</div><h2>将进酒</h2><p>李白〔唐代〕参考[1]</p><p>君不见黄河之水天上来，奔流到海不复回。
+君不见高堂明镜悲白发，朝如青丝暮成雪。
+人生得意须尽欢，莫使金樽空对月。
+天生我材必有用，千金散尽还复来。
+烹羊宰牛且为乐，会须一饮三百杯。
+岑夫子，丹丘生，将进酒，杯莫停。
+与君歌一曲，请君为我倾耳听。
+钟鼓馔玉不足贵，但愿长醉不愿醒。
+古来圣贤皆寂寞，惟有饮者留其名。
+陈王昔时宴平乐，斗酒十千恣欢谑。
+主人何为言少钱，径须沽取对君酌。
+五花马、千金裘，呼儿将出换美酒，与尔同销万古愁。</p><div>TANGLY's BLOG | 记录思考、分享我的学习笔记</div><h1>特殊段落</h1><h2>1.代码</h2><div># Bash 安装zsh
+$ sudo apt install zsh
+
+# 配置ohmyzsh
+$ sh -c "$(curl -fsSL <https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh>)"
+
+# 配置ohmyzsh插件
+# zsh-autosuggestions
+$ git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+# zsh-syntax-highlighting
+$ git clone <https://github.com/zsh-users/zsh-syntax-highlighting.git> ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+// 启用插件
+$ vim .zshrc
+plugins=(git z zsh-autosuggestions zsh-syntax-highlighting)</div><div>其他更多语言</div><div>ps -ef | grep java | awk '{print $2}' | xargs kill -9</div><div>@Test
+public void test11() {
+
+  long start = System.currentTimeMillis();
+  int a = 0;
+  for(int i=0;i<1000000000;i++){
+      try {
+          a++;
+      }catch (Exception e){
+          e.printStackTrace();
+      }
+  }
+  long useTime = System.currentTimeMillis()-start;
+  System.out.println("useTime:"+useTime);
+}</div><div>#!/usr/bin/python3
+import json
+ 
+# Python 字典类型转换为 JSON 对象
+data = {
+    'no' : 1,
+    'name' : 'hello',
+    'url' : 'http://tangly1024.com'
+}
+ 
+json_str = json.dumps(data)
+print ("Python 原始数据：", repr(data))
+print ("JSON 对象：", json_str)</div><div># R 语言
+#file.edit(path.expand(file.path("~", ".Renviron")))
+library(telegram.bot)
+library(stringr)
+# Initiate the bot session using the token from the enviroment variable.
+bot = Bot(token = bot_token('your_bot'))
+usr_list <- c(12344566, 12345566)</div><div>html {
+	background-color: red;
+}</div><div>#include <iostream>
+using namespace std;
+ 
+// main() 是程序开始执行的地方
+ 
+int main()
+{
+   cout << "Hello World"; // 输出 Hello World
+   return 0;
+}</div><div>using System;
+namespace HelloWorldApplication
+{
+   class HelloWorld
+   {
+      static void Main(string[] args)
+      {
+         Console.WriteLine("Hello World");
+         Console.ReadKey();
+      }
+   }
+}</div><div>.section __TEXT,__text,regular,pure_instructions
+.macosx_version_min 10, 13
+.globl _add_a_b
+.p2align 4, 0x90
+_add_a_b: ## @add_a_b
+.cfi_startproc
+## BB#0:
+pushq %rbp
+Lcfi0:
+.cfi_def_cfa_offset 16
+Lcfi1:
+.cfi_offset %rbp, -16
+movq %rsp, %rbp
+Lcfi2:
+.cfi_def_cfa_register %rbp
+movl %edi, -4(%rbp)
+movl %esi, -8(%rbp)
+movl -4(%rbp), %esi
+addl -8(%rbp), %esi
+movl %esi, %eax
+popq %rbp
+retq
+.cfi_endproc
+
+.globl _main
+.p2align 4, 0x90
+_main: ## @main
+.cfi_startproc
+## BB#0:
+pushq %rbp
+Lcfi3:
+.cfi_def_cfa_offset 16
+Lcfi4:
+.cfi_offset %rbp, -16
+movq %rsp, %rbp
+Lcfi5:
+.cfi_def_cfa_register %rbp
+subq $16, %rsp
+movl $1, %edi
+movl $2, %esi
+movl $0, -4(%rbp)
+callq _add_a_b
+addq $16, %rsp
+popq %rbp
+retq
+.cfi_endproc</div><h2>2.公式</h2><ul><li>数学公式</li><div>f\left(\left[\frac{1+\{x, y\}}{\left(\frac{x}{y}+\frac{y}{x}\right)(u+1)}+a\right]^{3 / 2}\right)\tag{行标}</div><div>\tau_{xy}=-\tau_{yx}\tau_{xz}=-\tau_{zx}\tau_{yz}=-\tau{zy}</div></ul><ul><li>化学方程</li><p>⁍</p></ul><div>其他更多公式</div><div>\begin{aligned}
+AACD \Rightarrow AAAD &= \frac 1 3\\ 
+AACD \Rightarrow AACD &= \frac 1 3 + \frac 1 6 = \frac 1 2  \\ 
+AACD \Rightarrow AACC &= \frac 1 6 \end{aligned}</div><div>\begin{bmatrix}
+		c_{0}&c_{n-1}&c_{n-2}&\cdots &c_{1}\\
+		c_{1}&c_{0}&c_{n-1} &  \cdots &c_{2}\\
+		c_{2}&c_{1}&c_{0}&\cdots  &c_3 \\
+		\vdots &\vdots& \vdots&\ddots &\vdots \\
+		c_{n-1}&c_{n-2}&c_{n-3}&\dots &c_{0}
+\end{bmatrix}</div><div>\begin{aligned} \sin 2\theta & = 2\sin \theta \cos \theta \\ & = \cfrac{2 \tan \theta}{1+\tan^2 \theta} \end{aligned}</div><p></p><div>AACD\Rightarrow \left\{\begin{matrix}
+第1次取值 & 第2次取值 & 概率 & 最终状态\\
+A & C,D &= \frac 1 2 \times \frac 2 3= \frac 1 3 &\Rightarrow AAAD \\ 
+A & A &= \frac 1 2 \times \frac 1 3= \frac 1 6 &\Rightarrow AACD \\ 
+C,D & A &= 2 \times \frac 1 4 \times \frac 2 3= \frac 1 3 &\Rightarrow CCAD \\ 
+C,D & C,D &= 2 \times \frac 1 4 \times \frac 1 3= \frac 1 6 &\Rightarrow CCAA
+\end{matrix}\right. </div><h2>3. 图表</h2><div>graph LR;
+公司架构-->商务
+公司架构-->研发
+公司架构-->设计
+公司架构-->运营
+公司架构-->产品</div><div>下载PDF附件.pdf</div><h2>4.下载附件</h2><div>下载PDF附件.pdf</div><div>下载PDF附件-2.pdf</div><h2>5. 照片集</h2><div>这是一张图片</div><div class="image-container"><img src="/../src/blog/images/bdc4308c-7035-406b-a406-26c01d283858/aHR0cHM6_WX20201027-1015302x.png" alt="WX20201027-101530@2x.png" /></div><h2>6. 内嵌网页</h2><h2>7.内嵌视频</h2><h2>8.代办</h2><p>家庭</p><div>洗衣</div><div>做饭</div><p>事业</p><div>开会</div><div>加班</div><h2>9.折叠列表</h2><div>点击展开</div><div>点击展开</div><div>点击展开</div><p>内容可以多级嵌套</p><p></p><h2>10. 同步块 </h2><p>Notion支持将不同页面的块进行同步，即 SyncBlock，以下是来自另一个页面的块：</p><div>注意 ： 同步块的使用条件是源页面也要被开放共享 ，否则NotionNext将无权访问，页面上会被忽略渲染。</div><div class="image-container"><img src="/../src/blog/images/23f23ef1-d518-44aa-9439-4a06d7774a8c/aHR0cHM6_Untitled.png" alt="Untitled" /></div><p></p><h1>11.多级目录</h1><p>heading标题在博客中自动转为目录</p><h2>二级目录1</h2><p>二级内容 1</p><h2>二级目录2</h2><p>二级内容2</p><h2>二级目录3</h2><div>三级目录3.1</div><p>不同级别的heading代表不同级别的目录</p><div>三级目录3.2</div><p>高一级目录嵌套低一级目录</p><h2>多级列表</h2><li>事物的必然性</li><ol><li>事物按规律变化，也有一种不可避免的性质．这种性质就叫做必然性</li><ol><li>事物的必然性，是事物本身的性质（我们反对宿命论的是其认为这一切是受神明的支配，而不是反对事物发展中存在的不可避免的性质的事实）</li><li>第三级别列表</li><li>第三级别列表</li></ol><ol><li>其决定于它自己本身发展的情况和周围的条件</li><ol><li>第三级别列表</li><li>第三级别列表</li></ol></ol></ol><h1>模板使用说明</h1><p>若要部署你的NotionNext项目，请复制该模板，并按照模板格式创建文章：</p><div>Notion 博客 | Notion</div><div>Notion Blog - EN | Notion</div><p>Notion页面中，每篇文章都将有以下属性🤔：</p><h1>评论插件</h1><p>系统支持 Waline\Giscus\Valine\GitTalk\Utterance\Cusdis\Twikoo六种评论插件，并且可以同时开启，点击评论区的Tab来体验。</p><p>按照以下教程可以开启响应的评论插件</p><div>NotionNext配置评论插件Twikoo | TANGLY's BLOG</div><div>NotionNext如何添加评论插件 | TANGLY's BLOG</div><div>NotionNext配置Valine/Waline评论插件 | TANGLY's BLOG</div><p></p><div>测试嵌入PDF.pdf</div><h1>引用文献</h1><div>1. 关于李白</div><p>引用另一篇文章→‣ </p></div>
+      <div class="article-tags"><a class="tag" href="/blog/tags/建站/"><span>建站</span></a><a class="tag" href="/blog/tags/文字/"><span>文字</span></a><a class="tag" href="/blog/tags/推荐/"><span>推荐</span></a>
+      </div>
+      <div class="author-info">
+        <div class="author-avatar"><img src="/assets/avatar.jpg" alt="JiangKing"></div>
+        <div class="author-details">
+          <h4>JiangKing</h4>
+          <p class="author-bio">STDIN | Think &gt;&gt; /dev/Mind✨ - 专注于技术分享与思考</p>
+        </div>
+      </div>
+      <div class="related-posts">
+        <h3 class="section-title">相关文章</h3>
+        <div class="related-grid">
+        </div>
+      </div>
+    </article>
+    <div class="article-actions">
+      <button class="action-btn" title="点赞">👍</button>
+      <button class="action-btn" title="收藏">⭐</button>
+      <button class="action-btn" title="评论">💬</button>
+      <div class="action-divider"></div>
+      <button class="action-btn" title="分享">📤</button>
+      <button class="action-btn" title="回到顶部" onclick="scrollToTop()">⬆️</button>
+    </div>
+    <nav class="toc" id="toc">
+      <h4 class="toc-title">目录</h4>
+      <ul class="toc-list">
+      </ul>
+    </nav>
+    <script>// ... existing code ... </script>
+  </body>
+</html>

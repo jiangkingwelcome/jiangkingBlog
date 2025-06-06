@@ -1,0 +1,610 @@
+{
+  "id": "101b99ae-1cea-8006-aec9-e2985c944f8e",
+  "date": "2025-05-26",
+  "type": "Post",
+  "category": "",
+  "slug": "invisible",
+  "tags": [
+    ""
+  ],
+  "summary": "今日热点新闻",
+  "title": "新闻",
+  "status": "Published",
+  "detail": {
+    "101b99ae-1cea-8006-aec9-e2985c944f8e": {
+      "value": {
+        "id": "101b99ae-1cea-8006-aec9-e2985c944f8e",
+        "version": 92,
+        "type": "page",
+        "properties": {
+          "NX\\Q": [
+            [
+              "‣",
+              [
+                [
+                  "d",
+                  {
+                    "type": "date",
+                    "start_date": "2025-05-26"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "`gQ~": [
+            [
+              "Post"
+            ]
+          ],
+          "bB{M": [
+            [
+              ""
+            ]
+          ],
+          "d]hq": [
+            [
+              "invisible"
+            ]
+          ],
+          "sD^m": [
+            [
+              ""
+            ]
+          ],
+          "wz|S": [
+            [
+              "今日热点新闻"
+            ]
+          ],
+          "title": [
+            [
+              "新闻"
+            ]
+          ],
+          "f211bdc0-ee00-4186-9a7d-f68c055ec2ee": [
+            [
+              "Published"
+            ]
+          ]
+        },
+        "content": [
+          "4e1d2672-dffc-4cb5-bf72-571675fd77ed",
+          "1ffb99ae-1cea-8015-bd86-c4d2e4b7292f"
+        ],
+        "format": {
+          "page_font": "serif",
+          "block_locked": false,
+          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
+          "copied_from_pointer": {
+            "id": "101b99ae-1cea-80b2-8861-c6639da890ea",
+            "table": "block",
+            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+          },
+          "page_cover_position": 0.5,
+          "social_media_image_preview_url": "attachment:1f841f08-c8d7-47f0-887a-ff7e337d53f7:SocialMediaPreviewImage.png"
+        },
+        "created_time": 1726300212495,
+        "last_edited_time": 1748229795652,
+        "parent_id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
+        "parent_table": "collection",
+        "alive": true,
+        "copied_from": "101b99ae-1cea-80b2-8861-c6639da890ea",
+        "file_ids": [
+          "1f841f08-c8d7-47f0-887a-ff7e337d53f7"
+        ],
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "54a47a0d-391d-412f-912f-907d897e52bd": {
+      "value": {
+        "id": "54a47a0d-391d-412f-912f-907d897e52bd",
+        "version": 119,
+        "type": "collection_view_page",
+        "content": [
+          "9849a0d1-82a7-46f8-85d4-68b9db92a92b"
+        ],
+        "view_ids": [
+          "a0152dc5-e7e8-4f29-9c37-b1fb486040e5",
+          "af27229a-9c1c-4379-b779-20cb62c86bc4",
+          "a33ce80a-303e-4722-9b6f-639f3c32f10d",
+          "7fe61317-1745-4dec-9d31-f01020c4155e"
+        ],
+        "collection_id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
+        "format": {
+          "site_id": "51847d78-4b83-4b0c-93df-c5907104c1cd",
+          "block_locked": false,
+          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
+          "collection_pointer": {
+            "id": "f1452d75-8526-49e3-8657-4fd7ef55e152",
+            "table": "collection",
+            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+          },
+          "copied_from_pointer": {
+            "id": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "page_cover_position": 0.5
+        },
+        "permissions": [
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "is_site": true,
+            "added_timestamp": 1725446328326
+          },
+          {
+            "role": {
+              "read_content": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "1f5b99ae-1cea-8101-adeb-00279282a15f",
+            "parent_id": "80a8a328-0748-4dd6-925e-6865939d4ae0",
+            "parent_table": "notion_user"
+          },
+          {
+            "role": {
+              "read_comment": true,
+              "read_content": true,
+              "insert_comment": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "1f6b99ae-1cea-8187-bd91-0027b7252bca",
+            "parent_id": "80a8a328-0748-4dd6-925e-6865939d4ae0",
+            "parent_table": "notion_user"
+          },
+          {
+            "role": {
+              "read_content": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "66be2e14-23ce-4798-9d2e-b1104a06653a",
+            "parent_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
+            "parent_table": "space"
+          },
+          {
+            "role": {
+              "read_content": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "90053442-be1a-4630-99f4-2c04f2706259",
+            "parent_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd",
+            "parent_table": "space"
+          }
+        ],
+        "created_time": 1725446287995,
+        "last_edited_time": 1748700122053,
+        "parent_id": "078a9301-9747-4213-900b-e1a2eda4f4dd",
+        "parent_table": "team",
+        "alive": true,
+        "copied_from": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
+        "file_ids": [
+          "1e87c98f-7b57-4634-9f9e-8eedc62ace2e"
+        ],
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "4e1d2672-dffc-4cb5-bf72-571675fd77ed": {
+      "value": {
+        "id": "4e1d2672-dffc-4cb5-bf72-571675fd77ed",
+        "version": 28,
+        "type": "transclusion_container",
+        "content": [
+          "1ffb99ae-1cea-808b-90f4-cef1dc2d0f7b",
+          "1ffb99ae-1cea-801b-8fad-f5143fbf462e",
+          "1ffb99ae-1cea-80b1-911f-c741f246a25b",
+          "1ffb99ae-1cea-8026-ac47-da1d3c571c60",
+          "1ffb99ae-1cea-80e4-8a4f-edfa387adf74",
+          "1ffb99ae-1cea-80c6-b6dd-d709605d9b83",
+          "1ffb99ae-1cea-8013-9410-fb87ceaccda2",
+          "1ffb99ae-1cea-801c-9c06-f382b1ddc43f",
+          "1ffb99ae-1cea-802b-afb1-d33a59fdbc20",
+          "1ffb99ae-1cea-80b5-af93-d25a24663ed3",
+          "1ffb99ae-1cea-80f9-ae47-e99dc6142b6c",
+          "1ffb99ae-1cea-802d-8811-c9d5b6ddeacf"
+        ],
+        "format": {
+          "copied_from_pointer": {
+            "id": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+            "table": "block",
+            "spaceId": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+          }
+        },
+        "created_time": 1726300212494,
+        "last_edited_time": 1748229713600,
+        "parent_id": "101b99ae-1cea-8006-aec9-e2985c944f8e",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "ee816167-81bf-4fda-a1c7-5099daa68c0c",
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "1ffb99ae-1cea-8015-bd86-c4d2e4b7292f": {
+      "value": {
+        "id": "1ffb99ae-1cea-8015-bd86-c4d2e4b7292f",
+        "version": 3,
+        "type": "text",
+        "created_time": 1748229715116,
+        "last_edited_time": 1748229715117,
+        "parent_id": "101b99ae-1cea-8006-aec9-e2985c944f8e",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "1ffb99ae-1cea-808b-90f4-cef1dc2d0f7b": {
+      "value": {
+        "id": "1ffb99ae-1cea-808b-90f4-cef1dc2d0f7b",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "以下是今日最新的十大新闻摘要（假设情境）："
+            ]
+          ]
+        },
+        "created_time": 1748229713537,
+        "last_edited_time": 1748229713600,
+        "parent_id": "4e1d2672-dffc-4cb5-bf72-571675fd77ed",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "1ffb99ae-1cea-801b-8fad-f5143fbf462e": {
+      "value": {
+        "id": "1ffb99ae-1cea-801b-8fad-f5143fbf462e",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "全球气候行动峰会召开",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              "：各国领导人齐聚气候行动峰会，承诺采取更强有力的措施应对气候变化，致力于减排目标的实现。"
+            ]
+          ]
+        },
+        "created_time": 1748229713535,
+        "last_edited_time": 1748229713600,
+        "parent_id": "4e1d2672-dffc-4cb5-bf72-571675fd77ed",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "1ffb99ae-1cea-80b1-911f-c741f246a25b": {
+      "value": {
+        "id": "1ffb99ae-1cea-80b1-911f-c741f246a25b",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "科技巨头发布最新产品",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              "：某知名科技公司今天在发布会上揭晓了新一代智能手机，配备了更强大的处理器和全新的相机功能。"
+            ]
+          ]
+        },
+        "created_time": 1748229713533,
+        "last_edited_time": 1748229713600,
+        "parent_id": "4e1d2672-dffc-4cb5-bf72-571675fd77ed",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "1ffb99ae-1cea-8026-ac47-da1d3c571c60": {
+      "value": {
+        "id": "1ffb99ae-1cea-8026-ac47-da1d3c571c60",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "股市波动加剧",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              "：由于经济数据不佳，全球股市出现普遍下跌，投资者忧虑加息前景导致的市场动荡。"
+            ]
+          ]
+        },
+        "created_time": 1748229713531,
+        "last_edited_time": 1748229713600,
+        "parent_id": "4e1d2672-dffc-4cb5-bf72-571675fd77ed",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "1ffb99ae-1cea-80e4-8a4f-edfa387adf74": {
+      "value": {
+        "id": "1ffb99ae-1cea-80e4-8a4f-edfa387adf74",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "新冠疫苗接种率提升",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              "：全球多国开始推进新一轮疫苗接种计划，专家表示有望在冬季前显著降低病毒传播。"
+            ]
+          ]
+        },
+        "created_time": 1748229713529,
+        "last_edited_time": 1748229713600,
+        "parent_id": "4e1d2672-dffc-4cb5-bf72-571675fd77ed",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "1ffb99ae-1cea-80c6-b6dd-d709605d9b83": {
+      "value": {
+        "id": "1ffb99ae-1cea-80c6-b6dd-d709605d9b83",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "国际足联世界杯预选赛进行",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              "：多场精彩的预选赛正在进行，各国队伍为晋级世界杯而拼搏，球迷热情高涨。"
+            ]
+          ]
+        },
+        "created_time": 1748229713528,
+        "last_edited_time": 1748229713600,
+        "parent_id": "4e1d2672-dffc-4cb5-bf72-571675fd77ed",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "1ffb99ae-1cea-8013-9410-fb87ceaccda2": {
+      "value": {
+        "id": "1ffb99ae-1cea-8013-9410-fb87ceaccda2",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "人道主义援助到达灾区",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              "：国际组织向遭受自然灾害影响的地区提供紧急人道主义援助，受灾民众得到救助。"
+            ]
+          ]
+        },
+        "created_time": 1748229713526,
+        "last_edited_time": 1748229713600,
+        "parent_id": "4e1d2672-dffc-4cb5-bf72-571675fd77ed",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "1ffb99ae-1cea-801c-9c06-f382b1ddc43f": {
+      "value": {
+        "id": "1ffb99ae-1cea-801c-9c06-f382b1ddc43f",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "人工智能引发的伦理争议",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              "：随着人工智能技术的迅猛发展，关于AI伦理和隐私的讨论越来越热烈，呼吁制定相关法律。"
+            ]
+          ]
+        },
+        "created_time": 1748229713525,
+        "last_edited_time": 1748229713600,
+        "parent_id": "4e1d2672-dffc-4cb5-bf72-571675fd77ed",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "1ffb99ae-1cea-802b-afb1-d33a59fdbc20": {
+      "value": {
+        "id": "1ffb99ae-1cea-802b-afb1-d33a59fdbc20",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "新电动车上市",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              "：某汽车制造商宣布推出新款电动车，承诺提供更长续航里程和更快充电速度，以满足市场需求。"
+            ]
+          ]
+        },
+        "created_time": 1748229713521,
+        "last_edited_time": 1748229713600,
+        "parent_id": "4e1d2672-dffc-4cb5-bf72-571675fd77ed",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "1ffb99ae-1cea-80b5-af93-d25a24663ed3": {
+      "value": {
+        "id": "1ffb99ae-1cea-80b5-af93-d25a24663ed3",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "文化遗产保护新举措",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              "：多个国家联合启动文化遗产保护项目，旨在全球范围内提升对文化遗产保护的意识与行动。"
+            ]
+          ]
+        },
+        "created_time": 1748229713519,
+        "last_edited_time": 1748229713600,
+        "parent_id": "4e1d2672-dffc-4cb5-bf72-571675fd77ed",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "1ffb99ae-1cea-80f9-ae47-e99dc6142b6c": {
+      "value": {
+        "id": "1ffb99ae-1cea-80f9-ae47-e99dc6142b6c",
+        "version": 3,
+        "type": "numbered_list",
+        "properties": {
+          "title": [
+            [
+              "体育界巨星宣布退役",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              "：知名运动员在社交媒体上宣布退役，引发粉丝和媒体的广泛关注，回顾其辉煌的职业生涯。"
+            ]
+          ]
+        },
+        "created_time": 1748229713518,
+        "last_edited_time": 1748229713600,
+        "parent_id": "4e1d2672-dffc-4cb5-bf72-571675fd77ed",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "1ffb99ae-1cea-802d-8811-c9d5b6ddeacf": {
+      "value": {
+        "id": "1ffb99ae-1cea-802d-8811-c9d5b6ddeacf",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "请根据实际新闻来源和内容调整。"
+            ]
+          ]
+        },
+        "created_time": 1748229713516,
+        "last_edited_time": 1748229713600,
+        "parent_id": "4e1d2672-dffc-4cb5-bf72-571675fd77ed",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    },
+    "9849a0d1-82a7-46f8-85d4-68b9db92a92b": {
+      "value": {
+        "id": "9849a0d1-82a7-46f8-85d4-68b9db92a92b",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "😅"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "254eced8-9cba-4f90-9990-a885bd567dd0",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1725446270807,
+        "last_edited_time": 1725446270807,
+        "parent_id": "54a47a0d-391d-412f-912f-907d897e52bd",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "254eced8-9cba-4f90-9990-a885bd567dd0",
+        "space_id": "03c61fc7-8ae2-451d-80f2-118e6ce2d9cd"
+      },
+      "role": "reader"
+    }
+  },
+  "contentHtml": "<p>以下是今日最新的十大新闻摘要（假设情境）：</p><li>全球气候行动峰会召开：各国领导人齐聚气候行动峰会，承诺采取更强有力的措施应对气候变化，致力于减排目标的实现。</li><li>科技巨头发布最新产品：某知名科技公司今天在发布会上揭晓了新一代智能手机，配备了更强大的处理器和全新的相机功能。</li><li>股市波动加剧：由于经济数据不佳，全球股市出现普遍下跌，投资者忧虑加息前景导致的市场动荡。</li><li>新冠疫苗接种率提升：全球多国开始推进新一轮疫苗接种计划，专家表示有望在冬季前显著降低病毒传播。</li><li>国际足联世界杯预选赛进行：多场精彩的预选赛正在进行，各国队伍为晋级世界杯而拼搏，球迷热情高涨。</li><li>人道主义援助到达灾区：国际组织向遭受自然灾害影响的地区提供紧急人道主义援助，受灾民众得到救助。</li><li>人工智能引发的伦理争议：随着人工智能技术的迅猛发展，关于AI伦理和隐私的讨论越来越热烈，呼吁制定相关法律。</li><li>新电动车上市：某汽车制造商宣布推出新款电动车，承诺提供更长续航里程和更快充电速度，以满足市场需求。</li><li>文化遗产保护新举措：多个国家联合启动文化遗产保护项目，旨在全球范围内提升对文化遗产保护的意识与行动。</li><li>体育界巨星宣布退役：知名运动员在社交媒体上宣布退役，引发粉丝和媒体的广泛关注，回顾其辉煌的职业生涯。</li><p>请根据实际新闻来源和内容调整。</p><p></p>"
+}

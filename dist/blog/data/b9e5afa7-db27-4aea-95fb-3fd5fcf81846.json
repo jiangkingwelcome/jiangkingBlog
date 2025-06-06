@@ -1,0 +1,873 @@
+{
+  "id": "b9e5afa7-db27-4aea-95fb-3fd5fcf81846",
+  "icon": "fas fa-link",
+  "date": "2022-04-08",
+  "type": "Page",
+  "slug": "links",
+  "summary": "单页不会显示在博客列表，会在导航添加一个菜单。",
+  "title": "友链",
+  "status": "Published",
+  "detail": {
+    "b9e5afa7-db27-4aea-95fb-3fd5fcf81846": {
+      "value": {
+        "id": "b9e5afa7-db27-4aea-95fb-3fd5fcf81846",
+        "version": 196,
+        "type": "page",
+        "properties": {
+          "Dj]h": [
+            [
+              "fas fa-link"
+            ]
+          ],
+          "NX\\Q": [
+            [
+              "‣",
+              [
+                [
+                  "d",
+                  {
+                    "type": "date",
+                    "start_date": "2022-04-08"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "`gQ~": [
+            [
+              "Page"
+            ]
+          ],
+          "d]hq": [
+            [
+              "links"
+            ]
+          ],
+          "wz|S": [
+            [
+              "单页不会显示在博客列表，会在导航添加一个菜单。"
+            ]
+          ],
+          "title": [
+            [
+              "友链"
+            ]
+          ],
+          "f211bdc0-ee00-4186-9a7d-f68c055ec2ee": [
+            [
+              "Published"
+            ]
+          ]
+        },
+        "content": [
+          "b0a9489e-39a6-4c59-ab95-c296e39a3473",
+          "e25cefed-f0bc-4457-a84c-edc6b068a08f",
+          "de680361-b0b0-4c0c-9895-e9ddaa9a6637",
+          "9b54ef15-cf07-4232-b45c-d91fbcff60e7",
+          "ce207db8-6484-414e-a494-6f6136928fd6",
+          "8d9a420a-4607-4c07-ab12-71fe640bfb96",
+          "d102bd13-1c42-41ae-a431-1cc2642b8d65",
+          "2883c35c-c4e0-4de9-910f-4b23a5b045d8",
+          "18e1288b-cc28-471a-8e54-dc573c87d68e",
+          "464638a4-160c-46ac-b019-d092bef43909",
+          "950e6101-301f-430a-9264-9cfc04b89a6a"
+        ],
+        "created_time": 1649387940000,
+        "last_edited_time": 1684139533469,
+        "parent_id": "4379bc14-5d22-453b-a153-12639616fc01",
+        "parent_table": "collection",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "02ab3b86-7800-4aa6-9e9e-415905ef32a5": {
+      "value": {
+        "id": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
+        "version": 687,
+        "type": "collection_view_page",
+        "content": [
+          "254eced8-9cba-4f90-9990-a885bd567dd0"
+        ],
+        "view_ids": [
+          "b7eb2157-2022-4ca5-827b-faa5ef82cf2d",
+          "e17348d8-5a80-4f02-813c-025b790d16c8",
+          "5010afdb-92b5-4f49-958b-0b8c900d6190",
+          "a80c22ef-8b56-410d-af06-07615c5f2654"
+        ],
+        "collection_id": "4379bc14-5d22-453b-a153-12639616fc01",
+        "format": {
+          "site_id": "1b596b44-beb9-8187-9ad5-00790706705c",
+          "block_locked": false,
+          "block_locked_by": "27074aef-7216-41ed-baef-d9b53addd870",
+          "collection_pointer": {
+            "id": "4379bc14-5d22-453b-a153-12639616fc01",
+            "table": "collection",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "copied_from_pointer": {
+            "id": "bee1fccf-a3bd-47a1-a7be-83cc71372d83",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "page_cover_position": 0.6
+        },
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "27074aef-7216-41ed-baef-d9b53addd870"
+          },
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "is_site": true,
+            "added_timestamp": 1681797627522
+          }
+        ],
+        "created_time": 1636081968996,
+        "last_edited_time": 1737345255598,
+        "parent_id": "8991aef4-e3d8-4f18-9a70-d447fe4d47c7",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "bee1fccf-a3bd-47a1-a7be-83cc71372d83",
+        "file_ids": [
+          "abe3a0aa-2aff-4274-81bb-c2443d4ef9e2",
+          "a2a32795-101d-46aa-a7f6-eb35b8750166",
+          "29db38d2-d5fa-4fa6-8a92-3b527cfe80d1"
+        ],
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "8991aef4-e3d8-4f18-9a70-d447fe4d47c7": {
+      "role": "none"
+    },
+    "6b25c0c0-5330-4883-8835-eeb44bacfb48": {
+      "role": "none"
+    },
+    "b0a9489e-39a6-4c59-ab95-c296e39a3473": {
+      "value": {
+        "id": "b0a9489e-39a6-4c59-ab95-c296e39a3473",
+        "version": 71,
+        "type": "header",
+        "properties": {
+          "title": [
+            [
+              "示例友链"
+            ]
+          ]
+        },
+        "created_time": 1649388257806,
+        "last_edited_time": 1654654920000,
+        "parent_id": "b9e5afa7-db27-4aea-95fb-3fd5fcf81846",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "e25cefed-f0bc-4457-a84c-edc6b068a08f": {
+      "value": {
+        "id": "e25cefed-f0bc-4457-a84c-edc6b068a08f",
+        "version": 7,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "请在你的Notion模板中修改此页面内容。"
+            ]
+          ]
+        },
+        "created_time": 1654654920000,
+        "last_edited_time": 1654654920000,
+        "parent_id": "b9e5afa7-db27-4aea-95fb-3fd5fcf81846",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "de680361-b0b0-4c0c-9895-e9ddaa9a6637": {
+      "value": {
+        "id": "de680361-b0b0-4c0c-9895-e9ddaa9a6637",
+        "version": 4,
+        "type": "text",
+        "created_time": 1654654920000,
+        "last_edited_time": 1654654920000,
+        "parent_id": "b9e5afa7-db27-4aea-95fb-3fd5fcf81846",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "9b54ef15-cf07-4232-b45c-d91fbcff60e7": {
+      "value": {
+        "id": "9b54ef15-cf07-4232-b45c-d91fbcff60e7",
+        "version": 64,
+        "type": "header",
+        "properties": {
+          "title": [
+            [
+              "Gallery排版"
+            ]
+          ]
+        },
+        "created_time": 1654654920000,
+        "last_edited_time": 1655433060000,
+        "parent_id": "b9e5afa7-db27-4aea-95fb-3fd5fcf81846",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "ce207db8-6484-414e-a494-6f6136928fd6": {
+      "value": {
+        "id": "ce207db8-6484-414e-a494-6f6136928fd6",
+        "version": 9,
+        "type": "collection_view",
+        "view_ids": [
+          "9ccfe6bd-df92-497c-88c2-4117d9cc4369"
+        ],
+        "collection_id": "b3dc2eb9-3013-450e-9a1f-d891e57a2578",
+        "format": {
+          "collection_pointer": {
+            "id": "b3dc2eb9-3013-450e-9a1f-d891e57a2578",
+            "table": "collection",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "copied_from_pointer": {
+            "id": "c7e030aa-217d-4855-a447-68f530b7a6f6",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        },
+        "created_time": 1654655031027,
+        "last_edited_time": 1654655547657,
+        "parent_id": "b9e5afa7-db27-4aea-95fb-3fd5fcf81846",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "c7e030aa-217d-4855-a447-68f530b7a6f6",
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader",
+      "collection": {
+        "title": [
+          [
+            ""
+          ]
+        ],
+        "schema": {
+          "PgZk": {
+            "name": "URL-TEXT",
+            "type": "text"
+          },
+          "title": {
+            "name": "Name",
+            "type": "title"
+          }
+        },
+        "types": [
+          {
+            "id": "9ccfe6bd-df92-497c-88c2-4117d9cc4369",
+            "version": 3,
+            "type": "gallery",
+            "format": {
+              "table_wrap": true,
+              "gallery_cover": {
+                "type": "page_cover"
+              },
+              "table_properties": [
+                {
+                  "width": 276,
+                  "visible": true,
+                  "property": "title"
+                },
+                {
+                  "visible": true,
+                  "property": "czdN"
+                }
+              ],
+              "collection_pointer": {
+                "id": "b3dc2eb9-3013-450e-9a1f-d891e57a2578",
+                "table": "collection",
+                "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+              },
+              "gallery_properties": [
+                {
+                  "visible": true,
+                  "property": "title"
+                },
+                {
+                  "visible": true,
+                  "property": "YNJw"
+                },
+                {
+                  "visible": true,
+                  "property": "PgZk"
+                }
+              ],
+              "gallery_cover_aspect": "cover",
+              "hide_linked_collection_name": true
+            },
+            "parent_id": "ce207db8-6484-414e-a494-6f6136928fd6",
+            "parent_table": "block",
+            "alive": true,
+            "page_sort": [
+              "23e96428-0c41-43c0-92c7-db0d96c02a04",
+              "97fe3e08-cdaf-41d4-b243-ad53612aeb03",
+              "f12ac8f2-e1a2-4421-b8e4-db3371a151a9"
+            ],
+            "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          }
+        ],
+        "data": [
+          {
+            "id": "23e96428-0c41-43c0-92c7-db0d96c02a04",
+            "URL-TEXT": [
+              [
+                "https://tangly1024.com/",
+                [
+                  [
+                    "a",
+                    "https://tangly1024.com/"
+                  ]
+                ]
+              ]
+            ],
+            "Name": [
+              [
+                "Tangly`s Blog"
+              ]
+            ]
+          },
+          {
+            "id": "97fe3e08-cdaf-41d4-b243-ad53612aeb03",
+            "URL-TEXT": [
+              [
+                "https://docs.tangly1024.com/zh",
+                [
+                  [
+                    "a",
+                    "https://docs.tangly1024.com/zh"
+                  ]
+                ]
+              ]
+            ],
+            "Name": [
+              [
+                "NotionNext`s Doc"
+              ]
+            ]
+          },
+          {
+            "id": "f12ac8f2-e1a2-4421-b8e4-db3371a151a9",
+            "URL-TEXT": [
+              [
+                "https://github.com/tangly1024/NotionNext",
+                [
+                  [
+                    "a",
+                    "https://github.com/tangly1024/NotionNext"
+                  ]
+                ]
+              ]
+            ],
+            "Name": [
+              [
+                "NotionNext Github"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "8d9a420a-4607-4c07-ab12-71fe640bfb96": {
+      "value": {
+        "id": "8d9a420a-4607-4c07-ab12-71fe640bfb96",
+        "version": 147,
+        "type": "text",
+        "created_time": 1652844120000,
+        "last_edited_time": 1654654980000,
+        "parent_id": "b9e5afa7-db27-4aea-95fb-3fd5fcf81846",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "d102bd13-1c42-41ae-a431-1cc2642b8d65": {
+      "value": {
+        "id": "d102bd13-1c42-41ae-a431-1cc2642b8d65",
+        "version": 77,
+        "type": "header",
+        "properties": {
+          "title": [
+            [
+              "分栏排版"
+            ]
+          ]
+        },
+        "created_time": 1654654980000,
+        "last_edited_time": 1655433060000,
+        "parent_id": "b9e5afa7-db27-4aea-95fb-3fd5fcf81846",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "2883c35c-c4e0-4de9-910f-4b23a5b045d8": {
+      "value": {
+        "id": "2883c35c-c4e0-4de9-910f-4b23a5b045d8",
+        "version": 6,
+        "type": "column_list",
+        "content": [
+          "ea2990a4-1268-48d7-9450-a175360b6f7d",
+          "76c7e44c-5ba4-43af-a450-2b67d508fce2",
+          "69ab3ded-4ed3-4186-a5ca-76dacce9773d"
+        ],
+        "created_time": 1649388180000,
+        "last_edited_time": 1649388180000,
+        "parent_id": "b9e5afa7-db27-4aea-95fb-3fd5fcf81846",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "18e1288b-cc28-471a-8e54-dc573c87d68e": {
+      "value": {
+        "id": "18e1288b-cc28-471a-8e54-dc573c87d68e",
+        "version": 50,
+        "type": "header",
+        "properties": {
+          "title": [
+            [
+              "书签"
+            ]
+          ]
+        },
+        "created_time": 1649407920000,
+        "last_edited_time": 1655433060000,
+        "parent_id": "b9e5afa7-db27-4aea-95fb-3fd5fcf81846",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "464638a4-160c-46ac-b019-d092bef43909": {
+      "value": {
+        "id": "464638a4-160c-46ac-b019-d092bef43909",
+        "version": 8,
+        "type": "bookmark",
+        "properties": {
+          "link": [
+            [
+              "https://tangly1024.com/"
+            ]
+          ],
+          "title": [
+            [
+              "TANGLY's BLOG | 记录思考、分享我的学习笔记"
+            ]
+          ],
+          "description": [
+            [
+              "记录思考、分享我的学习笔记"
+            ]
+          ]
+        },
+        "format": {
+          "bookmark_icon": "/../src/blog/images/464638a4-160c-46ac-b019-d092bef43909/icon_aHR0cHM6_favicon.ico",
+          "bookmark_cover": "/../src/blog/images/464638a4-160c-46ac-b019-d092bef43909/bookmark_aHR0cHM6_https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F10eb466a-599b-4513-bcbf-2331cf88078d%2Fpexels-photo-546819.webp"
+        },
+        "created_time": 1655433060000,
+        "last_edited_time": 1655433060000,
+        "parent_id": "b9e5afa7-db27-4aea-95fb-3fd5fcf81846",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "950e6101-301f-430a-9264-9cfc04b89a6a": {
+      "value": {
+        "id": "950e6101-301f-430a-9264-9cfc04b89a6a",
+        "version": 8,
+        "type": "bookmark",
+        "properties": {
+          "link": [
+            [
+              "https://tangly1024.com/"
+            ]
+          ],
+          "title": [
+            [
+              "TANGLY's BLOG | 记录思考、分享我的学习笔记"
+            ]
+          ],
+          "description": [
+            [
+              "记录思考、分享我的学习笔记"
+            ]
+          ]
+        },
+        "format": {
+          "bookmark_icon": "/../src/blog/images/950e6101-301f-430a-9264-9cfc04b89a6a/icon_aHR0cHM6_favicon.ico",
+          "bookmark_cover": "/../src/blog/images/950e6101-301f-430a-9264-9cfc04b89a6a/bookmark_aHR0cHM6_https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F10eb466a-599b-4513-bcbf-2331cf88078d%2Fpexels-photo-546819.webp"
+        },
+        "created_time": 1655433060000,
+        "last_edited_time": 1655433060000,
+        "parent_id": "b9e5afa7-db27-4aea-95fb-3fd5fcf81846",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "ea2990a4-1268-48d7-9450-a175360b6f7d": {
+      "value": {
+        "id": "ea2990a4-1268-48d7-9450-a175360b6f7d",
+        "version": 17,
+        "type": "column",
+        "content": [
+          "36b7c7bf-f2c6-40dd-9a48-c274e97abdc3",
+          "c449db3a-52c9-4abd-818e-aecd5ebd4f0b",
+          "d2734d21-304d-4d28-9e57-a0b9e964ea82"
+        ],
+        "format": {
+          "column_ratio": 0.3333333333333333
+        },
+        "created_time": 1649388180000,
+        "last_edited_time": 1667959980000,
+        "parent_id": "2883c35c-c4e0-4de9-910f-4b23a5b045d8",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "76c7e44c-5ba4-43af-a450-2b67d508fce2": {
+      "value": {
+        "id": "76c7e44c-5ba4-43af-a450-2b67d508fce2",
+        "version": 16,
+        "type": "column",
+        "content": [
+          "0b585a53-4085-4bdc-b853-df8508b658cc",
+          "078a5ef7-86ce-48cf-9689-78a805bb2230"
+        ],
+        "format": {
+          "column_ratio": 0.3333333333333333
+        },
+        "created_time": 1649388180000,
+        "last_edited_time": 1667962140000,
+        "parent_id": "2883c35c-c4e0-4de9-910f-4b23a5b045d8",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "69ab3ded-4ed3-4186-a5ca-76dacce9773d": {
+      "value": {
+        "id": "69ab3ded-4ed3-4186-a5ca-76dacce9773d",
+        "version": 14,
+        "type": "column",
+        "content": [
+          "d3654247-5862-4be6-992c-d25e7582d7f5",
+          "7c881620-3a6c-4650-814f-1b8b12aad4f5"
+        ],
+        "format": {
+          "column_ratio": 0.33333333333333354
+        },
+        "created_time": 1649388180000,
+        "last_edited_time": 1667962140000,
+        "parent_id": "2883c35c-c4e0-4de9-910f-4b23a5b045d8",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "36b7c7bf-f2c6-40dd-9a48-c274e97abdc3": {
+      "value": {
+        "id": "36b7c7bf-f2c6-40dd-9a48-c274e97abdc3",
+        "version": 33,
+        "type": "image",
+        "properties": {
+          "size": [
+            [
+              "176.1KB"
+            ]
+          ],
+          "title": [
+            [
+              "Untitled"
+            ]
+          ],
+          "source": [
+            [
+              "/../src/blog/images/36b7c7bf-f2c6-40dd-9a48-c274e97abdc3/aHR0cHM6_Untitled.png"
+            ]
+          ],
+          "caption": [
+            [
+              "https://tangly1024.com",
+              [
+                [
+                  "a",
+                  "https://tangly1024.com/"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "block_width": 192,
+          "block_height": 480,
+          "display_source": "/../src/blog/images/36b7c7bf-f2c6-40dd-9a48-c274e97abdc3/aHR0cHM6_Untitled.png",
+          "block_full_width": false,
+          "block_page_width": false,
+          "block_aspect_ratio": 1,
+          "block_preserve_scale": true
+        },
+        "created_time": 1649388120000,
+        "last_edited_time": 1667959980000,
+        "parent_id": "ea2990a4-1268-48d7-9450-a175360b6f7d",
+        "parent_table": "block",
+        "alive": true,
+        "file_ids": [
+          "267b101b-4a9d-4401-a6d6-6e758552bdd4"
+        ],
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "c449db3a-52c9-4abd-818e-aecd5ebd4f0b": {
+      "value": {
+        "id": "c449db3a-52c9-4abd-818e-aecd5ebd4f0b",
+        "version": 150,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "             我的博客"
+            ]
+          ]
+        },
+        "created_time": 1649388240000,
+        "last_edited_time": 1667962140000,
+        "parent_id": "ea2990a4-1268-48d7-9450-a175360b6f7d",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "d2734d21-304d-4d28-9e57-a0b9e964ea82": {
+      "value": {
+        "id": "d2734d21-304d-4d28-9e57-a0b9e964ea82",
+        "version": 3,
+        "type": "text",
+        "created_time": 1667959920000,
+        "last_edited_time": 1667959920000,
+        "parent_id": "ea2990a4-1268-48d7-9450-a175360b6f7d",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "0b585a53-4085-4bdc-b853-df8508b658cc": {
+      "value": {
+        "id": "0b585a53-4085-4bdc-b853-df8508b658cc",
+        "version": 6,
+        "type": "image",
+        "properties": {
+          "size": [
+            [
+              "176.1KB"
+            ]
+          ],
+          "title": [
+            [
+              "Untitled"
+            ]
+          ],
+          "source": [
+            [
+              "/../src/blog/images/0b585a53-4085-4bdc-b853-df8508b658cc/aHR0cHM6_Untitled.png"
+            ]
+          ],
+          "caption": [
+            [
+              "https://tangly1024.com",
+              [
+                [
+                  "a",
+                  "https://tangly1024.com/"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "block_width": 192,
+          "block_height": 480,
+          "display_source": "/../src/blog/images/0b585a53-4085-4bdc-b853-df8508b658cc/aHR0cHM6_Untitled.png",
+          "block_full_width": false,
+          "block_page_width": false,
+          "block_aspect_ratio": 1,
+          "copied_from_pointer": {
+            "id": "36b7c7bf-f2c6-40dd-9a48-c274e97abdc3",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "block_preserve_scale": true
+        },
+        "created_time": 1649388231087,
+        "last_edited_time": 1649388180000,
+        "parent_id": "76c7e44c-5ba4-43af-a450-2b67d508fce2",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "36b7c7bf-f2c6-40dd-9a48-c274e97abdc3",
+        "file_ids": [
+          "267b101b-4a9d-4401-a6d6-6e758552bdd4"
+        ],
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "078a5ef7-86ce-48cf-9689-78a805bb2230": {
+      "value": {
+        "id": "078a5ef7-86ce-48cf-9689-78a805bb2230",
+        "version": 73,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "              友情链接"
+            ]
+          ]
+        },
+        "created_time": 1649388240000,
+        "last_edited_time": 1667962140000,
+        "parent_id": "76c7e44c-5ba4-43af-a450-2b67d508fce2",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "d3654247-5862-4be6-992c-d25e7582d7f5": {
+      "value": {
+        "id": "d3654247-5862-4be6-992c-d25e7582d7f5",
+        "version": 37,
+        "type": "image",
+        "properties": {
+          "size": [
+            [
+              "176.1KB"
+            ]
+          ],
+          "title": [
+            [
+              "Untitled"
+            ]
+          ],
+          "source": [
+            [
+              "/../src/blog/images/d3654247-5862-4be6-992c-d25e7582d7f5/aHR0cHM6_Untitled.png"
+            ]
+          ],
+          "caption": [
+            [
+              "图片标注"
+            ]
+          ]
+        },
+        "format": {
+          "block_width": 192,
+          "block_height": 480,
+          "display_source": "/../src/blog/images/d3654247-5862-4be6-992c-d25e7582d7f5/aHR0cHM6_Untitled.png",
+          "block_full_width": false,
+          "block_page_width": true,
+          "block_aspect_ratio": 1,
+          "copied_from_pointer": {
+            "id": "0b585a53-4085-4bdc-b853-df8508b658cc",
+            "table": "block",
+            "spaceId": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+          },
+          "block_preserve_scale": true
+        },
+        "created_time": 1649388234997,
+        "last_edited_time": 1684139539474,
+        "parent_id": "69ab3ded-4ed3-4186-a5ca-76dacce9773d",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "0b585a53-4085-4bdc-b853-df8508b658cc",
+        "file_ids": [
+          "267b101b-4a9d-4401-a6d6-6e758552bdd4"
+        ],
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "7c881620-3a6c-4650-814f-1b8b12aad4f5": {
+      "value": {
+        "id": "7c881620-3a6c-4650-814f-1b8b12aad4f5",
+        "version": 92,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "             "
+            ],
+            [
+              "文字链接",
+              [
+                [
+                  "a",
+                  "https://tangly1024.com"
+                ]
+              ]
+            ]
+          ]
+        },
+        "created_time": 1649388240000,
+        "last_edited_time": 1667962140000,
+        "parent_id": "69ab3ded-4ed3-4186-a5ca-76dacce9773d",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    },
+    "254eced8-9cba-4f90-9990-a885bd567dd0": {
+      "value": {
+        "id": "254eced8-9cba-4f90-9990-a885bd567dd0",
+        "version": 2,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "😅"
+            ]
+          ]
+        },
+        "created_time": 1652491338163,
+        "last_edited_time": 1652491320000,
+        "parent_id": "02ab3b86-7800-4aa6-9e9e-415905ef32a5",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "6c096b44-beb9-48ee-8f92-1efdde47f3a3"
+      },
+      "role": "reader"
+    }
+  },
+  "contentHtml": "<h1>示例友链</h1><p>请在你的Notion模板中修改此页面内容。</p><p></p><h1>Gallery排版</h1><p></p><h1>分栏排版</h1><div class=\"image-container\"><img src=\"/../src/blog/images/36b7c7bf-f2c6-40dd-9a48-c274e97abdc3/aHR0cHM6_Untitled.png\" alt=\"Untitled\" /></div><p>             我的博客</p><p></p><div class=\"image-container\"><img src=\"/../src/blog/images/0b585a53-4085-4bdc-b853-df8508b658cc/aHR0cHM6_Untitled.png\" alt=\"Untitled\" /></div><p>              友情链接</p><div class=\"image-container\"><img src=\"/../src/blog/images/d3654247-5862-4be6-992c-d25e7582d7f5/aHR0cHM6_Untitled.png\" alt=\"Untitled\" /></div><p>             文字链接</p><h1>书签</h1><div>TANGLY's BLOG | 记录思考、分享我的学习笔记</div><div>TANGLY's BLOG | 记录思考、分享我的学习笔记</div>"
+}

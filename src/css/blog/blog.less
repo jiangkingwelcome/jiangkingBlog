@@ -229,10 +229,10 @@ body {
 
 /* 统计数据 - 赛博朋克风格 */
 .stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
 }
 
 .stat-card {
@@ -245,6 +245,8 @@ body {
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
   &::before {
     content: '';
@@ -589,7 +591,7 @@ body {
   margin: 0 auto;
 }
 
-/* 文章卡片 - 超级炫酷版 */
+/* 文章卡片 - 花瓣装饰效果 */
 .posts-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -636,48 +638,93 @@ body {
     left: 100%;
   }
 
-  &::after { // 卡片边框动画
+  // 花瓣装饰
+  &::after {
     content: '';
     position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
+    top: -50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
     background: linear-gradient(
       45deg,
       var(--primary),
       var(--secondary),
-      var(--accent),
-      var(--primary)
+      var(--accent)
     );
-    border-radius: 20px;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 0.3s;
-    animation: borderAnimation 3s linear infinite;
+    opacity: 0.2;
+    z-index: 1;
+    transition: all 0.3s;
+    clip-path: polygon(
+      50% 0%, 
+      80% 10%, 
+      100% 35%, 
+      100% 70%, 
+      80% 90%, 
+      50% 100%, 
+      20% 90%, 
+      0% 70%, 
+      0% 35%, 
+      20% 10%
+    );
+    animation: flowerSpin 10s linear infinite;
   }
   
   &:hover::after {
-    opacity: 1;
+    opacity: 0.4;
+    transform: scale(1.2);
   }
 
   &:hover {
-    transform: translateY(-10px) scale(1.02); // Base hover transform
+    transform: translateY(-10px) scale(1.02);
     box-shadow: 
       0 20px 40px rgba(99, 102, 241, 0.3),
       0 0 60px rgba(99, 102, 241, 0.1);
     border-color: var(--primary);
   }
+
+  // 添加多个花瓣装饰
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    opacity: 0.15;
+    border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+    transition: all 0.3s;
+    animation: flowerSpin 10s linear infinite;
+  }
+
+  &:before {
+    top: -20px;
+    right: -20px;
+    animation-duration: 15s;
+    animation-direction: reverse;
+  }
+
+  &:after {
+    bottom: -30px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+    animation-duration: 20s;
+  }
+}
+
+@keyframes flowerSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 @keyframes cardEntry {
   from {
     opacity: 0;
-    transform: translateY(50px) rotateX(-10deg);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
-    transform: translateY(0) rotateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -1450,4 +1497,188 @@ body {
     height: 40px;
     font-size: 18px;
   }
+}
+.category-popup {
+  width: 220px;
+  background: var(--glass);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(99, 102, 241, 0.3);
+  display: none;
+  z-index: 1000;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: scale(0.95);
+  opacity: 0;
+}
+
+.category-popup.show {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.category-title {
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.category-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.category-list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.category-list::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+.category-item {
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
+}
+
+.category-item:hover {
+  background: rgba(99, 102, 241, 0.1);
+  border-left-color: var(--primary);
+}
+
+.category-item.active {
+  background: rgba(99, 102, 241, 0.2);
+  border-left-color: var(--primary);
+}
+
+.category-count {
+  background: var(--glass);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* 图片样式 */
+.image-container {
+  margin: 30px 0;
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.image-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  min-height: 100px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* 图片错误状态 */
+.image-container img.error {
+  object-fit: contain;
+  background-color: #f8f9fa;
+  border: 1px dashed #dee2e6;
+  padding: 20px;
+  cursor: pointer;
+  min-height: 200px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 图片加载中状态 */
+.image-container img[src$="placeholder-image.svg"] {
+  background-color: #f8f9fa;
+  padding: 20px;
+  cursor: pointer;
+  min-height: 200px;
+}
+
+/* 图片标题 */
+.image-container::after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-container:hover::after {
+  opacity: 1;
+}
+
+/* Notion图片特殊处理 */
+.image-container img[src*="secure.notion-static"],
+.image-container img[src*="prod-files-secure"],
+.image-container img[src*="s3.us-west-2.amazonaws"] {
+  object-fit: contain;  /* 防止图片变形 */
+  background-color: #ffffff;
+}
+
+/* 添加加载动画 */
+@keyframes imageLoading {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.image-container img:not([src]),
+.image-container img[src=""] {
+  animation: imageLoading 1.5s infinite;
+  background: linear-gradient(90deg, #f0f0f0 0px, #f8f8f8 40px, #f0f0f0 80px);
+  background-size: 600px 100%;
+  min-height: 200px;
 }

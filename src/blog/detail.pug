@@ -8,7 +8,30 @@ html(lang="zh-CN")
     title #{title} - JiangKing/Blog
     link(rel="stylesheet" href="/css/blog.css")
     style.
-      // ... existing code ...
+      .image-container {
+        margin: 20px 0;
+        text-align: center;
+        position: relative;
+      }
+      
+      .image-container img {
+        max-width: 100%;
+        min-height: 150px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      }
+      
+      /* 特殊样式用于SVG图片 */
+      .image-container img.svg-image {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border: 1px solid #e2e8f0;
+      }
+      
+      .image-container img.error {
+        border: 1px dashed #ff5555;
+        background-color: #ffecea;
+      }
   body
     .dynamic-bg
     .grid-bg
@@ -36,31 +59,26 @@ html(lang="zh-CN")
             | #{date}
           span.meta-item
             span.meta-icon ⏱️
-            | #{readingTime}
+            | 1 min read
           span.meta-item
             span.meta-icon 👁️
-            | #{views}
+            | 1.2k
     article.article-container
-      .article-content !{content}
+      .article-content
+        | !{content}
       .article-tags
-        - var safeTags = (typeof tags !== 'undefined' && Array.isArray(tags)) ? tags : [];
-        each tag in safeTags
-          a.tag(href=`/blog/tags/${tag}/`)
-            span= tag
+        each tag in tags || []
+          a.tag(href=`/blog/?tag=${tag}`) #{tag}
       .author-info
         .author-avatar
-          img(src=authorAvatar alt=author)
+          img(src="/assets/avatar.jpg" alt=author)
         .author-details
-          h4= author
-          p.author-bio= authorBio
+          h4 #{author}
+          p.author-bio STDIN | Think >> /dev/Mind✨ - 专注于技术分享与思考
       .related-posts
         h3.section-title 相关文章
         .related-grid
-          - var safeRelated = (typeof related !== 'undefined' && Array.isArray(related)) ? related : [];
-          each post in safeRelated
-            a.related-card(href=post.url)
-              h4.related-title= post.title
-              p.related-meta= post.meta
+          //- 相关文章内容
     .article-actions
       button.action-btn(title="点赞") 👍
       button.action-btn(title="收藏") ⭐
@@ -71,9 +89,156 @@ html(lang="zh-CN")
     nav.toc#toc
       h4.toc-title 目录
       ul.toc-list
-        - var safeToc = (typeof toc !== 'undefined' && Array.isArray(toc)) ? toc : [];
-        each item in safeToc
-          li.toc-item
-            a.toc-link(href=item.href class=item.active ? 'active' : '')= item.text
+        //- 目录内容
     script.
-      // ... existing code ... 
+      // 页面加载完成后执行
+      document.addEventListener('DOMContentLoaded', function() {
+        console.log('开始处理图片显示问题');
+        
+        // 检测浏览器是否支持webp格式
+        function checkWebpSupport() {
+          const canvas = document.createElement('canvas');
+          if (!canvas.getContext || !canvas.getContext('2d')) {
+            return false;
+          }
+          
+          return canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+        }
+        
+        const supportsWebp = checkWebpSupport();
+        console.log('浏览器支持webp格式:', supportsWebp);
+
+        // 1. 处理直接显示为文本的图片URL (657bf33bfbf478066fd24f11b0eb95f7.webp)
+        const allElements = document.querySelectorAll('.article-content *');
+        allElements.forEach(el => {
+          // 检查是否为纯文本元素且文本内容像图片URL
+          const content = el.textContent ? el.textContent.trim() : '';
+          if (content && (
+              content.match(/[a-f0-9]{32}\.webp$/i) ||
+              content.match(/\.(webp|jpg|png|gif|jpeg)$/i)
+            ) &&
+            el.childNodes.length === 1 &&
+            el.childNodes[0].nodeType === Node.TEXT_NODE) {
+            
+            console.log('找到可能是图片URL的文本:', content);
+            
+            // 创建图片容器和图片元素
+            const imgContainer = document.createElement('div');
+            imgContainer.className = 'image-container';
+            
+            const img = document.createElement('img');
+            
+            // 尝试构造正确的图片路径
+            if (content.startsWith('/')) {
+              // 已经是相对路径
+              img.src = content;
+            } else if (content.match(/[a-f0-9]{32}\.webp$/i) || content.endsWith('.webp')) {
+              // 看起来像是在当前文章目录下的webp图片
+              const articleId = window.location.pathname.split('/').pop().replace('.html', '');
+              img.src = `/blog/images/${articleId}/${content}`;
+            } else {
+              // 默认使用占位图
+              img.src = '/assets/placeholder-image.svg';
+            }
+            
+            // 添加错误处理
+            img.alt = '文章图片';
+            img.setAttribute('data-original-text', content);
+            img.onerror = function() {
+              this.onerror = null;
+              this.src = '/assets/placeholder-image.svg';
+              this.classList.add('error');
+            };
+            
+            imgContainer.appendChild(img);
+            
+            // 替换元素
+            el.parentNode.replaceChild(imgContainer, el);
+          }
+        });
+        
+        // 2. 检查图片容器内容
+        const imageContainers = document.querySelectorAll('.image-container');
+        console.log('找到图片容器:', imageContainers.length);
+        
+        imageContainers.forEach((container) => {
+          // 检查容器是否只有文本内容
+          if (!container.querySelector('img') && container.textContent.trim()) {
+            const content = container.textContent.trim();
+            console.log('图片容器内只有文本:', content);
+            
+            // 清空容器
+            container.innerHTML = '';
+            
+            // 创建图片元素
+            const img = document.createElement('img');
+            
+            // 尝试构造正确的图片路径
+            if (content.match(/[a-f0-9]{32}\.webp$/i) || content.endsWith('.webp')) {
+              // webp图片
+              const articleId = window.location.pathname.split('/').pop().replace('.html', '');
+              img.src = `/blog/images/${articleId}/${content}`;
+            } else {
+              // 使用占位图
+              img.src = '/assets/placeholder-image.svg';
+            }
+            
+            // 添加错误处理
+            img.alt = '文章图片';
+            img.setAttribute('data-text-content', content);
+            img.onerror = function() {
+              this.onerror = null;
+              this.src = '/assets/placeholder-image.svg';
+              this.classList.add('error');
+            };
+            
+            // 添加到容器
+            container.appendChild(img);
+          }
+        });
+        
+        // 3. 处理所有图片加载错误
+        const images = document.querySelectorAll('img');
+        console.log('找到图片元素:', images.length);
+        
+        images.forEach((img) => {
+          // 检查是否为SVG图片
+          if (img.src.toLowerCase().endsWith('.svg')) {
+            console.log('检测到SVG图片:', img.src);
+            img.classList.add('svg-image');
+            // SVG图片不需要错误处理
+            return;
+          }
+          
+          if (img.complete && img.naturalHeight === 0) {
+            // 已经加载失败的图片
+            console.log('图片已加载失败:', img.src);
+            img.classList.add('error');
+            
+            // 如果不是占位图，则替换为占位图
+            if (!img.src.includes('placeholder-image')) {
+              img.setAttribute('data-failed-src', img.src);
+              img.src = '/assets/placeholder-image.svg';
+              img.classList.add('svg-image'); // 添加SVG类
+            }
+          } else {
+            // 添加加载错误处理
+            img.addEventListener('error', function() {
+              console.log('图片加载失败:', this.src);
+              this.classList.add('error');
+              
+              // 如果不是占位图，则替换为占位图
+              if (!this.src.includes('placeholder-image')) {
+                this.setAttribute('data-failed-src', this.src);
+                this.src = '/assets/placeholder-image.svg';
+                this.classList.add('svg-image'); // 添加SVG类
+              }
+            });
+          }
+        });
+      });
+
+      // 滚动到顶部
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }

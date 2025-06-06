@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=2,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>模板说明 - JiangKing/Blog</title>
+    <link rel="stylesheet" href="/css/blog.css">
+    <style>// ... existing code ...</style>
+  </head>
+  <body>
+    <div class="dynamic-bg"></div>
+    <div class="grid-bg"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="progress-bar" id="progressBar"></div>
+    <header class="top-nav">
+      <div class="nav-left"><a class="back-btn" href="/blog/" title="返回首页">←</a>
+        <h3 class="site-title">JiangKing</h3>
+      </div>
+      <div class="nav-right">
+        <button class="nav-btn" title="目录">📑</button>
+        <button class="nav-btn" title="暗色模式">🌙</button>
+        <button class="nav-btn" title="分享">🔗</button>
+      </div>
+    </header>
+    <div class="article-header">
+      <div class="header-bg">
+        <canvas id="headerCanvas"></canvas>
+      </div>
+      <div class="header-content">
+        <h1 class="article-title">模板说明</h1>
+        <div class="article-meta"><span class="meta-item"><span class="meta-icon">👤</span>JiangKing</span><span class="meta-item"><span class="meta-icon">📅</span>2021-07-02</span><span class="meta-item"><span class="meta-icon">⏱️</span>1 min read</span><span class="meta-item"><span class="meta-icon">👁️</span>1.2k</span></div>
+      </div>
+    </div>
+    <article class="article-container">
+      <div class="article-content"><h1>如何使用Notion编写文章</h1><p>请访问教程获取帮助</p><div>如何在Notion中开始写作 | NotionNext文档</div><div>Notion快捷键 | NotionNext文档</div><h1>模板使用说明</h1><p>NotionNext项目必须绑定一个Notion数据库才能使用。请访问教程获取帮助</p><div>Vercel云部署 | NotionNext文档</div><h2>模板字段说</h2><p>Notion数据库中，每条数据都将有以下属性🤔：</p><p>数据库的每一列有不同的功能；
+
+type： 这条数据的类型 ，有 notice(公告)、post(文章)、page(单页)、menu(菜单)、submenu(子菜单)这几种类型。
+
+slug ，根据数据类型，有不同的作用：</p><li>在菜单(Menu\SubMenu)中表示跳转到哪个页面， 在文章中表示这篇文章在博客中的访问地址、也可以是外链。通常以左斜杆开头： /test-menu对应访问 → https://站点域名/testmenu。也可以设置成完整的外链，例如https://tangly1024.com 。</li><li>在单页中（Page）, 表示这个页面在站点根目录的文件名。不要以左斜杆开头: 例如 test-page → 对应 https://站点域名/test-page。</li><li>在博文中(Post)，也表示文件路径，但是博文会自动添加一个前缀。例如: test-post 则可以通过 https://域名/article/test-post 访问到这个博客，这里的article是默认配置的前缀。</li></div>
+      <div class="article-tags"><a class="tag" href="/blog/tags/文字/"><span>文字</span></a><a class="tag" href="/blog/tags/推荐/"><span>推荐</span></a>
+      </div>
+      <div class="author-info">
+        <div class="author-avatar"><img src="/assets/avatar.jpg" alt="JiangKing"></div>
+        <div class="author-details">
+          <h4>JiangKing</h4>
+          <p class="author-bio">STDIN | Think &gt;&gt; /dev/Mind✨ - 专注于技术分享与思考</p>
+        </div>
+      </div>
+      <div class="related-posts">
+        <h3 class="section-title">相关文章</h3>
+        <div class="related-grid">
+        </div>
+      </div>
+    </article>
+    <div class="article-actions">
+      <button class="action-btn" title="点赞">👍</button>
+      <button class="action-btn" title="收藏">⭐</button>
+      <button class="action-btn" title="评论">💬</button>
+      <div class="action-divider"></div>
+      <button class="action-btn" title="分享">📤</button>
+      <button class="action-btn" title="回到顶部" onclick="scrollToTop()">⬆️</button>
+    </div>
+    <nav class="toc" id="toc">
+      <h4 class="toc-title">目录</h4>
+      <ul class="toc-list">
+      </ul>
+    </nav>
+    <script>// ... existing code ... </script>
+  </body>
+</html>

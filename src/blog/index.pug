@@ -33,61 +33,39 @@ html(lang="zh-CN")
             
         h2.nickname JiangKing
         .social-links
-          a.social-link(href="#", title="微信")
+          a.social-link(href="#", title="微信: jiangking86")
             span(style="position: relative; z-index: 1;") 💬
-          a.social-link(href="mailto:hi@jiangking.com", title="邮箱")
+          a.social-link(href="mailto:jiangkingwelcome@vip.qq.com", title="邮箱: jiangkingwelcome@vip.qq.com")
             span(style="position: relative; z-index: 1;") 📧
-          a.social-link(href="https://x.com/simon_aking", title="X")
-            span(style="position: relative; z-index: 1;") 🐦
-          a.social-link(href="https://github.com/JiangKing", title="GitHub")
-            span(style="position: relative; z-index: 1;") 💻
+          a.social-link(href="#", title="QQ: 33855846")
+            span(style="position: relative; z-index: 1;") 🐧
+          a.social-link(href="#", title="电话")
+            span(style="position: relative; z-index: 1;") 📱
         
         .stats
           .stat-card
-            .stat-value ∞
-            .stat-label 微博
-          .stat-card
-            .stat-value 32
+            .stat-value
+              | #{articles.filter(a => a.status === 'Published' && a.type === 'Post').length}
             .stat-label 文章
-          .stat-card
-            .stat-value ∞
-            .stat-label 相册
       
       nav.nav-menu
         ul
           li.nav-item.active
-            a.nav-link(href="#")
+            a.nav-link(href="/")
               span.nav-icon 🏠
               span 主页
-          li.nav-item
-            a.nav-link(href="#")
-              span.nav-icon 📷
-              span 相册
-          //- 添加了你在评论中提供的额外导航项
-          li.nav-item
-            a.nav-link(href="#")
-              span.nav-icon 📁
-              span 归档
-          li.nav-item
-            a.nav-link(href="#")
+          li.nav-item#tag-btn
+            a.nav-link(href="javascript:void(0);")
               span.nav-icon 🏷️
               span 标签
+          li.nav-item#category-btn
+            a.nav-link(href="javascript:void(0);")
+              span.nav-icon 📝
+              span 分类
           li.nav-item
-            a.nav-link(href="#")
-              span.nav-icon 😊
-              span 微博
-          li.nav-item
-            a.nav-link(href="#")
-              span.nav-icon 💭
-              span 思考
-          li.nav-item
-            a.nav-link(href="#")
+            a.nav-link(href="/about.html")
               span.nav-icon ✈️
-              span 关于
-          li.nav-item
-            a.nav-link(href="#")
-              span.nav-icon 🧭
-              span 导航
+              span About
 
     //- 主内容区
     main.main-content
@@ -97,7 +75,7 @@ html(lang="zh-CN")
           #stars.stars
         .hero-content
           h1.hero-title JiangKing
-          p.hero-subtitle STDIN | Think >> /dev/Mind✨
+          p.hero-subtitle #{config.main.signature}
 
       //- 文章内容
       .content-wrapper
@@ -107,7 +85,7 @@ html(lang="zh-CN")
           else
             each article in articles
               if article.status === 'Published' && article.type === 'Post'
-                article.post-card
+                article.post-card(data-category=article.category)
                   h3.post-title
                     a(href=`/blog/${article.id}.html`) #{article.title}
                   .post-meta
@@ -130,5 +108,285 @@ html(lang="zh-CN")
     //- 遮罩层
     #overlay.overlay(onclick="toggleSidebar()")
 
+    //- 分类弹窗浮层，放在body末尾
+    div#category-popup.category-popup
+      div.category-title 文章分类
+      ul.category-list
+        li.category-item.active(data-category="all")
+          span 全部文章
+          span.category-count 32
+        li.category-item(data-category="技术分享")
+          span 技术分享
+          span.category-count 14
+        li.category-item(data-category="心情随笔")
+          span 心情随笔
+          span.category-count 3
+        li.category-item(data-category="最新电影")
+          span 最新电影
+          span.category-count 2
+        li.category-item(data-category="破解下载")
+          span 破解下载
+          span.category-count 2
+          
+    //- 标签弹窗浮层，放在body末尾
+    div#tag-popup.tag-popup
+      div.tag-title 文章标签
+      ul.tag-list
+        li.tag-item.active(data-tag="all")
+          span 全部标签
+          span.tag-count 32
+        //- 这里的标签列表将通过JavaScript动态生成
+
+    style.
+      .category-popup {
+        width: 220px;
+        background: var(--glass);
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(99,102,241,0.18);
+        z-index: 9999;
+        border: 1px solid var(--glass-border);
+        color: #fff;
+        display: none;
+        padding: 0;
+        backdrop-filter: blur(16px);
+      }
+      .category-popup.show {
+        display: block;
+      }
+      .category-title {
+        padding: 16px 20px 8px 20px;
+        font-size: 15px;
+        font-weight: bold;
+        border-bottom: 1px solid var(--glass-border);
+        color: #fff;
+        letter-spacing: 1px;
+      }
+      .category-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .category-item {
+        padding: 12px 20px;
+        font-size: 14px;
+        color: #c7d0f7;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        transition: background 0.2s, color 0.2s;
+        border-radius: 8px;
+      }
+      .category-item:hover,
+      .category-item.active {
+        background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+        color: #fff;
+        box-shadow: 0 0 8px var(--primary);
+      }
+      .category-count {
+        background: rgba(99,102,241,0.12);
+        color: #b3bff7;
+        padding: 2px 8px;
+        border-radius: 10px;
+        font-size: 12px;
+        margin-left: 8px;
+      }
+      
+      /* 标签弹窗样式 */
+      .tag-popup {
+        width: 220px;
+        background: var(--glass);
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(99,102,241,0.18);
+        z-index: 9999;
+        border: 1px solid var(--glass-border);
+        color: #fff;
+        display: none;
+        padding: 0;
+        backdrop-filter: blur(16px);
+      }
+      .tag-popup.show {
+        display: block;
+      }
+      .tag-title {
+        padding: 16px 20px 8px 20px;
+        font-size: 15px;
+        font-weight: bold;
+        border-bottom: 1px solid var(--glass-border);
+        color: #fff;
+        letter-spacing: 1px;
+      }
+      .tag-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        max-height: 300px;
+        overflow-y: auto;
+      }
+      .tag-list::-webkit-scrollbar {
+        width: 6px;
+      }
+      .tag-list::-webkit-scrollbar-track {
+        background: rgba(99,102,241,0.05);
+        border-radius: 10px;
+      }
+      .tag-list::-webkit-scrollbar-thumb {
+        background: rgba(99,102,241,0.3);
+        border-radius: 10px;
+      }
+      .tag-item {
+        padding: 12px 20px;
+        font-size: 14px;
+        color: #c7d0f7;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        transition: background 0.2s, color 0.2s;
+        border-radius: 8px;
+      }
+      .tag-item:hover,
+      .tag-item.active {
+        background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+        color: #fff;
+        box-shadow: 0 0 8px var(--primary);
+      }
+      .tag-count {
+        background: rgba(99,102,241,0.12);
+        color: #b3bff7;
+        padding: 2px 8px;
+        border-radius: 10px;
+        font-size: 12px;
+        margin-left: 8px;
+      }
+
     //- JavaScript 文件将在这里引入，例如：
     script(src="/js/blog.js")
+    script.
+      document.addEventListener('DOMContentLoaded', function() {
+        // 分类功能
+        const categoryBtn = document.getElementById('category-btn');
+        const categoryPopup = document.getElementById('category-popup');
+        const categoryItems = document.querySelectorAll('.category-item');
+        const cards = document.querySelectorAll('.post-card');
+        
+        categoryBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          
+          // 获取分类按钮的位置
+          const btnRect = categoryBtn.getBoundingClientRect();
+          
+          // 设置弹出框的位置
+          categoryPopup.style.position = 'fixed';
+          categoryPopup.style.left = (btnRect.right + 10) + 'px';
+          categoryPopup.style.top = btnRect.top + 'px';
+          
+          categoryPopup.classList.toggle('show');
+          
+          // 隐藏标签弹窗
+          if (tagPopup.classList.contains('show')) {
+            tagPopup.classList.remove('show');
+          }
+        });
+        
+        document.addEventListener('click', function(e) {
+          if (!categoryPopup.contains(e.target) && !categoryBtn.contains(e.target)) {
+            categoryPopup.classList.remove('show');
+          }
+        });
+        
+        categoryItems.forEach(item => {
+          item.addEventListener('click', function() {
+            categoryItems.forEach(i => i.classList.remove('active'));
+            this.classList.add('active');
+            const selectedCategory = this.getAttribute('data-category');
+            cards.forEach(card => {
+              const cardCategories = card.getAttribute('data-category');
+              if (selectedCategory === 'all' || (cardCategories && cardCategories.includes(selectedCategory))) {
+                card.style.display = 'block';
+              } else {
+                card.style.display = 'none';
+              }
+            });
+            categoryPopup.classList.remove('show');
+          });
+        });
+        
+        // 标签功能
+        const tagBtn = document.getElementById('tag-btn');
+        const tagPopup = document.getElementById('tag-popup');
+        const tagList = document.querySelector('.tag-list');
+        
+        // 收集所有文章的标签
+        const allTags = new Map();
+        cards.forEach(card => {
+          const tagElements = card.querySelectorAll('.tag');
+          tagElements.forEach(tagElement => {
+            const tagText = tagElement.textContent.trim();
+            if (allTags.has(tagText)) {
+              allTags.set(tagText, allTags.get(tagText) + 1);
+            } else {
+              allTags.set(tagText, 1);
+            }
+          });
+        });
+        
+        // 动态生成标签列表
+        allTags.forEach((count, tag) => {
+          const li = document.createElement('li');
+          li.className = 'tag-item';
+          li.setAttribute('data-tag', tag);
+          
+          const spanTag = document.createElement('span');
+          spanTag.textContent = tag;
+          
+          const spanCount = document.createElement('span');
+          spanCount.className = 'tag-count';
+          spanCount.textContent = count;
+          
+          li.appendChild(spanTag);
+          li.appendChild(spanCount);
+          
+          li.addEventListener('click', function() {
+            document.querySelectorAll('.tag-item').forEach(i => i.classList.remove('active'));
+            this.classList.add('active');
+            const selectedTag = this.getAttribute('data-tag');
+            
+            cards.forEach(card => {
+              const cardTags = Array.from(card.querySelectorAll('.tag')).map(t => t.textContent.trim());
+              if (selectedTag === 'all' || cardTags.includes(selectedTag)) {
+                card.style.display = 'block';
+              } else {
+                card.style.display = 'none';
+              }
+            });
+            
+            tagPopup.classList.remove('show');
+          });
+          
+          tagList.appendChild(li);
+        });
+        
+        tagBtn && tagBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          
+          // 获取标签按钮的位置
+          const btnRect = tagBtn.getBoundingClientRect();
+          
+          // 设置弹出框的位置
+          tagPopup.style.position = 'fixed';
+          tagPopup.style.left = (btnRect.right + 10) + 'px';
+          tagPopup.style.top = btnRect.top + 'px';
+          
+          tagPopup.classList.toggle('show');
+          
+          // 隐藏分类弹窗
+          if (categoryPopup.classList.contains('show')) {
+            categoryPopup.classList.remove('show');
+          }
+        });
+        
+        document.addEventListener('click', function(e) {
+          if (!tagPopup.contains(e.target) && !tagBtn.contains(e.target)) {
+            tagPopup.classList.remove('show');
+          }
+        });
+      });
