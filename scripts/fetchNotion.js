@@ -6,7 +6,6 @@ const http = require('http');
 const { URL } = require('url');
 const crypto = require('crypto');
 const axios = require('axios');
-require('dotenv').config();
 
 // 创建忽略SSL证书错误的HTTPS代理
 const httpsAgent = new https.Agent({
@@ -66,130 +65,17 @@ function escapeXml(unsafe) {
     .substring(0, 100); // 限制长度
 }
 
-// 实现类似NotionNext的图片URL映射逻辑
-function mapImageUrl(url, block = null, recordMap = null) {
-  if (!url) return null;
-  
-  console.log(`🔍 映射图片URL: ${url.substring(0, 80)}...`);
-  
-  // 处理相对路径
-  if (url.startsWith('/')) {
-    const fullUrl = `https://www.notion.so${url}`;
-    console.log(`📍 相对路径转换: ${fullUrl}`);
-    return fullUrl;
-  }
-  
-  // 处理data URI
-  if (url.startsWith('data:')) {
-    console.log(`📊 Data URI图片`);
-    return url;
-  }
-  
-  // 优先检查是否有signed URLs
-  if (recordMap && recordMap.signed_urls) {
-    console.log(`🔑 检查signed URLs (共${Object.keys(recordMap.signed_urls).length}个)`);
-    
-    // 方法1: 尝试直接匹配URL
-    let signedUrl = recordMap.signed_urls[url];
-    if (signedUrl) {
-      console.log(`✅ 找到signed URL (直接匹配): ${url.substring(0, 50)}...`);
-      return signedUrl;
-    }
-    
-    // 方法2: 尝试通过block ID匹配
-    if (block && block.id && recordMap.signed_urls[block.id]) {
-      console.log(`✅ 找到signed URL (block ID匹配): ${block.id}`);
-      return recordMap.signed_urls[block.id];
-    }
-    
-    // 方法3: 尝试解码URL后匹配
-    try {
-      const decodedUrl = decodeURIComponent(url);
-      if (recordMap.signed_urls[decodedUrl]) {
-        console.log(`✅ 找到signed URL (解码匹配): ${decodedUrl.substring(0, 50)}...`);
-        return recordMap.signed_urls[decodedUrl];
-      }
-    } catch (e) {
-      // 解码失败，继续其他匹配方式
-    }
-    
-    // 方法4: 尝试提取S3 URL的关键部分进行匹配
-    if (url.includes('amazonaws.com') || url.includes('s3.') || url.includes('secure.notion-static.com')) {
-      console.log(`🔍 S3 URL检测，尝试智能匹配...`);
-      
-      for (const [originalUrl, signed] of Object.entries(recordMap.signed_urls)) {
-        // 提取文件名进行匹配
-        const urlParts = url.split('/');
-        const originalParts = originalUrl.split('/');
-        const fileName = urlParts[urlParts.length - 1];
-        const originalFileName = originalParts[originalParts.length - 1];
-        
-        if (fileName && originalFileName && fileName === originalFileName) {
-          console.log(`✅ 找到signed URL (文件名匹配): ${fileName}`);
-          return signed;
-        }
-        
-        // UUID匹配
-        const uuidRegex = /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/gi;
-        const urlUuids = url.match(uuidRegex);
-        const originalUuids = originalUrl.match(uuidRegex);
-        
-        if (urlUuids && originalUuids && urlUuids.some(uuid => originalUuids.includes(uuid))) {
-          console.log(`✅ 找到signed URL (UUID匹配): ${urlUuids[0]}`);
-          return signed;
-        }
-      }
-    }
-    
-    // 方法5: 模糊匹配（最后尝试）
-    for (const [originalUrl, signed] of Object.entries(recordMap.signed_urls)) {
-      if (originalUrl.includes(url) || url.includes(originalUrl)) {
-        console.log(`✅ 找到signed URL (模糊匹配): ${url.substring(0, 50)}... -> ${signed.substring(0, 50)}...`);
-        return signed;
-      }
-    }
-    
-    console.log(`❌ 未找到对应的signed URL`);
-  } else {
-    console.log(`⚠️ 没有signed URLs可用`);
-  }
-  
-  // 对于S3 URL，尝试转换为Notion代理格式
-  if (url.includes('amazonaws.com') || url.includes('s3.') || url.includes('secure.notion-static.com')) {
-    const notionProxyUrl = `https://www.notion.so/image/${encodeURIComponent(url)}?table=block&id=${Date.now()}&cache=v2`;
-    console.log(`🔄 转换为Notion代理URL: ${notionProxyUrl.substring(0, 80)}...`);
-    return notionProxyUrl;
-  }
-  
-  // 对于所有外部图片URL，直接返回原始URL
-  if (url.startsWith('http')) {
-    console.log(`🌐 使用原始URL: ${url.substring(0, 80)}...`);
-    return url;
-  }
-  
-  // 兜底处理
-  console.log(`🔄 兜底返回原始URL: ${url}`);
-  return url;
-}
-
 // 下载图片并保存到本地
-// 下载图片函数，增强版 - 参考NotionNext实现
-async function downloadImage(url, localPath, retryCount = 0, block = null, recordMap = null) {
+// 下载图片函数，增强版
+async function downloadImage(url, localPath, retryCount = 0) {
   return new Promise(async (resolve, reject) => {
     try {
-      // 使用mapImageUrl处理URL
-      const mappedUrl = mapImageUrl(url, block, recordMap);
-      console.log(`准备下载图片: ${mappedUrl ? mappedUrl.substring(0, 50) : 'null'}...`);
-      
-      if (!mappedUrl) {
-        console.log('图片URL为空，创建占位图');
-        return resolve(createLocalImage("URL为空", localPath));
-      }
+      console.log(`准备下载图片: ${url.substring(0, 50)}...`);
       
       // 处理Base64图片
-      if (mappedUrl.startsWith('data:image/')) {
+      if (url.startsWith('data:image/')) {
         try {
-          const base64Data = mappedUrl.split(',')[1];
+          const base64Data = url.split(',')[1];
           if (base64Data) {
             const dir = path.dirname(localPath);
             if (!fs.existsSync(dir)) {
@@ -242,39 +128,21 @@ async function downloadImage(url, localPath, retryCount = 0, block = null, recor
       // 方法1: 使用axios下载
       if (!downloadSuccess) {
         try {
-          console.log(`尝试使用axios下载: ${mappedUrl.substring(0, 50)}...`);
+          console.log(`尝试使用axios下载: ${url.substring(0, 50)}...`);
           const response = await axios({
             method: 'get',
-            url: mappedUrl,
+            url: url,
             responseType: 'arraybuffer',
             timeout: 30000,
             headers: {
-              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-              'Accept': 'image/webp,image/apng,image/avif,image/svg+xml,image/*,*/*;q=0.8',
-              'Accept-Language': 'en-US,en;q=0.9',
-              'Accept-Encoding': 'gzip, deflate, br',
-              'Cache-Control': 'no-cache',
-              'Pragma': 'no-cache',
-              'Sec-Ch-Ua': '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
-              'Sec-Ch-Ua-Mobile': '?0',
-              'Sec-Ch-Ua-Platform': '"Windows"',
-              'Sec-Fetch-Dest': 'image',
-              'Sec-Fetch-Mode': 'no-cors',
-              'Sec-Fetch-Site': 'cross-site',
-              'Referer': 'https://www.notion.so/',
-              'Origin': 'https://www.notion.so'
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
+              'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
+              'Referer': url.includes('unsplash.com') ? 'https://unsplash.com/' : 'https://www.notion.so/'
             },
             maxRedirects: 5
           });
           
           if (response.status === 200 && response.data) {
-            // 检查响应内容是否为错误信息
-            const responseText = Buffer.from(response.data).toString();
-            if (responseText.includes('<Error>') || responseText.includes('AccessDenied') || responseText.includes('<Code>')) {
-              console.error(`axios下载返回错误响应: ${responseText.substring(0, 100)}...`);
-              throw new Error('下载返回错误响应');
-            }
-            
             fs.writeFileSync(targetPath, Buffer.from(response.data));
             console.log(`成功通过axios下载图片: ${url.substring(0, 50)}... -> ${targetPath}`);
             downloadSuccess = true;
@@ -288,11 +156,11 @@ async function downloadImage(url, localPath, retryCount = 0, block = null, recor
       // 方法2: Notion S3链接特殊处理 - 直接使用https.get绕过限制
       if (!downloadSuccess && isNotionS3) {
         try {
-          console.log(`使用直接HTTPS请求下载Notion图片: ${mappedUrl.substring(0, 50)}...`);
+          console.log(`使用直接HTTPS请求下载Notion图片: ${url.substring(0, 50)}...`);
           
           // 使用原生https.get方法下载S3内容
-          const protocol = mappedUrl.startsWith('https:') ? https : http;
-          const req = protocol.get(mappedUrl, {
+          const protocol = url.startsWith('https:') ? https : http;
+          const req = protocol.get(url, {
             headers: {
               'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
               'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
@@ -319,14 +187,6 @@ async function downloadImage(url, localPath, retryCount = 0, block = null, recor
                 try {
                   const buffer = Buffer.concat(chunks);
                   if (buffer.length > 0) {
-                    // 检查响应内容是否为错误信息
-                    const responseText = buffer.toString();
-                    if (responseText.includes('<Error>') || responseText.includes('AccessDenied') || responseText.includes('<Code>')) {
-                      console.error(`S3下载返回错误响应: ${responseText.substring(0, 100)}...`);
-                      rejectReq(new Error('S3下载返回错误响应'));
-                      return;
-                    }
-                    
                     fs.writeFileSync(targetPath, buffer);
                     console.log(`成功下载S3图片: ${url.substring(0, 50)}... -> ${targetPath}`);
                     downloadSuccess = true;
@@ -370,16 +230,16 @@ async function downloadImage(url, localPath, retryCount = 0, block = null, recor
           const headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
             'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
-            'Referer': mappedUrl.includes('unsplash.com') ? 'https://unsplash.com/' : 'https://www.notion.so/'
+            'Referer': url.includes('unsplash.com') ? 'https://unsplash.com/' : 'https://www.notion.so/'
           };
           
           // 尝试直接下载
-          console.log(`尝试使用fetch下载: ${mappedUrl.substring(0, 50)}...`);
-          const response = await fetch(mappedUrl, { 
+          console.log(`尝试使用fetch下载: ${url.substring(0, 50)}...`);
+          const response = await fetch(actualUrl, { 
             headers,
             redirect: 'follow',
             timeout: 30000,
-            agent: mappedUrl.startsWith('https') ? httpsAgent : null
+            agent: url.startsWith('https') ? httpsAgent : null
           });
           
           if (!response.ok) {
@@ -388,13 +248,6 @@ async function downloadImage(url, localPath, retryCount = 0, block = null, recor
           
           const buffer = await response.buffer();
           if (buffer.length > 0) {
-            // 检查响应内容是否为错误信息
-            const responseText = buffer.toString();
-            if (responseText.includes('<Error>') || responseText.includes('AccessDenied') || responseText.includes('<Code>')) {
-              console.error(`fetch下载返回错误响应: ${responseText.substring(0, 100)}...`);
-              throw new Error('fetch下载返回错误响应');
-            }
-            
             fs.writeFileSync(targetPath, buffer);
             console.log(`成功通过fetch下载图片: ${url.substring(0, 50)}... -> ${targetPath}`);
             downloadSuccess = true;
@@ -410,7 +263,7 @@ async function downloadImage(url, localPath, retryCount = 0, block = null, recor
       // 方法4: 尝试使用图片代理服务
       if (!downloadSuccess) {
         try {
-          const proxyUrl = `https://images.weserv.nl/?url=${encodeURIComponent(mappedUrl)}`;
+          const proxyUrl = `https://images.weserv.nl/?url=${encodeURIComponent(url)}`;
           console.log(`尝试通过代理下载: ${proxyUrl.substring(0, 50)}...`);
           
           const proxyResponse = await fetch(proxyUrl, { 
@@ -426,13 +279,6 @@ async function downloadImage(url, localPath, retryCount = 0, block = null, recor
           
           const buffer = await proxyResponse.buffer();
           if (buffer.length > 0) {
-            // 检查响应内容是否为错误信息
-            const responseText = buffer.toString();
-            if (responseText.includes('<Error>') || responseText.includes('AccessDenied') || responseText.includes('<Code>')) {
-              console.error(`代理下载返回错误响应: ${responseText.substring(0, 100)}...`);
-              throw new Error('代理下载返回错误响应');
-            }
-            
             fs.writeFileSync(targetPath, buffer);
             console.log(`成功通过代理下载图片: ${url.substring(0, 50)}... -> ${targetPath}`);
             downloadSuccess = true;
@@ -448,7 +294,7 @@ async function downloadImage(url, localPath, retryCount = 0, block = null, recor
       // 方法5: 尝试使用另一个代理服务
       if (!downloadSuccess) {
         try {
-          const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(mappedUrl)}`;
+          const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
           console.log(`尝试通过AllOrigins代理下载: ${proxyUrl.substring(0, 50)}...`);
           
           const proxyResponse = await fetch(proxyUrl, { 
@@ -464,13 +310,6 @@ async function downloadImage(url, localPath, retryCount = 0, block = null, recor
           
           const buffer = await proxyResponse.buffer();
           if (buffer.length > 0) {
-            // 检查响应内容是否为错误信息
-            const responseText = buffer.toString();
-            if (responseText.includes('<Error>') || responseText.includes('AccessDenied') || responseText.includes('<Code>')) {
-              console.error(`AllOrigins代理下载返回错误响应: ${responseText.substring(0, 100)}...`);
-              throw new Error('AllOrigins代理下载返回错误响应');
-            }
-            
             fs.writeFileSync(targetPath, buffer);
             console.log(`成功通过AllOrigins代理下载图片: ${url.substring(0, 50)}... -> ${targetPath}`);
             downloadSuccess = true;
@@ -483,25 +322,17 @@ async function downloadImage(url, localPath, retryCount = 0, block = null, recor
         }
       }
       
-      // 方法6: 尝试使用Notion专用代理（参考NotionNext实现）
-      if (!downloadSuccess && (mappedUrl.includes('notion') || mappedUrl.includes('amazonaws.com'))) {
+      // 方法6: 尝试使用Notion专用代理
+      if (!downloadSuccess && url.includes('notion')) {
         try {
           // 构建Notion专用代理URL
-          const notionProxyUrl = `https://www.notion.so/image/${encodeURIComponent(mappedUrl)}`;
+          const notionProxyUrl = `https://www.notion.so/image/${encodeURIComponent(url)}`;
           console.log(`尝试通过Notion官方代理下载: ${notionProxyUrl.substring(0, 50)}...`);
           
           const notionResponse = await fetch(notionProxyUrl, { 
             headers: {
-              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-              'Referer': 'https://www.notion.so/',
-              'Accept': 'image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
-              'Accept-Language': 'en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7',
-              'Accept-Encoding': 'gzip, deflate, br',
-              'Cache-Control': 'no-cache',
-              'Pragma': 'no-cache',
-              'Sec-Fetch-Dest': 'image',
-              'Sec-Fetch-Mode': 'no-cors',
-              'Sec-Fetch-Site': 'same-origin'
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
+              'Referer': 'https://www.notion.so/'
             },
             timeout: 30000
           });
@@ -512,13 +343,6 @@ async function downloadImage(url, localPath, retryCount = 0, block = null, recor
           
           const buffer = await notionResponse.buffer();
           if (buffer.length > 0) {
-            // 检查响应内容是否为错误信息
-            const responseText = buffer.toString();
-            if (responseText.includes('<Error>') || responseText.includes('AccessDenied') || responseText.includes('<Code>')) {
-              console.error(`Notion官方代理下载返回错误响应: ${responseText.substring(0, 100)}...`);
-              throw new Error('Notion官方代理下载返回错误响应');
-            }
-            
             fs.writeFileSync(targetPath, buffer);
             console.log(`成功通过Notion官方代理下载图片: ${url.substring(0, 50)}... -> ${targetPath}`);
             downloadSuccess = true;
@@ -531,51 +355,24 @@ async function downloadImage(url, localPath, retryCount = 0, block = null, recor
         }
       }
       
-      // 方法7: 对于无法下载的图片，创建一个更好的占位符
-      if (!downloadSuccess) {
-        try {
-          // 创建一个包含原始URL信息的占位符SVG
-          const urlHash = require('crypto').createHash('md5').update(mappedUrl).digest('hex').substring(0, 8);
-          const placeholderSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
-  <rect width="400" height="300" fill="#f0f0f0" stroke="#ddd" stroke-width="2"/>
-  <text x="200" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">
-    图片暂时无法加载
-  </text>
-  <text x="200" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#999">
-    ID: ${urlHash}
-  </text>
-  <text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ccc">
-    ${mappedUrl.includes('amazonaws.com') ? 'AWS S3 图片' : 'Notion 图片'}
-  </text>
-</svg>`;
-          
-          fs.writeFileSync(targetPath, placeholderSvg);
-          console.log(`创建了信息占位图: ${targetPath}`);
-          downloadSuccess = true;
-          return resolve(targetPath);
-        } catch (placeholderErr) {
-          console.error(`创建占位图失败: ${placeholderErr.message}`);
-        }
-      }
-      
       // 所有方法都失败，重试或返回默认图
       if (!downloadSuccess) {
         if (retryCount < 2) {
-          console.log(`重试下载 (${retryCount + 1}/2): ${mappedUrl.substring(0, 50)}...`);
+          console.log(`重试下载 (${retryCount + 1}/2): ${url.substring(0, 50)}...`);
           setTimeout(() => {
-            downloadImage(url, localPath, retryCount + 1, block, recordMap)
+            downloadImage(url, localPath, retryCount + 1)
               .then(resolve)
               .catch(reject);
           }, 3000); // 延迟3秒后重试
         } else {
-          console.log(`所有下载方法失败，使用占位图: ${mappedUrl.substring(0, 50)}...`);
+          console.log(`所有下载方法失败，使用占位图: ${url.substring(0, 50)}...`);
           // 创建SVG占位图并返回正确的SVG路径
-          const svgPath = await createLocalImage("下载失败", localPath);
+          const svgPath = await createLocalImage("下载失败", targetPath);
           return resolve(svgPath);
         }
       }
     } catch (err) {
-      console.error(`图片处理过程出错: ${mappedUrl ? mappedUrl.substring(0, 50) : 'null'}... - ${err.message}`);
+      console.error(`图片处理过程出错: ${url.substring(0, 50)}... - ${err.message}`);
       const svgPath = await createLocalImage("处理错误", localPath);
       return resolve(svgPath);
     }
@@ -699,8 +496,8 @@ async function processBlockImages(blocks, pageId, detail) {
         console.log(`  下载图片: ${imageUrl.substring(0, 50)}... => ${localPath}`);
         
         try {
-          // 使用增强版downloadImage函数下载图片 - 传递block和detail参数以支持signed URLs
-          const downloadedPath = await downloadImage(imageUrl, localPath, 0, block.value, detail);
+          // 使用增强版downloadImage函数下载图片
+          const downloadedPath = await downloadImage(imageUrl, localPath);
           console.log(`  ✅ 图片下载成功或创建了占位图: ${downloadedPath}`);
           
           // 更新文件名，使用下载后的实际路径
@@ -744,7 +541,6 @@ async function processBlockImages(blocks, pageId, detail) {
           filename = path.basename(svgPath);
           block.value.imageFilename = filename;
         }
-
       }
     }
   }
@@ -836,72 +632,23 @@ async function fetchAll() {
           fs.mkdirSync(articleImageDir, { recursive: true });
         }
 
-        // 使用官方Notion API获取页面数据，包含signed_urls
-        const pageUrl = `https://www.notion.so/api/v3/loadPageChunk`;
-        const requestBody = {
-          pageId: article.id,
-          limit: 100,
-          cursor: { stack: [] },
-          chunkNumber: 0,
-          verticalColumns: false
-        };
-        
-        const headers = {
-          'Content-Type': 'application/json',
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-        };
-        
-        // 如果有Notion令牌，添加Authorization头
-        if (process.env.NOTION_TOKEN) {
-          headers['Authorization'] = `Bearer ${process.env.NOTION_TOKEN}`;
-          console.log('✅ 使用Notion API令牌进行认证');
-        } else {
-          console.log('⚠️ 未找到Notion API令牌，可能无法获取signed URLs');
-        }
-        
-        let detail = await fetch(pageUrl, {
-          method: 'POST',
-          headers: headers,
-          body: JSON.stringify(requestBody)
-        }).then(res => res.json());
-        
-        // 提取recordMap数据
-        const recordMap = detail.recordMap || {};
-        const blocks = recordMap.block || {};
-        
-        // 将blocks格式转换为原来的格式
-        const formattedDetail = {};
-        Object.keys(blocks).forEach(blockId => {
-          formattedDetail[blockId] = blocks[blockId];
-        });
-        
-        // 保存signed_urls信息到formattedDetail的根级别，便于访问
-        if (recordMap.signed_urls) {
-          formattedDetail.signed_urls = recordMap.signed_urls;
-          console.log(`✅ 获取到 ${Object.keys(recordMap.signed_urls).length} 个signed URLs`);
-          
-          // 调试：打印前几个signed URLs
-          const signedUrlKeys = Object.keys(recordMap.signed_urls).slice(0, 3);
-          signedUrlKeys.forEach(key => {
-            console.log(`  Signed URL: ${key.substring(0, 50)}... -> ${recordMap.signed_urls[key].substring(0, 50)}...`);
-          });
-        } else {
-          console.log('⚠️ 未获取到signed URLs');
-        }
-        
-        console.log(`📄 获取到 ${Object.keys(blocks).length} 个块，signed_urls: ${recordMap.signed_urls ? Object.keys(recordMap.signed_urls).length : 0} 个`);
+        const pageUrl = `https://notion-api.splitbee.io/v1/page/${article.id}`;
+        const detail = await fetch(pageUrl).then(res => res.json());
 
         // 处理文章中的所有图片
         console.log(`开始处理文章 ${article.id} 的图片...`);
         
-        // 正确调用processBlockImages，传递整个formattedDetail对象
-        const updatedBlocks = await processBlockImages(formattedDetail, article.id, formattedDetail);
+        // 处理主块
+        if (detail[article.id]) {
+          detail[article.id] = await processBlockImages(detail[article.id], article.id, detail);
+        }
         
-        // 将更新后的blocks合并回formattedDetail对象
-          Object.assign(formattedDetail, updatedBlocks);
-          
-          // 使用formattedDetail作为最终的detail对象
-          detail = formattedDetail;
+        // 处理文章中的所有块
+        for (const blockId in detail) {
+          if (blockId !== article.id) { // 避免重复处理主块
+            detail[blockId] = await processBlockImages(detail[blockId], article.id, detail);
+          }
+        }
         
         console.log(`文章 ${article.id} 的图片处理完成`);
 
@@ -929,7 +676,7 @@ async function fetchAll() {
           } else if (block.type === 'image') {
             // 处理图片块
             let imageUrl = block.properties?.source?.[0]?.[0] || '';
-            const localImagePath = block.value?.imageFilename || block.imageFilename || '';
+            const localImagePath = block.imageFilename || '';
             
             // 创建图片容器
             html += `<div class="image-container">`;
@@ -1010,81 +757,4 @@ async function fetchAll() {
   }
 }
 
-// 主函数 - 支持命令行参数
-async function main() {
-  const args = process.argv.slice(2);
-  const specificArticleId = args[0];
-  
-  if (specificArticleId) {
-    console.log(`🎯 处理特定文章: ${specificArticleId}`);
-    await fetchSpecificArticle(specificArticleId);
-  } else {
-    console.log('🚀 开始获取所有文章...');
-    await fetchAll();
-  }
-}
-
-// 处理特定文章的函数
-async function fetchSpecificArticle(articleId) {
-  try {
-    console.log(`正在获取文章 ${articleId} 的详细信息...`);
-    
-    // 确保目录存在
-    const dataDir = path.join(__dirname, '../src/blog/data');
-    const imageDir = path.join(__dirname, '../src/blog/images');
-    
-    if (!fs.existsSync(dataDir)) {
-      fs.mkdirSync(dataDir, { recursive: true });
-    }
-    if (!fs.existsSync(imageDir)) {
-      fs.mkdirSync(imageDir, { recursive: true });
-    }
-    
-    // 创建文章图片目录
-    const articleImageDir = path.join(imageDir, articleId);
-    if (!fs.existsSync(articleImageDir)) {
-      fs.mkdirSync(articleImageDir, { recursive: true });
-      console.log(`已创建文章图片目录: ${articleImageDir}`);
-    }
-    
-    // 获取文章详情
-    const pageUrl = `https://notion-api.splitbee.io/v1/page/${articleId}`;
-    const detail = await fetch(pageUrl).then(res => res.json());
-    
-    console.log(`🖼️ 开始处理文章 ${articleId} 中的图片...`);
-    
-    // 处理文章中的所有图片
-    // processBlockImages期望接收整个detail对象，而不是单个block
-    const updatedBlocks = await processBlockImages(detail, articleId, detail);
-    
-    // 将更新后的blocks合并回detail对象
-    Object.assign(detail, updatedBlocks);
-    
-    console.log(`🔍 调试信息: detail对象包含 ${Object.keys(detail).length} 个块`);
-    
-    // 检查是否有图片块
-    let imageBlockCount = 0;
-    for (const blockId in detail) {
-      if (detail[blockId]?.value?.type === 'image') {
-        imageBlockCount++;
-        console.log(`📸 发现图片块: ${blockId}, URL: ${detail[blockId].value.properties?.source?.[0]?.[0]?.substring(0, 50)}...`);
-      }
-    }
-    console.log(`📊 总共发现 ${imageBlockCount} 个图片块`);
-    
-    console.log(`✅ 文章 ${articleId} 的图片处理完成`);
-    
-    // 保存文章详情
-    fs.writeFileSync(
-      path.join(dataDir, `${articleId}.json`),
-      JSON.stringify(detail, null, 2)
-    );
-    console.log(`📄 文章详情已保存到 ${path.join(dataDir, `${articleId}.json`)}`);
-    
-  } catch (error) {
-    console.error(`❌ 处理文章 ${articleId} 失败:`, error.message);
-  }
-}
-
-// 运行主函数
-main().catch(console.error);
+fetchAll();
