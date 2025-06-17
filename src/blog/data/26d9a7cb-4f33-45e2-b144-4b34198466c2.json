@@ -1,0 +1,822 @@
+{
+  "id": "26d9a7cb-4f33-45e2-b144-4b34198466c2",
+  "title": "历史归档",
+  "date": "2021-07-02",
+  "tags": [],
+  "status": "Published",
+  "type": "SubMenu",
+  "category": "",
+  "slug": "/archive",
+  "summary": "",
+  "created_time": "2024-09-04T10:37:00.000Z",
+  "last_edited_time": "2025-06-06T11:02:00.000Z",
+  "blocks": [
+    {
+      "object": "block",
+      "id": "09e34c83-50d3-4ce2-8225-194ae8121d05",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "quote",
+      "quote": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "文章来源说明",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "文章来源说明",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "d0294cfa-dfc7-4a49-8d5c-11129cd86452",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "🤔 一个简单的开头",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "🤔 一个简单的开头",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "15a22236-cb63-4292-9c9d-137399d098d8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": true,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "问题、目标、人物、背景是什么？",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "问题、目标、人物、背景是什么？",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "children": [
+        {
+          "object": "block",
+          "id": "592f74ba-a67a-4fb3-8df4-0a3a958a50c2",
+          "parent": {
+            "type": "block_id",
+            "block_id": "15a22236-cb63-4292-9c9d-137399d098d8"
+          },
+          "created_time": "2024-09-04T10:37:00.000Z",
+          "last_edited_time": "2024-09-04T10:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "为什么读者会对其有兴趣？",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "为什么读者会对其有兴趣？",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "8baeebd7-62da-429f-8244-1b2763321461",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": true,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "阻碍、努力、结果",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "阻碍、努力、结果",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "children": [
+        {
+          "object": "block",
+          "id": "29c19ebb-90ac-49d2-a1cd-53c72f95fb51",
+          "parent": {
+            "type": "block_id",
+            "block_id": "8baeebd7-62da-429f-8244-1b2763321461"
+          },
+          "created_time": "2024-09-04T10:37:00.000Z",
+          "last_edited_time": "2024-09-04T10:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "展示你的主要成果",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "展示你的主要成果",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "4fe495c5-cdc1-4cf5-8eca-b6b809e79fd3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": true,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "意外、转弯",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "意外、转弯",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "children": [
+        {
+          "object": "block",
+          "id": "4426b914-4265-4cbc-96d0-1bf5a5a97cb5",
+          "parent": {
+            "type": "block_id",
+            "block_id": "4fe495c5-cdc1-4cf5-8eca-b6b809e79fd3"
+          },
+          "created_time": "2024-09-04T10:37:00.000Z",
+          "last_edited_time": "2024-09-04T10:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "说说你的故事",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "说说你的故事",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "57f8178a-4c81-43cf-98ef-5f0a21bcf0b7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "📝主旨内容",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "📝主旨内容",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "e1cace01-a48a-42cf-92d4-958ddce4dc13",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "观点1",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "观点1",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "3f25dcad-5468-42a7-acfc-acbf9a82db6a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "观点2",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "观点2",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "d3bc621a-a2b2-4b5f-8930-ca3152b60c8e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "🤗总结归纳",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "🤗总结归纳",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "aeb46851-8252-471e-8db4-fafbef72e33e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "02332ccd-7f22-4bc7-89a5-c22481169d15",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参考文章",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "参考文章",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2756e7d8-b21e-49f3-9317-3539e480da1c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "a155b244-ec44-47db-9b24-cd9b0a20e4f8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "9f4f2718-6018-4033-9ef2-493871cc750b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "致谢：",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "致谢：",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "a84d4bbd-98ff-4901-997f-bd12183e5163",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "有关Notion安装或者使用上的问题，欢迎您在底部评论区留言，一起交流~",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "有关Notion安装或者使用上的问题，欢迎您在底部评论区留言，一起交流~",
+            "href": null
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "💡"
+        },
+        "color": "gray_background"
+      }
+    },
+    {
+      "object": "block",
+      "id": "be8f1261-af15-4778-b781-858762c15978",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "5c646150-333d-475d-b407-6724f12c4ec1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "26d9a7cb-4f33-45e2-b144-4b34198466c2"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "color": "default"
+      }
+    }
+  ],
+  "contentHtml": "<blockquote>文章来源说明</blockquote><h1>🤔 一个简单的开头</h1><ol><li>问题、目标、人物、背景是什么？</li><p>为什么读者会对其有兴趣？</p></ol><ol><li>阻碍、努力、结果</li><p>展示你的主要成果</p></ol><ol><li>意外、转弯</li><p>说说你的故事</p></ol><h1>📝主旨内容</h1><h2>观点1</h2><h2>观点2</h2><h1>🤗总结归纳</h1><p></p><h1>参考文章</h1><p></p><p></p><p>致谢：</p><div class=\"callout\">\n                <span class=\"callout-icon\">💡</span>\n                <div class=\"callout-content\">有关Notion安装或者使用上的问题，欢迎您在底部评论区留言，一起交流~</div>\n              </div><p></p><p></p>"
+}

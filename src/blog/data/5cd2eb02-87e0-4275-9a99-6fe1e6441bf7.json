@@ -1,0 +1,1100 @@
+{
+  "id": "5cd2eb02-87e0-4275-9a99-6fe1e6441bf7",
+  "title": "配置中心",
+  "date": "2021-07-02",
+  "tags": [],
+  "status": "Published",
+  "type": "Config",
+  "category": "",
+  "slug": "",
+  "summary": "在此文档直接添加配置文件，它的优先级最高，将覆盖环境变量和blog.config.js配置",
+  "created_time": "2024-09-04T10:37:00.000Z",
+  "last_edited_time": "2024-09-04T10:37:00.000Z",
+  "blocks": [
+    {
+      "object": "block",
+      "id": "c701689d-3fba-4c3b-8ef4-4875d125e865",
+      "parent": {
+        "type": "page_id",
+        "page_id": "5cd2eb02-87e0-4275-9a99-6fe1e6441bf7"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "child_database",
+      "child_database": {
+        "title": "CONFIG-TABLE"
+      }
+    },
+    {
+      "object": "block",
+      "id": "ef74185b-8e8d-4943-bfea-d824fd71b04e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "5cd2eb02-87e0-4275-9a99-6fe1e6441bf7"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "配置中心使用说明",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "配置中心使用说明",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "fe4dd8ef-9845-4722-bb9c-2d85aecd98b5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "5cd2eb02-87e0-4275-9a99-6fe1e6441bf7"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1.仅 ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "1.仅 ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "V4.1.0",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": true,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "V4.1.0",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " 之后的版本中支持该配置页面\n2.此处配置的优先级最高，它将",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " 之后的版本中支持该配置页面\n2.此处配置的优先级最高，它将",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "覆盖",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "覆盖",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Vercel环境变量",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "Vercel环境变量",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "、覆盖",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "、覆盖",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "blog.config.js",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "blog.config.js",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "。\n3.您可以在",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "。\n3.您可以在",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "blog.config.js",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "blog.config.js",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "以及各个主题的",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "以及各个主题的",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "config.js",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "config.js",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "中找到所有支持配置的",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "中找到所有支持配置的",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "配置名",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "配置名",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "与",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "与",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "配置值",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "配置值",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n4.并非所有配置都支持，例如",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n4.并非所有配置都支持，例如",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "NOTION_PAGE_ID",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "NOTION_PAGE_ID",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ",",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ",",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "LINK",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "LINK",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "就不支持在这里配置等",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "就不支持在这里配置等",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "404ca206-0d6d-494d-b657-774412988e9a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "5cd2eb02-87e0-4275-9a99-6fe1e6441bf7"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "表格字段说明",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "表格字段说明",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "986acd45-6ddf-48f3-8293-1b1594d8ca5f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "5cd2eb02-87e0-4275-9a99-6fe1e6441bf7"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": true,
+      "archived": false,
+      "in_trash": false,
+      "type": "table",
+      "table": {
+        "table_width": 2,
+        "has_column_header": true,
+        "has_row_header": false
+      },
+      "children": [
+        {
+          "object": "block",
+          "id": "2e93c7ac-bdfd-48ba-be51-3c5f1bffbbe5",
+          "parent": {
+            "type": "block_id",
+            "block_id": "986acd45-6ddf-48f3-8293-1b1594d8ca5f"
+          },
+          "created_time": "2024-09-04T10:37:00.000Z",
+          "last_edited_time": "2024-09-04T10:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "表头字段",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "表头字段",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "说明",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "说明",
+                  "href": null
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "id": "c5a3e0bc-5d9f-4991-b4e4-6b9177d58280",
+          "parent": {
+            "type": "block_id",
+            "block_id": "986acd45-6ddf-48f3-8293-1b1594d8ca5f"
+          },
+          "created_time": "2024-09-04T10:37:00.000Z",
+          "last_edited_time": "2024-09-04T10:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "启用",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "启用",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "想要生效的配置，请将其勾选",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "想要生效的配置，请将其勾选",
+                  "href": null
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "id": "48a0a3fa-80c4-4788-b3c2-a8e42a650c72",
+          "parent": {
+            "type": "block_id",
+            "block_id": "986acd45-6ddf-48f3-8293-1b1594d8ca5f"
+          },
+          "created_time": "2024-09-04T10:37:00.000Z",
+          "last_edited_time": "2024-09-04T10:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "配置名",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "配置名",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参阅配置文件变量名，例如 ",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "参阅配置文件变量名，例如 ",
+                  "href": null
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "AUTHOR",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": true,
+                    "color": "default"
+                  },
+                  "plain_text": "AUTHOR",
+                  "href": null
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "id": "6b88b31c-d2da-49a5-9152-4f8d4fd1d442",
+          "parent": {
+            "type": "block_id",
+            "block_id": "986acd45-6ddf-48f3-8293-1b1594d8ca5f"
+          },
+          "created_time": "2024-09-04T10:37:00.000Z",
+          "last_edited_time": "2024-09-04T10:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "配置值",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "配置值",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "输入您的值 例如作者名 ",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "输入您的值 例如作者名 ",
+                  "href": null
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "tangly1024",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": true,
+                    "color": "default"
+                  },
+                  "plain_text": "tangly1024",
+                  "href": null
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ， 或者 ",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": " ， 或者 ",
+                  "href": null
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "true",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": true,
+                    "color": "default"
+                  },
+                  "plain_text": "true",
+                  "href": null
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " / ",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": " / ",
+                  "href": null
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "false",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": true,
+                    "color": "default"
+                  },
+                  "plain_text": "false",
+                  "href": null
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": " ",
+                  "href": null
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "id": "6d22f175-50bc-49ca-a6d5-ea21d6b0f6c8",
+          "parent": {
+            "type": "block_id",
+            "block_id": "986acd45-6ddf-48f3-8293-1b1594d8ca5f"
+          },
+          "created_time": "2024-09-04T10:37:00.000Z",
+          "last_edited_time": "2024-09-04T10:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "配置备注",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "配置备注",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "仅作为备忘说明使用",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "仅作为备忘说明使用",
+                  "href": null
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "id": "ddc18765-f6c9-4341-a2a9-3300442ba1ae",
+          "parent": {
+            "type": "block_id",
+            "block_id": "986acd45-6ddf-48f3-8293-1b1594d8ca5f"
+          },
+          "created_time": "2024-09-04T10:37:00.000Z",
+          "last_edited_time": "2024-09-04T10:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "table_row",
+          "table_row": {
+            "cells": [
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "配置附件",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "配置附件",
+                  "href": null
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "如果配置的值是一张图片，可以在这里上传",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "如果配置的值是一张图片，可以在这里上传",
+                  "href": null
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "object": "block",
+      "id": "42429024-e2c7-45f1-aae1-1e208c57d1ba",
+      "parent": {
+        "type": "page_id",
+        "page_id": "5cd2eb02-87e0-4275-9a99-6fe1e6441bf7"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "请不要修改这里的表头，除非你知道在哪里修改对应的代码。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "请不要修改这里的表头，除非你知道在哪里修改对应的代码。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "a1d9667f-33f0-452b-96c0-00ab6d14bca7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "5cd2eb02-87e0-4275-9a99-6fe1e6441bf7"
+      },
+      "created_time": "2024-09-04T10:37:00.000Z",
+      "last_edited_time": "2024-09-04T10:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "color": "default"
+      }
+    }
+  ],
+  "contentHtml": "<div class=\"unsupported-block\">[child_database]</div><h1>配置中心使用说明</h1><p>1.仅 <u><strong>V4.1.0</strong></u> 之后的版本中支持该配置页面\n2.此处配置的优先级最高，它将<strong>覆盖</strong><code>Vercel环境变量</code>、覆盖<code>blog.config.js</code>。\n3.您可以在<code>blog.config.js</code>以及各个主题的<code>config.js</code>中找到所有支持配置的<code>配置名</code>与<code>配置值</code>\n4.并非所有配置都支持，例如<code>NOTION_PAGE_ID</code>,<code>LINK</code>就不支持在这里配置等</p><h2>表格字段说明</h2><div class=\"unsupported-block\">[table]</div><div class=\"unsupported-block\">[table_row]</div><div class=\"unsupported-block\">[table_row]</div><div class=\"unsupported-block\">[table_row]</div><div class=\"unsupported-block\">[table_row]</div><div class=\"unsupported-block\">[table_row]</div><div class=\"unsupported-block\">[table_row]</div><p>请不要修改这里的表头，除非你知道在哪里修改对应的代码。</p><p></p>"
+}

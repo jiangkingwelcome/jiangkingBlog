@@ -1,0 +1,2109 @@
+{
+  "id": "546f0bd1-76b9-4926-9079-9bf7b5886471",
+  "title": "关于我",
+  "date": "2022-05-18",
+  "tags": [],
+  "status": "Published",
+  "type": "Page",
+  "category": "",
+  "slug": "about",
+  "summary": "",
+  "created_time": "2024-09-04T10:37:00.000Z",
+  "last_edited_time": "2025-06-06T11:02:00.000Z",
+  "blocks": [
+    {
+      "object": "block",
+      "id": "dc2362dd-a88e-499f-841e-e0073a47718c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "JiangKing的技术博客：一个游戏开发者的碎碎念",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "JiangKing的技术博客：一个游戏开发者的碎碎念",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "7d405622-ca24-457d-8019-e1e906cc2ae5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "嘿，大家好啊！我是JiangKing，对，就是那个总在代码里找茬的家伙。如果你正在读这篇文章，要么是你对技术感兴趣，要么是你不小心点错了链接。不管是哪种情况，既然来了，不妨坐下来，喝杯咖啡（或者啤酒，我不评判），听我唠叨两句。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "嘿，大家好啊！我是JiangKing，对，就是那个总在代码里找茬的家伙。如果你正在读这篇文章，要么是你对技术感兴趣，要么是你不小心点错了链接。不管是哪种情况，既然来了，不妨坐下来，喝杯咖啡（或者啤酒，我不评判），听我唠叨两句。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "039df850-d53b-4a68-a70a-2dd01057e8eb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "关于我：从码农到甩锅专家的进化之路",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "关于我：从码农到甩锅专家的进化之路",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "27e1ffe5-4599-4dc0-9736-0da11c1d29ea",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "首先，让我们来个自我介绍。我是JiangKing，这个\"King\"可不是说我多厉害，纯属瞎起的网名。要说我的真实身份，我就是个再普通不过的游戏开发程序员，主要折腾后端那些看不见摸不着的东西。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "首先，让我们来个自我介绍。我是JiangKing，这个\"King\"可不是说我多厉害，纯属瞎起的网名。要说我的真实身份，我就是个再普通不过的游戏开发程序员，主要折腾后端那些看不见摸不着的东西。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "77d4c505-d0ad-432a-8379-20867ca7b7fa",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "我的职业生涯？说来话长，不过既然你问了（其实你没问，但我就当你问了），我就简单说说。我在游戏行业混迹多年，踩过的坑比写过的代码还多。我曾在巨人、盛大、银河这些大公司里当过技术经理。没错，就是那种开会、画饼、甩锅样样精通的角色。后来我觉得人生还不够刺激，于是跑到小公司去当技术总监，这下可好，不仅要会画饼，还得自己动手擀面。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "我的职业生涯？说来话长，不过既然你问了（其实你没问，但我就当你问了），我就简单说说。我在游戏行业混迹多年，踩过的坑比写过的代码还多。我曾在巨人、盛大、银河这些大公司里当过技术经理。没错，就是那种开会、画饼、甩锅样样精通的角色。后来我觉得人生还不够刺激，于是跑到小公司去当技术总监，这下可好，不仅要会画饼，还得自己动手擀面。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "81758144-da58-4212-af32-a435267bd092",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "我的技术之旅：一路跌跌撞撞，但还挺有意思",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "我的技术之旅：一路跌跌撞撞，但还挺有意思",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "ec2fad99-0b9e-4794-ba4f-767df48430a6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "说实话，我进入游戏行业纯属误打误撞。大学的时候，我本来是冲着\"计算机科学与技术\"这个听起来就很高大上的专业去的。幻想着自己毕业后能开发出改变世界的软件，结果到头来发现自己最大的成就是在宿舍熬夜打游戏还没被室友暴打。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "说实话，我进入游戏行业纯属误打误撞。大学的时候，我本来是冲着\"计算机科学与技术\"这个听起来就很高大上的专业去的。幻想着自己毕业后能开发出改变世界的软件，结果到头来发现自己最大的成就是在宿舍熬夜打游戏还没被室友暴打。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "e5de289e-feda-4d79-8ba2-12aa3e82751e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "毕业后，我稀里糊涂地进了一家游戏公司。起初我还挺不好意思的，觉得做游戏不够\"正经\"。但很快我就发现，游戏开发简直就是程序员的天堂：你可以名正言顺地玩游戏（我们管这叫\"市场调研\"），还能把自己的奇思妙想变成现实（虽然大部分想法都被策划毙掉了）。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "毕业后，我稀里糊涂地进了一家游戏公司。起初我还挺不好意思的，觉得做游戏不够\"正经\"。但很快我就发现，游戏开发简直就是程序员的天堂：你可以名正言顺地玩游戏（我们管这叫\"市场调研\"），还能把自己的奇思妙想变成现实（虽然大部分想法都被策划毙掉了）。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "69242ff7-982b-4a99-85e7-9ff6bac01ab0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "从此，我就在游戏这条路上越走越远。从最初的对着 Unity 发呆，到后来能够闭着眼睛写出一堆看不懂的后端代码；从当年战战兢兢地修改配置文件，到现在能够面不改色地在生产环境里直接改数据库（开玩笑的，千万别这么干）。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "从此，我就在游戏这条路上越走越远。从最初的对着 Unity 发呆，到后来能够闭着眼睛写出一堆看不懂的后端代码；从当年战战兢兢地修改配置文件，到现在能够面不改色地在生产环境里直接改数据库（开玩笑的，千万别这么干）。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "fad53d89-50a0-4506-a781-49d56ad39e64",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "大公司 VS 小公司：我的职场保命指南",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "大公司 VS 小公司：我的职场保命指南",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "78e71bef-535c-4dd3-9122-9352ed020eae",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "在大公司里，我学会了一项重要技能：如何在保住饭碗的同时，尽可能少干活。这可不是偷懒，这是生存之道。在巨人、盛大这样的大厂，你要学会在无数的会议中保持清醒，在汪洋大海般的邮件中找到重点，最重要的是，学会把责任推给别人（开玩笑的，团队合作很重要）。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "在大公司里，我学会了一项重要技能：如何在保住饭碗的同时，尽可能少干活。这可不是偷懒，这是生存之道。在巨人、盛大这样的大厂，你要学会在无数的会议中保持清醒，在汪洋大海般的邮件中找到重点，最重要的是，学会把责任推给别人（开玩笑的，团队合作很重要）。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "f4b8652f-a5aa-448c-ad3c-c4b19c609d5e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "而在小公司，一切都不一样了。作为技术总监，我突然发现自己不仅要当将军，还得自己冲锋陷阵。早上可能还在跟投资人吹牛皮，中午就得埋头解决服务器故障，晚上还要哄策划喝醉的产品经理睡觉。这种经历让我深刻理解了\"全栈\"的真正含义：所有人都栈在你一个人身上。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "而在小公司，一切都不一样了。作为技术总监，我突然发现自己不仅要当将军，还得自己冲锋陷阵。早上可能还在跟投资人吹牛皮，中午就得埋头解决服务器故障，晚上还要哄策划喝醉的产品经理睡觉。这种经历让我深刻理解了\"全栈\"的真正含义：所有人都栈在你一个人身上。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "efbbe415-7ece-4706-843d-452b19fccbd2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "为什么要写这个博客：因为我憋不住了",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "为什么要写这个博客：因为我憋不住了",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "2b581de2-65db-4b6e-a784-f299179982c5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "老实说，我写这个博客纯属一时兴起。可能是喝多了，也可能是代码写多了，总之我突然有种强烈的欲望，想把这些年的荒唐事都倒出来。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "老实说，我写这个博客纯属一时兴起。可能是喝多了，也可能是代码写多了，总之我突然有种强烈的欲望，想把这些年的荒唐事都倒出来。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "24c0b276-3792-4568-b1fa-409cacebdfce",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "这里不会有什么高大上的技术分析，也不会有什么改变世界的宏图大略。你看到的，就是一个普普通通的程序员，在深夜里对着电脑屏幕，敲出来的一些碎碎念。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "这里不会有什么高大上的技术分析，也不会有什么改变世界的宏图大略。你看到的，就是一个普普通通的程序员，在深夜里对着电脑屏幕，敲出来的一些碎碎念。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "d6bbbcfd-7b95-4c56-864f-201ffca9694b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "可能有人会问：你难道不怕写的东西太傻被人笑话吗？拜托，我可是做游戏的，早就习惯被人笑话了。再说了，如果你在这个博客里看到了什么特别聪明的东西，那多半是我抄的。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "可能有人会问：你难道不怕写的东西太傻被人笑话吗？拜托，我可是做游戏的，早就习惯被人笑话了。再说了，如果你在这个博客里看到了什么特别聪明的东西，那多半是我抄的。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "101f8315-a679-484b-963f-ff75a7fda2e5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "你在这里能看到什么：一个技术宅的日常呓语",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "你在这里能看到什么：一个技术宅的日常呓语",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "3f085db5-2f3b-422e-8803-d71490649807",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "后端开发那些事",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "后端开发那些事",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：我会分享一些后端开发的心得。比如说，如何在凌晨三点被电话叫醒时，还能保持冷静地处理服务器宕机。又或者，如何在产品经理提出一个不可能实现的需求时，既不伤和气，又不用加班到天亮。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：我会分享一些后端开发的心得。比如说，如何在凌晨三点被电话叫醒时，还能保持冷静地处理服务器宕机。又或者，如何在产品经理提出一个不可能实现的需求时，既不伤和气，又不用加班到天亮。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "7ad8f528-f0d7-4d48-9ee2-525cbd15f596",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "游戏开发的酸甜苦辣",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "游戏开发的酸甜苦辣",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：游戏开发可不像玩游戏那么轻松。我会讲讲在开发过程中遇到的各种奇葩问题，以及我是如何用更奇葩的方法解决它们的。比如说，有一次为了修复一个 bug，我不得不学会了如何模仿一只鸡的叫声（相信我，这是个很长的故事）。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：游戏开发可不像玩游戏那么轻松。我会讲讲在开发过程中遇到的各种奇葩问题，以及我是如何用更奇葩的方法解决它们的。比如说，有一次为了修复一个 bug，我不得不学会了如何模仿一只鸡的叫声（相信我，这是个很长的故事）。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "217fc6ae-2f31-4bbe-a7ad-1a375db662c0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "管理那些事",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "管理那些事",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：从一个普通程序员变成管理者，这个过程就像是从宅男突然变成了交际花。我会分享一些我在这个转变过程中的心得，比如如何在会议上保持清醒，如何委婉地告诉老板他的想法很傻，以及如何在团队建设活动中避免尴尬（提示：酒精有时候是个好帮手）。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：从一个普通程序员变成管理者，这个过程就像是从宅男突然变成了交际花。我会分享一些我在这个转变过程中的心得，比如如何在会议上保持清醒，如何委婉地告诉老板他的想法很傻，以及如何在团队建设活动中避免尴尬（提示：酒精有时候是个好帮手）。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "f00975e6-2fb7-421e-9caf-46e618b3b9c2",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "技术趋势瞎扯淡",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "技术趋势瞎扯淡",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：虽然我不是什么业界大牛，但这不妨碍我对各种技术趋势指指点点。我会用我独特的视角（就是那种对着 AI 和区块链又爱又恨的矛盾视角）来谈谈我对行业发展的一些看法。不过我得提醒你，我的预测准确率大概和北京的天气预报差不多。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：虽然我不是什么业界大牛，但这不妨碍我对各种技术趋势指指点点。我会用我独特的视角（就是那种对着 AI 和区块链又爱又恨的矛盾视角）来谈谈我对行业发展的一些看法。不过我得提醒你，我的预测准确率大概和北京的天气预报差不多。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "86dd7266-94c7-4f49-be02-ec4cdb7020ca",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "程序员的日常吐槽",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "程序员的日常吐槽",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：这可能是最精彩的部分。我会分享一些作为程序员的日常烦恼和欢乐。比如说，如何应对那些动不动就说\"就改一行代码的事儿\"的人，又或者当你好不容易跟女神搭上话，结果发现人家对你的 JavaScript 一点兴趣都没有。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：这可能是最精彩的部分。我会分享一些作为程序员的日常烦恼和欢乐。比如说，如何应对那些动不动就说\"就改一行代码的事儿\"的人，又或者当你好不容易跟女神搭上话，结果发现人家对你的 JavaScript 一点兴趣都没有。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "0723f9a5-8d73-4ee1-8d9b-16d4f939ac1b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:27:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "业余生活探索",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "业余生活探索",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：没错，程序员也是有生活的！虽然我的业余生活可能就是从书桌前的电脑换到沙发上的笔记本，但我偶尔也会尝试一些新鲜事物。我会分享一些我在尝试新事物时的糗事。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：没错，程序员也是有生活的！虽然我的业余生活可能就是从书桌前的电脑换到沙发上的笔记本，但我偶尔也会尝试一些新鲜事物。我会分享一些我在尝试新事物时的糗事。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "8966141c-b954-4dcd-8846-e6a4939b338a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "技术书籍和学习资源推荐",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "技术书籍和学习资源推荐",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：尽管我总是喜欢开玩笑，但学习和提升自己是真的。我会推荐一些我觉得不错的技术书籍和学习资源。不过我得警告你，我的阅读品位很奇特，可能会推荐一些像《如何在程序崩溃时假装很冷静》这样的奇葩书籍。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：尽管我总是喜欢开玩笑，但学习和提升自己是真的。我会推荐一些我觉得不错的技术书籍和学习资源。不过我得警告你，我的阅读品位很奇特，可能会推荐一些像《如何在程序崩溃时假装很冷静》这样的奇葩书籍。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "c18d2005-42a1-40d4-a5f3-5ef38fd61f5c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "行业八卦（纯属虚构，如有雷同纯属巧合）",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "行业八卦（纯属虚构，如有雷同纯属巧合）",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：作为一个在各大小公司都呆过的老油条，我听过不少业内的奇闻逸事。虽然为了保护隐私（主要是保护我自己不被起诉），我会把这些故事包装一下，但保证它们都精彩纷呈，保证让你看得津津有味。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：作为一个在各大小公司都呆过的老油条，我听过不少业内的奇闻逸事。虽然为了保护隐私（主要是保护我自己不被起诉），我会把这些故事包装一下，但保证它们都精彩纷呈，保证让你看得津津有味。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "505a74b1-3404-47d8-ac61-238b210bf400",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:28:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "编程语言的爱恨情仇",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "编程语言的爱恨情仇",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：作为一个后端开发，我用过不少编程语言。从最初的 C++到后来的 Js，再到现在的 Go 和 Python，每种语言都让我又爱又恨。我会用我独特的方式来评价这些语言，保证让你看完后对这些语言的感觉和以前完全不一样。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：作为一个后端开发，我用过不少编程语言。从最初的 C++到后来的 Js，再到现在的 Go 和 Python，每种语言都让我又爱又恨。我会用我独特的方式来评价这些语言，保证让你看完后对这些语言的感觉和以前完全不一样。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "5be6c858-74de-4e70-922a-7681faaa3751",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "年度总结和新年展望",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "年度总结和新年展望",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：每年年底，我都会写一篇总结，回顾这一年的得与失，同时展望一下新的一年。不过我得提醒你，我的新年计划实现率大概和我的代码测试覆盖率差不多，都是个美好的愿望。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：每年年底，我都会写一篇总结，回顾这一年的得与失，同时展望一下新的一年。不过我得提醒你，我的新年计划实现率大概和我的代码测试覆盖率差不多，都是个美好的愿望。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "93764b1b-7c73-424d-8a56-84a053e319c1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "我的博客风格：专业中带点诙谐，严肃里藏着欢乐",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "我的博客风格：专业中带点诙谐，严肃里藏着欢乐",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "551b8fb7-f075-4780-87d9-73b9401bfa54",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "你可能已经注意到了，我的文风不太\"正经\"。没错，我就是这样一个人：在谈论严肃的技术问题时，也忍不住要插科打诨。为什么要这样呢？主要有以下几个原因：",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "你可能已经注意到了，我的文风不太\"正经\"。没错，我就是这样一个人：在谈论严肃的技术问题时，也忍不住要插科打诨。为什么要这样呢？主要有以下几个原因：",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "941352b7-de4c-4cd6-ba3e-1808d831fe07",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "技术本来就不应该太枯燥",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "技术本来就不应该太枯燥",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：谁说讨论技术就一定要板着脸，讲一堆晦涩难懂的术语？我觉得，再深奥的技术，也可以用轻松幽默的方式来讲述。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：谁说讨论技术就一定要板着脸，讲一堆晦涩难懂的术语？我觉得，再深奥的技术，也可以用轻松幽默的方式来讲述。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "0c5beccd-2312-4443-9015-68eb3cbed918",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "幽默是缓解压力的良药",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "幽默是缓解压力的良药",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：咱们程序员的日子本来就不轻松，天天对着电脑，还要应付各种奇奇怪怪的需求。适当的幽默能让我们在繁忙的工作中喘口气，会心一笑。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：咱们程序员的日子本来就不轻松，天天对着电脑，还要应付各种奇奇怪怪的需求。适当的幽默能让我们在繁忙的工作中喘口气，会心一笑。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "05b22516-ab53-44d8-bd43-4fd9b524e1eb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "让读者更容易记住",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "让读者更容易记住",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：我发现，如果把严肃的技术知识和有趣的段子结合起来，读者更容易记住。毕竟，你可能不记得那个设计模式的具体定义，但你一定记得我讲过的某个尴尬的编程糗事。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：我发现，如果把严肃的技术知识和有趣的段子结合起来，读者更容易记住。毕竟，你可能不记得那个设计模式的具体定义，但你一定记得我讲过的某个尴尬的编程糗事。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "ec67ecac-336f-4316-a851-0df2b4f13ed9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "这就是我的性格",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "这就是我的性格",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：老实说，我天生就是个爱开玩笑的人。即使是在最紧张的项目发布会上，我也忍不住要说几句俏皮话。这个博客就是最真实的我，不加修饰，不装深沉。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：老实说，我天生就是个爱开玩笑的人。即使是在最紧张的项目发布会上，我也忍不住要说几句俏皮话。这个博客就是最真实的我，不加修饰，不装深沉。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "f38b95e2-2c8d-4414-97cf-75b6079b4d65",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "鼓励更多交流",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "鼓励更多交流",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "：我希望这种轻松的风格能鼓励更多的读者与我交流。你不必担心问出一个\"很蠢\"的问题，因为我随时准备好了一个更蠢的回答。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "：我希望这种轻松的风格能鼓励更多的读者与我交流。你不必担心问出一个\"很蠢\"的问题，因为我随时准备好了一个更蠢的回答。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "4e3ebd48-5c6e-426d-9241-fbba64f5ea93",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "一些有趣的小故事：我的编程人生",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "一些有趣的小故事：我的编程人生",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "d044de24-6a61-4bc5-ad2a-7f5f97143013",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "既然咱们都聊到这儿了，我就跟你们分享几个我在编程生涯中的趣事吧。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "既然咱们都聊到这儿了，我就跟你们分享几个我在编程生涯中的趣事吧。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "b451f0bc-ce7f-4aa9-9ee9-82183ebb6a82",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\"一行代码\"引发的血案",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\"一行代码\"引发的血案",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n有一次，我们的产品经理信心满满地走过来说：\"我有个小需求，就改一行代码的事儿。\"我当时就笑了，心想这哥们儿终于开窍了，知道提一些简单的需求。结果这一行代码差点让我把整个数据库给删了。从那以后，每当有人说\"就改一行代码\"，我就会条件反射地浑身发抖。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n有一次，我们的产品经理信心满满地走过来说：\"我有个小需求，就改一行代码的事儿。\"我当时就笑了，心想这哥们儿终于开窍了，知道提一些简单的需求。结果这一行代码差点让我把整个数据库给删了。从那以后，每当有人说\"就改一行代码\"，我就会条件反射地浑身发抖。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "a00fd9dc-1df9-4c15-86f0-abc0b23ea97a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "命名是一门艺术",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "命名是一门艺术",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n在我刚入行的时候，有一次写代码写得昏天黑地，到最后实在想不出变量名了，就用了\"a1\", \"a2\", \"a3\"...结果第二天我就忘了这些变量是干嘛的。从那以后，我开始认真对待每一个变量名，力求做到\"见名知义\"。现在我的同事都说我的变量名起得太长了，比如\"thisVariableIsUsedToCountTheTotalNumberOfUsersWhoLoggedInToday\"。我只能说，细节决定成败啊。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n在我刚入行的时候，有一次写代码写得昏天黑地，到最后实在想不出变量名了，就用了\"a1\", \"a2\", \"a3\"...结果第二天我就忘了这些变量是干嘛的。从那以后，我开始认真对待每一个变量名，力求做到\"见名知义\"。现在我的同事都说我的变量名起得太长了，比如\"thisVariableIsUsedToCountTheTotalNumberOfUsersWhoLoggedInToday\"。我只能说，细节决定成败啊。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "c9110717-ad7c-4cff-b781-66b5801ff80b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "调试的艺术",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "调试的艺术",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n有一次，我们的游戏出了一个很奇怪的 bug：每到晚上 8 点，所有玩家的角色就会开始跳舞。我们排查了整整一周，最后发现是因为一个程序员在 if 语句里把\"20:00\"写成了\"20:00:\"（多了一个冒号）。从那以后，我就得出一个结论：编程最可怕的不是出错，而是出一个很难被发现的错。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n有一次，我们的游戏出了一个很奇怪的 bug：每到晚上 8 点，所有玩家的角色就会开始跳舞。我们排查了整整一周，最后发现是因为一个程序员在 if 语句里把\"20:00\"写成了\"20:00:\"（多了一个冒号）。从那以后，我就得出一个结论：编程最可怕的不是出错，而是出一个很难被发现的错。",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "8cc13a0c-2715-4b47-a9d7-50e3ab85b2f3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "546f0bd1-76b9-4926-9079-9bf7b5886471"
+      },
+      "created_time": "2024-09-14T02:22:00.000Z",
+      "last_edited_time": "2024-09-14T02:31:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "别惦记我照片，既然你都看到这了，万一想要你发邮件给我吧：jiangkingwelcome@vip.qq.com",
+              "link": {
+                "url": "mailto:%E5%88%AB%E6%83%A6%E8%AE%B0%E6%88%91%E7%85%A7%E7%89%87%EF%BC%8C%E6%97%A2%E7%84%B6%E4%BD%A0%E9%83%BD%E7%9C%8B%E5%88%B0%E8%BF%99%E4%BA%86%EF%BC%8C%E4%B8%87%E4%B8%80%E6%83%B3%E8%A6%81%E4%BD%A0%E5%8F%91%E9%82%AE%E4%BB%B6%E7%BB%99%E6%88%91%E5%90%A7%EF%BC%9Ajiangkingwelcome@vip.qq.com"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "别惦记我照片，既然你都看到这了，万一想要你发邮件给我吧：jiangkingwelcome@vip.qq.com",
+            "href": "mailto:%E5%88%AB%E6%83%A6%E8%AE%B0%E6%88%91%E7%85%A7%E7%89%87%EF%BC%8C%E6%97%A2%E7%84%B6%E4%BD%A0%E9%83%BD%E7%9C%8B%E5%88%B0%E8%BF%99%E4%BA%86%EF%BC%8C%E4%B8%87%E4%B8%80%E6%83%B3%E8%A6%81%E4%BD%A0%E5%8F%91%E9%82%AE%E4%BB%B6%E7%BB%99%E6%88%91%E5%90%A7%EF%BC%9Ajiangkingwelcome@vip.qq.com"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ; 感受一下vip 这几个字母好吗\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " ; 感受一下vip 这几个字母好吗\n",
+            "href": null
+          }
+        ],
+        "color": "default"
+      }
+    }
+  ],
+  "contentHtml": "<h1>JiangKing的技术博客：一个游戏开发者的碎碎念</h1><p>嘿，大家好啊！我是JiangKing，对，就是那个总在代码里找茬的家伙。如果你正在读这篇文章，要么是你对技术感兴趣，要么是你不小心点错了链接。不管是哪种情况，既然来了，不妨坐下来，喝杯咖啡（或者啤酒，我不评判），听我唠叨两句。</p><h2>关于我：从码农到甩锅专家的进化之路</h2><p>首先，让我们来个自我介绍。我是JiangKing，这个\"King\"可不是说我多厉害，纯属瞎起的网名。要说我的真实身份，我就是个再普通不过的游戏开发程序员，主要折腾后端那些看不见摸不着的东西。</p><p>我的职业生涯？说来话长，不过既然你问了（其实你没问，但我就当你问了），我就简单说说。我在游戏行业混迹多年，踩过的坑比写过的代码还多。我曾在巨人、盛大、银河这些大公司里当过技术经理。没错，就是那种开会、画饼、甩锅样样精通的角色。后来我觉得人生还不够刺激，于是跑到小公司去当技术总监，这下可好，不仅要会画饼，还得自己动手擀面。</p><h2>我的技术之旅：一路跌跌撞撞，但还挺有意思</h2><p>说实话，我进入游戏行业纯属误打误撞。大学的时候，我本来是冲着\"计算机科学与技术\"这个听起来就很高大上的专业去的。幻想着自己毕业后能开发出改变世界的软件，结果到头来发现自己最大的成就是在宿舍熬夜打游戏还没被室友暴打。</p><p>毕业后，我稀里糊涂地进了一家游戏公司。起初我还挺不好意思的，觉得做游戏不够\"正经\"。但很快我就发现，游戏开发简直就是程序员的天堂：你可以名正言顺地玩游戏（我们管这叫\"市场调研\"），还能把自己的奇思妙想变成现实（虽然大部分想法都被策划毙掉了）。</p><p>从此，我就在游戏这条路上越走越远。从最初的对着 Unity 发呆，到后来能够闭着眼睛写出一堆看不懂的后端代码；从当年战战兢兢地修改配置文件，到现在能够面不改色地在生产环境里直接改数据库（开玩笑的，千万别这么干）。</p><h2>大公司 VS 小公司：我的职场保命指南</h2><p>在大公司里，我学会了一项重要技能：如何在保住饭碗的同时，尽可能少干活。这可不是偷懒，这是生存之道。在巨人、盛大这样的大厂，你要学会在无数的会议中保持清醒，在汪洋大海般的邮件中找到重点，最重要的是，学会把责任推给别人（开玩笑的，团队合作很重要）。</p><p>而在小公司，一切都不一样了。作为技术总监，我突然发现自己不仅要当将军，还得自己冲锋陷阵。早上可能还在跟投资人吹牛皮，中午就得埋头解决服务器故障，晚上还要哄策划喝醉的产品经理睡觉。这种经历让我深刻理解了\"全栈\"的真正含义：所有人都栈在你一个人身上。</p><h2>为什么要写这个博客：因为我憋不住了</h2><p>老实说，我写这个博客纯属一时兴起。可能是喝多了，也可能是代码写多了，总之我突然有种强烈的欲望，想把这些年的荒唐事都倒出来。</p><p>这里不会有什么高大上的技术分析，也不会有什么改变世界的宏图大略。你看到的，就是一个普普通通的程序员，在深夜里对着电脑屏幕，敲出来的一些碎碎念。</p><p>可能有人会问：你难道不怕写的东西太傻被人笑话吗？拜托，我可是做游戏的，早就习惯被人笑话了。再说了，如果你在这个博客里看到了什么特别聪明的东西，那多半是我抄的。</p><h2>你在这里能看到什么：一个技术宅的日常呓语</h2><li><strong>后端开发那些事</strong>：我会分享一些后端开发的心得。比如说，如何在凌晨三点被电话叫醒时，还能保持冷静地处理服务器宕机。又或者，如何在产品经理提出一个不可能实现的需求时，既不伤和气，又不用加班到天亮。</li><li><strong>游戏开发的酸甜苦辣</strong>：游戏开发可不像玩游戏那么轻松。我会讲讲在开发过程中遇到的各种奇葩问题，以及我是如何用更奇葩的方法解决它们的。比如说，有一次为了修复一个 bug，我不得不学会了如何模仿一只鸡的叫声（相信我，这是个很长的故事）。</li><li><strong>管理那些事</strong>：从一个普通程序员变成管理者，这个过程就像是从宅男突然变成了交际花。我会分享一些我在这个转变过程中的心得，比如如何在会议上保持清醒，如何委婉地告诉老板他的想法很傻，以及如何在团队建设活动中避免尴尬（提示：酒精有时候是个好帮手）。</li><li><strong>技术趋势瞎扯淡</strong>：虽然我不是什么业界大牛，但这不妨碍我对各种技术趋势指指点点。我会用我独特的视角（就是那种对着 AI 和区块链又爱又恨的矛盾视角）来谈谈我对行业发展的一些看法。不过我得提醒你，我的预测准确率大概和北京的天气预报差不多。</li><li><strong>程序员的日常吐槽</strong>：这可能是最精彩的部分。我会分享一些作为程序员的日常烦恼和欢乐。比如说，如何应对那些动不动就说\"就改一行代码的事儿\"的人，又或者当你好不容易跟女神搭上话，结果发现人家对你的 JavaScript 一点兴趣都没有。</li><li><strong>业余生活探索</strong>：没错，程序员也是有生活的！虽然我的业余生活可能就是从书桌前的电脑换到沙发上的笔记本，但我偶尔也会尝试一些新鲜事物。我会分享一些我在尝试新事物时的糗事。</li><li><strong>技术书籍和学习资源推荐</strong>：尽管我总是喜欢开玩笑，但学习和提升自己是真的。我会推荐一些我觉得不错的技术书籍和学习资源。不过我得警告你，我的阅读品位很奇特，可能会推荐一些像《如何在程序崩溃时假装很冷静》这样的奇葩书籍。</li><li><strong>行业八卦（纯属虚构，如有雷同纯属巧合）</strong>：作为一个在各大小公司都呆过的老油条，我听过不少业内的奇闻逸事。虽然为了保护隐私（主要是保护我自己不被起诉），我会把这些故事包装一下，但保证它们都精彩纷呈，保证让你看得津津有味。</li><li><strong>编程语言的爱恨情仇</strong>：作为一个后端开发，我用过不少编程语言。从最初的 C++到后来的 Js，再到现在的 Go 和 Python，每种语言都让我又爱又恨。我会用我独特的方式来评价这些语言，保证让你看完后对这些语言的感觉和以前完全不一样。</li><li><strong>年度总结和新年展望</strong>：每年年底，我都会写一篇总结，回顾这一年的得与失，同时展望一下新的一年。不过我得提醒你，我的新年计划实现率大概和我的代码测试覆盖率差不多，都是个美好的愿望。</li><h2>我的博客风格：专业中带点诙谐，严肃里藏着欢乐</h2><p>你可能已经注意到了，我的文风不太\"正经\"。没错，我就是这样一个人：在谈论严肃的技术问题时，也忍不住要插科打诨。为什么要这样呢？主要有以下几个原因：</p><li><strong>技术本来就不应该太枯燥</strong>：谁说讨论技术就一定要板着脸，讲一堆晦涩难懂的术语？我觉得，再深奥的技术，也可以用轻松幽默的方式来讲述。</li><li><strong>幽默是缓解压力的良药</strong>：咱们程序员的日子本来就不轻松，天天对着电脑，还要应付各种奇奇怪怪的需求。适当的幽默能让我们在繁忙的工作中喘口气，会心一笑。</li><li><strong>让读者更容易记住</strong>：我发现，如果把严肃的技术知识和有趣的段子结合起来，读者更容易记住。毕竟，你可能不记得那个设计模式的具体定义，但你一定记得我讲过的某个尴尬的编程糗事。</li><li><strong>这就是我的性格</strong>：老实说，我天生就是个爱开玩笑的人。即使是在最紧张的项目发布会上，我也忍不住要说几句俏皮话。这个博客就是最真实的我，不加修饰，不装深沉。</li><li><strong>鼓励更多交流</strong>：我希望这种轻松的风格能鼓励更多的读者与我交流。你不必担心问出一个\"很蠢\"的问题，因为我随时准备好了一个更蠢的回答。</li><h2>一些有趣的小故事：我的编程人生</h2><p>既然咱们都聊到这儿了，我就跟你们分享几个我在编程生涯中的趣事吧。</p><p><strong>\"一行代码\"引发的血案</strong>\n有一次，我们的产品经理信心满满地走过来说：\"我有个小需求，就改一行代码的事儿。\"我当时就笑了，心想这哥们儿终于开窍了，知道提一些简单的需求。结果这一行代码差点让我把整个数据库给删了。从那以后，每当有人说\"就改一行代码\"，我就会条件反射地浑身发抖。</p><p><strong>命名是一门艺术</strong>\n在我刚入行的时候，有一次写代码写得昏天黑地，到最后实在想不出变量名了，就用了\"a1\", \"a2\", \"a3\"...结果第二天我就忘了这些变量是干嘛的。从那以后，我开始认真对待每一个变量名，力求做到\"见名知义\"。现在我的同事都说我的变量名起得太长了，比如\"thisVariableIsUsedToCountTheTotalNumberOfUsersWhoLoggedInToday\"。我只能说，细节决定成败啊。</p><p><strong>调试的艺术</strong>\n有一次，我们的游戏出了一个很奇怪的 bug：每到晚上 8 点，所有玩家的角色就会开始跳舞。我们排查了整整一周，最后发现是因为一个程序员在 if 语句里把\"20:00\"写成了\"20:00:\"（多了一个冒号）。从那以后，我就得出一个结论：编程最可怕的不是出错，而是出一个很难被发现的错。</p><p><a href=\"mailto:%E5%88%AB%E6%83%A6%E8%AE%B0%E6%88%91%E7%85%A7%E7%89%87%EF%BC%8C%E6%97%A2%E7%84%B6%E4%BD%A0%E9%83%BD%E7%9C%8B%E5%88%B0%E8%BF%99%E4%BA%86%EF%BC%8C%E4%B8%87%E4%B8%80%E6%83%B3%E8%A6%81%E4%BD%A0%E5%8F%91%E9%82%AE%E4%BB%B6%E7%BB%99%E6%88%91%E5%90%A7%EF%BC%9Ajiangkingwelcome@vip.qq.com\">别惦记我照片，既然你都看到这了，万一想要你发邮件给我吧：jiangkingwelcome@vip.qq.com</a> ; 感受一下vip 这几个字母好吗\n</p>"
+}

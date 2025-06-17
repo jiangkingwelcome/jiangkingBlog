@@ -543,6 +543,8 @@ window.isPhone =
 		navigator.userAgent
 	);
 
+window.isQQBrowser = /QQBrowser/i.test(navigator.userAgent);
+
 function getMoveDirection(startx, starty, endx, endy) {
 	if (!isPhone) {
 		return;
@@ -575,16 +577,31 @@ function getMoveDirection(startx, starty, endx, endy) {
 }
 
 function loadIntro() {
+	// 确保hiddenProperty已定义
+	if (!window.hiddenProperty) {
+		window.hiddenProperty = 'hidden';
+	}
+	
 	if (document[hiddenProperty] || loadIntro.loaded) {
 		return;
 	}
 
 	setTimeout(() => {
-		$(".wrap").classList.add("in");
+		const wrapEl = document.querySelector(".wrap");
+		if (wrapEl) wrapEl.classList.add("in");
+		
 		setTimeout(() => {
-			$(".content-subtitle").innerHTML = `<span>${[...subtitle].join(
-				"</span><span>"
-			)}</span>`;
+			const subtitleEl = document.querySelector(".content-subtitle");
+			if (subtitleEl && window.subtitle) {
+				try {
+					subtitleEl.innerHTML = `<span>${[...window.subtitle].join(
+						"</span><span>"
+					)}</span>`;
+				} catch (e) {
+					console.log('subtitle处理错误:', e);
+					if (subtitleEl) subtitleEl.textContent = window.subtitle || '';
+				}
+			}
 		}, 270);
 	}, 0);
 	loadIntro.loaded = true;
@@ -594,48 +611,78 @@ function switchPage() {
 	if (switchPage.switched) {
 		return;
 	}
+	
+	// 安全地获取DOM元素
 	const DOM = {
-		intro: $(".content-intro"),
-		path: $(".shape-wrap path"),
-		shape: $("svg.shape"),
+		intro: document.querySelector(".content-intro") || { style: {} },
+		path: document.querySelector(".shape-wrap path") || { getAttribute: () => null },
+		shape: document.querySelector("svg.shape") || { style: {} },
 	};
-	DOM.shape.style.transformOrigin = "50% 0%";
+	
+	// 确保anime.js库已加载
+	if (typeof anime !== 'function') {
+		console.log('anime.js未加载，跳过动画');
+		switchPage.switched = true;
+		return;
+	}
+	
+	// 安全地设置样式
+	if (DOM.shape && DOM.shape.style) {
+		DOM.shape.style.transformOrigin = "50% 0%";
+	}
 
-	anime({
-		targets: DOM.intro,
-		duration: 1100,
-		easing: "easeInOutSine",
-		translateY: "-200vh",
-	});
+	// 安全地执行动画
+	try {
+		anime({
+			targets: DOM.intro,
+			duration: 1100,
+			easing: "easeInOutSine",
+			translateY: "-200vh",
+		});
 
-	anime({
-		targets: DOM.shape,
-		scaleY: [
-			{
-				value: [0.8, 1.8],
-				duration: 550,
-				easing: "easeInQuad",
+		anime({
+			targets: DOM.shape,
+			scaleY: [
+				{
+					value: [0.8, 1.8],
+					duration: 550,
+					easing: "easeInQuad",
+				},
+				{
+					value: 1,
+					duration: 550,
+					easing: "easeOutQuad",
+				},
+			],
+		});
+		
+		const pathDataId = DOM.path && DOM.path.getAttribute ? DOM.path.getAttribute("pathdata:id") : null;
+		
+		anime({
+			targets: DOM.path,
+			duration: 1100,
+			easing: "easeOutQuad",
+			d: pathDataId,
+			complete: function (anim) {
+				// 安全地清理canvas
+				if (typeof canvas !== 'undefined' && canvas) {
+					try {
+						if (typeof animationID !== 'undefined') {
+							cancelAnimationFrame(animationID);
+						}
+						if (canvas.parentElement) {
+							canvas.parentElement.removeChild(canvas);
+						}
+						canvas = null;
+					} catch (e) {
+						console.log('清理canvas时出错:', e);
+					}
+				}
 			},
-			{
-				value: 1,
-				duration: 550,
-				easing: "easeOutQuad",
-			},
-		],
-	});
-	anime({
-		targets: DOM.path,
-		duration: 1100,
-		easing: "easeOutQuad",
-		d: DOM.path.getAttribute("pathdata:id"),
-		complete: function (anim) {
-			if (canvas) {
-				cancelAnimationFrame(animationID);
-				canvas.parentElement.removeChild(canvas);
-				canvas = null;
-			}
-		},
-	});
+		});
+	} catch (e) {
+		console.log('执行动画时出错:', e);
+	}
 
 	switchPage.switched = true;
 }
@@ -644,31 +691,63 @@ function loadMain() {
 	if (loadMain.loaded) {
 		return;
 	}
+	
+	// 确保isPhone变量存在
+	if (typeof isPhone === 'undefined') {
+		window.isPhone = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+	}
+	
+	// 确保isQQBrowser变量存在
+	if (typeof isQQBrowser === 'undefined') {
+		window.isQQBrowser = false;
+	}
+	
 	setTimeout(() => {
-		$(".card-inner").classList.add("in");
+		// 安全地获取元素
+		const cardInner = document.querySelector(".card-inner");
+		if (cardInner) {
+			cardInner.classList.add("in");
+		}
+		
 		setTimeout(() => {
-			const canvas = document.getElementById("gridCanvas");
-			if (canvas) {
-				const gridAnimation = new GridAnimation(canvas, {
-					direction: "diagonal",
-					speed: isPhone ? 0.03 : 0.05,
-					borderColor: isPhone ? "rgba(255, 255, 255, 0.2)" : "rgba(255, 255, 255, 0.1)",
-					squareSize: isPhone ? 50 : 40,
-					hoverFillColor: "rgba(255, 255, 255, 0.8)",
-					hoverShadowColor: "rgba(255, 255, 255, 0.8)",
-					transitionDuration: 200,
-					trailDuration: 1500,
-					specialBlockColor: "rgba(100, 255, 152, 0.8)",
-					specialHoverColor: "rgba(29, 202, 29, 0.8)",
-					// 蛇身颜色渐变配置
-					snakeHeadColor: "rgba(255, 255, 255, 0.95)",
-					snakeTailColor: "rgba(218, 231, 255, 0.25)",
-					snakeColorDecay: 0.85, // 颜色衰减系数
-				});
-				gridAnimation.init();
+			try {
+				const canvas = document.getElementById("gridCanvas");
+				if (canvas) {
+					// 统一使用默认主题
+					const defaultTheme = {
+						direction: "diagonal",
+						speed: isPhone ? 0.03 : 0.05,
+						borderColor: isPhone ? "rgba(255, 255, 255, 0.2)" : "rgba(255, 255, 255, 0.1)",
+						squareSize: isPhone ? 50 : 40,
+						hoverFillColor: "rgba(255, 255, 255, 0.8)",
+						hoverShadowColor: "rgba(255, 255, 255, 0.8)",
+						transitionDuration: 200,
+						trailDuration: 1500,
+						specialBlockColor: "rgba(100, 255, 152, 0.8)",
+						specialHoverColor: "rgba(29, 202, 29, 0.8)",
+						snakeHeadColor: "rgba(255, 255, 255, 0.95)",
+						snakeTailColor: "rgba(218, 231, 255, 0.25)",
+						snakeColorDecay: 0.85, // 颜色衰减系数
+					};
+					
+					// 确保GridAnimation类存在
+					if (typeof GridAnimation === 'function') {
+						try {
+							const gridAnimation = new GridAnimation(canvas, defaultTheme);
+							gridAnimation.init();
+						} catch (e) {
+							console.log('初始化GridAnimation时出错:', e);
+						}
+					} else {
+						console.log('GridAnimation类未定义');
+					}
+				}
+			} catch (e) {
+				console.log('加载canvas时出错:', e);
 			}
 		}, 1100);
 	}, 400);
+	
 	loadMain.loaded = true;
 }
 
@@ -681,19 +760,49 @@ function loadAll() {
 	loadAll.loaded = true;
 }
 
-window.visibilityChangeEvent = hiddenProperty.replace(
+// 确保hiddenProperty已定义
+if (!window.hiddenProperty) {
+	window.hiddenProperty = 'hidden';
+}
+
+window.visibilityChangeEvent = window.hiddenProperty.replace(
 	/hidden/i,
 	"visibilitychange"
 );
-window.addEventListener(visibilityChangeEvent, loadIntro);
+
+// 安全地添加事件监听
+try {
+	window.addEventListener(window.visibilityChangeEvent, loadIntro);
+} catch (e) {
+	console.log('添加visibilitychange监听器失败:', e);
+	// 回退到默认的visibilitychange
+	window.addEventListener('visibilitychange', loadIntro);
+}
+
 window.addEventListener("DOMContentLoaded", loadIntro);
 
-const enterEl = $(".enter");
-enterEl.addEventListener("click", loadAll);
-enterEl.addEventListener("touchenter", loadAll);
+// 安全地获取元素并添加事件
+const enterEl = document.querySelector(".enter");
+if (enterEl) {
+	enterEl.addEventListener("click", loadAll);
+	// touchenter不是标准事件，修改为touchstart
+	enterEl.addEventListener("touchstart", loadAll);
+}
 
-document.body.addEventListener("mousewheel", loadAll, { passive: true });
-$(".arrow").addEventListener("mouseenter", loadAll);
+// 安全地添加mousewheel事件
+try {
+	document.body.addEventListener("mousewheel", loadAll, { passive: true });
+} catch (e) {
+	console.log('添加mousewheel监听器失败:', e);
+	// 尝试使用wheel事件作为回退
+	document.body.addEventListener("wheel", loadAll, { passive: true });
+}
+
+// 确保元素存在再添加事件监听
+const arrowEl = document.querySelector(".arrow");
+if (arrowEl) {
+    arrowEl.addEventListener("mouseenter", loadAll);
+}
 
 if (isPhone) {
 	document.addEventListener(
@@ -721,10 +830,5 @@ if (isPhone) {
 	);
 }
 
-// stagewise dev-tool 集成，仅开发环境生效
-if ((typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 'development') || location.hostname === 'localhost') {
-	import('@stagewise/toolbar').then(({ initToolbar }) => {
-		const config = { plugins: [] };
-		initToolbar(config);
-	});
-}
+// 移除开发工具集成，避免require错误
+// 如果需要开发工具，请在构建系统中正确配置

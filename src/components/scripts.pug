@@ -1,10 +1,27 @@
 script(src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js")
+script(src="js/error-handler.js")
 
 script.
 	window.$ = selector => document.querySelector(selector)
 	const getOriginalContent = selector => $(selector).getAttribute("original-content")
 	window.subtitle = getOriginalContent(".content-subtitle")
 	window.signature = getOriginalContent("#signature")
+	
+	// 浏览器检测 - 仅用于调试
+	function detectBrowser() {
+		const ua = navigator.userAgent.toLowerCase();
+		const isQQBrowser = ua.indexOf('qqbrowser') > -1;
+		const isMQQBrowser = ua.indexOf('mqqbrowser') > -1;
+		const isChrome = ua.indexOf('chrome') > -1 && !isQQBrowser && !isMQQBrowser;
+		
+		console.log('浏览器检测:', { isQQBrowser, isMQQBrowser, isChrome, userAgent: ua });
+		
+		return { isQQBrowser, isMQQBrowser, isChrome };
+	}
+	
+	// 执行浏览器检测
+	const browserInfo = detectBrowser();
+	
 	window.config = {
 		SIM_RESOLUTION: 128,
 		DYE_RESOLUTION: 1024,
@@ -31,6 +48,7 @@ script.
 		SUNRAYS: true,
 		SUNRAYS_RESOLUTION: 196,
 		SUNRAYS_WEIGHT: 1.0,
+		BROWSER_INFO: browserInfo,
 	}
 
 script(src='js/main.js')
@@ -39,4 +57,4 @@ if intro.background
 	script(src='js/background.js')
 
 if intro.supportAuthor
-	script(src="https://cdn.jsdelivr.net/gh/JiangKing/js/log.min.js")
+	script(src="/assets/js/log.min.js")

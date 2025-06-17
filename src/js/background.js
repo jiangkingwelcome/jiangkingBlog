@@ -37,7 +37,7 @@ function pointerPrototype() {
 	this.deltaY = 0;
 	this.down = false;
 	this.moved = false;
-	this.color = [30, 0, 300];
+	this.color = [270, 0.9, 0.9, 1.0]; // 蓝紫色调
 }
 
 let pointers = [];
@@ -995,7 +995,11 @@ function updateColors(dt) {
 	if (colorUpdateTimer >= 1) {
 		colorUpdateTimer = wrap(colorUpdateTimer, 0, 1);
 		pointers.forEach(p => {
-			p.color = generateColor();
+			// 强制所有指针颜色使用蓝紫色调
+			const h = 270; // 紫色色调
+			const s = 0.9;
+			const v = 0.9;
+			p.color = [h, s, v, 1.0];
 		});
 	}
 }
@@ -1220,10 +1224,12 @@ function splatPointer(pointer) {
 
 function multipleSplats(amount) {
 	for (let i = 0; i < amount; i++) {
-		const color = generateColor();
-		color.r *= 10.0;
-		color.g *= 10.0;
-		color.b *= 10.0;
+		// 强制使用蓝紫色调（Chrome风格）
+		const h = 270; // 紫色色调
+		const s = 0.9;
+		const v = 0.9;
+		const rgbColor = HSVtoRGB(h/360, s, v);
+		const color = { r: rgbColor.r * 10.0, g: rgbColor.g * 10.0, b: rgbColor.b * 10.0 };
 		const x = Math.random();
 		const y = Math.random();
 		const dx = 1000 * (Math.random() - 0.5);
@@ -1245,7 +1251,15 @@ function splat(x, y, dx, dy, color) {
 
 	gl.viewport(0, 0, dye.width, dye.height);
 	gl.uniform1i(splatProgram.uniforms.uTarget, dye.read.attach(0));
-	gl.uniform3f(splatProgram.uniforms.color, color.r, color.g, color.b);
+	
+	// 强制使用蓝紫色调（Chrome风格），无论什么浏览器
+	const h = 270; // 紫色色调
+	const s = 0.9;
+	const v = 0.9;
+	const rgbColor = HSVtoRGB(h/360, s, v);
+	gl.uniform3f(splatProgram.uniforms.color, rgbColor.r, rgbColor.g, rgbColor.b);
+	
+	gl.uniform1f(splatProgram.uniforms.radius, correctRadius(config.SPLAT_RADIUS / 100.0));
 	blit(dye.write.fbo);
 	dye.swap();
 }
@@ -1313,11 +1327,16 @@ function correctDeltaY(delta) {
 }
 
 function generateColor() {
-	let c = HSVtoRGB(Math.random(), 1.0, 1.0);
+	// 强制使用Chrome浏览器的颜色风格（蓝紫色调）
+	const h = 270; // 紫色色调
+	const s = 0.9;
+	const v = 0.9;
+	
+	let c = HSVtoRGB(h/360, s, v);
 	c.r *= 0.15;
 	c.g *= 0.15;
 	c.b *= 0.15;
-	return c;
+	return [h, s, v, 1.0]; // 返回HSV色彩空间的值
 }
 
 function HSVtoRGB(h, s, v) {

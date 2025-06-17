@@ -6,9 +6,23 @@ html(lang="zh-CN")
     meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
     meta(name="renderer", content="webkit")
     title JiangKing/Blog
-    //- Less 文件将在这里引入，例如：
-    //- link(rel="stylesheet", href="styles.less")
-    //- 或者编译后的 CSS 文件：
+    
+    //- 浏览器兼容性修复脚本 - 统一蓝紫色主题
+    script.
+      (function() {
+        // 为所有浏览器应用统一的蓝紫色主题
+        document.documentElement.className += ' unified-theme';
+        
+        // 创建统一的主题样式
+        var unifiedStyles = '.unified-theme{--primary:#6366f1;--primary-dark:#4f46e5;--secondary:#8b5cf6;--accent:#ec4899;}.unified-theme .dynamic-bg{background:#0f0f23;background:-webkit-linear-gradient(45deg,#0f0f23 0%,#1a1a3e 50%,#0f0f23 100%);background:linear-gradient(45deg,#0f0f23 0%,#1a1a3e 50%,#0f0f23 100%);}.unified-theme .grid-bg{background-image:-webkit-linear-gradient(top,rgba(99,102,241,0.1) 1px,transparent 1px),-webkit-linear-gradient(left,rgba(99,102,241,0.1) 1px,transparent 1px);background-image:linear-gradient(to bottom,rgba(99,102,241,0.1) 1px,transparent 1px),linear-gradient(to right,rgba(99,102,241,0.1) 1px,transparent 1px);}.unified-theme .sidebar{background:rgba(15,15,35,0.95);border-right:1px solid rgba(99,102,241,0.3);}.unified-theme .avatar-ring{background:#6366f1;background:-webkit-linear-gradient(45deg,#6366f1,#8b5cf6,#ec4899,#6366f1);background:linear-gradient(45deg,#6366f1,#8b5cf6,#ec4899,#6366f1);}.unified-theme .social-link{background:rgba(99,102,241,0.15);border:1px solid rgba(99,102,241,0.3);}.unified-theme .social-link:hover{background:rgba(99,102,241,0.3);border-color:#6366f1;box-shadow:0 0 20px rgba(99,102,241,0.5);}.unified-theme .stat-card{background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.3);}.unified-theme .stat-value{color:#6366f1;}.unified-theme .post-card{background:rgba(99,102,241,0.08);background:-webkit-linear-gradient(135deg,rgba(99,102,241,0.1),rgba(139,92,246,0.1));background:linear-gradient(135deg,rgba(99,102,241,0.1),rgba(139,92,246,0.1));border:1px solid rgba(99,102,241,0.2);}.unified-theme .post-card:hover{box-shadow:0 20px 40px rgba(99,102,241,0.3);border-color:#6366f1;}.unified-theme .tag{background:rgba(99,102,241,0.2);border:1px solid #6366f1;color:#6366f1;}.unified-theme .tag:hover{background:#6366f1;color:#fff;}.unified-theme .tool-btn{background:#6366f1;background:-webkit-linear-gradient(135deg,#6366f1,#8b5cf6);background:linear-gradient(135deg,#6366f1,#8b5cf6);}.unified-theme .loader-ring{border-top-color:#6366f1;}.unified-theme .loader-ring:nth-child(2){border-top-color:#8b5cf6;}.unified-theme .loader-ring:nth-child(3){border-top-color:#ec4899;}';
+        
+        var styleEl = document.createElement('style');
+        styleEl.innerHTML = unifiedStyles;
+        document.head.appendChild(styleEl);
+        console.log('已应用统一蓝紫色主题');
+      })();
+    
+    //- 原有的CSS文件
     link(rel="stylesheet", href="/css/blog.css")
   body
     //- 动态背景
@@ -178,8 +192,12 @@ html(lang="zh-CN")
       }
       .category-item:hover,
       .category-item.active {
-        background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+        /* 兼容性渐变写法 */
+        background: #8080ff; /* 回退纯色 */
+        background: -webkit-linear-gradient(90deg, #8080ff, #a0a0ff, #c0c0ff); /* 旧版WebKit */
+        background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent)); /* 标准语法 */
         color: #fff;
+        box-shadow: 0 0 8px rgba(128, 128, 255, 0.8);
         box-shadow: 0 0 8px var(--primary);
       }
       .category-count {
@@ -245,8 +263,12 @@ html(lang="zh-CN")
       }
       .tag-item:hover,
       .tag-item.active {
-        background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+        /* 兼容性渐变写法 */
+        background: #8080ff; /* 回退纯色 */
+        background: -webkit-linear-gradient(90deg, #8080ff, #a0a0ff, #c0c0ff); /* 旧版WebKit */
+        background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent)); /* 标准语法 */
         color: #fff;
+        box-shadow: 0 0 8px rgba(128, 128, 255, 0.8);
         box-shadow: 0 0 8px var(--primary);
       }
       .tag-count {

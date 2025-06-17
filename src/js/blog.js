@@ -1,3 +1,19 @@
+// 浏览器检测和统一样式
+function detectBrowser() {
+    const ua = navigator.userAgent.toLowerCase();
+    const isQQBrowser = ua.indexOf('qqbrowser') > -1 || ua.indexOf('mqqbrowser') > -1;
+    const isChrome = ua.indexOf('chrome') > -1 && !isQQBrowser;
+    
+    // 强制所有浏览器使用Chrome的样式
+    document.documentElement.classList.add('browser-chrome');
+    
+    return { isQQBrowser, isChrome };
+}
+
+// 在页面加载时执行浏览器检测
+const browserInfo = detectBrowser();
+console.log('Browser detection:', browserInfo);
+
 // 页面加载动画
 window.addEventListener('load', () => {
     setTimeout(() => {

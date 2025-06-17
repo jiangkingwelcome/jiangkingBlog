@@ -1,0 +1,68 @@
+{
+  "id": "d4cd8298-9f34-49f9-ace2-3ba5990696c4",
+  "title": "留言板",
+  "date": "2021-07-02",
+  "tags": [],
+  "status": "Published",
+  "type": "Menu",
+  "category": "",
+  "slug": "/message",
+  "summary": "更多帮助请访问手册 → ",
+  "created_time": "2023-06-26T11:06:00.000Z",
+  "last_edited_time": "2024-09-14T12:39:00.000Z",
+  "blocks": [
+    {
+      "object": "block",
+      "id": "580bf76b-f923-4fad-8fb9-086e5bb41242",
+      "parent": {
+        "type": "page_id",
+        "page_id": "d4cd8298-9f34-49f9-ace2-3ba5990696c4"
+      },
+      "created_time": "2023-06-26T11:06:00.000Z",
+      "last_edited_time": "2023-06-26T11:06:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "color": "default"
+      }
+    },
+    {
+      "object": "block",
+      "id": "f1be3ca0-73d8-4d92-9c64-cc9631f1d049",
+      "parent": {
+        "type": "page_id",
+        "page_id": "d4cd8298-9f34-49f9-ace2-3ba5990696c4"
+      },
+      "created_time": "2023-06-26T11:06:00.000Z",
+      "last_edited_time": "2023-06-26T11:06:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "color": "default"
+      }
+    }
+  ],
+  "contentHtml": "<p></p><p></p>"
+}

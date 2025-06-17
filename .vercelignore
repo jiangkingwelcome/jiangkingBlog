@@ -1,0 +1,13 @@
+node_modules
+.git
+logs
+backup
+temp-build
+README.md
+README.zh_CN.md
+LICENSE
+.editorconfig
+temp-svg-content.txt
+test-*.js
+start-*.bat
+*.log 

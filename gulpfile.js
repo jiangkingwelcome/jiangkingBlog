@@ -223,7 +223,7 @@ gulp.task('watch', function () {
 	connect.server({
 		root: 'dist',
 		livereload: true,
-		port: 8080
+		port: 8085 // 修改端口避免冲突
 	})
 })
 
