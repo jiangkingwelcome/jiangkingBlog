@@ -7,7 +7,7 @@
 	"intro": {
 		"title": "JiangKing Tech Hub",
 		"subtitle": "AI · 游戏开发 · GitHub热点",
-		"enter": "cd ~/projects && code .",
+		"enter": "enter",
 		"supportAuthor": true,
 		"background": true
 	},

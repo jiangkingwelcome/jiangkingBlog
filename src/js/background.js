@@ -950,6 +950,14 @@ const initBackground = () => {
 	updateKeywords();
 	initFramebuffers();
 	multipleSplats(parseInt(Math.random() * 20) + 5);
+	
+	// 设置定时器，每30秒自动产生新的泼墨效果
+	if (!window.splatsInterval) {
+		window.splatsInterval = setInterval(() => {
+			multipleSplats(parseInt(Math.random() * 10) + 3);
+		}, 30000); // 30秒
+	}
+	
 	update(true)
 }
 

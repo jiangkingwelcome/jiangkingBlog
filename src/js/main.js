@@ -582,35 +582,78 @@ function loadIntro() {
 		window.hiddenProperty = 'hidden';
 	}
 	
-	if (document[hiddenProperty] || loadIntro.loaded) {
+	if (document[hiddenProperty]) {
 		return;
 	}
 
-	setTimeout(() => {
-		const wrapEl = document.querySelector(".wrap");
-		if (wrapEl) wrapEl.classList.add("in");
-		
+	// 移除loadIntro.loaded检查，使函数能被重复调用
+	
+	const playIntroAnimation = () => {
 		setTimeout(() => {
-			const subtitleEl = document.querySelector(".content-subtitle");
-			if (subtitleEl && window.subtitle) {
-				try {
-					subtitleEl.innerHTML = `<span>${[...window.subtitle].join(
-				"</span><span>"
-			)}</span>`;
-				} catch (e) {
-					console.log('subtitle处理错误:', e);
-					if (subtitleEl) subtitleEl.textContent = window.subtitle || '';
-				}
+			const wrapEl = document.querySelector(".wrap");
+			if (wrapEl) {
+				// 先移除in类，然后添加，以触发重新动画
+				wrapEl.classList.remove("in");
+				// 使用setTimeout确保DOM更新
+				setTimeout(() => {
+					wrapEl.classList.add("in");
+				}, 50);
 			}
-		}, 270);
-	}, 0);
+			
+			setTimeout(() => {
+				const subtitleEl = document.querySelector(".content-subtitle");
+				if (subtitleEl && window.subtitle) {
+					try {
+						// 重新创建字母动画
+						subtitleEl.innerHTML = `<span>${[...window.subtitle].join(
+					"</span><span>"
+				)}</span>`;
+						
+						// 重新应用动画效果到每个字母
+						const spans = subtitleEl.querySelectorAll('span');
+						spans.forEach((span, index) => {
+							span.style.animation = 'none';
+							setTimeout(() => {
+								span.style.animation = '';
+							}, 10);
+						});
+					} catch (e) {
+						console.log('subtitle处理错误:', e);
+						if (subtitleEl) subtitleEl.textContent = window.subtitle || '';
+					}
+				}
+			}, 270);
+		}, 0);
+	};
+
+	// 立即播放一次动画
+	playIntroAnimation();
+	
+	// 设置定时器，每30秒重复播放动画
+	if (!window.introAnimationInterval) {
+		window.introAnimationInterval = setInterval(() => {
+			// 只有在页面可见时才执行动画
+			if (!document[hiddenProperty]) {
+				playIntroAnimation();
+			}
+		}, 30000); // 30秒
+		
+		// 页面可见性变化时处理定时器
+		document.addEventListener(visibilityChangeEvent, () => {
+			if (document[hiddenProperty]) {
+				// 页面不可见时不需要执行动画，但保留定时器
+			} else {
+				// 页面重新可见时立即播放一次
+				playIntroAnimation();
+			}
+		});
+	}
+	
 	loadIntro.loaded = true;
 }
 
 function switchPage() {
-	if (switchPage.switched) {
-		return;
-	}
+	// 移除单次切换限制，允许多次调用
 	
 	// 安全地获取DOM元素
 	const DOM = {
@@ -622,7 +665,6 @@ function switchPage() {
 	// 确保anime.js库已加载
 	if (typeof anime !== 'function') {
 		console.log('anime.js未加载，跳过动画');
-		switchPage.switched = true;
 		return;
 	}
 	
@@ -758,6 +800,20 @@ function loadAll() {
 	switchPage();
 	loadMain();
 	loadAll.loaded = true;
+	
+	// 添加页面卸载时的清理逻辑
+	window.addEventListener("beforeunload", function() {
+		// 清除动画定时器
+		if (window.introAnimationInterval) {
+			clearInterval(window.introAnimationInterval);
+			window.introAnimationInterval = null;
+		}
+		// 清除泼墨效果定时器
+		if (window.splatsInterval) {
+			clearInterval(window.splatsInterval);
+			window.splatsInterval = null;
+		}
+	});
 }
 
 // 确保hiddenProperty已定义

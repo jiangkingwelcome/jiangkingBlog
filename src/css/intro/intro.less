@@ -54,7 +54,7 @@
 		-apple-system, sans-serif;
 	font-size: 1.2rem;
 	font-weight: 200;
-	margin-bottom: 2em;
+	margin-bottom: 1em; /* 减小底部间距，为enter按钮腾出更多空间 */
 	text-shadow: 0 0 4px #ffffff;
 
 	@media screen and (max-width: 1024px) {
@@ -64,13 +64,15 @@
 
 .enter {
 	color: @color-enter;
-	font-size: 0.8rem;
+	font-size: 1.2rem; /* 增大字体大小 */
 	letter-spacing: 3px;
 	white-space: pre;
 	pointer-events: auto;
 	transition: all 0.4s;
 	z-index: 999;
 	position: relative;
+	margin-top: 2.5em; /* 增加顶部间距，使按钮下移 */
+	display: inline-block; /* 确保margin生效 */
 	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.7), transparent);
 	background-size: 200% 100%;
 	background-clip: text;
@@ -81,20 +83,21 @@
 	&:hover,
 	&:focus {
 		color: @color-link-hover;
+		transform: scale(1.1); /* 悬停时略微放大 */
 	}
 }
 
 @keyframes shimmer {
 	0% {
 		background-position: 200% center;
-		text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+		text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 	}
 	50% {
-		text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+		text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 	}
 	100% {
 		background-position: -200% center;
-		text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+		text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 	}
 }
 
