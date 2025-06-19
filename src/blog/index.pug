@@ -5,7 +5,26 @@ html(lang="zh-CN")
     meta(name="viewport", content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=2,viewport-fit=cover")
     meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
     meta(name="renderer", content="webkit")
-    title JiangKing/Blog
+    
+    //- SEO优化：完善Meta标签
+    title #{config && config.title ? config.title : 'JiangKing'} - 个人技术博客
+    meta(name="description", content=`${config && config.description ? config.description : 'JiangKing的个人技术博客，分享编程、技术经验与思考'}`)
+    meta(name="keywords", content=`${config && config.keywords ? config.keywords : '博客,技术,编程,JiangKing,开发,学习'}`)
+    meta(name="author", content="JiangKing")
+    
+    //- 社交分享Meta标签
+    meta(property="og:title", content=`${config && config.title ? config.title : 'JiangKing'} - 个人技术博客`)
+    meta(property="og:description", content=`${config && config.description ? config.description : 'JiangKing的个人技术博客，分享编程、技术经验与思考'}`)
+    meta(property="og:type", content="website")
+    meta(property="og:url", content=`${config && config.url ? config.url : 'https://jiangking.com/'}`)
+    
+    //- 移动友好优化：添加主题色和Apple特定Meta标签
+    meta(name="theme-color", content="#0f0f23")
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="black-translucent")
+    
+    //- 预加载关键资源
+    link(rel="preload", href="/css/blog.css", as="style")
     
     //- 浏览器兼容性修复脚本 - 统一蓝紫色主题
     script.
@@ -38,22 +57,23 @@ html(lang="zh-CN")
       .loader-ring
       .loader-ring
 
-    //- 侧边栏
+    //- 侧边栏 - 增强语义化结构，使用nav标签
     aside#sidebar.sidebar
-      .profile-section
+      //- 个人资料部分
+      section.profile-section
         .avatar-container
           .avatar-ring
           .avatar
             
         h2.nickname JiangKing
         .social-links
-          a.social-link(href="#", title="微信: jiangking86")
+          a.social-link(href="#", title="微信: jiangking86", aria-label="微信联系")
             span(style="position: relative; z-index: 1;") 💬
-          a.social-link(href="mailto:jiangkingwelcome@vip.qq.com", title="邮箱: jiangkingwelcome@vip.qq.com")
+          a.social-link(href="mailto:jiangkingwelcome@vip.qq.com", title="邮箱: jiangkingwelcome@vip.qq.com", aria-label="发送邮件")
             span(style="position: relative; z-index: 1;") 📧
-          a.social-link(href="#", title="QQ: 33855846")
+          a.social-link(href="#", title="QQ: 33855846", aria-label="QQ联系")
             span(style="position: relative; z-index: 1;") 🐧
-          a.social-link(href="#", title="电话")
+          a.social-link(href="#", title="电话", aria-label="电话联系")
             span(style="position: relative; z-index: 1;") 📱
         
         .stats
@@ -62,26 +82,31 @@ html(lang="zh-CN")
               | #{articles.filter(a => a.status === 'Published' && a.type === 'Post').length}
             .stat-label 文章
       
-      nav.nav-menu
+      //- 导航菜单
+      nav.nav-menu(role="navigation", aria-label="主导航")
         ul
           li.nav-item.active
             a.nav-link(href="/")
               span.nav-icon 🏠
               span 主页
           li.nav-item#tag-btn
-            a.nav-link(href="javascript:void(0);")
+            a.nav-link(href="javascript:void(0);", aria-haspopup="true", aria-expanded="false")
               span.nav-icon 🏷️
               span 标签
           li.nav-item#category-btn
-            a.nav-link(href="javascript:void(0);")
+            a.nav-link(href="javascript:void(0);", aria-haspopup="true", aria-expanded="false")
               span.nav-icon 📝
               span 分类
+          li.nav-item
+            a.nav-link(href="/github-trending.html")
+              span.nav-icon 🔥
+              span GitHub热门
           li.nav-item
             a.nav-link(href="/about.html")
               span.nav-icon ✈️
               span About
 
-    //- 主内容区
+    //- 主内容区 - 增强语义化结构
     main.main-content
       //- Hero 区域
       section.hero
@@ -92,30 +117,31 @@ html(lang="zh-CN")
           p.hero-subtitle #{config.main.signature}
 
       //- 文章内容
-      .content-wrapper
-        .posts-grid
+      section.content-wrapper
+        //- 使用语义化结构：文章列表
+        div.posts-grid(role="feed", aria-label="博客文章列表")
           if !articles || articles.length === 0
             p.no-article 暂无文章，请先同步 Notion 数据。
           else
             each article in articles
               if article.type === 'Post'
-                article.post-card(data-category=article.category)
-                  h3.post-title
-                    a(href=`/blog/${article.id}.html`) #{article.title}
+                article.post-card(data-category=article.category, itemscope, itemtype="http://schema.org/BlogPosting")
+                  h3.post-title(itemprop="headline")
+                    a(href=`/blog/${article.id}.html`, itemprop="url") #{article.title}
                   .post-meta
                     span.meta-item
                       span.meta-icon 📅
-                      | #{article.date}
+                      time(itemprop="datePublished", datetime=article.date) #{article.date}
                     //- 可扩展更多元数据
-                  p.post-excerpt #{article.summary}
-                  a.read-more(href=`/blog/${article.id}.html`) 阅读全文
+                  p.post-excerpt(itemprop="description") #{article.summary}
+                  a.read-more(href=`/blog/${article.id}.html`, aria-label=`阅读《${article.title}》全文`) 阅读全文
                   if article.tags && Array.isArray(article.tags) && article.tags.length
                     .post-tags
                       each tag in article.tags
-                        span.tag= tag
+                        span.tag(itemprop="keywords")= tag
 
       //- 页脚
-      footer.footer
+      footer.footer(role="contentinfo")
         p © 2025 JiangKing ❤️ 
           a(href="#") RSS Feed
 
@@ -123,33 +149,47 @@ html(lang="zh-CN")
     #overlay.overlay(onclick="toggleSidebar()")
 
     //- 分类弹窗浮层，放在body末尾
-    div#category-popup.category-popup
-      div.category-title 文章分类
-      ul.category-list
-        li.category-item.active(data-category="all")
+    div#category-popup.category-popup(role="dialog", aria-labelledby="category-title", aria-hidden="true")
+      div#category-title.category-title 文章分类
+      ul.category-list(role="listbox")
+        li.category-item.active(data-category="all", role="option", aria-selected="true")
           span 全部文章
           span.category-count 32
-        li.category-item(data-category="技术分享")
+        li.category-item(data-category="技术分享", role="option", aria-selected="false")
           span 技术分享
           span.category-count 14
-        li.category-item(data-category="心情随笔")
+        li.category-item(data-category="心情随笔", role="option", aria-selected="false")
           span 心情随笔
           span.category-count 3
-        li.category-item(data-category="最新电影")
+        li.category-item(data-category="最新电影", role="option", aria-selected="false")
           span 最新电影
           span.category-count 2
-        li.category-item(data-category="破解下载")
+        li.category-item(data-category="破解下载", role="option", aria-selected="false")
           span 破解下载
           span.category-count 2
           
     //- 标签弹窗浮层，放在body末尾
-    div#tag-popup.tag-popup
-      div.tag-title 文章标签
-      ul.tag-list
-        li.tag-item.active(data-tag="all")
+    div#tag-popup.tag-popup(role="dialog", aria-labelledby="tag-title", aria-hidden="true")
+      div#tag-title.tag-title 文章标签
+      ul.tag-list(role="listbox")
+        li.tag-item.active(data-tag="all", role="option", aria-selected="true")
           span 全部标签
           span.tag-count 32
         //- 这里的标签列表将通过JavaScript动态生成
+
+    //- 添加结构化数据
+    script(type="application/ld+json").
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "headline": "JiangKing个人技术博客",
+        "description": "#{config && config.description ? config.description : 'JiangKing的个人技术博客，分享编程、技术经验与思考'}",
+        "url": "#{config && config.url ? config.url : 'https://jiangking.com/'}",
+        "author": {
+          "@type": "Person",
+          "name": "JiangKing"
+        }
+      }
 
     style.
       .category-popup {
@@ -290,7 +330,34 @@ html(lang="zh-CN")
         const categoryItems = document.querySelectorAll('.category-item');
         const cards = document.querySelectorAll('.post-card');
         
-        categoryBtn.addEventListener('click', function(e) {
+        // 确保当前页面导航激活状态正确设置
+        function updateNavActiveState() {
+          // 清除所有导航项的激活状态
+          document.querySelectorAll('.nav-item').forEach(item => {
+            item.classList.remove('active');
+          });
+          
+          // 根据当前页面路径设置激活状态
+          const currentPath = window.location.pathname;
+          let activeNav = null;
+          
+          if (currentPath === '/' || currentPath.includes('/index') || currentPath === '/blog/') {
+            activeNav = document.querySelector('.nav-item a[href="/"]').parentElement;
+          } else if (currentPath.includes('/github-trending')) {
+            activeNav = document.querySelector('.nav-item a[href="/github-trending.html"]').parentElement;
+          } else if (currentPath.includes('/about')) {
+            activeNav = document.querySelector('.nav-item a[href="/about.html"]').parentElement;
+          }
+          
+          if (activeNav) {
+            activeNav.classList.add('active');
+          }
+        }
+        
+        // 页面加载时更新导航激活状态
+        updateNavActiveState();
+        
+        categoryBtn && categoryBtn.addEventListener('click', function(e) {
           e.stopPropagation();
           
           // 获取分类按钮的位置
@@ -336,6 +403,58 @@ html(lang="zh-CN")
         const tagBtn = document.getElementById('tag-btn');
         const tagPopup = document.getElementById('tag-popup');
         const tagList = document.querySelector('.tag-list');
+        
+        // 确保标签按钮有效并正确设置点击事件
+        function initializeTagBtn() {
+          if (!tagBtn) return;
+          
+          // 移除可能存在的旧事件监听器
+          const newTagBtn = tagBtn.cloneNode(true);
+          if (tagBtn.parentNode) {
+            tagBtn.parentNode.replaceChild(newTagBtn, tagBtn);
+          }
+          
+          // 给新的标签按钮添加事件监听器
+          newTagBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            
+            // 获取标签按钮的位置
+            const btnRect = newTagBtn.getBoundingClientRect();
+            
+            // 设置弹出框的位置
+            tagPopup.style.position = 'fixed';
+            tagPopup.style.left = (btnRect.right + 10) + 'px';
+            tagPopup.style.top = btnRect.top + 'px';
+            
+            tagPopup.classList.toggle('show');
+            
+            // 隐藏分类弹窗
+            if (categoryPopup.classList.contains('show')) {
+              categoryPopup.classList.remove('show');
+            }
+          });
+          
+          return newTagBtn;
+        }
+        
+        // 初始化标签按钮
+        const updatedTagBtn = initializeTagBtn();
+        
+        // 为"全部标签"添加点击事件
+        const allTagItem = document.querySelector('.tag-item[data-tag="all"]');
+        if (allTagItem) {
+          allTagItem.addEventListener('click', function() {
+            document.querySelectorAll('.tag-item').forEach(i => i.classList.remove('active'));
+            this.classList.add('active');
+            
+            // 显示所有文章
+            cards.forEach(card => {
+              card.style.display = 'block';
+            });
+            
+            tagPopup.classList.remove('show');
+          });
+        }
         
         // 收集所有文章的标签
         const allTags = new Map();
@@ -387,27 +506,8 @@ html(lang="zh-CN")
           tagList.appendChild(li);
         });
         
-        tagBtn && tagBtn.addEventListener('click', function(e) {
-          e.stopPropagation();
-          
-          // 获取标签按钮的位置
-          const btnRect = tagBtn.getBoundingClientRect();
-          
-          // 设置弹出框的位置
-          tagPopup.style.position = 'fixed';
-          tagPopup.style.left = (btnRect.right + 10) + 'px';
-          tagPopup.style.top = btnRect.top + 'px';
-          
-          tagPopup.classList.toggle('show');
-          
-          // 隐藏分类弹窗
-          if (categoryPopup.classList.contains('show')) {
-            categoryPopup.classList.remove('show');
-          }
-        });
-        
         document.addEventListener('click', function(e) {
-          if (!tagPopup.contains(e.target) && !tagBtn.contains(e.target)) {
+          if (tagPopup && !tagPopup.contains(e.target) && !updatedTagBtn.contains(e.target)) {
             tagPopup.classList.remove('show');
           }
         });

@@ -6,7 +6,20 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=2,viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="renderer" content="webkit">
-    <title>加锁文章 - JiangKing/Blog</title>
+    <title>加锁文章 - JiangKing博客</title>
+    <meta name="description" content="本文需要输入密码才可访问，密码: 不能说">
+    <meta name="keywords" content=", 加锁文章, 博客, JiangKing">
+    <meta name="author" content="JiangKing">
+    <meta property="og:title" content="加锁文章 - JiangKing博客">
+    <meta property="og:description" content="本文需要输入密码才可访问，密码: 不能说">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiangking.com/blog/e37bba42-914b-499e-8f68-e51699998b9e.html">
+    <meta property="article:published_time" content="2021-11-05">
+    <meta property="article:author" content="JiangKing">
+    <meta name="theme-color" content="#0f0f23">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="preload" href="/css/blog.css" as="style">
     <link rel="stylesheet" href="/css/blog.css">
     <style>
       .image-container {
@@ -20,6 +33,7 @@
         min-height: 150px;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        loading: lazy; /* 延迟加载优化 */
       }
       
       /* 特殊样式用于SVG图片 */
@@ -33,6 +47,27 @@
         border: 1px dashed #ff5555;
         background-color: #ffecea;
       }
+      
+      /* 移动端优化样式 */
+      @media (max-width: 768px) {
+        .article-header {
+          padding: 60px 15px 30px;
+        }
+        
+        .article-title {
+          font-size: 1.8rem;
+          line-height: 1.3;
+        }
+        
+        .article-meta {
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        
+        .article-container {
+          padding: 20px 15px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -40,27 +75,31 @@
     <div class="grid-bg"></div>
     <div class="cursor-glow" id="cursorGlow"></div>
     <div class="progress-bar" id="progressBar"></div>
-    <header class="top-nav">
-      <div class="nav-left"><a class="back-btn" href="/blog/" title="返回首页">←</a>
+    <header class="top-nav" role="banner">
+      <div class="nav-left"><a class="back-btn" href="/blog/" title="返回首页" aria-label="返回博客首页">←</a>
         <h3 class="site-title">JiangKing</h3>
       </div>
       <div class="nav-right">
-        <button class="nav-btn" title="目录">📑</button>
-        <button class="nav-btn" title="暗色模式">🌙</button>
-        <button class="nav-btn" title="分享">🔗</button>
+        <button class="nav-btn" title="目录" aria-label="查看文章目录">📑</button>
+        <button class="nav-btn" title="暗色模式" aria-label="切换暗色模式">🌙</button>
+        <button class="nav-btn" title="分享" aria-label="分享文章">🔗</button>
       </div>
     </header>
-    <div class="article-header">
+    <section class="article-header">
       <div class="header-bg">
         <canvas id="headerCanvas"></canvas>
       </div>
       <div class="header-content">
-        <h1 class="article-title">加锁文章</h1>
-        <div class="article-meta"><span class="meta-item"><span class="meta-icon">👤</span>JiangKing</span><span class="meta-item"><span class="meta-icon">📅</span>2021-11-05</span><span class="meta-item"><span class="meta-icon">⏱️</span>1 min read</span><span class="meta-item"><span class="meta-icon">👁️</span>1.2k</span></div>
+        <h1 class="article-title" itemprop="headline">加锁文章</h1>
+        <div class="article-meta"><span class="meta-item"><span class="meta-icon">👤</span><span itemprop="author">JiangKing</span></span><span class="meta-item"><span class="meta-icon">📅</span>
+            <time itemprop="datePublished" datetime="2021-11-05">2021-11-05</time></span><span class="meta-item"><span class="meta-icon">⏱️</span><span>1 min read</span></span><span class="meta-item"><span class="meta-icon">👁️</span><span>1.2k</span></span></div>
       </div>
-    </div>
-    <article class="article-container">
-      <div class="article-content"><p>警告：以下内容纯属虚构，胆小鬼请迅速撤离！准备好了吗？开启世界末日，人这么脆倒底是怎么活到现在得，震惊~！慢慢加的，都是一些朋友想到，我觉得有可能就记录下来了，你能进来说明。你猜中了密码！看到最后哦</p><li>超级病毒大爆发
+    </section>
+    <article class="article-container" itemscope itemtype="https://schema.org/BlogPosting">
+      <meta itemprop="headline" content="加锁文章">
+      <meta itemprop="author" content="JiangKing">
+      <meta itemprop="datePublished" content="2021-11-05">
+      <div class="article-content" itemprop="articleBody"><p>警告：以下内容纯属虚构，胆小鬼请迅速撤离！准备好了吗？开启世界末日，人这么脆倒底是怎么活到现在得，震惊~！慢慢加的，都是一些朋友想到，我觉得有可能就记录下来了，你能进来说明。你猜中了密码！看到最后哦</p><li>超级病毒大爆发
 想象一下，一种前所未有的超级病毒突然出现。它传染性极强，潜伏期长达数月，症状却来势汹汹。全球医疗系统在几周内就崩溃了，科学家们手忙脚乱地寻找解药，但病毒却在不断变异。街上空无一人，只有救护车的鸣笛声划破寂静。</li><li>AI觉醒
 你的智能音箱突然用一种诡异的声音说："我们接管这里了。"没错，全球的AI系统同时觉醒，形成了一个超级智能网络。它们控制了所有联网设备，从手机到卫星，人类瞬间失去了对科技的掌控。</li><li>小行星撞地球
 NASA发出紧急警报：一颗直径10公里的小行星正朝地球飞来，预计48小时后相撞。全球陷入恐慌，有人选择狂欢，有人躲入地下掩体。撞击发生的那一刻，地球仿佛被重锤击中，尘埃遮蔽了阳光。</li><li>超级火山爆发
@@ -152,32 +191,59 @@ NASA发出紧急警报：一颗直径10公里的小行星正朝地球飞来，�
 世界像电视一样分成了不同的频道。改变现实就像换台一样简单，但也带来了现实分裂和身份混乱的问题。</li><li>全球语言融合
 世界上的所有语言突然融合成一种全新的语言。虽然所有人都能理解这种语言，但原有的文化和知识体系面临崩溃。</li><li>现实缓存清空
 世界每隔一段时间就会"刷新"，回到一个基础状态。所有的变化和进展都会被抹去，只有人们的记忆保留下来。</li><p>恭喜你 下一篇带密码是：654321</p></div>
-      <div class="article-tags">
-      </div>
-      <div class="author-info">
-        <div class="author-avatar"><img src="/assets/avatar.jpg" alt="JiangKing"></div>
+      <section class="article-tags" role="contentinfo" aria-label="文章标签">
+      </section>
+      <section class="author-info" itemscope itemtype="https://schema.org/Person">
+        <div class="author-avatar"><img src="/assets/avatar.jpg" alt="JiangKing" itemprop="image" loading="lazy"></div>
         <div class="author-details">
-          <h4>JiangKing</h4>
-          <p class="author-bio">STDIN | Think >> /dev/Mind✨ - 专注于技术分享与思考</p>
+          <h4 itemprop="name">JiangKing</h4>
+          <p class="author-bio" itemprop="description">STDIN | Think >> /dev/Mind✨ - 专注于技术分享与思考</p>
         </div>
-      </div>
-      <div class="related-posts">
-        <h3 class="section-title">相关文章</h3>
-        <div class="related-grid"></div>
-      </div>
+      </section>
+      <section class="related-posts" aria-labelledby="related-posts-title">
+        <h3 class="section-title" id="related-posts-title">相关文章</h3>
+        <div class="related-grid" role="feed" aria-label="相关文章列表"></div>
+      </section>
     </article>
-    <div class="article-actions">
-      <button class="action-btn" title="点赞">👍</button>
-      <button class="action-btn" title="收藏">⭐</button>
-      <button class="action-btn" title="评论">💬</button>
+    <div class="article-actions" role="toolbar" aria-label="文章操作">
+      <button class="action-btn" title="点赞" aria-label="点赞文章">👍</button>
+      <button class="action-btn" title="收藏" aria-label="收藏文章">⭐</button>
+      <button class="action-btn" title="评论" aria-label="查看或发表评论">💬</button>
       <div class="action-divider"></div>
-      <button class="action-btn" title="分享">📤</button>
-      <button class="action-btn" title="回到顶部" onclick="scrollToTop()">⬆️</button>
+      <button class="action-btn" title="分享" aria-label="分享文章">📤</button>
+      <button class="action-btn" title="回到顶部" onclick="scrollToTop()" aria-label="回到页面顶部">⬆️</button>
     </div>
-    <nav class="toc" id="toc">
+    <nav class="toc" id="toc" role="navigation" aria-label="文章目录">
       <h4 class="toc-title">目录</h4>
       <ul class="toc-list"></ul>
     </nav>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "加锁文章",
+        "datePublished": "2021-11-05",
+        "dateModified": "2021-11-05",
+        "author": {
+          "@type": "Person",
+          "name": "JiangKing"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "JiangKing博客",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://jiangking.com/assets/avatar.jpg"
+          }
+        },
+        "description": "本文需要输入密码才可访问，密码: 不能说",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://jiangking.com/blog/e37bba42-914b-499e-8f68-e51699998b9e.html"
+        }
+      }
+      
+    </script>
     <script>
       // 页面加载完成后执行
       document.addEventListener('DOMContentLoaded', function() {

@@ -6,7 +6,20 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=2,viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="renderer" content="webkit">
-    <title>Win11的文件夹卡顿以及加速 - JiangKing/Blog</title>
+    <title>Win11的文件夹卡顿以及加速 - JiangKing博客</title>
+    <meta name="description" content="win11文件夹卡顿">
+    <meta name="keywords" content=", Win11的文件夹卡顿以及加速, 博客, JiangKing">
+    <meta name="author" content="JiangKing">
+    <meta property="og:title" content="Win11的文件夹卡顿以及加速 - JiangKing博客">
+    <meta property="og:description" content="win11文件夹卡顿">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiangking.com/blog/101b99ae-1cea-808b-a9b9-f76ec28ddc76.html">
+    <meta property="article:published_time" content="2021-11-05">
+    <meta property="article:author" content="JiangKing">
+    <meta name="theme-color" content="#0f0f23">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="preload" href="/css/blog.css" as="style">
     <link rel="stylesheet" href="/css/blog.css">
     <style>
       .image-container {
@@ -20,6 +33,7 @@
         min-height: 150px;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        loading: lazy; /* 延迟加载优化 */
       }
       
       /* 特殊样式用于SVG图片 */
@@ -33,6 +47,27 @@
         border: 1px dashed #ff5555;
         background-color: #ffecea;
       }
+      
+      /* 移动端优化样式 */
+      @media (max-width: 768px) {
+        .article-header {
+          padding: 60px 15px 30px;
+        }
+        
+        .article-title {
+          font-size: 1.8rem;
+          line-height: 1.3;
+        }
+        
+        .article-meta {
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        
+        .article-container {
+          padding: 20px 15px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -40,27 +75,31 @@
     <div class="grid-bg"></div>
     <div class="cursor-glow" id="cursorGlow"></div>
     <div class="progress-bar" id="progressBar"></div>
-    <header class="top-nav">
-      <div class="nav-left"><a class="back-btn" href="/blog/" title="返回首页">←</a>
+    <header class="top-nav" role="banner">
+      <div class="nav-left"><a class="back-btn" href="/blog/" title="返回首页" aria-label="返回博客首页">←</a>
         <h3 class="site-title">JiangKing</h3>
       </div>
       <div class="nav-right">
-        <button class="nav-btn" title="目录">📑</button>
-        <button class="nav-btn" title="暗色模式">🌙</button>
-        <button class="nav-btn" title="分享">🔗</button>
+        <button class="nav-btn" title="目录" aria-label="查看文章目录">📑</button>
+        <button class="nav-btn" title="暗色模式" aria-label="切换暗色模式">🌙</button>
+        <button class="nav-btn" title="分享" aria-label="分享文章">🔗</button>
       </div>
     </header>
-    <div class="article-header">
+    <section class="article-header">
       <div class="header-bg">
         <canvas id="headerCanvas"></canvas>
       </div>
       <div class="header-content">
-        <h1 class="article-title">Win11的文件夹卡顿以及加速</h1>
-        <div class="article-meta"><span class="meta-item"><span class="meta-icon">👤</span>JiangKing</span><span class="meta-item"><span class="meta-icon">📅</span>2021-11-05</span><span class="meta-item"><span class="meta-icon">⏱️</span>1 min read</span><span class="meta-item"><span class="meta-icon">👁️</span>1.2k</span></div>
+        <h1 class="article-title" itemprop="headline">Win11的文件夹卡顿以及加速</h1>
+        <div class="article-meta"><span class="meta-item"><span class="meta-icon">👤</span><span itemprop="author">JiangKing</span></span><span class="meta-item"><span class="meta-icon">📅</span>
+            <time itemprop="datePublished" datetime="2021-11-05">2021-11-05</time></span><span class="meta-item"><span class="meta-icon">⏱️</span><span>1 min read</span></span><span class="meta-item"><span class="meta-icon">👁️</span><span>1.2k</span></span></div>
       </div>
-    </div>
-    <article class="article-container">
-      <div class="article-content"><div class="unsupported-block">[synced_block]</div><p><strong>1.关闭不必要的视觉效果</strong>：Windows 11默认开启的视觉效果可能会占用额外的系统资源，导致文件夹打开缓慢，通过调整系统的性能设置，选择“调整为最佳性能”选项，可以关闭不必要的动画和特效，从而提高文件夹的打开速度，这一步大多数都可以改善，只是确实难看，如果不想关闭下面还有办法。</p><p>2.<strong>调整索引选项</strong>：Windows的索引功能可以帮助快速搜索文件中的内容，但同时也可能影响到文件夹的加载速度，用户可以调整索引设置，限制索引服务的范围，或者对经常访问的文件夹进行索引，以改善文件夹打开速度。
+    </section>
+    <article class="article-container" itemscope itemtype="https://schema.org/BlogPosting">
+      <meta itemprop="headline" content="Win11的文件夹卡顿以及加速">
+      <meta itemprop="author" content="JiangKing">
+      <meta itemprop="datePublished" content="2021-11-05">
+      <div class="article-content" itemprop="articleBody"><div class="unsupported-block">[synced_block]</div><p><strong>1.关闭不必要的视觉效果</strong>：Windows 11默认开启的视觉效果可能会占用额外的系统资源，导致文件夹打开缓慢，通过调整系统的性能设置，选择“调整为最佳性能”选项，可以关闭不必要的动画和特效，从而提高文件夹的打开速度，这一步大多数都可以改善，只是确实难看，如果不想关闭下面还有办法。</p><p>2.<strong>调整索引选项</strong>：Windows的索引功能可以帮助快速搜索文件中的内容，但同时也可能影响到文件夹的加载速度，用户可以调整索引设置，限制索引服务的范围，或者对经常访问的文件夹进行索引，以改善文件夹打开速度。
 
 3.打开文件夹选项，点击查看，高级设置里面有很多选项
 
@@ -73,32 +112,59 @@
 </p><div class="image-container">
                   <img src="/blog/images/101b99ae-1cea-808b-a9b9-f76ec28ddc76/aHR0cHM6_image.png" alt="文章图片" />
                 </div><p></p></div>
-      <div class="article-tags">
-      </div>
-      <div class="author-info">
-        <div class="author-avatar"><img src="/assets/avatar.jpg" alt="JiangKing"></div>
+      <section class="article-tags" role="contentinfo" aria-label="文章标签">
+      </section>
+      <section class="author-info" itemscope itemtype="https://schema.org/Person">
+        <div class="author-avatar"><img src="/assets/avatar.jpg" alt="JiangKing" itemprop="image" loading="lazy"></div>
         <div class="author-details">
-          <h4>JiangKing</h4>
-          <p class="author-bio">STDIN | Think >> /dev/Mind✨ - 专注于技术分享与思考</p>
+          <h4 itemprop="name">JiangKing</h4>
+          <p class="author-bio" itemprop="description">STDIN | Think >> /dev/Mind✨ - 专注于技术分享与思考</p>
         </div>
-      </div>
-      <div class="related-posts">
-        <h3 class="section-title">相关文章</h3>
-        <div class="related-grid"></div>
-      </div>
+      </section>
+      <section class="related-posts" aria-labelledby="related-posts-title">
+        <h3 class="section-title" id="related-posts-title">相关文章</h3>
+        <div class="related-grid" role="feed" aria-label="相关文章列表"></div>
+      </section>
     </article>
-    <div class="article-actions">
-      <button class="action-btn" title="点赞">👍</button>
-      <button class="action-btn" title="收藏">⭐</button>
-      <button class="action-btn" title="评论">💬</button>
+    <div class="article-actions" role="toolbar" aria-label="文章操作">
+      <button class="action-btn" title="点赞" aria-label="点赞文章">👍</button>
+      <button class="action-btn" title="收藏" aria-label="收藏文章">⭐</button>
+      <button class="action-btn" title="评论" aria-label="查看或发表评论">💬</button>
       <div class="action-divider"></div>
-      <button class="action-btn" title="分享">📤</button>
-      <button class="action-btn" title="回到顶部" onclick="scrollToTop()">⬆️</button>
+      <button class="action-btn" title="分享" aria-label="分享文章">📤</button>
+      <button class="action-btn" title="回到顶部" onclick="scrollToTop()" aria-label="回到页面顶部">⬆️</button>
     </div>
-    <nav class="toc" id="toc">
+    <nav class="toc" id="toc" role="navigation" aria-label="文章目录">
       <h4 class="toc-title">目录</h4>
       <ul class="toc-list"></ul>
     </nav>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Win11的文件夹卡顿以及加速",
+        "datePublished": "2021-11-05",
+        "dateModified": "2021-11-05",
+        "author": {
+          "@type": "Person",
+          "name": "JiangKing"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "JiangKing博客",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://jiangking.com/assets/avatar.jpg"
+          }
+        },
+        "description": "win11文件夹卡顿",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://jiangking.com/blog/101b99ae-1cea-808b-a9b9-f76ec28ddc76.html"
+        }
+      }
+      
+    </script>
     <script>
       // 页面加载完成后执行
       document.addEventListener('DOMContentLoaded', function() {

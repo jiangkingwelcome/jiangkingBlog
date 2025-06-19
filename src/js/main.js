@@ -595,8 +595,8 @@ function loadIntro() {
 			if (subtitleEl && window.subtitle) {
 				try {
 					subtitleEl.innerHTML = `<span>${[...window.subtitle].join(
-						"</span><span>"
-					)}</span>`;
+				"</span><span>"
+			)}</span>`;
 				} catch (e) {
 					console.log('subtitle处理错误:', e);
 					if (subtitleEl) subtitleEl.textContent = window.subtitle || '';
@@ -628,58 +628,58 @@ function switchPage() {
 	
 	// 安全地设置样式
 	if (DOM.shape && DOM.shape.style) {
-		DOM.shape.style.transformOrigin = "50% 0%";
+	DOM.shape.style.transformOrigin = "50% 0%";
 	}
 
 	// 安全地执行动画
 	try {
-		anime({
-			targets: DOM.intro,
-			duration: 1100,
-			easing: "easeInOutSine",
-			translateY: "-200vh",
-		});
+	anime({
+		targets: DOM.intro,
+		duration: 1100,
+		easing: "easeInOutSine",
+		translateY: "-200vh",
+	});
 
-		anime({
-			targets: DOM.shape,
-			scaleY: [
-				{
-					value: [0.8, 1.8],
-					duration: 550,
-					easing: "easeInQuad",
-				},
-				{
-					value: 1,
-					duration: 550,
-					easing: "easeOutQuad",
-				},
-			],
-		});
+	anime({
+		targets: DOM.shape,
+		scaleY: [
+			{
+				value: [0.8, 1.8],
+				duration: 550,
+				easing: "easeInQuad",
+			},
+			{
+				value: 1,
+				duration: 550,
+				easing: "easeOutQuad",
+			},
+		],
+	});
 		
 		const pathDataId = DOM.path && DOM.path.getAttribute ? DOM.path.getAttribute("pathdata:id") : null;
 		
-		anime({
-			targets: DOM.path,
-			duration: 1100,
-			easing: "easeOutQuad",
+	anime({
+		targets: DOM.path,
+		duration: 1100,
+		easing: "easeOutQuad",
 			d: pathDataId,
-			complete: function (anim) {
+		complete: function (anim) {
 				// 安全地清理canvas
 				if (typeof canvas !== 'undefined' && canvas) {
 					try {
 						if (typeof animationID !== 'undefined') {
-							cancelAnimationFrame(animationID);
+				cancelAnimationFrame(animationID);
 						}
 						if (canvas.parentElement) {
-							canvas.parentElement.removeChild(canvas);
+				canvas.parentElement.removeChild(canvas);
 						}
-						canvas = null;
+				canvas = null;
 					} catch (e) {
 						console.log('清理canvas时出错:', e);
 					}
-				}
-			},
-		});
+			}
+		},
+	});
 	} catch (e) {
 		console.log('执行动画时出错:', e);
 	}
@@ -711,30 +711,30 @@ function loadMain() {
 		
 		setTimeout(() => {
 			try {
-				const canvas = document.getElementById("gridCanvas");
-				if (canvas) {
+			const canvas = document.getElementById("gridCanvas");
+			if (canvas) {
 					// 统一使用默认主题
-					const defaultTheme = {
-						direction: "diagonal",
-						speed: isPhone ? 0.03 : 0.05,
-						borderColor: isPhone ? "rgba(255, 255, 255, 0.2)" : "rgba(255, 255, 255, 0.1)",
-						squareSize: isPhone ? 50 : 40,
-						hoverFillColor: "rgba(255, 255, 255, 0.8)",
-						hoverShadowColor: "rgba(255, 255, 255, 0.8)",
-						transitionDuration: 200,
-						trailDuration: 1500,
-						specialBlockColor: "rgba(100, 255, 152, 0.8)",
-						specialHoverColor: "rgba(29, 202, 29, 0.8)",
-						snakeHeadColor: "rgba(255, 255, 255, 0.95)",
-						snakeTailColor: "rgba(218, 231, 255, 0.25)",
-						snakeColorDecay: 0.85, // 颜色衰减系数
-					};
-					
+				const defaultTheme = {
+					direction: "diagonal",
+					speed: isPhone ? 0.03 : 0.05,
+					borderColor: isPhone ? "rgba(255, 255, 255, 0.2)" : "rgba(255, 255, 255, 0.1)",
+					squareSize: isPhone ? 50 : 40,
+					hoverFillColor: "rgba(255, 255, 255, 0.8)",
+					hoverShadowColor: "rgba(255, 255, 255, 0.8)",
+					transitionDuration: 200,
+					trailDuration: 1500,
+					specialBlockColor: "rgba(100, 255, 152, 0.8)",
+					specialHoverColor: "rgba(29, 202, 29, 0.8)",
+					snakeHeadColor: "rgba(255, 255, 255, 0.95)",
+					snakeTailColor: "rgba(218, 231, 255, 0.25)",
+					snakeColorDecay: 0.85, // 颜色衰减系数
+				};
+				
 					// 确保GridAnimation类存在
 					if (typeof GridAnimation === 'function') {
 						try {
 							const gridAnimation = new GridAnimation(canvas, defaultTheme);
-							gridAnimation.init();
+				gridAnimation.init();
 						} catch (e) {
 							console.log('初始化GridAnimation时出错:', e);
 						}
@@ -784,14 +784,14 @@ window.addEventListener("DOMContentLoaded", loadIntro);
 // 安全地获取元素并添加事件
 const enterEl = document.querySelector(".enter");
 if (enterEl) {
-	enterEl.addEventListener("click", loadAll);
+enterEl.addEventListener("click", loadAll);
 	// touchenter不是标准事件，修改为touchstart
 	enterEl.addEventListener("touchstart", loadAll);
 }
 
 // 安全地添加mousewheel事件
 try {
-	document.body.addEventListener("mousewheel", loadAll, { passive: true });
+document.body.addEventListener("mousewheel", loadAll, { passive: true });
 } catch (e) {
 	console.log('添加mousewheel监听器失败:', e);
 	// 尝试使用wheel事件作为回退

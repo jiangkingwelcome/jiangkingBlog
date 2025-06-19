@@ -1,12 +1,32 @@
+# JiangKing博客 Robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /404.html
 
-    # *
-    User-agent: *
-    Allow: /
-  
-    # Host
-    Host: https://tangly1024.com
-  
-    # Sitemaps
-    Sitemap: https://tangly1024.com/sitemap.xml
+# 搜索引擎爬虫配置
+User-agent: Googlebot
+Crawl-delay: 10
+
+User-agent: bingbot
+Crawl-delay: 15
+
+User-agent: Baiduspider
+Crawl-delay: 15
+
+User-agent: YisouSpider
+Crawl-delay: 15
+
+# 允许以下目录被索引
+Allow: /blog/
+Allow: /about.html
+Allow: /github-trending.html
+
+# 站点地图链接
+Sitemap: https://jiangking.com/sitemap.xml
+
+# 网站信息
+Host: jiangking.com
   
     

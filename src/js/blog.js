@@ -206,3 +206,190 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 //     }
 // `;
 // document.head.appendChild(style);
+
+// 性能优化：使用立即执行函数减少全局变量污染
+(function() {
+  'use strict';
+
+  // 页面加载性能监控
+  const perfData = window.performance.timing;
+  const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+  console.log('页面加载时间:', pageLoadTime + 'ms');
+
+  // 初始化懒加载
+  initLazyLoading();
+
+  // DOM加载完成后执行的函数
+  document.addEventListener('DOMContentLoaded', function() {
+    // 注册Service Worker用于缓存静态资源
+    registerServiceWorker();
+    
+    // 初始化UI交互
+    initUIInteractions();
+    
+    // 优化图片加载
+    optimizeImageLoading();
+  });
+
+  /**
+   * 注册Service Worker用于缓存静态资源
+   */
+  function registerServiceWorker() {
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+          console.log('ServiceWorker 注册成功，作用域：', registration.scope);
+        }).catch(function(error) {
+          console.log('ServiceWorker 注册失败：', error);
+        });
+      });
+    }
+  }
+
+  /**
+   * 初始化UI交互
+   */
+  function initUIInteractions() {
+    // 处理侧边栏交互
+    const menuBtn = document.querySelector('.menu-btn');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    
+    if (menuBtn) {
+      menuBtn.addEventListener('click', toggleSidebar);
+    }
+    
+    if (overlay) {
+      overlay.addEventListener('click', toggleSidebar);
+    }
+    
+    // 处理鼠标跟随效果
+    const cursorGlow = document.getElementById('cursorGlow');
+    if (cursorGlow) {
+      document.addEventListener('mousemove', function(e) {
+        // 使用requestAnimationFrame提高性能
+        requestAnimationFrame(function() {
+          cursorGlow.style.left = e.clientX + 'px';
+          cursorGlow.style.top = e.clientY + 'px';
+        });
+      });
+    }
+  }
+
+  /**
+   * 初始化图片懒加载
+   */
+  function initLazyLoading() {
+    // 检查浏览器是否原生支持懒加载
+    if ('loading' in HTMLImageElement.prototype) {
+      // 浏览器支持原生懒加载
+      const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+      console.log('使用原生懒加载支持:', lazyImages.length, '张图片');
+    } else {
+      // 不支持原生懒加载，使用 IntersectionObserver 实现
+      const lazyImages = document.querySelectorAll('img[data-src]');
+      const imageObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            if (img.dataset.srcset) {
+              img.srcset = img.dataset.srcset;
+            }
+            img.classList.add('loaded');
+            imageObserver.unobserve(img);
+          }
+        });
+      });
+
+      lazyImages.forEach(function(img) {
+        imageObserver.observe(img);
+      });
+    }
+  }
+
+  /**
+   * 优化图片加载
+   */
+  function optimizeImageLoading() {
+    const images = document.querySelectorAll('img:not([loading])');
+    images.forEach(img => {
+      // 为所有没有loading属性的图片添加懒加载
+      if (!img.hasAttribute('loading')) {
+        img.setAttribute('loading', 'lazy');
+      }
+      
+      // 错误处理
+      img.addEventListener('error', function() {
+        this.classList.add('error');
+        // 可以在这里设置备用图片
+        // this.src = '/assets/placeholder.jpg';
+      });
+    });
+  }
+
+  /**
+   * 切换侧边栏显示/隐藏
+   */
+  function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    
+    if (sidebar && overlay) {
+      sidebar.classList.toggle('active');
+      overlay.classList.toggle('active');
+    }
+  }
+
+  // 暴露公共函数到全局，供HTML内联事件使用
+  window.toggleSidebar = toggleSidebar;
+
+  /**
+   * 优化网络请求批处理
+   * @param {Function} callback - 要执行的回调函数
+   * @param {number} delay - 延迟时间，默认200ms
+   */
+  function debounce(callback, delay = 200) {
+    let timer;
+    return function(...args) {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        callback.apply(this, args);
+      }, delay);
+    };
+  }
+
+  // 添加动态资源预加载
+  function preloadAssets() {
+    // 检查用户是否有快速连接
+    if (navigator.connection && navigator.connection.effectiveType.includes('4g')) {
+      // 预加载额外资源
+      const preloadLinks = [
+        { href: '/assets/fonts/main-font.woff2', as: 'font', type: 'font/woff2', crossorigin: 'anonymous' },
+        { href: '/assets/images/hero-bg.jpg', as: 'image' }
+      ];
+      
+      preloadLinks.forEach(link => {
+        const preloadLink = document.createElement('link');
+        preloadLink.rel = 'preload';
+        preloadLink.href = link.href;
+        preloadLink.as = link.as;
+        if (link.type) preloadLink.type = link.type;
+        if (link.crossorigin) preloadLink.crossOrigin = link.crossorigin;
+        document.head.appendChild(preloadLink);
+      });
+    }
+  }
+
+  // 在空闲时执行非关键任务
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(() => {
+      preloadAssets();
+      // 其他非关键任务...
+    });
+  } else {
+    // 降级方案
+    setTimeout(preloadAssets, 1000);
+  }
+
+})();

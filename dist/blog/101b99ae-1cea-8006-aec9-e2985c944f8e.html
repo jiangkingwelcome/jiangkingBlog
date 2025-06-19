@@ -6,7 +6,20 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=2,viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="renderer" content="webkit">
-    <title>新闻 - JiangKing/Blog</title>
+    <title>新闻 - JiangKing博客</title>
+    <meta name="description" content="今日热点新闻">
+    <meta name="keywords" content=", 新闻, 博客, JiangKing">
+    <meta name="author" content="JiangKing">
+    <meta property="og:title" content="新闻 - JiangKing博客">
+    <meta property="og:description" content="今日热点新闻">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jiangking.com/blog/101b99ae-1cea-8006-aec9-e2985c944f8e.html">
+    <meta property="article:published_time" content="2025-05-26">
+    <meta property="article:author" content="JiangKing">
+    <meta name="theme-color" content="#0f0f23">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="preload" href="/css/blog.css" as="style">
     <link rel="stylesheet" href="/css/blog.css">
     <style>
       .image-container {
@@ -20,6 +33,7 @@
         min-height: 150px;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        loading: lazy; /* 延迟加载优化 */
       }
       
       /* 特殊样式用于SVG图片 */
@@ -33,6 +47,27 @@
         border: 1px dashed #ff5555;
         background-color: #ffecea;
       }
+      
+      /* 移动端优化样式 */
+      @media (max-width: 768px) {
+        .article-header {
+          padding: 60px 15px 30px;
+        }
+        
+        .article-title {
+          font-size: 1.8rem;
+          line-height: 1.3;
+        }
+        
+        .article-meta {
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        
+        .article-container {
+          padding: 20px 15px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -40,53 +75,84 @@
     <div class="grid-bg"></div>
     <div class="cursor-glow" id="cursorGlow"></div>
     <div class="progress-bar" id="progressBar"></div>
-    <header class="top-nav">
-      <div class="nav-left"><a class="back-btn" href="/blog/" title="返回首页">←</a>
+    <header class="top-nav" role="banner">
+      <div class="nav-left"><a class="back-btn" href="/blog/" title="返回首页" aria-label="返回博客首页">←</a>
         <h3 class="site-title">JiangKing</h3>
       </div>
       <div class="nav-right">
-        <button class="nav-btn" title="目录">📑</button>
-        <button class="nav-btn" title="暗色模式">🌙</button>
-        <button class="nav-btn" title="分享">🔗</button>
+        <button class="nav-btn" title="目录" aria-label="查看文章目录">📑</button>
+        <button class="nav-btn" title="暗色模式" aria-label="切换暗色模式">🌙</button>
+        <button class="nav-btn" title="分享" aria-label="分享文章">🔗</button>
       </div>
     </header>
-    <div class="article-header">
+    <section class="article-header">
       <div class="header-bg">
         <canvas id="headerCanvas"></canvas>
       </div>
       <div class="header-content">
-        <h1 class="article-title">新闻</h1>
-        <div class="article-meta"><span class="meta-item"><span class="meta-icon">👤</span>JiangKing</span><span class="meta-item"><span class="meta-icon">📅</span>2025-05-26</span><span class="meta-item"><span class="meta-icon">⏱️</span>1 min read</span><span class="meta-item"><span class="meta-icon">👁️</span>1.2k</span></div>
+        <h1 class="article-title" itemprop="headline">新闻</h1>
+        <div class="article-meta"><span class="meta-item"><span class="meta-icon">👤</span><span itemprop="author">JiangKing</span></span><span class="meta-item"><span class="meta-icon">📅</span>
+            <time itemprop="datePublished" datetime="2025-05-26">2025-05-26</time></span><span class="meta-item"><span class="meta-icon">⏱️</span><span>1 min read</span></span><span class="meta-item"><span class="meta-icon">👁️</span><span>1.2k</span></span></div>
       </div>
-    </div>
-    <article class="article-container">
-      <div class="article-content"><div class="unsupported-block">[synced_block]</div><p>以下是今日最新的十大新闻摘要（假设情境）：</p><li><strong>全球气候行动峰会召开</strong>：各国领导人齐聚气候行动峰会，承诺采取更强有力的措施应对气候变化，致力于减排目标的实现。</li><li><strong>科技巨头发布最新产品</strong>：某知名科技公司今天在发布会上揭晓了新一代智能手机，配备了更强大的处理器和全新的相机功能。</li><li><strong>股市波动加剧</strong>：由于经济数据不佳，全球股市出现普遍下跌，投资者忧虑加息前景导致的市场动荡。</li><li><strong>新冠疫苗接种率提升</strong>：全球多国开始推进新一轮疫苗接种计划，专家表示有望在冬季前显著降低病毒传播。</li><li><strong>国际足联世界杯预选赛进行</strong>：多场精彩的预选赛正在进行，各国队伍为晋级世界杯而拼搏，球迷热情高涨。</li><li><strong>人道主义援助到达灾区</strong>：国际组织向遭受自然灾害影响的地区提供紧急人道主义援助，受灾民众得到救助。</li><li><strong>人工智能引发的伦理争议</strong>：随着人工智能技术的迅猛发展，关于AI伦理和隐私的讨论越来越热烈，呼吁制定相关法律。</li><li><strong>新电动车上市</strong>：某汽车制造商宣布推出新款电动车，承诺提供更长续航里程和更快充电速度，以满足市场需求。</li><li><strong>文化遗产保护新举措</strong>：多个国家联合启动文化遗产保护项目，旨在全球范围内提升对文化遗产保护的意识与行动。</li><li><strong>体育界巨星宣布退役</strong>：知名运动员在社交媒体上宣布退役，引发粉丝和媒体的广泛关注，回顾其辉煌的职业生涯。</li><p>请根据实际新闻来源和内容调整。</p><p></p></div>
-      <div class="article-tags">
-      </div>
-      <div class="author-info">
-        <div class="author-avatar"><img src="/assets/avatar.jpg" alt="JiangKing"></div>
+    </section>
+    <article class="article-container" itemscope itemtype="https://schema.org/BlogPosting">
+      <meta itemprop="headline" content="新闻">
+      <meta itemprop="author" content="JiangKing">
+      <meta itemprop="datePublished" content="2025-05-26">
+      <div class="article-content" itemprop="articleBody"><div class="unsupported-block">[synced_block]</div><p>以下是今日最新的十大新闻摘要（假设情境）：</p><li><strong>全球气候行动峰会召开</strong>：各国领导人齐聚气候行动峰会，承诺采取更强有力的措施应对气候变化，致力于减排目标的实现。</li><li><strong>科技巨头发布最新产品</strong>：某知名科技公司今天在发布会上揭晓了新一代智能手机，配备了更强大的处理器和全新的相机功能。</li><li><strong>股市波动加剧</strong>：由于经济数据不佳，全球股市出现普遍下跌，投资者忧虑加息前景导致的市场动荡。</li><li><strong>新冠疫苗接种率提升</strong>：全球多国开始推进新一轮疫苗接种计划，专家表示有望在冬季前显著降低病毒传播。</li><li><strong>国际足联世界杯预选赛进行</strong>：多场精彩的预选赛正在进行，各国队伍为晋级世界杯而拼搏，球迷热情高涨。</li><li><strong>人道主义援助到达灾区</strong>：国际组织向遭受自然灾害影响的地区提供紧急人道主义援助，受灾民众得到救助。</li><li><strong>人工智能引发的伦理争议</strong>：随着人工智能技术的迅猛发展，关于AI伦理和隐私的讨论越来越热烈，呼吁制定相关法律。</li><li><strong>新电动车上市</strong>：某汽车制造商宣布推出新款电动车，承诺提供更长续航里程和更快充电速度，以满足市场需求。</li><li><strong>文化遗产保护新举措</strong>：多个国家联合启动文化遗产保护项目，旨在全球范围内提升对文化遗产保护的意识与行动。</li><li><strong>体育界巨星宣布退役</strong>：知名运动员在社交媒体上宣布退役，引发粉丝和媒体的广泛关注，回顾其辉煌的职业生涯。</li><p>请根据实际新闻来源和内容调整。</p><p></p></div>
+      <section class="article-tags" role="contentinfo" aria-label="文章标签">
+      </section>
+      <section class="author-info" itemscope itemtype="https://schema.org/Person">
+        <div class="author-avatar"><img src="/assets/avatar.jpg" alt="JiangKing" itemprop="image" loading="lazy"></div>
         <div class="author-details">
-          <h4>JiangKing</h4>
-          <p class="author-bio">STDIN | Think >> /dev/Mind✨ - 专注于技术分享与思考</p>
+          <h4 itemprop="name">JiangKing</h4>
+          <p class="author-bio" itemprop="description">STDIN | Think >> /dev/Mind✨ - 专注于技术分享与思考</p>
         </div>
-      </div>
-      <div class="related-posts">
-        <h3 class="section-title">相关文章</h3>
-        <div class="related-grid"></div>
-      </div>
+      </section>
+      <section class="related-posts" aria-labelledby="related-posts-title">
+        <h3 class="section-title" id="related-posts-title">相关文章</h3>
+        <div class="related-grid" role="feed" aria-label="相关文章列表"></div>
+      </section>
     </article>
-    <div class="article-actions">
-      <button class="action-btn" title="点赞">👍</button>
-      <button class="action-btn" title="收藏">⭐</button>
-      <button class="action-btn" title="评论">💬</button>
+    <div class="article-actions" role="toolbar" aria-label="文章操作">
+      <button class="action-btn" title="点赞" aria-label="点赞文章">👍</button>
+      <button class="action-btn" title="收藏" aria-label="收藏文章">⭐</button>
+      <button class="action-btn" title="评论" aria-label="查看或发表评论">💬</button>
       <div class="action-divider"></div>
-      <button class="action-btn" title="分享">📤</button>
-      <button class="action-btn" title="回到顶部" onclick="scrollToTop()">⬆️</button>
+      <button class="action-btn" title="分享" aria-label="分享文章">📤</button>
+      <button class="action-btn" title="回到顶部" onclick="scrollToTop()" aria-label="回到页面顶部">⬆️</button>
     </div>
-    <nav class="toc" id="toc">
+    <nav class="toc" id="toc" role="navigation" aria-label="文章目录">
       <h4 class="toc-title">目录</h4>
       <ul class="toc-list"></ul>
     </nav>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "新闻",
+        "datePublished": "2025-05-26",
+        "dateModified": "2025-05-26",
+        "author": {
+          "@type": "Person",
+          "name": "JiangKing"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "JiangKing博客",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://jiangking.com/assets/avatar.jpg"
+          }
+        },
+        "description": "今日热点新闻",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://jiangking.com/blog/101b99ae-1cea-8006-aec9-e2985c944f8e.html"
+        }
+      }
+      
+    </script>
     <script>
       // 页面加载完成后执行
       document.addEventListener('DOMContentLoaded', function() {

@@ -1,19 +1,19 @@
 {
 	"head": {
-		"title": "jiangkingblog",
-		"description": "Author:SimonAKing,Category:Personal Blog",
+		"title": "JiangKing Tech Hub",
+		"description": "AI算法、游戏开发、GitHub热点分析与技术探索",
 		"favicon": "favicon.ico"
 	},
 	"intro": {
-		"title": "SimonAKing",
-		"subtitle": "watch -n1 \"fortune | cowsay\"",
-		"enter": "enter",
+		"title": "JiangKing Tech Hub",
+		"subtitle": "AI · 游戏开发 · GitHub热点",
+		"enter": "cd ~/projects && code .",
 		"supportAuthor": true,
 		"background": true
 	},
 	"main": {
-		"name": "SimonAKing",
-		"signature": "watch -n1 \"fortune | cowsay\"",
+		"name": "JiangKing",
+		"signature": "探索技术的无限可能 | 从代码到应用的开发之旅",
 		"avatar": {
 			"link": "assets/avatar.jpg",
 			"height": "100",
@@ -23,22 +23,22 @@
 			"first": {
 				"href": "/blog/index.html",
 				"icon": "bokeyuan",
-				"text": "Blog"
+				"text": "技术博客"
 			},
 			"second": {
 				"href": "/about.html",
 				"icon": "xiaolian",
-				"text": "About"
+				"text": "关于我"
 			},
 			"third": {
 				"href": "mailto:jiangkingwelcome@vip.qq.com",
 				"icon": "email",
-				"text": "Email"
+				"text": "邮件联系"
 			},
 			"fourth": {
-				"href": "https://github.com/tomotoes",
+				"href": "/github-trending.html",
 				"icon": "github",
-				"text": "Github"
+				"text": "GitHub热点"
 			}
 		}
 	}

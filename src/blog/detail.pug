@@ -5,7 +5,32 @@ html(lang="zh-CN")
     meta(name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=2,viewport-fit=cover")
     meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
     meta(name="renderer" content="webkit")
-    title #{title} - JiangKing/Blog
+    
+    //- SEO优化：完善Meta标签
+    title #{title} - JiangKing博客
+    meta(name="description" content=`${summary || '阅读JiangKing博客上的《'+title+'》，探索更多技术内容'}`)
+    meta(name="keywords" content=`${tags ? tags.join(',') : ''}, ${title}, 博客, JiangKing`)
+    meta(name="author" content=`${author || 'JiangKing'}`)
+    
+    //- 社交分享Meta标签
+    meta(property="og:title" content=`${title} - JiangKing博客`)
+    meta(property="og:description" content=`${summary || '阅读JiangKing博客上的《'+title+'》，探索更多技术内容'}`)
+    meta(property="og:type" content="article")
+    meta(property="og:url" content=`${config && config.url ? config.url : 'https://jiangking.com'}/blog/${id}.html`)
+    meta(property="article:published_time" content=`${date}`)
+    meta(property="article:author" content=`${author || 'JiangKing'}`)
+    if tags && tags.length
+      each tag in tags
+        meta(property="article:tag" content=tag)
+    
+    //- 移动友好优化
+    meta(name="theme-color" content="#0f0f23")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+    
+    //- 预加载关键资源
+    link(rel="preload" href="/css/blog.css" as="style")
+    
     link(rel="stylesheet" href="/css/blog.css")
     style.
       .image-container {
@@ -19,6 +44,7 @@ html(lang="zh-CN")
         min-height: 150px;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        loading: lazy; /* 延迟加载优化 */
       }
       
       /* 特殊样式用于SVG图片 */
@@ -32,64 +58,138 @@ html(lang="zh-CN")
         border: 1px dashed #ff5555;
         background-color: #ffecea;
       }
+      
+      /* 移动端优化样式 */
+      @media (max-width: 768px) {
+        .article-header {
+          padding: 60px 15px 30px;
+        }
+        
+        .article-title {
+          font-size: 1.8rem;
+          line-height: 1.3;
+        }
+        
+        .article-meta {
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        
+        .article-container {
+          padding: 20px 15px;
+        }
+      }
   body
     .dynamic-bg
     .grid-bg
     .cursor-glow#cursorGlow
     .progress-bar#progressBar
-    header.top-nav
+    
+    //- 增强语义化：使用header标签
+    header.top-nav(role="banner")
       .nav-left
-        a.back-btn(href="/blog/" title="返回首页") ←
+        a.back-btn(href="/blog/" title="返回首页" aria-label="返回博客首页") ←
         h3.site-title JiangKing
       .nav-right
-        button.nav-btn(title="目录") 📑
-        button.nav-btn(title="暗色模式") 🌙
-        button.nav-btn(title="分享") 🔗
-    .article-header
+        button.nav-btn(title="目录" aria-label="查看文章目录") 📑
+        button.nav-btn(title="暗色模式" aria-label="切换暗色模式") 🌙
+        button.nav-btn(title="分享" aria-label="分享文章") 🔗
+        
+    //- 文章头部
+    section.article-header
       .header-bg
         canvas#headerCanvas
       .header-content
-        h1.article-title #{title}
+        h1.article-title(itemprop="headline") #{title}
         .article-meta
           span.meta-item
             span.meta-icon 👤
-            | #{author}
+            span(itemprop="author") #{author}
           span.meta-item
             span.meta-icon 📅
-            | #{date}
+            time(itemprop="datePublished" datetime=date) #{date}
           span.meta-item
             span.meta-icon ⏱️
-            | 1 min read
+            span 1 min read
           span.meta-item
             span.meta-icon 👁️
-            | 1.2k
-    article.article-container
-      .article-content
+            span 1.2k
+            
+    //- 增强语义化：使用article标签
+    article.article-container(itemscope itemtype="https://schema.org/BlogPosting")
+      //- 隐藏的元数据
+      meta(itemprop="headline" content=title)
+      meta(itemprop="author" content=author)
+      meta(itemprop="datePublished" content=date)
+      if tags && tags.length
+        each tag in tags
+          meta(itemprop="keywords" content=tag)
+          
+      //- 文章内容
+      .article-content(itemprop="articleBody")
         | !{content}
-      .article-tags
+        
+      //- 文章标签
+      section.article-tags(role="contentinfo" aria-label="文章标签")
         each tag in tags || []
-          a.tag(href=`/blog/?tag=${tag}`) #{tag}
-      .author-info
+          a.tag(href=`/blog/?tag=${tag}` rel="tag") #{tag}
+          
+      //- 作者信息
+      section.author-info(itemscope itemtype="https://schema.org/Person")
         .author-avatar
-          img(src="/assets/avatar.jpg" alt=author)
+          img(src="/assets/avatar.jpg" alt=author itemprop="image" loading="lazy")
         .author-details
-          h4 #{author}
-          p.author-bio STDIN | Think >> /dev/Mind✨ - 专注于技术分享与思考
-      .related-posts
-        h3.section-title 相关文章
-        .related-grid
+          h4(itemprop="name") #{author}
+          p.author-bio(itemprop="description") STDIN | Think >> /dev/Mind✨ - 专注于技术分享与思考
+          
+      //- 相关文章
+      section.related-posts(aria-labelledby="related-posts-title")
+        h3.section-title#related-posts-title 相关文章
+        .related-grid(role="feed" aria-label="相关文章列表")
           //- 相关文章内容
-    .article-actions
-      button.action-btn(title="点赞") 👍
-      button.action-btn(title="收藏") ⭐
-      button.action-btn(title="评论") 💬
+          
+    //- 文章底部操作栏
+    div.article-actions(role="toolbar" aria-label="文章操作")
+      button.action-btn(title="点赞" aria-label="点赞文章") 👍
+      button.action-btn(title="收藏" aria-label="收藏文章") ⭐
+      button.action-btn(title="评论" aria-label="查看或发表评论") 💬
       .action-divider
-      button.action-btn(title="分享") 📤
-      button.action-btn(title="回到顶部" onclick="scrollToTop()") ⬆️
-    nav.toc#toc
+      button.action-btn(title="分享" aria-label="分享文章") 📤
+      button.action-btn(title="回到顶部" onclick="scrollToTop()" aria-label="回到页面顶部") ⬆️
+      
+    //- 目录导航
+    nav.toc#toc(role="navigation" aria-label="文章目录")
       h4.toc-title 目录
       ul.toc-list
         //- 目录内容
+        
+    //- 添加结构化数据
+    script(type="application/ld+json").
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "#{title}",
+        "datePublished": "#{date}",
+        "dateModified": "#{modifiedDate || date}",
+        "author": {
+          "@type": "Person",
+          "name": "#{author || 'JiangKing'}"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "JiangKing博客",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://jiangking.com/assets/avatar.jpg"
+          }
+        },
+        "description": "#{summary || '阅读JiangKing博客上的《'+title+'》，探索更多技术内容'}",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "#{config && config.url ? config.url : 'https://jiangking.com'}/blog/#{id}.html"
+        }
+      }
+
     script.
       // 页面加载完成后执行
       document.addEventListener('DOMContentLoaded', function() {
