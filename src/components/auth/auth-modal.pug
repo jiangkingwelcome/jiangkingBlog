@@ -1,0 +1,56 @@
+// 登录和注册模态框组件
+
+#authModal.modal
+  .modal-container
+    .modal-header
+      h3.modal-title#loginTitle 用户登录
+      h3.modal-title#registerTitle.hidden 用户注册
+      button.close-btn(type="button") &times;
+    
+    .modal-body
+      // 登录表单
+      form#loginForm
+        .form-group
+          label(for="username") 用户名
+          input#username(type="text" placeholder="请输入用户名" required)
+        
+        .form-group
+          label(for="password") 密码
+          input#password(type="password" placeholder="请输入密码" required)
+        
+        .form-group.form-actions
+          button.btn.btn-primary(type="submit") 登录
+          button.btn.btn-link#switchToRegister(type="button") 没有账号？注册
+      
+      // 注册表单
+      form#registerForm.hidden
+        .form-group
+          label(for="reg-username") 用户名
+          input#reg-username(type="text" placeholder="请设置用户名" required)
+        
+        .form-group
+          label(for="reg-email") 邮箱
+          input#reg-email(type="email" placeholder="请输入邮箱" required)
+        
+        .form-group
+          label(for="reg-password") 密码
+          input#reg-password(type="password" placeholder="请设置密码" required)
+        
+        .form-group
+          label(for="reg-confirm-password") 确认密码
+          input#reg-confirm-password(type="password" placeholder="请再次输入密码" required)
+        
+        .form-group.form-actions
+          button.btn.btn-primary(type="submit") 注册
+          button.btn.btn-link#switchToLogin(type="button") 已有账号？登录
+      
+      // 错误信息展示区域
+      .error-container.hidden
+        p.error-message
+      
+      // 成功信息展示区域 
+      .success-container.hidden
+        p.success-message
+    
+    .modal-footer
+      p.copyright © JiangKing博客. 保护您的账号信息安全 

@@ -221,6 +221,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
   // DOM加载完成后执行的函数
   document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM加载完成，初始化博客功能');
+    
     // 注册Service Worker用于缓存静态资源
     registerServiceWorker();
     
@@ -229,6 +231,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     
     // 优化图片加载
     optimizeImageLoading();
+
+    // 检测浏览器是否支持webp格式
+    function checkWebpSupport() {
+        const canvas = document.createElement('canvas');
+        if (!canvas.getContext || !canvas.getContext('2d')) {
+            return false;
+        }
+        
+        return canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+    }
+    
+    const supportsWebp = checkWebpSupport();
+    console.log('浏览器支持webp格式:', supportsWebp);
+
+    // 处理图片显示问题
+    handleImageDisplay();
+    
+    // 初始化底部操作按钮功能
+    initActionButtons();
   });
 
   /**
@@ -390,6 +411,473 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   } else {
     // 降级方案
     setTimeout(preloadAssets, 1000);
+  }
+
+  // 添加滚动到顶部功能 - 暴露到全局作用域
+  window.scrollToTop = function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  // 初始化底部操作按钮功能
+  function initActionButtons() {
+    console.log('初始化底部操作按钮');
+    
+    // 获取当前文章ID
+    const articleId = window.location.pathname.split('/').pop().replace('.html', '');
+    console.log('当前文章ID:', articleId);
+    
+    // 从localStorage读取用户互动记录
+    const userInteractions = JSON.parse(localStorage.getItem('blogInteractions') || '{}');
+    const articleInteractions = userInteractions[articleId] || {
+      liked: false,
+      bookmarked: false,
+      commentCount: 0,
+      likeCount: 0
+    };
+    
+    // 点赞功能
+    const likeBtn = document.getElementById('likeBtn');
+    if (likeBtn) {
+      console.log('找到点赞按钮');
+      const likeCounter = likeBtn.querySelector('.action-counter');
+      // 初始化点赞计数和状态
+      let likeCount = parseInt(localStorage.getItem(`like_count_${articleId}`) || '0');
+      likeCounter.textContent = likeCount;
+      
+      // 恢复用户之前的点赞状态
+      if (articleInteractions.liked) {
+        likeBtn.classList.add('active');
+      }
+      
+      likeBtn.addEventListener('click', function() {
+        console.log('点赞按钮被点击');
+        if (this.classList.contains('active')) {
+          // 取消点赞
+          likeCount = Math.max(0, likeCount - 1);
+          this.classList.remove('active');
+          articleInteractions.liked = false;
+          showToast('已取消点赞');
+        } else {
+          // 添加点赞
+          likeCount++;
+          this.classList.add('active');
+          articleInteractions.liked = true;
+          showToast('感谢点赞 ❤️');
+          
+          // 点赞动画
+          const heart = document.createElement('span');
+          heart.innerHTML = '❤️';
+          heart.style.position = 'absolute';
+          heart.style.top = '50%';
+          heart.style.left = '50%';
+          heart.style.fontSize = '18px';
+          heart.style.transform = 'translate(-50%, -50%)';
+          heart.style.pointerEvents = 'none';
+          heart.style.opacity = '1';
+          heart.style.transition = 'all 0.5s';
+          this.appendChild(heart);
+          
+          setTimeout(() => {
+            heart.style.opacity = '0';
+            heart.style.transform = 'translate(-50%, -100px)';
+            setTimeout(() => heart.remove(), 500);
+          }, 50);
+        }
+        
+        // 更新显示的计数
+        likeCounter.textContent = likeCount;
+        
+        // 保存到localStorage
+        localStorage.setItem(`like_count_${articleId}`, likeCount);
+        
+        // 更新用户交互记录
+        userInteractions[articleId] = articleInteractions;
+        localStorage.setItem('blogInteractions', JSON.stringify(userInteractions));
+      });
+    } else {
+      console.log('未找到点赞按钮');
+    }
+    
+    // 收藏功能
+    const bookmarkBtn = document.getElementById('bookmarkBtn');
+    if (bookmarkBtn) {
+      console.log('找到收藏按钮');
+      const bookmarkCounter = bookmarkBtn.querySelector('.action-counter');
+      // 初始化收藏计数和状态
+      let bookmarkCount = parseInt(localStorage.getItem(`bookmark_count_${articleId}`) || '0');
+      bookmarkCounter.textContent = bookmarkCount;
+      
+      // 恢复用户之前的收藏状态
+      if (articleInteractions.bookmarked) {
+        bookmarkBtn.classList.add('active');
+      }
+      
+      bookmarkBtn.addEventListener('click', function() {
+        console.log('收藏按钮被点击');
+        if (this.classList.contains('active')) {
+          // 取消收藏
+          bookmarkCount = Math.max(0, bookmarkCount - 1);
+          this.classList.remove('active');
+          articleInteractions.bookmarked = false;
+          showToast('已取消收藏');
+        } else {
+          // 添加收藏
+          bookmarkCount++;
+          this.classList.add('active');
+          articleInteractions.bookmarked = true;
+          showToast('已添加到收藏');
+          
+          // 收藏动画
+          this.classList.add('bookmark-animation');
+          setTimeout(() => this.classList.remove('bookmark-animation'), 500);
+        }
+        
+        // 更新显示的计数
+        bookmarkCounter.textContent = bookmarkCount;
+        
+        // 保存到localStorage
+        localStorage.setItem(`bookmark_count_${articleId}`, bookmarkCount);
+        
+        // 更新用户交互记录
+        userInteractions[articleId] = articleInteractions;
+        localStorage.setItem('blogInteractions', JSON.stringify(userInteractions));
+        
+        // 更新收藏列表
+        updateBookmarksList(articleId, document.title, articleInteractions.bookmarked);
+      });
+    } else {
+      console.log('未找到收藏按钮');
+    }
+    
+    // 评论功能
+    const commentBtn = document.getElementById('commentBtn');
+    if (commentBtn) {
+      console.log('找到评论按钮');
+      commentBtn.addEventListener('click', function() {
+        console.log('评论按钮被点击');
+        // 滚动到评论区
+        const commentSection = document.querySelector('#comments') || document.querySelector('.comment-section');
+        if (commentSection) {
+          commentSection.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          showToast('评论功能即将上线，敬请期待！');
+        }
+      });
+    } else {
+      console.log('未找到评论按钮');
+    }
+    
+    // 分享功能
+    const shareBtn = document.getElementById('shareBtn');
+    if (shareBtn) {
+      console.log('找到分享按钮');
+      shareBtn.addEventListener('click', function() {
+        console.log('分享按钮被点击');
+        if (navigator.share) {
+          // 使用原生分享API
+          navigator.share({
+            title: document.title,
+            url: window.location.href,
+            text: document.querySelector('meta[name="description"]')?.content || document.title
+          }).catch(error => {
+            console.log('分享失败:', error);
+            showShareDialog();
+          });
+        } else {
+          // 降级为弹出式分享对话框
+          showShareDialog();
+        }
+      });
+    } else {
+      console.log('未找到分享按钮');
+    }
+  }
+
+  // 显示分享对话框
+  function showShareDialog() {
+    // 检查是否已存在分享对话框
+    let shareDialog = document.getElementById('shareDialog');
+    if (shareDialog) {
+      shareDialog.style.display = 'flex';
+      return;
+    }
+    
+    // 创建分享对话框
+    shareDialog = document.createElement('div');
+    shareDialog.id = 'shareDialog';
+    shareDialog.classList.add('share-dialog');
+    
+    const currentUrl = window.location.href;
+    const shareOptions = [
+      { name: '复制链接', icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>', action: () => copyToClipboard(currentUrl) },
+      { name: '微信', icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8.5 13.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm7 0c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.5 2.5c0-1.93-.55-3.73-1.5-5.25-.34.02-.68.03-1.03.03s-.68-.01-1.02-.03c1.21 1.75 1.87 3.93 1.5 6.25h-13C3.71 14.07 5.31 8.5 10 8.5c-.45-1.21-1.5-2.19-2.86-2.43C7.32 6.02 7.66 6 8 6c4.42 0 8 3.58 8 8 0 .71-.11 1.39-.28 2.05.82-.03 1.55-.44 2.06-1.05.15.32.22.67.22 1z"/><path d="M16.65 14.54a3.566 3.566 0 0 0-.79-3.43c-.79-.79-1.96-1.05-3.04-.68l-4.37-4.37c.74-2.5-.56-5.15-3.07-5.93-.32-.1-.65-.14-.99-.14-.68 0-1.35.21-1.9.6-.86.61-1.41 1.55-1.48 2.58-.07 1.03.37 2.08 1.17 2.77L5.86 9.7c-.35 1.09-.09 2.27.7 3.05.54.54 1.3.86 2.12.86.69 0 1.37-.21 1.95-.61l4.31 4.37c-.26.51-.4 1.1-.36 1.73.04.61.27 1.18.64 1.64.37.45.85.8 1.4.98.55.18 1.13.19 1.69.02.56-.17 1.05-.51 1.43-.96.38-.45.61-1.01.66-1.62.05-.59-.1-1.22-.41-1.75l-3.34-3.87z"/></svg>', action: () => showQRCode(currentUrl) },
+      { name: '微博', icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8.5h4.95a4.5 4.5 0 1 0 0-9H9v9zm11 3v1.5c0 1.93-.55 3.73-1.5 5.25v.25c0 1.66-1.34 3-3 3h-7a3 3 0 0 1-3-3v-.17c-2.06-1.6-3.5-4.14-3.5-7.08v-1.5a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1.5c0 1.93.78 3.68 2 4.88v.12a1 1 0 0 0 1 1h2v-1a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h2a1 1 0 0 0 1-1V22h-7a5 5 0 0 1-5-5v-.12A7.95 7.95 0 0 1 2 11.5v-1.5c0-1.66 1.34-3 3-3h1a3 3 0 0 1 3 3v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3c0-1.66 1.34-3 3-3h1a3 3 0 0 1 3 3v1.5h-1.5L20 11.5z"/></svg>', action: () => shareToWeibo(document.title, currentUrl) }
+    ];
+    
+    const dialogContent = `
+      <div class="share-dialog-content">
+        <h3>分享文章</h3>
+        <div class="share-options">
+          ${shareOptions.map(option => `
+            <button class="share-option" data-action="${shareOptions.indexOf(option)}">
+              <div class="share-icon">${option.icon}</div>
+              <span>${option.name}</span>
+            </button>
+          `).join('')}
+        </div>
+        <button class="share-close-btn">关闭</button>
+      </div>
+    `;
+    
+    shareDialog.innerHTML = dialogContent;
+    document.body.appendChild(shareDialog);
+    
+    // 绑定事件
+    shareDialog.querySelector('.share-close-btn').addEventListener('click', () => {
+      shareDialog.style.display = 'none';
+    });
+    
+    const buttons = shareDialog.querySelectorAll('.share-option');
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const actionIndex = button.dataset.action;
+        shareOptions[actionIndex].action();
+      });
+    });
+    
+    // 点击外部关闭
+    shareDialog.addEventListener('click', event => {
+      if (event.target === shareDialog) {
+        shareDialog.style.display = 'none';
+      }
+    });
+    
+    // 显示对话框
+    shareDialog.style.display = 'flex';
+  }
+
+  // 复制文本到剪贴板
+  function copyToClipboard(text) {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast('链接已复制到剪贴板');
+      }).catch(err => {
+        console.error('无法复制:', err);
+        fallbackCopy(text);
+      });
+    } else {
+      fallbackCopy(text);
+    }
+  }
+
+  // 降级复制方案
+  function fallbackCopy(text) {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.opacity = '0';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    
+    try {
+      const successful = document.execCommand('copy');
+      showToast(successful ? '链接已复制到剪贴板' : '复制失败，请手动复制');
+    } catch (err) {
+      console.error('fallbackCopy 错误:', err);
+      showToast('复制失败，请手动复制');
+    }
+    
+    document.body.removeChild(textArea);
+  }
+
+  // 显示二维码
+  function showQRCode(url) {
+    showToast('微信分享功能即将上线');
+    // TODO: 实现二维码生成
+  }
+
+  // 分享到微博
+  function shareToWeibo(title, url) {
+    const shareUrl = `http://service.weibo.com/share/share.php?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`;
+    window.open(shareUrl, '_blank');
+  }
+
+  // 更新收藏列表
+  function updateBookmarksList(articleId, title, isBookmarked) {
+    let bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+    
+    if (isBookmarked) {
+      // 添加到收藏列表
+      if (!bookmarks.find(b => b.id === articleId)) {
+        bookmarks.push({
+          id: articleId,
+          title: title,
+          url: window.location.pathname,
+          date: new Date().toISOString()
+        });
+      }
+    } else {
+      // 从收藏列表删除
+      bookmarks = bookmarks.filter(b => b.id !== articleId);
+    }
+    
+    localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+  }
+
+  // 显示消息提示
+  function showToast(message) {
+    let toast = document.getElementById('toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'toast';
+      toast.className = 'toast';
+      document.body.appendChild(toast);
+    }
+    
+    toast.textContent = message;
+    toast.classList.add('show');
+    
+    setTimeout(() => {
+      toast.classList.remove('show');
+    }, 3000);
+  }
+
+  // 处理图片显示问题
+  function handleImageDisplay() {
+    console.log('开始处理图片显示问题');
+    
+    // 1. 处理直接显示为文本的图片URL
+    const allElements = document.querySelectorAll('.article-content *');
+    allElements.forEach(el => {
+      // 检查是否为纯文本元素且文本内容像图片URL
+      const content = el.textContent ? el.textContent.trim() : '';
+      if (content && (
+          content.match(/[a-f0-9]{32}\.(webp|jpg|png)$/i) ||
+          content.match(/\.(webp|jpg|png|gif|jpeg)$/i)
+        ) &&
+        el.childNodes.length === 1 &&
+        el.childNodes[0].nodeType === Node.TEXT_NODE) {
+          
+        console.log('找到可能是图片URL的文本:', content);
+        
+        // 创建图片容器和图片元素
+        const imgContainer = document.createElement('div');
+        imgContainer.className = 'image-container';
+        
+        const img = document.createElement('img');
+        
+        // 尝试构造正确的图片路径
+        if (content.startsWith('/')) {
+          // 已经是相对路径
+          img.src = content;
+        } else if (content.match(/[a-f0-9]{32}\.(webp|jpg|png)$/i)) {
+          // 看起来像是在当前文章目录下的图片
+          const articleId = window.location.pathname.split('/').pop().replace('.html', '');
+          img.src = `/blog/images/${articleId}/${content}`;
+        } else {
+          // 默认使用占位图
+          img.src = '/assets/placeholder-image.svg';
+        }
+        
+        // 添加错误处理
+        img.alt = '文章图片';
+        img.setAttribute('data-original-text', content);
+        img.onerror = function() {
+          this.onerror = null;
+          this.src = '/assets/placeholder-image.svg';
+          this.classList.add('error');
+        };
+        
+        imgContainer.appendChild(img);
+        
+        // 替换元素
+        el.parentNode.replaceChild(imgContainer, el);
+      }
+    });
+    
+    // 2. 检查图片容器内容
+    const imageContainers = document.querySelectorAll('.image-container');
+    console.log('找到图片容器:', imageContainers.length);
+    
+    imageContainers.forEach((container) => {
+      // 检查容器是否只有文本内容
+      if (!container.querySelector('img') && container.textContent.trim()) {
+        const content = container.textContent.trim();
+        console.log('图片容器内只有文本:', content);
+        
+        // 清空容器
+        container.innerHTML = '';
+        
+        // 创建图片元素
+        const img = document.createElement('img');
+        
+        // 尝试构造正确的图片路径
+        if (content.match(/[a-f0-9]{32}\.(webp|jpg|png)$/i)) {
+          // webp图片
+          const articleId = window.location.pathname.split('/').pop().replace('.html', '');
+          img.src = `/blog/images/${articleId}/${content}`;
+        } else {
+          // 使用占位图
+          img.src = '/assets/placeholder-image.svg';
+        }
+        
+        // 添加错误处理
+        img.alt = '文章图片';
+        img.setAttribute('data-text-content', content);
+        img.onerror = function() {
+          this.onerror = null;
+          this.src = '/assets/placeholder-image.svg';
+          this.classList.add('error');
+        };
+        
+        // 添加到容器
+        container.appendChild(img);
+      }
+    });
+    
+    // 3. 处理所有图片加载错误
+    const images = document.querySelectorAll('img');
+    console.log('找到图片元素:', images.length);
+    
+    images.forEach((img) => {
+      // 检查是否为SVG图片
+      if (img.src.toLowerCase().endsWith('.svg')) {
+        console.log('检测到SVG图片:', img.src);
+        img.classList.add('svg-image');
+        // SVG图片不需要错误处理
+        return;
+      }
+      
+      if (img.complete && img.naturalHeight === 0) {
+        // 已经加载失败的图片
+        console.log('图片已加载失败:', img.src);
+        img.classList.add('error');
+        
+        // 如果不是占位图，则替换为占位图
+        if (!img.src.includes('placeholder-image')) {
+          img.setAttribute('data-failed-src', img.src);
+          img.src = '/assets/placeholder-image.svg';
+          img.classList.add('svg-image'); // 添加SVG类
+        }
+      } else {
+        // 添加加载错误处理
+        img.addEventListener('error', function() {
+          console.log('图片加载失败:', this.src);
+          this.classList.add('error');
+          
+          // 如果不是占位图，则替换为占位图
+          if (!this.src.includes('placeholder-image')) {
+            this.setAttribute('data-failed-src', this.src);
+            this.src = '/assets/placeholder-image.svg';
+            this.classList.add('svg-image'); // 添加SVG类
+          }
+        });
+      }
+    });
   }
 
 })();

@@ -1,0 +1,31 @@
+// 文章操作组件：点赞、收藏、分享等
+
+.article-actions(data-article-id=id)
+  .article-stats
+    .stat-item
+      i.icon.icon-eye
+      span.view-count 0
+      span.stat-label 阅读
+    
+    .stat-item
+      i.icon.icon-like
+      span.like-count 0
+      span.stat-label 点赞
+    
+    .stat-item
+      i.icon.icon-bookmark
+      span.favorite-count 0
+      span.stat-label 收藏
+  
+  .action-buttons
+    button.action-btn#likeBtn(type="button" title="点赞")
+      i.icon.icon-like
+      span.btn-text 点赞
+    
+    button.action-btn#favoriteBtn(type="button" title="收藏")
+      i.icon.icon-bookmark
+      span.btn-text 收藏
+    
+    button.action-btn#shareBtn(type="button" title="分享")
+      i.icon.icon-share
+      span.btn-text 分享 

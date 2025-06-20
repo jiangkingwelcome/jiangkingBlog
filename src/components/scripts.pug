@@ -58,3 +58,11 @@ if intro.background
 
 if intro.supportAuthor
 	script(src="/assets/js/log.min.js")
+
+// 引入API配置和用户认证脚本
+script(src="/js/api-config.js")
+script(src="/js/auth.js")
+
+// 用于博客页面的脚本
+if page === 'blog'
+	script(src="/js/blog.js")

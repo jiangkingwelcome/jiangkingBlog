@@ -1,0 +1,120 @@
+doctype html
+html(lang="zh-CN")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=2,viewport-fit=cover")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+    meta(name="renderer" content="webkit")
+    
+    //- SEO优化：完善Meta标签
+    title #{title} - JiangKing博客
+    meta(name="description" content=`${summary || '阅读JiangKing博客上的《'+title+'》，探索更多技术内容'}`)
+    meta(name="keywords" content=`${tags ? tags.join(',') : ''}, ${title}, 博客, JiangKing`)
+    meta(name="author" content=`${author || 'JiangKing'}`)
+    
+    //- 社交分享Meta标签
+    meta(property="og:title" content=`${title} - JiangKing博客`)
+    meta(property="og:description" content=`${summary || '阅读JiangKing博客上的《'+title+'》，探索更多技术内容'}`)
+    meta(property="og:type" content="article")
+    meta(property="og:url" content=`${config && config.url ? config.url : 'https://jiangking.com'}/blog/${id}.html`)
+    meta(property="article:published_time" content=`${date}`)
+    meta(property="article:author" content=`${author || 'JiangKing'}`)
+    if tags && tags.length
+      each tag in tags
+        meta(property="article:tag" content=tag)
+    
+    //- 移动友好优化
+    meta(name="theme-color" content="#0f0f23")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+    
+    //- 预加载关键资源
+    link(rel="preload" href="/css/blog.css" as="style")
+    
+    link(rel="stylesheet" href="/css/blog.css")
+    link(rel="stylesheet" href="/css/style.css")
+
+  body
+    //- 动态背景
+    .dynamic-bg
+    .grid-bg
+    #cursorGlow.cursor-glow
+    
+    //- 进度条
+    .progress-bar#progressBar
+    
+    //- 顶部导航栏
+    .top-nav#topNav
+      .nav-left
+        a.back-btn(href="/blog/index.html") 
+          i.icon.icon-arrow-left
+        h1.site-title JiangKing博客
+      
+      .nav-right
+        button.nav-btn(title="目录" aria-label="查看文章目录") 📑
+        button.nav-btn(title="分享" aria-label="分享文章") 
+          i.icon.icon-share
+        button.nav-btn(title="暗色模式" aria-label="切换暗色/亮色模式") 🌙
+        
+        //- 用户区域组件
+        include ../components/user-area
+    
+    //- 文章头部
+    header.article-header
+      .header-bg
+      .header-content
+        h1.article-title #{title}
+        .article-meta
+          .meta-item
+            i.icon.icon-calendar
+            span #{date || '未知日期'}
+          .meta-item
+            i.icon.icon-user
+            span #{author || 'JiangKing'}
+          if tags && tags.length
+            .meta-item
+              i.icon.icon-tag
+              span #{tags.join(', ')}
+        
+        if summary
+          p.article-summary #{summary}
+    
+    //- 主要内容区域
+    main.article-container
+      //- 文章内容
+      article.article-content
+        != content
+      
+      //- 文章操作组件
+      include ../components/article-actions
+    
+    //- 目录导航
+    .toc-container#toc
+      .toc-header
+        h3.toc-title 目录
+        button.close-toc-btn &times;
+      .toc-content#tocContent
+    
+    //- 认证模态框组件
+    include ../components/auth/auth-modal
+    
+    //- 脚本引用
+    script(src="/js/blog.js")
+    script(src="/js/api-config.js")
+    script(src="/js/auth.js")
+    script.
+      // 页面加载时记录文章浏览
+      document.addEventListener('DOMContentLoaded', () => {
+        const articleActions = document.querySelector('.article-actions');
+        if (articleActions) {
+          const articleId = articleActions.dataset.articleId;
+          
+          if (articleId) {
+            // 记录文章浏览量
+            ApiConfig.article.incrementViewCount(articleId)
+              .catch(error => {
+                console.error('记录文章浏览失败:', error);
+              });
+          }
+        }
+      }); 

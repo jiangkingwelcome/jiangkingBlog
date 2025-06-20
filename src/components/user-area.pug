@@ -1,0 +1,29 @@
+.user-area
+  // 未登录状态
+  .user-area-guest#guestArea
+    button.login-btn#loginBtn(type="button") 登录
+    button.register-btn#registerBtn(type="button") 注册
+  
+  // 已登录状态
+  .user-area-user.hidden#userArea
+    .user-dropdown
+      .user-info
+        if userInfo && userInfo.avatar
+          img.user-avatar(src=userInfo.avatar alt="用户头像")
+        else
+          .avatar-placeholder
+            i.icon.icon-user
+        span.username#usernameDisplay 用户名
+      
+      .dropdown-menu.hidden#userDropdown
+        .dropdown-arrow
+        ul.dropdown-list
+          li.dropdown-item
+            a.dropdown-link(href="/user/profile") 个人中心
+          li.dropdown-item
+            a.dropdown-link(href="/user/favorites") 我的收藏
+          li.dropdown-item
+            a.dropdown-link(href="/user/settings") 账号设置
+          li.dropdown-item.divider
+          li.dropdown-item
+            button.logout-btn#logoutBtn(type="button") 退出登录 
