@@ -2,8 +2,8 @@ doctype html
 html(lang="zh-CN")
   head
     meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title JiangKing - 技术博客
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title(data-i18n="blog.title") JiangKing - 技术博客
     
     //- SEO优化：完善Meta标签
     meta(name="description", content=`${config && config.description ? config.description : 'JiangKing的个人技术博客，分享编程、技术经验与思考'}`)
@@ -604,6 +604,11 @@ html(lang="zh-CN")
         z-index: -1;
         transition: opacity 0.3s;
       }
+
+      /* 隐藏语言切换器 */
+      .language-switcher {
+        display: none !important;
+      }
   body
     //- 动态背景
     .grid-bg
@@ -809,4 +814,12 @@ html(lang="zh-CN")
         setTimeout(() => {
           document.body.classList.add('loaded');
         }, 100);
+        
+        // 初始化国际化
+        if (typeof I18n !== 'undefined') {
+          window.i18n = new I18n();
+        }
       });
+    
+    // 引入国际化脚本
+    script(src="/js/i18n.js")

@@ -107,16 +107,26 @@ function updateUserInterface() {
  */
 function updateArticleActionButtons() {
   try {
+    console.log('更新文章操作按钮状态');
     // 获取文章ID
     const articleActions = document.querySelector('.article-actions');
-    if (!articleActions) return;
+    if (!articleActions) {
+      console.log('未找到.article-actions元素');
+      return;
+    }
     
     const articleId = articleActions.dataset.articleId;
-    if (!articleId) return;
+    if (!articleId) {
+      console.log('未找到文章ID');
+      return;
+    }
+    console.log('找到文章ID:', articleId);
     
     // 获取文章统计信息
+    console.log('开始获取文章统计信息');
     ApiConfig.article.getArticleStats(articleId)
       .then(data => {
+        console.log('获取文章统计信息成功:', data);
         // 更新统计数字
         const viewCount = document.querySelector('.view-count');
         const likeCount = document.querySelector('.like-count');
@@ -130,12 +140,17 @@ function updateArticleActionButtons() {
         
         // 如果用户已登录，更新按钮状态
         if (ApiConfig.user.isLoggedIn()) {
+          console.log('用户已登录，更新按钮状态');
           if (likeBtn && data.hasLiked) likeBtn.classList.add('liked');
           if (favoriteBtn && data.hasFavorited) favoriteBtn.classList.add('favorited');
           
           // 绑定按钮事件
           if (likeBtn && !likeBtn._hasEvent) {
-            likeBtn.addEventListener('click', () => handleLikeArticle(articleId));
+            console.log('绑定点赞按钮事件');
+            likeBtn.addEventListener('click', () => {
+              console.log('点赞按钮被点击');
+              handleLikeArticle(articleId);
+            });
             likeBtn._hasEvent = true;
           }
           
@@ -143,6 +158,8 @@ function updateArticleActionButtons() {
             favoriteBtn.addEventListener('click', () => handleFavoriteArticle(articleId));
             favoriteBtn._hasEvent = true;
           }
+        } else {
+          console.log('用户未登录，不绑定点赞按钮事件');
         }
       })
       .catch(error => {
@@ -429,17 +446,26 @@ function toggleUserDropdown() {
  * 处理点赞文章
  */
 function handleLikeArticle(articleId) {
+  console.log('==================== 点赞函数被调用 ====================');
+  console.log('文章ID:', articleId);
+  
   if (!articleId) return;
   
   // 检查用户是否已登录
-  if (!ApiConfig.user.isLoggedIn()) {
+  const isLoggedIn = ApiConfig.user.isLoggedIn();
+  console.log('用户是否已登录:', isLoggedIn);
+  
+  if (!isLoggedIn) {
+    console.log('用户未登录，显示登录模态框');
     showLoginModal();
     return;
   }
   
   // 调用点赞API
+  console.log('开始调用点赞API:', `articles/${articleId}/like`);
   ApiConfig.article.likeArticle(articleId)
     .then(response => {
+      console.log('点赞API调用成功，响应:', response);
       const likeBtn = document.getElementById('likeBtn');
       const likeCount = document.querySelector('.like-count');
       
@@ -456,7 +482,7 @@ function handleLikeArticle(articleId) {
       }
     })
     .catch(error => {
-      console.error('点赞失败:', error);
+      console.error('点赞API调用失败，错误:', error);
       showToast('操作失败，请稍后重试');
     });
 }

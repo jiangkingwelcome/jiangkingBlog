@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API测试</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        .result {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>API连通性测试</h1>
+    
+    <div>
+        <h2>测试健康检查路由</h2>
+        <button id="testHealthBtn">测试健康接口</button>
+        <div id="healthResult" class="result"></div>
+    </div>
+
+    <div>
+        <h2>测试文章测试路由</h2>
+        <button id="testArticleBtn">测试文章接口</button>
+        <div id="articleResult" class="result"></div>
+    </div>
+
+    <div>
+        <h2>测试点赞测试路由</h2>
+        <button id="testLikeBtn">测试点赞接口</button>
+        <div id="likeResult" class="result"></div>
+    </div>
+
+    <div>
+        <h2>测试文章点赞路由</h2>
+        <input type="text" id="articleId" value="test-article-id" placeholder="输入文章ID">
+        <button id="likeArticleBtn">点赞文章</button>
+        <div id="likeArticleResult" class="result"></div>
+    </div>
+
+    <script>
+        const BASE_URL = 'http://localhost:3001/api';
+
+        document.getElementById('testHealthBtn').addEventListener('click', async function() {
+            const resultDiv = document.getElementById('healthResult');
+            resultDiv.innerHTML = '请求中..';
+            try {
+                console.log('发送健康检查请求...');
+                const response = await fetch(`${BASE_URL}/health`, {
+                    credentials: 'include'
+                });
+                const data = await response.json();
+                console.log('健康检查响应:', data);
+                resultDiv.innerHTML = `<pre class="success">${JSON.stringify(data, null, 2)}</pre>`;
+            } catch (error) {
+                console.error('健康检查失败:', error);
+                resultDiv.innerHTML = `<pre class="error">请求失败: ${error.message}</pre>`;
+            }
+        });
+
+        document.getElementById('testArticleBtn').addEventListener('click', async function() {
+            const resultDiv = document.getElementById('articleResult');
+            resultDiv.innerHTML = '请求中..';
+            try {
+                console.log('发送文章测试请求...');
+                const response = await fetch(`${BASE_URL}/articles/test`, {
+                    credentials: 'include'
+                });
+                const data = await response.json();
+                console.log('文章测试响应:', data);
+                resultDiv.innerHTML = `<pre class="success">${JSON.stringify(data, null, 2)}</pre>`;
+            } catch (error) {
+                console.error('文章测试失败:', error);
+                resultDiv.innerHTML = `<pre class="error">请求失败: ${error.message}</pre>`;
+            }
+        });
+
+        document.getElementById('testLikeBtn').addEventListener('click', async function() {
+            const resultDiv = document.getElementById('likeResult');
+            resultDiv.innerHTML = '请求中..';
+            try {
+                console.log('发送点赞测试请求...');
+                const response = await fetch(`${BASE_URL}/articles/like-test`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    credentials: 'include'
+                });
+                const data = await response.json();
+                console.log('点赞测试响应:', data);
+                resultDiv.innerHTML = `<pre class="success">${JSON.stringify(data, null, 2)}</pre>`;
+            } catch (error) {
+                console.error('点赞测试失败:', error);
+                resultDiv.innerHTML = `<pre class="error">请求失败: ${error.message}</pre>`;
+            }
+        });
+
+        document.getElementById('likeArticleBtn').addEventListener('click', async function() {
+            const articleId = document.getElementById('articleId').value;
+            const resultDiv = document.getElementById('likeArticleResult');
+            
+            if (!articleId) {
+                resultDiv.innerHTML = '<pre class="error">请输入文章ID</pre>';
+                return;
+            }
+            
+            resultDiv.innerHTML = '请求中..';
+            try {
+                console.log(`发送文章点赞请求，文章ID: ${articleId}`);
+                const response = await fetch(`${BASE_URL}/articles/${articleId}/like`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    credentials: 'include'
+                });
+                const data = await response.json();
+                console.log('文章点赞响应:', data);
+                resultDiv.innerHTML = `<pre class="success">${JSON.stringify(data, null, 2)}</pre>`;
+            } catch (error) {
+                console.error('文章点赞失败:', error);
+                resultDiv.innerHTML = `<pre class="error">请求失败: ${error.message}</pre>`;
+            }
+        });
+    </script>
+</body>
+</html> 

@@ -1,77 +1,71 @@
-# SimonAKing-HomePage
+# jiangking-Blog
 
 [English Version](<README.md>)
 
 
 ## 项目简介
 
-> 一个现代优雅的个人主页，具有流体动画背景、响应式设计和流畅的页面过渡效果。
+> 一个现代化的个人博客网站，具有流畅的页面过渡效果和响应式设计。
 
-![preview](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMncyb3oyc21zc3czejU3cGk4M2tiNTdkaTM0N3FodGVpZmU5azNxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fhXFCZEogq39rOpKUi/giphy.gif)
+![博客预览](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMncyb3oyc21zc3czejU3cGk4M2tiNTdkaTM0N3FodGVpZmU5azNxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fhXFCZEogq39rOpKUi/giphy.gif)
 
-[在线浏览](http://simonaking.com)
+[在线浏览](https://jiangking.com)
 
-嗯哼，你想为网站装上如此酷炫的主页吗?
-
-下面就让我们开始吧！
+想要拥有一个这样的博客站点吗？让我们开始吧！
 
 
 ## 安装步骤
 
 ```sh
-git clone https://github.com/SimonAKing/HomePage.git
-cd HomePage
+git clone https://github.com/jiangking/jiangkingBlog.git
+cd jiangkingBlog
 npm install
 npm run dev
 ```
 
-# 获取Notion数据
+## 获取Notion数据
+```sh
 npm run fetchnotion
-
-
+```
 
 ## 功能特性
 
-1. 高度封装了页面中的所有的信息
-2. 使用 [WebGL-Fluid-Simulation](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation/) 作为背景
-3. 使用 `less` 作为 `css` 预处理器
-4. 使用 `pug` 作为 `html` 预处理器
-5. 使用 `gulp` 作为构建工具, 并以配置好构建脚本
-6. 令人舒服的动画 , 以及漂亮的 `UI`
-7. 响应式，无缝支持移动端
-8. 所引用的 `css` 与 `js` 文件总共超不过 `18.5` kb!
-9. 延迟响应切换页面事件
-10. 还有很多特性留给你探索...
-
-
+1. 高度封装的页面信息
+2. 流畅的用户体验与优雅的设计风格
+3. 使用`less`作为CSS预处理器
+4. 使用`pug`作为HTML预处理器
+5. 使用`gulp`作为构建工具
+6. 舒适的动画效果与精美的UI设计
+7. 响应式设计，完美支持移动端
+8. 轻量级，引用的CSS与JS文件总体积小
+9. 延迟响应的页面切换事件
+10. 支持从Notion导入数据
 
 ## 项目结构
 
-根据项目特点,一共分为两大类 ：
+项目主要分为两大部分：
 1. `intro` 首屏
 2. `main` 副屏
 
-相应的函数，样式，配置也是根据此标准来的。
-
-
+相应的函数、样式和配置也基于此结构设计。
 
 ## 基本配置
 
-配置文件 `config.json` 中的每一项键名 , 都与相应的组件名所对应。
+配置文件`config.json`中的每一项键名对应相应的组件名。
 
-比如：
+例如：
 
 ```json
 {
 	"head": {
-		"title": "SimonAKing",
-		"description": "Category:Personal Blog",
+		"title": "jiangking",
+		"description": "个人博客",
 		"favicon": "favicon.ico"
 	}
 }
-
 ```
-上面的配置信息就对应着下面 `layout/head.pug` 组件中的信息。
+
+上述配置信息对应以下`layout/head.pug`组件中的信息：
 ```html
 head
 	title #{head.title}
@@ -80,37 +74,18 @@ head
 	link(rel="icon" href=`${head.favicon}` type="image/x-icon")
 ```
 
-
-
 ## 高级配置
 
-### WebGL-Fluid-Simulation
+### 图标替换
+项目中的图标来自[阿里巴巴矢量图标库](https://www.iconfont.cn)
 
-首页使用[WebGL-Fluid-Simulation](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation/)作为背景。
+替换步骤如下：
 
-如需关闭，请设置`intro.background: false`。
-
-### supportAuthor
-
-配置信息默认开启了 `supportAuthor` 选项，即支持作者。
-
-所有的支持项如下：
-
-1. 会在首页右上角显示 `章鱼猫`
-2. 控制台会打印作者的站点信息
-
-如需关闭，请设置`intro.supportAuthor: false`。
-
-### 图标的替换
-项目中的图标，全部来自 [阿里巴巴矢量图标库](https://www.iconfont.cn)
-
-替换步骤如下:
-
-1. 请选择好你的图标，添加到项目后，把颜色全部调成白色。
-2. 点击 Font Class 方式
-3. 复制生成的链接中的内容
-4. 替换 文件 `css/common/icon.less` 中的内容 ，其中 `icon` 选择器中的内容必须保留。
-5. 配置 `config.json` 文件中的相应项 `main.ul.*.icon`
+1. 选择图标，添加到项目后，将颜色调整为白色
+2. 点击Font Class方式
+3. 复制生成的链接内容
+4. 替换`/src/css/common/icon.less`文件中的内容，确保保留`icon`选择器中的内容
+5. 在`config.json`文件中配置相应项`main.ul.*.icon`
 
 ```css
 .icon {
@@ -127,42 +102,30 @@ head
 }
 ```
 
-
-
 ## 项目部署
 
-在根目录下执行`npm run build` 后，会将项目文件生成到 `dist` 目录。
+在根目录下执行`npm run build`后，项目文件将生成到`dist`目录。
 
-然后，你可以将`dist`目录部署到你喜欢的服务器托管商。
+然后，您可以将`dist`目录部署到任何服务器托管提供商。
 
-下面以`GithubPage` 举例：
+GitHub Pages部署示例：
 
-1. 新建 `你的用户名.github.io` 仓库
+1. 创建`username.github.io`仓库
 
 2. ```sh
    cd dist
    git init
    git add -A
-   git commit -am"init"
-   git remote add origin https://github.com/你的用户名/你的用户名.github.io.git
+   git commit -am "初始提交"
+   git remote add origin https://github.com/username/username.github.io.git
    git push -f origin master
    ```
 
-3. 然后在`Github`设置好仓库的`GithubPage` 选项
+3. 在GitHub中设置仓库的GitHub Pages选项
 
-4. 访问 `你的用户名.github.io` 即可浏览啦！
+4. 访问`username.github.io`即可浏览！
 
-
-
-假如你之前的`用户名.github.io`仓库已经有内容了,可以新建另一个的仓库，比如`blog`。
-
-再将所占用项目迁移到`blog`，并设置好这个仓库的`GithubPage` 选项。
-
-而这个仓库即成为了一个子目录`用户名.github.io/blog`。
-
-如此一来，你的`用户名.github.io`仓库便可留给首页了！
-
-
+如果您的`username.github.io`仓库已有内容，可以创建另一个仓库，如`blog`，将项目部署到该仓库，并设置其GitHub Pages选项。这样，该仓库将成为子目录`username.github.io/blog`。
 
 ## 赞助
 开发一个优秀的项目，离不开大量时间和精力的投入。

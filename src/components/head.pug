@@ -1,5 +1,5 @@
 head
-	title #{head.title}
+	title(data-i18n="site.title") #{head.title}
 
 	meta(charset="utf-8")
 	meta(name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2")
@@ -18,7 +18,7 @@ head
 	link(rel="dns-prefetch" href="https://cdn.jsdelivr.net")
 	link(rel="prefetch" href="https://cdn.jsdelivr.net/")
 
-	meta(name="description" content=`${head.description}`)
+	meta(name="description" content=`${head.description}` data-i18n-content="site.description")
 	link(rel="icon" href=`${head.favicon}` type="image/x-icon")
 	link(rel="shortcut icon" href=`${head.favicon}` type="image/x-icon")
 

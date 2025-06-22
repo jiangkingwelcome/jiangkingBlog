@@ -18,7 +18,7 @@
       span.stat-label 收藏
   
   .action-buttons
-    button.action-btn#likeBtn(type="button" title="点赞")
+    button.action-btn#likeBtn(type="button" title="点赞" onclick="console.log('点赞按钮被点击，文章ID:', document.querySelector('.article-actions').dataset.articleId)")
       i.icon.icon-like
       span.btn-text 点赞
     

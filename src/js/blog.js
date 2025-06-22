@@ -257,6 +257,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
    */
   function registerServiceWorker() {
     if ('serviceWorker' in navigator) {
+      // 检查service-worker.js是否存在
+      fetch('/service-worker.js', { method: 'HEAD' })
+        .then(response => {
+          if (response.ok) {
+            // 文件存在，注册Service Worker
       window.addEventListener('load', function() {
         navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
           console.log('ServiceWorker 注册成功，作用域：', registration.scope);
@@ -264,6 +269,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           console.log('ServiceWorker 注册失败：', error);
         });
       });
+          } else {
+            console.log('ServiceWorker 文件不存在，跳过注册');
+          }
+        })
+        .catch(error => {
+          console.log('ServiceWorker 检查失败，跳过注册:', error);
+        });
     }
   }
 
@@ -386,8 +398,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     if (navigator.connection && navigator.connection.effectiveType.includes('4g')) {
       // 预加载额外资源
       const preloadLinks = [
-        { href: '/assets/fonts/main-font.woff2', as: 'font', type: 'font/woff2', crossorigin: 'anonymous' },
-        { href: '/assets/images/hero-bg.jpg', as: 'image' }
+        { href: '/assets/font/main-font.woff2', as: 'font', type: 'font/woff2', crossorigin: 'anonymous' },
+        { href: '/assets/images/blog/hero-bg.jpg', as: 'image' }
       ];
       
       preloadLinks.forEach(link => {

@@ -1,0 +1,66 @@
+/* 评论区样式修复 */
+
+/* 评论操作按钮样式修复 */
+.comment-action {
+  color: rgba(255, 255, 255, 0.7) !important; /* 提高亮度和对比度 */
+  background-color: rgba(99, 102, 241, 0.1); /* 添加轻微背景色 */
+  padding: 5px 10px !important;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.comment-action:hover {
+  color: #fff !important;
+  background-color: rgba(99, 102, 241, 0.3);
+  transform: translateY(-2px);
+}
+
+.comment-action.active {
+  color: #fff !important;
+  background-color: rgba(99, 102, 241, 0.4);
+}
+
+/* 点赞按钮激活状态 */
+.comment-like.active {
+  color: #ec4899 !important;
+}
+
+/* 评论区按钮图标样式 */
+.comment-action svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+/* 文章操作按钮样式修复 */
+.action-btn {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.action-btn .btn-text {
+  font-weight: 500;
+  opacity: 1 !important;
+}
+
+.action-btn:hover {
+  color: #fff !important;
+}
+
+/* 加载更多按钮样式修复 */
+.load-more-btn {
+  color: #fff !important;
+  background: linear-gradient(135deg, #6366f1, #4f46e5) !important;
+  border: none !important;
+  font-weight: 500;
+  padding: 8px 20px;
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+}
+
+.load-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(99, 102, 241, 0.4);
+} 

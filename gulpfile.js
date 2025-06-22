@@ -171,6 +171,11 @@ gulp.task('copy-css', function () {
 		.pipe(gulp.dest('dist/css'));
 });
 
+gulp.task('copy-css-fixes', function () {
+	return gulp.src('src/css/blog/comment-fixes.css')
+		.pipe(gulp.dest('dist/css/blog'));
+});
+
 gulp.task('about-pug', function () {
 	return gulp
 		.src('./src/blog/about.pug')
@@ -211,7 +216,7 @@ gulp.task('placeholder-assets', function() {
 		.pipe(gulp.dest('./dist/assets/'));
 })
 
-gulp.task('build', gulp.series('clean', 'assets', 'copy', 'placeholder-assets', 'placeholder-images', 'pug', 'blog-pug', 'about-pug', 'css', 'blog-css', 'js', 'html', 'blog-data', 'blog-images', 'blog-detail'))
+gulp.task('build', gulp.series('clean', 'assets', 'copy', 'placeholder-assets', 'placeholder-images', 'pug', 'blog-pug', 'about-pug', 'css', 'blog-css', 'js', 'html', 'blog-data', 'blog-images', 'blog-detail', 'copy-css-fixes'))
 gulp.task('default', gulp.series('build'))
 
 gulp.task('watch', function () {
