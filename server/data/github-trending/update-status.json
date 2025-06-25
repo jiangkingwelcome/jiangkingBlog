@@ -1,0 +1,158 @@
+{
+  "lastUpdate": "2025-06-24T14:08:02.600Z",
+  "nextScheduledUpdate": "2025-06-24T18:08:02.600Z",
+  "status": "completed",
+  "results": [
+    {
+      "language": "all",
+      "since": "daily",
+      "count": 13,
+      "timeUsed": "1978ms",
+      "file": "github-trending-all-daily.json",
+      "status": "success",
+      "dbStats": {
+        "total": 13,
+        "inserted": 0,
+        "updated": 12,
+        "failed": 1,
+        "historyRecorded": 12
+      }
+    },
+    {
+      "language": "all",
+      "since": "weekly",
+      "count": 12,
+      "timeUsed": "1668ms",
+      "file": "github-trending-all-weekly.json",
+      "status": "success",
+      "dbStats": {
+        "total": 12,
+        "inserted": 0,
+        "updated": 11,
+        "failed": 1,
+        "historyRecorded": 11
+      }
+    },
+    {
+      "language": "all",
+      "since": "monthly",
+      "count": 17,
+      "timeUsed": "2317ms",
+      "file": "github-trending-all-monthly.json",
+      "status": "success",
+      "dbStats": {
+        "total": 17,
+        "inserted": 0,
+        "updated": 14,
+        "failed": 3,
+        "historyRecorded": 14
+      }
+    },
+    {
+      "language": "javascript",
+      "since": "daily",
+      "count": 17,
+      "timeUsed": "2281ms",
+      "file": "github-trending-javascript-daily.json",
+      "status": "success",
+      "dbStats": {
+        "total": 17,
+        "inserted": 0,
+        "updated": 14,
+        "failed": 3,
+        "historyRecorded": 14
+      }
+    },
+    {
+      "language": "typescript",
+      "since": "daily",
+      "count": 10,
+      "timeUsed": "1874ms",
+      "file": "github-trending-typescript-daily.json",
+      "status": "success",
+      "dbStats": {
+        "total": 10,
+        "inserted": 0,
+        "updated": 10,
+        "failed": 0,
+        "historyRecorded": 10
+      }
+    },
+    {
+      "language": "python",
+      "since": "daily",
+      "count": 16,
+      "timeUsed": "3137ms",
+      "file": "github-trending-python-daily.json",
+      "status": "success",
+      "dbStats": {
+        "total": 16,
+        "inserted": 0,
+        "updated": 15,
+        "failed": 1,
+        "historyRecorded": 15
+      }
+    },
+    {
+      "language": "java",
+      "since": "daily",
+      "count": 22,
+      "timeUsed": "2645ms",
+      "file": "github-trending-java-daily.json",
+      "status": "success",
+      "dbStats": {
+        "total": 22,
+        "inserted": 0,
+        "updated": 19,
+        "failed": 3,
+        "historyRecorded": 19
+      }
+    },
+    {
+      "language": "go",
+      "since": "daily",
+      "count": 25,
+      "timeUsed": "2692ms",
+      "file": "github-trending-go-daily.json",
+      "status": "success",
+      "dbStats": {
+        "total": 25,
+        "inserted": 0,
+        "updated": 24,
+        "failed": 1,
+        "historyRecorded": 24
+      }
+    },
+    {
+      "language": "rust",
+      "since": "daily",
+      "count": 20,
+      "timeUsed": "2254ms",
+      "file": "github-trending-rust-daily.json",
+      "status": "success",
+      "dbStats": {
+        "total": 20,
+        "inserted": 0,
+        "updated": 20,
+        "failed": 0,
+        "historyRecorded": 20
+      }
+    },
+    {
+      "language": "c++",
+      "since": "daily",
+      "count": 22,
+      "timeUsed": "2571ms",
+      "file": "github-trending-c++-daily.json",
+      "status": "success",
+      "dbStats": {
+        "total": 22,
+        "inserted": 0,
+        "updated": 22,
+        "failed": 0,
+        "historyRecorded": 22
+      }
+    }
+  ],
+  "summary": "成功: 10, 失败: 0, 总数: 10, 数据库: 0新增/161更新"
+}

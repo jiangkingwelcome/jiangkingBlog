@@ -59,6 +59,52 @@ async function initDatabase() {
       )
     `);
     
+    // 创建GitHub趋势仓库表
+    await connection.execute(`
+      CREATE TABLE IF NOT EXISTS github_trending_repos (
+        id VARCHAR(100) PRIMARY KEY,
+        owner VARCHAR(100) NOT NULL,
+        name VARCHAR(200) NOT NULL,
+        full_name VARCHAR(255) NOT NULL,
+        url VARCHAR(255) NOT NULL,
+        description TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+        language VARCHAR(50),
+        language_color VARCHAR(20),
+        stars INT DEFAULT 0,
+        forks INT DEFAULT 0,
+        stars_added INT DEFAULT 0,
+        period ENUM('daily', 'weekly', 'monthly') NOT NULL,
+        avatar_url VARCHAR(255),
+        is_popular TINYINT(1) DEFAULT 0,
+        is_fast_growing TINYINT(1) DEFAULT 0,
+        contributors TEXT,
+        first_seen TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        last_seen TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+        INDEX (language),
+        INDEX (period),
+        INDEX (stars),
+        INDEX (is_popular),
+        INDEX (is_fast_growing),
+        UNIQUE KEY repo_period (id, period)
+      ) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
+    `);
+    
+    // 创建GitHub趋势历史记录表，用于跟踪仓库星标数变化
+    await connection.execute(`
+      CREATE TABLE IF NOT EXISTS github_trending_history (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        repo_id VARCHAR(100) NOT NULL,
+        stars INT NOT NULL,
+        forks INT NOT NULL,
+        stars_added INT NOT NULL,
+        recorded_date DATE NOT NULL,
+        period ENUM('daily', 'weekly', 'monthly') NOT NULL,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        FOREIGN KEY (repo_id) REFERENCES github_trending_repos(id) ON DELETE CASCADE,
+        UNIQUE KEY repo_date_period (repo_id, recorded_date, period)
+      )
+    `);
+    
     // 创建用户点赞记录表
     await connection.execute(`
       CREATE TABLE IF NOT EXISTS user_likes (
@@ -193,6 +239,66 @@ async function fixDatabaseSchema() {
         console.log('comment_count字段添加成功');
       } else {
         console.log('articles表已有comment_count字段，无需修复');
+      }
+      
+      // 检查github_trending_repos表是否存在
+      console.log('检查github_trending_repos表是否存在...');
+      const [trendingTables] = await connection.execute(`
+        SHOW TABLES LIKE 'github_trending_repos'
+      `);
+      
+      if (trendingTables.length > 0) {
+        console.log('github_trending_repos表存在，检查新字段...');
+        
+        // 检查is_popular字段
+        const [isPopularColumn] = await connection.execute(`
+          SHOW COLUMNS FROM github_trending_repos LIKE 'is_popular'
+        `);
+        
+        if (isPopularColumn.length === 0) {
+          console.log('添加is_popular字段...');
+          await connection.execute(`
+            ALTER TABLE github_trending_repos ADD COLUMN is_popular TINYINT(1) DEFAULT 0 AFTER avatar_url
+          `);
+          console.log('is_popular字段添加成功');
+        }
+        
+        // 检查is_fast_growing字段
+        const [isFastGrowingColumn] = await connection.execute(`
+          SHOW COLUMNS FROM github_trending_repos LIKE 'is_fast_growing'
+        `);
+        
+        if (isFastGrowingColumn.length === 0) {
+          console.log('添加is_fast_growing字段...');
+          await connection.execute(`
+            ALTER TABLE github_trending_repos ADD COLUMN is_fast_growing TINYINT(1) DEFAULT 0 AFTER is_popular
+          `);
+          console.log('is_fast_growing字段添加成功');
+        }
+        
+        // 检查contributors字段
+        const [contributorsColumn] = await connection.execute(`
+          SHOW COLUMNS FROM github_trending_repos LIKE 'contributors'
+        `);
+        
+        if (contributorsColumn.length === 0) {
+          console.log('添加contributors字段...');
+          await connection.execute(`
+            ALTER TABLE github_trending_repos ADD COLUMN contributors TEXT AFTER is_fast_growing
+          `);
+          console.log('contributors字段添加成功');
+        }
+        
+        // 添加索引
+        try {
+          await connection.execute(`
+            ALTER TABLE github_trending_repos ADD INDEX (is_popular), ADD INDEX (is_fast_growing)
+          `);
+          console.log('添加索引成功');
+        } catch (indexError) {
+          // 索引可能已经存在，忽略错误
+          console.log('索引可能已存在:', indexError.message);
+        }
       }
       
       connection.release();

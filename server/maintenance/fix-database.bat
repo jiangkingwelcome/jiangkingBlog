@@ -1,12 +1,12 @@
 @echo off
 echo ==============================================
-echo   启动服务器（带维护模式）
+echo   修复数据库字符集以支持表情符号
 echo ==============================================
 echo.
 
-cd server
-node start-with-maintenance.js
+cd..
+node maintenance/fix-database.js
 
 echo.
-echo 服务器已终止，按任意键退出...
+echo 按任意键退出...
 pause > nul 

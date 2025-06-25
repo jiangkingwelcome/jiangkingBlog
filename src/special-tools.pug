@@ -1,0 +1,492 @@
+doctype html
+html(lang="zh-CN")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title JiangKing - 特殊工具箱
+    
+    //- SEO优化：完善Meta标签
+    meta(name="description", content="JiangKing的特殊工具箱，提供各种实用开发工具和资源")
+    meta(name="keywords", content="工具箱,开发工具,编程,JiangKing,资源,API")
+    meta(name="author", content="JiangKing")
+    
+    //- 社交分享Meta标签
+    meta(property="og:title", content="JiangKing - 特殊工具箱")
+    meta(property="og:description", content="JiangKing的特殊工具箱，提供各种实用开发工具和资源")
+    meta(property="og:type", content="website")
+    meta(property="og:url", content="https://jiangking.com/special-tools.html")
+    
+    //- 引入CSS
+    link(rel="stylesheet", href="/css/blog.css")
+    
+    style.
+      /* 赛博朋克风格样式 */
+      :root {
+        --primary: #6366f1;
+        --primary-dark: #4f46e5;
+        --secondary: #8b5cf6;
+        --accent: #ec4899;
+        --success: #10b981;
+        --warning: #f59e0b;
+        --danger: #ef4444;
+        --dark: #0f0f23;
+        --light: #f8fafc;
+        --glass: rgba(255, 255, 255, 0.1);
+        --glass-border: rgba(255, 255, 255, 0.2);
+        --neon-glow: 0 0 20px rgba(99, 102, 241, 0.8);
+        --text: #e2e8f0;
+        --text-muted: rgba(226, 232, 240, 0.6);
+      }
+      
+      body {
+        font-family: 'Helvetica Neue', 'Microsoft Yahei', -apple-system, sans-serif;
+        background: var(--dark);
+        color: var(--text);
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* 动态背景 */
+      .dynamic-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        background: linear-gradient(45deg, #0f0f23, #1a1a3e, #0f0f23);
+        background-size: 400% 400%;
+        animation: gradientShift 15s ease infinite;
+      }
+      
+      @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      
+      /* 网格背景 */
+      .grid-bg {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-image: 
+          linear-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(99, 102, 241, 0.1) 1px, transparent 1px);
+        background-size: 50px 50px;
+      }
+      
+      /* 顶部导航 */
+      .top-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background: rgba(15, 15, 35, 0.8);
+        backdrop-filter: blur(10px);
+        z-index: 100;
+        border-bottom: 1px solid var(--glass-border);
+      }
+      
+      .nav-left {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      
+      .back-btn {
+        color: var(--text);
+        text-decoration: none;
+        font-size: 1.5rem;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: rgba(99, 102, 241, 0.2);
+        border: 1px solid rgba(99, 102, 241, 0.3);
+        transition: all 0.3s;
+      }
+      
+      .back-btn:hover {
+        background: rgba(99, 102, 241, 0.4);
+        transform: scale(1.1);
+      }
+      
+      .site-title {
+        font-size: 1.2rem;
+        margin: 0;
+        background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      /* 页面标题 */
+      .page-header {
+        position: relative;
+        padding: 120px 40px 60px;
+        text-align: center;
+        background: linear-gradient(to bottom, rgba(15, 15, 35, 0) 0%, var(--dark) 100%);
+      }
+      
+      .page-title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: var(--text);
+        font-weight: 800;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        animation: glow 2s ease-in-out infinite alternate;
+      }
+      
+      @keyframes glow {
+        from { text-shadow: 0 0 5px rgba(99, 102, 241, 0.5); }
+        to { text-shadow: 0 0 15px rgba(99, 102, 241, 0.8), 0 0 25px rgba(236, 72, 153, 0.6); }
+      }
+      
+      .page-description {
+        max-width: 800px;
+        margin: 0 auto 30px;
+        color: var(--text-muted);
+        font-size: 1.2rem;
+      }
+      
+      /* 工具分类 */
+      .tools-categories {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        padding: 0 20px;
+      }
+      
+      .category-btn {
+        padding: 10px 25px;
+        background: rgba(15, 15, 35, 0.6);
+        border: 1px solid rgba(99, 102, 241, 0.3);
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: rgba(255, 255, 255, 0.7);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .category-btn:hover,
+      .category-btn.active {
+        background: linear-gradient(135deg, rgba(99, 102, 241, 0.3) 0%, rgba(139, 92, 246, 0.3) 100%);
+        border-color: var(--primary);
+        color: white;
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+      }
+      
+      .category-btn.active {
+        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        border-color: transparent;
+      }
+      
+      /* 工具容器 */
+      .tools-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px 60px;
+      }
+      
+      .tools-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 30px;
+      }
+      
+      .tool-card {
+        background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--glass-border);
+        border-radius: 20px;
+        padding: 30px;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .tool-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+      
+      .tool-card:hover::before {
+        left: 100%;
+      }
+      
+      .tool-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 
+          0 20px 40px rgba(99, 102, 241, 0.3),
+          0 0 60px rgba(99, 102, 241, 0.1);
+        border-color: var(--primary);
+      }
+      
+      .tool-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: rgba(99, 102, 241, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+        color: var(--primary);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .tool-icon::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(99, 102, 241, 0.3) 0%, transparent 70%);
+        animation: pulse 2s infinite;
+      }
+      
+      @keyframes pulse {
+        0% { transform: scale(0.8); opacity: 0.8; }
+        50% { transform: scale(1.2); opacity: 0; }
+        100% { transform: scale(0.8); opacity: 0; }
+      }
+      
+      .tool-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #fff;
+      }
+      
+      .tool-description {
+        color: var(--text-muted);
+        margin-bottom: 20px;
+        flex-grow: 1;
+      }
+      
+      .tool-btn {
+        padding: 8px 20px;
+        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        border: none;
+        border-radius: 20px;
+        color: white;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+      }
+      
+      .tool-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5);
+      }
+      
+      /* 响应式设计 */
+      @media (max-width: 768px) {
+        .page-header {
+          padding: 100px 20px 40px;
+        }
+        
+        .page-title {
+          font-size: 2rem;
+        }
+        
+        .tools-container {
+          padding: 0 20px 40px;
+        }
+        
+        .tools-grid {
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+          gap: 20px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .tools-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+  
+  body
+    .dynamic-bg
+    .grid-bg
+    
+    //- 顶部导航
+    header.top-nav(role="banner")
+      .nav-left
+        a.back-btn(href="/" title="返回首页" aria-label="返回首页") ←
+        h3.site-title JiangKing
+    
+    //- 页面标题
+    section.page-header
+      h1.page-title 特殊工具箱
+      p.page-description 这里收集了一系列实用的开发工具和资源，帮助你提高开发效率和解决各种技术难题
+      
+      //- 工具分类
+      .tools-categories
+        button.category-btn.active(data-category="all") 全部
+        button.category-btn(data-category="code") 代码工具
+        button.category-btn(data-category="design") 设计资源
+        button.category-btn(data-category="api") API工具
+        button.category-btn(data-category="security") 安全工具
+        button.category-btn(data-category="other") 其他工具
+    
+    //- 工具容器
+    main.tools-container
+      .tools-grid
+        //- 代码工具
+        .tool-card(data-category="code")
+          .tool-icon 🧩
+          h3.tool-title 代码格式化
+          p.tool-description 支持多种编程语言的代码格式化工具，让你的代码更加整洁规范
+          button.tool-btn 立即使用
+        
+        .tool-card(data-category="code")
+          .tool-icon 📝
+          h3.tool-title 在线编辑器
+          p.tool-description 功能强大的在线代码编辑器，支持多种编程语言和实时预览
+          button.tool-btn 立即使用
+        
+        .tool-card(data-category="code")
+          .tool-icon 🔍
+          h3.tool-title 正则表达式测试
+          p.tool-description 在线测试和调试正则表达式，支持多种正则表达式语法
+          button.tool-btn 立即使用
+        
+        //- 设计资源
+        .tool-card(data-category="design")
+          .tool-icon 🎨
+          h3.tool-title 配色方案生成
+          p.tool-description 快速生成和预览各种配色方案，支持多种色彩模型和导出格式
+          button.tool-btn 立即使用
+        
+        .tool-card(data-category="design")
+          .tool-icon 🖼️
+          h3.tool-title 图标库
+          p.tool-description 丰富的SVG图标库，支持自定义颜色和大小，一键复制代码
+          button.tool-btn 立即使用
+        
+        //- API工具
+        .tool-card(data-category="api")
+          .tool-icon 📚
+          h3.tool-title API文档生成
+          p.tool-description 根据代码注释自动生成API文档，支持多种格式和模板
+          button.tool-btn 立即使用
+        
+        .tool-card(data-category="api")
+          .tool-icon 🔄
+          h3.tool-title API请求测试
+          p.tool-description 在线测试API请求，支持多种HTTP方法和参数设置
+          button.tool-btn 立即使用
+        
+        //- 安全工具
+        .tool-card(data-category="security")
+          .tool-icon 🔒
+          h3.tool-title 安全检测
+          p.tool-description 检测代码中的安全漏洞和潜在风险，提供修复建议
+          button.tool-btn 立即使用
+        
+        .tool-card(data-category="security")
+          .tool-icon 🔑
+          h3.tool-title 密码生成器
+          p.tool-description 生成安全强度高的随机密码，支持自定义长度和字符集
+          button.tool-btn 立即使用
+        
+        //- 其他工具
+        .tool-card(data-category="other")
+          .tool-icon 📦
+          h3.tool-title 资源下载
+          p.tool-description 精选的开发资源和工具下载，包括框架、库和插件
+          button.tool-btn 立即使用
+        
+        .tool-card(data-category="other")
+          .tool-icon ✅
+          h3.tool-title 任务清单
+          p.tool-description 简单高效的任务管理工具，帮助你跟踪项目进度和待办事项
+          button.tool-btn 立即使用
+    
+    script.
+      // 工具分类功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const toolCards = document.querySelectorAll('.tool-card');
+        
+        // 分类按钮点击事件
+        categoryBtns.forEach(btn => {
+          btn.addEventListener('click', function() {
+            // 移除所有按钮的active类
+            categoryBtns.forEach(b => b.classList.remove('active'));
+            // 给当前按钮添加active类
+            this.classList.add('active');
+            
+            const category = this.getAttribute('data-category');
+            
+            // 筛选工具卡片
+            toolCards.forEach(card => {
+              // 添加淡入淡出效果
+              card.style.opacity = '0';
+              card.style.transform = 'scale(0.95)';
+              
+              setTimeout(() => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                  card.style.display = 'flex';
+                  setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'scale(1)';
+                  }, 50);
+                } else {
+                  card.style.display = 'none';
+                }
+              }, 300);
+            });
+          });
+        });
+        
+        // 工具卡片点击事件
+        toolCards.forEach(card => {
+          const btn = card.querySelector('.tool-btn');
+          
+          btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const toolName = card.querySelector('.tool-title').textContent;
+            alert(`${toolName} 功能即将上线，敬请期待！`);
+          });
+          
+          card.addEventListener('click', function() {
+            const btn = this.querySelector('.tool-btn');
+            btn.click();
+          });
+        });
+      }); 

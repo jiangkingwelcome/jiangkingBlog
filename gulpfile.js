@@ -216,13 +216,31 @@ gulp.task('placeholder-assets', function() {
 		.pipe(gulp.dest('./dist/assets/'));
 })
 
-gulp.task('build', gulp.series('clean', 'assets', 'copy', 'placeholder-assets', 'placeholder-images', 'pug', 'blog-pug', 'about-pug', 'css', 'blog-css', 'js', 'html', 'blog-data', 'blog-images', 'blog-detail', 'copy-css-fixes'))
+// 添加处理特殊工具页面的任务
+gulp.task('special-tools-pug', function () {
+	return gulp
+		.src('./src/special-tools.pug')
+		.pipe(pug({ data: config }))
+		.pipe(gulp.dest('./dist'))
+})
+
+// 添加处理工具页面的任务
+gulp.task('tools-pug', function () {
+	return gulp
+		.src('./src/tools.pug')
+		.pipe(pug({ data: config }))
+		.pipe(gulp.dest('./dist'))
+})
+
+gulp.task('build', gulp.series('clean', 'assets', 'copy', 'placeholder-assets', 'placeholder-images', 'pug', 'blog-pug', 'about-pug', 'css', 'blog-css', 'js', 'html', 'blog-data', 'blog-images', 'blog-detail', 'copy-css-fixes', 'special-tools-pug', 'tools-pug'))
 gulp.task('default', gulp.series('build'))
 
 gulp.task('watch', function () {
 	gulp.watch('./src/components/*.pug', gulp.parallel('pug'))
 	gulp.watch('./src/index.pug', gulp.parallel('pug'))
 	gulp.watch('./src/blog/*.pug', gulp.parallel('blog-pug'))
+	gulp.watch('./src/special-tools.pug', gulp.parallel('special-tools-pug'))
+	gulp.watch('./src/tools.pug', gulp.parallel('tools-pug'))
 	gulp.watch('./src/css/**/*.less', gulp.parallel(['css', 'blog-css']))
 	gulp.watch('./src/js/*.js', gulp.parallel(['js']))
 	connect.server({

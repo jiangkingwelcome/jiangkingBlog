@@ -6,6 +6,7 @@ const config = require('./config');
 const { testConnection, initDatabase, fixDatabaseSchema } = require('./db');
 const userRoutes = require('./routes/userRoutes');
 const articleRoutes = require('./routes/articleRoutes');
+const githubRoutes = require('./routes/githubRoutes');
 const fs = require('fs');
 const path = require('path');
 
@@ -83,6 +84,7 @@ app.get('/api/routes', (req, res) => {
 // 路由
 app.use('/api/users', userRoutes);
 app.use('/api/articles', articleRoutes);
+app.use('/api/github', githubRoutes);
 
 // 错误处理中间件
 app.use((err, req, res, next) => {

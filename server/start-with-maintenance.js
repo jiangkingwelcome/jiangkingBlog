@@ -1,88 +1,162 @@
 /**
- * 带维护的服务器启动脚本
- * 先运行数据库维护脚本，然后启动服务器
+ * 带有维护功能的服务器启动脚本
+ * 在启动API服务器之前，会先执行一些维护操作
  */
 
-const { spawn } = require('child_process');
+const { testConnection, initDatabase, fixDatabaseSchema } = require('./db');
+const { fork } = require('child_process');
 const path = require('path');
+const fs = require('fs');
 
-// 运行维护脚本
-async function runMaintenance() {
-  return new Promise((resolve, reject) => {
-    console.log('正在运行数据库维护脚本...');
+// 数据库字符集修复函数
+async function fixDatabaseCharset() {
+  try {
+    // 通过fork子进程执行字符集修复脚本
+    console.log('正在修复数据库字符集...');
     
-    const maintenanceProcess = spawn('node', [path.join(__dirname, 'maintenance', 'fix-database.js')], {
-      stdio: 'inherit'
+    return new Promise((resolve, reject) => {
+      const fixProcess = fork(path.join(__dirname, 'maintenance/fix-database.js'));
+      
+      fixProcess.on('exit', (code) => {
+        if (code === 0) {
+          console.log('✅ 数据库字符集修复成功');
+          resolve(true);
+        } else {
+          console.error('❌ 数据库字符集修复失败');
+          resolve(false); // 仍然继续，因为可能是新数据库不需要修复
+        }
+      });
+      
+      fixProcess.on('error', (err) => {
+        console.error('❌ 修复过程发生错误:', err);
+        resolve(false); // 仍然继续
+      });
     });
-    
-    maintenanceProcess.on('close', (code) => {
-      if (code === 0) {
-        console.log('数据库维护脚本执行成功');
-        resolve(true);
-      } else {
-        console.error(`数据库维护脚本执行失败，退出码: ${code}`);
-        resolve(false);
-      }
-    });
-    
-    maintenanceProcess.on('error', (error) => {
-      console.error('启动维护脚本时出错:', error);
-      reject(error);
-    });
-  });
+  } catch (error) {
+    console.error('❌ 执行数据库字符集修复失败:', error);
+    return false;
+  }
 }
 
-// 启动服务器
-function startServer() {
-  console.log('正在启动服务器...');
-  
-  const serverProcess = spawn('node', [path.join(__dirname, 'index.js')], {
-    stdio: 'inherit'
-  });
-  
-  serverProcess.on('close', (code) => {
-    console.log(`服务器已关闭，退出码: ${code}`);
-    process.exit(code);
-  });
-  
-  serverProcess.on('error', (error) => {
-    console.error('启动服务器时出错:', error);
-    process.exit(1);
-  });
-  
-  // 处理进程信号
-  process.on('SIGINT', () => {
-    console.log('收到SIGINT信号，正在关闭服务器...');
-    serverProcess.kill('SIGINT');
-  });
-  
-  process.on('SIGTERM', () => {
-    console.log('收到SIGTERM信号，正在关闭服务器...');
-    serverProcess.kill('SIGTERM');
-  });
+// 更新GitHub趋势数据
+async function updateGithubTrending() {
+  try {
+    // 检查上次更新时间
+    const statusPath = path.join(__dirname, 'data', 'github-trending', 'update-status.json');
+    let shouldUpdate = true;
+    
+    if (fs.existsSync(statusPath)) {
+      try {
+        const statusData = JSON.parse(fs.readFileSync(statusPath, 'utf8'));
+        const lastUpdate = new Date(statusData.lastUpdate);
+        const now = new Date();
+        const hoursSinceLastUpdate = (now - lastUpdate) / (1000 * 60 * 60);
+        
+        // 如果2小时内已更新，则跳过
+        if (hoursSinceLastUpdate < 2) {
+          console.log(`上次更新时间: ${lastUpdate.toLocaleString()}, ${Math.round(hoursSinceLastUpdate * 10) / 10} 小时前`);
+          console.log('GitHub趋势数据近期已更新，跳过本次更新');
+          return true;
+        }
+      } catch (err) {
+        console.error('读取更新状态文件失败，将执行更新:', err);
+      }
+    }
+    
+    console.log('开始更新GitHub趋势数据...');
+    
+    // 通过fork子进程执行更新脚本
+    return new Promise((resolve, reject) => {
+      const updateProcess = fork(path.join(__dirname, 'tasks/updateGithubTrending.js'));
+      
+      updateProcess.on('exit', (code) => {
+        if (code === 0) {
+          console.log('✅ GitHub趋势数据更新成功');
+          resolve(true);
+        } else {
+          console.error('❌ GitHub趋势数据更新失败');
+          resolve(false); // 仍然继续启动
+        }
+      });
+      
+      updateProcess.on('error', (err) => {
+        console.error('❌ GitHub趋势更新过程发生错误:', err);
+        resolve(false); // 仍然继续
+      });
+    });
+  } catch (error) {
+    console.error('❌ 执行GitHub趋势更新失败:', error);
+    return false;
+  }
 }
 
 // 主函数
 async function main() {
   try {
-    console.log('='.repeat(50));
-    console.log('启动带维护的服务器...');
-    console.log('='.repeat(50));
+    console.log('=======================================');
+    console.log('  服务器启动前执行维护操作');
+    console.log('=======================================');
     
-    // 运行维护脚本
-    const maintenanceSuccess = await runMaintenance();
+    // 测试数据库连接
+    console.log('正在测试数据库连接...');
+    const connected = await testConnection();
+    if (!connected) {
+      console.error('❌ 数据库连接失败');
+      process.exit(1);
+    }
+    console.log('✅ 数据库连接成功');
     
-    if (!maintenanceSuccess) {
-      console.warn('维护脚本执行失败，但仍将继续启动服务器');
+    // 初始化数据库表
+    console.log('正在初始化数据库表...');
+    const initialized = await initDatabase();
+    if (!initialized) {
+      console.error('❌ 数据库表初始化失败');
+      process.exit(1);
+    }
+    console.log('✅ 数据库表初始化成功');
+    
+    // 修复数据库表结构
+    console.log('正在修复数据库表结构...');
+    const fixed = await fixDatabaseSchema();
+    if (!fixed) {
+      console.error('⚠️ 数据库表结构修复遇到问题，但将继续启动');
+    } else {
+      console.log('✅ 数据库表结构修复完成');
     }
     
+    // 修复数据库字符集
+    console.log('正在检查数据库字符集...');
+    const charsetFixed = await fixDatabaseCharset();
+    if (!charsetFixed) {
+      console.error('⚠️ 数据库字符集修复遇到问题，但将继续启动');
+    } else {
+      console.log('✅ 数据库字符集检查完成');
+    }
+    
+    // 更新GitHub趋势数据
+    console.log('正在检查GitHub趋势数据...');
+    const trendingUpdated = await updateGithubTrending();
+    if (!trendingUpdated) {
+      console.error('⚠️ GitHub趋势数据更新遇到问题，但将继续启动');
+    } else {
+      console.log('✅ GitHub趋势数据检查完成');
+    }
+    
+    console.log('=======================================');
+    console.log('  所有维护操作已完成，正在启动服务器');
+    console.log('=======================================');
+    
     // 启动服务器
-    startServer();
+    require('./index');
+    
   } catch (error) {
-    console.error('启动过程中发生错误:', error);
+    console.error('❌ 维护过程中发生错误:', error);
     process.exit(1);
   }
 }
 
 // 执行主函数
-main(); 
+main().catch(error => {
+  console.error('❌ 启动过程中发生错误:', error);
+  process.exit(1);
+}); 

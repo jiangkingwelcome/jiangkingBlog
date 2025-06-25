@@ -117,3 +117,106 @@
 		}
 	}
 }
+
+/* 特殊工具弹出层样式 */
+.tools-popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.95);
+	width: 500px;
+	background: rgba(15, 15, 35, 0.95);
+	backdrop-filter: blur(20px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(99, 102, 241, 0.3);
+	z-index: 1000;
+	display: none;
+	opacity: 0;
+	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	
+	&.show {
+		display: block;
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(1);
+	}
+	
+	.tools-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 20px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		
+		h3 {
+			margin: 0;
+			font-size: 18px;
+			background: linear-gradient(135deg, #6366f1, #8b5cf6);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+		
+		.close-btn {
+			background: none;
+			border: none;
+			color: rgba(255, 255, 255, 0.7);
+			cursor: pointer;
+			padding: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			transition: all 0.2s;
+			
+			&:hover {
+				background: rgba(255, 255, 255, 0.1);
+				color: #fff;
+			}
+		}
+	}
+	
+	.tools-content {
+		padding: 20px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 15px;
+		
+		@media screen and (max-width: 540px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		
+		@media screen and (max-width: 360px) {
+			grid-template-columns: 1fr;
+		}
+		
+		.tool-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+			padding: 15px;
+			border-radius: 12px;
+			background: rgba(255, 255, 255, 0.05);
+			border: 1px solid rgba(99, 102, 241, 0.2);
+			cursor: pointer;
+			transition: all 0.3s;
+			
+			i {
+				font-size: 24px;
+				color: #6366f1;
+			}
+			
+			span {
+				font-size: 14px;
+				color: #fff;
+			}
+			
+			&:hover {
+				background: rgba(99, 102, 241, 0.1);
+				transform: translateY(-3px);
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+			}
+		}
+	}
+}
