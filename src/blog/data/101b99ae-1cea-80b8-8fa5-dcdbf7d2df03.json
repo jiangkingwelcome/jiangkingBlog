@@ -10,6 +10,13 @@
   "summary": "https://jiangkingblog.com/about",
   "created_time": "2024-09-14T01:50:00.000Z",
   "last_edited_time": "2024-09-14T06:21:00.000Z",
+  "cover": {
+    "type": "external",
+    "external": {
+      "url": "https://www.notion.so/images/page-cover/solid_beige.png"
+    }
+  },
+  "coverImageFilename": "cover_aHR0cHM6_solid_beige.png",
   "blocks": [],
   "contentHtml": ""
 }

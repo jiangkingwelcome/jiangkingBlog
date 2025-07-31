@@ -75,6 +75,18 @@ function getImageUrl(block) {
   return null;
 }
 
+// 获取页面封面图片URL
+function getCoverImageUrl(cover) {
+  if (!cover) return null;
+
+  if (cover.type === 'external') {
+    return cover.external.url;
+  } else if (cover.type === 'file') {
+    return cover.file.url;
+  }
+  return null;
+}
+
 // 下载图片并保存到本地
 async function downloadImage(url, localPath, retryCount = 0) {
   return new Promise(async (resolve, reject) => {
@@ -507,15 +519,36 @@ async function fetchAllArticles() {
           slug: properties.slug?.rich_text?.[0]?.plain_text || '',
           summary: properties.summary?.rich_text?.[0]?.plain_text || '',
           created_time: page.created_time,
-          last_edited_time: page.last_edited_time
+          last_edited_time: page.last_edited_time,
+          cover: page.cover // 添加封面图片信息
         };
         
         articles.push(article);
-        
+
         // 创建文章图片目录
         const articleImageDir = path.join(imageDir, article.id);
         if (!fs.existsSync(articleImageDir)) {
           fs.mkdirSync(articleImageDir, { recursive: true });
+        }
+
+        // 处理封面图片
+        if (article.cover) {
+          const coverUrl = getCoverImageUrl(article.cover);
+          if (coverUrl) {
+            console.log(`处理文章 ${article.title} 的封面图片...`);
+            const coverFilename = getImageNameFromUrl(coverUrl);
+            const coverPath = path.join(articleImageDir, `cover_${coverFilename}`);
+
+            try {
+              const downloadedCoverPath = await downloadImage(coverUrl, coverPath);
+              if (downloadedCoverPath) {
+                article.coverImageFilename = path.basename(downloadedCoverPath);
+                console.log(`✅ 封面图片下载成功: ${article.coverImageFilename}`);
+              }
+            } catch (error) {
+              console.error(`❌ 封面图片下载失败: ${error.message}`);
+            }
+          }
         }
         
         console.log(`\n处理文章: ${article.title}`);

@@ -672,35 +672,7 @@
         font-size: 0.9rem;
       }
       
-      /* 相关文章 */
-      .related-posts {
-        margin-top: 40px;
-      }
       
-      .section-title {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-        color: #fff;
-        position: relative;
-        padding-left: 15px;
-      }
-      
-      .section-title::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 8px;
-        height: 20px;
-        width: 4px;
-        background: linear-gradient(to bottom, var(--primary), var(--accent));
-        border-radius: 2px;
-      }
-      
-      .related-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 20px;
-      }
       
       /* 移动端优化样式 */
       @media (max-width: 768px) {
@@ -728,10 +700,6 @@
           flex-direction: column;
           text-align: center;
           padding: 15px;
-        }
-        
-        .related-grid {
-          grid-template-columns: 1fr;
         }
       }
       
@@ -1086,14 +1054,12 @@
       <meta itemprop="headline" content="Win11的文件夹卡顿以及加速">
       <meta itemprop="author" content="JiangKing">
       <meta itemprop="datePublished" content="2021-11-05">
-      <div class="article-content" itemprop="articleBody"><div class="synced-content">
-                  <p><strong>1.关闭不必要的视觉效果</strong>：Windows 11默认开启的视觉效果可能会占用额外的系统资源，导致文件夹打开缓慢，通过调整系统的性能设置，选择“调整为最佳性能”选项，可以关闭不必要的动画和特效，从而提高文件夹的打开速度，这一步大多数都可以改善，只是确实难看，如果不想关闭下面还有办法。</p><p>2.<strong>调整索引选项</strong>：Windows的索引功能可以帮助快速搜索文件中的内容，但同时也可能影响到文件夹的加载速度，用户可以调整索引设置，限制索引服务的范围，或者对经常访问的文件夹进行索引，以改善文件夹打开速度。
+      <div class="article-content" itemprop="articleBody"><div class="unsupported-block">[synced_block]</div><p><strong>1.关闭不必要的视觉效果</strong>：Windows 11默认开启的视觉效果可能会占用额外的系统资源，导致文件夹打开缓慢，通过调整系统的性能设置，选择“调整为最佳性能”选项，可以关闭不必要的动画和特效，从而提高文件夹的打开速度，这一步大多数都可以改善，只是确实难看，如果不想关闭下面还有办法。</p><p>2.<strong>调整索引选项</strong>：Windows的索引功能可以帮助快速搜索文件中的内容，但同时也可能影响到文件夹的加载速度，用户可以调整索引设置，限制索引服务的范围，或者对经常访问的文件夹进行索引，以改善文件夹打开速度。
 
 3.打开文件夹选项，点击查看，高级设置里面有很多选项
 
 </p><div class="image-container">
                   <img src="/blog/images/101b99ae-1cea-808b-a9b9-f76ec28ddc76/aHR0cHM6_image.png" alt="文章图片" />
-                </div>
                 </div><p>勾选在单独的进程中打开文件夹窗口，性能直接提高起飞</p><div class="image-container">
                   <img src="/blog/images/101b99ae-1cea-808b-a9b9-f76ec28ddc76/aHR0cHM6_image.png" alt="文章图片" />
                 </div><p>4.<strong>减少缩略图缓存</strong>：Windows 11默认会为图片和视频文件生成缩略图，这可能会消耗大量资源，在文件夹选项中，可以设置为不生成缩略图，或者限制缩略图的大小，以减少加载时间
@@ -1109,10 +1075,6 @@
           <h4 itemprop="name">JiangKing</h4>
           <p class="author-bio" itemprop="description">STDIN | Think >> /dev/Mind✨ - 专注于技术分享与思考</p>
         </div>
-      </section>
-      <section class="related-posts" aria-labelledby="related-posts-title">
-        <h3 class="section-title" id="related-posts-title">相关文章</h3>
-        <div class="related-grid" role="feed" aria-label="相关文章列表"></div>
       </section>
     </article>
     <div class="article-actions" role="toolbar" aria-label="文章操作">

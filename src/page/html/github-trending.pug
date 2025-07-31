@@ -215,6 +215,8 @@ html(lang="zh-CN")
           border: 1px solid rgba(99, 102, 241, 0.2);
           border-radius: 16px;
           overflow: hidden;
+          min-height: 400px;
+          position: relative;
       }
 
       .repo-item {
@@ -226,6 +228,7 @@ html(lang="zh-CN")
           transition: all 0.3s;
           position: relative;
           overflow: hidden;
+          cursor: pointer;
       }
 
       .repo-item::before {
@@ -485,6 +488,21 @@ html(lang="zh-CN")
           color: #fff;
       }
 
+      .empty-state-icon {
+          animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+      }
+
+      .error-message {
+          color: var(--danger);
+          margin-top: 10px;
+          font-size: 14px;
+      }
+
       /* 语言颜色 */
       .lang-javascript { background-color: #f1e05a; }
       .lang-typescript { background-color: #2b7489; }
@@ -493,9 +511,15 @@ html(lang="zh-CN")
       .lang-go { background-color: #00ADD8; }
       .lang-rust { background-color: #dea584; }
       .lang-cpp { background-color: #f34b7d; }
+      .lang-c { background-color: #555555; }
+      .lang-csharp { background-color: #178600; }
       .lang-php { background-color: #4F5D95; }
       .lang-ruby { background-color: #701516; }
       .lang-swift { background-color: #FA7343; }
+      .lang-kotlin { background-color: #A97BFF; }
+      .lang-vue { background-color: #41b883; }
+      .lang-shell { background-color: #89e051; }
+      .lang-objective-c { background-color: #438eff; }
 
       /* 页脚 */
       .footer {
@@ -609,9 +633,14 @@ html(lang="zh-CN")
               option(value="go") Go
               option(value="rust") Rust
               option(value="cpp") C++
+              option(value="c") C
+              option(value="csharp") C#
               option(value="php") PHP
               option(value="ruby") Ruby
               option(value="swift") Swift
+              option(value="kotlin") Kotlin
+              option(value="vue") Vue
+              option(value="shell") Shell
 
           .filter-item
             span.filter-label 时间范围:
@@ -741,52 +770,89 @@ html(lang="zh-CN")
       // 加载GitHub趋势数据
       async function loadGithubTrending() {
         const repoList = document.getElementById('repo-list');
-        
+
+        // 随机选择一个加载提示语
+        const loadingMessages = [
+          '正在为你寻找最热门的项目 ✨',
+          '正在探索代码的世界 🌍',
+          '让我看看有什么新鲜事 🔍',
+          '正在连接全球开发者 🌐',
+          '马上就好，精彩即将呈现 🎯'
+        ];
+        const randomMessage = loadingMessages[Math.floor(Math.random() * loadingMessages.length)];
+
         // 显示加载状态
         repoList.innerHTML = `
           <div class="loading">
             <div class="loading-spinner"></div>
-            <p>正在加载热门项目...</p>
+            <p>${randomMessage}</p>
           </div>
         `;
-        
+
         try {
           // 获取筛选条件
           const language = document.getElementById('language-select').value;
           const since = document.getElementById('date-range').value;
-          
+
           // 构建API URL
           let apiUrl = '/api/github/trending?';
           if (language) apiUrl += `language=${encodeURIComponent(language)}&`;
           apiUrl += `since=${since}`;
-          
+
           // 发起请求
           const response = await fetch(apiUrl);
-          
+
           if (!response.ok) {
             throw new Error(`请求失败: ${response.status}`);
           }
-          
+
           const data = await response.json();
           const repos = data.repos;
-          
+
           // 检查是否有数据
           if (!repos || repos.length === 0) {
             repoList.innerHTML = `
               <div class="empty-state">
-                <h3>暂无数据</h3>
-                <p>当前筛选条件下没有找到任何项目</p>
+                <div class="empty-state-icon" style="font-size: 48px; margin-bottom: 20px;">🔍</div>
+                <h3 style="color: rgba(255, 255, 255, 0.9); margin-bottom: 16px;">这里还很安静呢</h3>
+                <p style="font-size: 16px; margin-bottom: 24px;">当前筛选条件下暂时没有发现热门项目，换个条件试试？</p>
+                <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                  <button onclick="document.getElementById('language-select').value=''; loadGithubTrending();" style="
+                    padding: 10px 24px;
+                    background: rgba(99, 102, 241, 0.15);
+                    border: 1px solid rgba(99, 102, 241, 0.3);
+                    border-radius: 8px;
+                    color: #fff;
+                    font-size: 14px;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                  " onmouseover="this.style.background='rgba(99, 102, 241, 0.25)'" onmouseout="this.style.background='rgba(99, 102, 241, 0.15)'">
+                    查看所有语言
+                  </button>
+                  <button onclick="document.getElementById('date-range').value='weekly'; loadGithubTrending();" style="
+                    padding: 10px 24px;
+                    background: rgba(139, 92, 246, 0.15);
+                    border: 1px solid rgba(139, 92, 246, 0.3);
+                    border-radius: 8px;
+                    color: #fff;
+                    font-size: 14px;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                  " onmouseover="this.style.background='rgba(139, 92, 246, 0.25)'" onmouseout="this.style.background='rgba(139, 92, 246, 0.15)'">
+                    查看本周热门
+                  </button>
+                </div>
               </div>
             `;
             return;
           }
-          
+
           // 渲染仓库列表
           repoList.innerHTML = '';
           repos.forEach(repo => {
             repoList.appendChild(createRepoElement(repo));
           });
-          
+
           // 添加动画效果
           const repoItems = document.querySelectorAll('.repo-item');
           repoItems.forEach((item, index) => {
@@ -796,16 +862,58 @@ html(lang="zh-CN")
               item.style.transition = 'all 0.5s ease';
               item.style.opacity = '1';
               item.style.transform = 'translateY(0)';
-            }, index * 100);
+            }, index * 50);
           });
-          
+
         } catch (error) {
           console.error('获取GitHub趋势数据失败:', error);
+
+          // 根据不同的错误类型显示不同的友好提示
+          let friendlyMessage = '';
+          let suggestionMessage = '';
+
+          if (error.message.includes('404')) {
+            friendlyMessage = '😊 看起来这个分类还没有热门项目';
+            suggestionMessage = '试试切换到其他语言或时间范围看看？';
+          } else if (error.message.includes('network') || error.message.includes('fetch')) {
+            friendlyMessage = '🌐 网络好像在打盹儿';
+            suggestionMessage = '刷新页面试试，或者喝杯咖啡稍后再来~';
+          } else {
+            friendlyMessage = '✨ 数据正在赶来的路上';
+            suggestionMessage = '稍等片刻，或者先浏览其他精彩内容吧！';
+          }
+
           repoList.innerHTML = `
             <div class="empty-state">
-              <h3>加载失败</h3>
-              <p>获取数据时出现错误，请稍后重试</p>
-              <p class="error-message">${error.message}</p>
+              <div class="empty-state-icon" style="font-size: 48px; margin-bottom: 20px;">🚀</div>
+              <h3 style="color: rgba(255, 255, 255, 0.9); margin-bottom: 16px;">${friendlyMessage}</h3>
+              <p style="font-size: 16px; margin-bottom: 24px;">${suggestionMessage}</p>
+              <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                <button onclick="location.reload()" style="
+                  padding: 10px 24px;
+                  background: rgba(99, 102, 241, 0.15);
+                  border: 1px solid rgba(99, 102, 241, 0.3);
+                  border-radius: 8px;
+                  color: #fff;
+                  font-size: 14px;
+                  cursor: pointer;
+                  transition: all 0.3s;
+                " onmouseover="this.style.background='rgba(99, 102, 241, 0.25)'" onmouseout="this.style.background='rgba(99, 102, 241, 0.15)'">
+                  刷新试试
+                </button>
+                <button onclick="document.getElementById('language-select').value=''; loadGithubTrending();" style="
+                  padding: 10px 24px;
+                  background: rgba(139, 92, 246, 0.15);
+                  border: 1px solid rgba(139, 92, 246, 0.3);
+                  border-radius: 8px;
+                  color: #fff;
+                  font-size: 14px;
+                  cursor: pointer;
+                  transition: all 0.3s;
+                " onmouseover="this.style.background='rgba(139, 92, 246, 0.25)'" onmouseout="this.style.background='rgba(139, 92, 246, 0.15)'">
+                  查看全部语言
+                </button>
+              </div>
             </div>
           `;
         }
@@ -816,39 +924,45 @@ html(lang="zh-CN")
         const article = document.createElement('article');
         article.className = 'repo-item';
         article.setAttribute('data-language', repo.language || '');
-        
+
         // 确定标签类型
         let labelHtml = '';
         if (repo.label) {
           labelHtml = `<span class="repo-label">${repo.label}</span>`;
+        } else if (repo.isPopular) {
+          labelHtml = '<span class="repo-label">🔥 热门</span>';
+        } else if (repo.isFastGrowing) {
+          labelHtml = '<span class="repo-label">⚡ 快速增长</span>';
         }
-        
+
         // 构建贡献者头像HTML
         let contributorsHtml = '<span>贡献者:</span>';
-        if (repo.contributors && repo.contributors.length > 0) {
-          repo.contributors.forEach(avatarUrl => {
-            contributorsHtml += `<img src="${avatarUrl}" alt="Contributor">`;
+        if (repo.contributors && Array.isArray(repo.contributors) && repo.contributors.length > 0) {
+          repo.contributors.forEach((avatarUrl, index) => {
+            if (index < 5) { // 最多显示5个
+              contributorsHtml += `<img src="${avatarUrl}" alt="Contributor" loading="lazy">`;
+            }
           });
         } else {
           // 如果没有贡献者数据，使用仓库所有者头像
-          contributorsHtml += `<img src="${repo.avatarUrl}" alt="Owner">`;
+          contributorsHtml += `<img src="${repo.avatarUrl || `https://github.com/${repo.owner}.png`}" alt="Owner" loading="lazy">`;
         }
-        
+
         // 确定语言颜色类
-        const langColorClass = repo.language ? 
-          `lang-${repo.language.toLowerCase().replace(/\s+/g, '-')}` : '';
-        
+        const langColorClass = repo.language ?
+          `lang-${repo.language.toLowerCase().replace(/\s+/g, '-').replace('#', 'sharp').replace('+', 'plus')}` : '';
+
         // 构建HTML
         article.innerHTML = `
           <div class="repo-info">
             <h3 class="repo-header">
               <div class="repo-name">
                 <span class="owner">${repo.owner} /</span>
-                <a href="${repo.url}" target="_blank">${repo.name}</a>
+                <a href="${repo.url}" target="_blank" rel="noopener">${repo.name}</a>
               </div>
               ${labelHtml}
             </h3>
-            <p class="repo-description">${repo.description || ''}</p>
+            <p class="repo-description">${repo.description || '暂无描述'}</p>
             <div class="repo-meta">
               ${repo.language ? `
                 <span class="repo-meta-item">
@@ -874,35 +988,36 @@ html(lang="zh-CN")
             </div>
           </div>
           <div class="repo-star">
-            <button class="star-button">
+            <a href="${repo.url}" target="_blank" rel="noopener" class="star-button" data-repo="${repo.owner}/${repo.name}">
               <svg class="star-svg" viewBox="0 0 16 16">
                 <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path>
               </svg>
               Star
-            </button>
+            </a>
             <div class="star-trend">
               <svg viewBox="0 0 16 16">
                 <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path>
               </svg>
-              ${formatNumber(repo.starsToday)} stars today
+              ${formatNumber(repo.starsToday || repo.starsAdded || 0)} stars today
             </div>
           </div>
         `;
-        
-        // 添加Star按钮事件
-        const starButton = article.querySelector('.star-button');
-        starButton.addEventListener('click', function() {
-          this.classList.toggle('starred');
-          const isStarred = this.classList.contains('starred');
-          
-          // 添加星标图标
-          const svg = document.createElement('div');
-          svg.innerHTML = '<svg class="star-svg" viewBox="0 0 16 16"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path></svg>';
-          this.innerHTML = '';
-          this.appendChild(svg.firstChild);
-          this.appendChild(document.createTextNode(isStarred ? ' Starred' : ' Star'));
+
+        // 为整个项目卡片添加点击事件，点击卡片任何地方都能跳转到GitHub
+        article.addEventListener('click', function(e) {
+          // 如果点击的是链接或按钮，不阻止默认行为
+          if (e.target.tagName === 'A' || e.target.closest('a')) {
+            return;
+          }
+
+          // 点击卡片其他地方时跳转到GitHub项目页面
+          window.open(repo.url, '_blank', 'noopener,noreferrer');
         });
-        
+
+        // 为卡片添加悬停效果提示
+        article.style.cursor = 'pointer';
+        article.title = `点击查看 ${repo.fullName || repo.owner + '/' + repo.name} 项目详情`;
+
         return article;
       }
       

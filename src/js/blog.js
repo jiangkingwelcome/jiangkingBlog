@@ -247,7 +247,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
     // 处理图片显示问题
     handleImageDisplay();
-    
+
+    // 处理博客卡片默认封面
+    handleBlogCardCovers();
+
     // 初始化底部操作按钮功能
     initActionButtons();
   });
@@ -352,12 +355,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         img.setAttribute('loading', 'lazy');
       }
       
-      // 错误处理
-      img.addEventListener('error', function() {
-        this.classList.add('error');
-        // 可以在这里设置备用图片
-        // this.src = '/assets/placeholder.jpg';
-      });
+      // 错误处理 - 避免重复处理
+      if (!img.hasAttribute('data-error-handled')) {
+        img.setAttribute('data-error-handled', 'true');
+        img.addEventListener('error', function() {
+          if (!this.classList.contains('error')) {
+            this.classList.add('error');
+            console.log('图片加载失败，应用错误样式:', this.src);
+          }
+        });
+      }
     });
   }
 
@@ -798,10 +805,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         // 添加错误处理
         img.alt = '文章图片';
         img.setAttribute('data-original-text', content);
+        img.setAttribute('data-error-handled', 'true');
         img.onerror = function() {
-          this.onerror = null;
-          this.src = '/assets/placeholder-image.svg';
-          this.classList.add('error');
+          if (!this.classList.contains('error')) {
+            this.onerror = null;
+            this.src = '/assets/placeholder-image.svg';
+            this.classList.add('error');
+            this.classList.add('svg-image');
+          }
         };
         
         imgContainer.appendChild(img);
@@ -840,10 +851,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         // 添加错误处理
         img.alt = '文章图片';
         img.setAttribute('data-text-content', content);
+        img.setAttribute('data-error-handled', 'true');
         img.onerror = function() {
-          this.onerror = null;
-          this.src = '/assets/placeholder-image.svg';
-          this.classList.add('error');
+          if (!this.classList.contains('error')) {
+            this.onerror = null;
+            this.src = '/assets/placeholder-image.svg';
+            this.classList.add('error');
+            this.classList.add('svg-image');
+          }
         };
         
         // 添加到容器
@@ -863,31 +878,94 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         // SVG图片不需要错误处理
         return;
       }
-      
+
+      // 避免重复处理已经处理过的图片
+      if (img.hasAttribute('data-error-handled')) {
+        return;
+      }
+
+      img.setAttribute('data-error-handled', 'true');
+
       if (img.complete && img.naturalHeight === 0) {
         // 已经加载失败的图片
         console.log('图片已加载失败:', img.src);
-        img.classList.add('error');
-        
-        // 如果不是占位图，则替换为占位图
-        if (!img.src.includes('placeholder-image')) {
-          img.setAttribute('data-failed-src', img.src);
-          img.src = '/assets/placeholder-image.svg';
-          img.classList.add('svg-image'); // 添加SVG类
+        if (!img.classList.contains('error')) {
+          img.classList.add('error');
+
+          // 如果不是占位图，则替换为占位图
+          if (!img.src.includes('placeholder-image')) {
+            img.setAttribute('data-failed-src', img.src);
+            img.src = '/assets/placeholder-image.svg';
+            img.classList.add('svg-image');
+          }
         }
       } else {
         // 添加加载错误处理
         img.addEventListener('error', function() {
           console.log('图片加载失败:', this.src);
-          this.classList.add('error');
-          
-          // 如果不是占位图，则替换为占位图
-          if (!this.src.includes('placeholder-image')) {
-            this.setAttribute('data-failed-src', this.src);
-            this.src = '/assets/placeholder-image.svg';
-            this.classList.add('svg-image'); // 添加SVG类
+          if (!this.classList.contains('error')) {
+            this.classList.add('error');
+
+            // 如果不是占位图，则替换为占位图
+            if (!this.src.includes('placeholder-image')) {
+              this.setAttribute('data-failed-src', this.src);
+              this.src = '/assets/placeholder-image.svg';
+              this.classList.add('svg-image');
+            }
           }
         });
+      }
+    });
+  }
+
+  /**
+   * 处理博客卡片默认封面
+   */
+  function handleBlogCardCovers() {
+    console.log('开始处理博客卡片默认封面');
+
+    const blogCards = document.querySelectorAll('.blog-card');
+    blogCards.forEach(card => {
+      const img = card.querySelector('.blog-card-image img');
+      const category = card.getAttribute('data-category');
+
+      if (img && !img.hasAttribute('data-cover-handled')) {
+        img.setAttribute('data-cover-handled', 'true');
+
+        // 如果图片加载失败，根据分类设置默认封面
+        img.addEventListener('error', function() {
+          console.log('博客卡片图片加载失败，设置分类默认封面:', category);
+
+          let defaultCover = '/assets/default-blog-cover.svg';
+
+          switch(category) {
+            case '技术分享':
+              defaultCover = '/assets/tech-placeholder.svg';
+              break;
+            case '破解下载':
+              defaultCover = '/assets/game-placeholder.svg';
+              break;
+            case '最新电影':
+              defaultCover = '/assets/movie-placeholder.svg';
+              break;
+            case '心情随笔':
+              defaultCover = '/assets/blog-placeholder.svg';
+              break;
+            default:
+              defaultCover = '/assets/default-blog-cover.svg';
+          }
+
+          // 避免重复设置
+          if (this.src !== defaultCover) {
+            this.src = defaultCover;
+            this.classList.add('default-cover');
+          }
+        });
+
+        // 检查是否已经加载失败
+        if (img.complete && img.naturalHeight === 0) {
+          img.dispatchEvent(new Event('error'));
+        }
       }
     });
   }

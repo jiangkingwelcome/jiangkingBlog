@@ -1,0 +1,52 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ee5a24;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="gamePattern" patternUnits="userSpaceOnUse" width="30" height="30">
+      <rect width="30" height="30" fill="none"/>
+      <rect x="10" y="10" width="10" height="10" fill="rgba(255,255,255,0.1)"/>
+    </pattern>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="400" height="200" fill="url(#gameGradient)"/>
+  
+  <!-- 像素图案 -->
+  <rect width="400" height="200" fill="url(#gamePattern)" opacity="0.3"/>
+  
+  <!-- 游戏手柄图标 -->
+  <g transform="translate(150, 60)" fill="rgba(255,255,255,0.9)">
+    <!-- 手柄主体 -->
+    <ellipse cx="50" cy="30" rx="45" ry="25" fill="rgba(255,255,255,0.8)"/>
+    <rect x="20" y="15" width="60" height="30" rx="15" fill="rgba(255,255,255,0.8)"/>
+    
+    <!-- 左摇杆区域 -->
+    <circle cx="30" cy="25" r="8" fill="rgba(0,0,0,0.3)"/>
+    <circle cx="30" cy="25" r="5" fill="rgba(0,0,0,0.5)"/>
+    
+    <!-- 右按钮区域 -->
+    <circle cx="70" cy="20" r="4" fill="rgba(0,0,0,0.3)"/>
+    <circle cx="80" cy="25" r="4" fill="rgba(0,0,0,0.3)"/>
+    <circle cx="70" cy="30" r="4" fill="rgba(0,0,0,0.3)"/>
+    <circle cx="60" cy="25" r="4" fill="rgba(0,0,0,0.3)"/>
+    
+    <!-- 方向键 -->
+    <g transform="translate(35, 35)" fill="rgba(0,0,0,0.4)">
+      <rect x="5" y="0" width="3" height="8"/>
+      <rect x="0" y="5" width="13" height="3"/>
+    </g>
+  </g>
+  
+  <!-- 下载图标 -->
+  <g transform="translate(320, 70)" fill="rgba(255,255,255,0.7)">
+    <rect x="5" y="0" width="2" height="15"/>
+    <polygon points="0,10 6,16 12,10"/>
+    <rect x="0" y="18" width="12" height="2"/>
+  </g>
+  
+  <!-- 标题 -->
+  <text x="200" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">破解下载</text>
+  <text x="200" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.8)">Game & Software</text>
+</svg>

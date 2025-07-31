@@ -672,35 +672,7 @@
         font-size: 0.9rem;
       }
       
-      /* 相关文章 */
-      .related-posts {
-        margin-top: 40px;
-      }
       
-      .section-title {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-        color: #fff;
-        position: relative;
-        padding-left: 15px;
-      }
-      
-      .section-title::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 8px;
-        height: 20px;
-        width: 4px;
-        background: linear-gradient(to bottom, var(--primary), var(--accent));
-        border-radius: 2px;
-      }
-      
-      .related-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 20px;
-      }
       
       /* 移动端优化样式 */
       @media (max-width: 768px) {
@@ -728,10 +700,6 @@
           flex-direction: column;
           text-align: center;
           padding: 15px;
-        }
-        
-        .related-grid {
-          grid-template-columns: 1fr;
         }
       }
       
@@ -1086,9 +1054,7 @@
       <meta itemprop="headline" content="C++游戏服务器设计: 架构、性能和最佳实践">
       <meta itemprop="author" content="JiangKing">
       <meta itemprop="datePublished" content="2021-11-05">
-      <div class="article-content" itemprop="articleBody"><div class="synced-content">
-                  <p>【sync-block】这是一段来自示例文章-3的段落 ，通过 SyncBlock同步。</p>
-                </div><p>这个文章将不会显示</p></div>
+      <div class="article-content" itemprop="articleBody"><div class="unsupported-block">[synced_block]</div><p>【sync-block】这是一段来自示例文章-3的段落 ，通过 SyncBlock同步。</p><p>这个文章将不会显示</p></div>
       <section class="article-tags" role="contentinfo" aria-label="文章标签">
       </section>
       <section class="author-info" itemscope itemtype="https://schema.org/Person">
@@ -1097,10 +1063,6 @@
           <h4 itemprop="name">JiangKing</h4>
           <p class="author-bio" itemprop="description">STDIN | Think >> /dev/Mind✨ - 专注于技术分享与思考</p>
         </div>
-      </section>
-      <section class="related-posts" aria-labelledby="related-posts-title">
-        <h3 class="section-title" id="related-posts-title">相关文章</h3>
-        <div class="related-grid" role="feed" aria-label="相关文章列表"></div>
       </section>
     </article>
     <div class="article-actions" role="toolbar" aria-label="文章操作">

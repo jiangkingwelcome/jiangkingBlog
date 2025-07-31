@@ -64,9 +64,79 @@ gulp.task('pug', function () {
 		.pipe(gulp.dest('./dist'))
 })
 
+// 获取文章的第一张图片作为封面
+function getArticleCoverImage(articleId) {
+	const detailPath = `./src/blog/data/${articleId}.json`;
+	if (!fs.existsSync(detailPath)) return null;
+
+	try {
+		const detail = JSON.parse(fs.readFileSync(detailPath, 'utf8'));
+
+		// 递归查找第一张图片
+		function findFirstImage(blocks) {
+			if (!blocks || !Array.isArray(blocks)) return null;
+
+			for (const block of blocks) {
+				// 检查当前块是否是图片
+				if (block.type === 'image' && block.imageFilename) {
+					return block.imageFilename;
+				}
+
+				// 检查子块
+				if (block.children && Array.isArray(block.children)) {
+					const childImage = findFirstImage(block.children);
+					if (childImage) return childImage;
+				}
+			}
+			return null;
+		}
+
+		if (detail.blocks) {
+			return findFirstImage(detail.blocks);
+		}
+	} catch (error) {
+		console.log(`获取文章 ${articleId} 封面图片失败:`, error.message);
+	}
+
+	return null;
+}
+
 gulp.task('blog-pug', function () {
 	// 只取已发布文章
 	const articles = blogData.filter(article => article.status === 'Published');
+
+	// 为每篇文章添加封面图片信息
+	const articlesWithCover = articles.map(article => {
+		// 优先使用页面封面图片，然后是文章第一张图片
+		let coverImage = article.coverImageFilename || getArticleCoverImage(article.id);
+		let defaultImage = '/assets/default-blog-cover.svg';
+
+		// 根据分类设置不同的默认图片
+		if (!coverImage) {
+			switch(article.category) {
+				case '技术分享':
+					defaultImage = '/assets/tech-placeholder.svg';
+					break;
+				case '破解下载':
+					defaultImage = '/assets/game-placeholder.svg';
+					break;
+				case '最新电影':
+					defaultImage = '/assets/movie-placeholder.svg';
+					break;
+				case '心情随笔':
+					defaultImage = '/assets/blog-placeholder.svg';
+					break;
+				default:
+					defaultImage = '/assets/default-blog-cover.svg';
+			}
+		}
+
+		return {
+			...article,
+			coverImage: coverImage ? `/blog/images/${article.id}/${coverImage}` : defaultImage
+		};
+	});
+
 	// 分类去重
 	const categories = [...new Set(articles.map(a => a.category).filter(Boolean))];
 
@@ -75,7 +145,7 @@ gulp.task('blog-pug', function () {
 		.pipe(pug({
 			data: {
 				config,
-				articles,
+				articles: articlesWithCover,
 				categories
 			}
 		}))
@@ -232,7 +302,15 @@ gulp.task('tools-pug', function () {
 		.pipe(gulp.dest('./dist'))
 })
 
-gulp.task('build', gulp.series('clean', 'assets', 'copy', 'placeholder-assets', 'placeholder-images', 'pug', 'blog-pug', 'about-pug', 'css', 'blog-css', 'js', 'html', 'blog-data', 'blog-images', 'blog-detail', 'copy-css-fixes', 'special-tools-pug', 'tools-pug'))
+// 添加处理GitHub热门项目页面的任务
+gulp.task('github-trending-pug', function () {
+	return gulp
+		.src('./src/page/html/github-trending.pug')
+		.pipe(pug({ data: config }))
+		.pipe(gulp.dest('./dist'))
+})
+
+gulp.task('build', gulp.series('clean', 'assets', 'copy', 'placeholder-assets', 'placeholder-images', 'pug', 'blog-pug', 'about-pug', 'css', 'blog-css', 'js', 'html', 'blog-data', 'blog-images', 'blog-detail', 'copy-css-fixes', 'special-tools-pug', 'tools-pug', 'github-trending-pug'))
 gulp.task('default', gulp.series('build'))
 
 gulp.task('watch', function () {
@@ -241,6 +319,7 @@ gulp.task('watch', function () {
 	gulp.watch('./src/blog/*.pug', gulp.parallel('blog-pug'))
 	gulp.watch('./src/special-tools.pug', gulp.parallel('special-tools-pug'))
 	gulp.watch('./src/tools.pug', gulp.parallel('tools-pug'))
+	gulp.watch('./src/page/html/github-trending.pug', gulp.parallel('github-trending-pug'))
 	gulp.watch('./src/css/**/*.less', gulp.parallel(['css', 'blog-css']))
 	gulp.watch('./src/js/*.js', gulp.parallel(['js']))
 	connect.server({

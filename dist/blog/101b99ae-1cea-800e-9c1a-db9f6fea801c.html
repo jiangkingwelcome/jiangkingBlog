@@ -672,35 +672,7 @@
         font-size: 0.9rem;
       }
       
-      /* 相关文章 */
-      .related-posts {
-        margin-top: 40px;
-      }
       
-      .section-title {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-        color: #fff;
-        position: relative;
-        padding-left: 15px;
-      }
-      
-      .section-title::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 8px;
-        height: 20px;
-        width: 4px;
-        background: linear-gradient(to bottom, var(--primary), var(--accent));
-        border-radius: 2px;
-      }
-      
-      .related-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 20px;
-      }
       
       /* 移动端优化样式 */
       @media (max-width: 768px) {
@@ -728,10 +700,6 @@
           flex-direction: column;
           text-align: center;
           padding: 15px;
-        }
-        
-        .related-grid {
-          grid-template-columns: 1fr;
         }
       }
       
@@ -1086,10 +1054,8 @@
       <meta itemprop="headline" content="姥姥的外孙（2024）4k 泰语+台配.内嵌官方中文">
       <meta itemprop="author" content="JiangKing">
       <meta itemprop="datePublished" content="2021-11-05">
-      <div class="article-content" itemprop="articleBody"><div class="synced-content">
-                  <div class="image-container">
+      <div class="article-content" itemprop="articleBody"><div class="unsupported-block">[synced_block]</div><div class="image-container">
                   <img src="/blog/images/101b99ae-1cea-800e-9c1a-db9f6fea801c/aHR0cHM6_657bf33bfbf478066fd24f11b0eb95f7.webp" alt="文章图片" />
-                </div>
                 </div><h2>影片信息</h2><p>标题：姥姥的外孙
 导演：[帕特·波尼蒂帕特]
 主演：[普提蓬·阿萨拉塔纳功 / 乌萨·萨梅坎姆 / 莎琳拉·托马斯 / 三亚·库纳康 / 邦沙敦·宗威拉克 / 彤达婉·奔提维此弓 / 当蓬·欧阿披叻 / 西玛瓦理·塔利吉]
@@ -1106,10 +1072,6 @@
           <h4 itemprop="name">JiangKing</h4>
           <p class="author-bio" itemprop="description">STDIN | Think >> /dev/Mind✨ - 专注于技术分享与思考</p>
         </div>
-      </section>
-      <section class="related-posts" aria-labelledby="related-posts-title">
-        <h3 class="section-title" id="related-posts-title">相关文章</h3>
-        <div class="related-grid" role="feed" aria-label="相关文章列表"></div>
       </section>
     </article>
     <div class="article-actions" role="toolbar" aria-label="文章操作">

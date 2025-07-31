@@ -672,35 +672,7 @@
         font-size: 0.9rem;
       }
       
-      /* 相关文章 */
-      .related-posts {
-        margin-top: 40px;
-      }
       
-      .section-title {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-        color: #fff;
-        position: relative;
-        padding-left: 15px;
-      }
-      
-      .section-title::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 8px;
-        height: 20px;
-        width: 4px;
-        background: linear-gradient(to bottom, var(--primary), var(--accent));
-        border-radius: 2px;
-      }
-      
-      .related-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 20px;
-      }
       
       /* 移动端优化样式 */
       @media (max-width: 768px) {
@@ -728,10 +700,6 @@
           flex-direction: column;
           text-align: center;
           padding: 15px;
-        }
-        
-        .related-grid {
-          grid-template-columns: 1fr;
         }
       }
       
@@ -1086,8 +1054,7 @@
       <meta itemprop="headline" content="Nginx 部署与参数调优">
       <meta itemprop="author" content="JiangKing">
       <meta itemprop="datePublished" content="2021-11-05">
-      <div class="article-content" itemprop="articleBody"><div class="synced-content">
-                  <p>​</p><p>Nginx 是一款高性能的 Web 服务器和反向代理服务器，在各大平台上都有广泛应用。本文将介绍在不同平台上部署 Nginx 的步骤，以及如何对 Nginx 进行参数调优，以提升其性能和稳定性。</p><h2>在 Ubuntu/Debian 上部署 Nginx</h2><li>更新软件包列表：<code>sudo apt update</code></li><li>安装 Nginx：<code>sudo apt install nginx</code></li><li>启动 Nginx 服务：<code>sudo systemctl start nginx</code></li><li>设置开机自启动：<code>sudo systemctl enable nginx</code></li><h2>在 CentOS/RHEL 上部署 Nginx</h2><ol><li>添加 Nginx 官方仓库：</li><pre><code class="language-plain text">sudo vi /etc/yum.repos.d/nginx.repo
+      <div class="article-content" itemprop="articleBody"><div class="unsupported-block">[synced_block]</div><p>​</p><p>Nginx 是一款高性能的 Web 服务器和反向代理服务器，在各大平台上都有广泛应用。本文将介绍在不同平台上部署 Nginx 的步骤，以及如何对 Nginx 进行参数调优，以提升其性能和稳定性。</p><h2>在 Ubuntu/Debian 上部署 Nginx</h2><li>更新软件包列表：<code>sudo apt update</code></li><li>安装 Nginx：<code>sudo apt install nginx</code></li><li>启动 Nginx 服务：<code>sudo systemctl start nginx</code></li><li>设置开机自启动：<code>sudo systemctl enable nginx</code></li><h2>在 CentOS/RHEL 上部署 Nginx</h2><ol><li>添加 Nginx 官方仓库：</li><pre><code class="language-plain text">sudo vi /etc/yum.repos.d/nginx.repo
 [nginx]
 name=nginx repo
 baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
@@ -1123,8 +1090,7 @@ gzip_types text/plain text/css application/json application/javascript applicati
 
 </code></pre><div class="image-container">
                   <img src="/blog/images/101b99ae-1cea-80b7-a2f9-f301a2692f88/base64_4765334125b448ec4c4bdf8285a1da72.gif" alt="文章图片" />
-                </div><p>windows初学者可以下载phpstudy，好用不难；linux可以使用宝塔，就是有些高版本不支持。</p><p>​</p>
-                </div><p>附带一个同事得经典conf：</p><div class="unsupported-block">[file]</div></div>
+                </div><p>windows初学者可以下载phpstudy，好用不难；linux可以使用宝塔，就是有些高版本不支持。</p><p>​</p><p>附带一个同事得经典conf：</p><div class="unsupported-block">[file]</div></div>
       <section class="article-tags" role="contentinfo" aria-label="文章标签">
       </section>
       <section class="author-info" itemscope itemtype="https://schema.org/Person">
@@ -1133,10 +1099,6 @@ gzip_types text/plain text/css application/json application/javascript applicati
           <h4 itemprop="name">JiangKing</h4>
           <p class="author-bio" itemprop="description">STDIN | Think >> /dev/Mind✨ - 专注于技术分享与思考</p>
         </div>
-      </section>
-      <section class="related-posts" aria-labelledby="related-posts-title">
-        <h3 class="section-title" id="related-posts-title">相关文章</h3>
-        <div class="related-grid" role="feed" aria-label="相关文章列表"></div>
       </section>
     </article>
     <div class="article-actions" role="toolbar" aria-label="文章操作">

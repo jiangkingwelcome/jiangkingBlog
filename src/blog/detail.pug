@@ -687,35 +687,7 @@ html(lang="zh-CN")
         font-size: 0.9rem;
       }
       
-      /* 相关文章 */
-      .related-posts {
-        margin-top: 40px;
-      }
-      
-      .section-title {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-        color: #fff;
-        position: relative;
-        padding-left: 15px;
-      }
-      
-      .section-title::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 8px;
-        height: 20px;
-        width: 4px;
-        background: linear-gradient(to bottom, var(--primary), var(--accent));
-        border-radius: 2px;
-      }
-      
-      .related-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 20px;
-      }
+
       
       /* 移动端优化样式 */
       @media (max-width: 768px) {
@@ -743,10 +715,6 @@ html(lang="zh-CN")
           flex-direction: column;
           text-align: center;
           padding: 15px;
-        }
-        
-        .related-grid {
-          grid-template-columns: 1fr;
         }
       }
       
@@ -1132,12 +1100,7 @@ html(lang="zh-CN")
         .author-details
           h4(itemprop="name") #{author}
           p.author-bio(itemprop="description") STDIN | Think >> /dev/Mind✨ - 专注于技术分享与思考
-          
-      //- 相关文章
-      section.related-posts(aria-labelledby="related-posts-title")
-        h3.section-title#related-posts-title 相关文章
-        .related-grid(role="feed" aria-label="相关文章列表")
-          //- 相关文章内容
+
           
     //- 文章底部操作栏
     div.article-actions(role="toolbar" aria-label="文章操作")

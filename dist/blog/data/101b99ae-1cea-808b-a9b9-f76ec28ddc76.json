@@ -9,7 +9,14 @@
   "slug": "Published",
   "summary": "win11文件夹卡顿",
   "created_time": "2024-09-14T07:50:00.000Z",
-  "last_edited_time": "2024-12-12T03:29:00.000Z",
+  "last_edited_time": "2025-07-10T10:25:00.000Z",
+  "cover": {
+    "type": "external",
+    "external": {
+      "url": "https://www.notion.so/images/page-cover/rijksmuseum_rembrandt_1642.jpg"
+    }
+  },
+  "coverImageFilename": "cover_aHR0cHM6_rijksmuseum_rembrandt_1642.jpg",
   "blocks": [
     {
       "object": "block",
@@ -183,7 +190,7 @@
             "block_id": "b7c14688-5da5-4959-9379-2f9d53459bd0"
           },
           "created_time": "2024-09-27T09:33:00.000Z",
-          "last_edited_time": "2024-09-27T09:33:00.000Z",
+          "last_edited_time": "2025-07-10T05:18:00.000Z",
           "created_by": {
             "object": "user",
             "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
@@ -200,8 +207,8 @@
             "caption": [],
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/03c61fc7-8ae2-451d-80f2-118e6ce2d9cd/ffd70a41-40db-47de-bae2-ef61bf889d8b/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XGSCKP7G%2F20250619%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250619T115528Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIDIYN6QwKpD97HanLZx2ZP7HwP9yEjuPd9H%2B5gxq426cAiEAk1a0qfOOUj7INqIr%2BXwG%2F67UDWML%2BbApDb%2FrtPoEl0wqiAQIpf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDCpGntMhn6bbC4EcNircA%2FzFtdWfns1zt9X1YPQ7OqEMYJlqmHBBQljJNODFTuurx2stiK0ZrKyZC8BkA7Nq2mfjKsLMogRNnKmZTkXK4t5Q%2Bbk4YqIBNTl4fS8qOKQNlmegmYmfQVCcyEeNKCgF3ddtxeWO7AMSU%2FUN2Y4WeymoE%2BqER1EPUe%2FGSauNetC%2FyqQ05EsXgFdIEXPJmZaMJqhfL9rLInm3IWzsEnqvbSSNnGiywcxhXOS2lOb0O2oLOBxkfzyeVvLQc21H4UJ5%2FqBLJ3%2BxjEs3OKz9FkoVphVkLUe1rl3dVo24npPoxv8Tl6CM6BEDYqFn8px5I9iuyEuO73CwZy6Fx2WNC6OzpnN1dB3K8yzuuyFcZS0tNuTF54R4zeaZoH9c7ng%2BfVX5FjFelSVCur91H8neDoC5nNtwNbvfFKIGfl6LhcQ361kKvQnpUIhE1xz%2Bqsup07mUvFijRA7xT44dAEpWMwk%2FXyhYQ3u9T9p00x9uB8YMcS8BJGva2kazHzDegfYGG2lsKdJdnJD9GqCUjfgaV8HTbDD4MmUEf0YjuLf4erkijBhJj6Q5Gm%2Bmry2E6VurvsWMebjUhRXOWz7dvUTNF%2Fgi5kXVg9ZgqJ9zYh2kUiadNMEvPl46LLk166EsPyGSMI3tz8IGOqUBkYiW1o0iw9w0yCRfyE%2BlyqxDjXNxJSD4PuNiefqsO34y%2BI4iVldaDDt0Ek11Q0riNjM%2BeujSP5KZau7hE0FIOG8cMmPKPuWCAercQSZV0sPzMnj9rr9G5w2VbyqMXdCD%2B9bg7urZWcaoKVKUzxmZaPCkTg17v1x2Es6jwwCFEhEvKw2R8PklJtU3U5fDbnqns7sDZCG5L8OdnGI3kA24o3DSfqZm&X-Amz-Signature=ef7d3c87ba20f2c8735e232cfce51427fedb3cf4c16a57c61719f343f437749a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-06-19T12:55:28.187Z"
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/03c61fc7-8ae2-451d-80f2-118e6ce2d9cd/ffd70a41-40db-47de-bae2-ef61bf889d8b/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4662ZRI77AU%2F20250710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250710T102859Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIDkBbzLJKW98FbVWwEcg49LViqsmNWPXWdDIjey%2F0tL1AiEA%2B0MBrOaXVAaXGlxtsCK9JXLYypi9%2F7Q%2BbWbAHKo1yBkqiAQIu%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDL96EbTfGCNH9HMCPSrcA8wxf%2Bl0udvOilN14ImuE3iIKeiTJwp7Vo%2Bnuvzy7NNgI65DWuj1OOyff1nn0egMyGQOT36khGKDWOG1PxcXgQoG3B9ybxbKfSYnWDg124h8AUs3nORPP0mlAm8z7esqSRiFPEOb8EybDNF88n6s6hlF8g4IQJxLmUwPIJLCis%2BWGvl8Styf2Nku%2BqOPaO%2FsEvZz8oafaF41iNjVovk6pGYe1k9Tc%2BWNSKJjRNAdGEbWHfEz0X6UMjtgDqJ7B%2F3LMyYuXWBozBeu%2FtvMel13c15WXEBVgYW%2FFqJqjY%2FlCVhqNTSknsRG3i0vhHmh4Y1TM7RzuW%2B8oRF32wuQBpe%2BeV%2FmM32cmo2yRzo8ckqont6Dm2XY9lwb371eLZtf8f0S62NICR6sFGwrbJg50ubSbT1Ew3P44y0nnkvLHzdHrEd7AugqXr1qveijOWjTYTEO1W%2Bh%2BJdrwfjn3OZvJIIZa3Q1HKw8QyygTwWFGSJXL7aXpajYefPRAgu4rqvMDabOu2APGXyPf8K1NnbpkHMQQdhbYHE4bqjCnFmNZsrhNHUWczNUJKPefEusNN2RhSuDLoQNXd4XtfhG5Ga%2FcUgeY7tNBkUnE4rppNTAFXyR69LMGlOKe2Iy1giHPX3xMI2PvsMGOqUB6eRwotIL4P%2FwDKgW%2BijjnxCXK84QXjnsiuCj1E8pvykU%2Fvic2x%2Ba3eTEp1Tndxok2ECcQdOPaQyPuOWToGrp6kX8SBQ9ousb9nXr7jtse%2BiCU88ImBYv9F4peJm%2BaCftsQQ88bw6N975TM3nxPmuXN%2BEMhsfAkqDOyO9QEmWQURnYCchj8LfVvMJhKIzR0gG8aB8M%2FYOv42%2F5xFhqcpmhkndaSmX&X-Amz-Signature=ca635561a182d8ad55d3181c630b0763bd75385361d7a98d09538e20ea1f2fb0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2025-07-10T11:28:59.489Z"
             }
           },
           "imageFilename": "aHR0cHM6_image.png"
@@ -277,8 +284,8 @@
         "caption": [],
         "type": "file",
         "file": {
-          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/03c61fc7-8ae2-451d-80f2-118e6ce2d9cd/0e77ef5a-33e4-4e59-a638-8c72b6872a91/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YS47GXTF%2F20250619%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250619T115527Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJFMEMCH071RzG5AqZOfsCmilUtYVPB5QUzJ9H0dSbp%2Bqm1018CIGMl9AhyyDqIRLxNTIIPYSV7o%2BfJsO2F6jOXR%2Fr9KmfEKogECKX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1Igwm%2BP92vVVS4XB%2F5RYq3AO5FYKYjUZ9kLdg%2B208bK94FBnwar57YM%2BbEn6vCJpMRZ4BjUmrGPg5M1WjzD74jD7vcaNKo26AVXZu8xvZPITkjKuySFe%2Buf%2FQmuZ%2BqBQDik3R2SU%2BpDxBQOBKoa7P567HnOp2%2FoXREjvNEEpPPEoOpjfWS27zXAuSfbA3WM5HpkcCgb0fLMBR09sjAf5f7cRjTBvxdPtVRbUYUpMIQladhsoABmjgWvIX5fgaAtbQE54uHLQpGojySu%2BWRoHgXJSz91n0Zb6mRFPr55jpv6j78XIw6rSKrQIk9U%2FR1xM788siyo2810IX2NHJ2kdhXofoHbvSfUXQSyBPiUXOicV1YMfDcly1NxsKJBGbl3H%2BN9F4yEqA5tW93azqgGVqP8KTQ%2B07aSjMh72vEk9xLwUvXOoOW%2BS60eEsExxo38CCq8R6mmewYI%2BSyFyarnfrSth5pX3McYYpxY9zbChjI4XPt6g0%2BTolBQI8joGFwW3ZgmYqGOZC%2FeU4XfckipLC%2Fx7UMd1iNudN1%2BLfBI7ftyPVjeb6LrruoZHuqRUikyMsjXLi%2BSeLmdRMdJ6ENFjoLbSYfVm4%2BOXRb4k%2BIqBZlTmyeNwYTc8bDF2Zf%2FnvojxANBLatSLHVBtssmnzvTDf7M%2FCBjqnAd0wkjd4LM0qVM95gv98wsVPIdfjm21HwhW1Qa4aRLSQizTbdVHpYZOJIjfpFZ1MRnjPGhbfoO4VEVPQImCDBSfIbKH1MEiO5U%2Fo1XUGy5MWuCz1hYapqoZQx8PWMHJzllYgFpCNmzRPMJeEp29QqIS%2B8%2FJ2E4ljdwl5G9nfZj7NuxuEmod3BHwl6AX9QlGjYta3nkJW66Tfej30J5f%2BFO6bYzB799dV&X-Amz-Signature=5443e70e2462c258b4ef2b81b0f0d770fcdb4a4a7e059bb1d1bb0e08ca8b7eb6&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-          "expiry_time": "2025-06-19T12:55:27.906Z"
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/03c61fc7-8ae2-451d-80f2-118e6ce2d9cd/0e77ef5a-33e4-4e59-a638-8c72b6872a91/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UZTS6LLX%2F20250710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250710T102858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIHEdoSP3YqOt%2BVQ7t7tLm454IDiK9pAbFe4KMFBbl3siAiB2P2rWnEp6y37sQLljacKvbeZh%2BcP5zJHX6KyJ2WJtryqIBAi7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMT%2FNqX2wAKP63IyhhKtwDWLV6zIcIE8GnVrNYYeplPddyQ5V8b%2Bx5D8M%2B7PVPRw9d7jaeOwx%2BXhCuVnLnkKVfw77dnTwlYsJCJKwZblN0A7FKu6fbD92rvJ3dgJo05cTXKy339j8gbJSQvtWaFecFPURCL6owkeJh6ihbiZocdeuo%2FW7i0MF9HxIFxubBOmRQZeNFYTXpc7gPwgoBWgkE6fE6lkFVILGSM4spM3MJZWKEQcvO1Iyz0YWU2mI%2BomftElBjQr0yoEet%2Blwg6lyMjAG6aPHkBKgmHUOmC0pdIcV6W%2B7YlFNHhEutc0e07RvVCM6wRe2KlJMoh3a5mU5MOSl2xVR7%2BTzDbbADDpLP1xYw3Jyu%2FY4GM99pMSbvpT9QDmr%2Fvpoeqdax8cqC6642mkCLGleahKMnL6tmqf9hBBWo5uIjHDsGbZDTExIM%2FJahFKXEGQMSOErfbR18HKjfgqZFqDZp9F4s%2BtIwql1r6ECKy2cc%2Bnaod2lW4LWlm%2FDJ0aF5R776P3bwUSUBI%2FPeqn4pHEgq2IuRj3YeuVZifa6iMXOFqTj%2FDFoOH9A8Zyt9wrhftqIaR6DFF9MSXVtAOhqFnnD5LEbZkDTooItSEbgtVq6HBiZNPoJ7Upw9myJEa6vZ8azrSIdbQg0w3I6%2BwwY6pgGQ7DB7gIX%2BSiW%2BoXSz9hNg06f7K9ZL4zx9%2FDv14DVCm3OpoJqngA3GuxuoYft9sj%2F3HnGwHspxXRHUzv1Q%2BnL9lLS%2BeMC%2FrABQTI1ZySkM19oM6yjecaqCVXdCg2GxDYQ0upGfVvr8ekWSyQsaUNcERUQx%2B2%2FKzuunqBKyzOY4ZitJNFjqNyGZWwMxMrbDLDEHhJCoNkKRsc63UBUVOQQQXxxDrYoW&X-Amz-Signature=5473c656211ec2555ecd94d9df6ffeb6a2bdb8be5714d24cf186b7f8e73baff2&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-10T11:28:58.186Z"
         }
       },
       "imageFilename": "aHR0cHM6_image.png"
@@ -457,7 +464,7 @@
         "page_id": "101b99ae-1cea-808b-a9b9-f76ec28ddc76"
       },
       "created_time": "2024-09-27T09:37:00.000Z",
-      "last_edited_time": "2024-09-27T09:37:00.000Z",
+      "last_edited_time": "2025-07-10T05:18:00.000Z",
       "created_by": {
         "object": "user",
         "id": "80a8a328-0748-4dd6-925e-6865939d4ae0"
@@ -474,8 +481,8 @@
         "caption": [],
         "type": "file",
         "file": {
-          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/03c61fc7-8ae2-451d-80f2-118e6ce2d9cd/562ea937-bc67-475b-ace2-2bee37825b35/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YS47GXTF%2F20250619%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250619T115527Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJFMEMCH071RzG5AqZOfsCmilUtYVPB5QUzJ9H0dSbp%2Bqm1018CIGMl9AhyyDqIRLxNTIIPYSV7o%2BfJsO2F6jOXR%2Fr9KmfEKogECKX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1Igwm%2BP92vVVS4XB%2F5RYq3AO5FYKYjUZ9kLdg%2B208bK94FBnwar57YM%2BbEn6vCJpMRZ4BjUmrGPg5M1WjzD74jD7vcaNKo26AVXZu8xvZPITkjKuySFe%2Buf%2FQmuZ%2BqBQDik3R2SU%2BpDxBQOBKoa7P567HnOp2%2FoXREjvNEEpPPEoOpjfWS27zXAuSfbA3WM5HpkcCgb0fLMBR09sjAf5f7cRjTBvxdPtVRbUYUpMIQladhsoABmjgWvIX5fgaAtbQE54uHLQpGojySu%2BWRoHgXJSz91n0Zb6mRFPr55jpv6j78XIw6rSKrQIk9U%2FR1xM788siyo2810IX2NHJ2kdhXofoHbvSfUXQSyBPiUXOicV1YMfDcly1NxsKJBGbl3H%2BN9F4yEqA5tW93azqgGVqP8KTQ%2B07aSjMh72vEk9xLwUvXOoOW%2BS60eEsExxo38CCq8R6mmewYI%2BSyFyarnfrSth5pX3McYYpxY9zbChjI4XPt6g0%2BTolBQI8joGFwW3ZgmYqGOZC%2FeU4XfckipLC%2Fx7UMd1iNudN1%2BLfBI7ftyPVjeb6LrruoZHuqRUikyMsjXLi%2BSeLmdRMdJ6ENFjoLbSYfVm4%2BOXRb4k%2BIqBZlTmyeNwYTc8bDF2Zf%2FnvojxANBLatSLHVBtssmnzvTDf7M%2FCBjqnAd0wkjd4LM0qVM95gv98wsVPIdfjm21HwhW1Qa4aRLSQizTbdVHpYZOJIjfpFZ1MRnjPGhbfoO4VEVPQImCDBSfIbKH1MEiO5U%2Fo1XUGy5MWuCz1hYapqoZQx8PWMHJzllYgFpCNmzRPMJeEp29QqIS%2B8%2FJ2E4ljdwl5G9nfZj7NuxuEmod3BHwl6AX9QlGjYta3nkJW66Tfej30J5f%2BFO6bYzB799dV&X-Amz-Signature=245f74575ad8bc980d483185e1318a7fd3fdf22f7308930503f65dc5e193b690&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-          "expiry_time": "2025-06-19T12:55:27.904Z"
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/03c61fc7-8ae2-451d-80f2-118e6ce2d9cd/562ea937-bc67-475b-ace2-2bee37825b35/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UZTS6LLX%2F20250710%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250710T102858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIHEdoSP3YqOt%2BVQ7t7tLm454IDiK9pAbFe4KMFBbl3siAiB2P2rWnEp6y37sQLljacKvbeZh%2BcP5zJHX6KyJ2WJtryqIBAi7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMT%2FNqX2wAKP63IyhhKtwDWLV6zIcIE8GnVrNYYeplPddyQ5V8b%2Bx5D8M%2B7PVPRw9d7jaeOwx%2BXhCuVnLnkKVfw77dnTwlYsJCJKwZblN0A7FKu6fbD92rvJ3dgJo05cTXKy339j8gbJSQvtWaFecFPURCL6owkeJh6ihbiZocdeuo%2FW7i0MF9HxIFxubBOmRQZeNFYTXpc7gPwgoBWgkE6fE6lkFVILGSM4spM3MJZWKEQcvO1Iyz0YWU2mI%2BomftElBjQr0yoEet%2Blwg6lyMjAG6aPHkBKgmHUOmC0pdIcV6W%2B7YlFNHhEutc0e07RvVCM6wRe2KlJMoh3a5mU5MOSl2xVR7%2BTzDbbADDpLP1xYw3Jyu%2FY4GM99pMSbvpT9QDmr%2Fvpoeqdax8cqC6642mkCLGleahKMnL6tmqf9hBBWo5uIjHDsGbZDTExIM%2FJahFKXEGQMSOErfbR18HKjfgqZFqDZp9F4s%2BtIwql1r6ECKy2cc%2Bnaod2lW4LWlm%2FDJ0aF5R776P3bwUSUBI%2FPeqn4pHEgq2IuRj3YeuVZifa6iMXOFqTj%2FDFoOH9A8Zyt9wrhftqIaR6DFF9MSXVtAOhqFnnD5LEbZkDTooItSEbgtVq6HBiZNPoJ7Upw9myJEa6vZ8azrSIdbQg0w3I6%2BwwY6pgGQ7DB7gIX%2BSiW%2BoXSz9hNg06f7K9ZL4zx9%2FDv14DVCm3OpoJqngA3GuxuoYft9sj%2F3HnGwHspxXRHUzv1Q%2BnL9lLS%2BeMC%2FrABQTI1ZySkM19oM6yjecaqCVXdCg2GxDYQ0upGfVvr8ekWSyQsaUNcERUQx%2B2%2FKzuunqBKyzOY4ZitJNFjqNyGZWwMxMrbDLDEHhJCoNkKRsc63UBUVOQQQXxxDrYoW&X-Amz-Signature=62b35a6ff6a9562492ee9a9b20dfb75bdff9daeb5e3019a6db427dccdb825541&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-10T11:28:58.184Z"
         }
       },
       "imageFilename": "aHR0cHM6_image.png"
@@ -507,5 +514,5 @@
       }
     }
   ],
-  "contentHtml": "<div class=\"synced-content\">\n                  <p><strong>1.关闭不必要的视觉效果</strong>：Windows 11默认开启的视觉效果可能会占用额外的系统资源，导致文件夹打开缓慢，通过调整系统的性能设置，选择“调整为最佳性能”选项，可以关闭不必要的动画和特效，从而提高文件夹的打开速度，这一步大多数都可以改善，只是确实难看，如果不想关闭下面还有办法。</p><p>2.<strong>调整索引选项</strong>：Windows的索引功能可以帮助快速搜索文件中的内容，但同时也可能影响到文件夹的加载速度，用户可以调整索引设置，限制索引服务的范围，或者对经常访问的文件夹进行索引，以改善文件夹打开速度。\n\n3.打开文件夹选项，点击查看，高级设置里面有很多选项\n\n</p><div class=\"image-container\">\n                  <img src=\"/blog/images/101b99ae-1cea-808b-a9b9-f76ec28ddc76/aHR0cHM6_image.png\" alt=\"文章图片\" />\n                </div>\n                </div><p>勾选在单独的进程中打开文件夹窗口，性能直接提高起飞</p><div class=\"image-container\">\n                  <img src=\"/blog/images/101b99ae-1cea-808b-a9b9-f76ec28ddc76/aHR0cHM6_image.png\" alt=\"文章图片\" />\n                </div><p>4.<strong>减少缩略图缓存</strong>：Windows 11默认会为图片和视频文件生成缩略图，这可能会消耗大量资源，在文件夹选项中，可以设置为不生成缩略图，或者限制缩略图的大小，以减少加载时间\n</p><p>5.把文件夹设置为常规项目，当然也可以设置一块盘</p><p>\n</p><div class=\"image-container\">\n                  <img src=\"/blog/images/101b99ae-1cea-808b-a9b9-f76ec28ddc76/aHR0cHM6_image.png\" alt=\"文章图片\" />\n                </div><p></p>"
+  "contentHtml": "<div class=\"unsupported-block\">[synced_block]</div><p><strong>1.关闭不必要的视觉效果</strong>：Windows 11默认开启的视觉效果可能会占用额外的系统资源，导致文件夹打开缓慢，通过调整系统的性能设置，选择“调整为最佳性能”选项，可以关闭不必要的动画和特效，从而提高文件夹的打开速度，这一步大多数都可以改善，只是确实难看，如果不想关闭下面还有办法。</p><p>2.<strong>调整索引选项</strong>：Windows的索引功能可以帮助快速搜索文件中的内容，但同时也可能影响到文件夹的加载速度，用户可以调整索引设置，限制索引服务的范围，或者对经常访问的文件夹进行索引，以改善文件夹打开速度。\n\n3.打开文件夹选项，点击查看，高级设置里面有很多选项\n\n</p><div class=\"image-container\">\n                  <img src=\"/blog/images/101b99ae-1cea-808b-a9b9-f76ec28ddc76/aHR0cHM6_image.png\" alt=\"文章图片\" />\n                </div><p>勾选在单独的进程中打开文件夹窗口，性能直接提高起飞</p><div class=\"image-container\">\n                  <img src=\"/blog/images/101b99ae-1cea-808b-a9b9-f76ec28ddc76/aHR0cHM6_image.png\" alt=\"文章图片\" />\n                </div><p>4.<strong>减少缩略图缓存</strong>：Windows 11默认会为图片和视频文件生成缩略图，这可能会消耗大量资源，在文件夹选项中，可以设置为不生成缩略图，或者限制缩略图的大小，以减少加载时间\n</p><p>5.把文件夹设置为常规项目，当然也可以设置一块盘</p><p>\n</p><div class=\"image-container\">\n                  <img src=\"/blog/images/101b99ae-1cea-808b-a9b9-f76ec28ddc76/aHR0cHM6_image.png\" alt=\"文章图片\" />\n                </div><p></p>"
 }

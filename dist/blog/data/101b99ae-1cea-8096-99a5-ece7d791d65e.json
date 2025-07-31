@@ -10,6 +10,13 @@
   "summary": "C++游戏服务器设计: 架构、性能和最佳实践",
   "created_time": "2024-09-14T07:11:00.000Z",
   "last_edited_time": "2024-09-14T07:56:00.000Z",
+  "cover": {
+    "type": "external",
+    "external": {
+      "url": "https://www.notion.so/images/page-cover/met_william_morris_1878.jpg"
+    }
+  },
+  "coverImageFilename": "cover_aHR0cHM6_met_william_morris_1878.jpg",
   "blocks": [
     {
       "object": "block",
@@ -127,5 +134,5 @@
       }
     }
   ],
-  "contentHtml": "<div class=\"synced-content\">\n                  <p>【sync-block】这是一段来自示例文章-3的段落 ，通过 SyncBlock同步。</p>\n                </div><p>这个文章将不会显示</p>"
+  "contentHtml": "<div class=\"unsupported-block\">[synced_block]</div><p>【sync-block】这是一段来自示例文章-3的段落 ，通过 SyncBlock同步。</p><p>这个文章将不会显示</p>"
 }

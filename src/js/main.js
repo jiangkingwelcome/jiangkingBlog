@@ -729,6 +729,68 @@ function switchPage() {
 	switchPage.switched = true;
 }
 
+// 返回intro页面的函数
+function switchBackToIntro() {
+	// 如果还没有进入主页面，则不需要返回
+	if (!loadAll.loaded) {
+		return;
+	}
+
+	// 安全地获取DOM元素
+	const DOM = {
+		intro: document.querySelector(".content-intro") || { style: {} },
+		main: document.querySelector(".content-main") || { style: {} },
+		cardInner: document.querySelector(".card-inner") || { style: {} },
+		shape: document.querySelector("svg.shape") || { style: {} },
+	};
+
+	// 确保anime.js库已加载
+	if (typeof anime !== 'function') {
+		console.log('anime.js未加载，跳过动画');
+		return;
+	}
+
+	console.log('开始返回intro页面动画');
+
+	try {
+		// 隐藏主页面内容
+		if (DOM.cardInner && DOM.cardInner.classList) {
+			DOM.cardInner.classList.remove("in");
+		}
+
+		// 将intro页面从上方滑回来
+		anime({
+			targets: DOM.intro,
+			duration: 1100,
+			easing: "easeInOutSine",
+			translateY: "0vh",
+		});
+
+		// 重置shape的缩放
+		anime({
+			targets: DOM.shape,
+			duration: 1100,
+			easing: "easeInOutSine",
+			scaleY: 1,
+		});
+
+		// 重置状态标志
+		setTimeout(() => {
+			loadAll.loaded = false;
+			switchPage.switched = false;
+			loadMain.loaded = false;
+
+			// 重新启动intro动画
+			if (typeof loadIntro === 'function') {
+				loadIntro();
+			}
+		}, 1100);
+
+	} catch (e) {
+		console.log('执行返回动画时出错:', e);
+	}
+}
+
 function loadMain() {
 	if (loadMain.loaded) {
 		return;
@@ -845,20 +907,62 @@ enterEl.addEventListener("click", loadAll);
 	enterEl.addEventListener("touchstart", loadAll);
 }
 
-// 安全地添加mousewheel事件
-try {
-document.body.addEventListener("mousewheel", loadAll, { passive: true });
-} catch (e) {
-	console.log('添加mousewheel监听器失败:', e);
-	// 尝试使用wheel事件作为回退
-	document.body.addEventListener("wheel", loadAll, { passive: true });
+// 滚轮事件处理 - 向下滚动进入主页面，向上滚动返回intro页面
+function handleWheelEvent(e) {
+	// 检查滚动方向
+	// deltaY > 0 表示向下滚动
+	// wheelDelta < 0 表示向下滚动（与deltaY相反）
+	// detail > 0 表示向下滚动
+	let isScrollingDown = false;
+	let isScrollingUp = false;
+
+	if (e.deltaY !== undefined) {
+		isScrollingDown = e.deltaY > 0;
+		isScrollingUp = e.deltaY < 0;
+	} else if (e.wheelDelta !== undefined) {
+		isScrollingDown = e.wheelDelta < 0;
+		isScrollingUp = e.wheelDelta > 0;
+	} else if (e.detail !== undefined) {
+		isScrollingDown = e.detail > 0;
+		isScrollingUp = e.detail < 0;
+	}
+
+	// 如果在intro页面且向下滚动，则进入主页面
+	if (!loadAll.loaded && isScrollingDown) {
+		console.log('检测到向下滚动，触发进入效果');
+		loadAll();
+	}
+	// 如果在主页面且向上滚动，则返回intro页面
+	else if (loadAll.loaded && isScrollingUp) {
+		console.log('检测到向上滚动，返回intro页面');
+		switchBackToIntro();
+	}
 }
 
-// 确保元素存在再添加事件监听
-const arrowEl = document.querySelector(".arrow");
-if (arrowEl) {
-    arrowEl.addEventListener("mouseenter", loadAll);
+// 添加滚轮事件监听器
+try {
+	// 现代浏览器使用wheel事件
+	document.addEventListener("wheel", handleWheelEvent, { passive: true });
+	// 兼容旧版浏览器
+	document.addEventListener("mousewheel", handleWheelEvent, { passive: true });
+	// Firefox的DOMMouseScroll事件
+	document.addEventListener("DOMMouseScroll", handleWheelEvent, { passive: true });
+} catch (e) {
+	console.log('添加滚轮监听器失败:', e);
 }
+
+// 为所有箭头元素添加事件监听
+const arrowEls = document.querySelectorAll(".arrow");
+arrowEls.forEach(arrowEl => {
+	if (arrowEl) {
+		// 点击箭头进入主页面
+		arrowEl.addEventListener("click", loadAll);
+		// 鼠标悬停也可以进入（保持原有功能）
+		arrowEl.addEventListener("mouseenter", loadAll);
+		// 添加指针样式
+		arrowEl.style.cursor = "pointer";
+	}
+});
 
 if (isPhone) {
 	document.addEventListener(
@@ -877,14 +981,22 @@ if (isPhone) {
 			endy = e.changedTouches[0].pageY;
 
 			const direction = getMoveDirection(startx, starty, endx, endy);
-			if (direction !== DIRECTIONS.UP) {
-				return;
+
+			// 如果在intro页面且向上滑动，则进入主页面
+			if (!loadAll.loaded && direction === DIRECTIONS.UP) {
+				loadAll();
 			}
-			loadAll();
+			// 如果在主页面且向下滑动，则返回intro页面
+			else if (loadAll.loaded && direction === DIRECTIONS.DOWN) {
+				console.log('检测到向下滑动，返回intro页面');
+				switchBackToIntro();
+			}
 		},
 		{ passive: true }
 	);
 }
+
+
 
 // 移除开发工具集成，避免require错误
 // 如果需要开发工具，请在构建系统中正确配置

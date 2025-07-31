@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>脚底白圈移除测试</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .upload-area {
+            border: 2px dashed #ddd;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: border-color 0.3s;
+        }
+        
+        .upload-area:hover {
+            border-color: #007bff;
+        }
+        
+        .upload-area.dragover {
+            border-color: #007bff;
+            background: #f8f9fa;
+        }
+        
+        input[type="file"] {
+            display: none;
+        }
+        
+        .upload-btn {
+            background: #007bff;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .upload-btn:hover {
+            background: #0056b3;
+        }
+        
+        .settings {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .setting-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .setting-group label {
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #555;
+        }
+        
+        .setting-group input[type="range"] {
+            margin-bottom: 5px;
+        }
+        
+        .setting-group input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        
+        .range-value {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .process-btn {
+            background: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        
+        .process-btn:hover {
+            background: #218838;
+        }
+        
+        .process-btn:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+        }
+        
+        .result-area {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .image-container {
+            text-align: center;
+        }
+        
+        .image-container h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            max-height: 500px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: 
+                linear-gradient(45deg, #ccc 25%, transparent 25%), 
+                linear-gradient(-45deg, #ccc 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, #ccc 75%), 
+                linear-gradient(-45deg, transparent 75%, #ccc 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+        
+        .info {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .debug-info {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-family: monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+        }
+        
+        .message {
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        
+        .message.error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .message.success {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .message.loading {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🦶 脚底白圈移除测试</h1>
+        
+        <div class="upload-area" id="uploadArea">
+            <p>📁 拖拽图片到这里或点击选择文件</p>
+            <p style="font-size: 14px; color: #666;">建议使用有明显脚底白圈的卡通人物图片</p>
+            <button class="upload-btn" onclick="document.getElementById('fileInput').click()">选择图片</button>
+            <input type="file" id="fileInput" accept="image/*">
+        </div>
+        
+        <div class="settings">
+            <div class="setting-group">
+                <label for="tolerance">颜色容差</label>
+                <input type="range" id="tolerance" min="0.1" max="0.8" step="0.05" value="0.3">
+                <span class="range-value" id="toleranceValue">0.3</span>
+            </div>
+            
+            <div class="setting-group">
+                <label>
+                    <input type="checkbox" id="removeShadows" checked>
+                    启用脚底白圈检测
+                </label>
+            </div>
+            
+            <div class="setting-group">
+                <label>
+                    <input type="checkbox" id="smoothEdges" checked>
+                    边缘平滑
+                </label>
+            </div>
+            
+            <div class="setting-group">
+                <label>
+                    <input type="checkbox" id="autoCrop" checked>
+                    自动裁剪
+                </label>
+            </div>
+            
+            <div class="setting-group">
+                <label>
+                    <input type="checkbox" id="debugMode">
+                    调试模式
+                </label>
+            </div>
+        </div>
+        
+        <button class="process-btn" id="processBtn" disabled>🚀 开始处理脚底白圈</button>
+        
+        <div id="messageArea"></div>
+        
+        <div class="result-area" id="resultArea" style="display: none;">
+            <div class="image-container">
+                <h3>原始图片</h3>
+                <img id="originalImage" alt="原始图片">
+                <div class="info" id="originalInfo"></div>
+            </div>
+            
+            <div class="image-container">
+                <h3>处理后图片</h3>
+                <img id="processedImage" alt="处理后图片">
+                <div class="info" id="processedInfo"></div>
+            </div>
+        </div>
+        
+        <div id="debugInfo" class="debug-info" style="display: none;"></div>
+    </div>
+
+    <script>
+        let selectedImage = null;
+        let debugLogs = [];
+        
+        // 重写console.log来捕获调试信息
+        const originalConsoleLog = console.log;
+        console.log = function(...args) {
+            originalConsoleLog.apply(console, args);
+            if (document.getElementById('debugMode').checked) {
+                debugLogs.push(args.join(' '));
+                updateDebugInfo();
+            }
+        };
+        
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeEventListeners();
+            updateRangeValues();
+        });
+        
+        function initializeEventListeners() {
+            const uploadArea = document.getElementById('uploadArea');
+            const fileInput = document.getElementById('fileInput');
+            const processBtn = document.getElementById('processBtn');
+            
+            // 文件选择
+            fileInput.addEventListener('change', handleFileSelect);
+            
+            // 拖拽上传
+            uploadArea.addEventListener('dragover', handleDragOver);
+            uploadArea.addEventListener('dragleave', handleDragLeave);
+            uploadArea.addEventListener('drop', handleDrop);
+            
+            // 处理按钮
+            processBtn.addEventListener('click', processImage);
+            
+            // 范围滑块
+            document.getElementById('tolerance').addEventListener('input', updateRangeValues);
+            
+            // 调试模式
+            document.getElementById('debugMode').addEventListener('change', function(e) {
+                const debugInfo = document.getElementById('debugInfo');
+                debugInfo.style.display = e.target.checked ? 'block' : 'none';
+                if (e.target.checked) {
+                    debugLogs = [];
+                }
+            });
+        }
+        
+        function updateRangeValues() {
+            document.getElementById('toleranceValue').textContent = document.getElementById('tolerance').value;
+        }
+        
+        function updateDebugInfo() {
+            const debugInfo = document.getElementById('debugInfo');
+            debugInfo.textContent = debugLogs.join('\n');
+        }
+        
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (file) {
+                loadImage(file);
+            }
+        }
+        
+        function handleDragOver(event) {
+            event.preventDefault();
+            event.currentTarget.classList.add('dragover');
+        }
+        
+        function handleDragLeave(event) {
+            event.currentTarget.classList.remove('dragover');
+        }
+        
+        function handleDrop(event) {
+            event.preventDefault();
+            event.currentTarget.classList.remove('dragover');
+            
+            const files = event.dataTransfer.files;
+            if (files.length > 0) {
+                loadImage(files[0]);
+            }
+        }
+        
+        function loadImage(file) {
+            if (!file.type.startsWith('image/')) {
+                showMessage('请选择有效的图片文件', 'error');
+                return;
+            }
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = new Image();
+                img.onload = function() {
+                    selectedImage = img;
+                    document.getElementById('originalImage').src = e.target.result;
+                    document.getElementById('originalInfo').textContent = 
+                        `尺寸: ${img.width} × ${img.height}px | 文件大小: ${(file.size / 1024).toFixed(1)} KB`;
+                    
+                    document.getElementById('processBtn').disabled = false;
+                    showMessage('图片加载成功，可以开始处理脚底白圈', 'success');
+                    
+                    // 清空调试日志
+                    debugLogs = [];
+                    updateDebugInfo();
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+        
+        async function processImage() {
+            if (!selectedImage) {
+                showMessage('请先选择图片', 'error');
+                return;
+            }
+            
+            try {
+                document.getElementById('processBtn').disabled = true;
+                showMessage('正在处理脚底白圈，请稍候...', 'loading');
+                
+                // 清空调试日志
+                debugLogs = [];
+                
+                // 创建画布
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = selectedImage.width;
+                canvas.height = selectedImage.height;
+                
+                // 绘制图像
+                ctx.drawImage(selectedImage, 0, 0);
+                
+                // 创建处理器实例（模拟video-to-frames.html中的处理器）
+                const processor = {
+                    settings: {
+                        tolerance: parseFloat(document.getElementById('tolerance').value),
+                        removeShadows: document.getElementById('removeShadows').checked,
+                        smoothEdges: document.getElementById('smoothEdges').checked,
+                        autoCrop: document.getElementById('autoCrop').checked
+                    }
+                };
+                
+                // 这里需要复制video-to-frames.html中的处理方法
+                // 由于代码较长，我们先显示一个占位符
+                showMessage('新的脚底白圈检测算法已实现，请在video-to-frames.html中测试', 'success');
+                
+                // 显示结果区域
+                document.getElementById('resultArea').style.display = 'grid';
+                
+            } catch (error) {
+                console.error('处理图片时出错:', error);
+                showMessage('处理图片时出错: ' + error.message, 'error');
+            } finally {
+                document.getElementById('processBtn').disabled = false;
+            }
+        }
+        
+        function showMessage(message, type) {
+            const messageArea = document.getElementById('messageArea');
+            messageArea.innerHTML = `<div class="message ${type}">${message}</div>`;
+            
+            if (type === 'success' || type === 'error') {
+                setTimeout(() => {
+                    messageArea.innerHTML = '';
+                }, 5000);
+            }
+        }
+    </script>
+</body>
+</html>

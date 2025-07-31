@@ -10,6 +10,7 @@
   "summary": "在此文档直接添加配置文件，它的优先级最高，将覆盖环境变量和blog.config.js配置",
   "created_time": "2024-09-04T10:37:00.000Z",
   "last_edited_time": "2024-09-04T10:37:00.000Z",
+  "cover": null,
   "blocks": [
     {
       "object": "block",

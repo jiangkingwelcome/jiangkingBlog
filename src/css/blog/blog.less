@@ -11,6 +11,7 @@
     --glass: rgba(255, 255, 255, 0.1);
     --glass-border: rgba(255, 255, 255, 0.2);
     --neon-glow: 0 0 20px rgba(99, 102, 241, 0.8);
+    --text: rgba(226, 232, 240, 0.8);
 }
 
 /* 浏览器统一样式 - 确保QQ浏览器和Chrome浏览器显示一致 */
@@ -114,11 +115,11 @@ body {
     height: 200%;
     background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
     opacity: 0.1;
-    animation: pulse 4s ease-in-out infinite;
+    animation: avatarPulse 4s ease-in-out infinite;
   }
 }
 
-@keyframes pulse {
+@keyframes avatarPulse {
   0%, 100% { transform: scale(0.8); opacity: 0.1; }
   50% { transform: scale(1.2); opacity: 0.2; }
 }
@@ -600,11 +601,52 @@ body {
   margin: 0 auto;
 }
 
-/* 文章卡片 - 花瓣装饰效果 */
+/* 文章卡片 - 智能响应式网格布局 */
 .posts-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 30px;
+
+  /* 超超宽屏 (3440px+): 8列 - 带鱼屏 */
+  @media (min-width: 3440px) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  /* 超宽屏 (2560px-3439px): 7列 - 2K/4K宽屏 */
+  @media (min-width: 2560px) and (max-width: 3439px) {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  /* 宽屏 (2200px-2559px): 6列 - 大带鱼屏 */
+  @media (min-width: 2200px) and (max-width: 2559px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  /* 超大屏幕 (1920px-2199px): 5列 - 标准4K */
+  @media (min-width: 1920px) and (max-width: 2199px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  /* 大屏幕 (1400px-1919px): 4列 - 大桌面 */
+  @media (min-width: 1400px) and (max-width: 1919px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* 中等屏幕 (1024px-1399px): 3列 - 标准桌面 */
+  @media (min-width: 1024px) and (max-width: 1399px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* 平板 (768px-1023px): 2列 */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* 手机 (小于768px): 1列 */
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 }
 
 .post-card {
@@ -1070,6 +1112,10 @@ body {
 }
 
 .article-content {
+  color: var(--text);
+  font-size: 1.15rem;
+  line-height: 1.9;
+  letter-spacing: 0.01em;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
@@ -1092,12 +1138,14 @@ body {
 }
 
 /* 文章内容样式 */
-.article-content h2 {
-  font-size: 32px;
-  margin: 40px 0 20px;
-  color: var(--primary);
-  position: relative;
-  padding-left: 20px;
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6 {
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 .article-content h2::before {
@@ -1113,16 +1161,9 @@ body {
   box-shadow: 0 0 10px var(--primary);
 }
 
-.article-content h3 {
-  font-size: 24px;
-  margin: 30px 0 15px;
-  color: var(--secondary);
-}
-
 .article-content p {
-  margin-bottom: 20px;
+  margin: 1.6em 0;
   opacity: 0.9;
-  font-size: 18px;
 }
 
 .article-content ul,
@@ -1387,8 +1428,8 @@ body {
 }
 
 .action-btn {
-  width: 45px;
-  height: 45px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background: var(--glass);
   border: 1px solid var(--glass-border);
@@ -1403,6 +1444,7 @@ body {
   gap: 2px;
   padding: 0;
   overflow: hidden;
+  font-size: 1.3rem;
 }
 
 .action-btn svg {
@@ -1520,6 +1562,8 @@ body {
 @media (max-width: 768px) {
   .article-content {
     padding: 30px 20px;
+    font-size: 1rem;
+    line-height: 1.7;
   }
 
   .article-actions {
@@ -1529,9 +1573,9 @@ body {
   }
 
   .action-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
   }
 }
 .category-popup {
@@ -1639,7 +1683,8 @@ body {
   width: 100%;
   object-fit: cover;
   border-radius: 6px;
-  transition: all 0.3s ease;
+  /* 只对transform和opacity应用过渡，避免在src变化时闪烁 */
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* 图片错误状态 */
@@ -1650,19 +1695,10 @@ body {
   padding: 20px;
   cursor: pointer;
   min-height: 200px;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
+  /* 移除闪烁动画，使用静态样式 */
+  opacity: 0.8;
+  /* 禁用过渡效果，避免状态切换时的闪烁 */
+  transition: none !important;
 }
 
 /* 图片加载中状态 */
@@ -1699,6 +1735,21 @@ body {
 .image-container img[src*="s3.us-west-2.amazonaws"] {
   object-fit: contain;  /* 防止图片变形 */
   background-color: #ffffff;
+}
+
+/* 默认封面样式 */
+.blog-card-image img.default-cover,
+.blog-card-image img[src*="placeholder"],
+.blog-card-image img[src*="default-blog-cover"],
+.blog-card-image img[src*="tech-placeholder"],
+.blog-card-image img[src*="game-placeholder"],
+.blog-card-image img[src*="movie-placeholder"],
+.blog-card-image img[src*="blog-placeholder"] {
+  object-fit: cover;
+  background-color: transparent;
+  /* 确保SVG默认封面正确显示 */
+  width: 100%;
+  height: 100%;
 }
 
 /* 添加加载动画 */

@@ -10,6 +10,13 @@
   "summary": "2024年最热门的5大技术趋势：引领未来的创新方向",
   "created_time": "2024-09-04T10:37:00.000Z",
   "last_edited_time": "2024-09-14T07:55:00.000Z",
+  "cover": {
+    "type": "external",
+    "external": {
+      "url": "https://www.notion.so/images/page-cover/nasa_space_shuttle_columbia.jpg"
+    }
+  },
+  "coverImageFilename": "cover_aHR0cHM6_nasa_space_shuttle_columbia.jpg",
   "blocks": [
     {
       "object": "block",

@@ -10,6 +10,13 @@
   "summary": "黑悟空最新黑魔法破解",
   "created_time": "2024-09-14T07:49:00.000Z",
   "last_edited_time": "2024-09-16T09:48:00.000Z",
+  "cover": {
+    "type": "external",
+    "external": {
+      "url": "https://www.notion.so/images/page-cover/woodcuts_9.jpg"
+    }
+  },
+  "coverImageFilename": "cover_aHR0cHM6_woodcuts_9.jpg",
   "blocks": [
     {
       "object": "block",
@@ -241,5 +248,5 @@
       }
     }
   ],
-  "contentHtml": "<div class=\"synced-content\">\n                  <p>发邮件给我，我把软件回给你，必回哦 </p><p>Here's the English translation of the selected text:</p><p>\"Send me an email, and I'll send you the software back.\"</p>\n                </div><p>jiangkingwelcome@vip.qq.com</p><p></p>"
+  "contentHtml": "<div class=\"unsupported-block\">[synced_block]</div><p>发邮件给我，我把软件回给你，必回哦 </p><p>Here's the English translation of the selected text:</p><p>\"Send me an email, and I'll send you the software back.\"</p><p>jiangkingwelcome@vip.qq.com</p><p></p>"
 }
